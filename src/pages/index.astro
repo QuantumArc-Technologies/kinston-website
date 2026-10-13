@@ -22,7 +22,7 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
     <div class="wrap hero-inner">
       <div class="hero-copy">
         <span class="dim" aria-hidden="true" style="--w:96px"></span>
-        <h1>Lifting gear built to a standard and proven on a test bed.</h1>
+        <h1 class="sheen">Lifting gear built to a standard and proven on a <em class="hot">test bed.</em></h1>
         <p class="lede">Grade 100 and Grade 80 chain slings, hooks, shackles, master links, wire rope fittings and hoists. Every item is proof tested, marked and traceable to its heat number before it leaves us.</p>
         <div class="hero-actions">
           <a class="btn" href="/products">Browse products</a>
@@ -36,7 +36,8 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
       </div>
       <div class="hero-art-wrap">
         <figure class="hero-fig">
-          <img src="/images/hero-hook.webp" alt="Kinston clevis self-locking hook, Grade 100" width="1100" height="1100" fetchpriority="high" decoding="async" />
+          <span class="hero-glow" aria-hidden="true"></span>
+          <img src="/images/hero-hook.webp" alt="Kinston clevis self-locking hook, Grade 100" width="720" height="720" fetchpriority="high" decoding="async" />
           <svg class="dims" viewBox="0 0 1100 1100" aria-hidden="true" fill="none" stroke="var(--orange)" stroke-width="3">
             <path class="dl" d="M300 172 H360 M300 933 H360" />
             <path class="dl" d="M330 172 V933" />
@@ -60,7 +61,7 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
   <section class="section">
     <div class="wrap">
       <SectionHeading title="Eight ranges, one standard of testing" lead="Choose a range to see every product with dimensions, working load limits and downloads." />
-      <ul class="ranges">
+      <ul class="ranges" data-reveal>
         {cats.map((c) => (
           <li>
             <a href={`/products/${c.slug}`}>
@@ -82,13 +83,13 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
       <div class="why-copy">
         <SectionHeading title="Why riggers specify Kinston" />
         <p class="prose">A lifting component is only as good as the test certificate behind it. We forge, heat treat, test and mark under one quality system, so the hook in your hand matches the number on the certificate and the drawing on the datasheet.</p>
-        <ul class="stats">
+        <ul class="stats" data-reveal data-count>
           {stats.map((s) => (
-            <li><strong>{s.value}</strong><span>{s.label}</span></li>
+            <li><strong data-value={s.value}>{s.value}</strong><span>{s.label}</span></li>
           ))}
         </ul>
       </div>
-      <ol class="why-list">
+      <ol class="why-list" data-reveal>
         <li>
           <h3>Every item proof tested</h3>
           <p>Components are loaded to 2.5 times WLL and chain slings to 2 times WLL on calibrated beds, with the load trace stored against the serial number.</p>
@@ -115,7 +116,7 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
         <SectionHeading title="Most specified this quarter" />
         <a class="textlink" href="/products">All products</a>
       </div>
-      <div class="grid cols-4">
+      <div class="grid cols-4" data-reveal>
         {featured.map((p) => <ProductCard product={p} />)}
       </div>
     </div>
@@ -124,7 +125,7 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
   <section class="section bg-navy">
     <div class="wrap">
       <SectionHeading title="Built for the sectors that lift every day" lead="From tower crane rigging to subsea release, our ranges are specified where downtime is expensive and inspection is strict." />
-      <ul class="sectors">
+      <ul class="sectors" data-reveal>
         {sectors.map((s) => (
           <li>
             <a href={`/industries#${s.slug}`}>
@@ -143,7 +144,7 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
         <SectionHeading title="Certified, audited, documented" lead="Our quality system is certified by DNV and our offshore ranges hold DNV type approval. Certificates are on the downloads page." />
         <a class="btn btn-navy" href="/quality">Quality and certification</a>
       </div>
-      <ul class="certs">
+      <ul class="certs" data-reveal>
         {certifications.map((c) => (
           <li>
             <strong>{c.code}</strong>
@@ -160,7 +161,7 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
         <SectionHeading title="News and technical notes" />
         <a class="textlink" href="/news">All news</a>
       </div>
-      <ul class="news">
+      <ul class="news" data-reveal>
         {news.map((a) => (
           <li>
             <a href={`/news/${a.slug}`}>
@@ -177,8 +178,98 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
   <CtaBand />
 </Base>
 
+<script>
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.documentElement.classList.add('js');
+
+  // Scroll reveal: children of [data-reveal] rise in with a stagger.
+  const revealEls = document.querySelectorAll<HTMLElement>('[data-reveal]');
+  revealEls.forEach((el) => Array.from(el.children).forEach((c, i) => (c as HTMLElement).style.setProperty('--i', String(i))));
+  if (reduce || !('IntersectionObserver' in window)) {
+    revealEls.forEach((el) => el.classList.add('in'));
+  } else {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { rootMargin: '0px 0px -10% 0px', threshold: 0.12 });
+    revealEls.forEach((el) => io.observe(el));
+  }
+
+  // Count-up for the stats strip.
+  const counters = document.querySelectorAll<HTMLElement>('[data-count] [data-value]');
+  const run = (el: HTMLElement) => {
+    const raw = el.dataset.value ?? '';
+    const num = parseFloat(raw.replace(/[^0-9.]/g, ''));
+    const prefix = raw.match(/^[^0-9]*/)?.[0] ?? '';
+    const suffix = raw.match(/[^0-9.,]*$/)?.[0] ?? '';
+    if (Number.isNaN(num) || reduce) { el.textContent = raw; return; }
+    const t0 = performance.now(); const dur = 1400;
+    const step = (t: number) => {
+      const k = Math.min(1, (t - t0) / dur); const e = 1 - Math.pow(1 - k, 3);
+      el.textContent = prefix + Math.round(num * e).toLocaleString('en-GB') + suffix;
+      if (k < 1) requestAnimationFrame(step); else el.textContent = raw;
+    };
+    requestAnimationFrame(step);
+  };
+  if (counters.length) {
+    counters.forEach((el) => { if (!reduce) el.textContent = (el.dataset.value ?? '').replace(/[0-9]/g, '0'); });
+    const io2 = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) { run(e.target as HTMLElement); io2.unobserve(e.target); } });
+    }, { threshold: 0.5 });
+    counters.forEach((el) => io2.observe(el));
+  }
+</script>
+
 <style>
-  .hero { color: var(--white); overflow: hidden; }
+  .hero { color: var(--white); overflow: hidden; position: relative; }
+  .hero::before {
+    content: ''; position: absolute; inset: -50% -10%; pointer-events: none;
+    background:
+      radial-gradient(60% 50% at 78% 55%, rgba(248,80,0,.16), transparent 70%),
+      radial-gradient(40% 40% at 15% 20%, rgba(10,46,120,.45), transparent 70%);
+    animation: drift 18s ease-in-out infinite alternate;
+  }
+  .hero-inner { position: relative; }
+  @keyframes drift { from { transform: translate3d(0,0,0); } to { transform: translate3d(2%, 3%, 0); } }
+
+  /* staggered entrance */
+  .hero-copy > * { animation: rise .8s var(--ease) both; }
+  .hero-copy > :nth-child(1) { animation-delay: .05s; }
+  .hero-copy > :nth-child(2) { animation-delay: .15s; }
+  .hero-copy > :nth-child(3) { animation-delay: .35s; }
+  .hero-copy > :nth-child(4) { animation-delay: .5s; }
+  .hero-copy > :nth-child(5) { animation-delay: .65s; }
+  .hero-copy > .dim { transform-origin: left; animation-name: grow; }
+  @keyframes rise { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: none; } }
+  @keyframes grow { from { opacity: 0; transform: scaleX(0); } to { opacity: 1; transform: scaleX(1); } }
+
+  /* sheen sweeping across the headline */
+  .sheen {
+    background: linear-gradient(105deg, #fff 0%, #fff 42%, #ffd9c4 48%, #fff 54%, #fff 100%);
+    background-size: 260% 100%; background-position: 120% 0;
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+    animation: rise .8s var(--ease) both, sheen 7s ease-in-out 1.4s infinite;
+  }
+  .hot {
+    font-style: normal;
+    background: linear-gradient(105deg, #ff9a5e 0%, #f85000 35%, #ffd0b5 50%, #f85000 65%, #ff9a5e 100%);
+    background-size: 260% 100%; background-position: 120% 0;
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+    animation: sheen 7s ease-in-out 1.6s infinite;
+    filter: drop-shadow(0 0 18px rgba(248,80,0,.35));
+  }
+  @keyframes sheen { 0%, 55% { background-position: 120% 0; } 85%, 100% { background-position: -40% 0; } }
+
+  /* hook: float + glow */
+  .hero-glow {
+    position: absolute; inset: 12% 8% 6% 8%; border-radius: 50%; pointer-events: none;
+    background: radial-gradient(closest-side, rgba(248,80,0,.28), rgba(248,80,0,.06) 60%, transparent 75%);
+    filter: blur(24px); animation: pulse 6s ease-in-out infinite;
+  }
+  .hero-fig img { position: relative; animation: rise 1s var(--ease) .2s both; }
+  .hero-fig { animation: float 8s ease-in-out 1.2s infinite; }
+  @keyframes float { 0%, 100% { transform: translateY(0) rotate(0deg); } 50% { transform: translateY(-12px) rotate(-1deg); } }
+  @keyframes pulse { 0%, 100% { opacity: .75; transform: scale(.96); } 50% { opacity: 1; transform: scale(1.04); } }
+
   .hero-inner { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 48px; align-items: center; min-height: 640px; padding-block: 64px; }
   .hero h1 { color: var(--white); margin: 18px 0 22px; max-width: 15ch; font-size: clamp(2.75rem, 6vw, 5rem); text-wrap: balance; }
   .hero .lede { color: #c3cbdb; max-width: 54ch; }
@@ -188,11 +279,10 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
   .proof :global(svg) { width: 18px; height: 18px; color: var(--orange); }
   .hero-art-wrap { max-width: 600px; justify-self: end; width: 100%; }
   .hero-fig { position: relative; margin: 0; }
-  .hero-fig img { width: 100%; height: auto; -webkit-mask-image: radial-gradient(circle at 50% 50%, #000 58%, transparent 74%); mask-image: radial-gradient(circle at 50% 50%, #000 58%, transparent 74%); }
-  .dims { position: absolute; inset: 0; width: 100%; height: 100%; }
-  .dt { font-family: var(--font-display); font-weight: 600; font-size: 40px; fill: var(--white); stroke: none; }
-  .dl { stroke-dasharray: 900; stroke-dashoffset: 900; animation: draw 1.4s var(--ease) forwards; animation-delay: .35s; }
-  .dt { opacity: 0; animation: fade .5s ease forwards; animation-delay: 1.3s; }
+  .hero-fig img { width: 100%; height: auto; filter: drop-shadow(0 30px 40px rgba(0,0,0,.45)); }
+  .dims { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+  .dt { font-family: var(--font-display); font-weight: 600; font-size: 40px; fill: var(--white); stroke: none; opacity: 0; animation: fade .5s ease 1.6s forwards; }
+  .dl { stroke-dasharray: 900; stroke-dashoffset: 900; animation: draw 1.4s var(--ease) .7s forwards; }
   @keyframes draw { to { stroke-dashoffset: 0; } }
   @keyframes fade { to { opacity: 1; } }
   @media (prefers-reduced-motion: reduce) { .dl { stroke-dashoffset: 0; animation: none; } .dt { opacity: 1; animation: none; } }
@@ -242,6 +332,10 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
   .news a:hover h3 { color: var(--orange); }
   .news-meta { display: flex; align-items: center; gap: 12px; font-size: var(--t-xs); color: var(--steel); }
 
+  @media (prefers-reduced-motion: reduce) {
+    .hero::before, .hero-glow, .hero-fig img, .sheen, .hot, .hero-copy > * { animation: none !important; }
+    .sheen, .hot { background-position: 50% 0; }
+  }
   @media (max-width: 1100px) { .ranges { grid-template-columns: repeat(2, 1fr); } .sectors { grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 960px) {
     .hero-inner { grid-template-columns: 1fr; min-height: 0; }
@@ -250,4 +344,11 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
     .news { grid-template-columns: 1fr; }
   }
   @media (max-width: 600px) { .ranges, .sectors, .certs, .stats { grid-template-columns: 1fr; } }
+</style>
+
+<style is:global>
+  /* scroll reveal (home page) */
+  html.js [data-reveal] > * { opacity: 0; transform: translateY(26px); transition: opacity .7s var(--ease), transform .7s var(--ease); transition-delay: calc(var(--i, 0) * 80ms); }
+  html.js [data-reveal].in > * { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) { html.js [data-reveal] > * { opacity: 1; transform: none; transition: none; } }
 </style>

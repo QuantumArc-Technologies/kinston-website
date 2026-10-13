@@ -415,9 +415,9 @@ def project(C, p, size):
     u = (v @ C['right']) / z / C['fov']; w = (v @ C['up']) / z / C['fov']
     return ((u + 1) / 2 * size, (1 - w) / 2 * size)
 
-def render(name, size=640, ss=1, bg=(1.0, 1.0, 1.0), shadow=0.32):
+def render(name, size=640, ss=1, bg=(1.0, 1.0, 1.0), shadow=0.32, yaw=18, alpha=False):
     S = build(name)
-    C = camera(S)
+    C = camera(S, yaw_deg=yaw)
     lo, hi, center, extent, cam, cam_dist, fwd, right, up, fov = C['lo'], C['hi'], C['center'], C['extent'], C['cam'], C['dist'], C['fwd'], C['right'], C['up'], C['fov']
     floor_y = lo[1] - 0.05
     W = H = size * ss
@@ -425,14 +425,14 @@ def render(name, size=640, ss=1, bg=(1.0, 1.0, 1.0), shadow=0.32):
     u = (xs + 0.5) / W * 2 - 1; v = 1 - (ys + 0.5) / H * 2
     D = normalize(fwd[None, None] + (u[:, :, None] * right[None, None] * fov * 1.0 + v[:, :, None] * up[None, None] * fov) * (cam_dist / 1.0) / cam_dist * 1.0)
     D = D.reshape(-1, 3); O = np.repeat(cam[None], D.shape[0], 0)
-    BG = np.array(bg); img = np.ones((D.shape[0], 3)) * BG
+    BG = np.array(bg); img = np.ones((D.shape[0], 3)) * BG; A = np.zeros(D.shape[0])
     key = normalize(np.array([-0.45, 0.85, 0.55])); fill = normalize(np.array([0.8, 0.3, 0.5])); rim = normalize(np.array([0.2, 0.4, -0.9]))
     CH = 40000
     t0 = time.time()
     for s in range(0, D.shape[0], CH):
         o, d = O[s:s + CH], D[s:s + CH]
         t, hit, m = march(S, o, d, cam_dist * 2.2)
-        col = np.ones((o.shape[0], 3)) * BG
+        col = np.ones((o.shape[0], 3)) * BG; al = np.zeros(o.shape[0])
         # ground shadow for misses
         miss = ~hit
         if miss.any():
@@ -448,7 +448,7 @@ def render(name, size=640, ss=1, bg=(1.0, 1.0, 1.0), shadow=0.32):
                 contact = ao(S, Pf, np.array([0, 1, 0]) * np.ones_like(Pf), samples=4, step=0.15)
                 shade = 1 - shadow * (1 - sh) * fade - shadow * 0.8 * (1 - contact) * fade
                 g = BG[None] * shade[:, None]
-                sub = np.nonzero(miss)[0][gh]; col[sub] = g
+                sub = np.nonzero(miss)[0][gh]; col[sub] = g; al[sub] = np.clip(1 - shade, 0, 1) * 1.15
         if hit.any():
             P = o[hit] + d[hit] * t[hit, None]
             e = 0.003
@@ -472,16 +472,24 @@ def render(name, size=640, ss=1, bg=(1.0, 1.0, 1.0), shadow=0.32):
             specular = (spec * (spk * sh * 1.0 + spf * 0.35))[:, None] * np.array([1, 0.98, 0.95])
             reflection = E * (refl * F)[:, None] * occ[:, None]
             c = (diffuse + specular + reflection) * 1.08
-            col[hit] = np.clip(c, 0, 1)
-        img[s:s + CH] = col
-    img = (img ** (1 / 1.05)).reshape(H, W, 3)
-    im = Image.fromarray((np.clip(img, 0, 1) * 255).astype(np.uint8))
+            col[hit] = np.clip(c, 0, 1); al[hit] = 1
+        img[s:s + CH] = col; A[s:s + CH] = al
+    img = (np.clip(img, 0, 1) ** (1 / 1.05)).reshape(H, W, 3)
+    if alpha:
+        # transparent background: object opaque, ground shadow as black with partial alpha
+        A = np.clip(A, 0, 1).reshape(H, W)
+        rgb = np.where((A < 1)[:, :, None], 0.0, img)
+        rgba = np.concatenate([rgb, A[:, :, None]], 2)
+        im = Image.fromarray((np.clip(rgba, 0, 1) * 255).astype(np.uint8), 'RGBA')
+    else:
+        im = Image.fromarray((np.clip(img, 0, 1) * 255).astype(np.uint8))
     if ss > 1: im = im.resize((size, size), Image.LANCZOS)
     print(f'{name}: {time.time() - t0:.1f}s')
     return im
 
-def hero(path, size=1100):
-    im = render('self-locking-hook', size, ss=1, bg=(0.067, 0.106, 0.2), shadow=0.6)
+def hero(path, size=700, rs=900):
+    im = render('self-locking-hook', rs, ss=1, bg=(0.067, 0.106, 0.2), shadow=0.85, alpha=True)
+    im = im.resize((size, size), Image.LANCZOS)
     im.save(path, optimize=True)
     S = build('self-locking-hook'); C = camera(S); w = S.w
     pts = {
@@ -493,9 +501,18 @@ def hero(path, size=1100):
     import json
     print(json.dumps({k: [round(v, 1) for v in project(C, p, size)] for k, p in pts.items()}))
 
+def hero_frame(i, n, size, outdir):
+    """One frame of the hero turntable: frame 0 matches the static hero view (yaw 18)."""
+    yaw = 18 + 360.0 * i / n
+    im = render('self-locking-hook', size, ss=1, bg=(0.067, 0.106, 0.2), shadow=0.6, yaw=yaw)
+    os.makedirs(outdir, exist_ok=True)
+    im.save(os.path.join(outdir, f'frame-{i:02d}.png'), optimize=True)
+
 if __name__ == '__main__':
     if len(sys.argv) > 1 and sys.argv[1] == 'hero':
         hero(sys.argv[2]); sys.exit()
+    if len(sys.argv) > 1 and sys.argv[1] == 'heroframe':
+        hero_frame(int(sys.argv[2]), int(sys.argv[3]), int(sys.argv[4]), sys.argv[5]); sys.exit()
     size = int(sys.argv[1]) if len(sys.argv) > 1 and sys.argv[1].isdigit() else 640
     names = [a for a in sys.argv[1:] if not a.isdigit()]
     out = os.path.join(os.path.dirname(__file__), '..', 'public', 'images', 'products')
