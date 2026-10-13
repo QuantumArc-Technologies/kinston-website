@@ -1,0 +1,187 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Breadcrumb from '../../../components/Breadcrumb.astro';
+import ProductCard from '../../../components/ProductCard.astro';
+import SpecTable from '../../../components/SpecTable.astro';
+import EnquiryForm from '../../../components/EnquiryForm.astro';
+import Icon from '../../../components/Icon.astro';
+import { categoryBySlug } from '../../../data/categories';
+import { products, relatedProducts, wllRange } from '../../../data/products';
+import { breadcrumbLd, productLd } from '../../../lib/seo';
+import { fmt } from '../../../lib/units';
+
+export function getStaticPaths() {
+  return products.map((p) => ({ params: { category: p.category, product: p.slug }, props: { product: p } }));
+}
+const { product: p } = Astro.props;
+const cat = categoryBySlug(p.category)!;
+const related = relatedProducts(p, 4);
+const range = wllRange(p);
+const crumbs = [
+  { name: 'Home', href: '/' },
+  { name: 'Products', href: '/products' },
+  { name: cat.name, href: `/products/${cat.slug}` },
+  { name: p.name, href: `/products/${cat.slug}/${p.slug}` },
+];
+const sizes = p.specRows.length;
+const img = p.image ?? `/images/products/${p.art}.webp`;
+const catImg = `/images/products/${cat.art}.webp`;
+---
+<Base
+  title={`${p.name} ${p.code}`}
+  description={`${p.summary} ${sizes} sizes${range ? `, WLL ${fmt(range.min, 2)} to ${fmt(range.max, 2)} t` : ''}. Standards: ${p.standards.join(', ')}. Datasheet and certificate downloads.`}
+  path={`/products/${cat.slug}/${p.slug}`}
+  ogType="product"
+  jsonLd={[breadcrumbLd(crumbs), productLd(p)]}
+>
+  <section class="section-tight">
+    <div class="wrap">
+      <Breadcrumb items={crumbs} />
+      <div class="top">
+        <div class="gallery">
+          <figure class="main-art">
+            <img src={img} alt={p.name} width="900" height="900" fetchpriority="high" />
+            <figcaption>Dimension letters refer to the specification table</figcaption>
+          </figure>
+          <ul class="thumbs" aria-label="Views">
+            <li class="on"><img src={img} alt="" width="84" height="84" /></li>
+            <li><img src={catImg} alt="" width="84" height="84" loading="lazy" /></li>
+            <li class="thumb-doc"><Icon name="file" /><span>Datasheet</span></li>
+          </ul>
+        </div>
+
+        <div class="summary">
+          <p class="code">{p.code}{p.grade && <span class="tag tag-orange">{p.grade}</span>}</p>
+          <h1>{p.name}</h1>
+          <p class="lede">{p.summary}</p>
+
+          <dl class="facts">
+            {range && <div><dt>Working load limit</dt><dd>{fmt(range.min, 2)}{range.min !== range.max && ` to ${fmt(range.max, 2)}`} t</dd></div>}
+            <div><dt>Sizes</dt><dd>{sizes}</dd></div>
+            <div><dt>Design factor</dt><dd>{p.designFactor}</dd></div>
+            <div><dt>Standards</dt><dd>{p.standards.join(', ')}</dd></div>
+            <div><dt>Material</dt><dd>{p.material}</dd></div>
+            <div><dt>Finish</dt><dd>{p.finish}</dd></div>
+            <div><dt>Temperature</dt><dd>{p.tempRange}</dd></div>
+          </dl>
+
+          <div class="actions">
+            <a class="btn" href="#enquire">Request a quote</a>
+            <a class="btn btn-outline" href="#specifications">Specifications</a>
+            <a class="dl-link" href={p.downloads[0].href}><Icon name="download" /> Datasheet (PDF)</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight bg-paper">
+    <div class="wrap detail">
+      <div class="prose">
+        <span class="dim" aria-hidden="true"></span>
+        <h2>About this product</h2>
+        {p.description.map((para) => <p>{para}</p>)}
+      </div>
+      <div class="features">
+        <h3>Features</h3>
+        <ul>
+          {p.features.map((f) => <li><Icon name="check" /> {f}</li>)}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="wrap">
+      <SpecTable product={p} />
+    </div>
+  </section>
+
+  <section class="section-tight bg-paper">
+    <div class="wrap docs">
+      <div>
+        <span class="dim" aria-hidden="true"></span>
+        <h2>Downloads</h2>
+        <ul class="dl-list">
+          {p.downloads.map((d) => (
+            <li>
+              <a href={d.href}>
+                <Icon name="file" />
+                <span class="dl-body"><strong>{d.label}</strong><span>{d.type} · PDF · {d.size}</span></span>
+                <Icon name="download" class="dl-icon" />
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div id="enquire">
+        <EnquiryForm product={`${p.name} (${p.code})`} compact heading="Ask about this product" />
+      </div>
+    </div>
+  </section>
+
+  {related.length > 0 && (
+    <section class="section-tight">
+      <div class="wrap">
+        <div class="rel-head">
+          <span class="dim" aria-hidden="true"></span>
+          <h2>Related products</h2>
+          <a class="textlink" href={`/products/${cat.slug}`}>All {cat.short.toLowerCase()}</a>
+        </div>
+        <div class="grid cols-4">
+          {related.map((r) => <ProductCard product={r} />)}
+        </div>
+      </div>
+    </section>
+  )}
+</Base>
+
+<style>
+  .top { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; margin-top: 28px; align-items: start; }
+  .gallery { display: grid; gap: 14px; }
+  .main-art { margin: 0; background: var(--white); border: 1px solid var(--zinc); border-radius: var(--radius); aspect-ratio: 1; position: relative; }
+  .main-art img { position: absolute; inset: 24px; width: calc(100% - 48px); height: calc(100% - 48px); object-fit: contain; }
+  .thumbs img { width: 100%; height: 100%; object-fit: contain; }
+  .main-art figcaption { position: absolute; left: 16px; bottom: 12px; font-size: var(--t-xs); color: var(--steel); }
+  .thumbs { display: flex; gap: 10px; }
+  .thumbs li { width: 84px; height: 84px; border: 1px solid var(--zinc); border-radius: var(--radius); display: grid; place-items: center; padding: 8px; background: var(--white); }
+  .thumbs li.on { border-color: var(--navy); }
+  .thumb-doc { color: var(--steel); font-size: var(--t-xs); gap: 2px; }
+  .thumb-doc :global(svg) { width: 22px; height: 22px; }
+
+  .code { display: flex; align-items: center; gap: 12px; font-weight: 600; color: var(--navy); font-size: var(--t-sm); margin-bottom: 10px; }
+  .summary h1 { font-size: clamp(2rem, 3.6vw, 2.75rem); margin-bottom: 14px; }
+  .facts { display: grid; grid-template-columns: 1fr 1fr; gap: 0 24px; margin-top: 28px; border-top: 1px solid var(--zinc); }
+  .facts div { display: grid; gap: 2px; padding: 12px 0; border-bottom: 1px solid var(--zinc); }
+  .facts div:nth-child(1), .facts div:nth-child(4), .facts div:nth-child(5) { grid-column: 1 / -1; }
+  .facts dt { font-size: var(--t-xs); color: var(--steel); }
+  .facts dd { margin: 0; font-weight: 500; }
+  .facts div:nth-child(1) dd { font-family: var(--font-display); font-weight: 700; font-size: 1.75rem; color: var(--orange-dark); }
+  .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-top: 28px; }
+  .dl-link { display: inline-flex; align-items: center; gap: 8px; font-weight: 500; color: var(--navy); }
+  .dl-link :global(svg) { width: 18px; height: 18px; color: var(--orange); }
+
+  .detail { display: grid; grid-template-columns: 1.3fr 1fr; gap: 56px; }
+  .detail h2 { margin: 10px 0 18px; }
+  .features { background: var(--white); border: 1px solid var(--zinc); border-radius: var(--radius); padding: 26px 28px; align-self: start; }
+  .features h3 { margin-bottom: 14px; }
+  .features li { display: flex; gap: 10px; align-items: flex-start; padding: 8px 0; border-top: 1px solid var(--zinc); }
+  .features :global(svg) { width: 18px; height: 18px; color: var(--orange); flex: none; margin-top: 4px; }
+
+  .docs { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
+  .docs h2 { margin: 10px 0 18px; }
+  .dl-list { display: grid; gap: 10px; }
+  .dl-list a { display: flex; align-items: center; gap: 14px; padding: 14px 16px; background: var(--white); border: 1px solid var(--zinc); border-radius: var(--radius); transition: border-color .15s; }
+  .dl-list a:hover { border-color: var(--navy); }
+  .dl-list :global(svg) { width: 22px; height: 22px; color: var(--navy); flex: none; }
+  .dl-list :global(.dl-icon) { color: var(--orange); margin-left: auto; }
+  .dl-body { display: grid; gap: 2px; }
+  .dl-body span { font-size: var(--t-xs); color: var(--steel); }
+
+  .rel-head { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin-bottom: 24px; }
+  .rel-head h2 { margin-right: auto; }
+  #enquire { scroll-margin-top: 140px; }
+
+  @media (max-width: 960px) { .top, .detail, .docs { grid-template-columns: 1fr; gap: 32px; } .main-art { aspect-ratio: 4 / 3; padding: 24px; } }
+  @media (max-width: 480px) { .facts { grid-template-columns: 1fr; } .facts div { grid-column: auto !important; } }
+</style>

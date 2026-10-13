@@ -1,0 +1,94 @@
+---
+import type { Product } from '../data/products';
+import { mmToIn, kgToLb, fmt } from '../lib/units';
+
+interface Props { product: Product; id?: string }
+const { product, id = 'specifications' } = Astro.props;
+const cols = product.specColumns;
+
+function cell(kind: string, v: string | number) {
+  if (typeof v === 'string') return { m: v, i: v, unitful: false };
+  if (kind === 'mm') return { m: fmt(v, 1), i: fmt(mmToIn(v), 2), unitful: true };
+  if (kind === 'kg') return { m: fmt(v, 2), i: fmt(kgToLb(v), 2), unitful: true };
+  return { m: fmt(v, 2), i: fmt(v, 2), unitful: false };
+}
+const unitLabel = (kind: string) => (kind === 'mm' ? { m: 'mm', i: 'in' } : kind === 'kg' ? { m: 'kg', i: 'lb' } : kind === 't' ? { m: 't', i: 't' } : kind === 'kn' ? { m: 'kN', i: 'kN' } : kind === 'daN' ? { m: 'daN', i: 'daN' } : null);
+---
+<section class="spec" id={id} data-spec>
+  <div class="spec-head">
+    <div>
+      <span class="dim" aria-hidden="true"></span>
+      <h2>Specifications</h2>
+      <p class="muted small">Dimensions refer to the drawing letters on the product datasheet. WLL in tonnes.</p>
+    </div>
+    <div class="units" role="group" aria-label="Units">
+      <button type="button" class="on" data-unit="m" aria-pressed="true">Metric</button>
+      <button type="button" data-unit="i" aria-pressed="false">Imperial</button>
+    </div>
+  </div>
+
+  <div class="table-scroll" tabindex="0">
+    <table>
+      <thead>
+        <tr>
+          {cols.map((c) => {
+            const u = unitLabel(c.kind);
+            return (
+              <th scope="col" class:list={[{ wll: c.key.startsWith('wll') || c.key === 'lc' }, { num: c.kind !== 'text' }]}>
+                {c.label}
+                {u && <span class="u" data-m={u.m} data-i={u.i}>{u.m}</span>}
+              </th>
+            );
+          })}
+        </tr>
+      </thead>
+      <tbody>
+        {product.specRows.map((row) => (
+          <tr>
+            {cols.map((c, i) => {
+              const v = cell(c.kind, row[c.key] ?? '');
+              const cls = [{ wll: c.key.startsWith('wll') || c.key === 'lc' }, { num: c.kind !== 'text' }, { code: i === 0 }];
+              return i === 0
+                ? <th scope="row" class:list={cls}>{v.m}</th>
+                : <td class:list={cls} data-m={v.unitful ? v.m : undefined} data-i={v.unitful ? v.i : undefined}>{v.m}</td>;
+            })}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-spec]').forEach((root) => {
+    const btns = root.querySelectorAll<HTMLButtonElement>('[data-unit]');
+    const swap = (u: 'm' | 'i') => {
+      root.querySelectorAll<HTMLElement>('[data-m]').forEach((el) => { el.textContent = el.dataset[u] ?? ''; });
+      btns.forEach((b) => { const on = b.dataset.unit === u; b.classList.toggle('on', on); b.setAttribute('aria-pressed', String(on)); });
+    };
+    btns.forEach((b) => b.addEventListener('click', () => swap(b.dataset.unit as 'm' | 'i')));
+  });
+</script>
+
+<style>
+  .spec { scroll-margin-top: 140px; }
+  .spec-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap; margin-bottom: 20px; }
+  .spec-head h2 { margin: 10px 0 6px; }
+  .units { display: inline-flex; border: 1px solid var(--zinc); border-radius: var(--radius); overflow: hidden; }
+  .units button { padding: 9px 16px; font-family: var(--font-display); font-weight: 600; font-size: 1rem; color: var(--steel); background: var(--white); transition: background .15s, color .15s; }
+  .units button + button { border-left: 1px solid var(--zinc); }
+  .units button.on { background: var(--navy); color: var(--white); }
+  .table-scroll { overflow-x: auto; border: 1px solid var(--zinc); border-radius: var(--radius); }
+  table { min-width: 720px; font-size: var(--t-sm); }
+  thead th { background: var(--ink); color: var(--white); text-align: left; padding: 12px 14px; font-weight: 500; white-space: nowrap; vertical-align: bottom; }
+  thead th .u { display: block; font-size: var(--t-xs); color: #b7c0d2; font-weight: 400; }
+  tbody th, tbody td { padding: 10px 14px; border-top: 1px solid var(--zinc); text-align: left; font-weight: 400; white-space: nowrap; }
+  tbody tr:nth-child(even) { background: var(--paper); }
+  tbody th.code { font-weight: 600; color: var(--navy); }
+  .num { text-align: right; font-variant-numeric: tabular-nums; }
+  thead th.num { text-align: right; }
+  .wll { font-weight: 600; }
+  tbody .wll { background: var(--orange-soft); color: var(--orange-dark); }
+  thead .wll { background: var(--orange); }
+  thead .wll .u { color: #ffe3d3; }
+</style>

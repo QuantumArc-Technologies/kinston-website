@@ -1,0 +1,253 @@
+---
+import Base from '../layouts/Base.astro';
+import ProductCard from '../components/ProductCard.astro';
+import SectionHeading from '../components/SectionHeading.astro';
+import CtaBand from '../components/CtaBand.astro';
+import Icon from '../components/Icon.astro';
+import { site, sectors, certifications, stats } from '../data/site';
+import { allCategoriesWithCounts, featuredProducts } from '../data/products';
+import { latestArticles } from '../data/news';
+
+const cats = allCategoriesWithCounts();
+const featured = featuredProducts().slice(0, 4);
+const news = latestArticles(3);
+const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+---
+<Base
+  title="Kinston Lifting | Certified lifting chain, hooks, shackles and hoists"
+  description={site.description}
+  path="/"
+>
+  <section class="hero blueprint">
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <span class="dim" aria-hidden="true" style="--w:96px"></span>
+        <h1>Lifting gear built to a standard and proven on a test bed.</h1>
+        <p class="lede">Grade 100 and Grade 80 chain slings, hooks, shackles, master links, wire rope fittings and hoists. Every item is proof tested, marked and traceable to its heat number before it leaves us.</p>
+        <div class="hero-actions">
+          <a class="btn" href="/products">Browse products</a>
+          <a class="btn btn-outline-light" href="/contact">Talk to an engineer</a>
+        </div>
+        <ul class="proof">
+          <li><Icon name="shield" /> EN 1677 and ASME B30 compliant</li>
+          <li><Icon name="gauge" /> Proof loaded to 2.5 × WLL</li>
+          <li><Icon name="tag" /> Serial numbered with certificate</li>
+        </ul>
+      </div>
+      <div class="hero-art-wrap">
+        <figure class="hero-fig">
+          <img src="/images/hero-hook.webp" alt="Kinston clevis self-locking hook, Grade 100" width="1100" height="1100" fetchpriority="high" decoding="async" />
+          <svg class="dims" viewBox="0 0 1100 1100" aria-hidden="true" fill="none" stroke="var(--orange)" stroke-width="3">
+            <path class="dl" d="M300 172 H360 M300 933 H360" />
+            <path class="dl" d="M330 172 V933" />
+            <text x="272" y="560" class="dt" text-anchor="middle">K</text>
+            <path class="dl" d="M495 520 V560 M697 520 V560" />
+            <path class="dl" d="M495 540 H697" />
+            <text x="596" y="522" class="dt" text-anchor="middle">A</text>
+            <path class="dl" d="M496 960 V1000 M694 960 V1000" />
+            <path class="dl" d="M496 980 H694" />
+            <text x="595" y="1040" class="dt" text-anchor="middle">D</text>
+            <path class="dl" d="M820 611 H880 M820 714 H880" />
+            <path class="dl" d="M850 611 V714" />
+            <text x="900" y="672" class="dt">H</text>
+          </svg>
+          <figcaption class="visually-hidden">Dimensions A, D, H and K are listed on the product datasheet</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <SectionHeading title="Eight ranges, one standard of testing" lead="Choose a range to see every product with dimensions, working load limits and downloads." />
+      <ul class="ranges">
+        {cats.map((c) => (
+          <li>
+            <a href={`/products/${c.slug}`}>
+              <div class="range-art"><img src={`/images/products/${c.art}.webp`} alt="" loading="lazy" decoding="async" width="600" height="600" /></div>
+              <div class="range-body">
+                <h3>{c.name}</h3>
+                <p>{c.description}</p>
+                <span class="range-meta">{c.count} products</span>
+              </div>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="section bg-paper">
+    <div class="wrap why">
+      <div class="why-copy">
+        <SectionHeading title="Why riggers specify Kinston" />
+        <p class="prose">A lifting component is only as good as the test certificate behind it. We forge, heat treat, test and mark under one quality system, so the hook in your hand matches the number on the certificate and the drawing on the datasheet.</p>
+        <ul class="stats">
+          {stats.map((s) => (
+            <li><strong>{s.value}</strong><span>{s.label}</span></li>
+          ))}
+        </ul>
+      </div>
+      <ol class="why-list">
+        <li>
+          <h3>Every item proof tested</h3>
+          <p>Components are loaded to 2.5 times WLL and chain slings to 2 times WLL on calibrated beds, with the load trace stored against the serial number.</p>
+        </li>
+        <li>
+          <h3>Traceable from heat to hook</h3>
+          <p>Each forging carries a batch code that links to the steel heat number, heat treatment chart, magnetic particle inspection and proof test record.</p>
+        </li>
+        <li>
+          <h3>Stock in three regions</h3>
+          <p>Sharjah, Navi Mumbai and Rotterdam hold the full component range. Chain slings are assembled and proof tested at each site for same-week delivery.</p>
+        </li>
+        <li>
+          <h3>Engineers on the phone</h3>
+          <p>Send the load, the lift points and the environment. You get a sling design, product codes and a quotation within one working day.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="feat-head">
+        <SectionHeading title="Most specified this quarter" />
+        <a class="textlink" href="/products">All products</a>
+      </div>
+      <div class="grid cols-4">
+        {featured.map((p) => <ProductCard product={p} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-navy">
+    <div class="wrap">
+      <SectionHeading title="Built for the sectors that lift every day" lead="From tower crane rigging to subsea release, our ranges are specified where downtime is expensive and inspection is strict." />
+      <ul class="sectors">
+        {sectors.map((s) => (
+          <li>
+            <a href={`/industries#${s.slug}`}>
+              <h3>{s.name}</h3>
+              <p>{s.body}</p>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="section bg-paper">
+    <div class="wrap quality">
+      <div>
+        <SectionHeading title="Certified, audited, documented" lead="Our quality system is certified by DNV and our offshore ranges hold DNV type approval. Certificates are on the downloads page." />
+        <a class="btn btn-navy" href="/quality">Quality and certification</a>
+      </div>
+      <ul class="certs">
+        {certifications.map((c) => (
+          <li>
+            <strong>{c.code}</strong>
+            <span>{c.title}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="feat-head">
+        <SectionHeading title="News and technical notes" />
+        <a class="textlink" href="/news">All news</a>
+      </div>
+      <ul class="news">
+        {news.map((a) => (
+          <li>
+            <a href={`/news/${a.slug}`}>
+              <p class="news-meta"><span class="tag tag-navy">{a.category}</span> <time datetime={a.date}>{fmtDate(a.date)}</time></p>
+              <h3>{a.title}</h3>
+              <p class="muted">{a.excerpt}</p>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <CtaBand />
+</Base>
+
+<style>
+  .hero { color: var(--white); overflow: hidden; }
+  .hero-inner { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 48px; align-items: center; min-height: 640px; padding-block: 64px; }
+  .hero h1 { color: var(--white); margin: 18px 0 22px; max-width: 15ch; font-size: clamp(2.75rem, 6vw, 5rem); text-wrap: balance; }
+  .hero .lede { color: #c3cbdb; max-width: 54ch; }
+  .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 32px; }
+  .proof { display: flex; flex-wrap: wrap; gap: 10px 28px; margin-top: 40px; font-size: var(--t-sm); color: #c3cbdb; }
+  .proof li { display: inline-flex; align-items: center; gap: 8px; }
+  .proof :global(svg) { width: 18px; height: 18px; color: var(--orange); }
+  .hero-art-wrap { max-width: 600px; justify-self: end; width: 100%; }
+  .hero-fig { position: relative; margin: 0; }
+  .hero-fig img { width: 100%; height: auto; -webkit-mask-image: radial-gradient(circle at 50% 50%, #000 58%, transparent 74%); mask-image: radial-gradient(circle at 50% 50%, #000 58%, transparent 74%); }
+  .dims { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .dt { font-family: var(--font-display); font-weight: 600; font-size: 40px; fill: var(--white); stroke: none; }
+  .dl { stroke-dasharray: 900; stroke-dashoffset: 900; animation: draw 1.4s var(--ease) forwards; animation-delay: .35s; }
+  .dt { opacity: 0; animation: fade .5s ease forwards; animation-delay: 1.3s; }
+  @keyframes draw { to { stroke-dashoffset: 0; } }
+  @keyframes fade { to { opacity: 1; } }
+  @media (prefers-reduced-motion: reduce) { .dl { stroke-dashoffset: 0; animation: none; } .dt { opacity: 1; animation: none; } }
+
+  .ranges { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
+  .ranges a { display: grid; grid-template-rows: auto 1fr; height: 100%; border: 1px solid var(--zinc); border-radius: var(--radius); overflow: hidden; transition: border-color .18s var(--ease), transform .18s var(--ease); }
+  .ranges a:hover { border-color: var(--navy); transform: translateY(-2px); }
+  .range-art { position: relative; background: var(--white); aspect-ratio: 5 / 3; border-bottom: 1px solid var(--zinc); overflow: hidden; }
+  .range-art img { position: absolute; inset: 8px; width: calc(100% - 16px); height: calc(100% - 16px); object-fit: contain; transition: transform .25s var(--ease); }
+  .ranges a:hover .range-art img { transform: scale(1.04); }
+  .range-body { padding: 20px 22px 22px; display: grid; gap: 8px; align-content: start; }
+  .range-body h3 { font-size: 1.4rem; }
+  .ranges a:hover h3 { color: var(--orange); }
+  .range-body p { font-size: var(--t-sm); color: var(--steel); }
+  .range-meta { font-size: var(--t-xs); color: var(--navy); font-weight: 500; margin-top: 4px; }
+
+  .why { display: grid; grid-template-columns: 1fr 1.2fr; gap: 64px; align-items: start; }
+  .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 40px; }
+  .stats li { display: grid; gap: 4px; padding-left: 16px; border-left: 3px solid var(--orange); }
+  .stats strong { font-family: var(--font-display); font-weight: 700; font-size: 2.5rem; line-height: 1; color: var(--navy); }
+  .stats span { font-size: var(--t-sm); color: var(--steel); }
+  .why-list { display: grid; }
+  .why-list li { padding: 26px 0; border-top: 1px solid #cfd6e2; }
+  .why-list li:last-child { border-bottom: 1px solid #cfd6e2; }
+  .why-list h3 { margin-bottom: 8px; font-size: 1.5rem; }
+  .why-list p { color: var(--steel); max-width: 56ch; }
+
+  .feat-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; }
+  .feat-head .textlink { margin-bottom: clamp(32px, 4vw, 48px); white-space: nowrap; }
+
+  .sectors { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 2px; background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.12); }
+  .sectors a { display: block; height: 100%; padding: 24px 22px 28px; background: var(--navy); transition: background .18s; }
+  .sectors a:hover { background: var(--navy-dark); }
+  .sectors h3 { font-size: 1.4rem; margin-bottom: 8px; }
+  .sectors p { font-size: var(--t-sm); color: #c3cdea; }
+
+  .quality { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
+  .certs { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .certs li { display: grid; gap: 4px; padding: 18px 20px; background: var(--white); border: 1px solid var(--zinc); border-radius: var(--radius); }
+  .certs strong { font-family: var(--font-display); font-weight: 700; font-size: 1.35rem; color: var(--navy); }
+  .certs span { font-size: var(--t-sm); color: var(--steel); }
+
+  .news { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+  .news a { display: grid; gap: 12px; align-content: start; height: 100%; padding-top: 18px; border-top: 3px solid var(--ink); }
+  .news a:hover { border-top-color: var(--orange); }
+  .news h3 { font-size: 1.5rem; }
+  .news a:hover h3 { color: var(--orange); }
+  .news-meta { display: flex; align-items: center; gap: 12px; font-size: var(--t-xs); color: var(--steel); }
+
+  @media (max-width: 1100px) { .ranges { grid-template-columns: repeat(2, 1fr); } .sectors { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 960px) {
+    .hero-inner { grid-template-columns: 1fr; min-height: 0; }
+    .hero-art-wrap { justify-self: center; max-width: 440px; }
+    .why, .quality { grid-template-columns: 1fr; gap: 40px; }
+    .news { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px) { .ranges, .sectors, .certs, .stats { grid-template-columns: 1fr; } }
+</style>

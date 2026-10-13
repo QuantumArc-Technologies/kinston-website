@@ -1,0 +1,69 @@
+---
+import Base from '../../layouts/Base.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { allCategoriesWithCounts, productsByCategory } from '../../data/products';
+import { breadcrumbLd } from '../../lib/seo';
+
+const cats = allCategoriesWithCounts();
+const crumbs = [{ name: 'Home', href: '/' }, { name: 'Products', href: '/products' }];
+---
+<Base
+  title="Products: lifting chain, hooks, shackles, master links, hoists"
+  description="Browse Kinston's eight product ranges: chain slings, hooks, shackles, master links, wire rope fittings, lifting points, hoists and textile slings. Dimensions, WLL tables and downloads for every item."
+  path="/products"
+  jsonLd={[breadcrumbLd(crumbs)]}
+>
+  <section class="page-head bg-ink">
+    <div class="wrap">
+      <Breadcrumb items={crumbs} light />
+      <h1>Products</h1>
+      <p class="lede">Eight ranges covering the lifting chain from crane hook to load. Every product page carries the full dimension table in metric and imperial, the standards it is made to, and the datasheet and certificate downloads.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <ul class="cat-list">
+        {cats.map((c) => {
+          const items = productsByCategory(c.slug);
+          return (
+            <li class="cat">
+              <a class="cat-art" href={`/products/${c.slug}`}><img src={`/images/products/${c.art}.webp`} alt={c.name} loading="lazy" decoding="async" width="600" height="600" /></a>
+              <div class="cat-body">
+                <h2><a href={`/products/${c.slug}`}>{c.name}</a></h2>
+                <p class="muted">{c.description}</p>
+                <ul class="cat-groups">
+                  {c.groups.map((g) => {
+                    const n = items.filter((p) => p.group === g).length;
+                    return <li><a href={`/products/${c.slug}#${g.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}>{g}<span>{n}</span></a></li>;
+                  })}
+                </ul>
+                <a class="textlink" href={`/products/${c.slug}`}>View {c.count} products</a>
+              </div>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+  </section>
+  <CtaBand title="Can't see what you need?" body="We build bespoke assemblies, non-standard lengths and special finishes. Send a drawing or a description and we will quote it." />
+</Base>
+
+<style>
+  .cat-list { display: grid; gap: 0; }
+  .cat { display: grid; grid-template-columns: 300px 1fr; gap: 40px; padding-block: 40px; border-top: 1px solid var(--zinc); }
+  .cat:last-child { border-bottom: 1px solid var(--zinc); }
+  .cat-art { position: relative; background: var(--white); border: 1px solid var(--zinc); border-radius: var(--radius); aspect-ratio: 4 / 3; transition: border-color .18s; overflow: hidden; }
+  .cat-art img { position: absolute; inset: 8px; width: calc(100% - 16px); height: calc(100% - 16px); object-fit: contain; }
+  .cat-art:hover { border-color: var(--navy); }
+  .cat-body { display: grid; gap: 14px; align-content: start; }
+  .cat-body h2 a:hover { color: var(--orange); }
+  .cat-body .muted { max-width: 68ch; }
+  .cat-groups { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
+  .cat-groups a { display: inline-flex; gap: 8px; align-items: baseline; padding: 6px 12px; border: 1px solid var(--zinc); border-radius: var(--radius); font-size: var(--t-sm); font-weight: 500; transition: border-color .15s, color .15s; }
+  .cat-groups a span { font-size: var(--t-xs); color: var(--steel); }
+  .cat-groups a:hover { border-color: var(--navy); color: var(--navy); }
+  .cat-body .textlink { justify-self: start; margin-top: 6px; }
+  @media (max-width: 800px) { .cat { grid-template-columns: 1fr; gap: 20px; } .cat-art { max-width: 320px; } }
+</style>

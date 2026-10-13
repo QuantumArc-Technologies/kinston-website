@@ -1,0 +1,20 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import { site } from '../data/site';
+const crumbs = [{ name: 'Home', href: '/' }, { name: 'Terms of use', href: '/terms' }];
+---
+<Base title="Website terms of use" description="Terms governing use of the Kinston Lifting website and the technical information published on it." path="/terms">
+  <section class="page-head bg-ink"><div class="wrap"><Breadcrumb items={crumbs} light /><h1>Website terms of use</h1><p class="lede">Last updated 1 September 2026.</p></div></section>
+  <section class="section"><div class="wrap prose legal">
+    <h2>Use of technical information</h2>
+    <p>Dimensions, working load limits and other technical data on this site describe standard Kinston products at the date of publication. They are provided to assist product selection by competent persons and do not replace the product datasheet, the marking on the product or the certificate supplied with it. Where the website and the certificate differ, the certificate applies.</p>
+    <p>Lifting equipment must be selected, used, inspected and retired by competent persons in line with the applicable standards and regulations in the country of use. {site.name} accepts no liability for use of equipment outside its rated capacity or published conditions.</p>
+    <h2>Intellectual property</h2>
+    <p>The Kinston name and logo, product drawings, photographs and text on this site are the property of {site.legalName}. You may download and print pages for product selection and inspection purposes. Reproduction for other purposes requires written permission.</p>
+    <h2>Sales terms</h2>
+    <p>Nothing on this website is an offer to sell. Quotations and orders are governed by the Kinston Conditions of Sale supplied with each quotation.</p>
+    <h2>Governing law</h2>
+    <p>These terms are governed by the laws of the Emirate of Sharjah and the federal laws of the United Arab Emirates.</p>
+  </div></section>
+</Base>

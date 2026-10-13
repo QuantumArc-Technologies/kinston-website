@@ -1,0 +1,73 @@
+---
+import { categories } from '../data/categories';
+interface Props { product?: string; compact?: boolean; heading?: string }
+const { product, compact = false, heading = 'Send an enquiry' } = Astro.props;
+---
+<form class:list={['enq', { compact }]} method="post" action="https://formspree.io/f/placeholder" data-enquiry novalidate>
+  <h3>{heading}</h3>
+  <p class="muted small">Replies within one working day. Fields marked * are required.</p>
+  <input type="hidden" name="product" value={product ?? ''} />
+  <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="visually-hidden" aria-hidden="true" />
+
+  <div class="row">
+    <label>Name *<input type="text" name="name" required autocomplete="name" /></label>
+    <label>Company<input type="text" name="company" autocomplete="organization" /></label>
+  </div>
+  <div class="row">
+    <label>Email *<input type="email" name="email" required autocomplete="email" /></label>
+    <label>Phone<input type="tel" name="phone" autocomplete="tel" /></label>
+  </div>
+  {!product && (
+    <label>Product range
+      <select name="range">
+        <option value="">Not sure yet</option>
+        {categories.map((c) => <option value={c.slug}>{c.name}</option>)}
+      </select>
+    </label>
+  )}
+  <label>Message *
+    <textarea name="message" rows={compact ? 4 : 6} required placeholder={product ? `Quantity, sizes and delivery location for ${product}` : 'Load, lift points, quantity and delivery location'}></textarea>
+  </label>
+  <label class="consent"><input type="checkbox" name="consent" required /> <span>I agree to Kinston storing my details to answer this enquiry. See the <a href="/privacy">privacy policy</a>.</span></label>
+  <button class="btn" type="submit">Send enquiry</button>
+  <p class="status" role="status" aria-live="polite" data-status></p>
+</form>
+
+<script>
+  document.querySelectorAll<HTMLFormElement>('[data-enquiry]').forEach((form) => {
+    const status = form.querySelector<HTMLElement>('[data-status]')!;
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        status.textContent = 'Complete the required fields before sending.';
+        status.dataset.state = 'error';
+        return;
+      }
+      status.textContent = 'Enquiry sent. We will reply within one working day.';
+      status.dataset.state = 'ok';
+      form.reset();
+    });
+  });
+</script>
+
+<style>
+  .enq { display: grid; gap: 16px; background: var(--white); border: 1px solid var(--zinc); border-radius: var(--radius); padding: 28px; }
+  .enq h3 { margin-bottom: -8px; }
+  .row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  label { display: grid; gap: 6px; font-size: var(--t-sm); font-weight: 500; color: var(--ink-2); }
+  input[type='text']:not(.visually-hidden), input[type='email'], input[type='tel'], select, textarea {
+    width: 100%; padding: 12px 14px; border: 1px solid #c7cedb; border-radius: var(--radius); background: var(--white); font-size: var(--t-base); font-weight: 400;
+    transition: border-color .15s, box-shadow .15s;
+  }
+  input:focus, select:focus, textarea:focus { outline: none; border-color: var(--navy); box-shadow: 0 0 0 3px rgba(10,46,120,.15); }
+  textarea { resize: vertical; }
+  .consent { grid-template-columns: auto 1fr; align-items: start; font-weight: 400; color: var(--steel); }
+  .consent input { margin-top: 4px; accent-color: var(--orange); }
+  .consent a { color: var(--navy); text-decoration: underline; }
+  .btn { justify-self: start; }
+  .status { font-size: var(--t-sm); min-height: 1.4em; }
+  .status[data-state='ok'] { color: #1a7f4b; }
+  .status[data-state='error'] { color: #b42318; }
+  @media (max-width: 560px) { .row { grid-template-columns: 1fr; } .enq { padding: 20px; } }
+</style>

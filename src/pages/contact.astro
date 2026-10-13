@@ -1,0 +1,61 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import EnquiryForm from '../components/EnquiryForm.astro';
+import Icon from '../components/Icon.astro';
+import { site, offices } from '../data/site';
+import { breadcrumbLd } from '../lib/seo';
+
+const crumbs = [{ name: 'Home', href: '/' }, { name: 'Contact', href: '/contact' }];
+---
+<Base title="Contact Kinston Lifting" description={`Request a quote or talk to an engineer. Call ${site.phone}, email ${site.email}, or visit our offices in Sharjah, Navi Mumbai and Rotterdam.`} path="/contact" jsonLd={[breadcrumbLd(crumbs)]}>
+  <section class="page-head bg-ink">
+    <div class="wrap">
+      <Breadcrumb items={crumbs} light />
+      <h1>Contact</h1>
+      <p class="lede">Quotes, sling designs, certificates and technical questions. Call, email or send the form and an engineer will reply within one working day.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap two">
+      <div class="info">
+        <ul class="direct">
+          <li><Icon name="phone" /><div><span>Sales</span><a href={site.phoneHref}>{site.phone}</a></div></li>
+          <li><Icon name="mail" /><div><span>Email</span><a href={`mailto:${site.email}`}>{site.email}</a></div></li>
+          <li><Icon name="clock" /><div><span>Hours</span><strong>Mon–Sat 08:00–18:00 GST</strong></div></li>
+        </ul>
+        <h2>Offices</h2>
+        <ul class="offices">
+          {offices.map((o) => (
+            <li>
+              <h3>{o.city}, {o.country}</h3>
+              <p class="role">{o.role}</p>
+              <address>{o.address.map((l) => <span>{l}</span>)}</address>
+              <p><a href={`tel:${o.phone.replace(/\s/g, '')}`}>{o.phone}</a><br /><a href={`mailto:${o.email}`}>{o.email}</a></p>
+              <p class="muted small">{o.hours}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <EnquiryForm heading="Request a quote" />
+    </div>
+  </section>
+</Base>
+<style>
+  .two { display: grid; grid-template-columns: 1fr 1.1fr; gap: 64px; align-items: start; }
+  .direct { display: grid; gap: 16px; margin-bottom: 40px; }
+  .direct li { display: flex; gap: 14px; align-items: center; }
+  .direct :global(svg) { width: 26px; height: 26px; color: var(--orange); flex: none; }
+  .direct div { display: grid; }
+  .direct span { font-size: var(--t-xs); color: var(--steel); }
+  .direct a, .direct strong { font-family: var(--font-display); font-weight: 600; font-size: 1.375rem; }
+  .direct a:hover { color: var(--orange); }
+  .info h2 { font-size: 1.75rem; margin-bottom: 14px; }
+  .offices { display: grid; gap: 0; }
+  .offices li { padding: 18px 0; border-top: 1px solid var(--zinc); display: grid; gap: 4px; }
+  .offices h3 { font-size: 1.3rem; }
+  .role { color: var(--orange-dark); font-size: var(--t-sm); font-weight: 500; }
+  address { font-style: normal; display: grid; color: var(--steel); font-size: var(--t-sm); margin: 4px 0; }
+  .offices a { color: var(--navy); font-weight: 500; }
+  @media (max-width: 900px) { .two { grid-template-columns: 1fr; gap: 40px; } }
+</style>

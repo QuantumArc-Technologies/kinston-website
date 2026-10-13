@@ -1,0 +1,24 @@
+---
+import Base from '../layouts/Base.astro';
+import { categories } from '../data/categories';
+---
+<Base title="Page not found" description="The page you asked for is not on this site." noindex>
+  <section class="section nf">
+    <div class="wrap">
+      <span class="dim" aria-hidden="true"></span>
+      <h1>That page isn't here.</h1>
+      <p class="lede">The link may be out of date or the product may have been renumbered. Try one of the ranges below, or search the catalogue from the products page.</p>
+      <ul class="links">
+        {categories.map((c) => <li><a href={`/products/${c.slug}`}>{c.name}</a></li>)}
+      </ul>
+      <p><a class="btn" href="/products">All products</a></p>
+    </div>
+  </section>
+</Base>
+<style>
+  .nf { min-height: 60vh; }
+  .nf h1 { margin: 14px 0 16px; }
+  .links { display: flex; flex-wrap: wrap; gap: 10px; margin: 28px 0 32px; }
+  .links a { display: inline-block; padding: 8px 14px; border: 1px solid var(--zinc); border-radius: var(--radius); font-weight: 500; }
+  .links a:hover { border-color: var(--navy); color: var(--navy); }
+</style>

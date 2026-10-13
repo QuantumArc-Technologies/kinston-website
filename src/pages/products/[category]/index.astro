@@ -1,0 +1,107 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Breadcrumb from '../../../components/Breadcrumb.astro';
+import CategoryRail from '../../../components/CategoryRail.astro';
+import ProductCard from '../../../components/ProductCard.astro';
+import CtaBand from '../../../components/CtaBand.astro';
+import { categories } from '../../../data/categories';
+import { productsByCategory } from '../../../data/products';
+import { breadcrumbLd } from '../../../lib/seo';
+
+export function getStaticPaths() {
+  return categories.map((c) => ({ params: { category: c.slug }, props: { category: c } }));
+}
+const { category } = Astro.props;
+const items = productsByCategory(category.slug);
+const grades = [...new Set(items.map((p) => p.grade).filter(Boolean))] as string[];
+const crumbs = [{ name: 'Home', href: '/' }, { name: 'Products', href: '/products' }, { name: category.name, href: `/products/${category.slug}` }];
+const anchor = (g: string) => g.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+---
+<Base
+  title={`${category.name} | Products`}
+  description={`${category.description} ${items.length} products with dimensions, WLL tables and downloads.`}
+  path={`/products/${category.slug}`}
+  jsonLd={[breadcrumbLd(crumbs)]}
+>
+  <section class="page-head bg-ink">
+    <div class="wrap">
+      <Breadcrumb items={crumbs} light />
+      <h1>{category.name}</h1>
+      <p class="lede">{category.description}</p>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="wrap layout">
+      <CategoryRail current={category.slug} groups={category.groups} />
+      <div class="content" data-filter-root>
+        <div class="toolbar">
+          <p class="count"><strong data-count>{items.length}</strong> products</p>
+          {grades.length > 1 && (
+            <div class="filters" role="group" aria-label="Filter by grade">
+              <button type="button" class="on" data-grade="">All</button>
+              {grades.map((g) => <button type="button" data-grade={g}>{g}</button>)}
+            </div>
+          )}
+        </div>
+
+        {category.groups.map((g) => {
+          const list = items.filter((p) => p.group === g);
+          if (!list.length) return null;
+          return (
+            <div class="group" id={anchor(g)} data-group>
+              <h2>{g}</h2>
+              <div class="grid cols-3">
+                {list.map((p) => <ProductCard product={p} />)}
+              </div>
+            </div>
+          );
+        })}
+        <p class="empty" data-empty hidden>No products match that grade in this range.</p>
+      </div>
+    </div>
+  </section>
+  <CtaBand />
+</Base>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-filter-root]').forEach((root) => {
+    const btns = root.querySelectorAll<HTMLButtonElement>('[data-grade]');
+    const cards = root.querySelectorAll<HTMLElement>('[data-grade].card, a.card');
+    const groups = root.querySelectorAll<HTMLElement>('[data-group]');
+    const count = root.querySelector<HTMLElement>('[data-count]');
+    const empty = root.querySelector<HTMLElement>('[data-empty]');
+    btns.forEach((b) =>
+      b.addEventListener('click', () => {
+        const g = b.dataset.grade ?? '';
+        btns.forEach((x) => x.classList.toggle('on', x === b));
+        let shown = 0;
+        root.querySelectorAll<HTMLElement>('a.card').forEach((c) => {
+          const ok = !g || c.dataset.grade === g;
+          c.hidden = !ok;
+          if (ok) shown++;
+        });
+        groups.forEach((grp) => { grp.hidden = !grp.querySelector('a.card:not([hidden])'); });
+        if (count) count.textContent = String(shown);
+        if (empty) empty.hidden = shown > 0;
+      }),
+    );
+    void cards;
+  });
+</script>
+
+<style>
+  .layout { display: grid; grid-template-columns: 260px 1fr; gap: 56px; align-items: start; }
+  .toolbar { display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; padding-bottom: 20px; border-bottom: 1px solid var(--zinc); }
+  .count { color: var(--steel); }
+  .count strong { color: var(--ink); font-weight: 600; }
+  .filters { display: inline-flex; border: 1px solid var(--zinc); border-radius: var(--radius); overflow: hidden; }
+  .filters button { padding: 9px 16px; font-family: var(--font-display); font-weight: 600; font-size: 1rem; color: var(--steel); background: var(--white); }
+  .filters button + button { border-left: 1px solid var(--zinc); }
+  .filters button.on { background: var(--navy); color: var(--white); }
+  .group { padding-top: 36px; scroll-margin-top: 140px; }
+  .group h2 { font-size: 1.75rem; margin-bottom: 18px; display: flex; align-items: center; gap: 14px; }
+  .group h2::after { content: ''; flex: 1; height: 1px; background: var(--zinc); }
+  .empty { padding: 40px 0; color: var(--steel); }
+  @media (max-width: 960px) { .layout { grid-template-columns: 1fr; gap: 32px; } }
+</style>

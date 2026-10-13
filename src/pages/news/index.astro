@@ -1,0 +1,47 @@
+---
+import Base from '../../layouts/Base.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { articles } from '../../data/news';
+import { breadcrumbLd } from '../../lib/seo';
+
+const crumbs = [{ name: 'Home', href: '/' }, { name: 'News', href: '/news' }];
+const list = [...articles].sort((a, b) => b.date.localeCompare(a.date));
+const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+---
+<Base title="News and technical notes" description="Company news, product launches and technical guidance from Kinston Lifting: hook inspection, grade selection, certification updates and events." path="/news" jsonLd={[breadcrumbLd(crumbs)]}>
+  <section class="page-head bg-ink">
+    <div class="wrap">
+      <Breadcrumb items={crumbs} light />
+      <h1>News and technical notes</h1>
+      <p class="lede">Product approvals, new facilities and practical guidance written by the engineers who test the gear.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap">
+      <ul class="list">
+        {list.map((a) => (
+          <li>
+            <a href={`/news/${a.slug}`}>
+              <p class="meta"><span class="tag tag-navy">{a.category}</span><time datetime={a.date}>{fmtDate(a.date)}</time><span>{a.readingMinutes} min read</span></p>
+              <h2>{a.title}</h2>
+              <p class="muted">{a.excerpt}</p>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+  <CtaBand />
+</Base>
+<style>
+  .list { display: grid; }
+  .list li { border-top: 1px solid var(--zinc); }
+  .list li:last-child { border-bottom: 1px solid var(--zinc); }
+  .list a { display: grid; grid-template-columns: 220px 1fr; gap: 12px 48px; padding-block: 32px; align-items: start; }
+  .meta { display: flex; flex-direction: column; gap: 8px; font-size: var(--t-sm); color: var(--steel); align-items: flex-start; }
+  .list h2 { font-size: clamp(1.5rem, 2.4vw, 2rem); max-width: 26ch; margin-bottom: 10px; }
+  .list a:hover h2 { color: var(--orange); }
+  .list .muted { max-width: 70ch; grid-column: 2; }
+  @media (max-width: 760px) { .list a { grid-template-columns: 1fr; gap: 10px; } .meta { flex-direction: row; flex-wrap: wrap; align-items: center; } .list .muted { grid-column: 1; } }
+</style>

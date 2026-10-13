@@ -1,0 +1,60 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { sectors } from '../data/site';
+import { categories } from '../data/categories';
+import { breadcrumbLd } from '../lib/seo';
+
+const crumbs = [{ name: 'Home', href: '/' }, { name: 'Industries', href: '/industries' }];
+const picks: Record<string, string[]> = {
+  construction: ['chain-slings', 'hooks', 'lifting-points'],
+  'oil-and-gas': ['shackles', 'master-links', 'hooks'],
+  'marine-and-ports': ['wire-rope-fittings', 'shackles', 'slings-and-lashing'],
+  manufacturing: ['hoists', 'lifting-points', 'slings-and-lashing'],
+  'power-and-utilities': ['chain-slings', 'lifting-points', 'hoists'],
+  mining: ['chain-slings', 'hooks', 'shackles'],
+  logistics: ['slings-and-lashing', 'hoists', 'wire-rope-fittings'],
+  renewables: ['shackles', 'lifting-points', 'slings-and-lashing'],
+};
+---
+<Base title="Industries served" description="Kinston supplies certified lifting equipment to construction, oil and gas, marine, manufacturing, power, mining, logistics and renewables customers in 38 countries." path="/industries" jsonLd={[breadcrumbLd(crumbs)]}>
+  <section class="page-head bg-ink">
+    <div class="wrap">
+      <Breadcrumb items={crumbs} light />
+      <h1>Industries</h1>
+      <p class="lede">The same forged hook lifts precast panels on a Tuesday and a subsea manifold on a Friday. What changes is the certification, the finish and the inspection regime. We supply for all of them.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap">
+      <ul class="sectors">
+        {sectors.map((s) => (
+          <li id={s.slug}>
+            <div>
+              <span class="dim" aria-hidden="true"></span>
+              <h2>{s.name}</h2>
+              <p class="lede">{s.body}</p>
+            </div>
+            <div>
+              <h3>Typical ranges</h3>
+              <ul class="picks">
+                {picks[s.slug].map((slug) => { const c = categories.find((x) => x.slug === slug)!; return <li><a href={`/products/${c.slug}`}>{c.name}</a></li>; })}
+              </ul>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+  <CtaBand />
+</Base>
+<style>
+  .sectors > li { display: grid; grid-template-columns: 1.4fr 1fr; gap: 48px; padding-block: 40px; border-top: 1px solid var(--zinc); scroll-margin-top: 130px; }
+  .sectors > li:last-child { border-bottom: 1px solid var(--zinc); }
+  .sectors h2 { margin: 10px 0 12px; }
+  .sectors h3 { font-size: var(--t-md); margin-bottom: 10px; color: var(--steel); font-family: var(--font-body); font-weight: 500; }
+  .picks a { display: block; padding: 10px 0; border-top: 1px solid var(--zinc); font-family: var(--font-display); font-weight: 600; font-size: 1.125rem; }
+  .picks a:hover { color: var(--orange); }
+  @media (max-width: 800px) { .sectors > li { grid-template-columns: 1fr; gap: 20px; } }
+</style>

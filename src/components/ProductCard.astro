@@ -1,0 +1,37 @@
+---
+import type { Product } from '../data/products';
+import { productUrl, wllRange } from '../data/products';
+import { fmt } from '../lib/units';
+
+interface Props { product: Product; showCategory?: string }
+const { product, showCategory } = Astro.props;
+const range = wllRange(product);
+const img = product.image ?? `/images/products/${product.art}.webp`;
+---
+<a class="card" href={productUrl(product)} data-group={product.group} data-grade={product.grade ?? ''}>
+  <div class="art"><img src={img} alt={product.name} loading="lazy" decoding="async" width="600" height="600" /></div>
+  <div class="body">
+    <p class="code">{product.code}{product.grade && <span> · {product.grade}</span>}</p>
+    <h3>{product.name}</h3>
+    {range && (
+      <p class="wll">
+        WLL {fmt(range.min, 2)}{range.min !== range.max && ` to ${fmt(range.max, 2)}`} t
+      </p>
+    )}
+    {showCategory && <p class="cat">{showCategory}</p>}
+  </div>
+</a>
+<style>
+  .card { display: grid; grid-template-rows: auto 1fr; background: var(--white); border: 1px solid var(--zinc); border-radius: var(--radius); overflow: hidden; transition: border-color .18s var(--ease), transform .18s var(--ease); }
+  .card:hover { border-color: var(--navy); transform: translateY(-2px); }
+  .art { position: relative; background: var(--white); aspect-ratio: 4 / 3; border-bottom: 1px solid var(--zinc); overflow: hidden; }
+  .art img { position: absolute; inset: 8px; width: calc(100% - 16px); height: calc(100% - 16px); object-fit: contain; transition: transform .25s var(--ease); }
+  .card:hover .art img { transform: scale(1.04); }
+  .body { padding: 18px 20px 20px; display: grid; gap: 6px; align-content: start; }
+  .code { font-size: var(--t-xs); color: var(--steel); font-weight: 500; }
+  .code span { color: var(--navy); }
+  h3 { font-size: 1.3rem; line-height: 1.15; }
+  .card:hover h3 { color: var(--orange); }
+  .wll { font-size: var(--t-sm); color: var(--ink-2); font-weight: 500; }
+  .cat { font-size: var(--t-xs); color: var(--steel); }
+</style>

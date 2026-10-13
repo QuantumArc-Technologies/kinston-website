@@ -1,0 +1,76 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import CtaBand from '../components/CtaBand.astro';
+import Icon from '../components/Icon.astro';
+import { downloads } from '../data/downloads';
+import { products, productUrl } from '../data/products';
+import { breadcrumbLd } from '../lib/seo';
+
+const crumbs = [{ name: 'Home', href: '/' }, { name: 'Downloads', href: '/downloads' }];
+const types = ['Catalogue', 'Certificate', 'Manual', 'Guide'] as const;
+const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { month: 'short', year: 'numeric' });
+---
+<Base title="Downloads: catalogues, certificates and manuals" description="Download the Kinston product catalogue, ISO and DNV certificates, hoist operating manuals and technical guides. Product datasheets are on each product page." path="/downloads" jsonLd={[breadcrumbLd(crumbs)]}>
+  <section class="page-head bg-ink">
+    <div class="wrap">
+      <Breadcrumb items={crumbs} light />
+      <h1>Downloads</h1>
+      <p class="lede">Catalogues, certificates, manuals and guides. Datasheets and CAD files for individual products are on each product page.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap">
+      {types.map((t) => {
+        const list = downloads.filter((d) => d.type === t);
+        return (
+          <div class="group">
+            <h2>{t}s</h2>
+            <ul class="list">
+              {list.map((d) => (
+                <li>
+                  <a href={d.href}>
+                    <Icon name="file" />
+                    <span class="body">
+                      <strong>{d.title}</strong>
+                      <span class="desc">{d.description}</span>
+                    </span>
+                    <span class="meta">PDF · {d.size}<br />Updated {fmtDate(d.updated)}</span>
+                    <Icon name="download" class="dl" />
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        );
+      })}
+
+      <div class="group">
+        <h2>Product datasheets</h2>
+        <p class="muted">Each datasheet includes the dimension drawing, full WLL table and standards. Open the product page to download.</p>
+        <ul class="sheets">
+          {products.map((p) => <li><a href={`${productUrl(p)}#specifications`}>{p.name} <span>{p.code}</span></a></li>)}
+        </ul>
+      </div>
+    </div>
+  </section>
+  <CtaBand title="Need a document we haven't listed?" body="Test certificates for a specific batch, welding procedures, or type approval scope letters are available on request." />
+</Base>
+<style>
+  .group + .group { margin-top: 48px; }
+  .group h2 { font-size: 1.75rem; margin-bottom: 16px; display: flex; align-items: center; gap: 14px; }
+  .group h2::after { content: ''; flex: 1; height: 1px; background: var(--zinc); }
+  .list { display: grid; gap: 10px; }
+  .list a { display: grid; grid-template-columns: auto 1fr auto auto; align-items: center; gap: 18px; padding: 16px 18px; border: 1px solid var(--zinc); border-radius: var(--radius); transition: border-color .15s; }
+  .list a:hover { border-color: var(--navy); }
+  .list :global(svg) { width: 24px; height: 24px; color: var(--navy); }
+  .list :global(.dl) { color: var(--orange); }
+  .body { display: grid; gap: 2px; }
+  .desc { font-size: var(--t-sm); color: var(--steel); }
+  .meta { font-size: var(--t-xs); color: var(--steel); text-align: right; white-space: nowrap; }
+  .sheets { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 32px; margin-top: 16px; }
+  .sheets a { display: flex; justify-content: space-between; gap: 12px; padding: 9px 0; border-bottom: 1px solid var(--zinc); font-size: var(--t-sm); }
+  .sheets a span { color: var(--steel); font-size: var(--t-xs); white-space: nowrap; }
+  .sheets a:hover { color: var(--orange); }
+  @media (max-width: 800px) { .list a { grid-template-columns: auto 1fr auto; } .meta { display: none; } .sheets { grid-template-columns: 1fr; } }
+</style>

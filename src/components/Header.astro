@@ -1,0 +1,179 @@
+---
+import { site, nav } from '../data/site';
+import { allCategoriesWithCounts } from '../data/products';
+import Icon from './Icon.astro';
+
+interface Props { dark?: boolean }
+const { dark = false } = Astro.props;
+const path = Astro.url.pathname;
+const isActive = (href: string) => (href === '/' ? path === '/' : path.startsWith(href));
+const cats = allCategoriesWithCounts();
+---
+<header class:list={['site-header', { dark }]}>
+  <div class="topbar">
+    <div class="wrap topbar-inner">
+      <p class="tag-line">Certified lifting components, proof tested before despatch</p>
+      <ul class="topbar-links">
+        <li><a href={site.phoneHref}><Icon name="phone" /> {site.phone}</a></li>
+        <li><a href={`mailto:${site.email}`}><Icon name="mail" /> {site.email}</a></li>
+        <li><a href="/downloads"><Icon name="download" /> Catalogue</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="mainbar">
+    <div class="wrap mainbar-inner">
+      <a href="/" class="logo" aria-label={`${site.name} home`}>
+        <img src="/brand/kinston-logo.png" alt="Kinston — Lifting · Trust · Performance" width="1380" height="334" />
+      </a>
+
+      <nav class="primary" aria-label="Primary">
+        <ul>
+          {nav.map((item) => (
+            <li class:list={[{ 'has-mega': item.mega }]}>
+              <a href={item.href} aria-current={isActive(item.href) ? 'page' : undefined}>
+                {item.label}
+                {item.mega && <Icon name="chevron" />}
+              </a>
+              {item.mega && (
+                <div class="mega" aria-label="Product categories">
+                  <div class="wrap mega-inner">
+                    <div class="mega-intro">
+                      <h3>Products</h3>
+                      <p class="muted">Eight ranges, every item proof tested and traceable to its heat number.</p>
+                      <a class="textlink" href="/products">View all ranges</a>
+                    </div>
+                    <ul class="mega-grid">
+                      {cats.map((c) => (
+                        <li>
+                          <a href={`/products/${c.slug}`}>
+                            <span class="mega-name">{c.name}</span>
+                            <span class="mega-meta">{c.count} products</span>
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              )}
+            </li>
+          ))}
+        </ul>
+      </nav>
+
+      <a href="/contact" class="btn btn-sm quote">Request a quote</a>
+
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-nav" data-menu-toggle>
+        <span class="visually-hidden">Toggle menu</span>
+        <Icon name="menu" class="ico-menu" />
+        <Icon name="close" class="ico-close" />
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-nav" id="mobile-nav" hidden>
+    <nav aria-label="Mobile">
+      <ul>
+        {nav.map((item) => (
+          <li>
+            <a href={item.href} aria-current={isActive(item.href) ? 'page' : undefined}>{item.label}</a>
+            {item.mega && (
+              <ul class="mobile-sub">
+                {cats.map((c) => <li><a href={`/products/${c.slug}`}>{c.short}</a></li>)}
+              </ul>
+            )}
+          </li>
+        ))}
+      </ul>
+      <div class="mobile-cta">
+        <a href="/contact" class="btn">Request a quote</a>
+        <a href={site.phoneHref} class="mobile-phone"><Icon name="phone" /> {site.phone}</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const btn = document.querySelector<HTMLButtonElement>('[data-menu-toggle]');
+  const panel = document.getElementById('mobile-nav');
+  if (btn && panel) {
+    btn.addEventListener('click', () => {
+      const open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+      panel.hidden = open;
+      document.body.classList.toggle('nav-open', !open);
+    });
+  }
+</script>
+
+<style>
+  .site-header { position: sticky; top: 0; z-index: 50; background: var(--white); box-shadow: 0 1px 0 var(--zinc); }
+  .topbar { background: var(--ink); color: #c9d1e0; font-size: var(--t-xs); }
+  .topbar-inner { display: flex; justify-content: space-between; align-items: center; min-height: 36px; gap: 24px; }
+  .tag-line { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .topbar-links { display: flex; gap: 22px; }
+  .topbar-links a { display: inline-flex; align-items: center; gap: 6px; color: #c9d1e0; transition: color .15s; }
+  .topbar-links a:hover { color: var(--white); }
+  .topbar-links :global(svg) { width: 14px; height: 14px; color: var(--orange); }
+
+  .mainbar-inner { display: flex; align-items: center; gap: 32px; min-height: var(--header-h); }
+  .logo img { height: 40px; width: auto; }
+  .primary { margin-left: auto; }
+  .primary > ul { display: flex; gap: 4px; }
+  .primary > ul > li { position: relative; }
+  .primary > ul > li > a {
+    display: inline-flex; align-items: center; gap: 4px;
+    padding: 24px 14px; font-family: var(--font-display); font-weight: 600; font-size: 1.125rem;
+    color: var(--ink); position: relative;
+  }
+  .primary > ul > li > a::after {
+    content: ''; position: absolute; left: 14px; right: 14px; bottom: 16px; height: 3px;
+    background: var(--orange); transform: scaleX(0); transform-origin: left; transition: transform .2s var(--ease);
+  }
+  .primary > ul > li > a:hover::after, .primary > ul > li > a[aria-current='page']::after { transform: scaleX(1); }
+  .primary :global(svg) { width: 14px; height: 14px; }
+
+  .has-mega:hover .mega, .has-mega:focus-within .mega { opacity: 1; visibility: visible; transform: translateY(0); }
+  .mega {
+    position: fixed; left: 0; right: 0; top: calc(36px + var(--header-h));
+    background: var(--white); border-top: 1px solid var(--zinc); box-shadow: 0 24px 48px -24px rgba(17,27,51,.35);
+    opacity: 0; visibility: hidden; transform: translateY(-6px); transition: opacity .18s var(--ease), transform .18s var(--ease), visibility 0s linear .18s;
+  }
+  .has-mega:hover .mega, .has-mega:focus-within .mega { transition-delay: 0s; }
+  .mega-inner { display: grid; grid-template-columns: 300px 1fr; gap: 48px; padding-block: 36px; }
+  .mega-intro h3 { margin-bottom: 8px; }
+  .mega-intro p { margin-bottom: 18px; max-width: 28ch; }
+  .mega-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 4px 32px; }
+  .mega-grid a { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--zinc); }
+  .mega-name { font-family: var(--font-display); font-weight: 600; font-size: 1.125rem; }
+  .mega-meta { font-size: var(--t-xs); color: var(--steel); white-space: nowrap; }
+  .mega-grid a:hover .mega-name { color: var(--orange); }
+
+  .quote { flex: none; }
+  .menu-btn { display: none; width: 44px; height: 44px; align-items: center; justify-content: center; margin-left: auto; }
+  .menu-btn :global(svg) { width: 26px; height: 26px; }
+  .menu-btn :global(.ico-close), .menu-btn[aria-expanded='true'] :global(.ico-menu) { display: none; }
+  .menu-btn[aria-expanded='true'] :global(.ico-close) { display: block; }
+
+  .mobile-nav { display: none; background: var(--white); border-top: 1px solid var(--zinc); max-height: calc(100vh - var(--header-h)); overflow: auto; }
+  .mobile-nav > nav { padding: 12px var(--gutter) 28px; }
+  .mobile-nav > nav > ul > li > a { display: block; padding: 14px 0; font-family: var(--font-display); font-weight: 600; font-size: 1.375rem; border-bottom: 1px solid var(--zinc); }
+  .mobile-sub { display: grid; grid-template-columns: 1fr 1fr; gap: 0 16px; padding: 6px 0 10px; }
+  .mobile-sub a { display: block; padding: 8px 0; color: var(--steel); }
+  .mobile-cta { display: grid; gap: 14px; margin-top: 20px; }
+  .mobile-cta .btn { width: 100%; }
+  .mobile-phone { display: inline-flex; align-items: center; gap: 8px; font-weight: 500; }
+  .mobile-phone :global(svg) { width: 16px; height: 16px; color: var(--orange); }
+
+  @media (max-width: 1100px) {
+    .topbar-links li:nth-child(2) { display: none; }
+    .primary, .quote { display: none; }
+    .menu-btn { display: inline-flex; }
+    .mobile-nav:not([hidden]) { display: block; }
+    .logo img { height: 34px; }
+  }
+  @media (max-width: 640px) {
+    .tag-line { display: none; }
+    .topbar-inner { justify-content: flex-end; }
+  }
+</style>

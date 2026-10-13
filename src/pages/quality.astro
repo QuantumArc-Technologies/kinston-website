@@ -1,0 +1,102 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import SectionHeading from '../components/SectionHeading.astro';
+import CtaBand from '../components/CtaBand.astro';
+import Icon from '../components/Icon.astro';
+import { certifications } from '../data/site';
+import { breadcrumbLd } from '../lib/seo';
+
+const crumbs = [{ name: 'Home', href: '/' }, { name: 'Quality', href: '/quality' }];
+const steps = [
+  { title: 'Steel receipt', body: 'Alloy bar arrives with mill certificates. We sample every heat for chemistry and hardenability before it enters the forge.' },
+  { title: 'Forging and heat treatment', body: 'Closed-die forging, then normalising, quenching and tempering on a continuous line with charted furnace temperatures held against the batch.' },
+  { title: 'Inspection', body: '100% magnetic particle inspection on every hook, link and shackle body. Dimensional checks against the datasheet drawing on a sampling plan.' },
+  { title: 'Proof load test', body: 'Every component is proof loaded to 2.5 times WLL; assemblies to 2 times WLL. Load cells calibrated six-monthly and traceable to national standards.' },
+  { title: 'Marking and certificate', body: 'WLL, grade, CE mark and batch code are forged or stamped in. The certificate links the batch to heat, heat treatment chart, MPI and proof test.' },
+];
+---
+<Base title="Quality and certification" description="Kinston's quality system is certified to ISO 9001, ISO 14001 and ISO 45001. Products are made to EN 1677, EN 818 and ASME B30, with DNV type approval for offshore ranges. Every item is proof tested and traceable." path="/quality" jsonLd={[breadcrumbLd(crumbs)]}>
+  <section class="page-head bg-ink">
+    <div class="wrap">
+      <Breadcrumb items={crumbs} light />
+      <h1>Quality and certification</h1>
+      <p class="lede">A test certificate is only worth something if the process behind it is audited. Ours is, by DNV, every year.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <SectionHeading title="From steel bar to certificate" lead="Five controlled steps, each recorded against the batch number that is forged into the product." />
+      <ol class="steps">
+        {steps.map((s, i) => (
+          <li>
+            <span class="n">{i + 1}</span>
+            <h3>{s.title}</h3>
+            <p>{s.body}</p>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <section class="section bg-paper">
+    <div class="wrap">
+      <SectionHeading title="Certifications and approvals" />
+      <ul class="grid cols-3">
+        {certifications.map((c) => (
+          <li class="cert">
+            <Icon name="shield" />
+            <strong>{c.code}</strong>
+            <h3>{c.title}</h3>
+            <p class="muted small">{c.body}</p>
+          </li>
+        ))}
+      </ul>
+      <p class="dl"><a class="btn btn-navy" href="/downloads">Download certificates</a></p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap two">
+      <div class="prose">
+        <SectionHeading title="Traceability you can check" />
+        <p>Every Kinston product carries a batch code. Type it into the traceability lookup on the certificate, or email it to us, and we return the heat number, heat treatment chart, inspection record and proof test trace for that batch.</p>
+        <p>Chain sling assemblies carry a serial number on the ID tag. The serial links to the components in the assembly, the proof test date and the certificate PDF, so an inspector can verify a sling on site.</p>
+      </div>
+      <div class="lab">
+        <h3>Test laboratory</h3>
+        <ul>
+          <li><span>Vertical test bed</span><strong>100 t</strong></li>
+          <li><span>Horizontal test bed</span><strong>500 t, 14 m</strong></li>
+          <li><span>Fatigue rig</span><strong>50 t, 20,000 cycles</strong></li>
+          <li><span>Load cell uncertainty</span><strong>0.5%</strong></li>
+          <li><span>Hardness and tensile</span><strong>In-house</strong></li>
+          <li><span>Magnetic particle inspection</span><strong>100% of forgings</strong></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <CtaBand title="Need a certificate reissued?" body="Send the batch or serial number and we will email the certificate the same day." />
+</Base>
+<style>
+  .steps { display: grid; grid-template-columns: repeat(5, 1fr); gap: 24px; }
+  .steps li { display: grid; gap: 10px; align-content: start; padding-top: 16px; border-top: 2px solid var(--navy); }
+  .n { font-family: var(--font-display); font-weight: 700; font-size: 2rem; color: var(--orange-dark); line-height: 1; }
+  .steps h3 { font-size: 1.35rem; }
+  .steps p { font-size: var(--t-sm); color: var(--steel); }
+  .cert { display: grid; gap: 6px; align-content: start; background: var(--white); border: 1px solid var(--zinc); padding: 24px; border-radius: var(--radius); }
+  .cert :global(svg) { width: 28px; height: 28px; color: var(--orange); margin-bottom: 6px; }
+  .cert strong { font-family: var(--font-display); font-weight: 700; font-size: 1.5rem; color: var(--navy); }
+  .cert h3 { font-size: 1.2rem; }
+  .dl { margin-top: 32px; }
+  .two { display: grid; grid-template-columns: 1.2fr 1fr; gap: 64px; align-items: start; }
+  .lab { background: var(--ink); color: var(--white); padding: 28px; border-radius: var(--radius); }
+  .lab h3 { color: var(--white); margin-bottom: 14px; }
+  .lab li { display: flex; justify-content: space-between; gap: 16px; padding: 10px 0; border-top: 1px solid rgba(255,255,255,.14); font-size: var(--t-sm); }
+  .lab li span { color: #b7c0d2; }
+  .lab strong { font-weight: 600; }
+  @media (max-width: 1000px) { .steps { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 900px) { .two { grid-template-columns: 1fr; gap: 40px; } }
+  @media (max-width: 520px) { .steps { grid-template-columns: 1fr; } }
+</style>

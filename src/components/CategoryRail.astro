@@ -1,0 +1,47 @@
+---
+import { allCategoriesWithCounts } from '../data/products';
+interface Props { current?: string; groups?: string[]; currentGroup?: string }
+const { current, groups = [], currentGroup } = Astro.props;
+const cats = allCategoriesWithCounts();
+---
+<aside class="rail" aria-label="Product ranges">
+  <h4>All ranges</h4>
+  <ul class="cats">
+    {cats.map((c) => (
+      <li class:list={[{ active: c.slug === current }]}>
+        <a href={`/products/${c.slug}`} aria-current={c.slug === current ? 'page' : undefined}>
+          <span>{c.name}</span><span class="n">{c.count}</span>
+        </a>
+        {c.slug === current && groups.length > 0 && (
+          <ul class="groups">
+            {groups.map((g) => (
+              <li><a href={`#${g.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`} class:list={[{ on: g === currentGroup }]}>{g}</a></li>
+            ))}
+          </ul>
+        )}
+      </li>
+    ))}
+  </ul>
+  <div class="help">
+    <h4>Need help choosing?</h4>
+    <p>Our engineers size slings and components from your load and lift points.</p>
+    <a class="textlink" href="/contact">Ask an engineer</a>
+  </div>
+</aside>
+<style>
+  .rail { position: sticky; top: calc(36px + var(--header-h) + 24px); align-self: start; }
+  .rail h4 { font-size: var(--t-sm); color: var(--steel); font-family: var(--font-body); font-weight: 500; margin-bottom: 10px; }
+  .cats > li { border-top: 1px solid var(--zinc); }
+  .cats > li:last-child { border-bottom: 1px solid var(--zinc); }
+  .cats > li > a { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 11px 0 11px 14px; font-family: var(--font-display); font-weight: 600; font-size: 1.125rem; line-height: 1.2; border-left: 3px solid transparent; margin-left: -14px; transition: color .15s, border-color .15s; }
+  .cats > li > a:hover { color: var(--orange); }
+  .cats > li.active > a { border-left-color: var(--orange); color: var(--navy); }
+  .n { font-size: var(--t-xs); font-family: var(--font-body); font-weight: 500; color: var(--steel); }
+  .groups { padding: 2px 0 12px 14px; display: grid; gap: 2px; }
+  .groups a { display: block; padding: 5px 0; font-size: var(--t-sm); color: var(--steel); }
+  .groups a:hover, .groups a.on { color: var(--ink); }
+  .help { margin-top: 28px; padding: 20px; background: var(--paper); border-radius: var(--radius); }
+  .help h4 { color: var(--ink); font-family: var(--font-display); font-weight: 600; font-size: var(--t-md); }
+  .help p { font-size: var(--t-sm); color: var(--steel); margin: 6px 0 14px; }
+  @media (max-width: 960px) { .rail { position: static; } .help { display: none; } }
+</style>
