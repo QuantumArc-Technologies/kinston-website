@@ -11,6 +11,7 @@ import { latestArticles } from '../data/news';
 const cats = allCategoriesWithCounts();
 const featured = featuredProducts().slice(0, 4);
 const news = latestArticles(3);
+const sectorIcons = ['construction', 'offshore', 'marine', 'factory', 'power', 'mining', 'truck', 'wind'];
 const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
 ---
 <Base
@@ -166,19 +167,29 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
     </div>
   </section>
 
-  <section class="section bg-navy">
+  <section class="industry-section section" aria-labelledby="industry-title">
     <div class="wrap">
-      <SectionHeading title="Built for the sectors that lift every day" lead="From tower crane rigging to subsea release, our ranges are specified where downtime is expensive and inspection is strict." />
-      <ul class="sectors" data-reveal>
-        {sectors.map((s) => (
-          <li>
-            <a href={`/industries#${s.slug}`}>
-              <h3>{s.name}</h3>
+      <div class="industry-heading">
+        <div><p class="industry-kicker"><span></span> INDUSTRIES WE SERVE</p><h2 id="industry-title">Different industries.<br />The same <em>confidence.</em></h2></div>
+        <div class="industry-heading-copy"><p>From tower crane rigging to subsea release, our ranges are specified where downtime is expensive and inspection is strict.</p><a href="/industries" class="industry-link">Explore our industries <Icon name="arrow" /></a></div>
+      </div>
+      <div class="industry-layout">
+        <a class="industry-feature" href="/industries" aria-label="Explore the industries Kinston serves">
+          <img src="/images/industries/industrial-yard.webp" alt="Gantry cranes and steel structures in a maritime fabrication yard at dusk" width="800" height="1200" loading="lazy" decoding="async" />
+          <span class="industry-feature-top"><span>KINSTON IN INDUSTRY</span><span class="industry-feature-arrow"><Icon name="arrow" /></span></span>
+          <div class="industry-feature-copy"><span class="industry-feature-label">BUILT FOR THE REAL WORLD</span><h3>Where the work<br />never stands still.</h3><p>From the crane hook to the load.<br />A lifting partner you can count on.</p></div>
+        </a>
+        <ul class="sectors" data-reveal>
+          {sectors.map((s, i) => (
+            <li><a href={`/industries#${s.slug}`}>
+              <div class="sector-top"><span class="sector-icon"><Icon name={sectorIcons[i]} /></span><span class="sector-number">0{i + 1}</span></div>
+              <h3>{s.name}<span class="sector-arrow"><Icon name="arrow" /></span></h3>
               <p>{s.body}</p>
-            </a>
-          </li>
-        ))}
-      </ul>
+            </a></li>
+          ))}
+        </ul>
+      </div>
+      <div class="industry-foot"><span><Icon name="globe" /> Across industries. Around the world.</span><a href="/contact">Find the right equipment for your operation <Icon name="arrow" /></a></div>
     </div>
   </section>
 
@@ -454,12 +465,6 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
   .feat-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; }
   .feat-head .textlink { margin-bottom: clamp(32px, 4vw, 48px); white-space: nowrap; }
 
-  .sectors { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 2px; background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.12); }
-  .sectors a { display: block; height: 100%; padding: 24px 22px 28px; background: var(--navy); transition: background .18s; }
-  .sectors a:hover { background: var(--navy-dark); }
-  .sectors h3 { font-size: 1.4rem; margin-bottom: 8px; }
-  .sectors p { font-size: var(--t-sm); color: #c3cdea; }
-
   .quality { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
   .certs { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
   .certs li { display: grid; gap: 4px; padding: 18px 20px; background: var(--white); border: 1px solid var(--zinc); border-radius: var(--radius); }
@@ -478,7 +483,7 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
     .hook, .hero-heat, .bench-stamp { transition: none !important; }
     .sheen, .hot { background-position: 50% 0; }
   }
-  @media (max-width: 1100px) { .ranges { grid-template-columns: repeat(2, 1fr); } .sectors { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 1100px) { .ranges { grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 960px) {
     .hero-inner { grid-template-columns: 1fr; min-height: 0; }
     .hero-art-wrap { justify-self: center; max-width: 440px; }
@@ -486,7 +491,7 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
     .why, .quality { grid-template-columns: 1fr; gap: 40px; }
     .news { grid-template-columns: 1fr; }
   }
-  @media (max-width: 600px) { .ranges, .sectors, .certs, .stats { grid-template-columns: 1fr; } }
+  @media (max-width: 600px) { .ranges, .certs, .stats { grid-template-columns: 1fr; } }
 
   /* Homepage art direction: oversized typography, technical product stage, warm editorial sections. */
   .hero { background-color: #0a1427; background-size: 80px 80px; }
@@ -571,9 +576,6 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
   .why-list { counter-reset: reasons; }
   .why-list li { counter-increment: reasons; position: relative; padding-left: 54px; }
   .why-list li::before { content: '0' counter(reasons); position: absolute; left: 0; top: 27px; color: var(--orange); font: 600 1.15rem var(--font-display); }
-  .sectors { gap: 1px; }
-  .sectors a { padding: 32px 25px; }
-  .sectors h3 { margin-bottom: 18px; }
   .news a { padding: 25px; background: #f6f7f9; border-top-width: 2px; }
   .lift-help { background: #0a1427; color: white; border-top: 4px solid var(--orange); }
   .help-inner { display: grid; grid-template-columns: 1.5fr 1fr; gap: 60px; align-items: center; }
@@ -630,6 +632,76 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
   .range-foot { margin-top: 23px; padding-top: 15px; }
   .range-go { border: none; background: #f0f2f5; }
   @media (hover: none) { .range-browse { display: none; } }
+
+  .industry-section { background: #f5f4f0; border-block: 1px solid #e8e6df; }
+  .industry-heading { display: grid; grid-template-columns: 1.2fr 1fr; align-items: end; gap: 64px; margin-bottom: 44px; }
+  .industry-kicker { display: flex; align-items: center; gap: 10px; font-size: 10px; letter-spacing: .18em; font-weight: 600; color: #746d62; margin-bottom: 22px; }
+  .industry-kicker > span { width: 20px; height: 2px; background: var(--orange); }
+  .industry-heading h2 { font-size: clamp(2.6rem, 4.5vw, 4.3rem); line-height: 1.02; letter-spacing: -.035em; }
+  .industry-heading h2 em { color: #ce4a18; font-style: normal; }
+  .industry-heading-copy > p { color: var(--steel); font-size: 1rem; line-height: 1.75; max-width: 46ch; }
+  .industry-link { display: inline-flex; align-items: center; gap: 22px; font-size: .9rem; font-weight: 600; margin-top: 21px; border-bottom: 1px solid #cac5bb; padding-bottom: 7px; }
+  .industry-link :global(svg) { width: 17px; transition: transform .2s; }
+  .industry-link:hover { color: #ce4a18; }
+  .industry-link:hover :global(svg) { transform: translateX(3px); }
+  .industry-layout { display: grid; grid-template-columns: .85fr 1.7fr; gap: 24px; align-items: stretch; }
+  .industry-feature { display: block; position: relative; isolation: isolate; overflow: hidden; border-radius: 12px; background: #101d2c; min-height: 650px; color: white; }
+  .industry-feature > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 1s var(--ease); }
+  .industry-feature:hover > img { transform: scale(1.04); }
+  .industry-feature::after { content: ''; position: absolute; inset: 0; z-index: 0; background: linear-gradient(180deg, #06101d66 0%, #06101d00 38%, #06101dcc 72%, #06101df5 100%); }
+  .industry-feature-top { position: relative; z-index: 1; display: flex; align-items: center; justify-content: space-between; padding: 25px; font-size: 9px; letter-spacing: .16em; }
+  .industry-feature-arrow { display: grid; place-items: center; width: 34px; height: 34px; border: 1px solid #ffffff60; border-radius: 50%; }
+  .industry-feature-arrow :global(svg) { width: 15px; transform: rotate(-45deg); }
+  .industry-feature-copy { position: absolute; z-index: 1; bottom: 32px; left: 28px; right: 28px; }
+  .industry-feature-label { display: block; color: #ffb087; font-size: 9px; letter-spacing: .15em; margin-bottom: 18px; }
+  .industry-feature h3 { color: white; font-size: clamp(2rem, 3vw, 2.7rem); letter-spacing: -.02em; line-height: 1.04; margin-bottom: 18px; }
+  .industry-feature-copy p { font-size: .87rem; color: #c5ccd4; line-height: 1.7; }
+  .sectors { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+  .sectors li { min-width: 0; }
+  .sectors a { display: flex; flex-direction: column; height: 100%; padding: 23px 24px; background: #ffffffbd; border: 1px solid #e2e0d9; border-radius: 10px; transition: background .25s, border-color .25s, box-shadow .25s, transform .25s var(--ease); }
+  .sectors a:hover, .sectors a:focus-visible { background: white; border-color: #dfb49b; box-shadow: 0 12px 24px -16px #35200e35; transform: translateY(-3px); }
+  .sector-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 17px; }
+  .sector-icon { color: #a8643d; }
+  .sector-icon :global(svg) { width: 26px; height: 26px; stroke-width: 1.4; }
+  .sector-number { font-size: 10px; letter-spacing: .1em; color: #98958d; }
+  .sectors h3 { display: flex; align-items: center; justify-content: space-between; gap: 10px; font-size: 1.4rem; line-height: 1.1; color: #192338; margin: 0 0 10px; }
+  .sector-arrow { color: #a8aaa9; flex: none; transition: color .25s, transform .25s; }
+  .sector-arrow :global(svg) { width: 17px; height: 17px; transform: rotate(-45deg); }
+  .sectors a:hover .sector-arrow { color: #d55121; transform: translate(2px, -2px); }
+  .sectors p { font-size: .84rem; line-height: 1.65; color: #657080; }
+  .industry-foot { display: flex; align-items: center; justify-content: space-between; gap: 20px; border-top: 1px solid #dad7ce; padding-top: 23px; margin-top: 28px; font-size: .8rem; color: #767468; }
+  .industry-foot > span, .industry-foot > a { display: inline-flex; align-items: center; gap: 10px; }
+  .industry-foot :global(svg) { width: 17px; height: 17px; flex: none; }
+  .industry-foot > a { color: #293548; }
+  .industry-foot > a:hover { color: #ce4a18; }
+  @media (max-width: 1100px) {
+    .industry-layout { grid-template-columns: 1fr 2fr; gap: 18px; }
+    .industry-feature-copy { left: 22px; right: 22px; }
+    .sectors a { padding: 20px; }
+  }
+  @media (max-width: 900px) {
+    .industry-heading { gap: 30px; }
+    .industry-layout { grid-template-columns: 1fr; }
+    .industry-feature { min-height: 340px; }
+    .industry-feature > img { object-position: 50% 40%; }
+    .industry-feature::after { background: linear-gradient(90deg, #06101de6, #06101d11); }
+    .industry-feature-copy { left: 28px; max-width: 350px; }
+    .industry-feature-top { justify-content: space-between; }
+    .industry-feature-arrow { margin-left: auto; }
+  }
+  @media (max-width: 600px) {
+    .industry-heading { grid-template-columns: 1fr; gap: 23px; margin-bottom: 28px; }
+    .industry-heading h2 { font-size: clamp(2.5rem, 10vw, 3.2rem); }
+    .industry-heading-copy > p { font-size: .93rem; }
+    .industry-feature { min-height: 340px; }
+    .industry-feature-copy { left: 24px; bottom: 25px; }
+    .sectors { grid-template-columns: 1fr; gap: 12px; }
+    .sectors a { padding: 23px; }
+    .sector-top { margin-bottom: 14px; }
+    .sectors p { font-size: .9rem; }
+    .industry-foot { align-items: start; flex-direction: column; gap: 14px; line-height: 1.6; }
+  }
+  @media (prefers-reduced-motion: reduce) { .industry-feature > img, .sectors a, .sector-arrow, .industry-link :global(svg) { transition: none; } .industry-feature:hover > img, .sectors a:hover { transform: none; } }
 </style>
 
 <style is:global>
