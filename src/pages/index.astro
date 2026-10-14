@@ -68,8 +68,11 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
               <div class="range-art"><img src={`/images/products/${c.art}.webp`} alt="" loading="lazy" decoding="async" width="600" height="600" /></div>
               <div class="range-body">
                 <h3>{c.name}</h3>
-                <p>{c.description}</p>
-                <span class="range-meta">{c.count} products</span>
+                <p>{c.groups.map((g) => (/^[A-Z][a-z]/.test(g) ? g[0].toLowerCase() + g.slice(1) : g)).join(', ')}</p>
+                <div class="range-foot">
+                  <span>{c.count} products</span>
+                  <span class="range-go"><Icon name="arrow" /></span>
+                </div>
               </div>
             </a>
           </li>
@@ -287,17 +290,30 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
   @keyframes fade { to { opacity: 1; } }
   @media (prefers-reduced-motion: reduce) { .dl { stroke-dashoffset: 0; animation: none; } .dt { opacity: 1; animation: none; } }
 
-  .ranges { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
-  .ranges a { display: grid; grid-template-rows: auto 1fr; height: 100%; border: 1px solid var(--zinc); border-radius: var(--radius); overflow: hidden; transition: border-color .18s var(--ease), transform .18s var(--ease); }
-  .ranges a:hover { border-color: var(--navy); transform: translateY(-2px); }
-  .range-art { position: relative; background: var(--white); aspect-ratio: 5 / 3; border-bottom: 1px solid var(--zinc); overflow: hidden; }
-  .range-art img { position: absolute; inset: 8px; width: calc(100% - 16px); height: calc(100% - 16px); object-fit: contain; transition: transform .25s var(--ease); }
-  .ranges a:hover .range-art img { transform: scale(1.04); }
-  .range-body { padding: 20px 22px 22px; display: grid; gap: 8px; align-content: start; }
-  .range-body h3 { font-size: 1.4rem; }
-  .ranges a:hover h3 { color: var(--orange); }
-  .range-body p { font-size: var(--t-sm); color: var(--steel); }
-  .range-meta { font-size: var(--t-xs); color: var(--navy); font-weight: 500; margin-top: 4px; }
+  .ranges { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; padding-top: 16px; }
+  .ranges a {
+    display: grid; grid-template-rows: auto 1fr; height: 100%;
+    background: var(--white); border-radius: 6px;
+    box-shadow: 0 0 0 1px rgba(17,27,51,.06), 0 2px 4px rgba(17,27,51,.04), 0 24px 40px -28px rgba(17,27,51,.28);
+    transition: transform .45s var(--ease), box-shadow .45s var(--ease);
+  }
+  .ranges a:hover { transform: translateY(-6px); box-shadow: 0 0 0 1px rgba(17,27,51,.06), 0 6px 10px -4px rgba(17,27,51,.08), 0 40px 56px -28px rgba(10,46,120,.35); }
+  .range-art {
+    position: relative; aspect-ratio: 4 / 3; border-radius: 6px 6px 0 0;
+    background: linear-gradient(180deg, var(--white) 0%, var(--zinc-light) 100%);
+  }
+  .range-art::after { content: ''; position: absolute; inset: 0; border-radius: inherit; background: radial-gradient(60% 50% at 50% 100%, rgba(248,80,0,.10), transparent 70%); opacity: 0; transition: opacity .45s var(--ease); }
+  .ranges a:hover .range-art::after { opacity: 1; }
+  .range-art img { position: absolute; left: 8%; width: 84%; top: -8%; height: 100%; object-fit: contain; mix-blend-mode: multiply; z-index: 1; transition: transform .5s var(--ease); }
+  .ranges a:hover .range-art img { transform: translateY(-10px) scale(1.04) rotate(-1.5deg); }
+  .range-body { display: grid; grid-template-rows: auto 1fr auto; padding: 16px 20px 16px; }
+  .range-body h3 { font-size: 1.375rem; line-height: 1.08; letter-spacing: -0.015em; text-wrap: balance; }
+  .range-body p { margin-top: 5px; font-size: var(--t-xs); line-height: 1.4; color: var(--steel); }
+  .range-foot { display: flex; justify-content: space-between; align-items: center; margin-top: 14px; padding-top: 10px; border-top: 1px solid var(--zinc); font-size: var(--t-xs); font-weight: 500; color: var(--navy); }
+  .range-go { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; border: 1px solid var(--zinc); color: var(--ink); transition: background .3s var(--ease), border-color .3s var(--ease), color .3s var(--ease); }
+  .range-go :global(svg) { width: 16px; height: 16px; transition: transform .3s var(--ease); }
+  .ranges a:hover .range-go { background: var(--orange); border-color: var(--orange); color: var(--white); }
+  .ranges a:hover .range-go :global(svg) { transform: translateX(2px); }
 
   .why { display: grid; grid-template-columns: 1fr 1.2fr; gap: 64px; align-items: start; }
   .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 40px; }
