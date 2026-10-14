@@ -37,7 +37,10 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
       <div class="hero-art-wrap">
         <figure class="hero-fig">
           <span class="hero-glow" aria-hidden="true"></span>
-          <img src="/images/hero-hook.webp" alt="Kinston clevis self-locking hook, Grade 100" width="720" height="720" fetchpriority="high" decoding="async" />
+          <span class="hero-heat" aria-hidden="true"></span>
+          <div class="hook">
+            <img src="/images/hero-hook.webp" alt="Kinston clevis self-locking hook, Grade 100" width="720" height="720" fetchpriority="high" decoding="async" />
+          </div>
           <svg class="dims" viewBox="0 0 1100 1100" aria-hidden="true" fill="none" stroke="var(--orange)" stroke-width="3">
             <path class="dl" d="M300 172 H360 M300 933 H360" />
             <path class="dl" d="M330 172 V933" />
@@ -54,7 +57,28 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
           </svg>
           <figcaption class="visually-hidden">Dimensions A, D, H and K are listed on the product datasheet</figcaption>
         </figure>
+        <div class="bench" role="status" aria-live="polite">
+          <div class="bench-head"><span class="bench-dot" aria-hidden="true"></span><span class="bench-state">Proof test running</span></div>
+          <div class="bench-load"><span class="bench-num">0.0</span><span class="bench-unit">tonnes</span></div>
+          <div class="bench-bar" aria-hidden="true">
+            <span class="bench-fill"></span>
+            <span class="bench-tick" style="--at:40%"><i>WLL 5 t</i></span>
+            <span class="bench-tick" style="--at:100%"><i>2.5 × WLL</i></span>
+          </div>
+          <dl class="bench-meta">
+            <div><dt>Serial</dt><dd>KL-26-08817</dd></div>
+            <div><dt>Heat</dt><dd>4471A</dd></div>
+          </dl>
+          <span class="bench-stamp"><Icon name="check" /> Passed</span>
+        </div>
       </div>
+    </div>
+    <div class="wrap hero-ranges">
+      <ul>
+        {cats.map((c) => (
+          <li><a href={`/products/${c.slug}`}>{c.short} <span>{c.count}</span></a></li>
+        ))}
+      </ul>
     </div>
   </section>
 
@@ -197,6 +221,35 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
     revealEls.forEach((el) => io.observe(el));
   }
 
+  // Hero proof test: load climbs to 2.5 x WLL, hook tenses, stamp lands.
+  const bench = document.querySelector<HTMLElement>('.bench');
+  const fig = document.querySelector<HTMLElement>('.hero-fig');
+  if (bench) {
+    const num = bench.querySelector<HTMLElement>('.bench-num')!;
+    const state = bench.querySelector<HTMLElement>('.bench-state')!;
+    const target = 12.5;
+    const finish = () => {
+      num.textContent = target.toFixed(1);
+      bench.style.setProperty('--p', '1');
+      bench.classList.add('passed');
+      state.textContent = 'Proof test passed';
+      fig?.classList.remove('loading');
+    };
+    if (reduce) finish();
+    else setTimeout(() => {
+      fig?.classList.add('loading');
+      const t0 = performance.now(); const dur = 2600;
+      const step = (t: number) => {
+        const k = Math.min(1, (t - t0) / dur);
+        const e = k < 0.5 ? 2 * k * k : 1 - Math.pow(-2 * k + 2, 2) / 2;
+        num.textContent = (target * e).toFixed(1);
+        bench.style.setProperty('--p', String(e));
+        if (k < 1) requestAnimationFrame(step); else setTimeout(finish, 420);
+      };
+      requestAnimationFrame(step);
+    }, 1700);
+  }
+
   // Count-up for the stats strip.
   const counters = document.querySelectorAll<HTMLElement>('[data-count] [data-value]');
   const run = (el: HTMLElement) => {
@@ -269,6 +322,55 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
     filter: blur(24px); animation: pulse 6s ease-in-out infinite;
   }
   .hero-fig img { position: relative; animation: rise 1s var(--ease) .2s both; }
+  .hook { transform-origin: 50% 8%; transition: transform 2.6s cubic-bezier(.4,0,.6,1); }
+  .hero-fig.loading .hook { transform: scaleY(1.018) translateY(4px); }
+  .hero-heat {
+    position: absolute; inset: 30% 10% 8% 10%; border-radius: 50%; pointer-events: none; opacity: 0;
+    background: radial-gradient(closest-side, rgba(248,80,0,.55), rgba(248,80,0,.12) 55%, transparent 75%);
+    filter: blur(28px); transition: opacity 2.4s ease;
+  }
+  .hero-fig.loading .hero-heat { opacity: 1; }
+
+  /* proof test readout */
+  .bench {
+    position: absolute; right: -8px; top: 2%; width: 236px; padding: 16px 18px 18px; z-index: 2;
+    border-radius: 6px; background: rgba(8,16,38,.78); border: 1px solid rgba(255,255,255,.12);
+    backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 30px 60px -24px rgba(0,0,0,.7);
+    animation: rise .8s var(--ease) 1.3s both;
+  }
+  .bench-head { display: flex; align-items: center; gap: 8px; font-size: var(--t-xs); color: #c3cbdb; }
+  .bench-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--orange); animation: ping 1.1s ease-out infinite; }
+  .bench.passed .bench-dot { background: #43d17a; animation: none; }
+  @keyframes ping { 0% { box-shadow: 0 0 0 0 rgba(248,80,0,.6); } 100% { box-shadow: 0 0 0 9px rgba(248,80,0,0); } }
+  .bench-load { display: flex; align-items: baseline; gap: 7px; margin-top: 8px; font-family: var(--font-display); font-weight: 600; font-size: 2.75rem; line-height: 1; color: var(--white); font-variant-numeric: tabular-nums; }
+  .bench-unit { font-size: 1rem; font-weight: 500; color: #c3cbdb; }
+  .bench-bar { position: relative; height: 6px; margin: 14px 0 28px; background: rgba(255,255,255,.12); border-radius: 3px; }
+  .bench-fill { position: absolute; inset: 0 auto 0 0; width: calc(var(--p, 0) * 100%); border-radius: 3px; background: linear-gradient(90deg, #ff9a5e, var(--orange)); box-shadow: 0 0 12px rgba(248,80,0,.5); }
+  .bench.passed .bench-fill { background: linear-gradient(90deg, #43d17a, #2fb868); box-shadow: 0 0 12px rgba(67,209,122,.4); transition: background .4s, box-shadow .4s; }
+  .bench-tick { position: absolute; left: var(--at); top: -4px; width: 1px; height: 14px; background: rgba(255,255,255,.55); }
+  .bench-tick i { position: absolute; top: 15px; left: 0; transform: translateX(-50%); font-style: normal; font-size: 11px; white-space: nowrap; color: #8a95a8; }
+  .bench-tick:last-child i { transform: translateX(-100%); }
+  .bench-meta { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 0; padding-top: 12px; border-top: 1px solid rgba(255,255,255,.1); }
+  .bench-meta dt { font-size: 11px; color: #8a95a8; }
+  .bench-meta dd { margin: 0; font-size: var(--t-xs); font-weight: 500; color: var(--white); }
+  .bench-stamp {
+    position: absolute; top: -15px; right: 14px; display: inline-flex; align-items: center; gap: 6px; padding: 5px 10px;
+    border: 2px solid #43d17a; color: #43d17a; border-radius: 4px; background: rgba(8,16,38,.9);
+    font-family: var(--font-display); font-weight: 700; font-size: .95rem; letter-spacing: .04em;
+    transform: rotate(-6deg) scale(.5); opacity: 0; transition: transform .4s cubic-bezier(.2,1.5,.4,1), opacity .2s;
+  }
+  .bench.passed .bench-stamp { transform: rotate(-6deg) scale(1); opacity: 1; }
+  .bench-stamp :global(svg) { width: 14px; height: 14px; stroke-width: 3; }
+
+  /* range strip */
+  .hero-ranges { position: relative; border-top: 1px solid rgba(255,255,255,.12); margin-top: 8px; }
+  .hero-ranges ul { display: flex; gap: 4px 28px; padding: 18px 0 22px; overflow-x: auto; scrollbar-width: none; }
+  .hero-ranges ul::-webkit-scrollbar { display: none; }
+  .hero-ranges li { flex: none; }
+  .hero-ranges a { font-family: var(--font-display); font-weight: 600; font-size: 1.0625rem; color: #dfe4ee; white-space: nowrap; transition: color .15s; }
+  .hero-ranges a span { font-family: var(--font-body); font-weight: 500; font-size: var(--t-xs); color: var(--steel-light); margin-left: 3px; }
+  .hero-ranges a:hover { color: var(--orange); }
   .hero-fig { animation: float 8s ease-in-out 1.2s infinite; }
   @keyframes float { 0%, 100% { transform: translateY(0) rotate(0deg); } 50% { transform: translateY(-12px) rotate(-1deg); } }
   @keyframes pulse { 0%, 100% { opacity: .75; transform: scale(.96); } 50% { opacity: 1; transform: scale(1.04); } }
@@ -280,7 +382,7 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
   .proof { display: flex; flex-wrap: wrap; gap: 10px 28px; margin-top: 40px; font-size: var(--t-sm); color: #c3cbdb; }
   .proof li { display: inline-flex; align-items: center; gap: 8px; }
   .proof :global(svg) { width: 18px; height: 18px; color: var(--orange); }
-  .hero-art-wrap { max-width: 600px; justify-self: end; width: 100%; }
+  .hero-art-wrap { position: relative; max-width: 600px; justify-self: end; width: 100%; }
   .hero-fig { position: relative; margin: 0; }
   .hero-fig img { width: 100%; height: auto; filter: drop-shadow(0 30px 40px rgba(0,0,0,.45)); }
   .dims { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
@@ -349,13 +451,15 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
   .news-meta { display: flex; align-items: center; gap: 12px; font-size: var(--t-xs); color: var(--steel); }
 
   @media (prefers-reduced-motion: reduce) {
-    .hero::before, .hero-glow, .hero-fig img, .sheen, .hot, .hero-copy > * { animation: none !important; }
+    .hero::before, .hero-glow, .hero-fig img, .sheen, .hot, .hero-copy > *, .bench, .bench-dot { animation: none !important; }
+    .hook, .hero-heat, .bench-stamp { transition: none !important; }
     .sheen, .hot { background-position: 50% 0; }
   }
   @media (max-width: 1100px) { .ranges { grid-template-columns: repeat(2, 1fr); } .sectors { grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 960px) {
     .hero-inner { grid-template-columns: 1fr; min-height: 0; }
     .hero-art-wrap { justify-self: center; max-width: 440px; }
+    .bench { position: static; width: 100%; margin-top: 12px; }
     .why, .quality { grid-template-columns: 1fr; gap: 40px; }
     .news { grid-template-columns: 1fr; }
   }
