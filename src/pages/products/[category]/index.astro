@@ -66,9 +66,9 @@ const anchor = (g: string) => g.toLowerCase().replace(/[^a-z0-9]+/g, '-');
 
 <script>
   document.querySelectorAll<HTMLElement>('[data-filter-root]').forEach((root) => {
-    const btns = root.querySelectorAll<HTMLButtonElement>('[data-grade]');
+    const btns = root.querySelectorAll<HTMLButtonElement>('button[data-grade]');
     const cards = root.querySelectorAll<HTMLElement>('[data-grade].card, a.card');
-    const groups = root.querySelectorAll<HTMLElement>('[data-group]');
+    const groups = root.querySelectorAll<HTMLElement>('.group[data-group]');
     const count = root.querySelector<HTMLElement>('[data-count]');
     const empty = root.querySelector<HTMLElement>('[data-empty]');
     btns.forEach((b) =>

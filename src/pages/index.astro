@@ -21,11 +21,12 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
   <section class="hero blueprint">
     <div class="wrap hero-inner">
       <div class="hero-copy">
-        <span class="dim" aria-hidden="true" style="--w:96px"></span>
-        <h1 class="sheen">Lifting gear built to a standard and proven on a <em class="hot">test bed.</em></h1>
+        <p class="eyebrow"><span></span> Kinston Lifting · Since {site.founded}</p>
+        <h1>Behind every lift.<br /><em class="hot">Confidence.</em></h1>
+        <p class="hero-intro">We make and supply certified lifting equipment for the work that matters.</p>
         <p class="lede">Grade 100 and Grade 80 chain slings, hooks, shackles, master links, wire rope fittings and hoists. Every item is proof tested, marked and traceable to its heat number before it leaves us.</p>
         <div class="hero-actions">
-          <a class="btn" href="/products">Browse products</a>
+          <a class="btn" href="/products">Explore our products <Icon name="arrow" /></a>
           <a class="btn btn-outline-light" href="/contact">Talk to an engineer</a>
         </div>
         <ul class="proof">
@@ -35,11 +36,13 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
         </ul>
       </div>
       <div class="hero-art-wrap">
+        <span class="art-word" aria-hidden="true">LIFT.</span>
+        <div class="art-grade"><span>ENGINEERED FOR CONFIDENCE</span><strong>G100</strong><span>HIGH-PERFORMANCE LIFTING</span></div>
         <figure class="hero-fig">
           <span class="hero-glow" aria-hidden="true"></span>
           <span class="hero-heat" aria-hidden="true"></span>
           <div class="hook">
-            <img src="/images/hero-hook.webp" alt="Kinston clevis self-locking hook, Grade 100" width="720" height="720" fetchpriority="high" decoding="async" />
+            <img src="/images/hero-hook-branded.webp" alt="Kinston clevis self-locking hook, Grade 100" width="720" height="720" fetchpriority="high" decoding="async" />
           </div>
           <svg class="dims" viewBox="0 0 1100 1100" aria-hidden="true" fill="none" stroke="var(--orange)" stroke-width="3">
             <path class="dl" d="M300 172 H360 M300 933 H360" />
@@ -57,7 +60,8 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
           </svg>
           <figcaption class="visually-hidden">Dimensions A, D, H and K are listed on the product datasheet</figcaption>
         </figure>
-        <div class="bench" role="status" aria-live="polite">
+        <div class="bench" aria-label="Illustrative proof test animation">
+          <p class="bench-example">PROOF TEST · ILLUSTRATION</p>
           <div class="bench-head"><span class="bench-dot" aria-hidden="true"></span><span class="bench-state">Proof test running</span></div>
           <div class="bench-load"><span class="bench-num">0.0</span><span class="bench-unit">tonnes</span></div>
           <div class="bench-bar" aria-hidden="true">
@@ -66,12 +70,13 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
             <span class="bench-tick" style="--at:100%"><i>2.5 × WLL</i></span>
           </div>
           <dl class="bench-meta">
-            <div><dt>Serial</dt><dd>KL-26-08817</dd></div>
+            <div><dt>Example serial</dt><dd>KL-26-08817</dd></div>
             <div><dt>Heat</dt><dd>4471A</dd></div>
           </dl>
           <span class="bench-stamp"><Icon name="check" /> Passed</span>
         </div>
       </div>
+      <a class="hero-scroll" href="#discover">Discover Kinston <Icon name="arrow" /></a>
     </div>
     <div class="wrap hero-ranges">
       <ul>
@@ -82,14 +87,26 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
     </div>
   </section>
 
+  <section class="company-intro section" id="discover" aria-labelledby="intro-title">
+    <div class="wrap intro-grid">
+      <div><p class="eyebrow dark-label">THE STRENGTH BEHIND YOUR OPERATION</p><h2 id="intro-title">Your load. Our expertise.<br /><span>One trusted lifting partner.</span></h2></div>
+      <div class="intro-copy"><p>From the first component to a complete lifting assembly, Kinston helps you move heavy loads with confidence. We manufacture, test and supply lifting equipment for construction, offshore, marine and industry worldwide.</p><a class="textlink" href="/about">Get to know Kinston <Icon name="arrow" /></a></div>
+    </div>
+    <div class="wrap intro-promises">
+      <div><Icon name="shield" /><span><strong>Tested before it reaches you</strong><small>Proof tested, marked and certified</small></span></div>
+      <div><Icon name="globe" /><span><strong>Local support. Global reach.</strong><small>Sharjah · Mumbai · Rotterdam</small></span></div>
+      <div><Icon name="wrench" /><span><strong>Expertise for your next lift</strong><small>Product selection and sling design</small></span></div>
+    </div>
+  </section>
+
   <section class="section">
     <div class="wrap">
-      <SectionHeading title="Eight ranges, one standard of testing" lead="Choose a range to see every product with dimensions, working load limits and downloads." />
+      <SectionHeading title="The right equipment. For every lift." lead="Choose a range to see every product with dimensions, working load limits and downloads." />
       <ul class="ranges" data-reveal>
-        {cats.map((c) => (
+        {cats.map((c, i) => (
           <li>
             <a href={`/products/${c.slug}`}>
-              <div class="range-art"><img src={`/images/products/${c.art}.webp`} alt="" loading="lazy" decoding="async" width="600" height="600" /></div>
+              <div class="range-art"><span class="range-index" aria-hidden="true">0{i + 1} / KINSTON</span><img src={`/images/categories/branded/${c.slug}.webp`} alt={`Representative ${c.short.toLowerCase()} equipment`} loading="lazy" decoding="async" width="768" height="768" /><span class="range-browse">Explore range <Icon name="arrow" /></span></div>
               <div class="range-body">
                 <h3>{c.name}</h3>
                 <p>{c.groups.map((g) => (/^[A-Z][a-z]/.test(g) ? g[0].toLowerCase() + g.slice(1) : g)).join(', ')}</p>
@@ -108,7 +125,7 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
   <section class="section bg-paper">
     <div class="wrap why">
       <div class="why-copy">
-        <SectionHeading title="Why riggers specify Kinston" />
+        <SectionHeading title="Trust is built into every component." />
         <p class="prose">A lifting component is only as good as the test certificate behind it. We forge, heat treat, test and mark under one quality system, so the hook in your hand matches the number on the certificate and the drawing on the datasheet.</p>
         <ul class="stats" data-reveal data-count>
           {stats.map((s) => (
@@ -140,7 +157,7 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
   <section class="section">
     <div class="wrap">
       <div class="feat-head">
-        <SectionHeading title="Most specified this quarter" />
+        <SectionHeading title="Proven products. Ready to work." />
         <a class="textlink" href="/products">All products</a>
       </div>
       <div class="grid cols-4" data-reveal>
@@ -202,6 +219,12 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
     </div>
   </section>
 
+  <section class="lift-help section">
+    <div class="wrap help-inner">
+      <div><p class="eyebrow">LET’S GET YOUR PROJECT MOVING</p><h2>Have a lift in mind?<br />Let’s find the right solution.</h2><p>Tell us what you’re lifting, where you’re working and when you need it. Our engineers will help with the equipment, specifications and quotation.</p></div>
+      <div class="help-actions"><a class="btn" href="/contact">Discuss your requirements <Icon name="arrow" /></a><a href={`mailto:${site.email}`}>{site.email}</a></div>
+    </div>
+  </section>
   <CtaBand />
 </Base>
 
@@ -322,7 +345,7 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
     filter: blur(24px); animation: pulse 6s ease-in-out infinite;
   }
   .hero-fig img { position: relative; animation: rise 1s var(--ease) .2s both; }
-  .hook { transform-origin: 50% 8%; transition: transform 2.6s cubic-bezier(.4,0,.6,1); }
+  .hook { padding: 10%; transform-origin: 50% 8%; transition: transform 2.6s cubic-bezier(.4,0,.6,1); }
   .hero-fig.loading .hook { transform: scaleY(1.018) translateY(4px); }
   .hero-heat {
     position: absolute; inset: 30% 10% 8% 10%; border-radius: 50%; pointer-events: none; opacity: 0;
@@ -464,6 +487,149 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
     .news { grid-template-columns: 1fr; }
   }
   @media (max-width: 600px) { .ranges, .sectors, .certs, .stats { grid-template-columns: 1fr; } }
+
+  /* Homepage art direction: oversized typography, technical product stage, warm editorial sections. */
+  .hero { background-color: #0a1427; background-size: 80px 80px; }
+  .hero::before { background: radial-gradient(ellipse at 80% 45%, #20426755, transparent 55%); }
+  .hero-inner { grid-template-columns: 1.12fr 1fr; gap: 24px; padding-block: 74px 82px; min-height: 720px; }
+  .eyebrow { display: flex; align-items: center; gap: 10px; font-size: 11px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: #bac7d8; }
+  .eyebrow > span { width: 7px; height: 7px; background: var(--orange); border-radius: 50%; }
+  .hero h1 { font-size: clamp(3.5rem, 6.7vw, 6.15rem); line-height: .98; letter-spacing: -.045em; max-width: none; margin: 25px 0; }
+  .hero .hot {
+    display: inline-block;
+    color: #ff7138;
+    background: linear-gradient(105deg, #ff7138 0%, #ff7138 28%, #ffc18c 43%, #ffe6c8 50%, #ff9c59 58%, #ff7138 72%, #ff7138 100%);
+    background-size: 260% 100%;
+    background-position: 120% 50%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: none;
+    animation: confidence-shimmer 7s ease-in-out 1.2s infinite;
+  }
+  .hero-copy > .eyebrow { animation: rise .8s var(--ease) both, tagline-tint 7s ease-in-out 1.2s infinite; }
+  .hero-copy > .eyebrow > span { flex: none; animation: brand-beacon 3s ease-out infinite; }
+  .hero-glow { animation: stage-glow 8s ease-in-out infinite; }
+  @keyframes confidence-shimmer {
+    0%, 35% { background-position: 120% 50%; }
+    75%, 100% { background-position: -40% 50%; }
+  }
+  @keyframes tagline-tint {
+    0%, 30%, 100% { color: #bac7d8; }
+    55%, 70% { color: #ffc18c; }
+  }
+  @keyframes brand-beacon {
+    0% { box-shadow: 0 0 0 0 #ff713855; background: #ff7138; }
+    65% { box-shadow: 0 0 0 9px #ff713800; background: #ffb375; }
+    100% { box-shadow: 0 0 0 0 #ff713800; background: #ff7138; }
+  }
+  @keyframes stage-glow {
+    0%, 100% { opacity: .55; transform: scale(.94); }
+    50% { opacity: 1; transform: scale(1.06); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .hero .hot { animation: none; background: none; -webkit-text-fill-color: currentColor; }
+    .hero-copy > .eyebrow, .hero-copy > .eyebrow > span, .hero-glow, .hero-fig { animation: none !important; }
+  }
+  .hero-intro { font-size: 1.35rem; max-width: 34ch; line-height: 1.45; color: white; margin-bottom: 16px; }
+  .hero .lede { font-size: 1rem; line-height: 1.7; max-width: 50ch; color: #aab8cc; }
+  .hero-actions { margin-top: 28px; }
+  .proof { gap: 10px; display: grid; margin-top: 27px; font-size: .8rem; }
+  .hero-art-wrap { isolation: isolate; padding-top: 15px; }
+  .art-word { position: absolute; top: -20px; left: -5px; font-family: var(--font-display); font-weight: 700; font-size: clamp(8rem, 18vw, 17rem); line-height: 1; letter-spacing: -.04em; color: transparent; -webkit-text-stroke: 1px #ffffff16; z-index: -1; }
+  .art-grade { position: absolute; right: 0; top: 70px; display: grid; text-align: right; gap: 4px; }
+  .art-grade span { font-size: 8px; letter-spacing: .13em; color: #aab8cc; }
+  .art-grade strong { font: 600 2.5rem var(--font-display); color: #fff; }
+  .hero-fig { margin: 20px 24px 0 -25px; }
+  .hero-fig img { filter: drop-shadow(0 30px 32px #0009); }
+  .bench { top: auto; bottom: -25px; right: 0; width: 220px; background: #142339f2; border-radius: 3px; }
+  .bench-example { font-size: 8px; letter-spacing: .12em; color: #aab8cc; margin-bottom: 10px; }
+  .bench-load { font-size: 2.25rem; }
+  .hero-scroll { position: absolute; bottom: 25px; left: var(--gutter); display: flex; align-items: center; gap: 20px; text-transform: uppercase; letter-spacing: .12em; font-size: 9px; color: #bac7d8; }
+  .hero-scroll :global(svg) { width: 15px; transform: rotate(90deg); }
+  .hero-ranges ul { justify-content: space-between; gap: 24px; padding-block: 22px; }
+  .hero-ranges a { font-size: .95rem; }
+  .company-intro { background: #f6f5f1; border-bottom: 1px solid #e7e5df; }
+  .intro-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 70px; align-items: center; }
+  .dark-label { color: #a7431b; margin-bottom: 24px; }
+  .intro-grid h2 { font-size: clamp(2.2rem, 3.8vw, 3.5rem); letter-spacing: -.025em; line-height: 1.08; }
+  .intro-grid h2 span { color: #78808b; }
+  .intro-copy p { color: var(--steel); line-height: 1.8; margin-bottom: 24px; }
+  .intro-copy .textlink { display: inline-flex; gap: 18px; align-items: center; }
+  .intro-copy :global(svg) { width: 19px; }
+  .intro-promises { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin-top: 56px; }
+  .intro-promises > div { display: flex; gap: 16px; align-items: center; border-top: 1px solid #dcdedc; padding-top: 24px; }
+  .intro-promises :global(svg) { width: 29px; height: 29px; color: #d94b13; flex: none; }
+  .intro-promises strong, .intro-promises small { display: block; }
+  .intro-promises strong { font-size: .95rem; font-weight: 600; }
+  .intro-promises small { font-size: .8rem; color: var(--steel); margin-top: 3px; }
+  .ranges { gap: 24px; }
+  .ranges a { border-radius: 2px; box-shadow: none; border: 1px solid #e3e7ee; }
+  .range-art { background: #f5f6f7; border-radius: 0; aspect-ratio: 1.3; }
+  .range-art img { top: 0; padding: 12px; }
+  .range-body { padding: 23px; }
+  .why-list { counter-reset: reasons; }
+  .why-list li { counter-increment: reasons; position: relative; padding-left: 54px; }
+  .why-list li::before { content: '0' counter(reasons); position: absolute; left: 0; top: 27px; color: var(--orange); font: 600 1.15rem var(--font-display); }
+  .sectors { gap: 1px; }
+  .sectors a { padding: 32px 25px; }
+  .sectors h3 { margin-bottom: 18px; }
+  .news a { padding: 25px; background: #f6f7f9; border-top-width: 2px; }
+  .lift-help { background: #0a1427; color: white; border-top: 4px solid var(--orange); }
+  .help-inner { display: grid; grid-template-columns: 1.5fr 1fr; gap: 60px; align-items: center; }
+  .help-inner h2 { color: white; font-size: clamp(2.5rem, 4.5vw, 4rem); margin: 23px 0; letter-spacing: -.025em; }
+  .help-inner p:not(.eyebrow) { color: #aab8cc; max-width: 54ch; }
+  .help-actions { display: grid; gap: 20px; justify-items: start; justify-self: end; }
+  .help-actions > a:last-child { font-size: .95rem; color: #c4ccda; border-bottom: 1px solid #ffffff40; }
+  @media (max-width: 1100px) and (min-width: 961px) { .hero h1 { font-size: 4.6rem; } .hero-actions { gap: 10px; } .hero-actions .btn { padding-inline: 16px; font-size: 1rem; } }
+  @media (max-width: 960px) {
+    .hero-inner { grid-template-columns: 1fr; padding-block: 52px 64px; gap: 32px; }
+    .hero h1 { font-size: clamp(3.5rem, 9vw, 5.5rem); }
+    .hero-copy { max-width: 650px; }
+    .hero-art-wrap { max-width: 470px; padding-bottom: 10px; }
+    .hero-fig { margin: 0; }
+    .bench { position: absolute; bottom: 10px; right: 0; width: 205px; }
+    .art-word { font-size: 13rem; }
+    .hero-scroll { bottom: 18px; }
+    .intro-grid { gap: 32px; }
+    .intro-promises { gap: 20px; }
+    .help-inner { gap: 30px; }
+  }
+  @media (max-width: 600px) {
+    .hero h1 { font-size: clamp(3rem, 12vw, 4.3rem); }
+    .hero-intro { font-size: 1.2rem; }
+    .hero-actions { display: grid; }
+    .hero-art-wrap { max-width: 360px; padding-bottom: 90px; }
+    .art-word { font-size: 10rem; }
+    .art-grade { top: 25px; }
+    .bench { bottom: 10px; width: 190px; padding: 14px; }
+    .bench-load { font-size: 1.8rem; }
+    .intro-grid, .intro-promises, .help-inner { grid-template-columns: 1fr; }
+    .intro-promises { margin-top: 32px; }
+    .help-actions { justify-self: start; }
+    .help-actions .btn { white-space: normal; padding: 12px 20px; }
+    .feat-head { align-items: start; gap: 15px; }
+    .feat-head .textlink { font-size: .95rem; }
+  }
+
+  /* Product collection tiles */
+  .ranges { gap: 24px; }
+  .ranges a { overflow: hidden; border: 1px solid #e2e5e9; border-radius: 12px; background: #fff; box-shadow: 0 4px 16px #111b3304; transition: transform .35s var(--ease), box-shadow .35s var(--ease), border-color .35s; }
+  .ranges a:hover, .ranges a:focus-visible { transform: translateY(-7px); border-color: #f8500060; box-shadow: 0 18px 36px -16px #111b3338; }
+  .range-art { aspect-ratio: 1.05; background: #eef0f2; border-radius: 0; overflow: hidden; }
+  .range-art img { inset: 0; width: 100%; height: 100%; padding: 0; object-fit: cover; mix-blend-mode: normal; transition: transform .65s var(--ease); }
+  .ranges a:hover .range-art img { transform: scale(1.055); }
+  .range-art::after { display: none; }
+  .range-index { position: absolute; top: 16px; left: 17px; z-index: 2; color: #4c596b; background: #ffffffc9; border: 1px solid #ffffff90; border-radius: 4px; padding: 5px 8px; font-size: 9px; font-weight: 600; letter-spacing: .13em; }
+  .range-browse { position: absolute; bottom: 16px; left: 16px; right: 16px; z-index: 2; display: flex; justify-content: space-between; align-items: center; padding: 11px 14px; background: #111b33ed; color: white; border-radius: 6px; font-size: 12px; opacity: 0; transform: translateY(8px); transition: opacity .25s, transform .25s; }
+  .range-browse :global(svg) { width: 16px; }
+  .ranges a:hover .range-browse, .ranges a:focus-visible .range-browse { opacity: 1; transform: none; }
+  .range-body { padding: 23px 21px 18px; border-top: 1px solid #e9ecef; }
+  .range-body h3 { font-size: 1.4rem; line-height: 1.15; text-wrap: initial; }
+  .range-body p { margin-top: 9px; line-height: 1.55; }
+  .range-foot { margin-top: 23px; padding-top: 15px; }
+  .range-go { border: none; background: #f0f2f5; }
+  @media (hover: none) { .range-browse { display: none; } }
 </style>
 
 <style is:global>

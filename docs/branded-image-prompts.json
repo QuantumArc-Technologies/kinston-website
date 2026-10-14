@@ -1,0 +1,383 @@
+{
+  "tool": "Built-in image_gen",
+  "brand": "KINSTON",
+  "purpose": "AI-generated representative branding mockups. Metal parts carry embossed manufacturer lettering; textiles use labels or printing. No load ratings or certification marks added.",
+  "products": [
+    {
+      "slug": "single-leg-chain-sling-g100",
+      "name": "Single leg chain sling, Grade 100",
+      "input": "/images/products/realistic/single-leg-chain-sling-g100.webp",
+      "file": "/images/products/branded/single-leg-chain-sling-g100.webp",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-a5595b93-65b6-4ab3-b563-607e5cdd6389.png",
+      "prompt": "Edit this existing photograph of Single leg chain sling, Grade 100. Change ONLY the manufacturer branding. Add the exact uppercase word \"KINSTON\" as legible raised forged manufacturer lettering along the broad orange front face of one lower hook. Keep the complete chain sling assembly and the exact number of legs unchanged. Preserve the exact product type, silhouette, physical geometry, connectors, finish, colours, composition, pale grey background, lighting, contact shadows and photo quality. Branding must belong physically to the object, never a watermark, floating text, corner badge or graphic overlay. Make it clearly readable at catalogue image size while remaining mechanically realistic. Remove incidental illegible pseudo-lettering and other brand-like markings. No YOKE or other brand. No new numbers, capacity ratings, safety claims, certification symbols or extra wording. Photorealistic industrial catalogue photograph. Keep the whole product visible with its original framing."
+    },
+    {
+      "slug": "two-leg-chain-sling-g100",
+      "name": "Two leg chain sling, Grade 100",
+      "input": "/images/products/realistic/two-leg-chain-sling-g100.webp",
+      "file": "/images/products/branded/two-leg-chain-sling-g100.webp",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-a4b40849-b843-4175-9294-2e278afdb12d.png",
+      "prompt": "Edit this existing photograph of Two leg chain sling, Grade 100. Change ONLY the manufacturer branding. Add the exact uppercase word \"KINSTON\" as legible raised forged manufacturer lettering along the broad orange front face of one lower hook. Keep the complete chain sling assembly and the exact number of legs unchanged. Preserve the exact product type, silhouette, physical geometry, connectors, finish, colours, composition, pale grey background, lighting, contact shadows and photo quality. Branding must belong physically to the object, never a watermark, floating text, corner badge or graphic overlay. Make it clearly readable at catalogue image size while remaining mechanically realistic. Remove incidental illegible pseudo-lettering and other brand-like markings. No YOKE or other brand. No new numbers, capacity ratings, safety claims, certification symbols or extra wording. Photorealistic industrial catalogue photograph. Keep the whole product visible with its original framing."
+    },
+    {
+      "slug": "four-leg-chain-sling-g100",
+      "name": "Four leg chain sling, Grade 100",
+      "input": "/images/products/realistic/four-leg-chain-sling-g100.webp",
+      "file": "/images/products/branded/four-leg-chain-sling-g100.webp",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-239d6fd5-0006-4cf8-9d8b-cb93b41c85c0.png",
+      "prompt": "Edit this existing photograph of Four leg chain sling, Grade 100. Change ONLY the manufacturer branding. Add the exact uppercase word \"KINSTON\" as legible raised forged manufacturer lettering along the broad orange front face of one lower hook. Keep the complete chain sling assembly and the exact number of legs unchanged. Preserve the exact product type, silhouette, physical geometry, connectors, finish, colours, composition, pale grey background, lighting, contact shadows and photo quality. Branding must belong physically to the object, never a watermark, floating text, corner badge or graphic overlay. Make it clearly readable at catalogue image size while remaining mechanically realistic. Remove incidental illegible pseudo-lettering and other brand-like markings. No YOKE or other brand. No new numbers, capacity ratings, safety claims, certification symbols or extra wording. Photorealistic industrial catalogue photograph. Keep the whole product visible with its original framing."
+    },
+    {
+      "slug": "single-leg-chain-sling-g80",
+      "name": "Single leg chain sling, Grade 80",
+      "input": "/images/products/realistic/single-leg-chain-sling-g80.webp",
+      "file": "/images/products/branded/single-leg-chain-sling-g80.webp",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-c24feada-04e4-44ac-b755-bfe122b1c782.png",
+      "prompt": "Edit this existing photograph of Single leg chain sling, Grade 80. Change ONLY the manufacturer branding. Add the exact uppercase word \"KINSTON\" as legible raised forged manufacturer lettering along the broad orange front face of one lower hook. Keep the complete chain sling assembly and the exact number of legs unchanged. Preserve the exact product type, silhouette, physical geometry, connectors, finish, colours, composition, pale grey background, lighting, contact shadows and photo quality. Branding must belong physically to the object, never a watermark, floating text, corner badge or graphic overlay. Make it clearly readable at catalogue image size while remaining mechanically realistic. Remove incidental illegible pseudo-lettering and other brand-like markings. No YOKE or other brand. No new numbers, capacity ratings, safety claims, certification symbols or extra wording. Photorealistic industrial catalogue photograph. Keep the whole product visible with its original framing."
+    },
+    {
+      "slug": "two-leg-chain-sling-g80",
+      "name": "Two leg chain sling, Grade 80",
+      "input": "/images/products/realistic/two-leg-chain-sling-g80.webp",
+      "file": "/images/products/branded/two-leg-chain-sling-g80.webp",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-56f0024e-d8e4-48eb-9792-493fb9a6ff18.png",
+      "prompt": "Edit this existing photograph of Two leg chain sling, Grade 80. Change ONLY the manufacturer branding. Add the exact uppercase word \"KINSTON\" as legible raised forged manufacturer lettering along the broad orange front face of one lower hook. Keep the complete chain sling assembly and the exact number of legs unchanged. Preserve the exact product type, silhouette, physical geometry, connectors, finish, colours, composition, pale grey background, lighting, contact shadows and photo quality. Branding must belong physically to the object, never a watermark, floating text, corner badge or graphic overlay. Make it clearly readable at catalogue image size while remaining mechanically realistic. Remove incidental illegible pseudo-lettering and other brand-like markings. No YOKE or other brand. No new numbers, capacity ratings, safety claims, certification symbols or extra wording. Photorealistic industrial catalogue photograph. Keep the whole product visible with its original framing."
+    },
+    {
+      "slug": "clevis-self-locking-hook-g100",
+      "name": "Clevis self-locking hook, Grade 100",
+      "input": "/images/products/realistic/clevis-self-locking-hook-g100.webp",
+      "file": "/images/products/branded/clevis-self-locking-hook-g100.webp",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-430a846f-0cf2-4472-ab91-5bd751652394.png",
+      "prompt": "Edit this existing photograph of Clevis self-locking hook, Grade 100. Change ONLY the manufacturer branding. Add the exact uppercase word \"KINSTON\", K I N S T O N, as raised forged/embossed manufacturer lettering on the broad visible front face of the main metal body. Follow the real curvature and perspective of the part, with same-material relief, realistic edge highlights and subtle recess shadows. Preserve the exact product type, silhouette, physical geometry, connectors, finish, colours, composition, pale grey background, lighting, contact shadows and photo quality. Branding must belong physically to the object, never a watermark, floating text, corner badge or graphic overlay. Make it clearly readable at catalogue image size while remaining mechanically realistic. Remove incidental illegible pseudo-lettering and other brand-like markings. No YOKE or other brand. No new numbers, capacity ratings, safety claims, certification symbols or extra wording. Photorealistic industrial catalogue photograph. Keep the whole product visible with its original framing."
+    },
+    {
+      "slug": "eye-self-locking-hook-g100",
+      "name": "Eye self-locking hook, Grade 100",
+      "input": "/images/products/realistic/eye-self-locking-hook-g100.webp",
+      "file": "/images/products/branded/eye-self-locking-hook-g100.webp",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-8dc0b177-1bde-4865-b6c4-09c65f2e2eac.png",
+      "prompt": "Edit this existing photograph of Eye self-locking hook, Grade 100. Change ONLY the manufacturer branding. Add the exact uppercase word \"KINSTON\", K I N S T O N, as raised forged/embossed manufacturer lettering on the broad visible front face of the main metal body. Follow the real curvature and perspective of the part, with same-material relief, realistic edge highlights and subtle recess shadows. Preserve the exact product type, silhouette, physical geometry, connectors, finish, colours, composition, pale grey background, lighting, contact shadows and photo quality. Branding must belong physically to the object, never a watermark, floating text, corner badge or graphic overlay. Make it clearly readable at catalogue image size while remaining mechanically realistic. Remove incidental illegible pseudo-lettering and other brand-like markings. No YOKE or other brand. No new numbers, capacity ratings, safety claims, certification symbols or extra wording. Photorealistic industrial catalogue photograph. Keep the whole product visible with its original framing."
+    },
+    {
+      "slug": "swivel-self-locking-hook-g100",
+      "name": "Swivel self-locking hook with bearing, Grade 100",
+      "input": "/images/products/realistic/swivel-self-locking-hook-g100.webp",
+      "file": "/images/products/branded/swivel-self-locking-hook-g100.webp",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-fa2b69ca-5d00-4ad0-9b05-ccbf4d75224f.png",
+      "prompt": "Edit this existing photograph of Swivel self-locking hook with bearing, Grade 100. Change ONLY the manufacturer branding. Add the exact uppercase word \"KINSTON\", K I N S T O N, as raised forged/embossed manufacturer lettering on the broad visible front face of the main metal body. Follow the real curvature and perspective of the part, with same-material relief, realistic edge highlights and subtle recess shadows. Preserve the exact product type, silhouette, physical geometry, connectors, finish, colours, composition, pale grey background, lighting, contact shadows and photo quality. Branding must belong physically to the object, never a watermark, floating text, corner badge or graphic overlay. Make it clearly readable at catalogue image size while remaining mechanically realistic. Remove incidental illegible pseudo-lettering and other brand-like markings. No YOKE or other brand. No new numbers, capacity ratings, safety claims, certification symbols or extra wording. Photorealistic industrial catalogue photograph. Keep the whole product visible with its original framing."
+    },
+    {
+      "slug": "eye-sling-hook-g80",
+      "name": "Eye sling hook with latch, Grade 80",
+      "input": "/images/products/realistic/eye-sling-hook-g80.webp",
+      "file": "/images/products/branded/eye-sling-hook-g80.webp",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-39ad26be-b0e9-489f-987c-77da5a633761.png",
+      "prompt": "Edit this existing photograph of Eye sling hook with latch, Grade 80. Change ONLY the manufacturer branding. Add the exact uppercase word \"KINSTON\", K I N S T O N, as raised forged/embossed manufacturer lettering on the broad visible front face of the main metal body. Follow the real curvature and perspective of the part, with same-material relief, realistic edge highlights and subtle recess shadows. Preserve the exact product type, silhouette, physical geometry, connectors, finish, colours, composition, pale grey background, lighting, contact shadows and photo quality. Branding must belong physically to the object, never a watermark, floating text, corner badge or graphic overlay. Make it clearly readable at catalogue image size while remaining mechanically realistic. Remove incidental illegible pseudo-lettering and other brand-like markings. No YOKE or other brand. No new numbers, capacity ratings, safety claims, certification symbols or extra wording. Photorealistic industrial catalogue photograph. Keep the whole product visible with its original framing."
+    },
+    {
+      "slug": "clevis-sling-hook-g80",
+      "name": "Clevis sling hook with latch, Grade 80",
+      "input": "/images/products/realistic/clevis-sling-hook-g80.webp",
+      "file": "/images/products/branded/clevis-sling-hook-g80.webp",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-51824a73-7f5f-4a2d-96f0-d78baeb6fdea.png",
+      "prompt": "Edit this existing photograph of Clevis sling hook with latch, Grade 80. Change ONLY the manufacturer branding. Add the exact uppercase word \"KINSTON\", K I N S T O N, as raised forged/embossed manufacturer lettering on the broad visible front face of the main metal body. Follow the real curvature and perspective of the part, with same-material relief, realistic edge highlights and subtle recess shadows. Preserve the exact product type, silhouette, physical geometry, connectors, finish, colours, composition, pale grey background, lighting, contact shadows and photo quality. Branding must belong physically to the object, never a watermark, floating text, corner badge or graphic overlay. Make it clearly readable at catalogue image size while remaining mechanically realistic. Remove incidental illegible pseudo-lettering and other brand-like markings. No YOKE or other brand. No new numbers, capacity ratings, safety claims, certification symbols or extra wording. Photorealistic industrial catalogue photograph. Keep the whole product visible with its original framing."
+    },
+    {
+      "slug": "clevis-grab-hook-g80",
+      "name": "Clevis grab hook, Grade 80",
+      "input": "/images/products/realistic/clevis-grab-hook-g80.webp",
+      "file": "/images/products/branded/clevis-grab-hook-g80.webp",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-73b392cd-5c18-4e3a-b1fa-e2178e9fa6ae.png",
+      "prompt": "Edit this existing photograph of Clevis grab hook, Grade 80. Change ONLY the manufacturer branding. Add the exact uppercase word \"KINSTON\", K I N S T O N, as raised forged/embossed manufacturer lettering on the broad visible front face of the main metal body. Follow the real curvature and perspective of the part, with same-material relief, realistic edge highlights and subtle recess shadows. Preserve the exact product type, silhouette, physical geometry, connectors, finish, colours, composition, pale grey background, lighting, contact shadows and photo quality. Branding must belong physically to the object, never a watermark, floating text, corner badge or graphic overlay. Make it clearly readable at catalogue image size while remaining mechanically realistic. Remove incidental illegible pseudo-lettering and other brand-like markings. No YOKE or other brand. No new numbers, capacity ratings, safety claims, certification symbols or extra wording. Photorealistic industrial catalogue photograph. Keep the whole product visible with its original framing."
+    },
+    {
+      "slug": "eye-grab-hook-g100",
+      "name": "Eye grab hook, Grade 100",
+      "input": "/images/products/realistic/eye-grab-hook-g100.webp",
+      "file": "/images/products/branded/eye-grab-hook-g100.webp",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-7d76b7de-0137-4622-af52-ee3fe59628c4.png",
+      "prompt": "Edit this existing photograph of Eye grab hook, Grade 100. Change ONLY the manufacturer branding. Add the exact uppercase word \"KINSTON\", K I N S T O N, as raised forged/embossed manufacturer lettering on the broad visible front face of the main metal body. Follow the real curvature and perspective of the part, with same-material relief, realistic edge highlights and subtle recess shadows. Preserve the exact product type, silhouette, physical geometry, connectors, finish, colours, composition, pale grey background, lighting, contact shadows and photo quality. Branding must belong physically to the object, never a watermark, floating text, corner badge or graphic overlay. Make it clearly readable at catalogue image size while remaining mechanically realistic. Remove incidental illegible pseudo-lettering and other brand-like markings. No YOKE or other brand. No new numbers, capacity ratings, safety claims, certification symbols or extra wording. Photorealistic industrial catalogue photograph. Keep the whole product visible with its original framing."
+    },
+    {
+      "slug": "alloy-hoist-hook",
+      "name": "Alloy hoist hook with latch",
+      "input": "/images/products/realistic/alloy-hoist-hook.webp",
+      "file": "/images/products/branded/alloy-hoist-hook.webp",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-3e7eb76b-1846-4d18-8251-fc141acfc779.png",
+      "prompt": "Edit this existing photograph of Alloy hoist hook with latch. Change ONLY the manufacturer branding. Add the exact uppercase word \"KINSTON\", K I N S T O N, as raised forged/embossed manufacturer lettering on the broad visible front face of the main metal body. Follow the real curvature and perspective of the part, with same-material relief, realistic edge highlights and subtle recess shadows. Preserve the exact product type, silhouette, physical geometry, connectors, finish, colours, composition, pale grey background, lighting, contact shadows and photo quality. Branding must belong physically to the object, never a watermark, floating text, corner badge or graphic overlay. Make it clearly readable at catalogue image size while remaining mechanically realistic. Remove incidental illegible pseudo-lettering and other brand-like markings. No YOKE or other brand. No new numbers, capacity ratings, safety claims, certification symbols or extra wording. Photorealistic industrial catalogue photograph. Keep the whole product visible with its original framing."
+    },
+    {
+      "slug": "swivel-hook-with-bearing",
+      "name": "Swivel hook with bearing, Grade 80",
+      "input": "/images/products/realistic/swivel-hook-with-bearing.webp",
+      "file": "/images/products/branded/swivel-hook-with-bearing.webp",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-20caa35f-1ea4-47e2-bde0-8c105dc1f914.png",
+      "prompt": "Edit this existing photograph of Swivel hook with bearing, Grade 80. Change ONLY the manufacturer branding. Add the exact uppercase word \"KINSTON\", K I N S T O N, as raised forged/embossed manufacturer lettering on the broad visible front face of the main metal body. Follow the real curvature and perspective of the part, with same-material relief, realistic edge highlights and subtle recess shadows. Preserve the exact product type, silhouette, physical geometry, connectors, finish, colours, composition, pale grey background, lighting, contact shadows and photo quality. Branding must belong physically to the object, never a watermark, floating text, corner badge or graphic overlay. Make it clearly readable at catalogue image size while remaining mechanically realistic. Remove incidental illegible pseudo-lettering and other brand-like markings. No YOKE or other brand. No new numbers, capacity ratings, safety claims, certification symbols or extra wording. Photorealistic industrial catalogue photograph. Keep the whole product visible with its original framing."
+    },
+    {
+      "slug": "bow-shackle-screw-pin",
+      "name": "Screw pin bow shackle",
+      "input": "/images/products/realistic/bow-shackle-screw-pin.webp",
+      "file": "/images/products/branded/bow-shackle-screw-pin.webp",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-32ae258a-811a-443c-88fb-59888d1781a9.png",
+      "prompt": "Edit this product photograph only. Preserve the exact shackle geometry, red screw pin, galvanized steel finish, composition, pale grey background and lighting. Add the exact word \"KINSTON\" in uppercase, physically forged/embossed into the front face of the upper steel bow, curving naturally along the metal arc, similar to real lifting equipment manufacturer markings. Letters must be legible, raised metal with subtle relief shadows and highlights, the same material as the shackle, not floating text, not an overlay or sticker. Remove any incidental illegible pseudo-lettering. Do not add load ratings, certification symbols, other brands or other words. Maintain high photographic realism."
+    },
+    {
+      "slug": "bow-shackle-safety-pin",
+      "name": "Safety pin bow shackle",
+      "input": "/images/products/realistic/bow-shackle-safety-pin.webp",
+      "file": "/images/products/branded/bow-shackle-safety-pin.webp",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-656899fe-8da2-4d7a-af97-2bea634450b6.png",
+      "prompt": "Edit this existing photograph of Safety pin bow shackle. Change ONLY the manufacturer branding. Add the exact uppercase word \"KINSTON\", K I N S T O N, as raised forged/embossed manufacturer lettering on the broad visible front face of the main metal body. Follow the real curvature and perspective of the part, with same-material relief, realistic edge highlights and subtle recess shadows. Place the lettering along the upper front curved bow, like authentic forged shackle markings. Preserve the exact product type, silhouette, physical geometry, connectors, finish, colours, composition, pale grey background, lighting, contact shadows and photo quality. Branding must belong physically to the object, never a watermark, floating text, corner badge or graphic overlay. Make it clearly readable at catalogue image size while remaining mechanically realistic. Remove incidental illegible pseudo-lettering and other brand-like markings. No YOKE or other brand. No new numbers, capacity ratings, safety claims, certification symbols or extra wording. Photorealistic industrial catalogue photograph. Keep the whole product visible with its original framing."
+    },
+    {
+      "slug": "dee-shackle-screw-pin",
+      "name": "Screw pin dee shackle",
+      "input": "/images/products/realistic/dee-shackle-screw-pin.webp",
+      "file": "/images/products/branded/dee-shackle-screw-pin.webp",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-95c562a3-99ca-444b-adc1-90e8465e0639.png",
+      "prompt": "Edit this existing photograph of Screw pin dee shackle. Change ONLY the manufacturer branding. Add the exact uppercase word \"KINSTON\", K I N S T O N, as raised forged/embossed manufacturer lettering on the broad visible front face of the main metal body. Follow the real curvature and perspective of the part, with same-material relief, realistic edge highlights and subtle recess shadows. Place the lettering along the upper front curved bow, like authentic forged shackle markings. Preserve the exact product type, silhouette, physical geometry, connectors, finish, colours, composition, pale grey background, lighting, contact shadows and photo quality. Branding must belong physically to the object, never a watermark, floating text, corner badge or graphic overlay. Make it clearly readable at catalogue image size while remaining mechanically realistic. Remove incidental illegible pseudo-lettering and other brand-like markings. No YOKE or other brand. No new numbers, capacity ratings, safety claims, certification symbols or extra wording. Photorealistic industrial catalogue photograph. Keep the whole product visible with its original framing."
+    },
+    {
+      "slug": "dee-shackle-safety-pin",
+      "name": "Safety pin dee shackle",
+      "input": "/images/products/realistic/dee-shackle-safety-pin.webp",
+      "file": "/images/products/branded/dee-shackle-safety-pin.webp",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-06c3a0b8-a661-4d8e-af7b-ca5ee4dd8d26.png",
+      "prompt": "Edit this existing photograph of Safety pin dee shackle. Change ONLY the manufacturer branding. Add the exact uppercase word \"KINSTON\", K I N S T O N, as raised forged/embossed manufacturer lettering on the broad visible front face of the main metal body. Follow the real curvature and perspective of the part, with same-material relief, realistic edge highlights and subtle recess shadows. Place the lettering along the upper front curved bow, like authentic forged shackle markings. Preserve the exact product type, silhouette, physical geometry, connectors, finish, colours, composition, pale grey background, lighting, contact shadows and photo quality. Branding must belong physically to the object, never a watermark, floating text, corner badge or graphic overlay. Make it clearly readable at catalogue image size while remaining mechanically realistic. Remove incidental illegible pseudo-lettering and other brand-like markings. No YOKE or other brand. No new numbers, capacity ratings, safety claims, certification symbols or extra wording. Photorealistic industrial catalogue photograph. Keep the whole product visible with its original framing."
+    },
+    {
+      "slug": "wide-body-shackle",
+      "name": "Wide body shackle",
+      "input": "/images/products/realistic/wide-body-shackle.webp",
+      "file": "/images/products/branded/wide-body-shackle.webp",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-126a7215-f12f-4b7f-8adc-646492ed7c3f.png",
+      "prompt": "Edit this existing photograph of Wide body shackle. Change ONLY the manufacturer branding. Add the exact uppercase word \"KINSTON\", K I N S T O N, as raised forged/embossed manufacturer lettering on the broad visible front face of the main metal body. Follow the real curvature and perspective of the part, with same-material relief, realistic edge highlights and subtle recess shadows. Place the lettering along the upper front curved bow, like authentic forged shackle markings. Preserve the exact product type, silhouette, physical geometry, connectors, finish, colours, composition, pale grey background, lighting, contact shadows and photo quality. Branding must belong physically to the object, never a watermark, floating text, corner badge or graphic overlay. Make it clearly readable at catalogue image size while remaining mechanically realistic. Remove incidental illegible pseudo-lettering and other brand-like markings. No YOKE or other brand. No new numbers, capacity ratings, safety claims, certification symbols or extra wording. Photorealistic industrial catalogue photograph. Keep the whole product visible with its original framing."
+    },
+    {
+      "slug": "rov-shackle",
+      "name": "ROV bow shackle",
+      "input": "/images/products/realistic/rov-shackle.webp",
+      "file": "/images/products/branded/rov-shackle.webp",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-a7e0a244-d37b-49bb-acb8-3baa687afc5b.png",
+      "prompt": "Edit this existing photograph of ROV bow shackle. Change ONLY the manufacturer branding. Add the exact uppercase word \"KINSTON\", K I N S T O N, as raised forged/embossed manufacturer lettering on the broad visible front face of the main metal body. Follow the real curvature and perspective of the part, with same-material relief, realistic edge highlights and subtle recess shadows. Place the lettering along the upper front curved bow, like authentic forged shackle markings. Preserve the exact product type, silhouette, physical geometry, connectors, finish, colours, composition, pale grey background, lighting, contact shadows and photo quality. Branding must belong physically to the object, never a watermark, floating text, corner badge or graphic overlay. Make it clearly readable at catalogue image size while remaining mechanically realistic. Remove incidental illegible pseudo-lettering and other brand-like markings. No YOKE or other brand. No new numbers, capacity ratings, safety claims, certification symbols or extra wording. Photorealistic industrial catalogue photograph. Keep the whole product visible with its original framing."
+    },
+    {
+      "slug": "master-link-g100",
+      "name": "Master link, Grade 100",
+      "input": "/images/products/realistic/master-link-g100.webp",
+      "file": "/images/products/branded/master-link-g100.webp",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-3e1268e6-f48c-4eb5-9314-ef17a44dd286.png",
+      "prompt": "Edit this existing photograph of Master link, Grade 100. Change ONLY the manufacturer branding. Add the exact uppercase word \"KINSTON\", K I N S T O N, as raised forged/embossed manufacturer lettering on the broad visible front face of the main metal body. Follow the real curvature and perspective of the part, with same-material relief, realistic edge highlights and subtle recess shadows. Preserve the exact product type, silhouette, physical geometry, connectors, finish, colours, composition, pale grey background, lighting, contact shadows and photo quality. Branding must belong physically to the object, never a watermark, floating text, corner badge or graphic overlay. Make it clearly readable at catalogue image size while remaining mechanically realistic. Remove incidental illegible pseudo-lettering and other brand-like markings. No YOKE or other brand. No new numbers, capacity ratings, safety claims, certification symbols or extra wording. Photorealistic industrial catalogue photograph. Keep the whole product visible with its original framing."
+    },
+    {
+      "slug": "master-link-assembly-g100",
+      "name": "Master link quad assembly, Grade 100",
+      "input": "/images/products/realistic/master-link-assembly-g100.webp",
+      "file": "/images/products/branded/master-link-assembly-g100.webp",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-ae2d43b8-d6c8-42be-b264-f41d77dba529.png",
+      "prompt": "Edit this existing photograph of Master link quad assembly, Grade 100. Change ONLY the manufacturer branding. Add the exact uppercase word \"KINSTON\", K I N S T O N, as raised forged/embossed manufacturer lettering on the broad visible front face of the main metal body. Follow the real curvature and perspective of the part, with same-material relief, realistic edge highlights and subtle recess shadows. Preserve the exact product type, silhouette, physical geometry, connectors, finish, colours, composition, pale grey background, lighting, contact shadows and photo quality. Branding must belong physically to the object, never a watermark, floating text, corner badge or graphic overlay. Make it clearly readable at catalogue image size while remaining mechanically realistic. Remove incidental illegible pseudo-lettering and other brand-like markings. No YOKE or other brand. No new numbers, capacity ratings, safety claims, certification symbols or extra wording. Photorealistic industrial catalogue photograph. Keep the whole product visible with its original framing."
+    },
+    {
+      "slug": "master-link-g80",
+      "name": "Master link, Grade 80",
+      "input": "/images/products/realistic/master-link-g80.webp",
+      "file": "/images/products/branded/master-link-g80.webp",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-b620b14d-362e-49a8-b6de-70f31da2de67.png",
+      "prompt": "Edit this existing photograph of Master link, Grade 80. Change ONLY the manufacturer branding. Add the exact uppercase word \"KINSTON\", K I N S T O N, as raised forged/embossed manufacturer lettering on the broad visible front face of the main metal body. Follow the real curvature and perspective of the part, with same-material relief, realistic edge highlights and subtle recess shadows. Preserve the exact product type, silhouette, physical geometry, connectors, finish, colours, composition, pale grey background, lighting, contact shadows and photo quality. Branding must belong physically to the object, never a watermark, floating text, corner badge or graphic overlay. Make it clearly readable at catalogue image size while remaining mechanically realistic. Remove incidental illegible pseudo-lettering and other brand-like markings. No YOKE or other brand. No new numbers, capacity ratings, safety claims, certification symbols or extra wording. Photorealistic industrial catalogue photograph. Keep the whole product visible with its original framing."
+    },
+    {
+      "slug": "connecting-link-g100",
+      "name": "Connecting link, Grade 100",
+      "input": "/images/products/realistic/connecting-link-g100.webp",
+      "file": "/images/products/branded/connecting-link-g100.webp",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-5c800a77-2802-4ee1-b133-21f152ec4bc3.png",
+      "prompt": "Edit this existing photograph of Connecting link, Grade 100. Change ONLY the manufacturer branding. Add the exact uppercase word \"KINSTON\", K I N S T O N, as raised forged/embossed manufacturer lettering on the broad visible front face of the main metal body. Follow the real curvature and perspective of the part, with same-material relief, realistic edge highlights and subtle recess shadows. Preserve the exact product type, silhouette, physical geometry, connectors, finish, colours, composition, pale grey background, lighting, contact shadows and photo quality. Branding must belong physically to the object, never a watermark, floating text, corner badge or graphic overlay. Make it clearly readable at catalogue image size while remaining mechanically realistic. Remove incidental illegible pseudo-lettering and other brand-like markings. No YOKE or other brand. No new numbers, capacity ratings, safety claims, certification symbols or extra wording. Photorealistic industrial catalogue photograph. Keep the whole product visible with its original framing."
+    },
+    {
+      "slug": "omega-link-g80",
+      "name": "Omega link, Grade 80",
+      "input": "/images/products/realistic/omega-link-g80.webp",
+      "file": "/images/products/branded/omega-link-g80.webp",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-1d9ee63a-2766-4257-acf9-a823589b080a.png",
+      "prompt": "Edit this existing photograph of Omega link, Grade 80. Change ONLY the manufacturer branding. Add the exact uppercase word \"KINSTON\", K I N S T O N, as raised forged/embossed manufacturer lettering on the broad visible front face of the main metal body. Follow the real curvature and perspective of the part, with same-material relief, realistic edge highlights and subtle recess shadows. Preserve the exact product type, silhouette, physical geometry, connectors, finish, colours, composition, pale grey background, lighting, contact shadows and photo quality. Branding must belong physically to the object, never a watermark, floating text, corner badge or graphic overlay. Make it clearly readable at catalogue image size while remaining mechanically realistic. Remove incidental illegible pseudo-lettering and other brand-like markings. No YOKE or other brand. No new numbers, capacity ratings, safety claims, certification symbols or extra wording. Photorealistic industrial catalogue photograph. Keep the whole product visible with its original framing."
+    },
+    {
+      "slug": "open-spelter-socket",
+      "name": "Open spelter socket",
+      "input": "/images/products/realistic/open-spelter-socket.webp",
+      "file": "/images/products/branded/open-spelter-socket.webp",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-515d3cb2-05a6-40b8-b22c-187f7e55c08c.png",
+      "prompt": "Edit this existing photograph of Open spelter socket. Change ONLY the manufacturer branding. Add the exact uppercase word \"KINSTON\", K I N S T O N, as raised forged/embossed manufacturer lettering on the broad visible front face of the main metal body. Follow the real curvature and perspective of the part, with same-material relief, realistic edge highlights and subtle recess shadows. Preserve the exact product type, silhouette, physical geometry, connectors, finish, colours, composition, pale grey background, lighting, contact shadows and photo quality. Branding must belong physically to the object, never a watermark, floating text, corner badge or graphic overlay. Make it clearly readable at catalogue image size while remaining mechanically realistic. Remove incidental illegible pseudo-lettering and other brand-like markings. No YOKE or other brand. No new numbers, capacity ratings, safety claims, certification symbols or extra wording. Photorealistic industrial catalogue photograph. Keep the whole product visible with its original framing."
+    },
+    {
+      "slug": "closed-spelter-socket",
+      "name": "Closed spelter socket",
+      "input": "/images/products/realistic/closed-spelter-socket.webp",
+      "file": "/images/products/branded/closed-spelter-socket.webp",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-f202be19-6635-4307-8c05-84aeec509267.png",
+      "prompt": "Edit this existing photograph of Closed spelter socket. Change ONLY the manufacturer branding. Add the exact uppercase word \"KINSTON\", K I N S T O N, as raised forged/embossed manufacturer lettering on the broad visible front face of the main metal body. Follow the real curvature and perspective of the part, with same-material relief, realistic edge highlights and subtle recess shadows. Preserve the exact product type, silhouette, physical geometry, connectors, finish, colours, composition, pale grey background, lighting, contact shadows and photo quality. Branding must belong physically to the object, never a watermark, floating text, corner badge or graphic overlay. Make it clearly readable at catalogue image size while remaining mechanically realistic. Remove incidental illegible pseudo-lettering and other brand-like markings. No YOKE or other brand. No new numbers, capacity ratings, safety claims, certification symbols or extra wording. Photorealistic industrial catalogue photograph. Keep the whole product visible with its original framing."
+    },
+    {
+      "slug": "wedge-socket",
+      "name": "Wedge socket",
+      "input": "/images/products/realistic/wedge-socket.webp",
+      "file": "/images/products/branded/wedge-socket.webp",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-5daeec52-9295-47f1-a2b4-f64d736f7492.png",
+      "prompt": "Edit this existing photograph of Wedge socket. Change ONLY the manufacturer branding. Add the exact uppercase word \"KINSTON\", K I N S T O N, as raised forged/embossed manufacturer lettering on the broad visible front face of the main metal body. Follow the real curvature and perspective of the part, with same-material relief, realistic edge highlights and subtle recess shadows. Preserve the exact product type, silhouette, physical geometry, connectors, finish, colours, composition, pale grey background, lighting, contact shadows and photo quality. Branding must belong physically to the object, never a watermark, floating text, corner badge or graphic overlay. Make it clearly readable at catalogue image size while remaining mechanically realistic. Remove incidental illegible pseudo-lettering and other brand-like markings. No YOKE or other brand. No new numbers, capacity ratings, safety claims, certification symbols or extra wording. Photorealistic industrial catalogue photograph. Keep the whole product visible with its original framing."
+    },
+    {
+      "slug": "wire-rope-clip-din-1142",
+      "name": "Wire rope grip, DIN 1142",
+      "input": "/images/products/realistic/wire-rope-clip-din-1142.webp",
+      "file": "/images/products/branded/wire-rope-clip-din-1142.webp",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-5c2f65bc-a195-481b-907c-78e48a240830.png",
+      "prompt": "Edit this existing photograph of Wire rope grip, DIN 1142. Change ONLY the manufacturer branding. Add the exact uppercase word \"KINSTON\", K I N S T O N, as raised forged/embossed manufacturer lettering on the broad visible front face of the main metal body. Follow the real curvature and perspective of the part, with same-material relief, realistic edge highlights and subtle recess shadows. Place the small but legible lettering on the front cast saddle bridge. Preserve the exact product type, silhouette, physical geometry, connectors, finish, colours, composition, pale grey background, lighting, contact shadows and photo quality. Branding must belong physically to the object, never a watermark, floating text, corner badge or graphic overlay. Make it clearly readable at catalogue image size while remaining mechanically realistic. Remove incidental illegible pseudo-lettering and other brand-like markings. No YOKE or other brand. No new numbers, capacity ratings, safety claims, certification symbols or extra wording. Photorealistic industrial catalogue photograph. Keep the whole product visible with its original framing."
+    },
+    {
+      "slug": "heavy-duty-thimble",
+      "name": "Heavy duty thimble",
+      "input": "/images/products/realistic/heavy-duty-thimble.webp",
+      "file": "/images/products/branded/heavy-duty-thimble.webp",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-d76f26c0-f1f8-4103-9580-0b0de6ab0748.png",
+      "prompt": "Edit this existing photograph of Heavy duty thimble. Change ONLY the manufacturer branding. Add the exact uppercase word \"KINSTON\", K I N S T O N, as raised forged/embossed manufacturer lettering on the broad visible front face of the main metal body. Follow the real curvature and perspective of the part, with same-material relief, realistic edge highlights and subtle recess shadows. Place the small but legible lettering along the visible outer curved flange. Preserve the exact product type, silhouette, physical geometry, connectors, finish, colours, composition, pale grey background, lighting, contact shadows and photo quality. Branding must belong physically to the object, never a watermark, floating text, corner badge or graphic overlay. Make it clearly readable at catalogue image size while remaining mechanically realistic. Remove incidental illegible pseudo-lettering and other brand-like markings. No YOKE or other brand. No new numbers, capacity ratings, safety claims, certification symbols or extra wording. Photorealistic industrial catalogue photograph. Keep the whole product visible with its original framing."
+    },
+    {
+      "slug": "turnbuckle-jaw-jaw",
+      "name": "Turnbuckle, jaw and jaw",
+      "input": "/images/products/realistic/turnbuckle-jaw-jaw.webp",
+      "file": "/images/products/branded/turnbuckle-jaw-jaw.webp",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-fe7e1d9c-5411-4f3f-97e0-f8b4ebd32635.png",
+      "prompt": "Edit this existing photograph of Turnbuckle, jaw and jaw. Change ONLY the manufacturer branding. Add the exact uppercase word \"KINSTON\", K I N S T O N, as raised forged/embossed manufacturer lettering on the broad visible front face of the main metal body. Follow the real curvature and perspective of the part, with same-material relief, realistic edge highlights and subtle recess shadows. Place the lettering along the long visible flat side of the central barrel. Preserve the exact product type, silhouette, physical geometry, connectors, finish, colours, composition, pale grey background, lighting, contact shadows and photo quality. Branding must belong physically to the object, never a watermark, floating text, corner badge or graphic overlay. Make it clearly readable at catalogue image size while remaining mechanically realistic. Remove incidental illegible pseudo-lettering and other brand-like markings. No YOKE or other brand. No new numbers, capacity ratings, safety claims, certification symbols or extra wording. Photorealistic industrial catalogue photograph. Keep the whole product visible with its original framing."
+    },
+    {
+      "slug": "turnbuckle-eye-eye",
+      "name": "Turnbuckle, eye and eye",
+      "input": "/images/products/realistic/turnbuckle-eye-eye.webp",
+      "file": "/images/products/branded/turnbuckle-eye-eye.webp",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-9032eca5-05cb-4d44-b7f5-dcd94268d246.png",
+      "prompt": "Edit this existing photograph of Turnbuckle, eye and eye. Change ONLY the manufacturer branding. Add the exact uppercase word \"KINSTON\", K I N S T O N, as raised forged/embossed manufacturer lettering on the broad visible front face of the main metal body. Follow the real curvature and perspective of the part, with same-material relief, realistic edge highlights and subtle recess shadows. Place the lettering along the long visible flat side of the central barrel. Preserve the exact product type, silhouette, physical geometry, connectors, finish, colours, composition, pale grey background, lighting, contact shadows and photo quality. Branding must belong physically to the object, never a watermark, floating text, corner badge or graphic overlay. Make it clearly readable at catalogue image size while remaining mechanically realistic. Remove incidental illegible pseudo-lettering and other brand-like markings. No YOKE or other brand. No new numbers, capacity ratings, safety claims, certification symbols or extra wording. Photorealistic industrial catalogue photograph. Keep the whole product visible with its original framing."
+    },
+    {
+      "slug": "eye-bolt-din-580",
+      "name": "Collared eye bolt, DIN 580",
+      "input": "/images/products/realistic/eye-bolt-din-580.webp",
+      "file": "/images/products/branded/eye-bolt-din-580.webp",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-14ceb4c2-80d9-4933-9515-a0e8005fbf54.png",
+      "prompt": "Edit this existing photograph of Collared eye bolt, DIN 580. Change ONLY the manufacturer branding. Add the exact uppercase word \"KINSTON\", K I N S T O N, as raised forged/embossed manufacturer lettering on the broad visible front face of the main metal body. Follow the real curvature and perspective of the part, with same-material relief, realistic edge highlights and subtle recess shadows. Preserve the exact product type, silhouette, physical geometry, connectors, finish, colours, composition, pale grey background, lighting, contact shadows and photo quality. Branding must belong physically to the object, never a watermark, floating text, corner badge or graphic overlay. Make it clearly readable at catalogue image size while remaining mechanically realistic. Remove incidental illegible pseudo-lettering and other brand-like markings. No YOKE or other brand. No new numbers, capacity ratings, safety claims, certification symbols or extra wording. Photorealistic industrial catalogue photograph. Keep the whole product visible with its original framing."
+    },
+    {
+      "slug": "swivel-eye-bolt",
+      "name": "Swivel eye bolt, Grade 100",
+      "input": "/images/products/realistic/swivel-eye-bolt.webp",
+      "file": "/images/products/branded/swivel-eye-bolt.webp",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-119eedca-72fd-495d-b29c-96771c21ba71.png",
+      "prompt": "Edit this existing photograph of Swivel eye bolt, Grade 100. Change ONLY the manufacturer branding. Add the exact uppercase word \"KINSTON\", K I N S T O N, as raised forged/embossed manufacturer lettering on the broad visible front face of the main metal body. Follow the real curvature and perspective of the part, with same-material relief, realistic edge highlights and subtle recess shadows. Preserve the exact product type, silhouette, physical geometry, connectors, finish, colours, composition, pale grey background, lighting, contact shadows and photo quality. Branding must belong physically to the object, never a watermark, floating text, corner badge or graphic overlay. Make it clearly readable at catalogue image size while remaining mechanically realistic. Remove incidental illegible pseudo-lettering and other brand-like markings. No YOKE or other brand. No new numbers, capacity ratings, safety claims, certification symbols or extra wording. Photorealistic industrial catalogue photograph. Keep the whole product visible with its original framing."
+    },
+    {
+      "slug": "swivel-hoist-ring",
+      "name": "Swivel hoist ring",
+      "input": "/images/products/realistic/swivel-hoist-ring.webp",
+      "file": "/images/products/branded/swivel-hoist-ring.webp",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-689f2da1-5bdb-4cd3-a700-936e8c8e4597.png",
+      "prompt": "Edit this existing photograph of Swivel hoist ring. Change ONLY the manufacturer branding. Add the exact uppercase word \"KINSTON\" as professional white manufacturer lettering printed directly on the front orange metal housing. It follows the housing perspective and surface finish. Preserve every handle, hook and chain exactly. Preserve the exact product type, silhouette, physical geometry, connectors, finish, colours, composition, pale grey background, lighting, contact shadows and photo quality. Branding must belong physically to the object, never a watermark, floating text, corner badge or graphic overlay. Make it clearly readable at catalogue image size while remaining mechanically realistic. Remove incidental illegible pseudo-lettering and other brand-like markings. No YOKE or other brand. No new numbers, capacity ratings, safety claims, certification symbols or extra wording. Photorealistic industrial catalogue photograph. Keep the whole product visible with its original framing."
+    },
+    {
+      "slug": "weld-on-lifting-point",
+      "name": "Weld-on lifting point",
+      "input": "/images/products/realistic/weld-on-lifting-point.webp",
+      "file": "/images/products/branded/weld-on-lifting-point.webp",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-d8df6655-9222-44f3-b9c7-8d06220c2992.png",
+      "prompt": "Edit this existing photograph of Weld-on lifting point. Change ONLY the manufacturer branding. Add the exact uppercase word \"KINSTON\", K I N S T O N, as raised forged/embossed manufacturer lettering on the broad visible front face of the main metal body. Follow the real curvature and perspective of the part, with same-material relief, realistic edge highlights and subtle recess shadows. Preserve the exact product type, silhouette, physical geometry, connectors, finish, colours, composition, pale grey background, lighting, contact shadows and photo quality. Branding must belong physically to the object, never a watermark, floating text, corner badge or graphic overlay. Make it clearly readable at catalogue image size while remaining mechanically realistic. Remove incidental illegible pseudo-lettering and other brand-like markings. No YOKE or other brand. No new numbers, capacity ratings, safety claims, certification symbols or extra wording. Photorealistic industrial catalogue photograph. Keep the whole product visible with its original framing."
+    },
+    {
+      "slug": "bolt-on-lifting-point",
+      "name": "Bolt-on lifting point",
+      "input": "/images/products/realistic/bolt-on-lifting-point.webp",
+      "file": "/images/products/branded/bolt-on-lifting-point.webp",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-75c4d65b-466d-4fad-9932-755335e7c399.png",
+      "prompt": "Edit this existing photograph of Bolt-on lifting point. Change ONLY the manufacturer branding. Add the exact uppercase word \"KINSTON\", K I N S T O N, as raised forged/embossed manufacturer lettering on the broad visible front face of the main metal body. Follow the real curvature and perspective of the part, with same-material relief, realistic edge highlights and subtle recess shadows. Preserve the exact product type, silhouette, physical geometry, connectors, finish, colours, composition, pale grey background, lighting, contact shadows and photo quality. Branding must belong physically to the object, never a watermark, floating text, corner badge or graphic overlay. Make it clearly readable at catalogue image size while remaining mechanically realistic. Remove incidental illegible pseudo-lettering and other brand-like markings. No YOKE or other brand. No new numbers, capacity ratings, safety claims, certification symbols or extra wording. Photorealistic industrial catalogue photograph. Keep the whole product visible with its original framing."
+    },
+    {
+      "slug": "chain-block",
+      "name": "Manual chain block",
+      "input": "/images/products/realistic/chain-block.webp",
+      "file": "/images/products/branded/chain-block.webp",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-2cbe78eb-9a4e-472b-a995-9413d1d4c20c.png",
+      "prompt": "Edit this existing photograph of Manual chain block. Change ONLY the manufacturer branding. Add the exact uppercase word \"KINSTON\" as professional white manufacturer lettering printed directly on the front orange metal housing. It follows the housing perspective and surface finish. Preserve every handle, hook and chain exactly. Preserve the exact product type, silhouette, physical geometry, connectors, finish, colours, composition, pale grey background, lighting, contact shadows and photo quality. Branding must belong physically to the object, never a watermark, floating text, corner badge or graphic overlay. Make it clearly readable at catalogue image size while remaining mechanically realistic. Remove incidental illegible pseudo-lettering and other brand-like markings. No YOKE or other brand. No new numbers, capacity ratings, safety claims, certification symbols or extra wording. Photorealistic industrial catalogue photograph. Keep the whole product visible with its original framing."
+    },
+    {
+      "slug": "lever-hoist",
+      "name": "Lever hoist",
+      "input": "/images/products/realistic/lever-hoist.webp",
+      "file": "/images/products/branded/lever-hoist.webp",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-c21aa856-3004-4c9d-9025-c72289259206.png",
+      "prompt": "Edit this existing photograph of Lever hoist. Change ONLY the manufacturer branding. Add the exact uppercase word \"KINSTON\" as professional white manufacturer lettering printed directly on the front orange metal housing. It follows the housing perspective and surface finish. Preserve every handle, hook and chain exactly. Preserve the exact product type, silhouette, physical geometry, connectors, finish, colours, composition, pale grey background, lighting, contact shadows and photo quality. Branding must belong physically to the object, never a watermark, floating text, corner badge or graphic overlay. Make it clearly readable at catalogue image size while remaining mechanically realistic. Remove incidental illegible pseudo-lettering and other brand-like markings. No YOKE or other brand. No new numbers, capacity ratings, safety claims, certification symbols or extra wording. Photorealistic industrial catalogue photograph. Keep the whole product visible with its original framing."
+    },
+    {
+      "slug": "mini-lever-hoist",
+      "name": "Mini lever hoist",
+      "input": "/images/products/realistic/mini-lever-hoist.webp",
+      "file": "/images/products/branded/mini-lever-hoist.webp",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-65c9c869-7906-4911-b3ad-82e26dca59a5.png",
+      "prompt": "Edit this existing photograph of Mini lever hoist. Change ONLY the manufacturer branding. Add the exact uppercase word \"KINSTON\" as professional white manufacturer lettering printed directly on the front orange metal housing. It follows the housing perspective and surface finish. Preserve every handle, hook and chain exactly. Preserve the exact product type, silhouette, physical geometry, connectors, finish, colours, composition, pale grey background, lighting, contact shadows and photo quality. Branding must belong physically to the object, never a watermark, floating text, corner badge or graphic overlay. Make it clearly readable at catalogue image size while remaining mechanically realistic. Remove incidental illegible pseudo-lettering and other brand-like markings. No YOKE or other brand. No new numbers, capacity ratings, safety claims, certification symbols or extra wording. Photorealistic industrial catalogue photograph. Keep the whole product visible with its original framing."
+    },
+    {
+      "slug": "geared-beam-trolley",
+      "name": "Geared beam trolley",
+      "input": "/images/products/realistic/geared-beam-trolley.webp",
+      "file": "/images/products/branded/geared-beam-trolley.webp",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-e48c37d3-0c7f-416f-a288-48cf7e3ec47e.png",
+      "prompt": "Edit this existing photograph of Geared beam trolley. Change ONLY the manufacturer branding. Add the exact uppercase word \"KINSTON\", K I N S T O N, as raised forged/embossed manufacturer lettering on the broad visible front face of the main metal body. Follow the real curvature and perspective of the part, with same-material relief, realistic edge highlights and subtle recess shadows. Preserve the exact product type, silhouette, physical geometry, connectors, finish, colours, composition, pale grey background, lighting, contact shadows and photo quality. Branding must belong physically to the object, never a watermark, floating text, corner badge or graphic overlay. Make it clearly readable at catalogue image size while remaining mechanically realistic. Remove incidental illegible pseudo-lettering and other brand-like markings. No YOKE or other brand. No new numbers, capacity ratings, safety claims, certification symbols or extra wording. Photorealistic industrial catalogue photograph. Keep the whole product visible with its original framing."
+    },
+    {
+      "slug": "plain-beam-trolley",
+      "name": "Plain beam trolley",
+      "input": "/images/products/realistic/plain-beam-trolley.webp",
+      "file": "/images/products/branded/plain-beam-trolley.webp",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-fefcc672-ddad-4b78-9548-6aaea5e15fa6.png",
+      "prompt": "Edit this existing photograph of Plain beam trolley. Change ONLY the manufacturer branding. Add the exact uppercase word \"KINSTON\", K I N S T O N, as raised forged/embossed manufacturer lettering on the broad visible front face of the main metal body. Follow the real curvature and perspective of the part, with same-material relief, realistic edge highlights and subtle recess shadows. Preserve the exact product type, silhouette, physical geometry, connectors, finish, colours, composition, pale grey background, lighting, contact shadows and photo quality. Branding must belong physically to the object, never a watermark, floating text, corner badge or graphic overlay. Make it clearly readable at catalogue image size while remaining mechanically realistic. Remove incidental illegible pseudo-lettering and other brand-like markings. No YOKE or other brand. No new numbers, capacity ratings, safety claims, certification symbols or extra wording. Photorealistic industrial catalogue photograph. Keep the whole product visible with its original framing."
+    },
+    {
+      "slug": "flat-webbing-sling-duplex",
+      "name": "Flat webbing sling, duplex",
+      "input": "/images/products/realistic/flat-webbing-sling-duplex.webp",
+      "file": "/images/products/branded/flat-webbing-sling-duplex.webp",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-d5a6df9e-5a6a-435e-80ff-0c791da02e0e.png",
+      "prompt": "Edit this existing photograph of Flat webbing sling, duplex. Change ONLY the manufacturer branding. Add the exact uppercase word \"KINSTON\" clearly printed or woven on a small durable stitched fabric manufacturer label attached naturally to the sling. Preserve the textile weave, stitches, fabric eyes, folds and exact sling shape. The label contains only KINSTON and no other words or numbers. Preserve the exact product type, silhouette, physical geometry, connectors, finish, colours, composition, pale grey background, lighting, contact shadows and photo quality. Branding must belong physically to the object, never a watermark, floating text, corner badge or graphic overlay. Make it clearly readable at catalogue image size while remaining mechanically realistic. Remove incidental illegible pseudo-lettering and other brand-like markings. No YOKE or other brand. No new numbers, capacity ratings, safety claims, certification symbols or extra wording. Photorealistic industrial catalogue photograph. Keep the whole product visible with its original framing."
+    },
+    {
+      "slug": "round-sling",
+      "name": "Round sling",
+      "input": "/images/products/realistic/round-sling.webp",
+      "file": "/images/products/branded/round-sling.webp",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-01a4c259-c570-4c04-b3a7-7138d99ab845.png",
+      "prompt": "Edit this existing photograph of Round sling. Change ONLY the manufacturer branding. Add the exact uppercase word \"KINSTON\" clearly printed or woven on a small durable stitched fabric manufacturer label attached naturally to the sling. Preserve the textile weave, stitches, fabric eyes, folds and exact sling shape. The label contains only KINSTON and no other words or numbers. Preserve the exact product type, silhouette, physical geometry, connectors, finish, colours, composition, pale grey background, lighting, contact shadows and photo quality. Branding must belong physically to the object, never a watermark, floating text, corner badge or graphic overlay. Make it clearly readable at catalogue image size while remaining mechanically realistic. Remove incidental illegible pseudo-lettering and other brand-like markings. No YOKE or other brand. No new numbers, capacity ratings, safety claims, certification symbols or extra wording. Photorealistic industrial catalogue photograph. Keep the whole product visible with its original framing."
+    },
+    {
+      "slug": "ratchet-lashing",
+      "name": "Ratchet lashing, 5 t",
+      "input": "/images/products/realistic/ratchet-lashing.webp",
+      "file": "/images/products/branded/ratchet-lashing.webp",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-4d5bb282-bb2c-483b-8f5c-6c1c06621eb5.png",
+      "prompt": "Edit this existing photograph of Ratchet lashing, 5 t. Change ONLY the manufacturer branding. Add the exact uppercase word \"KINSTON\" as crisp dark manufacturer ink printed directly along the visible orange polyester strap, following its perspective and woven texture. Preserve all ratchet parts, hooks, folds and strap geometry. Preserve the exact product type, silhouette, physical geometry, connectors, finish, colours, composition, pale grey background, lighting, contact shadows and photo quality. Branding must belong physically to the object, never a watermark, floating text, corner badge or graphic overlay. Make it clearly readable at catalogue image size while remaining mechanically realistic. Remove incidental illegible pseudo-lettering and other brand-like markings. No YOKE or other brand. No new numbers, capacity ratings, safety claims, certification symbols or extra wording. Photorealistic industrial catalogue photograph. Keep the whole product visible with its original framing."
+    },
+    {
+      "slug": "load-binder",
+      "name": "Ratchet load binder",
+      "input": "/images/products/realistic/load-binder.webp",
+      "file": "/images/products/branded/load-binder.webp",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-9bb49103-074c-42ff-ae9f-62ee7b486cdb.png",
+      "prompt": "Edit this existing photograph of Ratchet load binder. Change ONLY the manufacturer branding. Add the exact uppercase word \"KINSTON\", K I N S T O N, as raised forged/embossed manufacturer lettering on the broad visible front face of the main metal body. Follow the real curvature and perspective of the part, with same-material relief, realistic edge highlights and subtle recess shadows. Preserve the exact product type, silhouette, physical geometry, connectors, finish, colours, composition, pale grey background, lighting, contact shadows and photo quality. Branding must belong physically to the object, never a watermark, floating text, corner badge or graphic overlay. Make it clearly readable at catalogue image size while remaining mechanically realistic. Remove incidental illegible pseudo-lettering and other brand-like markings. No YOKE or other brand. No new numbers, capacity ratings, safety claims, certification symbols or extra wording. Photorealistic industrial catalogue photograph. Keep the whole product visible with its original framing."
+    }
+  ],
+  "hero": {
+    "input": "/images/hero-hook.webp",
+    "file": "/images/hero-hook-branded.webp",
+    "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-bb20faac-0887-47a7-af9d-53060747d5d7.png",
+    "transparent": true,
+    "prompt": "Edit this landing-page hook asset into a photorealistic real forged steel lifting hook while retaining its exact silhouette, front three-quarter view, placement and proportions, orange finish, blue latch and silver clevis pin. Replace smooth toy-like surfaces with authentic subtle forged steel grain and powder-coat microtexture, physically realistic studio lighting. Add exact uppercase word \"KINSTON\" embossed into the broad orange front face of the vertical hook neck, running along the long dimension so the letters fit on the actual metal; natural same-orange raised letters with relief highlights/shadows, no floating text. Preserve an actual transparent background and the original full-object square framing. No added words, no YOKE, no load ratings, no certification symbols, no background, no ground plane. This is a product cutout to display over an existing dark website."
+  },
+  "categoryImages": "The eight branded category images reuse the corresponding branded product images."
+}

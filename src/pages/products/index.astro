@@ -29,7 +29,7 @@ const crumbs = [{ name: 'Home', href: '/' }, { name: 'Products', href: '/product
           const items = productsByCategory(c.slug);
           return (
             <li class="cat">
-              <a class="cat-art" href={`/products/${c.slug}`}><img src={`/images/products/${c.art}.webp`} alt={c.name} loading="lazy" decoding="async" width="600" height="600" /></a>
+              <a class="cat-art" href={`/products/${c.slug}`}><img src={`/images/categories/branded/${c.slug}.webp`} alt={c.name} loading="lazy" decoding="async" width="600" height="600" /></a>
               <div class="cat-body">
                 <h2><a href={`/products/${c.slug}`}>{c.name}</a></h2>
                 <p class="muted">{c.description}</p>
@@ -54,9 +54,10 @@ const crumbs = [{ name: 'Home', href: '/' }, { name: 'Products', href: '/product
   .cat-list { display: grid; gap: 0; }
   .cat { display: grid; grid-template-columns: 300px 1fr; gap: 40px; padding-block: 40px; border-top: 1px solid var(--zinc); }
   .cat:last-child { border-bottom: 1px solid var(--zinc); }
-  .cat-art { position: relative; background: var(--white); border: 1px solid var(--zinc); border-radius: var(--radius); aspect-ratio: 4 / 3; transition: border-color .18s; overflow: hidden; }
-  .cat-art img { position: absolute; inset: 8px; width: calc(100% - 16px); height: calc(100% - 16px); object-fit: contain; }
-  .cat-art:hover { border-color: var(--navy); }
+  .cat-art { position: relative; background: var(--white); border: 1px solid var(--zinc); border-radius: 12px; aspect-ratio: 1; transition: border-color .18s; overflow: hidden; }
+  .cat-art img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .5s var(--ease); }
+  .cat-art:hover { border-color: var(--orange); }
+  .cat-art:hover img { transform: scale(1.055); }
   .cat-body { display: grid; gap: 14px; align-content: start; }
   .cat-body h2 a:hover { color: var(--orange); }
   .cat-body .muted { max-width: 68ch; }

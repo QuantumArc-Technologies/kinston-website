@@ -1,0 +1,424 @@
+{
+  "tool": "Built-in image_gen",
+  "purpose": "AI-generated representative product imagery; consult actual datasheets for supplied product geometry and specifications.",
+  "images": [
+    {
+      "slug": "single-leg-chain-sling-g100",
+      "name": "Single leg chain sling, Grade 100",
+      "finish": "Blue powder coated chain, navy and orange components",
+      "material": "Grade 100 alloy steel, quenched and tempered",
+      "art": "chain-sling",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-9be51683-aaf6-4868-ab87-6987c4ee9110.png",
+      "prompt": "Use case: product-mockup. Asset: realistic industrial catalogue product photo. Primary subject: Single leg chain sling, Grade 100. Material: Grade 100 alloy steel, quenched and tempered. Finish: Blue powder coated chain, navy and orange components. Show ONLY this specific product type, with correct connectors, real mechanically plausible forged hardware. For chain slings show EXACT number of chain legs in product name, one master link at top and a safety hook at each leg end. For hooks match eye versus clevis versus swivel connection. For textile slings show realistic woven polyester, not metal. For shackles match bow versus straight dee and screw pin versus bolt with nut/cotter. Professional photorealistic studio product photography, physical metal grain, powder coat texture, subtle imperfections, realistic contact shadows, no CGI or toy appearance. Seamless pale cool grey tabletop background, broad softbox upper left, 85mm lens, sharp detail. Square composition with whole object contained in central 75 percent and generous safe margins. No people, logos, lettering, watermark, diagrams or dimensions. Representative unbranded equipment."
+    },
+    {
+      "slug": "two-leg-chain-sling-g100",
+      "name": "Two leg chain sling, Grade 100",
+      "finish": "Blue powder coated chain, navy and orange components",
+      "material": "Grade 100 alloy steel, quenched and tempered",
+      "art": "chain-sling-2",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-450b13ec-a02d-4b96-ab3f-8cc82bec5990.png",
+      "prompt": "Use case: product-mockup. Asset: realistic industrial catalogue product photo. Primary subject: Two leg chain sling, Grade 100. Material: Grade 100 alloy steel, quenched and tempered. Finish: Blue powder coated chain, navy and orange components. Show ONLY this specific product type, with correct connectors, real mechanically plausible forged hardware. For chain slings show EXACT number of chain legs in product name, one master link at top and a safety hook at each leg end. For hooks match eye versus clevis versus swivel connection. For textile slings show realistic woven polyester, not metal. For shackles match bow versus straight dee and screw pin versus bolt with nut/cotter. Professional photorealistic studio product photography, physical metal grain, powder coat texture, subtle imperfections, realistic contact shadows, no CGI or toy appearance. Seamless pale cool grey tabletop background, broad softbox upper left, 85mm lens, sharp detail. Square composition with whole object contained in central 75 percent and generous safe margins. No people, logos, lettering, watermark, diagrams or dimensions. Representative unbranded equipment."
+    },
+    {
+      "slug": "four-leg-chain-sling-g100",
+      "name": "Four leg chain sling, Grade 100",
+      "finish": "Blue powder coated chain, navy and orange components",
+      "material": "Grade 100 alloy steel, quenched and tempered",
+      "art": "chain-sling-4",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-18bc1614-4c87-48bf-9694-bf86fb0c0ed4.png",
+      "prompt": "Use case: product-mockup. Asset: realistic industrial catalogue product photo. Primary subject: Four leg chain sling, Grade 100. Material: Grade 100 alloy steel, quenched and tempered. Finish: Blue powder coated chain, navy and orange components. Show ONLY this specific product type, with correct connectors, real mechanically plausible forged hardware. For chain slings show EXACT number of chain legs in product name, one master link at top and a safety hook at each leg end. For hooks match eye versus clevis versus swivel connection. For textile slings show realistic woven polyester, not metal. For shackles match bow versus straight dee and screw pin versus bolt with nut/cotter. Professional photorealistic studio product photography, physical metal grain, powder coat texture, subtle imperfections, realistic contact shadows, no CGI or toy appearance. Seamless pale cool grey tabletop background, broad softbox upper left, 85mm lens, sharp detail. Square composition with whole object contained in central 75 percent and generous safe margins. No people, logos, lettering, watermark, diagrams or dimensions. Representative unbranded equipment."
+    },
+    {
+      "slug": "single-leg-chain-sling-g80",
+      "name": "Single leg chain sling, Grade 80",
+      "finish": "Black painted chain, navy and orange components",
+      "material": "Grade 80 alloy steel, quenched and tempered",
+      "art": "chain-sling",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-bbc488fc-8828-4d77-bff4-6be33a566556.png",
+      "prompt": "Use case: product-mockup. Asset: realistic industrial catalogue product photo. Primary subject: Single leg chain sling, Grade 80. Material: Grade 80 alloy steel, quenched and tempered. Finish: Black painted chain, navy and orange components. Show ONLY this specific product type, with correct connectors, real mechanically plausible forged hardware. For chain slings show EXACT number of chain legs in product name, one master link at top and a safety hook at each leg end. For hooks match eye versus clevis versus swivel connection. For textile slings show realistic woven polyester, not metal. For shackles match bow versus straight dee and screw pin versus bolt with nut/cotter. Professional photorealistic studio product photography, physical metal grain, powder coat texture, subtle imperfections, realistic contact shadows, no CGI or toy appearance. Seamless pale cool grey tabletop background, broad softbox upper left, 85mm lens, sharp detail. Square composition with whole object contained in central 75 percent and generous safe margins. No people, logos, lettering, watermark, diagrams or dimensions. Representative unbranded equipment."
+    },
+    {
+      "slug": "two-leg-chain-sling-g80",
+      "name": "Two leg chain sling, Grade 80",
+      "finish": "Black painted chain, navy and orange components",
+      "material": "Grade 80 alloy steel, quenched and tempered",
+      "art": "chain-sling-2",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-a4353ca3-4e40-492f-b9ce-fb051d46a63b.png",
+      "prompt": "Use case: product-mockup. Asset: realistic industrial catalogue product photo. Primary subject: Two leg chain sling, Grade 80. Material: Grade 80 alloy steel, quenched and tempered. Finish: Black painted chain, navy and orange components. Show ONLY this specific product type, with correct connectors, real mechanically plausible forged hardware. For chain slings show EXACT number of chain legs in product name, one master link at top and a safety hook at each leg end. For hooks match eye versus clevis versus swivel connection. For textile slings show realistic woven polyester, not metal. For shackles match bow versus straight dee and screw pin versus bolt with nut/cotter. Professional photorealistic studio product photography, physical metal grain, powder coat texture, subtle imperfections, realistic contact shadows, no CGI or toy appearance. Seamless pale cool grey tabletop background, broad softbox upper left, 85mm lens, sharp detail. Square composition with whole object contained in central 75 percent and generous safe margins. No people, logos, lettering, watermark, diagrams or dimensions. Representative unbranded equipment."
+    },
+    {
+      "slug": "clevis-self-locking-hook-g100",
+      "name": "Clevis self-locking hook, Grade 100",
+      "finish": "Orange powder coat with navy trigger",
+      "material": "Alloy steel, quenched and tempered",
+      "art": "self-locking-hook",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-2e12254e-2009-46de-af2f-0d8d55313550.png",
+      "prompt": "Use case: product-mockup. Asset type: premium industrial website category photograph. Subject: one heavy orange powder-coated forged steel self-locking lifting hook, functioning steel safety latch, connecting clevis pin, realistic industrial hardware. Extremely photorealistic professional industrial product photography, actual physical hardware rather than CGI, authentic mechanically plausible construction, forged metal grain, subtle machining marks, realistic powder coating and tiny surface imperfections. Studio tabletop seamless cool pale grey background, broad softbox from upper left, natural contact shadows, subtle depth, 85mm lens, sharp product detail. Square composition, complete object centered, contained within central 75 percent with generous margins, no cropping. Consistent premium catalogue art direction. No text, letters, logos, watermarks, badges, dimensions, people, plastic toy look or illustration. Representative unbranded equipment.",
+      "reusedFrom": "/images/categories/hooks.webp"
+    },
+    {
+      "slug": "eye-self-locking-hook-g100",
+      "name": "Eye self-locking hook, Grade 100",
+      "finish": "Orange powder coat with navy trigger",
+      "material": "Alloy steel, quenched and tempered",
+      "art": "self-locking-hook-eye",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-33c546fb-1e9a-46a4-ac7f-6b8b01743bb4.png",
+      "prompt": "Use case: product-mockup. Asset: realistic industrial catalogue product photo. Primary subject: Eye self-locking hook, Grade 100. Material: Alloy steel, quenched and tempered. Finish: Orange powder coat with navy trigger. Show ONLY this specific product type, with correct connectors, real mechanically plausible forged hardware. For chain slings show EXACT number of chain legs in product name, one master link at top and a safety hook at each leg end. For hooks match eye versus clevis versus swivel connection. For textile slings show realistic woven polyester, not metal. For shackles match bow versus straight dee and screw pin versus bolt with nut/cotter. Professional photorealistic studio product photography, physical metal grain, powder coat texture, subtle imperfections, realistic contact shadows, no CGI or toy appearance. Seamless pale cool grey tabletop background, broad softbox upper left, 85mm lens, sharp detail. Square composition with whole object contained in central 75 percent and generous safe margins. No people, logos, lettering, watermark, diagrams or dimensions. Representative unbranded equipment."
+    },
+    {
+      "slug": "swivel-self-locking-hook-g100",
+      "name": "Swivel self-locking hook with bearing, Grade 100",
+      "finish": "Orange powder coat with navy trigger",
+      "material": "Alloy steel, quenched and tempered",
+      "art": "swivel-hook",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-33cfd89d-066c-4ddc-b6fc-9f17c3f36310.png",
+      "prompt": "Use case: product-mockup. Asset: realistic industrial catalogue product photo. Primary subject: Swivel self-locking hook with bearing, Grade 100. Material: Alloy steel, quenched and tempered. Finish: Orange powder coat with navy trigger. Show ONLY this specific product type, with correct connectors, real mechanically plausible forged hardware. For chain slings show EXACT number of chain legs in product name, one master link at top and a safety hook at each leg end. For hooks match eye versus clevis versus swivel connection. For textile slings show realistic woven polyester, not metal. For shackles match bow versus straight dee and screw pin versus bolt with nut/cotter. Professional photorealistic studio product photography, physical metal grain, powder coat texture, subtle imperfections, realistic contact shadows, no CGI or toy appearance. Seamless pale cool grey tabletop background, broad softbox upper left, 85mm lens, sharp detail. Square composition with whole object contained in central 75 percent and generous safe margins. No people, logos, lettering, watermark, diagrams or dimensions. Representative unbranded equipment."
+    },
+    {
+      "slug": "eye-sling-hook-g80",
+      "name": "Eye sling hook with latch, Grade 80",
+      "finish": "Orange powder coat",
+      "material": "Alloy steel, quenched and tempered",
+      "art": "sling-hook",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-f0e7c340-428e-4e54-a115-ff34f9937e6b.png",
+      "prompt": "Use case: product-mockup. Asset: realistic industrial catalogue product photo. Primary subject: Eye sling hook with latch, Grade 80. Material: Alloy steel, quenched and tempered. Finish: Orange powder coat. Show ONLY this specific product type, with correct connectors, real mechanically plausible forged hardware. For chain slings show EXACT number of chain legs in product name, one master link at top and a safety hook at each leg end. For hooks match eye versus clevis versus swivel connection. For textile slings show realistic woven polyester, not metal. For shackles match bow versus straight dee and screw pin versus bolt with nut/cotter. Professional photorealistic studio product photography, physical metal grain, powder coat texture, subtle imperfections, realistic contact shadows, no CGI or toy appearance. Seamless pale cool grey tabletop background, broad softbox upper left, 85mm lens, sharp detail. Square composition with whole object contained in central 75 percent and generous safe margins. No people, logos, lettering, watermark, diagrams or dimensions. Representative unbranded equipment."
+    },
+    {
+      "slug": "clevis-sling-hook-g80",
+      "name": "Clevis sling hook with latch, Grade 80",
+      "finish": "Orange powder coat",
+      "material": "Alloy steel, quenched and tempered",
+      "art": "sling-hook-clevis",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-304c9443-1145-4af9-a465-260a79280027.png",
+      "prompt": "Use case: product-mockup. Asset: realistic industrial catalogue product photo. Primary subject: Clevis sling hook with latch, Grade 80. Material: Alloy steel, quenched and tempered. Finish: Orange powder coat. Show ONLY this specific product type, with correct connectors, real mechanically plausible forged hardware. For chain slings show EXACT number of chain legs in product name, one master link at top and a safety hook at each leg end. For hooks match eye versus clevis versus swivel connection. For textile slings show realistic woven polyester, not metal. For shackles match bow versus straight dee and screw pin versus bolt with nut/cotter. Professional photorealistic studio product photography, physical metal grain, powder coat texture, subtle imperfections, realistic contact shadows, no CGI or toy appearance. Seamless pale cool grey tabletop background, broad softbox upper left, 85mm lens, sharp detail. Square composition with whole object contained in central 75 percent and generous safe margins. No people, logos, lettering, watermark, diagrams or dimensions. Representative unbranded equipment."
+    },
+    {
+      "slug": "clevis-grab-hook-g80",
+      "name": "Clevis grab hook, Grade 80",
+      "finish": "Orange powder coat",
+      "material": "Alloy steel, quenched and tempered",
+      "art": "grab-hook",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-1ab46915-9a13-410a-ba4e-e4eaf43e6d31.png",
+      "prompt": "Use case: product-mockup. Photorealistic industrial catalogue product photograph. A single real orange forged steel CLEVIS GRAB HOOK for shortening lifting chain. It has a narrow deep parallel-sided chain-grabbing slot, thick stubby squat body and two clevis ears with a transverse dark pin at the upper end. Not a general-purpose open J hook; the defining feature is its narrow chain-grab slot. No safety latch. Real forged alloy steel and powder coat grain, subtle imperfections, realistic shadow. Seamless cool pale grey studio tabletop background, broad softbox upper left, 85mm lens. Square framing, entire product centered within the central 75 percent, generous margin. No text, logos, diagrams, people or watermark. Actual physical hardware look, no CGI or toy appearance."
+    },
+    {
+      "slug": "eye-grab-hook-g100",
+      "name": "Eye grab hook, Grade 100",
+      "finish": "Orange powder coat",
+      "material": "Alloy steel, quenched and tempered",
+      "art": "grab-hook",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-d73c45a1-f1ae-47bf-900d-b486a68d0201.png",
+      "prompt": "Use case: product-mockup. Photorealistic industrial catalogue product photograph. A single real orange forged steel EYE GRAB HOOK for shortening lifting chain. Round eye at the upper end and a narrow deep parallel-sided chain-grabbing slot in the lower thick squat body. Not a general-purpose open J hook; the defining feature is its narrow chain-grab slot. No clevis. No safety latch. Real forged alloy steel and powder coat grain, subtle imperfections, realistic shadow. Seamless cool pale grey studio tabletop background, broad softbox upper left, 85mm lens. Square framing, entire product centered within the central 75 percent, generous margin. No text, logos, diagrams, people or watermark. Actual physical hardware look, no CGI or toy appearance."
+    },
+    {
+      "slug": "alloy-hoist-hook",
+      "name": "Alloy hoist hook with latch",
+      "finish": "Orange powder coat, machined shank",
+      "material": "Alloy steel, quenched and tempered",
+      "art": "hoist-hook",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-a4691da6-5b06-4a2b-845a-9a92d2465a7e.png",
+      "prompt": "Use case: product-mockup. Photorealistic industrial catalogue product photograph. A single real industrial SHANK lifting hook with a spring-loaded silver safety latch. Orange forged steel J-shaped hook body; a straight vertical machined cylindrical steel shank protrudes upwards from the top, with a threaded end. Absolutely NO circular eye, NO clevis, NO swivel ring. The top connection is a straight threaded steel shaft. Real forged alloy steel and powder coat grain, subtle imperfections, realistic shadow. Seamless cool pale grey studio tabletop background, broad softbox upper left, 85mm lens. Square framing, entire product centered within the central 75 percent, generous margin. No text, logos, diagrams, people or watermark. Actual physical hardware look, no CGI or toy appearance."
+    },
+    {
+      "slug": "swivel-hook-with-bearing",
+      "name": "Swivel hook with bearing, Grade 80",
+      "finish": "Orange powder coat",
+      "material": "Alloy steel, quenched and tempered",
+      "art": "swivel-hook",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-5d9c9293-51f7-4bbc-bba7-40b2a9014d28.png",
+      "prompt": "Use case: product-mockup. Asset: realistic industrial catalogue product photo. Primary subject: Swivel hook with bearing, Grade 80. Material: Alloy steel, quenched and tempered. Finish: Orange powder coat. Show ONLY this specific product type, with correct connectors, real mechanically plausible forged hardware. For chain slings show EXACT number of chain legs in product name, one master link at top and a safety hook at each leg end. For hooks match eye versus clevis versus swivel connection. For textile slings show realistic woven polyester, not metal. For shackles match bow versus straight dee and screw pin versus bolt with nut/cotter. Professional photorealistic studio product photography, physical metal grain, powder coat texture, subtle imperfections, realistic contact shadows, no CGI or toy appearance. Seamless pale cool grey tabletop background, broad softbox upper left, 85mm lens, sharp detail. Square composition with whole object contained in central 75 percent and generous safe margins. No people, logos, lettering, watermark, diagrams or dimensions. Representative unbranded equipment."
+    },
+    {
+      "slug": "bow-shackle-screw-pin",
+      "name": "Screw pin bow shackle",
+      "finish": "Hot dip galvanised, red pin",
+      "material": "Grade 6 alloy steel body, alloy pin",
+      "art": "shackle-bow",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-180b8b0e-7ebf-49d1-9ce8-b2979b2fdef7.png",
+      "prompt": "Use case: product-mockup. Asset type: premium industrial website category photograph. Subject: one heavy galvanized forged steel bow shackle with a red-orange screw pin, authentic curved thick bow and threaded pin. Extremely photorealistic professional industrial product photography, actual physical hardware rather than CGI, authentic mechanically plausible construction, forged metal grain, subtle machining marks, realistic powder coating and tiny surface imperfections. Studio tabletop seamless cool pale grey background, broad softbox from upper left, natural contact shadows, subtle depth, 85mm lens, sharp product detail. Square composition, complete object centered, contained within central 75 percent with generous margins, no cropping. Consistent premium catalogue art direction. No text, letters, logos, watermarks, badges, dimensions, people, plastic toy look or illustration. Representative unbranded equipment.",
+      "reusedFrom": "/images/categories/shackles.webp"
+    },
+    {
+      "slug": "bow-shackle-safety-pin",
+      "name": "Safety pin bow shackle",
+      "finish": "Hot dip galvanised, red pin",
+      "material": "Grade 6 alloy steel body, alloy pin",
+      "art": "shackle-bow-bolt",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-4352fa35-836a-4f94-ae00-3f7be212801a.png",
+      "prompt": "Use case: product-mockup. Asset: realistic industrial catalogue product photo. Primary subject: Safety pin bow shackle. Material: Grade 6 alloy steel body, alloy pin. Finish: Hot dip galvanised, red pin. Show ONLY this specific product type, with correct connectors, real mechanically plausible forged hardware. For chain slings show EXACT number of chain legs in product name, one master link at top and a safety hook at each leg end. For hooks match eye versus clevis versus swivel connection. For textile slings show realistic woven polyester, not metal. For shackles match bow versus straight dee and screw pin versus bolt with nut/cotter. Professional photorealistic studio product photography, physical metal grain, powder coat texture, subtle imperfections, realistic contact shadows, no CGI or toy appearance. Seamless pale cool grey tabletop background, broad softbox upper left, 85mm lens, sharp detail. Square composition with whole object contained in central 75 percent and generous safe margins. No people, logos, lettering, watermark, diagrams or dimensions. Representative unbranded equipment."
+    },
+    {
+      "slug": "dee-shackle-screw-pin",
+      "name": "Screw pin dee shackle",
+      "finish": "Hot dip galvanised, red pin",
+      "material": "Grade 6 alloy steel body, alloy pin",
+      "art": "shackle-dee",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-ddee09c0-2b33-4a0e-a195-9560310fb34f.png",
+      "prompt": "Use case: product-mockup. Asset: realistic industrial catalogue product photo. Primary subject: Screw pin dee shackle. Material: Grade 6 alloy steel body, alloy pin. Finish: Hot dip galvanised, red pin. Show ONLY this specific product type, with correct connectors, real mechanically plausible forged hardware. For chain slings show EXACT number of chain legs in product name, one master link at top and a safety hook at each leg end. For hooks match eye versus clevis versus swivel connection. For textile slings show realistic woven polyester, not metal. For shackles match bow versus straight dee and screw pin versus bolt with nut/cotter. Professional photorealistic studio product photography, physical metal grain, powder coat texture, subtle imperfections, realistic contact shadows, no CGI or toy appearance. Seamless pale cool grey tabletop background, broad softbox upper left, 85mm lens, sharp detail. Square composition with whole object contained in central 75 percent and generous safe margins. No people, logos, lettering, watermark, diagrams or dimensions. Representative unbranded equipment."
+    },
+    {
+      "slug": "dee-shackle-safety-pin",
+      "name": "Safety pin dee shackle",
+      "finish": "Hot dip galvanised, red pin",
+      "material": "Grade 6 alloy steel body, alloy pin",
+      "art": "shackle-dee-bolt",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-5b8fa967-3c66-4bf9-8885-3040fad2e9b1.png",
+      "prompt": "Use case: product-mockup. Asset: realistic industrial catalogue product photo. Primary subject: Safety pin dee shackle. Material: Grade 6 alloy steel body, alloy pin. Finish: Hot dip galvanised, red pin. Show ONLY this specific product type, with correct connectors, real mechanically plausible forged hardware. For chain slings show EXACT number of chain legs in product name, one master link at top and a safety hook at each leg end. For hooks match eye versus clevis versus swivel connection. For textile slings show realistic woven polyester, not metal. For shackles match bow versus straight dee and screw pin versus bolt with nut/cotter. Professional photorealistic studio product photography, physical metal grain, powder coat texture, subtle imperfections, realistic contact shadows, no CGI or toy appearance. Seamless pale cool grey tabletop background, broad softbox upper left, 85mm lens, sharp detail. Square composition with whole object contained in central 75 percent and generous safe margins. No people, logos, lettering, watermark, diagrams or dimensions. Representative unbranded equipment."
+    },
+    {
+      "slug": "wide-body-shackle",
+      "name": "Wide body shackle",
+      "finish": "Painted orange body, navy pin",
+      "material": "Grade 8 alloy steel",
+      "art": "shackle-wide",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-d36e6b51-70bf-4cbc-a4cf-46561776fb31.png",
+      "prompt": "Use case: product-mockup. Asset: realistic industrial catalogue product photo. Primary subject: Wide body shackle. Material: Grade 8 alloy steel. Finish: Painted orange body, navy pin. Show ONLY this specific product type, with correct connectors, real mechanically plausible forged hardware. For chain slings show EXACT number of chain legs in product name, one master link at top and a safety hook at each leg end. For hooks match eye versus clevis versus swivel connection. For textile slings show realistic woven polyester, not metal. For shackles match bow versus straight dee and screw pin versus bolt with nut/cotter. Professional photorealistic studio product photography, physical metal grain, powder coat texture, subtle imperfections, realistic contact shadows, no CGI or toy appearance. Seamless pale cool grey tabletop background, broad softbox upper left, 85mm lens, sharp detail. Square composition with whole object contained in central 75 percent and generous safe margins. No people, logos, lettering, watermark, diagrams or dimensions. Representative unbranded equipment."
+    },
+    {
+      "slug": "rov-shackle",
+      "name": "ROV bow shackle",
+      "finish": "Subsea epoxy, yellow handle",
+      "material": "Grade 6 alloy steel",
+      "art": "shackle-rov",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-5018cf83-1491-4072-bb57-d1cba618cf2d.png",
+      "prompt": "Use case: product-mockup. Asset: realistic industrial catalogue product photo. Primary subject: ROV bow shackle. Material: Grade 6 alloy steel. Finish: Subsea epoxy, yellow handle. Show ONLY this specific product type, with correct connectors, real mechanically plausible forged hardware. For chain slings show EXACT number of chain legs in product name, one master link at top and a safety hook at each leg end. For hooks match eye versus clevis versus swivel connection. For textile slings show realistic woven polyester, not metal. For shackles match bow versus straight dee and screw pin versus bolt with nut/cotter. Professional photorealistic studio product photography, physical metal grain, powder coat texture, subtle imperfections, realistic contact shadows, no CGI or toy appearance. Seamless pale cool grey tabletop background, broad softbox upper left, 85mm lens, sharp detail. Square composition with whole object contained in central 75 percent and generous safe margins. No people, logos, lettering, watermark, diagrams or dimensions. Representative unbranded equipment."
+    },
+    {
+      "slug": "master-link-g100",
+      "name": "Master link, Grade 100",
+      "finish": "Orange powder coat",
+      "material": "Alloy steel, quenched and tempered",
+      "art": "master-link",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-eab21ea6-e357-4989-b79a-a9a7ebda8478.png",
+      "prompt": "Use case: product-mockup. Asset: realistic industrial catalogue product photo. Primary subject: Master link, Grade 100. Material: Alloy steel, quenched and tempered. Finish: Orange powder coat. Show ONLY this specific product type, with correct connectors, real mechanically plausible forged hardware. For chain slings show EXACT number of chain legs in product name, one master link at top and a safety hook at each leg end. For hooks match eye versus clevis versus swivel connection. For textile slings show realistic woven polyester, not metal. For shackles match bow versus straight dee and screw pin versus bolt with nut/cotter. Professional photorealistic studio product photography, physical metal grain, powder coat texture, subtle imperfections, realistic contact shadows, no CGI or toy appearance. Seamless pale cool grey tabletop background, broad softbox upper left, 85mm lens, sharp detail. Square composition with whole object contained in central 75 percent and generous safe margins. No people, logos, lettering, watermark, diagrams or dimensions. Representative unbranded equipment."
+    },
+    {
+      "slug": "master-link-assembly-g100",
+      "name": "Master link quad assembly, Grade 100",
+      "finish": "Orange powder coat",
+      "material": "Alloy steel, quenched and tempered",
+      "art": "master-assembly",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-6b5b55d3-54da-4f52-8cc8-bfb649df2f2e.png",
+      "prompt": "Use case: product-mockup. Photorealistic industrial catalogue product photograph. ONLY a real forged orange steel master link QUAD ASSEMBLY: one large vertical oval master link at the top, with two smaller orange oval intermediate sublinks hanging directly from its lower curve. Three oval steel links total. NO chain legs, NO hooks, NO chains, no sling. This is a compact three-link connector assembly alone. Authentic physical materials, subtle surface texture and realistic contact shadow. Seamless cool pale grey studio tabletop, broad softbox upper left, 85mm lens. Square composition, entire product centered with generous margin. No text, logos, diagrams, people or watermark. No CGI or toy appearance."
+    },
+    {
+      "slug": "master-link-g80",
+      "name": "Master link, Grade 80",
+      "finish": "Orange powder coat",
+      "material": "Alloy steel, quenched and tempered",
+      "art": "master-link",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-6eca9637-8ee2-4438-b925-0a5c3815aba8.png",
+      "prompt": "Use case: product-mockup. Asset: realistic industrial catalogue product photo. Primary subject: Master link, Grade 80. Material: Alloy steel, quenched and tempered. Finish: Orange powder coat. Show ONLY this specific product type, with correct connectors, real mechanically plausible forged hardware. For chain slings show EXACT number of chain legs in product name, one master link at top and a safety hook at each leg end. For hooks match eye versus clevis versus swivel connection. For textile slings show realistic woven polyester, not metal. For shackles match bow versus straight dee and screw pin versus bolt with nut/cotter. Professional photorealistic studio product photography, physical metal grain, powder coat texture, subtle imperfections, realistic contact shadows, no CGI or toy appearance. Seamless pale cool grey tabletop background, broad softbox upper left, 85mm lens, sharp detail. Square composition with whole object contained in central 75 percent and generous safe margins. No people, logos, lettering, watermark, diagrams or dimensions. Representative unbranded equipment."
+    },
+    {
+      "slug": "connecting-link-g100",
+      "name": "Connecting link, Grade 100",
+      "finish": "Orange powder coat",
+      "material": "Alloy steel, quenched and tempered",
+      "art": "connecting-link",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-366d2773-975e-48c9-9a39-595f6fb56d44.png",
+      "prompt": "Use case: product-mockup. Asset: realistic industrial catalogue product photo. Primary subject: Connecting link, Grade 100. Material: Alloy steel, quenched and tempered. Finish: Orange powder coat. Show ONLY this specific product type, with correct connectors, real mechanically plausible forged hardware. For chain slings show EXACT number of chain legs in product name, one master link at top and a safety hook at each leg end. For hooks match eye versus clevis versus swivel connection. For textile slings show realistic woven polyester, not metal. For shackles match bow versus straight dee and screw pin versus bolt with nut/cotter. Professional photorealistic studio product photography, physical metal grain, powder coat texture, subtle imperfections, realistic contact shadows, no CGI or toy appearance. Seamless pale cool grey tabletop background, broad softbox upper left, 85mm lens, sharp detail. Square composition with whole object contained in central 75 percent and generous safe margins. No people, logos, lettering, watermark, diagrams or dimensions. Representative unbranded equipment."
+    },
+    {
+      "slug": "omega-link-g80",
+      "name": "Omega link, Grade 80",
+      "finish": "Orange powder coat",
+      "material": "Alloy steel, quenched and tempered",
+      "art": "omega-link",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-6b9ef03b-6b01-4e93-b514-968ff167396e.png",
+      "prompt": "Use case: product-mockup. Asset: realistic industrial catalogue product photo. Primary subject: Omega link, Grade 80. Material: Alloy steel, quenched and tempered. Finish: Orange powder coat. Show ONLY this specific product type, with correct connectors, real mechanically plausible forged hardware. For chain slings show EXACT number of chain legs in product name, one master link at top and a safety hook at each leg end. For hooks match eye versus clevis versus swivel connection. For textile slings show realistic woven polyester, not metal. For shackles match bow versus straight dee and screw pin versus bolt with nut/cotter. Professional photorealistic studio product photography, physical metal grain, powder coat texture, subtle imperfections, realistic contact shadows, no CGI or toy appearance. Seamless pale cool grey tabletop background, broad softbox upper left, 85mm lens, sharp detail. Square composition with whole object contained in central 75 percent and generous safe margins. No people, logos, lettering, watermark, diagrams or dimensions. Representative unbranded equipment."
+    },
+    {
+      "slug": "open-spelter-socket",
+      "name": "Open spelter socket",
+      "finish": "Hot dip galvanised",
+      "material": "Forged carbon steel",
+      "art": "socket-open",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-e62d0351-ca97-40ca-85bb-d9a52fe9a831.png",
+      "prompt": "Use case: product-mockup. Asset: realistic industrial catalogue product photo. Primary subject: Open spelter socket. Material: Forged carbon steel. Finish: Hot dip galvanised. Show ONLY this specific product type, with correct connectors, real mechanically plausible forged hardware. For chain slings show EXACT number of chain legs in product name, one master link at top and a safety hook at each leg end. For hooks match eye versus clevis versus swivel connection. For textile slings show realistic woven polyester, not metal. For shackles match bow versus straight dee and screw pin versus bolt with nut/cotter. Professional photorealistic studio product photography, physical metal grain, powder coat texture, subtle imperfections, realistic contact shadows, no CGI or toy appearance. Seamless pale cool grey tabletop background, broad softbox upper left, 85mm lens, sharp detail. Square composition with whole object contained in central 75 percent and generous safe margins. No people, logos, lettering, watermark, diagrams or dimensions. Representative unbranded equipment."
+    },
+    {
+      "slug": "closed-spelter-socket",
+      "name": "Closed spelter socket",
+      "finish": "Hot dip galvanised",
+      "material": "Forged carbon steel",
+      "art": "socket-closed",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-4c5e10b4-0040-4f3b-b41e-f55d00450837.png",
+      "prompt": "Use case: product-mockup. Asset: realistic industrial catalogue product photo. Primary subject: Closed spelter socket. Material: Forged carbon steel. Finish: Hot dip galvanised. Show ONLY this specific product type, with correct connectors, real mechanically plausible forged hardware. For chain slings show EXACT number of chain legs in product name, one master link at top and a safety hook at each leg end. For hooks match eye versus clevis versus swivel connection. For textile slings show realistic woven polyester, not metal. For shackles match bow versus straight dee and screw pin versus bolt with nut/cotter. Professional photorealistic studio product photography, physical metal grain, powder coat texture, subtle imperfections, realistic contact shadows, no CGI or toy appearance. Seamless pale cool grey tabletop background, broad softbox upper left, 85mm lens, sharp detail. Square composition with whole object contained in central 75 percent and generous safe margins. No people, logos, lettering, watermark, diagrams or dimensions. Representative unbranded equipment."
+    },
+    {
+      "slug": "wedge-socket",
+      "name": "Wedge socket",
+      "finish": "Painted orange, galvanised pin",
+      "material": "Forged carbon steel body, cast wedge",
+      "art": "socket-wedge",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-79d7221d-68f6-498f-8ba0-a6b40abaf58e.png",
+      "prompt": "Use case: product-mockup. Asset: realistic industrial catalogue product photo. Primary subject: Wedge socket. Material: Forged carbon steel body, cast wedge. Finish: Painted orange, galvanised pin. Show ONLY this specific product type, with correct connectors, real mechanically plausible forged hardware. For chain slings show EXACT number of chain legs in product name, one master link at top and a safety hook at each leg end. For hooks match eye versus clevis versus swivel connection. For textile slings show realistic woven polyester, not metal. For shackles match bow versus straight dee and screw pin versus bolt with nut/cotter. Professional photorealistic studio product photography, physical metal grain, powder coat texture, subtle imperfections, realistic contact shadows, no CGI or toy appearance. Seamless pale cool grey tabletop background, broad softbox upper left, 85mm lens, sharp detail. Square composition with whole object contained in central 75 percent and generous safe margins. No people, logos, lettering, watermark, diagrams or dimensions. Representative unbranded equipment."
+    },
+    {
+      "slug": "wire-rope-clip-din-1142",
+      "name": "Wire rope grip, DIN 1142",
+      "finish": "Hot dip galvanised",
+      "material": "Forged carbon steel",
+      "art": "rope-clip",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-3f779b37-3d10-4448-ad34-697ac0d0a363.png",
+      "prompt": "Use case: product-mockup. Asset: realistic industrial catalogue product photo. Primary subject: Wire rope grip, DIN 1142. Material: Forged carbon steel. Finish: Hot dip galvanised. Show ONLY this specific product type, with correct connectors, real mechanically plausible forged hardware. For chain slings show EXACT number of chain legs in product name, one master link at top and a safety hook at each leg end. For hooks match eye versus clevis versus swivel connection. For textile slings show realistic woven polyester, not metal. For shackles match bow versus straight dee and screw pin versus bolt with nut/cotter. Professional photorealistic studio product photography, physical metal grain, powder coat texture, subtle imperfections, realistic contact shadows, no CGI or toy appearance. Seamless pale cool grey tabletop background, broad softbox upper left, 85mm lens, sharp detail. Square composition with whole object contained in central 75 percent and generous safe margins. No people, logos, lettering, watermark, diagrams or dimensions. Representative unbranded equipment."
+    },
+    {
+      "slug": "heavy-duty-thimble",
+      "name": "Heavy duty thimble",
+      "finish": "Hot dip galvanised",
+      "material": "Pressed carbon steel",
+      "art": "thimble",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-36d4192d-f520-4857-9c9c-0a5e39f0d0c9.png",
+      "prompt": "Use case: product-mockup. Asset: realistic industrial catalogue product photo. Primary subject: Heavy duty thimble. Material: Pressed carbon steel. Finish: Hot dip galvanised. Show ONLY this specific product type, with correct connectors, real mechanically plausible forged hardware. For chain slings show EXACT number of chain legs in product name, one master link at top and a safety hook at each leg end. For hooks match eye versus clevis versus swivel connection. For textile slings show realistic woven polyester, not metal. For shackles match bow versus straight dee and screw pin versus bolt with nut/cotter. Professional photorealistic studio product photography, physical metal grain, powder coat texture, subtle imperfections, realistic contact shadows, no CGI or toy appearance. Seamless pale cool grey tabletop background, broad softbox upper left, 85mm lens, sharp detail. Square composition with whole object contained in central 75 percent and generous safe margins. No people, logos, lettering, watermark, diagrams or dimensions. Representative unbranded equipment."
+    },
+    {
+      "slug": "turnbuckle-jaw-jaw",
+      "name": "Turnbuckle, jaw and jaw",
+      "finish": "Hot dip galvanised",
+      "material": "Forged carbon steel",
+      "art": "turnbuckle",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-640adeaa-67b5-4ab1-a5ad-2e1704acbd91.png",
+      "prompt": "Use case: product-mockup. Asset: realistic industrial catalogue product photo. Primary subject: Turnbuckle, jaw and jaw. Material: Forged carbon steel. Finish: Hot dip galvanised. Show ONLY this specific product type, with correct connectors, real mechanically plausible forged hardware. For chain slings show EXACT number of chain legs in product name, one master link at top and a safety hook at each leg end. For hooks match eye versus clevis versus swivel connection. For textile slings show realistic woven polyester, not metal. For shackles match bow versus straight dee and screw pin versus bolt with nut/cotter. Professional photorealistic studio product photography, physical metal grain, powder coat texture, subtle imperfections, realistic contact shadows, no CGI or toy appearance. Seamless pale cool grey tabletop background, broad softbox upper left, 85mm lens, sharp detail. Square composition with whole object contained in central 75 percent and generous safe margins. No people, logos, lettering, watermark, diagrams or dimensions. Representative unbranded equipment."
+    },
+    {
+      "slug": "turnbuckle-eye-eye",
+      "name": "Turnbuckle, eye and eye",
+      "finish": "Hot dip galvanised",
+      "material": "Forged carbon steel",
+      "art": "turnbuckle-eye",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-d0151f6b-7c08-4311-b5be-32882b4e9c04.png",
+      "prompt": "Use case: product-mockup. Asset: realistic industrial catalogue product photo. Primary subject: Turnbuckle, eye and eye. Material: Forged carbon steel. Finish: Hot dip galvanised. Show ONLY this specific product type, with correct connectors, real mechanically plausible forged hardware. For chain slings show EXACT number of chain legs in product name, one master link at top and a safety hook at each leg end. For hooks match eye versus clevis versus swivel connection. For textile slings show realistic woven polyester, not metal. For shackles match bow versus straight dee and screw pin versus bolt with nut/cotter. Professional photorealistic studio product photography, physical metal grain, powder coat texture, subtle imperfections, realistic contact shadows, no CGI or toy appearance. Seamless pale cool grey tabletop background, broad softbox upper left, 85mm lens, sharp detail. Square composition with whole object contained in central 75 percent and generous safe margins. No people, logos, lettering, watermark, diagrams or dimensions. Representative unbranded equipment."
+    },
+    {
+      "slug": "eye-bolt-din-580",
+      "name": "Collared eye bolt, DIN 580",
+      "finish": "Zinc plated",
+      "material": "Forged C15E carbon steel",
+      "art": "eye-bolt",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-1eba56a2-f8ea-45db-9553-4f6486012d51.png",
+      "prompt": "Use case: product-mockup. Asset: realistic industrial catalogue product photo. Primary subject: Collared eye bolt, DIN 580. Material: Forged C15E carbon steel. Finish: Zinc plated. Show ONLY this specific product type, with correct connectors, real mechanically plausible forged hardware. For chain slings show EXACT number of chain legs in product name, one master link at top and a safety hook at each leg end. For hooks match eye versus clevis versus swivel connection. For textile slings show realistic woven polyester, not metal. For shackles match bow versus straight dee and screw pin versus bolt with nut/cotter. Professional photorealistic studio product photography, physical metal grain, powder coat texture, subtle imperfections, realistic contact shadows, no CGI or toy appearance. Seamless pale cool grey tabletop background, broad softbox upper left, 85mm lens, sharp detail. Square composition with whole object contained in central 75 percent and generous safe margins. No people, logos, lettering, watermark, diagrams or dimensions. Representative unbranded equipment."
+    },
+    {
+      "slug": "swivel-eye-bolt",
+      "name": "Swivel eye bolt, Grade 100",
+      "finish": "Orange powder coat",
+      "material": "Alloy steel, quenched and tempered",
+      "art": "swivel-eye",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-4d3cc804-1284-41bc-b9a2-acf161ecfef4.png",
+      "prompt": "Use case: product-mockup. Asset: realistic industrial catalogue product photo. Primary subject: Swivel eye bolt, Grade 100. Material: Alloy steel, quenched and tempered. Finish: Orange powder coat. Show ONLY this specific product type, with correct connectors, real mechanically plausible forged hardware. For chain slings show EXACT number of chain legs in product name, one master link at top and a safety hook at each leg end. For hooks match eye versus clevis versus swivel connection. For textile slings show realistic woven polyester, not metal. For shackles match bow versus straight dee and screw pin versus bolt with nut/cotter. Professional photorealistic studio product photography, physical metal grain, powder coat texture, subtle imperfections, realistic contact shadows, no CGI or toy appearance. Seamless pale cool grey tabletop background, broad softbox upper left, 85mm lens, sharp detail. Square composition with whole object contained in central 75 percent and generous safe margins. No people, logos, lettering, watermark, diagrams or dimensions. Representative unbranded equipment."
+    },
+    {
+      "slug": "swivel-hoist-ring",
+      "name": "Swivel hoist ring",
+      "finish": "Orange powder coat, black oxide screw",
+      "material": "Alloy steel, quenched and tempered",
+      "art": "swivel-ring",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-24e03ff6-986d-4d0d-b72b-8bc9543aa06e.png",
+      "prompt": "Use case: product-mockup. Asset type: premium industrial website category photograph. Subject: one real orange forged steel swivel lifting ring mounted on a machined steel threaded bolt base. Extremely photorealistic professional industrial product photography, actual physical hardware rather than CGI, authentic mechanically plausible construction, forged metal grain, subtle machining marks, realistic powder coating and tiny surface imperfections. Studio tabletop seamless cool pale grey background, broad softbox from upper left, natural contact shadows, subtle depth, 85mm lens, sharp product detail. Square composition, complete object centered, contained within central 75 percent with generous margins, no cropping. Consistent premium catalogue art direction. No text, letters, logos, watermarks, badges, dimensions, people, plastic toy look or illustration. Representative unbranded equipment.",
+      "reusedFrom": "/images/categories/lifting-points.webp"
+    },
+    {
+      "slug": "weld-on-lifting-point",
+      "name": "Weld-on lifting point",
+      "finish": "Orange powder coat bail, bare base",
+      "material": "S355 base, alloy steel bail",
+      "art": "weld-on",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-734b1574-5917-436b-8783-4b2f12d39a42.png",
+      "prompt": "Use case: product-mockup. Asset: realistic industrial catalogue product photo. Primary subject: Weld-on lifting point. Material: S355 base, alloy steel bail. Finish: Orange powder coat bail, bare base. Show ONLY this specific product type, with correct connectors, real mechanically plausible forged hardware. For chain slings show EXACT number of chain legs in product name, one master link at top and a safety hook at each leg end. For hooks match eye versus clevis versus swivel connection. For textile slings show realistic woven polyester, not metal. For shackles match bow versus straight dee and screw pin versus bolt with nut/cotter. Professional photorealistic studio product photography, physical metal grain, powder coat texture, subtle imperfections, realistic contact shadows, no CGI or toy appearance. Seamless pale cool grey tabletop background, broad softbox upper left, 85mm lens, sharp detail. Square composition with whole object contained in central 75 percent and generous safe margins. No people, logos, lettering, watermark, diagrams or dimensions. Representative unbranded equipment."
+    },
+    {
+      "slug": "bolt-on-lifting-point",
+      "name": "Bolt-on lifting point",
+      "finish": "Orange powder coat",
+      "material": "Alloy steel bail, S355 base",
+      "art": "bolt-on",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-cdb3bbb4-a3b4-4d44-93dc-f738667bdfe0.png",
+      "prompt": "Use case: product-mockup. Asset: realistic industrial catalogue product photo. Primary subject: Bolt-on lifting point. Material: Alloy steel bail, S355 base. Finish: Orange powder coat. Show ONLY this specific product type, with correct connectors, real mechanically plausible forged hardware. For chain slings show EXACT number of chain legs in product name, one master link at top and a safety hook at each leg end. For hooks match eye versus clevis versus swivel connection. For textile slings show realistic woven polyester, not metal. For shackles match bow versus straight dee and screw pin versus bolt with nut/cotter. Professional photorealistic studio product photography, physical metal grain, powder coat texture, subtle imperfections, realistic contact shadows, no CGI or toy appearance. Seamless pale cool grey tabletop background, broad softbox upper left, 85mm lens, sharp detail. Square composition with whole object contained in central 75 percent and generous safe margins. No people, logos, lettering, watermark, diagrams or dimensions. Representative unbranded equipment."
+    },
+    {
+      "slug": "chain-block",
+      "name": "Manual chain block",
+      "finish": "Orange powder coat housing, navy covers",
+      "material": "Steel housing, alloy gears, Grade 80 chain",
+      "art": "chain-block",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-3609d565-2e0e-46ab-97cd-772867948905.png",
+      "prompt": "Use case: product-mockup. Asset type: premium industrial website category photograph. Subject: a real orange manual chain block hoist, steel upper suspension hook, black load chain and hanging lower safety hook, neatly arranged. Extremely photorealistic professional industrial product photography, actual physical hardware rather than CGI, authentic mechanically plausible construction, forged metal grain, subtle machining marks, realistic powder coating and tiny surface imperfections. Studio tabletop seamless cool pale grey background, broad softbox from upper left, natural contact shadows, subtle depth, 85mm lens, sharp product detail. Square composition, complete object centered, contained within central 75 percent with generous margins, no cropping. Consistent premium catalogue art direction. No text, letters, logos, watermarks, badges, dimensions, people, plastic toy look or illustration. Representative unbranded equipment.",
+      "reusedFrom": "/images/categories/hoists.webp"
+    },
+    {
+      "slug": "lever-hoist",
+      "name": "Lever hoist",
+      "finish": "Orange powder coat housing, navy lever",
+      "material": "Steel housing, alloy gears, Grade 80 chain",
+      "art": "lever-hoist",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-dc556365-8b22-4a8a-8c05-4f4e5160dacc.png",
+      "prompt": "Use case: product-mockup. Asset: realistic industrial catalogue product photo. Primary subject: Lever hoist. Material: Steel housing, alloy gears, Grade 80 chain. Finish: Orange powder coat housing, navy lever. Show ONLY this specific product type, with correct connectors, real mechanically plausible forged hardware. For chain slings show EXACT number of chain legs in product name, one master link at top and a safety hook at each leg end. For hooks match eye versus clevis versus swivel connection. For textile slings show realistic woven polyester, not metal. For shackles match bow versus straight dee and screw pin versus bolt with nut/cotter. Professional photorealistic studio product photography, physical metal grain, powder coat texture, subtle imperfections, realistic contact shadows, no CGI or toy appearance. Seamless pale cool grey tabletop background, broad softbox upper left, 85mm lens, sharp detail. Square composition with whole object contained in central 75 percent and generous safe margins. No people, logos, lettering, watermark, diagrams or dimensions. Representative unbranded equipment."
+    },
+    {
+      "slug": "mini-lever-hoist",
+      "name": "Mini lever hoist",
+      "finish": "Orange powder coat",
+      "material": "Steel housing, Grade 80 chain",
+      "art": "lever-hoist",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-7812a372-4457-4b45-98f4-4d0adb577291.png",
+      "prompt": "Use case: product-mockup. Asset: realistic industrial catalogue product photo. Primary subject: Mini lever hoist. Material: Steel housing, Grade 80 chain. Finish: Orange powder coat. Show ONLY this specific product type, with correct connectors, real mechanically plausible forged hardware. For chain slings show EXACT number of chain legs in product name, one master link at top and a safety hook at each leg end. For hooks match eye versus clevis versus swivel connection. For textile slings show realistic woven polyester, not metal. For shackles match bow versus straight dee and screw pin versus bolt with nut/cotter. Professional photorealistic studio product photography, physical metal grain, powder coat texture, subtle imperfections, realistic contact shadows, no CGI or toy appearance. Seamless pale cool grey tabletop background, broad softbox upper left, 85mm lens, sharp detail. Square composition with whole object contained in central 75 percent and generous safe margins. No people, logos, lettering, watermark, diagrams or dimensions. Representative unbranded equipment."
+    },
+    {
+      "slug": "geared-beam-trolley",
+      "name": "Geared beam trolley",
+      "finish": "Orange powder coat",
+      "material": "Steel side plates, cast wheels",
+      "art": "trolley",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-eef44679-3985-44e9-8837-999296977ab0.png",
+      "prompt": "Use case: product-mockup. Asset: realistic industrial catalogue product photo. Primary subject: Geared beam trolley. Material: Steel side plates, cast wheels. Finish: Orange powder coat. Show ONLY this specific product type, with correct connectors, real mechanically plausible forged hardware. For chain slings show EXACT number of chain legs in product name, one master link at top and a safety hook at each leg end. For hooks match eye versus clevis versus swivel connection. For textile slings show realistic woven polyester, not metal. For shackles match bow versus straight dee and screw pin versus bolt with nut/cotter. Professional photorealistic studio product photography, physical metal grain, powder coat texture, subtle imperfections, realistic contact shadows, no CGI or toy appearance. Seamless pale cool grey tabletop background, broad softbox upper left, 85mm lens, sharp detail. Square composition with whole object contained in central 75 percent and generous safe margins. No people, logos, lettering, watermark, diagrams or dimensions. Representative unbranded equipment."
+    },
+    {
+      "slug": "plain-beam-trolley",
+      "name": "Plain beam trolley",
+      "finish": "Orange powder coat",
+      "material": "Steel side plates, cast wheels",
+      "art": "trolley",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-7b39039d-502c-49f8-87d9-b2e60372a940.png",
+      "prompt": "Use case: product-mockup. Asset: realistic industrial catalogue product photo. Primary subject: Plain beam trolley. Material: Steel side plates, cast wheels. Finish: Orange powder coat. Show ONLY this specific product type, with correct connectors, real mechanically plausible forged hardware. For chain slings show EXACT number of chain legs in product name, one master link at top and a safety hook at each leg end. For hooks match eye versus clevis versus swivel connection. For textile slings show realistic woven polyester, not metal. For shackles match bow versus straight dee and screw pin versus bolt with nut/cotter. Professional photorealistic studio product photography, physical metal grain, powder coat texture, subtle imperfections, realistic contact shadows, no CGI or toy appearance. Seamless pale cool grey tabletop background, broad softbox upper left, 85mm lens, sharp detail. Square composition with whole object contained in central 75 percent and generous safe margins. No people, logos, lettering, watermark, diagrams or dimensions. Representative unbranded equipment."
+    },
+    {
+      "slug": "flat-webbing-sling-duplex",
+      "name": "Flat webbing sling, duplex",
+      "finish": "Colour coded webbing, blue label",
+      "material": "High-tenacity polyester",
+      "art": "web-sling",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-b1b9b2bf-ee7a-4502-b232-2e1147ba0110.png",
+      "prompt": "Use case: product-mockup. Photorealistic industrial catalogue product photograph. ONLY ONE real folded flat purple polyester DUPLEX WEBBING SLING with a reinforced stitched fabric lifting eye at each end. Show the flat woven textile band laid in a loose U shape with both stitched fabric eyes visible. NO metal master links, NO metal hooks, NO chains, NO complete multi-leg assembly. The product is a single textile strap with two sewn textile eyes. Authentic physical materials, subtle surface texture and realistic contact shadow. Seamless cool pale grey studio tabletop, broad softbox upper left, 85mm lens. Square composition, entire product centered with generous margin. No text, logos, diagrams, people or watermark. No CGI or toy appearance."
+    },
+    {
+      "slug": "round-sling",
+      "name": "Round sling",
+      "finish": "Colour coded sleeve, blue label",
+      "material": "High-tenacity polyester core and sleeve",
+      "art": "round-sling",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-224e3370-7ef8-418d-b2ec-cffb11f3b95e.png",
+      "prompt": "Use case: product-mockup. Asset: realistic industrial catalogue product photo. Primary subject: Round sling. Material: High-tenacity polyester core and sleeve. Finish: Colour coded sleeve, blue label. Show ONLY this specific product type, with correct connectors, real mechanically plausible forged hardware. For chain slings show EXACT number of chain legs in product name, one master link at top and a safety hook at each leg end. For hooks match eye versus clevis versus swivel connection. For textile slings show realistic woven polyester, not metal. For shackles match bow versus straight dee and screw pin versus bolt with nut/cotter. Professional photorealistic studio product photography, physical metal grain, powder coat texture, subtle imperfections, realistic contact shadows, no CGI or toy appearance. Seamless pale cool grey tabletop background, broad softbox upper left, 85mm lens, sharp detail. Square composition with whole object contained in central 75 percent and generous safe margins. No people, logos, lettering, watermark, diagrams or dimensions. Representative unbranded equipment."
+    },
+    {
+      "slug": "ratchet-lashing",
+      "name": "Ratchet lashing, 5 t",
+      "finish": "Orange strap, zinc plated hardware",
+      "material": "Polyester strap, zinc plated steel ratchet",
+      "art": "ratchet",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-6bcadc33-a827-4d0e-a128-499bf4430db1.png",
+      "prompt": "Use case: product-mockup. Asset: realistic industrial catalogue product photo. Primary subject: Ratchet lashing, 5 t. Material: Polyester strap, zinc plated steel ratchet. Finish: Orange strap, zinc plated hardware. Show ONLY this specific product type, with correct connectors, real mechanically plausible forged hardware. For chain slings show EXACT number of chain legs in product name, one master link at top and a safety hook at each leg end. For hooks match eye versus clevis versus swivel connection. For textile slings show realistic woven polyester, not metal. For shackles match bow versus straight dee and screw pin versus bolt with nut/cotter. Professional photorealistic studio product photography, physical metal grain, powder coat texture, subtle imperfections, realistic contact shadows, no CGI or toy appearance. Seamless pale cool grey tabletop background, broad softbox upper left, 85mm lens, sharp detail. Square composition with whole object contained in central 75 percent and generous safe margins. No people, logos, lettering, watermark, diagrams or dimensions. Representative unbranded equipment."
+    },
+    {
+      "slug": "load-binder",
+      "name": "Ratchet load binder",
+      "finish": "Orange powder coat",
+      "material": "Forged alloy steel",
+      "art": "load-binder",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-fc3f240a-ca53-4252-ac2b-4206445deaf3.png",
+      "prompt": "Use case: product-mockup. Photorealistic industrial catalogue product photograph. ONLY ONE real orange industrial RATCHET CHAIN LOAD BINDER, with long straight central ratcheting handle, cylindrical threaded turnbuckle barrel with visible ratchet gear at center, and a short chain GRAB HOOK at each threaded rod end. Rigid steel hardware, not a fabric strap. It must be a RATCHETING SCREW TYPE BINDER, NOT a simple over-center lever binder. Real mechanically plausible metal parts. Authentic physical materials, subtle surface texture and realistic contact shadow. Seamless cool pale grey studio tabletop, broad softbox upper left, 85mm lens. Square composition, entire product centered with generous margin. No text, logos, diagrams, people or watermark. No CGI or toy appearance."
+    }
+  ]
+}

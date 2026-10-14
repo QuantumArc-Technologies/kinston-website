@@ -1,0 +1,46 @@
+{
+  "tool": "Built-in image_gen",
+  "purpose": "AI-generated representative category visuals; not exact product photographs.",
+  "images": [
+    {
+      "slug": "chain-slings",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-314ec8b9-ed76-49d3-a5b2-6965872609cd.png",
+      "prompt": "Use case: product-mockup. Asset type: premium industrial website category photograph. Subject: a real two-leg alloy steel lifting chain sling, orange forged oval master link at top, two black steel chain legs and orange safety hooks, laid neatly on the surface. Extremely photorealistic professional industrial product photography, actual physical hardware rather than CGI, authentic mechanically plausible construction, forged metal grain, subtle machining marks, realistic powder coating and tiny surface imperfections. Studio tabletop seamless cool pale grey background, broad softbox from upper left, natural contact shadows, subtle depth, 85mm lens, sharp product detail. Square composition, complete object centered, contained within central 75 percent with generous margins, no cropping. Consistent premium catalogue art direction. No text, letters, logos, watermarks, badges, dimensions, people, plastic toy look or illustration. Representative unbranded equipment."
+    },
+    {
+      "slug": "hooks",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-2e12254e-2009-46de-af2f-0d8d55313550.png",
+      "prompt": "Use case: product-mockup. Asset type: premium industrial website category photograph. Subject: one heavy orange powder-coated forged steel self-locking lifting hook, functioning steel safety latch, connecting clevis pin, realistic industrial hardware. Extremely photorealistic professional industrial product photography, actual physical hardware rather than CGI, authentic mechanically plausible construction, forged metal grain, subtle machining marks, realistic powder coating and tiny surface imperfections. Studio tabletop seamless cool pale grey background, broad softbox from upper left, natural contact shadows, subtle depth, 85mm lens, sharp product detail. Square composition, complete object centered, contained within central 75 percent with generous margins, no cropping. Consistent premium catalogue art direction. No text, letters, logos, watermarks, badges, dimensions, people, plastic toy look or illustration. Representative unbranded equipment."
+    },
+    {
+      "slug": "shackles",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-180b8b0e-7ebf-49d1-9ce8-b2979b2fdef7.png",
+      "prompt": "Use case: product-mockup. Asset type: premium industrial website category photograph. Subject: one heavy galvanized forged steel bow shackle with a red-orange screw pin, authentic curved thick bow and threaded pin. Extremely photorealistic professional industrial product photography, actual physical hardware rather than CGI, authentic mechanically plausible construction, forged metal grain, subtle machining marks, realistic powder coating and tiny surface imperfections. Studio tabletop seamless cool pale grey background, broad softbox from upper left, natural contact shadows, subtle depth, 85mm lens, sharp product detail. Square composition, complete object centered, contained within central 75 percent with generous margins, no cropping. Consistent premium catalogue art direction. No text, letters, logos, watermarks, badges, dimensions, people, plastic toy look or illustration. Representative unbranded equipment."
+    },
+    {
+      "slug": "master-links",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-838fcff9-cd5a-45e5-a68f-594ec8bdaba7.png",
+      "prompt": "Use case: product-mockup. Asset type: premium industrial website category photograph. Subject: one orange powder-coated forged steel oval master link with two smaller coupling links beside it. Extremely photorealistic professional industrial product photography, actual physical hardware rather than CGI, authentic mechanically plausible construction, forged metal grain, subtle machining marks, realistic powder coating and tiny surface imperfections. Studio tabletop seamless cool pale grey background, broad softbox from upper left, natural contact shadows, subtle depth, 85mm lens, sharp product detail. Square composition, complete object centered, contained within central 75 percent with generous margins, no cropping. Consistent premium catalogue art direction. No text, letters, logos, watermarks, badges, dimensions, people, plastic toy look or illustration. Representative unbranded equipment."
+    },
+    {
+      "slug": "wire-rope-fittings",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-964c704a-3b0c-444f-b4bb-3a55fd754993.png",
+      "prompt": "Use case: product-mockup. Asset type: premium industrial website category photograph. Subject: a real galvanized steel open spelter socket and wire rope thimble with two wire rope clips arranged neatly. Extremely photorealistic professional industrial product photography, actual physical hardware rather than CGI, authentic mechanically plausible construction, forged metal grain, subtle machining marks, realistic powder coating and tiny surface imperfections. Studio tabletop seamless cool pale grey background, broad softbox from upper left, natural contact shadows, subtle depth, 85mm lens, sharp product detail. Square composition, complete object centered, contained within central 75 percent with generous margins, no cropping. Consistent premium catalogue art direction. No text, letters, logos, watermarks, badges, dimensions, people, plastic toy look or illustration. Representative unbranded equipment."
+    },
+    {
+      "slug": "lifting-points",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-24e03ff6-986d-4d0d-b72b-8bc9543aa06e.png",
+      "prompt": "Use case: product-mockup. Asset type: premium industrial website category photograph. Subject: one real orange forged steel swivel lifting ring mounted on a machined steel threaded bolt base. Extremely photorealistic professional industrial product photography, actual physical hardware rather than CGI, authentic mechanically plausible construction, forged metal grain, subtle machining marks, realistic powder coating and tiny surface imperfections. Studio tabletop seamless cool pale grey background, broad softbox from upper left, natural contact shadows, subtle depth, 85mm lens, sharp product detail. Square composition, complete object centered, contained within central 75 percent with generous margins, no cropping. Consistent premium catalogue art direction. No text, letters, logos, watermarks, badges, dimensions, people, plastic toy look or illustration. Representative unbranded equipment."
+    },
+    {
+      "slug": "hoists",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-3609d565-2e0e-46ab-97cd-772867948905.png",
+      "prompt": "Use case: product-mockup. Asset type: premium industrial website category photograph. Subject: a real orange manual chain block hoist, steel upper suspension hook, black load chain and hanging lower safety hook, neatly arranged. Extremely photorealistic professional industrial product photography, actual physical hardware rather than CGI, authentic mechanically plausible construction, forged metal grain, subtle machining marks, realistic powder coating and tiny surface imperfections. Studio tabletop seamless cool pale grey background, broad softbox from upper left, natural contact shadows, subtle depth, 85mm lens, sharp product detail. Square composition, complete object centered, contained within central 75 percent with generous margins, no cropping. Consistent premium catalogue art direction. No text, letters, logos, watermarks, badges, dimensions, people, plastic toy look or illustration. Representative unbranded equipment."
+    },
+    {
+      "slug": "slings-and-lashing",
+      "source": "/Users/macbook/.codex/generated_images/01a13b8e-06c5-7353-9874-8eed75a74c25/exec-ecdd5d5c-d869-4def-b12f-e49f746584af.png",
+      "prompt": "Use case: product-mockup. Asset type: premium industrial website category photograph. Subject: a real folded purple polyester webbing lifting sling with stitched reinforced eyes, a green endless round sling beside it, visible woven fabric texture. Extremely photorealistic professional industrial product photography, actual physical hardware rather than CGI, authentic mechanically plausible construction, forged metal grain, subtle machining marks, realistic powder coating and tiny surface imperfections. Studio tabletop seamless cool pale grey background, broad softbox from upper left, natural contact shadows, subtle depth, 85mm lens, sharp product detail. Square composition, complete object centered, contained within central 75 percent with generous margins, no cropping. Consistent premium catalogue art direction. No text, letters, logos, watermarks, badges, dimensions, people, plastic toy look or illustration. Representative unbranded equipment."
+    }
+  ]
+}
