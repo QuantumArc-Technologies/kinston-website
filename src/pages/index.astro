@@ -652,16 +652,17 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
   .video-hero .hero-copy { max-width: 640px; }
   .video-hero .hero-ranges { background: #07111b50; }
   .video-hero .hero-ranges a span { color: #c1cbd8; }
-  /* Give landscape footage its own space on phones and tablets. */
+  /* Keep the footage behind the mobile hero with a lighter, vertical shade. */
   @media (max-width: 960px) {
-    .hero-video { position: relative; inset: auto; height: auto; aspect-ratio: 16 / 9; object-fit: contain; background: #000; z-index: 0; }
-    .hero-video-shade { display: none; }
-    .video-hero .hero-inner { min-height: 0; padding-block: 32px 36px; gap: 28px; }
+    .hero-video-shade { background: linear-gradient(180deg, #07111b26 0%, #07111b66 40%, #07111b99 100%); }
+    .video-hero .hero-inner { min-height: 720px; min-height: 85svh; padding-block: 64px 36px; gap: 36px; align-content: end; }
+    .video-hero .hero-copy { text-shadow: 0 2px 12px #0009; }
+    .video-hero .lede { color: #e0e6ee; }
     .video-hero .hero-scroll { position: static; justify-self: start; }
     .video-hero .hero-ranges { margin-top: 0; }
   }
   @media (max-width: 600px) {
-    .video-hero .hero-inner { padding-block: 28px 32px; }
+    .video-hero .hero-inner { padding-block: 80px 32px; }
     .video-hero h1 { font-size: clamp(2.4rem, 10vw, 3.5rem); margin-block: 16px; }
     .video-hero .hero-actions { display: grid; grid-template-columns: 1fr; gap: 12px; margin-top: 24px; }
     .video-hero .hero-actions .btn { width: 100%; justify-content: center; }
