@@ -654,7 +654,8 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
   .video-hero .hero-ranges a span { color: #c1cbd8; }
   /* Keep the footage behind the mobile hero with a lighter, vertical shade. */
   @media (max-width: 960px) {
-    .hero-video-shade { background: linear-gradient(180deg, #07111b26 0%, #07111b66 40%, #07111b99 100%); }
+    .hero-video { height: 65%; min-height: 360px; }
+    .hero-video-shade { background: linear-gradient(180deg, #101b2826 0%, #101b2840 35%, #101b28 65%); }
     .video-hero .hero-inner { min-height: 720px; min-height: 85svh; padding-block: 64px 36px; gap: 36px; align-content: end; }
     .video-hero .hero-copy { text-shadow: 0 2px 12px #0009; }
     .video-hero .lede { color: #e0e6ee; }
