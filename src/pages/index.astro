@@ -19,7 +19,11 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
   description={site.description}
   path="/"
 >
-  <section class="hero blueprint">
+  <section class="hero video-hero">
+    <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="/videos/kinston-hero-poster.jpg" aria-hidden="true" tabindex="-1">
+      <source src="/videos/kinston-hero.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-video-shade" aria-hidden="true"></div>
     <div class="wrap hero-inner">
       <div class="hero-copy">
         <p class="eyebrow"><span></span> Kinston Lifting · Since {site.founded}</p>
@@ -35,47 +39,6 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
           <li><Icon name="gauge" /> Proof loaded to 2.5 × WLL</li>
           <li><Icon name="tag" /> Serial numbered with certificate</li>
         </ul>
-      </div>
-      <div class="hero-art-wrap">
-        <span class="art-word" aria-hidden="true">LIFT.</span>
-        <div class="art-grade"><span>ENGINEERED FOR CONFIDENCE</span><strong>G100</strong><span>HIGH-PERFORMANCE LIFTING</span></div>
-        <figure class="hero-fig">
-          <span class="hero-glow" aria-hidden="true"></span>
-          <span class="hero-heat" aria-hidden="true"></span>
-          <div class="hook">
-            <img src="/images/hero-hook-branded.webp" alt="Kinston clevis self-locking hook, Grade 100" width="720" height="720" fetchpriority="high" decoding="async" />
-          </div>
-          <svg class="dims" viewBox="0 0 1100 1100" aria-hidden="true" fill="none" stroke="var(--orange)" stroke-width="3">
-            <path class="dl" d="M300 172 H360 M300 933 H360" />
-            <path class="dl" d="M330 172 V933" />
-            <text x="272" y="560" class="dt" text-anchor="middle">K</text>
-            <path class="dl" d="M495 520 V560 M697 520 V560" />
-            <path class="dl" d="M495 540 H697" />
-            <text x="596" y="522" class="dt" text-anchor="middle">A</text>
-            <path class="dl" d="M496 960 V1000 M694 960 V1000" />
-            <path class="dl" d="M496 980 H694" />
-            <text x="595" y="1040" class="dt" text-anchor="middle">D</text>
-            <path class="dl" d="M820 611 H880 M820 714 H880" />
-            <path class="dl" d="M850 611 V714" />
-            <text x="900" y="672" class="dt">H</text>
-          </svg>
-          <figcaption class="visually-hidden">Dimensions A, D, H and K are listed on the product datasheet</figcaption>
-        </figure>
-        <div class="bench" aria-label="Illustrative proof test animation">
-          <p class="bench-example">PROOF TEST · ILLUSTRATION</p>
-          <div class="bench-head"><span class="bench-dot" aria-hidden="true"></span><span class="bench-state">Proof test running</span></div>
-          <div class="bench-load"><span class="bench-num">0.0</span><span class="bench-unit">tonnes</span></div>
-          <div class="bench-bar" aria-hidden="true">
-            <span class="bench-fill"></span>
-            <span class="bench-tick" style="--at:40%"><i>WLL 5 t</i></span>
-            <span class="bench-tick" style="--at:100%"><i>2.5 × WLL</i></span>
-          </div>
-          <dl class="bench-meta">
-            <div><dt>Example serial</dt><dd>KL-26-08817</dd></div>
-            <div><dt>Heat</dt><dd>4471A</dd></div>
-          </dl>
-          <span class="bench-stamp"><Icon name="check" /> Passed</span>
-        </div>
       </div>
       <a class="hero-scroll" href="#discover">Discover Kinston <Icon name="arrow" /></a>
     </div>
@@ -255,33 +218,11 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
     revealEls.forEach((el) => io.observe(el));
   }
 
-  // Hero proof test: load climbs to 2.5 x WLL, hook tenses, stamp lands.
-  const bench = document.querySelector<HTMLElement>('.bench');
-  const fig = document.querySelector<HTMLElement>('.hero-fig');
-  if (bench) {
-    const num = bench.querySelector<HTMLElement>('.bench-num')!;
-    const state = bench.querySelector<HTMLElement>('.bench-state')!;
-    const target = 12.5;
-    const finish = () => {
-      num.textContent = target.toFixed(1);
-      bench.style.setProperty('--p', '1');
-      bench.classList.add('passed');
-      state.textContent = 'Proof test passed';
-      fig?.classList.remove('loading');
-    };
-    if (reduce) finish();
-    else setTimeout(() => {
-      fig?.classList.add('loading');
-      const t0 = performance.now(); const dur = 2600;
-      const step = (t: number) => {
-        const k = Math.min(1, (t - t0) / dur);
-        const e = k < 0.5 ? 2 * k * k : 1 - Math.pow(-2 * k + 2, 2) / 2;
-        num.textContent = (target * e).toFixed(1);
-        bench.style.setProperty('--p', String(e));
-        if (k < 1) requestAnimationFrame(step); else setTimeout(finish, 420);
-      };
-      requestAnimationFrame(step);
-    }, 1700);
+  const video = document.querySelector<HTMLVideoElement>('.hero-video');
+  if (video) {
+    video.muted = true;
+    if (reduce) video.pause();
+    else video.play().catch(() => {});
   }
 
   // Count-up for the stats strip.
@@ -702,6 +643,20 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
     .industry-foot { align-items: start; flex-direction: column; gap: 14px; line-height: 1.6; }
   }
   @media (prefers-reduced-motion: reduce) { .industry-feature > img, .sectors a, .sector-arrow, .industry-link :global(svg) { transition: none; } .industry-feature:hover > img, .sectors a:hover { transform: none; } }
+  /* Full-width video hero; keep the copy readable over moving footage. */
+  .video-hero { background: #101b28; isolation: isolate; }
+  .video-hero::before { display: none; }
+  .hero-video { position: absolute; inset: 0; width: 100%; height: 100%; max-width: none; object-fit: cover; object-position: center; z-index: -2; }
+  .hero-video-shade { position: absolute; inset: 0; background: linear-gradient(90deg, #07111be6 0%, #07111ba6 45%, #07111b26 100%), linear-gradient(0deg, #07111bc9, transparent 45%); z-index: -1; pointer-events: none; }
+  .video-hero .hero-inner { grid-template-columns: 1fr; min-height: 700px; padding-block: 80px 100px; }
+  .video-hero .hero-copy { max-width: 640px; }
+  .video-hero .hero-ranges { background: #07111b50; }
+  .video-hero .hero-ranges a span { color: #c1cbd8; }
+  @media (max-width: 600px) {
+    .video-hero .hero-inner { min-height: 660px; padding-block: 55px 90px; }
+    .hero-video-shade { background: linear-gradient(90deg, #07111be6, #07111b80), linear-gradient(0deg, #07111bd9, transparent); }
+  }
+
 </style>
 
 <style is:global>
