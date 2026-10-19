@@ -10,7 +10,7 @@ const crumbs = [{ name: 'Home', href: '/' }, { name: 'Products', href: '/product
 ---
 <Base
   title="Products: lifting chain, hooks, shackles, master links, hoists"
-  description="Browse Kinston's eight product ranges: chain slings, hooks, shackles, master links, wire rope fittings, lifting points, hoists and textile slings. Dimensions, WLL tables and downloads for every item."
+  description="Browse Kinston's lifting chain, slings, hooks, shackles, connectors, lifting points, hoists, load restraint and mining fittings. Explore variants and request specifications."
   path="/products"
   jsonLd={[breadcrumbLd(crumbs)]}
 >
@@ -18,7 +18,7 @@ const crumbs = [{ name: 'Home', href: '/' }, { name: 'Products', href: '/product
     <div class="wrap">
       <Breadcrumb items={crumbs} light />
       <h1>Products</h1>
-      <p class="lede">Eight ranges covering the lifting chain from crane hook to load. Every product page carries the full dimension table in metric and imperial, the standards it is made to, and the datasheet and certificate downloads.</p>
+      <p class="lede">Explore {cats.length} ranges covering lifting, rigging and load restraint, including loose lifting chain and specialist mining fittings. Browse product variants, review available specifications and request a quote.</p>
     </div>
   </section>
 
@@ -29,7 +29,7 @@ const crumbs = [{ name: 'Home', href: '/' }, { name: 'Products', href: '/product
           const items = productsByCategory(c.slug);
           return (
             <li class="cat">
-              <a class="cat-art" href={`/products/${c.slug}`}><img src={`/images/categories/branded/${c.slug}.webp`} alt={c.name} loading="lazy" decoding="async" width="600" height="600" /></a>
+              <a class="cat-art" href={`/products/${c.slug}`}><img src={c.image ?? `/images/categories/branded/${c.slug}.webp`} alt={c.name} loading="lazy" decoding="async" width="600" height="600" /></a>
               <div class="cat-body">
                 <h2><a href={`/products/${c.slug}`}>{c.name}</a></h2>
                 <p class="muted">{c.description}</p>

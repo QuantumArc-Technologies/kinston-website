@@ -25,11 +25,11 @@ const crumbs = [
 ];
 const sizes = p.specRows.length;
 const img = p.image ?? `/images/products/branded/${p.slug}.webp`;
-const catImg = `/images/categories/branded/${cat.slug}.webp`;
+const catImg = cat.image ?? `/images/categories/branded/${cat.slug}.webp`;
 ---
 <Base
   title={`${p.name} ${p.code}`}
-  description={`${p.summary} ${sizes} sizes${range ? `, WLL ${fmt(range.min, 2)} to ${fmt(range.max, 2)} t` : ''}. Standards: ${p.standards.join(', ')}. Datasheet and certificate downloads.`}
+  description={p.specificationNote ? `${p.summary} Explore model variants and request specifications.` : `${p.summary} ${sizes} sizes${range ? `, WLL ${fmt(range.min, 2)} to ${fmt(range.max, 2)} t` : ''}. Standards: ${p.standards.join(', ')}. Datasheet and certificate downloads.`}
   path={`/products/${cat.slug}/${p.slug}`}
   ogType="product"
   jsonLd={[breadcrumbLd(crumbs), productLd(p)]}
@@ -41,12 +41,12 @@ const catImg = `/images/categories/branded/${cat.slug}.webp`;
         <div class="gallery">
           <figure class="main-art">
             <img src={img} alt={p.name} width="900" height="900" fetchpriority="high" />
-            <figcaption>Representative product image · Refer to the datasheet for dimensions</figcaption>
+            <figcaption>{p.imageCaption ?? 'Representative product image · Refer to the datasheet for dimensions'}</figcaption>
           </figure>
           <ul class="thumbs" aria-label="Views">
             <li class="on"><img src={img} alt="" width="84" height="84" /></li>
             <li><img src={catImg} alt="" width="84" height="84" loading="lazy" /></li>
-            <li class="thumb-doc"><Icon name="file" /><span>Datasheet</span></li>
+            {p.downloads.length > 0 && <li class="thumb-doc"><Icon name="file" /><span>Datasheet</span></li>}
           </ul>
         </div>
 
@@ -57,18 +57,20 @@ const catImg = `/images/categories/branded/${cat.slug}.webp`;
 
           <dl class="facts">
             {range && <div><dt>Working load limit</dt><dd>{fmt(range.min, 2)}{range.min !== range.max && ` to ${fmt(range.max, 2)}`} t</dd></div>}
-            <div><dt>Sizes</dt><dd>{sizes}</dd></div>
-            <div><dt>Design factor</dt><dd>{p.designFactor}</dd></div>
-            <div><dt>Standards</dt><dd>{p.standards.join(', ')}</dd></div>
-            <div><dt>Material</dt><dd>{p.material}</dd></div>
-            <div><dt>Finish</dt><dd>{p.finish}</dd></div>
-            <div><dt>Temperature</dt><dd>{p.tempRange}</dd></div>
+            <div><dt>{p.specificationNote ? 'Model variants' : 'Sizes'}</dt><dd>{sizes}</dd></div>
+            {p.specificationNote ? <div><dt>Specifications</dt><dd>Available on enquiry</dd></div> : <>
+              <div><dt>Design factor</dt><dd>{p.designFactor}</dd></div>
+              <div><dt>Standards</dt><dd>{p.standards.join(', ')}</dd></div>
+              <div><dt>Material</dt><dd>{p.material}</dd></div>
+              <div><dt>Finish</dt><dd>{p.finish}</dd></div>
+              <div><dt>Temperature</dt><dd>{p.tempRange}</dd></div>
+            </>}
           </dl>
 
           <div class="actions">
             <a class="btn" href="#enquire">Request a quote</a>
             <a class="btn btn-outline" href="#specifications">Specifications</a>
-            <a class="dl-link" href={p.downloads[0].href}><Icon name="download" /> Datasheet (PDF)</a>
+            {p.downloads[0] && <a class="dl-link" href={p.downloads[0].href}><Icon name="download" /> Datasheet (PDF)</a>}
           </div>
         </div>
       </div>
@@ -113,6 +115,7 @@ const catImg = `/images/categories/branded/${cat.slug}.webp`;
             </li>
           ))}
         </ul>
+        {p.downloads.length === 0 && <p class="muted">Request the model datasheet, dimensions and available certification with your enquiry.</p>}
       </div>
       <div id="enquire">
         <EnquiryForm product={`${p.name} (${p.code})`} compact heading="Ask about this product" />

@@ -4,6 +4,7 @@ export interface Category {
   short: string;
   description: string;
   art: string;
+  image?: string;
   groups: string[];
 }
 
@@ -24,7 +25,7 @@ export const categories: Category[] = [
     description:
       'Self-locking, sling, grab, hoist and swivel hooks forged from quenched and tempered alloy steel, with latch kits and spare parts held in stock.',
     art: 'self-locking-hook',
-    groups: ['Self-locking hooks', 'Sling hooks', 'Grab hooks', 'Hoist hooks', 'Swivel hooks'],
+    groups: ['Self-locking hooks', 'Sling hooks', 'Grab hooks', 'Hoist hooks', 'Swivel hooks', 'Webbing sling hooks', 'Specialty hooks'],
   },
   {
     slug: 'shackles',
@@ -33,7 +34,7 @@ export const categories: Category[] = [
     description:
       'Bow and dee shackles with screw pin or safety bolt, from 0.5 to 150 tonnes, including DNV type approved and ROV ranges for offshore use.',
     art: 'shackle-bow',
-    groups: ['Bow shackles', 'Dee shackles', 'Offshore and ROV'],
+    groups: ['Bow shackles', 'Dee shackles', 'Offshore and ROV', 'Chain coupling shackles'],
   },
   {
     slug: 'master-links',
@@ -42,7 +43,7 @@ export const categories: Category[] = [
     description:
       'Master links, master link assemblies, connecting links and coupling links that tie chain sling assemblies to the crane hook.',
     art: 'master-link',
-    groups: ['Master links', 'Master link assemblies', 'Connecting links'],
+    groups: ['Master links', 'Master link assemblies', 'Connecting links', 'Shortening components', 'Swivels', 'Choker fittings'],
   },
   {
     slug: 'wire-rope-fittings',
@@ -78,7 +79,25 @@ export const categories: Category[] = [
     description:
       'Polyester webbing slings, round slings, ratchet lashings and load binders, colour coded to EN 1492 and EN 12195.',
     art: 'round-sling',
-    groups: ['Webbing slings', 'Round slings', 'Load restraint'],
+    groups: ['Webbing slings', 'Round slings', 'Load restraint', 'Webbing sling fittings'],
+  },
+  {
+    slug: 'lifting-chain',
+    name: 'Lifting chain',
+    short: 'Lifting chain',
+    description: 'Loose Grade 80 and Grade 100 lifting chain for sling assembly and replacement. Enquire with your required chain size, length and application.',
+    art: 'chain',
+    image: '/images/products/reference/lifting-chain-g100.jpg',
+    groups: ['Grade 80', 'Grade 100'],
+  },
+  {
+    slug: 'mining-equipment',
+    name: 'Mining and conveyor fittings',
+    short: 'Mining fittings',
+    description: 'Conveyor belt sling tongs, mineral shackles, hoist rings, latches and fixed clasps. Send your equipment details for model and fitment confirmation.',
+    art: 'mining',
+    image: '/images/products/reference/conveyor-belt-sling-tongs.jpg',
+    groups: ['Conveyor handling', 'Mining fittings'],
   },
 ];
 

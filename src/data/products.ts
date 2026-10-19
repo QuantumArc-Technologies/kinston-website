@@ -1,4 +1,5 @@
 import { categories } from './categories';
+import { additionalProducts } from './additional-products';
 
 export type ColKind = 'text' | 'mm' | 't' | 'kg' | 'num' | 'kn' | 'daN';
 
@@ -39,6 +40,8 @@ export interface Product {
   specRows: SpecRow[];
   downloads: Download[];
   featured?: boolean;
+  specificationNote?: string;
+  imageCaption?: string;
 }
 
 // ---------- generators ----------
@@ -1311,6 +1314,8 @@ export const products: Product[] = [
     downloads: dl('load-binder', 'KLB'),
   },
 ];
+
+products.push(...additionalProducts);
 
 // ---------- helpers ----------
 

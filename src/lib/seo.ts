@@ -24,18 +24,20 @@ export function breadcrumbLd(items: { name: string; href: string }[]) {
   };
 }
 
-export function productLd(p: { name: string; code: string; summary: string; material: string; category: string; slug: string; art: string }) {
+export function productLd(p: { name: string; code: string; summary: string; material: string; category: string; slug: string; art: string; image?: string; specificationNote?: string }) {
   return {
     '@context': 'https://schema.org',
     '@type': 'Product',
     name: p.name,
     sku: p.code,
     description: p.summary,
-    material: p.material,
-    brand: { '@type': 'Brand', name: site.name },
-    manufacturer: { '@type': 'Organization', name: site.name },
+    ...(!p.specificationNote && {
+      material: p.material,
+      brand: { '@type': 'Brand', name: site.name },
+      manufacturer: { '@type': 'Organization', name: site.name },
+    }),
     url: abs(`/products/${p.category}/${p.slug}`),
-    image: abs('/brand/kinston-logo.png'),
+    image: abs(p.image ?? '/brand/kinston-logo.png'),
   };
 }
 

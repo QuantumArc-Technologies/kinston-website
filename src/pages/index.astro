@@ -70,7 +70,7 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
         {cats.map((c, i) => (
           <li>
             <a href={`/products/${c.slug}`}>
-              <div class="range-art"><span class="range-index" aria-hidden="true">0{i + 1} / KINSTON</span><img src={`/images/categories/branded/${c.slug}.webp`} alt={`Representative ${c.short.toLowerCase()} equipment`} loading="lazy" decoding="async" width="768" height="768" /><span class="range-browse">Explore range <Icon name="arrow" /></span></div>
+              <div class="range-art"><span class="range-index" aria-hidden="true">0{i + 1} / KINSTON</span><img src={c.image ?? `/images/categories/branded/${c.slug}.webp`} alt={`Representative ${c.short.toLowerCase()} equipment`} loading="lazy" decoding="async" width="768" height="768" /><span class="range-browse">Explore range <Icon name="arrow" /></span></div>
               <div class="range-body">
                 <h3>{c.name}</h3>
                 <p>{c.groups.map((g) => (/^[A-Z][a-z]/.test(g) ? g[0].toLowerCase() + g.slice(1) : g)).join(', ')}</p>

@@ -18,13 +18,13 @@ const unitLabel = (kind: string) => (kind === 'mm' ? { m: 'mm', i: 'in' } : kind
   <div class="spec-head">
     <div>
       <span class="dim" aria-hidden="true"></span>
-      <h2>Specifications</h2>
-      <p class="muted small">Dimensions refer to the drawing letters on the product datasheet. WLL in tonnes.</p>
+      <h2>{product.specificationNote ? 'Model variants' : 'Specifications'}</h2>
+      <p class="muted small">{product.specificationNote ?? 'Dimensions refer to the drawing letters on the product datasheet. WLL in tonnes.'}</p>
     </div>
-    <div class="units" role="group" aria-label="Units">
+    {!product.specificationNote && <div class="units" role="group" aria-label="Units">
       <button type="button" class="on" data-unit="m" aria-pressed="true">Metric</button>
       <button type="button" data-unit="i" aria-pressed="false">Imperial</button>
-    </div>
+    </div>}
   </div>
 
   <div class="table-scroll" tabindex="0">

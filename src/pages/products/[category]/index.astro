@@ -19,7 +19,7 @@ const anchor = (g: string) => g.toLowerCase().replace(/[^a-z0-9]+/g, '-');
 ---
 <Base
   title={`${category.name} | Products`}
-  description={`${category.description} ${items.length} products with dimensions, WLL tables and downloads.`}
+  description={`${category.description} ${items.length} products. Explore model variants, available specifications and enquiry options.`}
   path={`/products/${category.slug}`}
   jsonLd={[breadcrumbLd(crumbs)]}
 >
