@@ -652,9 +652,20 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
   .video-hero .hero-copy { max-width: 640px; }
   .video-hero .hero-ranges { background: #07111b50; }
   .video-hero .hero-ranges a span { color: #c1cbd8; }
+  /* Give landscape footage its own space on phones and tablets. */
+  @media (max-width: 960px) {
+    .hero-video { position: relative; inset: auto; height: auto; aspect-ratio: 16 / 9; object-fit: contain; background: #000; z-index: 0; }
+    .hero-video-shade { display: none; }
+    .video-hero .hero-inner { min-height: 0; padding-block: 32px 36px; gap: 28px; }
+    .video-hero .hero-scroll { position: static; justify-self: start; }
+    .video-hero .hero-ranges { margin-top: 0; }
+  }
   @media (max-width: 600px) {
-    .video-hero .hero-inner { min-height: 660px; padding-block: 55px 90px; }
-    .hero-video-shade { background: linear-gradient(90deg, #07111be6, #07111b80), linear-gradient(0deg, #07111bd9, transparent); }
+    .video-hero .hero-inner { padding-block: 28px 32px; }
+    .video-hero h1 { font-size: clamp(2.4rem, 10vw, 3.5rem); margin-block: 16px; }
+    .video-hero .hero-actions { display: grid; grid-template-columns: 1fr; gap: 12px; margin-top: 24px; }
+    .video-hero .hero-actions .btn { width: 100%; justify-content: center; }
+    .video-hero .proof { gap: 12px; margin-top: 24px; }
   }
 
 </style>
