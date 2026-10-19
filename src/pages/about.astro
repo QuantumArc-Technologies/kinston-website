@@ -3,112 +3,45 @@ import Base from '../layouts/Base.astro';
 import Breadcrumb from '../components/Breadcrumb.astro';
 import SectionHeading from '../components/SectionHeading.astro';
 import CtaBand from '../components/CtaBand.astro';
-import { site, offices, stats } from '../data/site';
 import { breadcrumbLd } from '../lib/seo';
 
 const crumbs = [{ name: 'Home', href: '/' }, { name: 'About', href: '/about' }];
-const timeline = [
-  { year: '1998', text: 'Kinston founded in Sharjah as a stockist of chain and fittings for the Gulf construction market.' },
-  { year: '2004', text: 'First chain sling assembly and proof test facility opens, with a 100 t vertical bed.' },
-  { year: '2009', text: 'ISO 9001 certification. Grade 80 component range launched under the Kinston name.' },
-  { year: '2013', text: 'Forging and heat treatment plant commissioned at Navi Mumbai. Grade 100 range introduced.' },
-  { year: '2018', text: 'DNV type approval for wide body shackles. ISO 14001 and ISO 45001 added.' },
-  { year: '2025', text: 'Rotterdam distribution centre opens for European customers.' },
-  { year: '2026', text: '500 t horizontal test bed commissioned. DNV type approval for self-locking hooks.' },
-];
-const leaders = [
-  { name: 'Rashid Al Mansoori', role: 'Managing director', bio: 'Founded Kinston in 1998 after twelve years in crane hire. Still signs off every new product drawing.' },
-  { name: 'Priya Natarajan', role: 'Technical director', bio: 'Chartered mechanical engineer. Leads design, testing and the DNV and LEEA relationships.' },
-  { name: 'Marcus de Vries', role: 'Director, Europe', bio: 'Runs the Rotterdam operation and the European distributor network.' },
-  { name: 'Sanjay Kulkarni', role: 'Plant director, Navi Mumbai', bio: 'Thirty years in forging and heat treatment. Responsible for manufacturing and the test laboratory.' },
-];
 ---
-<Base title="About Kinston Lifting" description={`${site.name} has manufactured and supplied certified lifting components since ${site.founded}. Offices in Sharjah, Navi Mumbai and Rotterdam. Learn about our history, people and facilities.`} path="/about" jsonLd={[breadcrumbLd(crumbs)]}>
+<Base title="About KINSTON" description="KINSTON is an international lifting equipment brand delivering reliable, high-performance lifting and rigging solutions for demanding industrial applications." path="/about" jsonLd={[breadcrumbLd(crumbs)]}>
   <section class="page-head bg-ink">
     <div class="wrap">
       <Breadcrumb items={crumbs} light />
-      <h1>Lifting, trust, performance</h1>
-      <p class="lede">Three words on the logo, one promise on the certificate. Since 1998 we have made and tested lifting components for people whose work stops when a hook fails inspection.</p>
+      <h1>About KINSTON</h1>
+      <p class="lede">Engineered for Strength. Built for Safety.</p>
     </div>
   </section>
 
   <section class="section">
-    <div class="wrap two">
+    <div class="wrap about-intro">
+      <SectionHeading title="Engineered for Strength. Built for Safety." />
       <div class="prose">
-        <SectionHeading title="What we do" />
-        <p>Kinston designs, forges, heat treats, assembles and tests lifting components and assemblies. Our range runs from Grade 100 chain sling systems and forged hooks through shackles, master links and wire rope fittings to manual hoists and textile slings.</p>
-        <p>Manufacturing is at Navi Mumbai, where we run closed-die forging, continuous heat treatment, magnetic particle inspection and a test laboratory with vertical and horizontal beds to 500 tonnes. Stock and sling assembly are in Sharjah, Navi Mumbai and Rotterdam.</p>
-        <p>We sell through distributors and direct to rigging contractors, crane hire companies, shipyards and offshore operators in 38 countries.</p>
+        <p>KINSTON is an international lifting equipment brand dedicated to delivering reliable, high-performance lifting and rigging solutions for demanding industrial applications.</p>
+        <p>With a strong focus on engineering, quality, and safety, KINSTON offers a comprehensive range of lifting products, including shackles, master links, hooks, lifting chains, hoists, and rigging accessories.</p>
+        <p>Working closely with qualified manufacturing partners, we focus on product specifications, material quality, manufacturing processes, testing, and traceability to ensure our products meet applicable international standards and customer requirements.</p>
+        <p>Our solutions are developed to support the oil and gas, marine, offshore, construction, and heavy lifting industries.</p>
       </div>
-      <ul class="stats">
-        {stats.map((s) => <li><strong>{s.value}</strong><span>{s.label}</span></li>)}
-      </ul>
     </div>
   </section>
 
   <section class="section bg-paper">
-    <div class="wrap">
-      <SectionHeading title="How we got here" />
-      <ol class="timeline">
-        {timeline.map((t) => (
-          <li><span class="year">{t.year}</span><p>{t.text}</p></li>
-        ))}
-      </ol>
+    <div class="wrap commitment">
+      <SectionHeading title="Our commitment" />
+      <p class="lede">At KINSTON, our commitment is simple:</p>
+      <p class="promise">Quality Without Compromise,<br />Safety Without Exception</p>
     </div>
   </section>
 
-  <section class="section">
-    <div class="wrap">
-      <SectionHeading title="Leadership" />
-      <ul class="grid cols-4 leaders">
-        {leaders.map((l) => (
-          <li>
-            <div class="avatar" aria-hidden="true">{l.name.split(' ').map((n) => n[0]).join('')}</div>
-            <h3>{l.name}</h3>
-            <p class="role">{l.role}</p>
-            <p class="muted small">{l.bio}</p>
-          </li>
-        ))}
-      </ul>
-    </div>
-  </section>
-
-  <section class="section bg-paper">
-    <div class="wrap">
-      <SectionHeading title="Where we are" />
-      <ul class="grid cols-3">
-        {offices.map((o) => (
-          <li class="office">
-            <h3>{o.city}</h3>
-            <p class="role">{o.role}</p>
-            <address>{o.address.map((l) => <span>{l}</span>)}</address>
-            <a href={`tel:${o.phone.replace(/\s/g, '')}`}>{o.phone}</a>
-            <a href={`mailto:${o.email}`}>{o.email}</a>
-          </li>
-        ))}
-      </ul>
-    </div>
-  </section>
-  <CtaBand title="Work with us." body="Distributor enquiries, bespoke assemblies and framework agreements all start with a conversation." />
+  <CtaBand title="Work with KINSTON." body="Contact us to discuss lifting and rigging solutions for your industrial application." />
 </Base>
 
 <style>
-  .two { display: grid; grid-template-columns: 1.2fr 1fr; gap: 64px; align-items: start; }
-  .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; padding-top: 8px; }
-  .stats li { display: grid; gap: 4px; padding-left: 16px; border-left: 3px solid var(--orange); }
-  .stats strong { font-family: var(--font-display); font-weight: 700; font-size: 2.75rem; line-height: 1; color: var(--navy); }
-  .stats span { font-size: var(--t-sm); color: var(--steel); }
-  .timeline { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 32px 24px; }
-  .timeline li { display: grid; gap: 10px; padding-top: 16px; border-top: 2px solid var(--navy); position: relative; }
-  .timeline li::before { content: ''; position: absolute; top: -6px; left: 0; width: 2px; height: 10px; background: var(--orange); }
-  .year { font-family: var(--font-display); font-weight: 700; font-size: 1.75rem; color: var(--orange-dark); line-height: 1; }
-  .timeline p { font-size: var(--t-sm); color: var(--ink-2); }
-  .leaders li { display: grid; gap: 6px; align-content: start; }
-  .avatar { width: 72px; height: 72px; border-radius: 50%; background: var(--navy); color: var(--white); display: grid; place-items: center; font-family: var(--font-display); font-weight: 700; font-size: 1.5rem; margin-bottom: 10px; }
-  .role { color: var(--orange-dark); font-weight: 500; font-size: var(--t-sm); }
-  .office { display: grid; gap: 6px; background: var(--white); border: 1px solid var(--zinc); padding: 24px; border-radius: var(--radius); }
-  .office address { font-style: normal; display: grid; color: var(--steel); margin: 8px 0; }
-  .office a { color: var(--navy); font-weight: 500; }
-  @media (max-width: 900px) { .two { grid-template-columns: 1fr; gap: 40px; } }
-  @media (max-width: 480px) { .stats { grid-template-columns: 1fr; } }
+  .about-intro { display: grid; grid-template-columns: 1fr 1.4fr; gap: 64px; align-items: start; }
+  .commitment .lede { margin-bottom: 20px; }
+  .promise { font-family: var(--font-display); font-weight: 700; font-size: clamp(1.75rem, 4vw, 3rem); line-height: 1.2; color: var(--navy); }
+  @media (max-width: 900px) { .about-intro { grid-template-columns: 1fr; gap: 0; } }
 </style>
