@@ -1,8 +1,9 @@
 ---
 import { site, offices } from '../data/site';
-import { categories } from '../data/categories';
+import { allCategoriesWithCounts } from '../data/products';
 import Icon from './Icon.astro';
 const year = new Date().getFullYear();
+const categories = allCategoriesWithCounts();
 ---
 <footer class="site-footer">
   <div class="wrap">

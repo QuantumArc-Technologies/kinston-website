@@ -3,10 +3,11 @@ import Base from '../layouts/Base.astro';
 import Breadcrumb from '../components/Breadcrumb.astro';
 import CtaBand from '../components/CtaBand.astro';
 import { sectors } from '../data/site';
-import { categories } from '../data/categories';
+import { allCategoriesWithCounts } from '../data/products';
 import { breadcrumbLd } from '../lib/seo';
 
 const crumbs = [{ name: 'Home', href: '/' }, { name: 'Industries', href: '/industries' }];
+const categories = allCategoriesWithCounts();
 const picks: Record<string, string[]> = {
   construction: ['chain-slings', 'hooks', 'lifting-points'],
   'oil-and-gas': ['shackles', 'master-links', 'hooks'],
@@ -39,7 +40,7 @@ const picks: Record<string, string[]> = {
             <div>
               <h3>Typical ranges</h3>
               <ul class="picks">
-                {picks[s.slug].map((slug) => { const c = categories.find((x) => x.slug === slug)!; return <li><a href={`/products/${c.slug}`}>{c.name}</a></li>; })}
+                {categories.filter((c) => picks[s.slug].includes(c.slug)).map((c) => <li><a href={`/products/${c.slug}`}>{c.name}</a></li>)}
               </ul>
             </div>
           </li>

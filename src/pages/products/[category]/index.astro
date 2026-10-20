@@ -4,12 +4,11 @@ import Breadcrumb from '../../../components/Breadcrumb.astro';
 import CategoryRail from '../../../components/CategoryRail.astro';
 import ProductCard from '../../../components/ProductCard.astro';
 import CtaBand from '../../../components/CtaBand.astro';
-import { categories } from '../../../data/categories';
-import { productsByCategory } from '../../../data/products';
+import { allCategoriesWithCounts, productsByCategory } from '../../../data/products';
 import { breadcrumbLd } from '../../../lib/seo';
 
 export function getStaticPaths() {
-  return categories.map((c) => ({ params: { category: c.slug }, props: { category: c } }));
+  return allCategoriesWithCounts().map((c) => ({ params: { category: c.slug }, props: { category: c } }));
 }
 const { category } = Astro.props;
 const items = productsByCategory(category.slug);

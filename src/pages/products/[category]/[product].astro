@@ -25,11 +25,10 @@ const crumbs = [
 ];
 const sizes = p.specRows.length;
 const img = p.image ?? `/images/products/branded/${p.slug}.webp`;
-const catImg = cat.image ?? `/images/categories/branded/${cat.slug}.webp`;
 ---
 <Base
   title={`${p.name} ${p.code}`}
-  description={p.specificationNote ? `${p.summary} Explore model variants and request specifications.` : `${p.summary} ${sizes} sizes${range ? `, WLL ${fmt(range.min, 2)} to ${fmt(range.max, 2)} t` : ''}. Standards: ${p.standards.join(', ')}. Datasheet and certificate downloads.`}
+  description={p.specificationNote || p.technicalNote ? `${p.summary} Explore model variants and request specifications.` : `${p.summary} ${sizes} sizes${range ? `, WLL ${fmt(range.min, 2)} to ${fmt(range.max, 2)} t` : ''}. Standards: ${p.standards.join(', ')}. Datasheet and certificate downloads.`}
   path={`/products/${cat.slug}/${p.slug}`}
   ogType="product"
   jsonLd={[breadcrumbLd(crumbs), productLd(p)]}
@@ -45,7 +44,6 @@ const catImg = cat.image ?? `/images/categories/branded/${cat.slug}.webp`;
           </figure>
           <ul class="thumbs" aria-label="Views">
             <li class="on"><img src={img} alt="" width="84" height="84" /></li>
-            <li><img src={catImg} alt="" width="84" height="84" loading="lazy" /></li>
             {p.downloads.length > 0 && <li class="thumb-doc"><Icon name="file" /><span>Datasheet</span></li>}
           </ul>
         </div>
@@ -54,13 +52,14 @@ const catImg = cat.image ?? `/images/categories/branded/${cat.slug}.webp`;
           <p class="code">{p.code}{p.grade && <span class="tag tag-orange">{p.grade}</span>}</p>
           <h1>{p.name}</h1>
           <p class="lede">{p.summary}</p>
+          {p.usageNotice && <p class="usage-notice"><Icon name="shield" /> {p.usageNotice}</p>}
 
           <dl class="facts">
             {range && <div><dt>Working load limit</dt><dd>{fmt(range.min, 2)}{range.min !== range.max && ` to ${fmt(range.max, 2)}`} t</dd></div>}
             <div><dt>{p.specificationNote ? 'Model variants' : 'Sizes'}</dt><dd>{sizes}</dd></div>
             {p.specificationNote ? <div><dt>Specifications</dt><dd>Available on enquiry</dd></div> : <>
               <div><dt>Design factor</dt><dd>{p.designFactor}</dd></div>
-              <div><dt>Standards</dt><dd>{p.standards.join(', ')}</dd></div>
+              {p.standards.length > 0 && <div><dt>Standards</dt><dd>{p.standards.join(', ')}</dd></div>}
               <div><dt>Material</dt><dd>{p.material}</dd></div>
               <div><dt>Finish</dt><dd>{p.finish}</dd></div>
               <div><dt>Temperature</dt><dd>{p.tempRange}</dd></div>
@@ -154,6 +153,8 @@ const catImg = cat.image ?? `/images/categories/branded/${cat.slug}.webp`;
 
   .code { display: flex; align-items: center; gap: 12px; font-weight: 600; color: var(--navy); font-size: var(--t-sm); margin-bottom: 10px; }
   .summary h1 { font-size: clamp(2rem, 3.6vw, 2.75rem); margin-bottom: 14px; }
+  .usage-notice { display: flex; align-items: center; gap: 10px; margin-top: 18px; padding: 14px 16px; background: var(--orange-soft); border-left: 3px solid var(--orange); font-weight: 600; }
+  .usage-notice :global(svg) { width: 22px; height: 22px; flex: none; }
   .facts { display: grid; grid-template-columns: 1fr 1fr; gap: 0 24px; margin-top: 28px; border-top: 1px solid var(--zinc); }
   .facts div { display: grid; gap: 2px; padding: 12px 0; border-bottom: 1px solid var(--zinc); }
   .facts div:nth-child(1), .facts div:nth-child(4), .facts div:nth-child(5) { grid-column: 1 / -1; }

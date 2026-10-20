@@ -559,7 +559,7 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
   .ranges { gap: 24px; }
   .ranges a { overflow: hidden; border: 1px solid #e2e5e9; border-radius: 12px; background: #fff; box-shadow: 0 4px 16px #111b3304; transition: transform .35s var(--ease), box-shadow .35s var(--ease), border-color .35s; }
   .ranges a:hover, .ranges a:focus-visible { transform: translateY(-7px); border-color: #f8500060; box-shadow: 0 18px 36px -16px #111b3338; }
-  .range-art { aspect-ratio: 1.05; background: #eef0f2; border-radius: 0; overflow: hidden; }
+  .range-art { aspect-ratio: 1; background: #eef0f2; border-radius: 0; overflow: hidden; }
   .range-art img { inset: 0; width: 100%; height: 100%; padding: 0; object-fit: cover; mix-blend-mode: normal; transition: transform .65s var(--ease); }
   .ranges a:hover .range-art img { transform: scale(1.055); }
   .range-art::after { display: none; }
@@ -567,10 +567,10 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
   .range-browse { position: absolute; bottom: 16px; left: 16px; right: 16px; z-index: 2; display: flex; justify-content: space-between; align-items: center; padding: 11px 14px; background: #111b33ed; color: white; border-radius: 6px; font-size: 12px; opacity: 0; transform: translateY(8px); transition: opacity .25s, transform .25s; }
   .range-browse :global(svg) { width: 16px; }
   .ranges a:hover .range-browse, .ranges a:focus-visible .range-browse { opacity: 1; transform: none; }
-  .range-body { padding: 23px 21px 18px; border-top: 1px solid #e9ecef; }
-  .range-body h3 { font-size: 1.4rem; line-height: 1.15; text-wrap: initial; }
-  .range-body p { margin-top: 9px; line-height: 1.55; }
-  .range-foot { margin-top: 23px; padding-top: 15px; }
+  .range-body { padding: 16px 17px 13px; border-top: 1px solid #e9ecef; }
+  .range-body h3 { font-size: 1.25rem; line-height: 1.15; text-wrap: initial; }
+  .range-body p { margin-top: 7px; line-height: 1.4; }
+  .range-foot { margin-top: 14px; padding-top: 10px; }
   .range-go { border: none; background: #f0f2f5; }
   @media (hover: none) { .range-browse { display: none; } }
 

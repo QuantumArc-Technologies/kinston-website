@@ -19,7 +19,7 @@ const unitLabel = (kind: string) => (kind === 'mm' ? { m: 'mm', i: 'in' } : kind
     <div>
       <span class="dim" aria-hidden="true"></span>
       <h2>{product.specificationNote ? 'Model variants' : 'Specifications'}</h2>
-      <p class="muted small">{product.specificationNote ?? 'Dimensions refer to the drawing letters on the product datasheet. WLL in tonnes.'}</p>
+      <p class="muted small">{product.specificationNote ?? product.technicalNote ?? 'Dimensions refer to the drawing letters on the product datasheet. WLL in tonnes.'}</p>
     </div>
     {!product.specificationNote && <div class="units" role="group" aria-label="Units">
       <button type="button" class="on" data-unit="m" aria-pressed="true">Metric</button>

@@ -1,4 +1,5 @@
 import { categories } from './categories';
+import { grade100Products } from './grade-100-products';
 // import { additionalProducts } from './additional-products';
 
 export type ColKind = 'text' | 'mm' | 't' | 'kg' | 'num' | 'kn' | 'daN';
@@ -41,6 +42,8 @@ export interface Product {
   downloads: Download[];
   featured?: boolean;
   specificationNote?: string;
+  technicalNote?: string;
+  usageNotice?: string;
   imageCaption?: string;
 }
 
@@ -137,7 +140,8 @@ const shackleCols = [
 // ---------- products ----------
 
 export const products: Product[] = [
-  // All product listings are temporarily disabled; uncomment to restore.
+  ...grade100Products,
+  // Previous product listings remain disabled; uncomment individual entries to restore.
 //   // ===== Chain slings =====
 //   {
 //     slug: 'single-leg-chain-sling-g100',
@@ -1337,5 +1341,13 @@ export const wllRange = (p: Product) => {
 export const categoryCount = (slug: string) => productsByCategory(slug).length;
 // Hide ranges while their product listings are commented out.
 export const allCategoriesWithCounts = () => categories
-  .map((c) => ({ ...c, count: categoryCount(c.slug) }))
+  .map((c) => {
+    const items = productsByCategory(c.slug);
+    return {
+      ...c,
+      count: items.length,
+      image: items[0]?.image ?? c.image,
+      groups: c.groups.filter((group) => items.some((p) => p.group === group)),
+    };
+  })
   .filter((c) => c.count > 0);

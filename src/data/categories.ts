@@ -61,7 +61,7 @@ export const categories: Category[] = [
     description:
       'Eye bolts, swivel hoist rings and weld-on or bolt-on lifting points rated for loading from any direction.',
     art: 'swivel-ring',
-    groups: ['Eye bolts', 'Swivel hoist rings', 'Weld-on and bolt-on'],
+    groups: ['Eye bolts', 'Swivel hoist rings', 'Weld-on and bolt-on', 'Container lifting rings'],
   },
   {
     slug: 'hoists',
