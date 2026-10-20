@@ -1,0 +1,323 @@
+{
+  "policy": {
+    "Grade 100": "Blue (RAL 5015) and green",
+    "Grade 80": "RAL 2004 orange"
+  },
+  "sources": [
+    {
+      "url": "https://www.shenli-rigging.com/1-4-g100-alloy-steel-omega-link.html",
+      "finding": "Supplier specifies RAL 5015 blue for Grade 100."
+    },
+    {
+      "url": "https://www.shenli-rigging.com/2-17-alloy-steel-clevis-sling-hook.html",
+      "finding": "Supplier example specifies red RAL 3020 / yellow RAL 1003. KINSTON uses RAL 2004 orange per user instruction."
+    }
+  ],
+  "greenSource": "Requested KINSTON colour option; no green RAL code inferred from supplier.",
+  "edits": [
+    {
+      "slug": "locking-pin-grab-hook-g100",
+      "colour": "blue",
+      "generatedPath": "/Users/macbook/.codex/generated_images/01a15827-6961-7652-b313-0e745d723f7b/exec-a514fd9b-61d6-4b2a-b6e7-7de4dc4a0f35.png",
+      "image": "/images/products/branded/grade-100/blue/locking-pin-grab-hook-g100.webp",
+      "prompt": "Use case: precise-object-edit. Edit only the powder-coat paint colour on this exact KINSTON rigging product. Change every orange-painted part, including embossed KINSTON letters, to RAL 5015 sky blue, a saturated industrial medium sky blue. Preserve EXACTLY the entire mechanical silhouette, orientation, scale, position, full square framing, forged metal surface microtexture, sharp embossed word KINSTON, all pins, joints, apertures, latch geometry, existing lighting and gray studio floor/background. Black pins remain black, unpainted silver hardware remains silver. Neutral gray floor with realistic cool/green colour bounce appropriate to new paint, no orange reflection. No orange paint remains. Do not redesign, smooth, distort, crop, add text or replace this product. This must look like the same highly realistic studio product photograph with a different powder coat, not a new rendering.",
+      "tool": "Built-in image_gen"
+    },
+    {
+      "slug": "locking-pin-grab-hook-g100",
+      "colour": "green",
+      "generatedPath": "/Users/macbook/.codex/generated_images/01a15827-6961-7652-b313-0e745d723f7b/exec-92b0e530-5b94-446e-9b08-fcdd015f8bb5.png",
+      "image": "/images/products/branded/grade-100/green/locking-pin-grab-hook-g100.webp",
+      "prompt": "Use case: precise-object-edit. Edit only the powder-coat paint colour on this exact KINSTON rigging product. Change every orange-painted part, including embossed KINSTON letters, to vivid medium industrial green. Preserve EXACTLY the entire mechanical silhouette, orientation, scale, position, full square framing, forged metal surface microtexture, sharp embossed word KINSTON, all pins, joints, apertures, latch geometry, existing lighting and gray studio floor/background. Black pins remain black, unpainted silver hardware remains silver. Neutral gray floor with realistic cool/green colour bounce appropriate to new paint, no orange reflection. No orange paint remains. Do not redesign, smooth, distort, crop, add text or replace this product. This must look like the same highly realistic studio product photograph with a different powder coat, not a new rendering.",
+      "tool": "Built-in image_gen"
+    },
+    {
+      "slug": "alloy-eye-grab-hook-g100",
+      "colour": "blue",
+      "generatedPath": "/Users/macbook/.codex/generated_images/01a15827-6961-7652-b313-0e745d723f7b/exec-a27df191-7c8b-48bc-a073-fd8331eaa0ca.png",
+      "image": "/images/products/branded/grade-100/blue/alloy-eye-grab-hook-g100.webp",
+      "prompt": "Use case: precise-object-edit. Edit ONLY the paint colour on this exact Alloy steel eye grab hook, Grade 100 KINSTON product photo. Refinish EVERY orange-painted part, including painted latches, eyes, swivel nuts and embossed KINSTON lettering, in RAL 5015 sky blue, a saturated industrial medium sky blue. Preserve EXACT mechanical silhouette, pins, joints, openings, latch design, product orientation, position, size, square framing and complete uncropped outline. Preserve all forged steel texture, fine coating texture, legible embossed KINSTON text, specular highlights, soft lighting and neutral gray studio backdrop/floor. Black pins stay black; bare silver hardware stays silver. No orange paint or orange floor reflections. No added text, labels, objects or watermarks. Do not redesign the product. Photorealistic colour-only edit of the same photograph.",
+      "tool": "Built-in image_gen"
+    },
+    {
+      "slug": "alloy-eye-grab-hook-g100",
+      "colour": "green",
+      "generatedPath": "/Users/macbook/.codex/generated_images/01a15827-6961-7652-b313-0e745d723f7b/exec-cf4e7891-3907-4f04-8e57-dac34a2b5281.png",
+      "image": "/images/products/branded/grade-100/green/alloy-eye-grab-hook-g100.webp",
+      "prompt": "Use case: precise-object-edit. Edit ONLY the paint colour on this exact Alloy steel eye grab hook, Grade 100 KINSTON product photo. Refinish EVERY orange-painted part, including painted latches, eyes, swivel nuts and embossed KINSTON lettering, in vivid medium industrial green. Preserve EXACT mechanical silhouette, pins, joints, openings, latch design, product orientation, position, size, square framing and complete uncropped outline. Preserve all forged steel texture, fine coating texture, legible embossed KINSTON text, specular highlights, soft lighting and neutral gray studio backdrop/floor. Black pins stay black; bare silver hardware stays silver. No orange paint or orange floor reflections. No added text, labels, objects or watermarks. Do not redesign the product. Photorealistic colour-only edit of the same photograph.",
+      "tool": "Built-in image_gen"
+    },
+    {
+      "slug": "container-lifting-ring",
+      "colour": "blue",
+      "generatedPath": "/Users/macbook/.codex/generated_images/01a15827-6961-7652-b313-0e745d723f7b/exec-772094f0-323f-433e-9060-a418b4339110.png",
+      "image": "/images/products/branded/grade-100/blue/container-lifting-ring.webp",
+      "prompt": "Use case: precise-object-edit. Edit ONLY the paint colour on this exact Container lifting ring KINSTON product photo. Refinish EVERY orange-painted part, including painted latches, eyes, swivel nuts and embossed KINSTON lettering, in RAL 5015 sky blue, a saturated industrial medium sky blue. Preserve EXACT mechanical silhouette, pins, joints, openings, latch design, product orientation, position, size, square framing and complete uncropped outline. Preserve all forged steel texture, fine coating texture, legible embossed KINSTON text, specular highlights, soft lighting and neutral gray studio backdrop/floor. Black pins stay black; bare silver hardware stays silver. No orange paint or orange floor reflections. No added text, labels, objects or watermarks. Do not redesign the product. Photorealistic colour-only edit of the same photograph.",
+      "tool": "Built-in image_gen"
+    },
+    {
+      "slug": "container-lifting-ring",
+      "colour": "green",
+      "generatedPath": "/Users/macbook/.codex/generated_images/01a15827-6961-7652-b313-0e745d723f7b/exec-e8e45586-843d-42d7-b0e3-a58e1e3ccf2b.png",
+      "image": "/images/products/branded/grade-100/green/container-lifting-ring.webp",
+      "prompt": "Use case: precise-object-edit. Edit ONLY the paint colour on this exact Container lifting ring KINSTON product photo. Refinish EVERY orange-painted part, including painted latches, eyes, swivel nuts and embossed KINSTON lettering, in vivid medium industrial green. Preserve EXACT mechanical silhouette, pins, joints, openings, latch design, product orientation, position, size, square framing and complete uncropped outline. Preserve all forged steel texture, fine coating texture, legible embossed KINSTON text, specular highlights, soft lighting and neutral gray studio backdrop/floor. Black pins stay black; bare silver hardware stays silver. No orange paint or orange floor reflections. No added text, labels, objects or watermarks. Do not redesign the product. Photorealistic colour-only edit of the same photograph.",
+      "tool": "Built-in image_gen"
+    },
+    {
+      "slug": "omega-link-g100",
+      "colour": "blue",
+      "generatedPath": "/Users/macbook/.codex/generated_images/01a15827-6961-7652-b313-0e745d723f7b/exec-ac404c1d-6b51-4c9a-9525-f3683578a341.png",
+      "image": "/images/products/branded/grade-100/blue/omega-link-g100.webp",
+      "prompt": "Use case: precise-object-edit. Edit ONLY the paint colour on this exact Omega link, Grade 100 KINSTON product photo. Refinish EVERY orange-painted part, including painted latches, eyes, swivel nuts and embossed KINSTON lettering, in RAL 5015 sky blue, a saturated industrial medium sky blue. Preserve EXACT mechanical silhouette, pins, joints, openings, latch design, product orientation, position, size, square framing and complete uncropped outline. Preserve all forged steel texture, fine coating texture, legible embossed KINSTON text, specular highlights, soft lighting and neutral gray studio backdrop/floor. Black pins stay black; bare silver hardware stays silver. No orange paint or orange floor reflections. No added text, labels, objects or watermarks. Do not redesign the product. Photorealistic colour-only edit of the same photograph.",
+      "tool": "Built-in image_gen"
+    },
+    {
+      "slug": "omega-link-g100",
+      "colour": "green",
+      "generatedPath": "/Users/macbook/.codex/generated_images/01a15827-6961-7652-b313-0e745d723f7b/exec-8da10e1c-09dd-4f52-a2ee-859c1311c110.png",
+      "image": "/images/products/branded/grade-100/green/omega-link-g100.webp",
+      "prompt": "Use case: precise-object-edit. Edit ONLY the paint colour on this exact Omega link, Grade 100 KINSTON product photo. Refinish EVERY orange-painted part, including painted latches, eyes, swivel nuts and embossed KINSTON lettering, in vivid medium industrial green. Preserve EXACT mechanical silhouette, pins, joints, openings, latch design, product orientation, position, size, square framing and complete uncropped outline. Preserve all forged steel texture, fine coating texture, legible embossed KINSTON text, specular highlights, soft lighting and neutral gray studio backdrop/floor. Black pins stay black; bare silver hardware stays silver. No orange paint or orange floor reflections. No added text, labels, objects or watermarks. Do not redesign the product. Photorealistic colour-only edit of the same photograph.",
+      "tool": "Built-in image_gen"
+    },
+    {
+      "slug": "connecting-link-g100",
+      "colour": "blue",
+      "generatedPath": "/Users/macbook/.codex/generated_images/01a15827-6961-7652-b313-0e745d723f7b/exec-bd8c722e-f645-4f66-bbc2-8d1bec90ed6e.png",
+      "image": "/images/products/branded/grade-100/blue/connecting-link-g100.webp",
+      "prompt": "Use case: precise-object-edit. Edit ONLY the paint colour on this exact Connecting link, Grade 100 KINSTON product photo. Refinish EVERY orange-painted part, including painted latches, eyes, swivel nuts and embossed KINSTON lettering, in RAL 5015 sky blue, a saturated industrial medium sky blue. Preserve EXACT mechanical silhouette, pins, joints, openings, latch design, product orientation, position, size, square framing and complete uncropped outline. Preserve all forged steel texture, fine coating texture, legible embossed KINSTON text, specular highlights, soft lighting and neutral gray studio backdrop/floor. Black pins stay black; bare silver hardware stays silver. No orange paint or orange floor reflections. No added text, labels, objects or watermarks. Do not redesign the product. Photorealistic colour-only edit of the same photograph.",
+      "tool": "Built-in image_gen"
+    },
+    {
+      "slug": "connecting-link-g100",
+      "colour": "green",
+      "generatedPath": "/Users/macbook/.codex/generated_images/01a15827-6961-7652-b313-0e745d723f7b/exec-aad07fd2-04c1-4804-a485-b5f619159d71.png",
+      "image": "/images/products/branded/grade-100/green/connecting-link-g100.webp",
+      "prompt": "Use case: precise-object-edit. Edit ONLY the paint colour on this exact Connecting link, Grade 100 KINSTON product photo. Refinish EVERY orange-painted part, including painted latches, eyes, swivel nuts and embossed KINSTON lettering, in vivid medium industrial green. Preserve EXACT mechanical silhouette, pins, joints, openings, latch design, product orientation, position, size, square framing and complete uncropped outline. Preserve all forged steel texture, fine coating texture, legible embossed KINSTON text, specular highlights, soft lighting and neutral gray studio backdrop/floor. Black pins stay black; bare silver hardware stays silver. No orange paint or orange floor reflections. No added text, labels, objects or watermarks. Do not redesign the product. Photorealistic colour-only edit of the same photograph.",
+      "tool": "Built-in image_gen"
+    },
+    {
+      "slug": "alloy-swivel-self-locking-hook-g100",
+      "colour": "blue",
+      "generatedPath": "/Users/macbook/.codex/generated_images/01a15827-6961-7652-b313-0e745d723f7b/exec-0d8ac4da-93f3-4a06-8f02-e08fe74bc3a1.png",
+      "image": "/images/products/branded/grade-100/blue/alloy-swivel-self-locking-hook-g100.webp",
+      "prompt": "Use case: precise-object-edit. Edit ONLY the paint colour on this exact Alloy swivel self-locking hook, Grade 100 KINSTON product photo. Refinish EVERY orange-painted part, including painted latches, eyes, swivel nuts and embossed KINSTON lettering, in RAL 5015 sky blue, a saturated industrial medium sky blue. Preserve EXACT mechanical silhouette, pins, joints, openings, latch design, product orientation, position, size, square framing and complete uncropped outline. Preserve all forged steel texture, fine coating texture, legible embossed KINSTON text, specular highlights, soft lighting and neutral gray studio backdrop/floor. Black pins stay black; bare silver hardware stays silver. No orange paint or orange floor reflections. No added text, labels, objects or watermarks. Do not redesign the product. Photorealistic colour-only edit of the same photograph.",
+      "tool": "Built-in image_gen"
+    },
+    {
+      "slug": "alloy-swivel-self-locking-hook-g100",
+      "colour": "green",
+      "generatedPath": "/Users/macbook/.codex/generated_images/01a15827-6961-7652-b313-0e745d723f7b/exec-6d572911-1ffa-480a-be36-82fa2add1620.png",
+      "image": "/images/products/branded/grade-100/green/alloy-swivel-self-locking-hook-g100.webp",
+      "prompt": "Use case: precise-object-edit. Edit ONLY the paint colour on this exact Alloy swivel self-locking hook, Grade 100 KINSTON product photo. Refinish EVERY orange-painted part, including painted latches, eyes, swivel nuts and embossed KINSTON lettering, in vivid medium industrial green. Preserve EXACT mechanical silhouette, pins, joints, openings, latch design, product orientation, position, size, square framing and complete uncropped outline. Preserve all forged steel texture, fine coating texture, legible embossed KINSTON text, specular highlights, soft lighting and neutral gray studio backdrop/floor. Black pins stay black; bare silver hardware stays silver. No orange paint or orange floor reflections. No added text, labels, objects or watermarks. Do not redesign the product. Photorealistic colour-only edit of the same photograph.",
+      "tool": "Built-in image_gen"
+    },
+    {
+      "slug": "eye-shortening-grab-hook-g100",
+      "colour": "blue",
+      "generatedPath": "/Users/macbook/.codex/generated_images/01a15827-6961-7652-b313-0e745d723f7b/exec-b86d8dc9-31eb-4703-a25f-c1feee773e70.png",
+      "image": "/images/products/branded/grade-100/blue/eye-shortening-grab-hook-g100.webp",
+      "prompt": "Use case: precise-object-edit. Edit ONLY the paint colour on this exact Eye shortening grab hook, Grade 100 KINSTON product photo. Refinish EVERY orange-painted part, including painted latches, eyes, swivel nuts and embossed KINSTON lettering, in RAL 5015 sky blue, a saturated industrial medium sky blue. Preserve EXACT mechanical silhouette, pins, joints, openings, latch design, product orientation, position, size, square framing and complete uncropped outline. Preserve all forged steel texture, fine coating texture, legible embossed KINSTON text, specular highlights, soft lighting and neutral gray studio backdrop/floor. Black pins stay black; bare silver hardware stays silver. No orange paint or orange floor reflections. No added text, labels, objects or watermarks. Do not redesign the product. Photorealistic colour-only edit of the same photograph.",
+      "tool": "Built-in image_gen"
+    },
+    {
+      "slug": "eye-shortening-grab-hook-g100",
+      "colour": "green",
+      "generatedPath": "/Users/macbook/.codex/generated_images/01a15827-6961-7652-b313-0e745d723f7b/exec-62d51d22-650e-4a5e-a57a-df6fcf54a2f3.png",
+      "image": "/images/products/branded/grade-100/green/eye-shortening-grab-hook-g100.webp",
+      "prompt": "Use case: precise-object-edit. Edit ONLY the paint colour on this exact Eye shortening grab hook, Grade 100 KINSTON product photo. Refinish EVERY orange-painted part, including painted latches, eyes, swivel nuts and embossed KINSTON lettering, in vivid medium industrial green. Preserve EXACT mechanical silhouette, pins, joints, openings, latch design, product orientation, position, size, square framing and complete uncropped outline. Preserve all forged steel texture, fine coating texture, legible embossed KINSTON text, specular highlights, soft lighting and neutral gray studio backdrop/floor. Black pins stay black; bare silver hardware stays silver. No orange paint or orange floor reflections. No added text, labels, objects or watermarks. Do not redesign the product. Photorealistic colour-only edit of the same photograph.",
+      "tool": "Built-in image_gen"
+    },
+    {
+      "slug": "alloy-eye-sling-hook-with-latch-g100",
+      "colour": "blue",
+      "generatedPath": "/Users/macbook/.codex/generated_images/01a15827-6961-7652-b313-0e745d723f7b/exec-f6d72703-6232-4862-9d5f-fa435ab23f2e.png",
+      "image": "/images/products/branded/grade-100/blue/alloy-eye-sling-hook-with-latch-g100.webp",
+      "prompt": "Use case: precise-object-edit. Edit ONLY the paint colour on this exact Alloy eye sling hook with latch, Grade 100 KINSTON product photo. Refinish EVERY orange-painted part, including painted latches, eyes, swivel nuts and embossed KINSTON lettering, in RAL 5015 sky blue, a saturated industrial medium sky blue. Preserve EXACT mechanical silhouette, pins, joints, openings, latch design, product orientation, position, size, square framing and complete uncropped outline. Preserve all forged steel texture, fine coating texture, legible embossed KINSTON text, specular highlights, soft lighting and neutral gray studio backdrop/floor. Black pins stay black; bare silver hardware stays silver. No orange paint or orange floor reflections. No added text, labels, objects or watermarks. Do not redesign the product. Photorealistic colour-only edit of the same photograph.",
+      "tool": "Built-in image_gen"
+    },
+    {
+      "slug": "alloy-eye-sling-hook-with-latch-g100",
+      "colour": "green",
+      "generatedPath": "/Users/macbook/.codex/generated_images/01a15827-6961-7652-b313-0e745d723f7b/exec-a92ae4e4-78af-4812-b1f2-409e5d0df212.png",
+      "image": "/images/products/branded/grade-100/green/alloy-eye-sling-hook-with-latch-g100.webp",
+      "prompt": "Use case: precise-object-edit. Edit ONLY the paint colour on this exact Alloy eye sling hook with latch, Grade 100 KINSTON product photo. Refinish EVERY orange-painted part, including painted latches, eyes, swivel nuts and embossed KINSTON lettering, in vivid medium industrial green. Preserve EXACT mechanical silhouette, pins, joints, openings, latch design, product orientation, position, size, square framing and complete uncropped outline. Preserve all forged steel texture, fine coating texture, legible embossed KINSTON text, specular highlights, soft lighting and neutral gray studio backdrop/floor. Black pins stay black; bare silver hardware stays silver. No orange paint or orange floor reflections. No added text, labels, objects or watermarks. Do not redesign the product. Photorealistic colour-only edit of the same photograph.",
+      "tool": "Built-in image_gen"
+    },
+    {
+      "slug": "alloy-eye-self-locking-hook-g100",
+      "colour": "blue",
+      "generatedPath": "/Users/macbook/.codex/generated_images/01a15827-6961-7652-b313-0e745d723f7b/exec-c928e71f-a02d-4be8-a344-78b20c51c5b4.png",
+      "image": "/images/products/branded/grade-100/blue/alloy-eye-self-locking-hook-g100.webp",
+      "prompt": "Use case: precise-object-edit. Edit ONLY the paint colour on this exact Alloy eye self-locking hook, Grade 100 KINSTON product photo. Refinish EVERY orange-painted part, including painted latches, eyes, swivel nuts and embossed KINSTON lettering, in RAL 5015 sky blue, a saturated industrial medium sky blue. Preserve EXACT mechanical silhouette, pins, joints, openings, latch design, product orientation, position, size, square framing and complete uncropped outline. Preserve all forged steel texture, fine coating texture, legible embossed KINSTON text, specular highlights, soft lighting and neutral gray studio backdrop/floor. Black pins stay black; bare silver hardware stays silver. No orange paint or orange floor reflections. No added text, labels, objects or watermarks. Do not redesign the product. Photorealistic colour-only edit of the same photograph.",
+      "tool": "Built-in image_gen"
+    },
+    {
+      "slug": "alloy-eye-self-locking-hook-g100",
+      "colour": "green",
+      "generatedPath": "/Users/macbook/.codex/generated_images/01a15827-6961-7652-b313-0e745d723f7b/exec-f46ebfba-0f6d-4a6e-98db-38ebdad39fa8.png",
+      "image": "/images/products/branded/grade-100/green/alloy-eye-self-locking-hook-g100.webp",
+      "prompt": "Use case: precise-object-edit. Edit ONLY the paint colour on this exact Alloy eye self-locking hook, Grade 100 KINSTON product photo. Refinish EVERY orange-painted part, including painted latches, eyes, swivel nuts and embossed KINSTON lettering, in vivid medium industrial green. Preserve EXACT mechanical silhouette, pins, joints, openings, latch design, product orientation, position, size, square framing and complete uncropped outline. Preserve all forged steel texture, fine coating texture, legible embossed KINSTON text, specular highlights, soft lighting and neutral gray studio backdrop/floor. Black pins stay black; bare silver hardware stays silver. No orange paint or orange floor reflections. No added text, labels, objects or watermarks. Do not redesign the product. Photorealistic colour-only edit of the same photograph.",
+      "tool": "Built-in image_gen"
+    },
+    {
+      "slug": "clevis-grab-hook-g100",
+      "colour": "blue",
+      "generatedPath": "/Users/macbook/.codex/generated_images/01a15827-6961-7652-b313-0e745d723f7b/exec-6bfdfa18-a11a-4ed2-80e7-1bbbb5d36cc7.png",
+      "image": "/images/products/branded/grade-100/blue/clevis-grab-hook-g100.webp",
+      "prompt": "Use case: precise-object-edit. Edit ONLY the paint colour on this exact Clevis grab hook, Grade 100 KINSTON product photo. Refinish EVERY orange-painted part, including painted latches, eyes, swivel nuts and embossed KINSTON lettering, in RAL 5015 sky blue, a saturated industrial medium sky blue. Preserve EXACT mechanical silhouette, pins, joints, openings, latch design, product orientation, position, size, square framing and complete uncropped outline. Preserve all forged steel texture, fine coating texture, legible embossed KINSTON text, specular highlights, soft lighting and neutral gray studio backdrop/floor. Black pins stay black; bare silver hardware stays silver. No orange paint or orange floor reflections. No added text, labels, objects or watermarks. Do not redesign the product. Photorealistic colour-only edit of the same photograph.",
+      "tool": "Built-in image_gen"
+    },
+    {
+      "slug": "clevis-grab-hook-g100",
+      "colour": "green",
+      "generatedPath": "/Users/macbook/.codex/generated_images/01a15827-6961-7652-b313-0e745d723f7b/exec-d4f2124a-ce5f-4316-bc13-b6b7c94910cf.png",
+      "image": "/images/products/branded/grade-100/green/clevis-grab-hook-g100.webp",
+      "prompt": "Use case: precise-object-edit. Edit ONLY the paint colour on this exact Clevis grab hook, Grade 100 KINSTON product photo. Refinish EVERY orange-painted part, including painted latches, eyes, swivel nuts and embossed KINSTON lettering, in vivid medium industrial green. Preserve EXACT mechanical silhouette, pins, joints, openings, latch design, product orientation, position, size, square framing and complete uncropped outline. Preserve all forged steel texture, fine coating texture, legible embossed KINSTON text, specular highlights, soft lighting and neutral gray studio backdrop/floor. Black pins stay black; bare silver hardware stays silver. No orange paint or orange floor reflections. No added text, labels, objects or watermarks. Do not redesign the product. Photorealistic colour-only edit of the same photograph.",
+      "tool": "Built-in image_gen"
+    },
+    {
+      "slug": "alloy-clevis-sling-hook-g100",
+      "colour": "blue",
+      "generatedPath": "/Users/macbook/.codex/generated_images/01a15827-6961-7652-b313-0e745d723f7b/exec-9f9bce14-c144-4fe0-8d9c-26630a480a56.png",
+      "image": "/images/products/branded/grade-100/blue/alloy-clevis-sling-hook-g100.webp",
+      "prompt": "Use case: precise-object-edit. Edit ONLY the paint colour on this exact Alloy clevis sling hook with cast latch, Grade 100 KINSTON product photo. Refinish EVERY orange-painted part, including painted latches, eyes, swivel nuts and embossed KINSTON lettering, in RAL 5015 sky blue, a saturated industrial medium sky blue. Preserve EXACT mechanical silhouette, pins, joints, openings, latch design, product orientation, position, size, square framing and complete uncropped outline. Preserve all forged steel texture, fine coating texture, legible embossed KINSTON text, specular highlights, soft lighting and neutral gray studio backdrop/floor. Black pins stay black; bare silver hardware stays silver. No orange paint or orange floor reflections. No added text, labels, objects or watermarks. Do not redesign the product. Photorealistic colour-only edit of the same photograph.",
+      "tool": "Built-in image_gen"
+    },
+    {
+      "slug": "alloy-clevis-sling-hook-g100",
+      "colour": "green",
+      "generatedPath": "/Users/macbook/.codex/generated_images/01a15827-6961-7652-b313-0e745d723f7b/exec-887432f0-5e6a-42a1-b778-20a414cf0acd.png",
+      "image": "/images/products/branded/grade-100/green/alloy-clevis-sling-hook-g100.webp",
+      "prompt": "Use case: precise-object-edit. Edit ONLY the paint colour on this exact Alloy clevis sling hook with cast latch, Grade 100 KINSTON product photo. Refinish EVERY orange-painted part, including painted latches, eyes, swivel nuts and embossed KINSTON lettering, in vivid medium industrial green. Preserve EXACT mechanical silhouette, pins, joints, openings, latch design, product orientation, position, size, square framing and complete uncropped outline. Preserve all forged steel texture, fine coating texture, legible embossed KINSTON text, specular highlights, soft lighting and neutral gray studio backdrop/floor. Black pins stay black; bare silver hardware stays silver. No orange paint or orange floor reflections. No added text, labels, objects or watermarks. Do not redesign the product. Photorealistic colour-only edit of the same photograph.",
+      "tool": "Built-in image_gen"
+    },
+    {
+      "slug": "clevis-forestry-hook-g100",
+      "colour": "blue",
+      "generatedPath": "/Users/macbook/.codex/generated_images/01a15827-6961-7652-b313-0e745d723f7b/exec-28001ec0-c6d6-49c8-883f-812833c652a5.png",
+      "image": "/images/products/branded/grade-100/blue/clevis-forestry-hook-g100.webp",
+      "prompt": "Use case: precise-object-edit. Edit ONLY the paint colour on this exact Clevis forestry hook, Grade 100 — lashing only KINSTON product photo. Refinish EVERY orange-painted part, including painted latches, eyes, swivel nuts and embossed KINSTON lettering, in RAL 5015 sky blue, a saturated industrial medium sky blue. Preserve EXACT mechanical silhouette, pins, joints, openings, latch design, product orientation, position, size, square framing and complete uncropped outline. Preserve all forged steel texture, fine coating texture, legible embossed KINSTON text, specular highlights, soft lighting and neutral gray studio backdrop/floor. Black pins stay black; bare silver hardware stays silver. No orange paint or orange floor reflections. No added text, labels, objects or watermarks. Do not redesign the product. Photorealistic colour-only edit of the same photograph.",
+      "tool": "Built-in image_gen"
+    },
+    {
+      "slug": "clevis-forestry-hook-g100",
+      "colour": "green",
+      "generatedPath": "/Users/macbook/.codex/generated_images/01a15827-6961-7652-b313-0e745d723f7b/exec-d62f11cf-8f9d-411a-ab2b-295e6e6d1f59.png",
+      "image": "/images/products/branded/grade-100/green/clevis-forestry-hook-g100.webp",
+      "prompt": "Use case: precise-object-edit. Edit ONLY the paint colour on this exact Clevis forestry hook, Grade 100 — lashing only KINSTON product photo. Refinish EVERY orange-painted part, including painted latches, eyes, swivel nuts and embossed KINSTON lettering, in vivid medium industrial green. Preserve EXACT mechanical silhouette, pins, joints, openings, latch design, product orientation, position, size, square framing and complete uncropped outline. Preserve all forged steel texture, fine coating texture, legible embossed KINSTON text, specular highlights, soft lighting and neutral gray studio backdrop/floor. Black pins stay black; bare silver hardware stays silver. No orange paint or orange floor reflections. No added text, labels, objects or watermarks. Do not redesign the product. Photorealistic colour-only edit of the same photograph.",
+      "tool": "Built-in image_gen"
+    },
+    {
+      "slug": "master-link-range-g100",
+      "colour": "blue",
+      "generatedPath": "/Users/macbook/.codex/generated_images/01a15827-6961-7652-b313-0e745d723f7b/exec-8c6df60d-fa23-4f74-a194-74bd479eb35d.png",
+      "image": "/images/products/branded/grade-100/blue/master-link-range-g100.webp",
+      "prompt": "Use case: precise-object-edit. Edit ONLY the paint colour on this exact Master links and assemblies, Grade 100 KINSTON product photo. Refinish EVERY orange-painted part, including painted latches, eyes, swivel nuts and embossed KINSTON lettering, in RAL 5015 sky blue, a saturated industrial medium sky blue. Preserve EXACT mechanical silhouette, pins, joints, openings, latch design, product orientation, position, size, square framing and complete uncropped outline. Preserve all forged steel texture, fine coating texture, legible embossed KINSTON text, specular highlights, soft lighting and neutral gray studio backdrop/floor. Black pins stay black; bare silver hardware stays silver. No orange paint or orange floor reflections. No added text, labels, objects or watermarks. Do not redesign the product. Photorealistic colour-only edit of the same photograph.",
+      "tool": "Built-in image_gen"
+    },
+    {
+      "slug": "master-link-range-g100",
+      "colour": "green",
+      "generatedPath": "/Users/macbook/.codex/generated_images/01a15827-6961-7652-b313-0e745d723f7b/exec-457075a3-6c99-46f7-9e75-00548a73b19f.png",
+      "image": "/images/products/branded/grade-100/green/master-link-range-g100.webp",
+      "prompt": "Use case: precise-object-edit. Edit ONLY the paint colour on this exact Master links and assemblies, Grade 100 KINSTON product photo. Refinish EVERY orange-painted part, including painted latches, eyes, swivel nuts and embossed KINSTON lettering, in vivid medium industrial green. Preserve EXACT mechanical silhouette, pins, joints, openings, latch design, product orientation, position, size, square framing and complete uncropped outline. Preserve all forged steel texture, fine coating texture, legible embossed KINSTON text, specular highlights, soft lighting and neutral gray studio backdrop/floor. Black pins stay black; bare silver hardware stays silver. No orange paint or orange floor reflections. No added text, labels, objects or watermarks. Do not redesign the product. Photorealistic colour-only edit of the same photograph.",
+      "tool": "Built-in image_gen"
+    },
+    {
+      "slug": "alloy-clevis-self-locking-hook-g100",
+      "colour": "blue",
+      "generatedPath": "/Users/macbook/.codex/generated_images/01a15827-6961-7652-b313-0e745d723f7b/exec-3ccc87a8-14d7-433d-b87d-b09d50f7fae7.png",
+      "image": "/images/products/branded/grade-100/blue/alloy-clevis-self-locking-hook-g100.webp",
+      "prompt": "Use case: precise-object-edit. Edit ONLY the paint colour on this exact Alloy clevis self-locking hook, Grade 100 KINSTON product photo. Refinish EVERY orange-painted part, including painted latches, eyes, swivel nuts and embossed KINSTON lettering, in RAL 5015 sky blue, a saturated industrial medium sky blue. Preserve EXACT mechanical silhouette, pins, joints, openings, latch design, product orientation, position, size, square framing and complete uncropped outline. Preserve all forged steel texture, fine coating texture, legible embossed KINSTON text, specular highlights, soft lighting and neutral gray studio backdrop/floor. Black pins stay black; bare silver hardware stays silver. No orange paint or orange floor reflections. No added text, labels, objects or watermarks. Do not redesign the product. Photorealistic colour-only edit of the same photograph.",
+      "tool": "Built-in image_gen"
+    },
+    {
+      "slug": "alloy-clevis-self-locking-hook-g100",
+      "colour": "green",
+      "generatedPath": "/Users/macbook/.codex/generated_images/01a15827-6961-7652-b313-0e745d723f7b/exec-195700c1-97b0-4cf4-b33a-f5a3ecba3fe8.png",
+      "image": "/images/products/branded/grade-100/green/alloy-clevis-self-locking-hook-g100.webp",
+      "prompt": "Use case: precise-object-edit. Edit ONLY the paint colour on this exact Alloy clevis self-locking hook, Grade 100 KINSTON product photo. Refinish EVERY orange-painted part, including painted latches, eyes, swivel nuts and embossed KINSTON lettering, in vivid medium industrial green. Preserve EXACT mechanical silhouette, pins, joints, openings, latch design, product orientation, position, size, square framing and complete uncropped outline. Preserve all forged steel texture, fine coating texture, legible embossed KINSTON text, specular highlights, soft lighting and neutral gray studio backdrop/floor. Black pins stay black; bare silver hardware stays silver. No orange paint or orange floor reflections. No added text, labels, objects or watermarks. Do not redesign the product. Photorealistic colour-only edit of the same photograph.",
+      "tool": "Built-in image_gen"
+    },
+    {
+      "slug": "clevis-self-locking-hook-interlocking-g100",
+      "colour": "blue",
+      "generatedPath": "/Users/macbook/.codex/generated_images/01a15827-6961-7652-b313-0e745d723f7b/exec-474b9c1e-68f6-48bb-a9cc-36367def2509.png",
+      "image": "/images/products/branded/grade-100/blue/clevis-self-locking-hook-interlocking-g100.webp",
+      "prompt": "Use case: precise-object-edit. Edit ONLY the paint colour on this exact Clevis self-locking hook, Grade 100 — interlocking tip KINSTON product photo. Refinish EVERY orange-painted part, including painted latches, eyes, swivel nuts and embossed KINSTON lettering, in RAL 5015 sky blue, a saturated industrial medium sky blue. Preserve EXACT mechanical silhouette, pins, joints, openings, latch design, product orientation, position, size, square framing and complete uncropped outline. Preserve all forged steel texture, fine coating texture, legible embossed KINSTON text, specular highlights, soft lighting and neutral gray studio backdrop/floor. Black pins stay black; bare silver hardware stays silver. No orange paint or orange floor reflections. No added text, labels, objects or watermarks. Do not redesign the product. Photorealistic colour-only edit of the same photograph.",
+      "tool": "Built-in image_gen"
+    },
+    {
+      "slug": "clevis-self-locking-hook-interlocking-g100",
+      "colour": "green",
+      "generatedPath": "/Users/macbook/.codex/generated_images/01a15827-6961-7652-b313-0e745d723f7b/exec-41d1d81d-2b3f-4f2c-b92f-7f3516aa908b.png",
+      "image": "/images/products/branded/grade-100/green/clevis-self-locking-hook-interlocking-g100.webp",
+      "prompt": "Use case: precise-object-edit. Edit ONLY the paint colour on this exact Clevis self-locking hook, Grade 100 — interlocking tip KINSTON product photo. Refinish EVERY orange-painted part, including painted latches, eyes, swivel nuts and embossed KINSTON lettering, in vivid medium industrial green. Preserve EXACT mechanical silhouette, pins, joints, openings, latch design, product orientation, position, size, square framing and complete uncropped outline. Preserve all forged steel texture, fine coating texture, legible embossed KINSTON text, specular highlights, soft lighting and neutral gray studio backdrop/floor. Black pins stay black; bare silver hardware stays silver. No orange paint or orange floor reflections. No added text, labels, objects or watermarks. Do not redesign the product. Photorealistic colour-only edit of the same photograph.",
+      "tool": "Built-in image_gen"
+    },
+    {
+      "slug": "swivel-self-locking-hook-interlocking-g100",
+      "colour": "blue",
+      "generatedPath": "/Users/macbook/.codex/generated_images/01a15827-6961-7652-b313-0e745d723f7b/exec-f11fa858-308f-4e98-93d0-0b6cc661a2cc.png",
+      "image": "/images/products/branded/grade-100/blue/swivel-self-locking-hook-interlocking-g100.webp",
+      "prompt": "Use case: precise-object-edit. Edit ONLY the paint colour on this exact Swivel self-locking hook, Grade 100 — interlocking tip KINSTON product photo. Refinish EVERY orange-painted part, including painted latches, eyes, swivel nuts and embossed KINSTON lettering, in RAL 5015 sky blue, a saturated industrial medium sky blue. Preserve EXACT mechanical silhouette, pins, joints, openings, latch design, product orientation, position, size, square framing and complete uncropped outline. Preserve all forged steel texture, fine coating texture, legible embossed KINSTON text, specular highlights, soft lighting and neutral gray studio backdrop/floor. Black pins stay black; bare silver hardware stays silver. No orange paint or orange floor reflections. No added text, labels, objects or watermarks. Do not redesign the product. Photorealistic colour-only edit of the same photograph.",
+      "tool": "Built-in image_gen"
+    },
+    {
+      "slug": "swivel-self-locking-hook-interlocking-g100",
+      "colour": "green",
+      "generatedPath": "/Users/macbook/.codex/generated_images/01a15827-6961-7652-b313-0e745d723f7b/exec-952f259e-7b2e-4b09-a4cf-ac0c253fc1db.png",
+      "image": "/images/products/branded/grade-100/green/swivel-self-locking-hook-interlocking-g100.webp",
+      "prompt": "Use case: precise-object-edit. Edit ONLY the paint colour on this exact Swivel self-locking hook, Grade 100 — interlocking tip KINSTON product photo. Refinish EVERY orange-painted part, including painted latches, eyes, swivel nuts and embossed KINSTON lettering, in vivid medium industrial green. Preserve EXACT mechanical silhouette, pins, joints, openings, latch design, product orientation, position, size, square framing and complete uncropped outline. Preserve all forged steel texture, fine coating texture, legible embossed KINSTON text, specular highlights, soft lighting and neutral gray studio backdrop/floor. Black pins stay black; bare silver hardware stays silver. No orange paint or orange floor reflections. No added text, labels, objects or watermarks. Do not redesign the product. Photorealistic colour-only edit of the same photograph.",
+      "tool": "Built-in image_gen"
+    },
+    {
+      "slug": "eye-self-locking-hook-interlocking-g100",
+      "colour": "blue",
+      "generatedPath": "/Users/macbook/.codex/generated_images/01a15827-6961-7652-b313-0e745d723f7b/exec-ff53150d-7bf2-4ae0-9599-14ea4f5b8695.png",
+      "image": "/images/products/branded/grade-100/blue/eye-self-locking-hook-interlocking-g100.webp",
+      "prompt": "Use case: precise-object-edit. Edit ONLY the paint colour on this exact Eye self-locking hook, Grade 100 — interlocking tip KINSTON product photo. Refinish EVERY orange-painted part, including painted latches, eyes, swivel nuts and embossed KINSTON lettering, in RAL 5015 sky blue, a saturated industrial medium sky blue. Preserve EXACT mechanical silhouette, pins, joints, openings, latch design, product orientation, position, size, square framing and complete uncropped outline. Preserve all forged steel texture, fine coating texture, legible embossed KINSTON text, specular highlights, soft lighting and neutral gray studio backdrop/floor. Black pins stay black; bare silver hardware stays silver. No orange paint or orange floor reflections. No added text, labels, objects or watermarks. Do not redesign the product. Photorealistic colour-only edit of the same photograph.",
+      "tool": "Built-in image_gen"
+    },
+    {
+      "slug": "eye-self-locking-hook-interlocking-g100",
+      "colour": "green",
+      "generatedPath": "/Users/macbook/.codex/generated_images/01a15827-6961-7652-b313-0e745d723f7b/exec-a88b286a-2afd-4f5d-b90c-4b340fcf4b79.png",
+      "image": "/images/products/branded/grade-100/green/eye-self-locking-hook-interlocking-g100.webp",
+      "prompt": "Use case: precise-object-edit. Edit ONLY the paint colour on this exact Eye self-locking hook, Grade 100 — interlocking tip KINSTON product photo. Refinish EVERY orange-painted part, including painted latches, eyes, swivel nuts and embossed KINSTON lettering, in vivid medium industrial green. Preserve EXACT mechanical silhouette, pins, joints, openings, latch design, product orientation, position, size, square framing and complete uncropped outline. Preserve all forged steel texture, fine coating texture, legible embossed KINSTON text, specular highlights, soft lighting and neutral gray studio backdrop/floor. Black pins stay black; bare silver hardware stays silver. No orange paint or orange floor reflections. No added text, labels, objects or watermarks. Do not redesign the product. Photorealistic colour-only edit of the same photograph.",
+      "tool": "Built-in image_gen"
+    },
+    {
+      "slug": "clevis-sling-hook-orange-latch-g100",
+      "colour": "blue",
+      "generatedPath": "/Users/macbook/.codex/generated_images/01a15827-6961-7652-b313-0e745d723f7b/exec-6875fed1-4e20-44e2-81b0-c31f88c28a36.png",
+      "image": "/images/products/branded/grade-100/blue/clevis-sling-hook-orange-latch-g100.webp",
+      "prompt": "Use case: precise-object-edit. Edit ONLY the paint colour on this exact Clevis sling hook, Grade 100 — orange latch KINSTON product photo. Refinish EVERY orange-painted part, including painted latches, eyes, swivel nuts and embossed KINSTON lettering, in RAL 5015 sky blue, a saturated industrial medium sky blue. Preserve EXACT mechanical silhouette, pins, joints, openings, latch design, product orientation, position, size, square framing and complete uncropped outline. Preserve all forged steel texture, fine coating texture, legible embossed KINSTON text, specular highlights, soft lighting and neutral gray studio backdrop/floor. Black pins stay black; bare silver hardware stays silver. No orange paint or orange floor reflections. No added text, labels, objects or watermarks. Do not redesign the product. Photorealistic colour-only edit of the same photograph.",
+      "tool": "Built-in image_gen"
+    },
+    {
+      "slug": "clevis-sling-hook-orange-latch-g100",
+      "colour": "green",
+      "generatedPath": "/Users/macbook/.codex/generated_images/01a15827-6961-7652-b313-0e745d723f7b/exec-338c89be-995b-46af-ab28-6d61fa5c0a49.png",
+      "image": "/images/products/branded/grade-100/green/clevis-sling-hook-orange-latch-g100.webp",
+      "prompt": "Use case: precise-object-edit. Edit ONLY the paint colour on this exact Clevis sling hook, Grade 100 — orange latch KINSTON product photo. Refinish EVERY orange-painted part, including painted latches, eyes, swivel nuts and embossed KINSTON lettering, in vivid medium industrial green. Preserve EXACT mechanical silhouette, pins, joints, openings, latch design, product orientation, position, size, square framing and complete uncropped outline. Preserve all forged steel texture, fine coating texture, legible embossed KINSTON text, specular highlights, soft lighting and neutral gray studio backdrop/floor. Black pins stay black; bare silver hardware stays silver. No orange paint or orange floor reflections. No added text, labels, objects or watermarks. Do not redesign the product. Photorealistic colour-only edit of the same photograph.",
+      "tool": "Built-in image_gen"
+    },
+    {
+      "slug": "eye-sling-hook-orange-latch-g100",
+      "colour": "blue",
+      "generatedPath": "/Users/macbook/.codex/generated_images/01a15827-6961-7652-b313-0e745d723f7b/exec-ce73062e-607f-43e4-8324-5b3f2c05e5fe.png",
+      "image": "/images/products/branded/grade-100/blue/eye-sling-hook-orange-latch-g100.webp",
+      "prompt": "Use case: precise-object-edit. Edit ONLY the paint colour on this exact Eye sling hook, Grade 100 — orange latch KINSTON product photo. Refinish EVERY orange-painted part, including painted latches, eyes, swivel nuts and embossed KINSTON lettering, in RAL 5015 sky blue, a saturated industrial medium sky blue. Preserve EXACT mechanical silhouette, pins, joints, openings, latch design, product orientation, position, size, square framing and complete uncropped outline. Preserve all forged steel texture, fine coating texture, legible embossed KINSTON text, specular highlights, soft lighting and neutral gray studio backdrop/floor. Black pins stay black; bare silver hardware stays silver. No orange paint or orange floor reflections. No added text, labels, objects or watermarks. Do not redesign the product. Photorealistic colour-only edit of the same photograph.",
+      "tool": "Built-in image_gen"
+    },
+    {
+      "slug": "eye-sling-hook-orange-latch-g100",
+      "colour": "green",
+      "generatedPath": "/Users/macbook/.codex/generated_images/01a15827-6961-7652-b313-0e745d723f7b/exec-194e6c3b-20d0-4ae1-a1a5-28596eb934a4.png",
+      "image": "/images/products/branded/grade-100/green/eye-sling-hook-orange-latch-g100.webp",
+      "prompt": "Use case: precise-object-edit. Edit ONLY the paint colour on this exact Eye sling hook, Grade 100 — orange latch KINSTON product photo. Refinish EVERY orange-painted part, including painted latches, eyes, swivel nuts and embossed KINSTON lettering, in vivid medium industrial green. Preserve EXACT mechanical silhouette, pins, joints, openings, latch design, product orientation, position, size, square framing and complete uncropped outline. Preserve all forged steel texture, fine coating texture, legible embossed KINSTON text, specular highlights, soft lighting and neutral gray studio backdrop/floor. Black pins stay black; bare silver hardware stays silver. No orange paint or orange floor reflections. No added text, labels, objects or watermarks. Do not redesign the product. Photorealistic colour-only edit of the same photograph.",
+      "tool": "Built-in image_gen"
+    }
+  ]
+}

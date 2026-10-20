@@ -8,32 +8,71 @@ interface Props { product: Product; showCategory?: string }
 const { product, showCategory } = Astro.props;
 const range = wllRange(product);
 const img = product.image ?? `/images/products/branded/${product.slug}.webp`;
+const variants = product.imageVariants ?? [];
 ---
-<a class="card" href={productUrl(product)} data-group={product.group} data-grade={product.grade ?? ''}>
-  <div class="art"><span class="collection">KINSTON / {product.code}</span><img src={img} alt={product.name} loading="lazy" decoding="async" width="768" height="768" /><span class="browse">View product <Icon name="arrow" /></span></div>
+<article class="card" data-product-card data-group={product.group} data-grade={product.grade ?? ''}>
+  <div class="art"><span class="collection">KINSTON / {product.code}</span><img data-card-image src={img} alt={`${product.name}${variants[0] ? ` — ${variants[0].name}` : ''}`} loading="lazy" decoding="async" width="768" height="768" /><span class="browse">View product <Icon name="arrow" /></span></div>
   <div class="body">
     <p class="code">{product.code}{product.grade && <span> · {product.grade}</span>}</p>
-    <h3>{product.name}</h3>
+    <h3><a class="product-link" href={productUrl(product)}>{product.name}</a></h3>
     {range && (
       <p class="wll">
         WLL {fmt(range.min, 2)}{range.min !== range.max && ` to ${fmt(range.max, 2)}`} t
       </p>
     )}
     {showCategory && <p class="cat">{showCategory}</p>}
-    <span class="card-foot"><span>Specifications &amp; details</span><span class="card-arrow"><Icon name="arrow" /></span></span>
+    <div class="card-foot">
+      <span>Specifications &amp; details</span>
+      {variants.length > 1 ? (
+        <div class="colour-switch" role="group" aria-label={`Colour options for ${product.name}`}>
+          {variants.map((variant, index) => (
+            <button
+              type="button"
+              title={variant.label}
+              aria-label={`Show ${variant.name.toLowerCase()} finish`}
+              aria-pressed={index === 0 ? 'true' : 'false'}
+              data-card-colour-option
+              data-image={variant.image}
+              data-alt={`${product.name} — ${variant.name}`}
+              data-label={variant.label}
+            >
+              <span class="swatch" style={{ background: variant.colour }}><Icon name="check" /></span>
+            </button>
+          ))}
+          <span class="sr-only" data-card-colour aria-live="polite">{variants[0].label} finish selected</span>
+        </div>
+      ) : <span class="card-arrow"><Icon name="arrow" /></span>}
+    </div>
   </div>
-</a>
+</article>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-product-card]').forEach((card) => {
+    const image = card.querySelector<HTMLImageElement>('[data-card-image]');
+    const status = card.querySelector<HTMLElement>('[data-card-colour]');
+    const buttons = card.querySelectorAll<HTMLButtonElement>('[data-card-colour-option]');
+    buttons.forEach((button) => button.addEventListener('click', () => {
+      if (!image || !button.dataset.image) return;
+      image.src = button.dataset.image;
+      image.alt = button.dataset.alt ?? '';
+      if (status) status.textContent = `${button.dataset.label} finish selected`;
+      buttons.forEach((option) => option.setAttribute('aria-pressed', String(option === button)));
+    }));
+  });
+</script>
 <style>
-  .card { display: grid; grid-template-rows: auto 1fr; background: var(--white); border: 1px solid #e2e5e9; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px #111b3304; transition: border-color .35s, transform .35s var(--ease), box-shadow .35s var(--ease); }
+  .card { position: relative; display: grid; grid-template-rows: auto 1fr; background: var(--white); border: 1px solid #e2e5e9; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px #111b3304; transition: border-color .35s, transform .35s var(--ease), box-shadow .35s var(--ease); }
   .card[hidden] { display: none; }
-  .card:hover, .card:focus-visible { border-color: #f8500060; transform: translateY(-7px); box-shadow: 0 18px 36px -16px #111b3338; }
+  .card:hover, .card:focus-within { border-color: #f8500060; transform: translateY(-7px); box-shadow: 0 18px 36px -16px #111b3338; }
+  .product-link::after { content: ''; position: absolute; inset: 0; z-index: 1; }
+  .product-link:focus-visible { outline: 2px solid var(--navy); outline-offset: 3px; }
   .art { position: relative; background: #eef0f2; aspect-ratio: 1; border-bottom: 1px solid #e9ecef; overflow: hidden; }
   .art img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .65s var(--ease); }
   .card:hover .art img { transform: scale(1.055); }
   .collection { position: absolute; top: 16px; left: 16px; z-index: 1; color: #4c596b; background: #ffffffc9; border: 1px solid #ffffff90; border-radius: 4px; padding: 5px 8px; font-size: 9px; font-weight: 600; letter-spacing: .1em; }
   .browse { position: absolute; bottom: 16px; left: 16px; right: 16px; display: flex; justify-content: space-between; align-items: center; padding: 11px 14px; background: #111b33ed; color: white; border-radius: 6px; font-size: 12px; opacity: 0; transform: translateY(8px); transition: opacity .25s, transform .25s; }
   .browse :global(svg) { width: 16px; }
-  .card:hover .browse, .card:focus-visible .browse { opacity: 1; transform: none; }
+  .card:hover .browse, .card:focus-within .browse { opacity: 1; transform: none; }
   .body { padding: 16px 17px 13px; display: flex; flex-direction: column; gap: 7px; }
   .code { font-size: var(--t-xs); color: var(--steel); font-weight: 500; }
   .code span { color: var(--navy); }
@@ -46,6 +85,14 @@ const img = product.image ?? `/images/products/branded/${product.slug}.webp`;
   .card-arrow { display: grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: #f0f2f5; color: var(--ink); transition: background .25s, color .25s; flex: none; }
   .card-arrow :global(svg) { width: 16px; }
   .card:hover .card-arrow { background: var(--orange); color: white; }
+  .colour-switch { position: relative; z-index: 2; display: flex; gap: 4px; flex: none; }
+  .colour-switch button { display: grid; place-items: center; width: 32px; height: 32px; border: 2px solid transparent; border-radius: 50%; background: transparent; }
+  .colour-switch button[aria-pressed="true"] { border-color: var(--navy); }
+  .colour-switch button:focus-visible { outline: 2px solid var(--navy); outline-offset: 2px; }
+  .swatch { display: grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; box-shadow: inset 0 0 0 1px #0002; }
+  .swatch :global(svg) { width: 13px; height: 13px; color: white; opacity: 0; }
+  button[aria-pressed="true"] .swatch :global(svg) { opacity: 1; }
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
   @media (hover: none) { .browse { display: none; } }
   @media (prefers-reduced-motion: reduce) { .card, .art img, .browse { transition: none; } .card:hover, .card:hover .art img { transform: none; } }
 </style>

@@ -66,7 +66,6 @@ const anchor = (g: string) => g.toLowerCase().replace(/[^a-z0-9]+/g, '-');
 <script>
   document.querySelectorAll<HTMLElement>('[data-filter-root]').forEach((root) => {
     const btns = root.querySelectorAll<HTMLButtonElement>('button[data-grade]');
-    const cards = root.querySelectorAll<HTMLElement>('[data-grade].card, a.card');
     const groups = root.querySelectorAll<HTMLElement>('.group[data-group]');
     const count = root.querySelector<HTMLElement>('[data-count]');
     const empty = root.querySelector<HTMLElement>('[data-empty]');
@@ -75,17 +74,16 @@ const anchor = (g: string) => g.toLowerCase().replace(/[^a-z0-9]+/g, '-');
         const g = b.dataset.grade ?? '';
         btns.forEach((x) => x.classList.toggle('on', x === b));
         let shown = 0;
-        root.querySelectorAll<HTMLElement>('a.card').forEach((c) => {
+        root.querySelectorAll<HTMLElement>('[data-product-card]').forEach((c) => {
           const ok = !g || c.dataset.grade === g;
           c.hidden = !ok;
           if (ok) shown++;
         });
-        groups.forEach((grp) => { grp.hidden = !grp.querySelector('a.card:not([hidden])'); });
+        groups.forEach((grp) => { grp.hidden = !grp.querySelector('[data-product-card]:not([hidden])'); });
         if (count) count.textContent = String(shown);
         if (empty) empty.hidden = shown > 0;
       }),
     );
-    void cards;
   });
 </script>
 

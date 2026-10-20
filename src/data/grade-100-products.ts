@@ -1,8 +1,9 @@
 import type { Product } from './products';
+import { grade100Colours, productFinishes } from './product-finishes';
 
 // Active families from the supplier Grade 100 index. Source mapping: docs/grade-100-catalogue.json.
 // Older product ranges remain commented out in products.ts and additional-products.ts.
-export const grade100Products: Product[] = [
+const entries: Product[] = [
   {
     "slug": "locking-pin-grab-hook-g100",
     "category": "hooks",
@@ -10,7 +11,6 @@ export const grade100Products: Product[] = [
     "name": "Locking pin grab hook, Grade 100",
     "code": "K100-3001",
     "art": "locking-pin-grab-hook-g100",
-    "image": "/images/products/branded/grade-100/locking-pin-grab-hook-g100.webp",
     "imageCaption": "KINSTON product visualisation · Confirm supplied configuration with your quotation",
     "summary": "Eye and clevis grab hooks with a safety pin for retaining the chain in the shortening pocket.",
     "description": [
@@ -23,7 +23,7 @@ export const grade100Products: Product[] = [
       "Chain shortening pocket"
     ],
     "material": "Heat-treated alloy steel",
-    "finish": "Orange powder coat",
+    "finish": productFinishes['Grade 100'],
     "standards": [],
     "designFactor": "Confirm for selected model",
     "tempRange": "Confirm for selected model",
@@ -62,7 +62,6 @@ export const grade100Products: Product[] = [
     "name": "Alloy steel eye grab hook, Grade 100",
     "code": "K100-3002",
     "art": "alloy-eye-grab-hook-g100",
-    "image": "/images/products/branded/grade-100/alloy-eye-grab-hook-g100.webp",
     "imageCaption": "KINSTON product visualisation · Confirm supplied configuration with your quotation",
     "summary": "Eye grab hook with a forked lower connection for compatible Grade 100 chain assemblies.",
     "description": [
@@ -75,7 +74,7 @@ export const grade100Products: Product[] = [
       "Six published chain-size options"
     ],
     "material": "Heat-treated alloy steel",
-    "finish": "Orange powder coat",
+    "finish": productFinishes['Grade 100'],
     "standards": [],
     "designFactor": "Confirm for selected model",
     "tempRange": "Confirm for selected model",
@@ -110,7 +109,6 @@ export const grade100Products: Product[] = [
     "name": "Container lifting ring",
     "code": "K100-3003",
     "art": "container-lifting-ring",
-    "image": "/images/products/branded/grade-100/container-lifting-ring.webp",
     "imageCaption": "KINSTON product visualisation · Confirm supplied configuration with your quotation",
     "summary": "Oval container lifting ring with an integral clevis connection and a removable load pin.",
     "description": [
@@ -124,7 +122,7 @@ export const grade100Products: Product[] = [
       "Model and grade confirmed with your quotation"
     ],
     "material": "Heat-treated alloy steel",
-    "finish": "Orange powder coat",
+    "finish": productFinishes['Grade 100'],
     "standards": [],
     "designFactor": "Confirm for selected model",
     "tempRange": "Confirm for selected model",
@@ -158,7 +156,6 @@ export const grade100Products: Product[] = [
     "name": "Omega link, Grade 100",
     "code": "K100-3004",
     "art": "omega-link-g100",
-    "image": "/images/products/branded/grade-100/omega-link-g100.webp",
     "imageCaption": "KINSTON product visualisation · Confirm supplied configuration with your quotation",
     "summary": "Compact omega-shaped connector for joining compatible Grade 100 chain and rigging components.",
     "description": [
@@ -171,7 +168,7 @@ export const grade100Products: Product[] = [
       "Five published size options"
     ],
     "material": "Heat-treated alloy steel",
-    "finish": "Orange powder coat",
+    "finish": productFinishes['Grade 100'],
     "standards": [],
     "designFactor": "Confirm for selected model",
     "tempRange": "Confirm for selected model",
@@ -205,7 +202,6 @@ export const grade100Products: Product[] = [
     "name": "Connecting link, Grade 100",
     "code": "K100-3005",
     "art": "connecting-link-g100",
-    "image": "/images/products/branded/grade-100/connecting-link-g100.webp",
     "imageCaption": "KINSTON product visualisation · Confirm supplied configuration with your quotation",
     "summary": "Two-part hammerlock connector with a pin and retaining sleeve for compatible Grade 100 sling components.",
     "description": [
@@ -218,7 +214,7 @@ export const grade100Products: Product[] = [
       "Sizes from 6 to 32 mm in the reference range"
     ],
     "material": "Heat-treated alloy steel",
-    "finish": "Orange powder coat",
+    "finish": productFinishes['Grade 100'],
     "standards": [],
     "designFactor": "Confirm for selected model",
     "tempRange": "Confirm for selected model",
@@ -254,7 +250,6 @@ export const grade100Products: Product[] = [
     "name": "Alloy swivel self-locking hook, Grade 100",
     "code": "K100-3006",
     "art": "alloy-swivel-self-locking-hook-g100",
-    "image": "/images/products/branded/grade-100/alloy-swivel-self-locking-hook-g100.webp",
     "imageCaption": "KINSTON product visualisation · Confirm supplied configuration with your quotation",
     "summary": "Self-locking hook with an oval swivel eye and a straight closing-tip profile.",
     "description": [
@@ -268,7 +263,7 @@ export const grade100Products: Product[] = [
       "Straight closing-tip profile"
     ],
     "material": "Heat-treated alloy steel",
-    "finish": "Orange powder coat",
+    "finish": productFinishes['Grade 100'],
     "standards": [],
     "designFactor": "Confirm for selected model",
     "tempRange": "Confirm for selected model",
@@ -307,7 +302,6 @@ export const grade100Products: Product[] = [
     "name": "Eye shortening grab hook, Grade 100",
     "code": "K100-3007",
     "art": "eye-shortening-grab-hook-g100",
-    "image": "/images/products/branded/grade-100/eye-shortening-grab-hook-g100.webp",
     "imageCaption": "KINSTON product visualisation · Confirm supplied configuration with your quotation",
     "summary": "Eye attachment shortening hook with a narrow chain pocket for adjusting a compatible chain sling.",
     "description": [
@@ -320,7 +314,7 @@ export const grade100Products: Product[] = [
       "Seven published chain-size options"
     ],
     "material": "Heat-treated alloy steel",
-    "finish": "Orange powder coat",
+    "finish": productFinishes['Grade 100'],
     "standards": [],
     "designFactor": "Confirm for selected model",
     "tempRange": "Confirm for selected model",
@@ -355,7 +349,6 @@ export const grade100Products: Product[] = [
     "name": "Alloy eye sling hook with latch, Grade 100",
     "code": "K100-3008",
     "art": "alloy-eye-sling-hook-with-latch-g100",
-    "image": "/images/products/branded/grade-100/alloy-eye-sling-hook-with-latch-g100.webp",
     "imageCaption": "KINSTON product visualisation · Confirm supplied configuration with your quotation",
     "summary": "Eye sling hook with a silver cast spring latch and a shaped eye for compatible connectors.",
     "description": [
@@ -368,7 +361,7 @@ export const grade100Products: Product[] = [
       "Nine published size options"
     ],
     "material": "Heat-treated alloy steel",
-    "finish": "Orange powder coat",
+    "finish": productFinishes['Grade 100'],
     "standards": [],
     "designFactor": "Confirm for selected model",
     "tempRange": "Confirm for selected model",
@@ -406,7 +399,6 @@ export const grade100Products: Product[] = [
     "name": "Alloy eye self-locking hook, Grade 100",
     "code": "K100-3009",
     "art": "alloy-eye-self-locking-hook-g100",
-    "image": "/images/products/branded/grade-100/alloy-eye-self-locking-hook-g100.webp",
     "imageCaption": "KINSTON product visualisation · Confirm supplied configuration with your quotation",
     "summary": "Eye attachment self-locking hook with a load-bearing closing jaw and a straight closing-tip profile.",
     "description": [
@@ -419,7 +411,7 @@ export const grade100Products: Product[] = [
       "Straight closing-tip profile"
     ],
     "material": "Heat-treated alloy steel",
-    "finish": "Orange powder coat",
+    "finish": productFinishes['Grade 100'],
     "standards": [],
     "designFactor": "Confirm for selected model",
     "tempRange": "Confirm for selected model",
@@ -456,7 +448,6 @@ export const grade100Products: Product[] = [
     "name": "Clevis grab hook, Grade 100",
     "code": "K100-3010",
     "art": "clevis-grab-hook-g100",
-    "image": "/images/products/branded/grade-100/clevis-grab-hook-g100.webp",
     "imageCaption": "KINSTON product visualisation · Confirm supplied configuration with your quotation",
     "summary": "Clevis-mounted shortening hook with a removable chain pin and a deep grab pocket.",
     "description": [
@@ -469,7 +460,7 @@ export const grade100Products: Product[] = [
       "Deep chain grab pocket"
     ],
     "material": "Heat-treated alloy steel",
-    "finish": "Orange powder coat",
+    "finish": productFinishes['Grade 100'],
     "standards": [],
     "designFactor": "Confirm for selected model",
     "tempRange": "Confirm for selected model",
@@ -504,7 +495,6 @@ export const grade100Products: Product[] = [
     "name": "Alloy clevis sling hook with cast latch, Grade 100",
     "code": "K100-3011",
     "art": "alloy-clevis-sling-hook-g100",
-    "image": "/images/products/branded/grade-100/alloy-clevis-sling-hook-g100.webp",
     "imageCaption": "KINSTON product visualisation · Confirm supplied configuration with your quotation",
     "summary": "Clevis sling hook with a silver cast spring latch for connection to a compatible Grade 100 chain.",
     "description": [
@@ -517,7 +507,7 @@ export const grade100Products: Product[] = [
       "Replacement pin kits available on enquiry"
     ],
     "material": "Heat-treated alloy steel",
-    "finish": "Orange powder coat",
+    "finish": productFinishes['Grade 100'],
     "standards": [],
     "designFactor": "Confirm for selected model",
     "tempRange": "Confirm for selected model",
@@ -555,7 +545,6 @@ export const grade100Products: Product[] = [
     "name": "Clevis forestry hook, Grade 100 — lashing only",
     "code": "K100-3012",
     "art": "clevis-forestry-hook-g100",
-    "image": "/images/products/branded/grade-100/clevis-forestry-hook-g100.webp",
     "imageCaption": "KINSTON product visualisation · Confirm supplied configuration with your quotation",
     "summary": "Open clevis hook for dragging and lashing in forestry. Not for lifting.",
     "description": [
@@ -569,7 +558,7 @@ export const grade100Products: Product[] = [
       "Not for overhead lifting"
     ],
     "material": "Heat-treated alloy steel",
-    "finish": "Orange powder coat",
+    "finish": productFinishes['Grade 100'],
     "standards": [],
     "designFactor": "Confirm for selected model",
     "tempRange": "Confirm for selected model",
@@ -600,7 +589,6 @@ export const grade100Products: Product[] = [
     "name": "Master links and assemblies, Grade 100",
     "code": "K100-3013",
     "art": "master-link-range-g100",
-    "image": "/images/products/branded/grade-100/master-link-range-g100.webp",
     "imageCaption": "KINSTON product visualisation · Confirm supplied configuration with your quotation",
     "summary": "Standard, long and oversized master links, plus assemblies for compatible multi-leg Grade 100 slings.",
     "description": [
@@ -613,7 +601,7 @@ export const grade100Products: Product[] = [
       "Five model families with separate size references"
     ],
     "material": "Heat-treated alloy steel",
-    "finish": "Orange powder coat",
+    "finish": productFinishes['Grade 100'],
     "standards": [],
     "designFactor": "Confirm for selected model",
     "tempRange": "Confirm for selected model",
@@ -678,7 +666,6 @@ export const grade100Products: Product[] = [
     "name": "Alloy clevis self-locking hook, Grade 100",
     "code": "K100-3014",
     "art": "alloy-clevis-self-locking-hook-g100",
-    "image": "/images/products/branded/grade-100/alloy-clevis-self-locking-hook-g100.webp",
     "imageCaption": "KINSTON product visualisation · Confirm supplied configuration with your quotation",
     "summary": "Clevis attachment self-locking hook with a straight closing-tip profile and removable chain pin.",
     "description": [
@@ -691,7 +678,7 @@ export const grade100Products: Product[] = [
       "Straight closing-tip profile"
     ],
     "material": "Heat-treated alloy steel",
-    "finish": "Orange powder coat",
+    "finish": productFinishes['Grade 100'],
     "standards": [],
     "designFactor": "Confirm for selected model",
     "tempRange": "Confirm for selected model",
@@ -728,7 +715,6 @@ export const grade100Products: Product[] = [
     "name": "Clevis self-locking hook, Grade 100 — interlocking tip",
     "code": "K100-3015",
     "art": "clevis-self-locking-hook-interlocking-g100",
-    "image": "/images/products/branded/grade-100/clevis-self-locking-hook-interlocking-g100.webp",
     "imageCaption": "KINSTON product visualisation · Confirm supplied configuration with your quotation",
     "summary": "Clevis self-locking hook with a notched interlocking tip and four published size options.",
     "description": [
@@ -741,7 +727,7 @@ export const grade100Products: Product[] = [
       "Four published size options"
     ],
     "material": "Heat-treated alloy steel",
-    "finish": "Orange powder coat",
+    "finish": productFinishes['Grade 100'],
     "standards": [],
     "designFactor": "Confirm for selected model",
     "tempRange": "Confirm for selected model",
@@ -775,7 +761,6 @@ export const grade100Products: Product[] = [
     "name": "Swivel self-locking hook, Grade 100 — interlocking tip",
     "code": "K100-3016",
     "art": "swivel-self-locking-hook-interlocking-g100",
-    "image": "/images/products/branded/grade-100/swivel-self-locking-hook-interlocking-g100.webp",
     "imageCaption": "KINSTON product visualisation · Confirm supplied configuration with your quotation",
     "summary": "Swivel eye self-locking hook with a notched interlocking closing tip.",
     "description": [
@@ -788,7 +773,7 @@ export const grade100Products: Product[] = [
       "Four published size options"
     ],
     "material": "Heat-treated alloy steel",
-    "finish": "Orange powder coat",
+    "finish": productFinishes['Grade 100'],
     "standards": [],
     "designFactor": "Confirm for selected model",
     "tempRange": "Confirm for selected model",
@@ -824,7 +809,6 @@ export const grade100Products: Product[] = [
     "name": "Eye self-locking hook, Grade 100 — interlocking tip",
     "code": "K100-3017",
     "art": "eye-self-locking-hook-interlocking-g100",
-    "image": "/images/products/branded/grade-100/eye-self-locking-hook-interlocking-g100.webp",
     "imageCaption": "KINSTON product visualisation · Confirm supplied configuration with your quotation",
     "summary": "Eye self-locking hook with a notched interlocking closing tip and four published size options.",
     "description": [
@@ -837,7 +821,7 @@ export const grade100Products: Product[] = [
       "Four published size options"
     ],
     "material": "Heat-treated alloy steel",
-    "finish": "Orange powder coat",
+    "finish": productFinishes['Grade 100'],
     "standards": [],
     "designFactor": "Confirm for selected model",
     "tempRange": "Confirm for selected model",
@@ -868,23 +852,22 @@ export const grade100Products: Product[] = [
     "slug": "clevis-sling-hook-orange-latch-g100",
     "category": "hooks",
     "group": "Sling hooks",
-    "name": "Clevis sling hook, Grade 100 — orange latch",
+    "name": "Clevis sling hook, Grade 100 — painted latch",
     "code": "K100-3018",
     "art": "clevis-sling-hook-orange-latch-g100",
-    "image": "/images/products/branded/grade-100/clevis-sling-hook-orange-latch-g100.webp",
     "imageCaption": "KINSTON product visualisation · Confirm supplied configuration with your quotation",
-    "summary": "Clevis sling hook with an orange spring latch and three published size options.",
+    "summary": "Clevis sling hook with a painted spring latch and three published size options.",
     "description": [
-      "Clevis sling hook with an orange spring latch and three published size options.",
+      "Clevis sling hook with a painted spring latch and three published size options.",
       "Choose the reference model and size when enquiring. We will confirm the dimensions, connection compatibility and available documentation for your application."
     ],
     "features": [
       "Clevis attachment",
-      "Orange spring latch",
+      "Painted spring latch",
       "Three published size options"
     ],
     "material": "Heat-treated alloy steel",
-    "finish": "Orange powder coat",
+    "finish": productFinishes['Grade 100'],
     "standards": [],
     "designFactor": "Confirm for selected model",
     "tempRange": "Confirm for selected model",
@@ -915,23 +898,22 @@ export const grade100Products: Product[] = [
     "slug": "eye-sling-hook-orange-latch-g100",
     "category": "hooks",
     "group": "Sling hooks",
-    "name": "Eye sling hook, Grade 100 — orange latch",
+    "name": "Eye sling hook, Grade 100 — painted latch",
     "code": "K100-3019",
     "art": "eye-sling-hook-orange-latch-g100",
-    "image": "/images/products/branded/grade-100/eye-sling-hook-orange-latch-g100.webp",
     "imageCaption": "KINSTON product visualisation · Confirm supplied configuration with your quotation",
-    "summary": "Eye sling hook with an orange spring latch and three published size options.",
+    "summary": "Eye sling hook with a painted spring latch and three published size options.",
     "description": [
-      "Eye sling hook with an orange spring latch and three published size options.",
+      "Eye sling hook with a painted spring latch and three published size options.",
       "Choose the reference model and size when enquiring. We will confirm the dimensions, connection compatibility and available documentation for your application."
     ],
     "features": [
       "Eye attachment",
-      "Orange spring latch",
+      "Painted spring latch",
       "Three published size options"
     ],
     "material": "Heat-treated alloy steel",
-    "finish": "Orange powder coat",
+    "finish": productFinishes['Grade 100'],
     "standards": [],
     "designFactor": "Confirm for selected model",
     "tempRange": "Confirm for selected model",
@@ -959,3 +941,13 @@ export const grade100Products: Product[] = [
     ]
   }
 ];
+
+export const grade100Products: Product[] = entries.map((product) => {
+  const imageVariants = grade100Colours.map((colour) => ({
+    name: colour.name,
+    label: colour.label,
+    colour: colour.value,
+    image: `/images/products/branded/grade-100/${colour.folder}/${product.slug}.webp`,
+  }));
+  return { ...product, image: imageVariants[0].image, imageVariants };
+});
