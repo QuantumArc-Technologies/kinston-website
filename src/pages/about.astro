@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import Breadcrumb from '../components/Breadcrumb.astro';
+import PageHero from '../components/PageHero.astro';
 import SectionHeading from '../components/SectionHeading.astro';
 import CtaBand from '../components/CtaBand.astro';
 import { breadcrumbLd } from '../lib/seo';
@@ -8,13 +9,11 @@ import { breadcrumbLd } from '../lib/seo';
 const crumbs = [{ name: 'Home', href: '/' }, { name: 'About', href: '/about' }];
 ---
 <Base title="About KINSTON" description="KINSTON is an international lifting equipment brand delivering reliable, high-performance lifting and rigging solutions for demanding industrial applications." path="/about" jsonLd={[breadcrumbLd(crumbs)]}>
-  <section class="page-head bg-ink">
-    <div class="wrap">
-      <Breadcrumb items={crumbs} light />
+  <PageHero eyebrow="THE KINSTON STANDARD" image="/images/page-heroes/about-branded.webp">
+<Breadcrumb items={crumbs} light />
       <h1>About KINSTON</h1>
       <p class="lede">Engineered for Strength. Built for Safety.</p>
-    </div>
-  </section>
+  </PageHero>
 
   <section class="section">
     <div class="wrap about-intro">

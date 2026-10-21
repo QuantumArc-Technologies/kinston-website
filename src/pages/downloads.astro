@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import Breadcrumb from '../components/Breadcrumb.astro';
+import PageHero from '../components/PageHero.astro';
 import CtaBand from '../components/CtaBand.astro';
 import Icon from '../components/Icon.astro';
 import { downloads } from '../data/downloads';
@@ -12,13 +13,11 @@ const types = ['Catalogue', 'Certificate', 'Manual', 'Guide'] as const;
 const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { month: 'short', year: 'numeric' });
 ---
 <Base title="Downloads: catalogues, certificates and manuals" description="Download the Kinston product catalogue, ISO and DNV certificates, hoist operating manuals and technical guides. Product datasheets are on each product page." path="/downloads" jsonLd={[breadcrumbLd(crumbs)]}>
-  <section class="page-head bg-ink">
-    <div class="wrap">
-      <Breadcrumb items={crumbs} light />
+  <PageHero eyebrow="TECHNICAL RESOURCES" image="/images/page-heroes/downloads-branded.webp">
+<Breadcrumb items={crumbs} light />
       <h1>Downloads</h1>
       <p class="lede">Catalogues, certificates, manuals and guides. Datasheets and CAD files for individual products are on each product page.</p>
-    </div>
-  </section>
+  </PageHero>
   <section class="section">
     <div class="wrap">
       {types.map((t) => {

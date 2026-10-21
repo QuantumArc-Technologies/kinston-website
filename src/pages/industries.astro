@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import Breadcrumb from '../components/Breadcrumb.astro';
+import PageHero from '../components/PageHero.astro';
 import CtaBand from '../components/CtaBand.astro';
 import { sectors } from '../data/site';
 import { allCategoriesWithCounts } from '../data/products';
@@ -20,13 +21,11 @@ const picks: Record<string, string[]> = {
 };
 ---
 <Base title="Industries served" description="Kinston supplies certified lifting equipment to construction, oil and gas, marine, manufacturing, power, mining, logistics and renewables customers in 38 countries." path="/industries" jsonLd={[breadcrumbLd(crumbs)]}>
-  <section class="page-head bg-ink">
-    <div class="wrap">
-      <Breadcrumb items={crumbs} light />
+  <PageHero eyebrow="BUILT FOR YOUR WORLD" image="/images/page-heroes/industries.webp">
+<Breadcrumb items={crumbs} light />
       <h1>Industries</h1>
       <p class="lede">The same forged hook lifts precast panels on a Tuesday and a subsea manifold on a Friday. What changes is the certification, the finish and the inspection regime. We supply for all of them.</p>
-    </div>
-  </section>
+  </PageHero>
   <section class="section">
     <div class="wrap">
       <ul class="sectors">

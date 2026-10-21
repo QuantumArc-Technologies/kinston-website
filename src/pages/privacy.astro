@@ -1,11 +1,14 @@
 ---
 import Base from '../layouts/Base.astro';
 import Breadcrumb from '../components/Breadcrumb.astro';
+import PageHero from '../components/PageHero.astro';
 import { site } from '../data/site';
 const crumbs = [{ name: 'Home', href: '/' }, { name: 'Privacy policy', href: '/privacy' }];
 ---
 <Base title="Privacy policy" description="How Kinston Lifting collects, uses and protects personal data submitted through this website." path="/privacy">
-  <section class="page-head bg-ink"><div class="wrap"><Breadcrumb items={crumbs} light /><h1>Privacy policy</h1><p class="lede">Last updated 1 September 2026.</p></div></section>
+  <PageHero eyebrow="YOUR INFORMATION, PROTECTED">
+<Breadcrumb items={crumbs} light /><h1>Privacy policy</h1><p class="lede">Last updated 1 September 2026.</p>
+  </PageHero>
   <section class="section"><div class="wrap prose legal">
     <h2>Who we are</h2>
     <p>{site.legalName} ("Kinston", "we") operates this website. Our head office is at Plot 14, Industrial Area 12, Sharjah, United Arab Emirates. For data questions email <a href={`mailto:privacy@kinstonlifting.com`}>privacy@kinstonlifting.com</a>.</p>

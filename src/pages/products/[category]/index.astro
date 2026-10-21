@@ -1,6 +1,7 @@
 ---
 import Base from '../../../layouts/Base.astro';
 import Breadcrumb from '../../../components/Breadcrumb.astro';
+import PageHero from '../../../components/PageHero.astro';
 import CategoryRail from '../../../components/CategoryRail.astro';
 import ProductCard from '../../../components/ProductCard.astro';
 import CtaBand from '../../../components/CtaBand.astro';
@@ -22,13 +23,11 @@ const anchor = (g: string) => g.toLowerCase().replace(/[^a-z0-9]+/g, '-');
   path={`/products/${category.slug}`}
   jsonLd={[breadcrumbLd(crumbs)]}
 >
-  <section class="page-head bg-ink">
-    <div class="wrap">
-      <Breadcrumb items={crumbs} light />
+  <PageHero eyebrow="ENGINEERED FOR THE LIFT" image={`/images/categories/branded/${category.slug}.webp`} product>
+<Breadcrumb items={crumbs} light />
       <h1>{category.name}</h1>
       <p class="lede">{category.description}</p>
-    </div>
-  </section>
+  </PageHero>
 
   <section class="section-tight">
     <div class="wrap layout">

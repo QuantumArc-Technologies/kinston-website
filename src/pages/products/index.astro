@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Breadcrumb from '../../components/Breadcrumb.astro';
+import PageHero from '../../components/PageHero.astro';
 import CtaBand from '../../components/CtaBand.astro';
 import ProductCard from '../../components/ProductCard.astro';
 import ProductRail from '../../components/ProductRail.astro';
@@ -15,13 +16,11 @@ const crumbs = [{ name: 'Home', href: '/' }, { name: 'Products', href: '/product
   path="/products"
   jsonLd={[breadcrumbLd(crumbs)]}
 >
-  <section class="page-head bg-ink">
-    <div class="wrap">
-      <Breadcrumb items={crumbs} light />
+  <PageHero eyebrow="THE GRADE 100 RANGE" image="/images/page-heroes/products-branded.webp">
+<Breadcrumb items={crumbs} light />
       <h1>Products</h1>
       <p class="lede">Explore our Grade 100 rigging products. Browse the full range, review specifications and working load limits, and request a quote.</p>
-    </div>
-  </section>
+  </PageHero>
 
   <section class="section-tight">
     <div class="wrap catalogue-layout">

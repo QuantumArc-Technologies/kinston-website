@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Breadcrumb from '../../components/Breadcrumb.astro';
+import PageHero from '../../components/PageHero.astro';
 import CtaBand from '../../components/CtaBand.astro';
 import { articles } from '../../data/news';
 import { breadcrumbLd } from '../../lib/seo';
@@ -10,13 +11,11 @@ const list = [...articles].sort((a, b) => b.date.localeCompare(a.date));
 const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
 ---
 <Base title="News and technical notes" description="Company news, product launches and technical guidance from Kinston Lifting: hook inspection, grade selection, certification updates and events." path="/news" jsonLd={[breadcrumbLd(crumbs)]}>
-  <section class="page-head bg-ink">
-    <div class="wrap">
-      <Breadcrumb items={crumbs} light />
+  <PageHero eyebrow="KNOWLEDGE & INSIGHT" image="/images/page-heroes/about-branded.webp">
+<Breadcrumb items={crumbs} light />
       <h1>News and technical notes</h1>
       <p class="lede">Product approvals, new facilities and practical guidance written by the engineers who test the gear.</p>
-    </div>
-  </section>
+  </PageHero>
   <section class="section">
     <div class="wrap">
       <ul class="list">

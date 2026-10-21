@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Breadcrumb from '../../components/Breadcrumb.astro';
+import PageHero from '../../components/PageHero.astro';
 import CtaBand from '../../components/CtaBand.astro';
 import { articles } from '../../data/news';
 import { breadcrumbLd, articleLd } from '../../lib/seo';
@@ -15,14 +16,12 @@ const more = articles.filter((x) => x.slug !== a.slug).sort((x, y) => y.date.loc
 ---
 <Base title={a.title} description={a.excerpt} path={`/news/${a.slug}`} ogType="article" jsonLd={[breadcrumbLd(crumbs), articleLd(a)]}>
   <article>
-    <section class="page-head bg-ink">
-      <div class="wrap">
-        <Breadcrumb items={crumbs.slice(0, 2)} light />
+    <PageHero eyebrow="KNOWLEDGE & INSIGHT" image={`/images/page-heroes/${a.category === 'Technical' ? 'quality-branded' : a.category === 'Product' ? 'products-branded' : a.category === 'Events' ? 'industries' : 'about-branded'}.webp`}>
+<Breadcrumb items={crumbs.slice(0, 2)} light />
         <p class="meta"><span class="tag tag-orange">{a.category}</span><time datetime={a.date}>{fmtDate(a.date)}</time><span>{a.readingMinutes} min read</span></p>
         <h1>{a.title}</h1>
         <p class="lede">{a.excerpt}</p>
-      </div>
-    </section>
+  </PageHero>
     <section class="section">
       <div class="wrap body">
         <div class="prose">

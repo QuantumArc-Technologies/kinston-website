@@ -1,0 +1,68 @@
+---
+interface Props {
+  eyebrow: string;
+  image?: string;
+  product?: boolean;
+}
+const { eyebrow, image, product = false } = Astro.props;
+---
+<section class:list={['page-hero', { 'page-hero--technical': !image, 'page-hero--product': product, 'page-hero--branded-hook': image?.includes('products-branded'), 'page-hero--catalogue': image?.includes('downloads-branded'), 'page-hero--consultation': image?.includes('contact-branded') }]}>
+  {image && (
+    <picture class="page-hero__visual" aria-hidden="true">
+      {!product && <source media="(max-width: 640px)" srcset={image.replace('.webp', '-mobile.webp')} />}
+      <img src={image} alt="" width="1536" height="1024" loading="eager" fetchpriority="high" decoding="async" />
+    </picture>
+  )}
+  <div class="page-hero__grid" aria-hidden="true"></div>
+  <div class="wrap page-hero__inner">
+    <div class="page-hero__copy">
+      <p class="page-hero__eyebrow">{eyebrow}<span aria-hidden="true"></span></p>
+      <slot />
+    </div>
+    <div class="page-hero__baseline" aria-hidden="true"><span></span><i></i><span>KINSTON / LIFTING &amp; RIGGING</span></div>
+  </div>
+</section>
+<style>
+  .page-hero { position: relative; isolation: isolate; overflow: hidden; background: #0b1728; color: white; }
+  .page-hero__visual { position: absolute; inset: 0 0 0 38%; z-index: -2; }
+  .page-hero__visual img { width: 100%; height: 100%; object-fit: cover; object-position: 70% 48%; }
+  .page-hero--consultation .page-hero__visual img { object-position: 70% 0%; }
+  .page-hero__visual::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, #0b1728 0%, rgba(11,23,40,.65) 23%, rgba(11,23,40,.05) 80%); }
+  .page-hero__grid { position: absolute; inset: 0; z-index: -1; opacity: .12; pointer-events: none; background-image: linear-gradient(#73859b 1px, transparent 1px), linear-gradient(90deg, #73859b 1px, transparent 1px); background-size: 88px 88px; mask-image: linear-gradient(90deg, transparent 25%, black 75%, transparent); }
+  .page-hero__inner { position: relative; padding-top: clamp(32px, 4vw, 56px); padding-bottom: 24px; }
+  .page-hero__copy { width: 58%; max-width: 740px; min-height: 300px; display: flex; flex-direction: column; align-items: flex-start; padding-bottom: 40px; }
+  .page-hero__eyebrow { order: 1; display: flex; align-items: center; gap: 18px; margin-top: 38px; color: #ff8b50; font-size: 12px; font-weight: 600; letter-spacing: .17em; text-transform: uppercase; line-height: 1.5; }
+  .page-hero__eyebrow span { display: block; width: 64px; height: 1px; flex-shrink: 0; background: var(--orange); }
+  .page-hero__copy :global(.crumb) { order: 0; font-size: 13px; }
+  .page-hero__copy :global(h1) { order: 2; color: white; font-size: clamp(2.75rem, 4.6vw, 4.5rem); line-height: 1.04; margin: 15px 0 20px; text-wrap: balance; overflow-wrap: break-word; }
+  .page-hero__copy :global(.lede) { order: 3; color: #d0d8e3; font-size: clamp(1rem, 1.4vw, 1.125rem); max-width: 52ch; text-wrap: pretty; }
+  .page-hero__copy :global(.meta) { order: 1; display: flex; flex-wrap: wrap; gap: 10px 16px; color: #c3ccda; font-size: 13px; margin-top: 18px; }
+  .page-hero__baseline { display: flex; align-items: center; gap: 16px; color: #a4b0c1; font-size: 9px; letter-spacing: .19em; }
+  .page-hero__baseline > span:first-child { width: 28px; height: 3px; background: var(--orange); }
+  .page-hero__baseline i { flex: 1; height: 1px; background: #ffffff26; }
+  .page-hero--technical .page-hero__copy { width: 100%; min-height: 240px; }
+  .page-hero--product .page-hero__visual { inset-inline-start: 50%; background: #0b1728; }
+  .page-hero--product .page-hero__visual img { object-fit: contain; padding: 24px; mask-image: radial-gradient(ellipse 54% 70% at 58% 50%, #000 25%, transparent 75%); }
+  @media (max-width: 900px) and (min-width: 641px) {
+    .page-hero__copy { width: 68%; }
+    .page-hero__visual { left: 32%; }
+    .page-hero__visual::after { background: linear-gradient(90deg, #0b1728, #0b1728b8 50%, #0b172830); }
+  }
+  @media (max-width: 640px) {
+    .page-hero { display: flex; flex-direction: column; }
+    .page-hero__inner { padding-top: 26px; padding-bottom: 24px; }
+    .page-hero__copy, .page-hero--technical .page-hero__copy { width: 100%; min-height: 0; padding-bottom: 26px; }
+    .page-hero__eyebrow { margin-top: 28px; gap: 12px; font-size: 10px; letter-spacing: .14em; }
+    .page-hero__eyebrow span { width: 36px; }
+    .page-hero__copy :global(h1) { font-size: clamp(2.4rem, 10vw, 3.5rem); margin: 14px 0 16px; }
+    .page-hero__copy :global(.lede) { max-width: 100%; font-size: 16px; line-height: 1.6; }
+    .page-hero__visual, .page-hero--product .page-hero__visual { position: relative; inset: auto; order: 2; height: 210px; z-index: 0; }
+    .page-hero__visual img { object-position: 75% 50%; }
+    .page-hero--branded-hook .page-hero__visual img { object-position: 75% 80%; }
+    .page-hero--catalogue .page-hero__visual img { object-position: 75% 0%; }
+    .page-hero--consultation .page-hero__visual img { object-position: 100% 100%; }
+    .page-hero__visual::after { background: linear-gradient(180deg, #0b1728 0%, #0b172800 38%, #0b172830 100%); }
+    .page-hero__baseline { font-size: 8px; letter-spacing: .12em; gap: 10px; }
+    .page-hero--product .page-hero__visual img { padding: 12px 24px 24px; }
+  }
+</style>

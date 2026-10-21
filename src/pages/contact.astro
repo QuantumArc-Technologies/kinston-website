@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import Breadcrumb from '../components/Breadcrumb.astro';
+import PageHero from '../components/PageHero.astro';
 import EnquiryForm from '../components/EnquiryForm.astro';
 import Icon from '../components/Icon.astro';
 import { site, offices } from '../data/site';
@@ -9,13 +10,11 @@ import { breadcrumbLd } from '../lib/seo';
 const crumbs = [{ name: 'Home', href: '/' }, { name: 'Contact', href: '/contact' }];
 ---
 <Base title="Contact Kinston Lifting" description={`Request a quote or talk to an engineer. Call ${site.phone}, email ${site.email}, or visit our offices in Sharjah, Navi Mumbai and Rotterdam.`} path="/contact" jsonLd={[breadcrumbLd(crumbs)]}>
-  <section class="page-head bg-ink">
-    <div class="wrap">
-      <Breadcrumb items={crumbs} light />
+  <PageHero eyebrow="LET’S TALK LIFTING" image="/images/page-heroes/contact-branded.webp">
+<Breadcrumb items={crumbs} light />
       <h1>Contact</h1>
       <p class="lede">Quotes, sling designs, certificates and technical questions. Call, email or send the form and an engineer will reply within one working day.</p>
-    </div>
-  </section>
+  </PageHero>
   <section class="section">
     <div class="wrap two">
       <div class="info">

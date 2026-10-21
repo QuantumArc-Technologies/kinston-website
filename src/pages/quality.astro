@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import Breadcrumb from '../components/Breadcrumb.astro';
+import PageHero from '../components/PageHero.astro';
 import SectionHeading from '../components/SectionHeading.astro';
 import CtaBand from '../components/CtaBand.astro';
 import Icon from '../components/Icon.astro';
@@ -17,13 +18,11 @@ const steps = [
 ];
 ---
 <Base title="Quality and certification" description="Kinston's quality system is certified to ISO 9001, ISO 14001 and ISO 45001. Products are made to EN 1677, EN 818 and ASME B30, with DNV type approval for offshore ranges. Every item is proof tested and traceable." path="/quality" jsonLd={[breadcrumbLd(crumbs)]}>
-  <section class="page-head bg-ink">
-    <div class="wrap">
-      <Breadcrumb items={crumbs} light />
+  <PageHero eyebrow="CONFIDENCE IN EVERY COMPONENT" image="/images/page-heroes/quality-branded.webp">
+<Breadcrumb items={crumbs} light />
       <h1>Quality and certification</h1>
       <p class="lede">A test certificate is only worth something if the process behind it is audited. Ours is, by DNV, every year.</p>
-    </div>
-  </section>
+  </PageHero>
 
   <section class="section">
     <div class="wrap">
