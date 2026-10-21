@@ -1,0 +1,47 @@
+---
+interface Cell { text: string; image?: string; rowspan?: number; colspan?: number }
+interface ParameterTable { rows: Cell[][] }
+interface Props { tables: ParameterTable[]; title: string }
+const { tables, title } = Astro.props;
+---
+{tables.map((table, index) => (
+  <div class="parameter-block">
+    <h3>{index === 0 ? 'Parameters' : 'Spare parts'} <span>Dimensions in mm</span></h3>
+    <div class="table-scroll" tabindex="0" role="region" aria-label={`${title} ${index === 0 ? 'parameters' : 'spare parts'}`}>
+      <table>
+        <caption class="visually-hidden">{title} — {index === 0 ? 'Parameters' : 'Spare parts'}</caption>
+        <tbody>
+          {table.rows.map((row, rowIndex) => (
+            <tr>
+              {row.map((cell) => rowIndex === 0 && !cell.image ? (
+                <th scope="col" rowspan={cell.rowspan} colspan={cell.colspan}>{cell.text}</th>
+              ) : (
+                <td class:list={[{ 'image-cell': Boolean(cell.image) }]} rowspan={cell.rowspan} colspan={cell.colspan}>
+                  {cell.image && <div class="part-image"><img src={cell.image} alt={`${title} spare part diagram`} width="240" height="180" loading="lazy" decoding="async" /></div>}
+                  {cell.text}
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </div>
+))}
+<style>
+  .parameter-block + .parameter-block { margin-top: 18px; }
+  h3 { display: flex; align-items: baseline; flex-wrap: wrap; gap: 12px; margin-bottom: 10px; font-size: 19px; }
+  h3 span { font-family: var(--font-body); font-size: 11px; color: var(--steel); font-weight: 400; }
+  .table-scroll { overflow-x: auto; border: 1px solid var(--zinc); border-radius: 5px; }
+  table { width: 100%; font-size: 12px; border-collapse: collapse; font-variant-numeric: tabular-nums; line-height: 1.4; }
+  th, td { border-right: 1px solid var(--zinc); border-bottom: 1px solid var(--zinc); padding: 8px 10px; text-align: left; }
+  th { background: #f0f3f7; font-weight: 600; color: var(--ink); white-space: normal; min-width: 60px; }
+  td { white-space: nowrap; }
+  tr:nth-child(odd) td { background: #fafbfc; }
+  td:first-child { font-weight: 500; }
+  td:last-child, th:last-child { border-right: 0; }
+  tr:last-child td { border-bottom: 0; }
+  .image-cell { width: 260px; padding: 10px; vertical-align: middle; background: white; }
+  .part-image { width: 240px; height: 180px; margin-inline: auto; overflow: hidden; background: #f8fafc; border-radius: 4px; }
+  .part-image img { display: block; width: 100%; height: 100%; object-fit: contain; }
+</style>

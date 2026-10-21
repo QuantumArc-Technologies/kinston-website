@@ -27,7 +27,6 @@ const initial = variants[0];
               data-alt={`${product.name} — ${variant.name}`}
               data-label={variant.label}
             >
-              <img src={variant.image} alt="" width="84" height="84" loading="lazy" />
               <span><i style={{ background: variant.colour }} aria-hidden="true"></i>{variant.name}</span>
             </button>
           </li>
@@ -53,16 +52,15 @@ const initial = variants[0];
 </script>
 
 <style>
-  .gallery { display: grid; gap: 12px; }
-  .main-art { margin: 0; overflow: hidden; background: #eef0f2; border: 1px solid var(--zinc); border-radius: 12px; aspect-ratio: 1; position: relative; }
+  .gallery { display: grid; gap: 8px; }
+  .main-art { margin: 0; overflow: hidden; background: #eef0f2; border: 1px solid var(--zinc); border-radius: 6px; aspect-ratio: 1; position: relative; }
   .main-art > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
-  figcaption { position: absolute; left: 16px; bottom: 12px; font-size: 10px; color: var(--steel); background: #ffffffe6; padding: 5px 8px; border-radius: 4px; max-width: calc(100% - 32px); }
-  .selected-colour { font-size: var(--t-sm); color: var(--steel); }
+  figcaption { position: absolute; left: 16px; bottom: 12px; font-size: 8px; color: var(--steel); background: #ffffffe6; padding: 5px 8px; border-radius: 4px; max-width: calc(100% - 32px); }
+  .selected-colour { font-size: 11px; color: var(--steel); }
   .finishes { display: flex; gap: 10px; }
-  button { display: grid; gap: 6px; width: 98px; padding: 6px 6px 9px; border: 1px solid var(--zinc); border-radius: 8px; background: var(--white); color: var(--steel); }
+  button { display: inline-flex; align-items: center; min-height: 32px; padding: 6px 12px; border: 1px solid var(--zinc); border-radius: 4px; background: var(--white); color: var(--steel); }
   button[aria-pressed="true"] { border-color: var(--navy); color: var(--navy); box-shadow: 0 0 0 1px var(--navy); }
   button:focus-visible { outline: 2px solid var(--navy); outline-offset: 3px; }
-  button img { width: 84px; height: 84px; object-fit: contain; border-radius: 4px; }
-  button span { display: flex; align-items: center; justify-content: center; gap: 6px; font-size: var(--t-xs); font-weight: 500; }
+  button span { display: flex; align-items: center; justify-content: center; gap: 6px; font-size: 12px; font-weight: 500; }
   button i { width: 10px; height: 10px; border-radius: 50%; border: 1px solid #0002; }
 </style>

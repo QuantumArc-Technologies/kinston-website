@@ -4,13 +4,13 @@ import { productUrl, wllRange } from '../data/products';
 import Icon from './Icon.astro';
 import { fmt } from '../lib/units';
 
-interface Props { product: Product; showCategory?: string }
-const { product, showCategory } = Astro.props;
+interface Props { product: Product; showCategory?: string; compact?: boolean; showColourSwitch?: boolean; showFooter?: boolean }
+const { product, showCategory, compact = false, showColourSwitch = true, showFooter = true } = Astro.props;
 const range = wllRange(product);
 const img = product.image ?? `/images/products/branded/${product.slug}.webp`;
 const variants = product.imageVariants ?? [];
 ---
-<article class="card" data-product-card data-group={product.group} data-grade={product.grade ?? ''}>
+<article class:list={["card", { compact }]} data-product-card data-group={product.group} data-grade={product.grade ?? ''}>
   <div class="art"><span class="collection">KINSTON / {product.code}</span><img data-card-image src={img} alt={`${product.name}${variants[0] ? ` — ${variants[0].name}` : ''}`} loading="lazy" decoding="async" width="768" height="768" /><span class="browse">View product <Icon name="arrow" /></span></div>
   <div class="body">
     <p class="code">{product.code}{product.grade && <span> · {product.grade}</span>}</p>
@@ -21,9 +21,9 @@ const variants = product.imageVariants ?? [];
       </p>
     )}
     {showCategory && <p class="cat">{showCategory}</p>}
-    <div class="card-foot">
+    {showFooter && <div class="card-foot">
       <span>Specifications &amp; details</span>
-      {variants.length > 1 ? (
+      {showColourSwitch && variants.length > 1 ? (
         <div class="colour-switch" role="group" aria-label={`Colour options for ${product.name}`}>
           {variants.map((variant, index) => (
             <button
@@ -42,7 +42,7 @@ const variants = product.imageVariants ?? [];
           <span class="sr-only" data-card-colour aria-live="polite">{variants[0].label} finish selected</span>
         </div>
       ) : <span class="card-arrow"><Icon name="arrow" /></span>}
-    </div>
+    </div>}
   </div>
 </article>
 
@@ -93,6 +93,14 @@ const variants = product.imageVariants ?? [];
   .swatch :global(svg) { width: 13px; height: 13px; color: white; opacity: 0; }
   button[aria-pressed="true"] .swatch :global(svg) { opacity: 1; }
   .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .compact .body { padding: 12px; gap: 6px; }
+  .compact h3 { font-size: 1.05rem; line-height: 1.25; }
+  .compact .code { font-size: 11px; }
+  .compact .wll { font-size: 12px; }
+  .compact .collection { top: 10px; left: 10px; font-size: 8px; padding: 4px 6px; }
+  .compact .card-foot { font-size: 10px; gap: 6px; }
+  .compact .colour-switch button { width: 28px; height: 28px; }
+  .compact .swatch { width: 18px; height: 18px; }
   @media (hover: none) { .browse { display: none; } }
   @media (prefers-reduced-motion: reduce) { .card, .art img, .browse { transition: none; } .card:hover, .card:hover .art img { transform: none; } }
 </style>

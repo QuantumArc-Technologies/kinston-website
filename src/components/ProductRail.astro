@@ -1,0 +1,49 @@
+---
+import { products, productUrl } from '../data/products';
+import { site, offices } from '../data/site';
+import Icon from './Icon.astro';
+interface Props { current?: string }
+const { current } = Astro.props;
+---
+      <aside class="product-rail" aria-label="Grade 100 products">
+        <p class="rail-label">All products</p>
+        <a class="rail-title" href="/products">Grade 100 Rigging <span>{products.length}</span></a>
+        <ul class="product-names">
+          {products.map((product) => (
+            <li><a href={productUrl(product)} aria-current={current === product.slug ? 'page' : undefined}>{product.name}</a></li>
+          ))}
+        </ul>
+        <section class="rail-contact" aria-labelledby="rail-contact-title">
+          <h2 id="rail-contact-title"><a href="/contact">Contact us</a></h2>
+          <p class="contact-company">{site.legalName}</p>
+          <address>
+            <p class="contact-address">{offices[0].address.map((line) => <span>{line}</span>)}</p>
+            <a class="contact-link" href={site.phoneHref}><Icon name="phone" /><span>{site.phone}</span></a>
+            <a class="contact-link" href={`mailto:${site.email}`}><Icon name="mail" /><span>{site.email}</span></a>
+          </address>
+          <a class="contact-more" href="/contact">View contact details <Icon name="arrow" /></a>
+        </section>
+      </aside>
+<style>
+  .product-rail { position: sticky; top: calc(36px + var(--header-h) + 20px); max-height: calc(100dvh - 36px - var(--header-h) - 40px); overflow-y: auto; padding-right: 8px; }
+  .rail-label { font-size: 13px; color: var(--steel); margin-bottom: 12px; }
+  .rail-title { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 0 12px 12px; border-top: 1px solid var(--zinc); border-left: 3px solid var(--orange); font-family: var(--font-display); font-size: 19px; font-weight: 600; color: var(--navy); }
+  .rail-title span { font-family: var(--font-body); font-size: 12px; color: var(--steel); }
+  .product-names { display: grid; gap: 2px; padding: 8px 0 16px 15px; border-bottom: 1px solid var(--zinc); }
+  .product-names a { display: block; padding: 6px 0; color: var(--steel); font-size: 12px; line-height: 1.4; }
+  .product-names a:hover { color: var(--orange); }
+  .product-names a[aria-current="page"] { color: var(--navy); font-weight: 600; background: var(--paper); border-left: 2px solid var(--orange); padding-left: 8px; }
+  .rail-contact { margin-top: 24px; padding: 0 0 12px; }
+  .rail-contact h2 { font-family: var(--font-display); font-size: 19px; color: var(--navy); padding-bottom: 10px; border-bottom: 2px solid var(--orange); margin-bottom: 14px; }
+  .contact-company { font-size: 12px; font-weight: 600; color: var(--ink); margin-bottom: 10px; }
+  .rail-contact address { font-style: normal; font-size: 12px; color: var(--steel); line-height: 1.6; }
+  .contact-address { margin-bottom: 12px; }
+  .contact-address span { display: block; }
+  .contact-link { display: flex; align-items: center; gap: 8px; padding-block: 4px; }
+  .contact-link :global(svg) { width: 14px; height: 14px; flex: none; color: var(--orange); }
+  .contact-link:hover, .contact-more:hover { color: var(--orange); }
+  .contact-more { display: inline-flex; align-items: center; gap: 12px; margin-top: 14px; font-size: 12px; font-weight: 600; color: var(--navy); }
+  .contact-more :global(svg) { width: 14px; height: 14px; }
+  @media (min-width: 1101px) { .product-names a { white-space: nowrap; } }
+  @media (max-width: 760px) { .product-rail { position: static; max-height: none; } .product-names { max-height: 180px; overflow-y: auto; } }
+</style>

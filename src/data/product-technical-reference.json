@@ -1,0 +1,6186 @@
+{
+  "locking-pin-grab-hook-g100": {
+    "source": "https://www.shenli-rigging.com/1-1-locking-pin-grab-hook.html",
+    "features": [
+      "Heat-treated alloy steel forging.",
+      "Individual proof testing at 2.5 × working load limit.",
+      "Sample fatigue testing over 20,000 cycles.",
+      "Batch samples undergo destructive testing.",
+      "Magnetic particle inspection of every component.",
+      "Pins individually checked for consistent hardness.",
+      "Powder-coated surface.",
+      "Adjusts the working length of chain.",
+      "Safety pin retains the chain."
+    ],
+    "notes": [
+      "Minimum ultimate load: 4 × working load limit."
+    ],
+    "sections": [
+      {
+        "title": "SLR1023 - G100 SPECIAL EYE GRAB HOOK WITH SAFETY PIN",
+        "drawing": "/images/products/technical/1-1-locking-pin-grab-hook_02.jpg",
+        "tables": [
+          {
+            "rows": [
+              [
+                {
+                  "text": "Item Code"
+                },
+                {
+                  "text": "Weight (kg)"
+                },
+                {
+                  "text": "Working load limit (t)"
+                },
+                {
+                  "text": "Breaking load (t)"
+                },
+                {
+                  "text": "A±1"
+                },
+                {
+                  "text": "B±0.8"
+                },
+                {
+                  "text": "d±0.5"
+                },
+                {
+                  "text": "D±0.5"
+                },
+                {
+                  "text": "E±0.5"
+                },
+                {
+                  "text": "L±2"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1023-8"
+                },
+                {
+                  "text": "0.5"
+                },
+                {
+                  "text": "2.5"
+                },
+                {
+                  "text": "10"
+                },
+                {
+                  "text": "35"
+                },
+                {
+                  "text": "25"
+                },
+                {
+                  "text": "12"
+                },
+                {
+                  "text": "16.5"
+                },
+                {
+                  "text": "10.5"
+                },
+                {
+                  "text": "110"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1023-10"
+                },
+                {
+                  "text": "1.0"
+                },
+                {
+                  "text": "4"
+                },
+                {
+                  "text": "16"
+                },
+                {
+                  "text": "64"
+                },
+                {
+                  "text": "32"
+                },
+                {
+                  "text": "15"
+                },
+                {
+                  "text": "21"
+                },
+                {
+                  "text": "14"
+                },
+                {
+                  "text": "136.5"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1023-13"
+                },
+                {
+                  "text": "2.2"
+                },
+                {
+                  "text": "6.7"
+                },
+                {
+                  "text": "26.8"
+                },
+                {
+                  "text": "57"
+                },
+                {
+                  "text": "40"
+                },
+                {
+                  "text": "20.5"
+                },
+                {
+                  "text": "27.5"
+                },
+                {
+                  "text": "15.5"
+                },
+                {
+                  "text": "180"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "title": "SLR1024 - G100 SPECIAL CLEVIS GRAB HOOK WITH SAFETY PIN",
+        "drawing": "/images/products/technical/1-1-locking-pin-grab-hook_04.jpg",
+        "tables": [
+          {
+            "rows": [
+              [
+                {
+                  "text": "Item Code"
+                },
+                {
+                  "text": "Weight (kg)"
+                },
+                {
+                  "text": "Working load limit (t)"
+                },
+                {
+                  "text": "Breaking load (t)"
+                },
+                {
+                  "text": "A±1"
+                },
+                {
+                  "text": "B±0.8"
+                },
+                {
+                  "text": "R±0.5"
+                },
+                {
+                  "text": "E2±0.5"
+                },
+                {
+                  "text": "E±0.5"
+                },
+                {
+                  "text": "L±3"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1024-8"
+                },
+                {
+                  "text": "0.5"
+                },
+                {
+                  "text": "2.5"
+                },
+                {
+                  "text": "10"
+                },
+                {
+                  "text": "35"
+                },
+                {
+                  "text": "25"
+                },
+                {
+                  "text": "12"
+                },
+                {
+                  "text": "16.5"
+                },
+                {
+                  "text": "10.5"
+                },
+                {
+                  "text": "110"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1024-10"
+                },
+                {
+                  "text": "1.0"
+                },
+                {
+                  "text": "4"
+                },
+                {
+                  "text": "16"
+                },
+                {
+                  "text": "64"
+                },
+                {
+                  "text": "32"
+                },
+                {
+                  "text": "15"
+                },
+                {
+                  "text": "21"
+                },
+                {
+                  "text": "14"
+                },
+                {
+                  "text": "136.5"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1024-13"
+                },
+                {
+                  "text": "2.2"
+                },
+                {
+                  "text": "6.7"
+                },
+                {
+                  "text": "26.8"
+                },
+                {
+                  "text": "57"
+                },
+                {
+                  "text": "40"
+                },
+                {
+                  "text": "20.5"
+                },
+                {
+                  "text": "27.5"
+                },
+                {
+                  "text": "15.5"
+                },
+                {
+                  "text": "180"
+                }
+              ]
+            ]
+          },
+          {
+            "rows": [
+              [
+                {
+                  "text": "",
+                  "image": "/images/products/technical/1-1-locking-pin-grab-hook_05.jpg",
+                  "rowspan": 4
+                },
+                {
+                  "text": "SIZE"
+                }
+              ],
+              [
+                {
+                  "text": "8-10"
+                }
+              ],
+              [
+                {
+                  "text": "10-10"
+                }
+              ],
+              [
+                {
+                  "text": "13-10"
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "alloy-eye-grab-hook-g100": {
+    "source": "https://www.shenli-rigging.com/1-2-alloy-steel-eye-grab-hook.html",
+    "features": [
+      "Heat-treated alloy steel forging.",
+      "Individual proof testing at 2.5 × working load limit.",
+      "Sample fatigue testing over 20,000 cycles.",
+      "Batch samples undergo destructive testing.",
+      "Magnetic particle inspection of every component.",
+      "Pins individually checked for consistent hardness.",
+      "Powder-coated surface."
+    ],
+    "notes": [],
+    "sections": [
+      {
+        "title": "",
+        "drawing": "/images/products/technical/1-2-alloy-steel-eye-grab-hook_02.jpg",
+        "tables": [
+          {
+            "rows": [
+              [
+                {
+                  "text": "Item code"
+                },
+                {
+                  "text": "Weight (kg)"
+                },
+                {
+                  "text": "Working load limit (t)"
+                },
+                {
+                  "text": "Breaking load (t)"
+                },
+                {
+                  "text": "ф±2"
+                },
+                {
+                  "text": "A±0.5"
+                },
+                {
+                  "text": "B±2"
+                },
+                {
+                  "text": "C±0.5"
+                },
+                {
+                  "text": "L1±2"
+                },
+                {
+                  "text": "L±3"
+                }
+              ],
+              [
+                {
+                  "text": "SLR1051-6-10"
+                },
+                {
+                  "text": "0.3"
+                },
+                {
+                  "text": "1.4"
+                },
+                {
+                  "text": "5.6"
+                },
+                {
+                  "text": "18"
+                },
+                {
+                  "text": "8"
+                },
+                {
+                  "text": "32"
+                },
+                {
+                  "text": "20"
+                },
+                {
+                  "text": "88"
+                },
+                {
+                  "text": "112"
+                }
+              ],
+              [
+                {
+                  "text": "SLR1051-8-10"
+                },
+                {
+                  "text": "0.69"
+                },
+                {
+                  "text": "2.5"
+                },
+                {
+                  "text": "10"
+                },
+                {
+                  "text": "24"
+                },
+                {
+                  "text": "10"
+                },
+                {
+                  "text": "36"
+                },
+                {
+                  "text": "10"
+                },
+                {
+                  "text": "116"
+                },
+                {
+                  "text": "145"
+                }
+              ],
+              [
+                {
+                  "text": "SLR1051-10-10"
+                },
+                {
+                  "text": "1.33"
+                },
+                {
+                  "text": "4"
+                },
+                {
+                  "text": "16"
+                },
+                {
+                  "text": "30"
+                },
+                {
+                  "text": "12.5"
+                },
+                {
+                  "text": "48"
+                },
+                {
+                  "text": "12.5"
+                },
+                {
+                  "text": "145"
+                },
+                {
+                  "text": "184"
+                }
+              ],
+              [
+                {
+                  "text": "SLR1051-13-10"
+                },
+                {
+                  "text": "2.36"
+                },
+                {
+                  "text": "6.7"
+                },
+                {
+                  "text": "26.8"
+                },
+                {
+                  "text": "37"
+                },
+                {
+                  "text": "15.5"
+                },
+                {
+                  "text": "59.5"
+                },
+                {
+                  "text": "15.5"
+                },
+                {
+                  "text": "178"
+                },
+                {
+                  "text": "223"
+                }
+              ],
+              [
+                {
+                  "text": "SLR1051-16-10"
+                },
+                {
+                  "text": "4.5"
+                },
+                {
+                  "text": "10"
+                },
+                {
+                  "text": "40"
+                },
+                {
+                  "text": "45"
+                },
+                {
+                  "text": "19"
+                },
+                {
+                  "text": "70"
+                },
+                {
+                  "text": "19"
+                },
+                {
+                  "text": "216"
+                },
+                {
+                  "text": "273"
+                }
+              ],
+              [
+                {
+                  "text": "SLR1051-20-10"
+                },
+                {
+                  "text": "9.0"
+                },
+                {
+                  "text": "16"
+                },
+                {
+                  "text": "64"
+                },
+                {
+                  "text": "58"
+                },
+                {
+                  "text": "24.5"
+                },
+                {
+                  "text": "85"
+                },
+                {
+                  "text": "24.5"
+                },
+                {
+                  "text": "278"
+                },
+                {
+                  "text": "351"
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "container-lifting-ring": {
+    "source": "https://www.shenli-rigging.com/1-3-container-lifting-ring.html",
+    "features": [
+      "Heat-treated alloy steel forging.",
+      "Individual proof testing at 2.5 × working load limit.",
+      "Sample fatigue testing over 20,000 cycles.",
+      "Batch samples undergo destructive testing.",
+      "Magnetic particle inspection of every component.",
+      "Pins individually checked for consistent hardness.",
+      "Powder-coated surface."
+    ],
+    "notes": [
+      "This container lifting ring is also offered in Grade 80."
+    ],
+    "sections": [
+      {
+        "title": "",
+        "drawing": "/images/products/technical/1-3-container-lifting-ring_02.jpg",
+        "tables": [
+          {
+            "rows": [
+              [
+                {
+                  "text": "Item code"
+                },
+                {
+                  "text": "WEIGHT (KG)"
+                },
+                {
+                  "text": "Working load limit (t)"
+                },
+                {
+                  "text": "Breaking load(t)"
+                },
+                {
+                  "text": "A±1"
+                },
+                {
+                  "text": "B±0.5"
+                },
+                {
+                  "text": "C±1"
+                },
+                {
+                  "text": "D±1"
+                },
+                {
+                  "text": "M±1.5"
+                },
+                {
+                  "text": "N±2"
+                },
+                {
+                  "text": "H±1"
+                },
+                {
+                  "text": "K±0.5"
+                },
+                {
+                  "text": "L±1.5"
+                },
+                {
+                  "text": "G±2"
+                },
+                {
+                  "text": "E±1"
+                }
+              ],
+              [
+                {
+                  "text": "SLR-1033-13"
+                },
+                {
+                  "text": "1.36"
+                },
+                {
+                  "text": "6.7"
+                },
+                {
+                  "text": "26.8"
+                },
+                {
+                  "text": "59"
+                },
+                {
+                  "text": "38"
+                },
+                {
+                  "text": "15"
+                },
+                {
+                  "text": "50"
+                },
+                {
+                  "text": "93"
+                },
+                {
+                  "text": "90"
+                },
+                {
+                  "text": "21"
+                },
+                {
+                  "text": "21.5"
+                },
+                {
+                  "text": "174"
+                },
+                {
+                  "text": "16"
+                },
+                {
+                  "text": "35"
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "omega-link-g100": {
+    "source": "https://www.shenli-rigging.com/1-4-g100-alloy-steel-omega-link.html",
+    "features": [
+      "Heat-treated alloy steel forging.",
+      "Compatible with Grade 100 chain.",
+      "Rated performance 25% above the Grade 80 equivalent.",
+      "Individual proof testing at 2.5 × working load limit.",
+      "Sample fatigue testing over 20,000 cycles.",
+      "Batch samples undergo destructive testing.",
+      "Magnetic particle inspection of every component.",
+      "Pins individually checked for consistent hardness.",
+      "Powder-coated surface.",
+      "Reference finish: RAL 5015 blue."
+    ],
+    "notes": [
+      "Minimum ultimate load: 4 × working load limit."
+    ],
+    "sections": [
+      {
+        "title": "",
+        "drawing": "/images/products/technical/1-4-g100-alloy-steel-omega-link_02.jpg",
+        "tables": [
+          {
+            "rows": [
+              [
+                {
+                  "text": "Item code"
+                },
+                {
+                  "text": "Weight (kg)"
+                },
+                {
+                  "text": "Working load limit (t)"
+                },
+                {
+                  "text": "Breaking load (t)"
+                },
+                {
+                  "text": "A±0.5"
+                },
+                {
+                  "text": "B±2"
+                },
+                {
+                  "text": "E±1.5"
+                },
+                {
+                  "text": "M±2"
+                },
+                {
+                  "text": "L±2"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1027-06"
+                },
+                {
+                  "text": "0.12"
+                },
+                {
+                  "text": "1.4"
+                },
+                {
+                  "text": "5.6"
+                },
+                {
+                  "text": "8.5"
+                },
+                {
+                  "text": "32.5"
+                },
+                {
+                  "text": "20"
+                },
+                {
+                  "text": "44"
+                },
+                {
+                  "text": "55"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1027-08"
+                },
+                {
+                  "text": "0.27"
+                },
+                {
+                  "text": "2.5"
+                },
+                {
+                  "text": "10"
+                },
+                {
+                  "text": "10.5"
+                },
+                {
+                  "text": "42"
+                },
+                {
+                  "text": "24"
+                },
+                {
+                  "text": "60"
+                },
+                {
+                  "text": "73.5"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1027-10"
+                },
+                {
+                  "text": "0.44"
+                },
+                {
+                  "text": "4"
+                },
+                {
+                  "text": "16"
+                },
+                {
+                  "text": "12.5"
+                },
+                {
+                  "text": "48.5"
+                },
+                {
+                  "text": "31"
+                },
+                {
+                  "text": "70"
+                },
+                {
+                  "text": "90"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1027-13"
+                },
+                {
+                  "text": "0.89"
+                },
+                {
+                  "text": "6.7"
+                },
+                {
+                  "text": "26.8"
+                },
+                {
+                  "text": "16"
+                },
+                {
+                  "text": "60"
+                },
+                {
+                  "text": "38.5"
+                },
+                {
+                  "text": "90"
+                },
+                {
+                  "text": "109"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1027-16"
+                },
+                {
+                  "text": "1.69"
+                },
+                {
+                  "text": "10"
+                },
+                {
+                  "text": "40"
+                },
+                {
+                  "text": "19"
+                },
+                {
+                  "text": "75.5"
+                },
+                {
+                  "text": "51"
+                },
+                {
+                  "text": "112"
+                },
+                {
+                  "text": "141.5"
+                }
+              ]
+            ]
+          },
+          {
+            "rows": [
+              [
+                {
+                  "text": "",
+                  "image": "/images/products/technical/1-4-g100-alloy-steel-omega-link_03.jpg",
+                  "rowspan": 7
+                }
+              ],
+              [
+                {
+                  "text": "Item Code"
+                },
+                {
+                  "text": "SIZE"
+                }
+              ],
+              [
+                {
+                  "text": "SP-SLR1027-6"
+                },
+                {
+                  "text": "6-10"
+                }
+              ],
+              [
+                {
+                  "text": "SP-SLR1027-8"
+                },
+                {
+                  "text": "8-10"
+                }
+              ],
+              [
+                {
+                  "text": "SP-SLR1027-10"
+                },
+                {
+                  "text": "10-10"
+                }
+              ],
+              [
+                {
+                  "text": "SP-SLR1027-13"
+                },
+                {
+                  "text": "13-10"
+                }
+              ],
+              [
+                {
+                  "text": "SP-SLR1027-16"
+                },
+                {
+                  "text": "16-10"
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "connecting-link-g100": {
+    "source": "https://www.shenli-rigging.com/1-5-alloy-steel-connecting-link.html",
+    "features": [
+      "Heat-treated alloy steel forging.",
+      "Compatible with Grade 100 chain.",
+      "Rated performance 25% above the Grade 80 equivalent.",
+      "Individual proof testing at 2.5 × working load limit.",
+      "Sample fatigue testing over 20,000 cycles.",
+      "Batch samples undergo destructive testing.",
+      "Magnetic particle inspection of every component.",
+      "Pins individually checked for consistent hardness.",
+      "Powder-coated surface.",
+      "Reference finish: RAL 5015 blue."
+    ],
+    "notes": [
+      "Minimum ultimate load: 4 × working load limit."
+    ],
+    "sections": [
+      {
+        "title": "",
+        "drawing": "/images/products/technical/1-5-alloy-steel-connecting-link_02.jpg",
+        "tables": [
+          {
+            "rows": [
+              [
+                {
+                  "text": "Item code"
+                },
+                {
+                  "text": "Weight (kg)"
+                },
+                {
+                  "text": "Working load limit (t)"
+                },
+                {
+                  "text": "Breaking load (t)"
+                },
+                {
+                  "text": "H±1"
+                },
+                {
+                  "text": "A±1.5"
+                },
+                {
+                  "text": "K±2"
+                },
+                {
+                  "text": "L±2.5"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1001-06"
+                },
+                {
+                  "text": "0.08"
+                },
+                {
+                  "text": "1.4"
+                },
+                {
+                  "text": "5.6"
+                },
+                {
+                  "text": "7.6"
+                },
+                {
+                  "text": "14"
+                },
+                {
+                  "text": "44.5"
+                },
+                {
+                  "text": "60"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1001-08"
+                },
+                {
+                  "text": "0.18"
+                },
+                {
+                  "text": "2.5"
+                },
+                {
+                  "text": "10"
+                },
+                {
+                  "text": "10"
+                },
+                {
+                  "text": "18.5"
+                },
+                {
+                  "text": "61.5"
+                },
+                {
+                  "text": "84.5"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1001-10"
+                },
+                {
+                  "text": "0.34"
+                },
+                {
+                  "text": "4"
+                },
+                {
+                  "text": "16"
+                },
+                {
+                  "text": "12.6"
+                },
+                {
+                  "text": "23"
+                },
+                {
+                  "text": "72"
+                },
+                {
+                  "text": "97.2"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1001-13"
+                },
+                {
+                  "text": "0.68"
+                },
+                {
+                  "text": "6.7"
+                },
+                {
+                  "text": "26.8"
+                },
+                {
+                  "text": "16.8"
+                },
+                {
+                  "text": "27.5"
+                },
+                {
+                  "text": "89"
+                },
+                {
+                  "text": "127"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1001-16"
+                },
+                {
+                  "text": "1.22"
+                },
+                {
+                  "text": "10"
+                },
+                {
+                  "text": "40"
+                },
+                {
+                  "text": "21"
+                },
+                {
+                  "text": "33.5"
+                },
+                {
+                  "text": "103"
+                },
+                {
+                  "text": "145"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1001-20"
+                },
+                {
+                  "text": "2.13"
+                },
+                {
+                  "text": "16"
+                },
+                {
+                  "text": "64"
+                },
+                {
+                  "text": "24.5"
+                },
+                {
+                  "text": "42"
+                },
+                {
+                  "text": "116"
+                },
+                {
+                  "text": "175"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1001-22"
+                },
+                {
+                  "text": "3"
+                },
+                {
+                  "text": "19"
+                },
+                {
+                  "text": "76"
+                },
+                {
+                  "text": "27"
+                },
+                {
+                  "text": "48"
+                },
+                {
+                  "text": "135"
+                },
+                {
+                  "text": "193"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1001-26"
+                },
+                {
+                  "text": "5.15"
+                },
+                {
+                  "text": "26.5"
+                },
+                {
+                  "text": "106"
+                },
+                {
+                  "text": "32"
+                },
+                {
+                  "text": "61"
+                },
+                {
+                  "text": "164"
+                },
+                {
+                  "text": "228"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1001-32"
+                },
+                {
+                  "text": "9.5"
+                },
+                {
+                  "text": "39.3"
+                },
+                {
+                  "text": "157.2"
+                },
+                {
+                  "text": "40"
+                },
+                {
+                  "text": "80"
+                },
+                {
+                  "text": "194"
+                },
+                {
+                  "text": "274"
+                }
+              ]
+            ]
+          },
+          {
+            "rows": [
+              [
+                {
+                  "text": "",
+                  "image": "/images/products/technical/1-5-alloy-steel-connecting-link_03.jpg",
+                  "rowspan": 7
+                }
+              ],
+              [
+                {
+                  "text": "Item Code"
+                },
+                {
+                  "text": "SIZE"
+                },
+                {
+                  "text": "Item Code"
+                },
+                {
+                  "text": "SIZE"
+                }
+              ],
+              [
+                {
+                  "text": "SP-SLR1001-6"
+                },
+                {
+                  "text": "6-10"
+                },
+                {
+                  "text": "SP-SLR1001-20"
+                },
+                {
+                  "text": "20-10"
+                }
+              ],
+              [
+                {
+                  "text": "SP-SLR1001-8"
+                },
+                {
+                  "text": "8-10"
+                },
+                {
+                  "text": "SP-SLR1001-22"
+                },
+                {
+                  "text": "22-10"
+                }
+              ],
+              [
+                {
+                  "text": "SP-SLR1001-10"
+                },
+                {
+                  "text": "10-10"
+                },
+                {
+                  "text": "SP-SLR1001-26"
+                },
+                {
+                  "text": "26-10"
+                }
+              ],
+              [
+                {
+                  "text": "SP-SLR1001-13"
+                },
+                {
+                  "text": "13-10"
+                },
+                {
+                  "text": "SP-SLR1001-32"
+                },
+                {
+                  "text": "32-10"
+                }
+              ],
+              [
+                {
+                  "text": "SP-SLR1001-16"
+                },
+                {
+                  "text": "16-10"
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": ""
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "alloy-swivel-self-locking-hook-g100": {
+    "source": "https://www.shenli-rigging.com/1-6-alloy-swivel-self-locking-hook.html",
+    "features": [
+      "Heat-treated alloy steel forging.",
+      "Compatible with Grade 100 chain.",
+      "Rated performance 25% above the Grade 80 equivalent.",
+      "Individual proof testing at 2.5 × working load limit.",
+      "Sample fatigue testing over 20,000 cycles.",
+      "Batch samples undergo destructive testing.",
+      "Magnetic particle inspection of every component.",
+      "Powder-coated surface.",
+      "Reference finish: RAL 5015 blue.",
+      "Self-locking mechanism closes as the load is lifted."
+    ],
+    "notes": [
+      "Minimum ultimate load: 4 × working load limit."
+    ],
+    "sections": [
+      {
+        "title": "",
+        "drawing": "/images/products/technical/1-6-alloy-swivel-self-locking-hook_02.jpg",
+        "tables": [
+          {
+            "rows": [
+              [
+                {
+                  "text": "Item code"
+                },
+                {
+                  "text": "Weight (kg)"
+                },
+                {
+                  "text": "Working load limit (t)"
+                },
+                {
+                  "text": "Breaking load (t)"
+                },
+                {
+                  "text": "B±1 (mm)"
+                },
+                {
+                  "text": "C±1 (mm)"
+                },
+                {
+                  "text": "D±0.5 (mm)"
+                },
+                {
+                  "text": "E±1 (mm)"
+                },
+                {
+                  "text": "H±1 (mm)"
+                },
+                {
+                  "text": "M±2 (mm)"
+                },
+                {
+                  "text": "L±3 (mm)"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1007-06"
+                },
+                {
+                  "text": "0.6"
+                },
+                {
+                  "text": "1.4"
+                },
+                {
+                  "text": "5.6"
+                },
+                {
+                  "text": "32.5"
+                },
+                {
+                  "text": "23"
+                },
+                {
+                  "text": "11.5"
+                },
+                {
+                  "text": "28"
+                },
+                {
+                  "text": "20"
+                },
+                {
+                  "text": "70"
+                },
+                {
+                  "text": "184"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1007-08"
+                },
+                {
+                  "text": "1.1"
+                },
+                {
+                  "text": "2.5"
+                },
+                {
+                  "text": "10"
+                },
+                {
+                  "text": "36"
+                },
+                {
+                  "text": "28"
+                },
+                {
+                  "text": "13"
+                },
+                {
+                  "text": "35.5"
+                },
+                {
+                  "text": "26"
+                },
+                {
+                  "text": "90"
+                },
+                {
+                  "text": "229"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1007-10"
+                },
+                {
+                  "text": "2"
+                },
+                {
+                  "text": "4"
+                },
+                {
+                  "text": "16"
+                },
+                {
+                  "text": "42"
+                },
+                {
+                  "text": "35"
+                },
+                {
+                  "text": "15.5"
+                },
+                {
+                  "text": "45"
+                },
+                {
+                  "text": "30"
+                },
+                {
+                  "text": "108"
+                },
+                {
+                  "text": "269"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1007-13"
+                },
+                {
+                  "text": "4"
+                },
+                {
+                  "text": "6.7"
+                },
+                {
+                  "text": "26.8"
+                },
+                {
+                  "text": "50"
+                },
+                {
+                  "text": "40"
+                },
+                {
+                  "text": "17"
+                },
+                {
+                  "text": "53.5"
+                },
+                {
+                  "text": "40.5"
+                },
+                {
+                  "text": "138.5"
+                },
+                {
+                  "text": "330"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1007-16"
+                },
+                {
+                  "text": "6.8"
+                },
+                {
+                  "text": "10"
+                },
+                {
+                  "text": "40"
+                },
+                {
+                  "text": "61"
+                },
+                {
+                  "text": "56"
+                },
+                {
+                  "text": "21.5"
+                },
+                {
+                  "text": "62"
+                },
+                {
+                  "text": "50.5"
+                },
+                {
+                  "text": "170.5"
+                },
+                {
+                  "text": "413"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1007-20"
+                },
+                {
+                  "text": "12.5"
+                },
+                {
+                  "text": "16"
+                },
+                {
+                  "text": "64"
+                },
+                {
+                  "text": "72"
+                },
+                {
+                  "text": "62"
+                },
+                {
+                  "text": "26"
+                },
+                {
+                  "text": "76.5"
+                },
+                {
+                  "text": "62"
+                },
+                {
+                  "text": "192.5"
+                },
+                {
+                  "text": "463"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1007-22"
+                },
+                {
+                  "text": "17.1"
+                },
+                {
+                  "text": "19"
+                },
+                {
+                  "text": "76"
+                },
+                {
+                  "text": "97"
+                },
+                {
+                  "text": "94"
+                },
+                {
+                  "text": "33"
+                },
+                {
+                  "text": "80"
+                },
+                {
+                  "text": "66"
+                },
+                {
+                  "text": "205"
+                },
+                {
+                  "text": "572"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1007-26"
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": ""
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1007-32"
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": "​"
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": ""
+                }
+              ]
+            ]
+          },
+          {
+            "rows": [
+              [
+                {
+                  "text": "",
+                  "image": "/images/products/technical/1-6-alloy-swivel-self-locking-hook_03.jpg",
+                  "rowspan": 7
+                }
+              ],
+              [
+                {
+                  "text": "Item Code"
+                },
+                {
+                  "text": "SIZE"
+                },
+                {
+                  "text": "Item Code"
+                }
+              ],
+              [
+                {
+                  "text": "SP-SLR1005/6/7-6"
+                },
+                {
+                  "text": "6-10"
+                },
+                {
+                  "text": "SP-SLR1005/6/7-20"
+                }
+              ],
+              [
+                {
+                  "text": "SP-SLR1005/6/7-8"
+                },
+                {
+                  "text": "8-10"
+                },
+                {
+                  "text": "SP-SLR1005/6/7-22"
+                }
+              ],
+              [
+                {
+                  "text": "SP-SLR1005/6/7-10"
+                },
+                {
+                  "text": "10-10"
+                },
+                {
+                  "text": ""
+                }
+              ],
+              [
+                {
+                  "text": "SP-SLR1005/6/7-13"
+                },
+                {
+                  "text": "13-10"
+                },
+                {
+                  "text": ""
+                }
+              ],
+              [
+                {
+                  "text": "SP-SLR1005/6/7-16"
+                },
+                {
+                  "text": "16-10"
+                },
+                {
+                  "text": ""
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "eye-shortening-grab-hook-g100": {
+    "source": "https://www.shenli-rigging.com/1-7-alloy-eye-shortening-grab-hook.html",
+    "features": [
+      "Heat-treated alloy steel forging.",
+      "Compatible with Grade 100 chain.",
+      "Rated performance 25% above the Grade 80 equivalent.",
+      "Individual proof testing at 2.5 × working load limit.",
+      "Sample fatigue testing over 20,000 cycles.",
+      "Batch samples undergo destructive testing.",
+      "Magnetic particle inspection of every component.",
+      "Pins individually checked for consistent hardness.",
+      "Powder-coated surface.",
+      "Reference finish: RAL 5015 blue."
+    ],
+    "notes": [],
+    "sections": [
+      {
+        "title": "",
+        "drawing": "/images/products/technical/1-7-alloy-eye-shortening-grab-hook_02.jpg",
+        "tables": [
+          {
+            "rows": [
+              [
+                {
+                  "text": "Item code"
+                },
+                {
+                  "text": "Weight (kg)"
+                },
+                {
+                  "text": "Working load limit (t)"
+                },
+                {
+                  "text": "Breaking load(t)"
+                },
+                {
+                  "text": "E±1"
+                },
+                {
+                  "text": "B±1"
+                },
+                {
+                  "text": "D±1.5"
+                },
+                {
+                  "text": "M±2"
+                },
+                {
+                  "text": "L±3"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1008-06"
+                },
+                {
+                  "text": "0.2"
+                },
+                {
+                  "text": "1.4"
+                },
+                {
+                  "text": "5.6"
+                },
+                {
+                  "text": "8"
+                },
+                {
+                  "text": "14.5"
+                },
+                {
+                  "text": "30.5"
+                },
+                {
+                  "text": "43.5"
+                },
+                {
+                  "text": "71"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1008-08"
+                },
+                {
+                  "text": "0.28"
+                },
+                {
+                  "text": "2.5"
+                },
+                {
+                  "text": "10"
+                },
+                {
+                  "text": "10.8"
+                },
+                {
+                  "text": "18"
+                },
+                {
+                  "text": "37"
+                },
+                {
+                  "text": "53"
+                },
+                {
+                  "text": "91.5"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1008-10"
+                },
+                {
+                  "text": "0.72"
+                },
+                {
+                  "text": "4"
+                },
+                {
+                  "text": "16"
+                },
+                {
+                  "text": "13.5"
+                },
+                {
+                  "text": "22.5"
+                },
+                {
+                  "text": "48.5"
+                },
+                {
+                  "text": "72"
+                },
+                {
+                  "text": "127.5"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1008-13"
+                },
+                {
+                  "text": "1.6"
+                },
+                {
+                  "text": "6.7"
+                },
+                {
+                  "text": "26.8"
+                },
+                {
+                  "text": "16.5"
+                },
+                {
+                  "text": "28"
+                },
+                {
+                  "text": "59"
+                },
+                {
+                  "text": "96"
+                },
+                {
+                  "text": "163"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1008-16"
+                },
+                {
+                  "text": "2.45"
+                },
+                {
+                  "text": "10"
+                },
+                {
+                  "text": "40"
+                },
+                {
+                  "text": "19.2"
+                },
+                {
+                  "text": "36"
+                },
+                {
+                  "text": "74"
+                },
+                {
+                  "text": "112.5"
+                },
+                {
+                  "text": "183"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1008-20"
+                },
+                {
+                  "text": "4.72"
+                },
+                {
+                  "text": "16"
+                },
+                {
+                  "text": "64"
+                },
+                {
+                  "text": "24"
+                },
+                {
+                  "text": "43.5"
+                },
+                {
+                  "text": "89.5"
+                },
+                {
+                  "text": "143"
+                },
+                {
+                  "text": "227"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1008-22"
+                },
+                {
+                  "text": "8.2"
+                },
+                {
+                  "text": "19"
+                },
+                {
+                  "text": "76"
+                },
+                {
+                  "text": "27"
+                },
+                {
+                  "text": "48.5"
+                },
+                {
+                  "text": "100.5"
+                },
+                {
+                  "text": "160.5"
+                },
+                {
+                  "text": "260.5"
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "alloy-eye-sling-hook-with-latch-g100": {
+    "source": "https://www.shenli-rigging.com/1-8-alloy-steel-eye-sling-hook.html",
+    "features": [
+      "Heat-treated alloy steel forging.",
+      "Compatible with Grade 100 chain.",
+      "Rated performance 25% above the Grade 80 equivalent.",
+      "Individual proof testing at 2.5 × working load limit.",
+      "Sample fatigue testing over 20,000 cycles.",
+      "Batch samples undergo destructive testing.",
+      "Magnetic particle inspection of every component.",
+      "Powder-coated surface.",
+      "Reference finish: RAL 5015 blue.",
+      "Replaceable cast latch.",
+      "Flattened eye section accommodates the SLR1027 omega link."
+    ],
+    "notes": [
+      "Minimum ultimate load: 4 × working load limit."
+    ],
+    "sections": [
+      {
+        "title": "",
+        "drawing": "/images/products/technical/1-8-alloy-steel-eye-sling-hook_02.jpg",
+        "tables": [
+          {
+            "rows": [
+              [
+                {
+                  "text": "Item code"
+                },
+                {
+                  "text": "Weight (kg)"
+                },
+                {
+                  "text": "Working load limit (t)"
+                },
+                {
+                  "text": "Breaking load (t)"
+                },
+                {
+                  "text": "D±1"
+                },
+                {
+                  "text": "E±2"
+                },
+                {
+                  "text": "H±1"
+                },
+                {
+                  "text": "M±1"
+                },
+                {
+                  "text": "L±2.5"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1003-06"
+                },
+                {
+                  "text": "0.32"
+                },
+                {
+                  "text": "1.4"
+                },
+                {
+                  "text": "5.6"
+                },
+                {
+                  "text": "10"
+                },
+                {
+                  "text": "18.5"
+                },
+                {
+                  "text": "21"
+                },
+                {
+                  "text": "20.5"
+                },
+                {
+                  "text": "111"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1003-08"
+                },
+                {
+                  "text": "0.6"
+                },
+                {
+                  "text": "2.5"
+                },
+                {
+                  "text": "10"
+                },
+                {
+                  "text": "11"
+                },
+                {
+                  "text": "25"
+                },
+                {
+                  "text": "27.5"
+                },
+                {
+                  "text": "25"
+                },
+                {
+                  "text": "137.5"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1003-10"
+                },
+                {
+                  "text": "1.2"
+                },
+                {
+                  "text": "4"
+                },
+                {
+                  "text": "16"
+                },
+                {
+                  "text": "16"
+                },
+                {
+                  "text": "28"
+                },
+                {
+                  "text": "33"
+                },
+                {
+                  "text": "34"
+                },
+                {
+                  "text": "171.5"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1003-13"
+                },
+                {
+                  "text": "2.2"
+                },
+                {
+                  "text": "6.7"
+                },
+                {
+                  "text": "26.8"
+                },
+                {
+                  "text": "19"
+                },
+                {
+                  "text": "38"
+                },
+                {
+                  "text": "43.5"
+                },
+                {
+                  "text": "43"
+                },
+                {
+                  "text": "219"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1003-16"
+                },
+                {
+                  "text": "3.5"
+                },
+                {
+                  "text": "10"
+                },
+                {
+                  "text": "40"
+                },
+                {
+                  "text": "24.5"
+                },
+                {
+                  "text": "44"
+                },
+                {
+                  "text": "50"
+                },
+                {
+                  "text": "50"
+                },
+                {
+                  "text": "260"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1003-20"
+                },
+                {
+                  "text": "7.15"
+                },
+                {
+                  "text": "16"
+                },
+                {
+                  "text": "64"
+                },
+                {
+                  "text": "27"
+                },
+                {
+                  "text": "52"
+                },
+                {
+                  "text": "56"
+                },
+                {
+                  "text": "55"
+                },
+                {
+                  "text": "298"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1003-22"
+                },
+                {
+                  "text": "11.5"
+                },
+                {
+                  "text": "19"
+                },
+                {
+                  "text": "76"
+                },
+                {
+                  "text": "29"
+                },
+                {
+                  "text": "66"
+                },
+                {
+                  "text": "62"
+                },
+                {
+                  "text": "60"
+                },
+                {
+                  "text": "330"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1003-26"
+                },
+                {
+                  "text": "12.2"
+                },
+                {
+                  "text": "26.5"
+                },
+                {
+                  "text": "106"
+                },
+                {
+                  "text": "35"
+                },
+                {
+                  "text": "73"
+                },
+                {
+                  "text": "75"
+                },
+                {
+                  "text": "70"
+                },
+                {
+                  "text": "376"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1003-32"
+                },
+                {
+                  "text": "17.5"
+                },
+                {
+                  "text": "39.3"
+                },
+                {
+                  "text": "157.2"
+                },
+                {
+                  "text": "39"
+                },
+                {
+                  "text": "87"
+                },
+                {
+                  "text": "89"
+                },
+                {
+                  "text": "81.5"
+                },
+                {
+                  "text": "458"
+                }
+              ]
+            ]
+          },
+          {
+            "rows": [
+              [
+                {
+                  "text": "",
+                  "image": "/images/products/technical/1-8-alloy-steel-eye-sling-hook_03.jpg",
+                  "rowspan": 6
+                },
+                {
+                  "text": "Item code"
+                },
+                {
+                  "text": "Size"
+                },
+                {
+                  "text": "Item code"
+                },
+                {
+                  "text": "Size"
+                }
+              ],
+              [
+                {
+                  "text": "SP-SLR1003/4-6"
+                },
+                {
+                  "text": "6-10"
+                },
+                {
+                  "text": "SP-SLR1003/4-20"
+                },
+                {
+                  "text": "20-10"
+                }
+              ],
+              [
+                {
+                  "text": "SP-SLR1003/4-8"
+                },
+                {
+                  "text": "8-10"
+                },
+                {
+                  "text": "SP-SLR1003/4-22"
+                },
+                {
+                  "text": "22-10"
+                }
+              ],
+              [
+                {
+                  "text": "SP-SLR1003/4-10"
+                },
+                {
+                  "text": "10-10"
+                },
+                {
+                  "text": "SP-SLR1003/4-26"
+                },
+                {
+                  "text": "26-10"
+                }
+              ],
+              [
+                {
+                  "text": "SP-SLR1003/4-13"
+                },
+                {
+                  "text": "13-10"
+                },
+                {
+                  "text": "SP-SLR1003/4-32"
+                },
+                {
+                  "text": "32-10"
+                }
+              ],
+              [
+                {
+                  "text": "SP-SLR1003/4-16"
+                },
+                {
+                  "text": "16-10"
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": ""
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "alloy-eye-self-locking-hook-g100": {
+    "source": "https://www.shenli-rigging.com/1-9-alloy-steel-self-locking-eye-hook.html",
+    "features": [
+      "Heat-treated alloy steel forging.",
+      "Compatible with Grade 100 chain.",
+      "Rated performance 25% above the Grade 80 equivalent.",
+      "Individual proof testing at 2.5 × working load limit.",
+      "Sample fatigue testing over 20,000 cycles.",
+      "Batch samples undergo destructive testing.",
+      "Magnetic particle inspection of every component.",
+      "Pins individually checked for consistent hardness.",
+      "Powder-coated surface.",
+      "Reference finish: RAL 5015 blue.",
+      "Self-locking mechanism closes as the load is lifted."
+    ],
+    "notes": [],
+    "sections": [
+      {
+        "title": "",
+        "drawing": "/images/products/technical/1-9-alloy-steel-self-locking-eye-hook_02.jpg",
+        "tables": [
+          {
+            "rows": [
+              [
+                {
+                  "text": "Item code"
+                },
+                {
+                  "text": "Weight (kg)"
+                },
+                {
+                  "text": "Working load limit (t)"
+                },
+                {
+                  "text": "Breaking load (t)"
+                },
+                {
+                  "text": "A"
+                },
+                {
+                  "text": "D±1"
+                },
+                {
+                  "text": "E±1"
+                },
+                {
+                  "text": "H±1"
+                },
+                {
+                  "text": "R±2"
+                },
+                {
+                  "text": "M±2"
+                },
+                {
+                  "text": "L±3"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1005-06"
+                },
+                {
+                  "text": "0.5"
+                },
+                {
+                  "text": "1.4"
+                },
+                {
+                  "text": "5.6"
+                },
+                {
+                  "text": "21"
+                },
+                {
+                  "text": "43"
+                },
+                {
+                  "text": "28"
+                },
+                {
+                  "text": "20"
+                },
+                {
+                  "text": "110"
+                },
+                {
+                  "text": "70"
+                },
+                {
+                  "text": "141"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1005-08"
+                },
+                {
+                  "text": "0.9"
+                },
+                {
+                  "text": "2.5"
+                },
+                {
+                  "text": "10"
+                },
+                {
+                  "text": "27"
+                },
+                {
+                  "text": "51"
+                },
+                {
+                  "text": "35.5"
+                },
+                {
+                  "text": "26"
+                },
+                {
+                  "text": "137"
+                },
+                {
+                  "text": "90"
+                },
+                {
+                  "text": "175"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1005-10"
+                },
+                {
+                  "text": "1.5"
+                },
+                {
+                  "text": "4"
+                },
+                {
+                  "text": "16"
+                },
+                {
+                  "text": "34.5"
+                },
+                {
+                  "text": "64.3"
+                },
+                {
+                  "text": "45"
+                },
+                {
+                  "text": "30"
+                },
+                {
+                  "text": "169"
+                },
+                {
+                  "text": "108"
+                },
+                {
+                  "text": "212.5"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1005-13"
+                },
+                {
+                  "text": "2.7"
+                },
+                {
+                  "text": "6.7"
+                },
+                {
+                  "text": "26.8"
+                },
+                {
+                  "text": "40"
+                },
+                {
+                  "text": "80"
+                },
+                {
+                  "text": "53.5"
+                },
+                {
+                  "text": "40.5"
+                },
+                {
+                  "text": "209"
+                },
+                {
+                  "text": "138.5"
+                },
+                {
+                  "text": "270"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1005-16"
+                },
+                {
+                  "text": "5.7"
+                },
+                {
+                  "text": "10"
+                },
+                {
+                  "text": "40"
+                },
+                {
+                  "text": "50"
+                },
+                {
+                  "text": "104"
+                },
+                {
+                  "text": "62"
+                },
+                {
+                  "text": "50.5"
+                },
+                {
+                  "text": "254"
+                },
+                {
+                  "text": "170.5"
+                },
+                {
+                  "text": "331"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1005-20"
+                },
+                {
+                  "text": "7.9"
+                },
+                {
+                  "text": "16"
+                },
+                {
+                  "text": "64"
+                },
+                {
+                  "text": "60"
+                },
+                {
+                  "text": "120"
+                },
+                {
+                  "text": "76.5"
+                },
+                {
+                  "text": "62"
+                },
+                {
+                  "text": "277"
+                },
+                {
+                  "text": "192.5"
+                },
+                {
+                  "text": "369"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1005-22"
+                },
+                {
+                  "text": "11.2"
+                },
+                {
+                  "text": "19"
+                },
+                {
+                  "text": "76"
+                },
+                {
+                  "text": "70"
+                },
+                {
+                  "text": "134"
+                },
+                {
+                  "text": "80"
+                },
+                {
+                  "text": "66"
+                },
+                {
+                  "text": "319.5"
+                },
+                {
+                  "text": "205"
+                },
+                {
+                  "text": "417"
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "clevis-grab-hook-g100": {
+    "source": "https://www.shenli-rigging.com/1-10-alloy-steel-clevis-grab-hook.html",
+    "features": [
+      "Heat-treated alloy steel forging.",
+      "Compatible with Grade 100 chain.",
+      "Rated performance 25% above the Grade 80 equivalent.",
+      "Individual proof testing at 2.5 × working load limit.",
+      "Sample fatigue testing over 20,000 cycles.",
+      "Batch samples undergo destructive testing.",
+      "Magnetic particle inspection of every component.",
+      "Pins individually checked for consistent hardness.",
+      "Powder-coated surface.",
+      "Reference finish: RAL 5015 blue."
+    ],
+    "notes": [
+      "Minimum ultimate load: 4 × working load limit."
+    ],
+    "sections": [
+      {
+        "title": "",
+        "drawing": "/images/products/technical/1-10-alloy-steel-clevis-grab-hook_02.jpg",
+        "tables": [
+          {
+            "rows": [
+              [
+                {
+                  "text": "Item code"
+                },
+                {
+                  "text": "Weight (kg)"
+                },
+                {
+                  "text": "Working load limit (t)"
+                },
+                {
+                  "text": "Breaking load (t)"
+                },
+                {
+                  "text": "A±0.5"
+                },
+                {
+                  "text": "B±1.5"
+                },
+                {
+                  "text": "E±1"
+                },
+                {
+                  "text": "M±2"
+                },
+                {
+                  "text": "L±2"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1009-06"
+                },
+                {
+                  "text": "0.22"
+                },
+                {
+                  "text": "1.4"
+                },
+                {
+                  "text": "5.6"
+                },
+                {
+                  "text": "7.5"
+                },
+                {
+                  "text": "32"
+                },
+                {
+                  "text": "8"
+                },
+                {
+                  "text": "43.5"
+                },
+                {
+                  "text": "75"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1009-08"
+                },
+                {
+                  "text": "0.34"
+                },
+                {
+                  "text": "2.5"
+                },
+                {
+                  "text": "10"
+                },
+                {
+                  "text": "9.5"
+                },
+                {
+                  "text": "36"
+                },
+                {
+                  "text": "10.8"
+                },
+                {
+                  "text": "53"
+                },
+                {
+                  "text": "91.5"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1009-10"
+                },
+                {
+                  "text": "0.82"
+                },
+                {
+                  "text": "4"
+                },
+                {
+                  "text": "16"
+                },
+                {
+                  "text": "12"
+                },
+                {
+                  "text": "46"
+                },
+                {
+                  "text": "13.5"
+                },
+                {
+                  "text": "72"
+                },
+                {
+                  "text": "126"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1009-13"
+                },
+                {
+                  "text": "1.75"
+                },
+                {
+                  "text": "6.7"
+                },
+                {
+                  "text": "26.8"
+                },
+                {
+                  "text": "15"
+                },
+                {
+                  "text": "59"
+                },
+                {
+                  "text": "16.5"
+                },
+                {
+                  "text": "96"
+                },
+                {
+                  "text": "163.5"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1009-16"
+                },
+                {
+                  "text": "2.88"
+                },
+                {
+                  "text": "10"
+                },
+                {
+                  "text": "40"
+                },
+                {
+                  "text": "17.5"
+                },
+                {
+                  "text": "70"
+                },
+                {
+                  "text": "19.2"
+                },
+                {
+                  "text": "112.5"
+                },
+                {
+                  "text": "183.5"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1009-20"
+                },
+                {
+                  "text": "4.84"
+                },
+                {
+                  "text": "16"
+                },
+                {
+                  "text": "64"
+                },
+                {
+                  "text": "24"
+                },
+                {
+                  "text": "85"
+                },
+                {
+                  "text": "24"
+                },
+                {
+                  "text": "143"
+                },
+                {
+                  "text": "224"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1009-22"
+                },
+                {
+                  "text": "8.3"
+                },
+                {
+                  "text": "19"
+                },
+                {
+                  "text": "76"
+                },
+                {
+                  "text": "27"
+                },
+                {
+                  "text": "100"
+                },
+                {
+                  "text": "27"
+                },
+                {
+                  "text": "160.5"
+                },
+                {
+                  "text": "262"
+                }
+              ]
+            ]
+          },
+          {
+            "rows": [
+              [
+                {
+                  "text": "",
+                  "image": "/images/products/technical/1-10-alloy-steel-clevis-grab-hook_03.jpg",
+                  "rowspan": 5
+                },
+                {
+                  "text": "Item code"
+                },
+                {
+                  "text": "Size"
+                },
+                {
+                  "text": "Item code"
+                },
+                {
+                  "text": "Size"
+                }
+              ],
+              [
+                {
+                  "text": "SP-SLR1009-6"
+                },
+                {
+                  "text": "6-10"
+                },
+                {
+                  "text": "SP-SLR1009-16"
+                },
+                {
+                  "text": "16-10"
+                }
+              ],
+              [
+                {
+                  "text": "SP-SLR1009-8"
+                },
+                {
+                  "text": "8-10"
+                },
+                {
+                  "text": "SP-SLR1009-20"
+                },
+                {
+                  "text": "20-10"
+                }
+              ],
+              [
+                {
+                  "text": "SP-SLR1009-10"
+                },
+                {
+                  "text": "10-10"
+                },
+                {
+                  "text": "SP-SLR1009-22"
+                },
+                {
+                  "text": "22-10"
+                }
+              ],
+              [
+                {
+                  "text": "SP-SLR1009-13"
+                },
+                {
+                  "text": "13-10"
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": ""
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "alloy-clevis-sling-hook-g100": {
+    "source": "https://www.shenli-rigging.com/1-11-alloy-steel-sling-hook.html",
+    "features": [
+      "Heat-treated alloy steel forging.",
+      "Compatible with Grade 100 chain.",
+      "Rated performance 25% above the Grade 80 equivalent.",
+      "Individual proof testing at 2.5 × working load limit.",
+      "Sample fatigue testing over 20,000 cycles.",
+      "Batch samples undergo destructive testing.",
+      "Magnetic particle inspection of every component.",
+      "Pins individually checked for consistent hardness.",
+      "Powder-coated surface.",
+      "Reference finish: RAL 5015 blue.",
+      "Replaceable cast latch."
+    ],
+    "notes": [
+      "Minimum ultimate load: 4 × working load limit."
+    ],
+    "sections": [
+      {
+        "title": "",
+        "drawing": "/images/products/technical/1-11-alloy-steel-sling-hook_02.jpg",
+        "tables": [
+          {
+            "rows": [
+              [
+                {
+                  "text": "Item code"
+                },
+                {
+                  "text": "Weight (kg)"
+                },
+                {
+                  "text": "Working load limit (t)"
+                },
+                {
+                  "text": "Breaking load (t)"
+                },
+                {
+                  "text": "A±0.5"
+                },
+                {
+                  "text": "B±1"
+                },
+                {
+                  "text": "E±1.5"
+                },
+                {
+                  "text": "H±1"
+                },
+                {
+                  "text": "M±2"
+                },
+                {
+                  "text": "L±2.5"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1004-06"
+                },
+                {
+                  "text": "0.33"
+                },
+                {
+                  "text": "1.4"
+                },
+                {
+                  "text": "5.6"
+                },
+                {
+                  "text": "7.5"
+                },
+                {
+                  "text": "32"
+                },
+                {
+                  "text": "18.5"
+                },
+                {
+                  "text": "21"
+                },
+                {
+                  "text": "68.5"
+                },
+                {
+                  "text": "109"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1004-08"
+                },
+                {
+                  "text": "0.7"
+                },
+                {
+                  "text": "2.5"
+                },
+                {
+                  "text": "10"
+                },
+                {
+                  "text": "9.5"
+                },
+                {
+                  "text": "37"
+                },
+                {
+                  "text": "25"
+                },
+                {
+                  "text": "27.5"
+                },
+                {
+                  "text": "88"
+                },
+                {
+                  "text": "134"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1004-10"
+                },
+                {
+                  "text": "1.3"
+                },
+                {
+                  "text": "4"
+                },
+                {
+                  "text": "16"
+                },
+                {
+                  "text": "12"
+                },
+                {
+                  "text": "48"
+                },
+                {
+                  "text": "28"
+                },
+                {
+                  "text": "33.5"
+                },
+                {
+                  "text": "105.5"
+                },
+                {
+                  "text": "161.5"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1004-13"
+                },
+                {
+                  "text": "2.3"
+                },
+                {
+                  "text": "6.7"
+                },
+                {
+                  "text": "26.8"
+                },
+                {
+                  "text": "15"
+                },
+                {
+                  "text": "59"
+                },
+                {
+                  "text": "38"
+                },
+                {
+                  "text": "42"
+                },
+                {
+                  "text": "134"
+                },
+                {
+                  "text": "203"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1004-16"
+                },
+                {
+                  "text": "3.6"
+                },
+                {
+                  "text": "10"
+                },
+                {
+                  "text": "40"
+                },
+                {
+                  "text": "17.5"
+                },
+                {
+                  "text": "70"
+                },
+                {
+                  "text": "44"
+                },
+                {
+                  "text": "50"
+                },
+                {
+                  "text": "160.5"
+                },
+                {
+                  "text": "248"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1004-20"
+                },
+                {
+                  "text": "7.3"
+                },
+                {
+                  "text": "16"
+                },
+                {
+                  "text": "64"
+                },
+                {
+                  "text": "25"
+                },
+                {
+                  "text": "85"
+                },
+                {
+                  "text": "52"
+                },
+                {
+                  "text": "56"
+                },
+                {
+                  "text": "190.5"
+                },
+                {
+                  "text": "297"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1004-22"
+                },
+                {
+                  "text": "12.1"
+                },
+                {
+                  "text": "19"
+                },
+                {
+                  "text": "76"
+                },
+                {
+                  "text": "27"
+                },
+                {
+                  "text": "100"
+                },
+                {
+                  "text": "66"
+                },
+                {
+                  "text": "62"
+                },
+                {
+                  "text": "214.5"
+                },
+                {
+                  "text": "326"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1004-26"
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": ""
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1004-32"
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": ""
+                }
+              ]
+            ]
+          },
+          {
+            "rows": [
+              [
+                {
+                  "text": "",
+                  "image": "/images/products/technical/1-11-alloy-steel-sling-hook_03.jpg",
+                  "rowspan": 6
+                },
+                {
+                  "text": "Item code"
+                },
+                {
+                  "text": "Size"
+                },
+                {
+                  "text": "Item code"
+                },
+                {
+                  "text": "Size"
+                }
+              ],
+              [
+                {
+                  "text": "SP-SLR1004-6"
+                },
+                {
+                  "text": "6-10"
+                },
+                {
+                  "text": "SP-SLR1004-20"
+                },
+                {
+                  "text": "20-10"
+                }
+              ],
+              [
+                {
+                  "text": "SP-SLR1004-8"
+                },
+                {
+                  "text": "8-10"
+                },
+                {
+                  "text": "SP-SLR1004-22"
+                },
+                {
+                  "text": "22-10"
+                }
+              ],
+              [
+                {
+                  "text": "SP-SLR1004-10"
+                },
+                {
+                  "text": "10-10"
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": ""
+                }
+              ],
+              [
+                {
+                  "text": "SP-SLR1004-13"
+                },
+                {
+                  "text": "13-10"
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": ""
+                }
+              ],
+              [
+                {
+                  "text": "SP-SLR1004-16"
+                },
+                {
+                  "text": "16-10"
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": ""
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "clevis-forestry-hook-g100": {
+    "source": "https://www.shenli-rigging.com/1-12-alloy-steel-clevis-hook.html",
+    "features": [
+      "Heat-treated alloy steel forging.",
+      "Rated performance 25% above the Grade 80 equivalent.",
+      "Batch samples undergo destructive testing.",
+      "Magnetic particle inspection of every component.",
+      "Powder-coated surface.",
+      "Reference finish: RAL 5015 blue."
+    ],
+    "notes": [
+      "Minimum ultimate load: 4 × working load limit.",
+      "For forestry dragging and lashing only. Do not use for lifting."
+    ],
+    "sections": [
+      {
+        "title": "",
+        "drawing": "/images/products/technical/1-12-alloy-steel-clevis-hook_02.jpg",
+        "tables": [
+          {
+            "rows": [
+              [
+                {
+                  "text": "Item Code"
+                },
+                {
+                  "text": "Weight (kg)"
+                },
+                {
+                  "text": "Working load limit (t)"
+                },
+                {
+                  "text": "Breaking load (t)"
+                },
+                {
+                  "text": "A±0.5"
+                },
+                {
+                  "text": "M±0.8"
+                },
+                {
+                  "text": "N±0.5"
+                },
+                {
+                  "text": "E±0.5"
+                },
+                {
+                  "text": "L±0.5"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1021-8"
+                },
+                {
+                  "text": "0.39"
+                },
+                {
+                  "text": "2.5"
+                },
+                {
+                  "text": "10"
+                },
+                {
+                  "text": "9.5"
+                },
+                {
+                  "text": "35"
+                },
+                {
+                  "text": "24"
+                },
+                {
+                  "text": "9.8"
+                },
+                {
+                  "text": "95.5"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1021-13"
+                },
+                {
+                  "text": "1.62"
+                },
+                {
+                  "text": "6.7"
+                },
+                {
+                  "text": "26.8"
+                },
+                {
+                  "text": "16"
+                },
+                {
+                  "text": "59"
+                },
+                {
+                  "text": "49.5"
+                },
+                {
+                  "text": "16"
+                },
+                {
+                  "text": "162"
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "master-link-range-g100": {
+    "source": "https://www.shenli-rigging.com/1-13-alloy-steel-master-link.html",
+    "features": [
+      "Heat-treated alloy steel forging.",
+      "Compatible with Grade 100 chain.",
+      "Rated performance 25% above the Grade 80 equivalent.",
+      "Individual proof testing at 2.5 × working load limit.",
+      "Sample fatigue testing over 20,000 cycles.",
+      "Batch samples undergo destructive testing.",
+      "Magnetic particle inspection of every component.",
+      "Powder-coated surface.",
+      "Reference finish: RAL 5015 blue."
+    ],
+    "notes": [
+      "Minimum ultimate load: 4 × working load limit.",
+      "SLR1011 sizes 13–36: optional flattened section; sizes 45–50: no flattened section.",
+      "Flattened sections for SLR1027 omega links are supplied on request where available.",
+      "SLR1011, SLR1013 and SLR1014 links are forged. SLR1013 has increased internal length; SLR1014 has increased internal length and width.",
+      "SLR1012 and SLR1015 assemblies combine forged main links with welded sub-links; SLR1015 uses larger sub-links. SLR1012 references EN 1677-4."
+    ],
+    "sections": [
+      {
+        "title": "SLR1011 MASTER LINK",
+        "drawing": "/images/products/technical/1-13-alloy-steel-master-link_02.jpg",
+        "tables": [
+          {
+            "rows": [
+              [
+                {
+                  "text": "Item Code",
+                  "rowspan": 2
+                },
+                {
+                  "text": "G100 Chain Diametermm",
+                  "colspan": 2
+                },
+                {
+                  "text": "Weight (kg)",
+                  "rowspan": 2
+                },
+                {
+                  "text": "Working load limit(t)",
+                  "rowspan": 2
+                },
+                {
+                  "text": "Dimension (mm)",
+                  "colspan": 3
+                }
+              ],
+              [
+                {
+                  "text": "1 Leg Sling"
+                },
+                {
+                  "text": "2 Leg Sling"
+                },
+                {
+                  "text": "A"
+                },
+                {
+                  "text": "B"
+                },
+                {
+                  "text": "D"
+                }
+              ],
+              [
+                {
+                  "text": "8-SLR1011-13"
+                },
+                {
+                  "text": "6+7"
+                },
+                {
+                  "text": "6"
+                },
+                {
+                  "text": "0.34"
+                },
+                {
+                  "text": "2.3"
+                },
+                {
+                  "text": "110"
+                },
+                {
+                  "text": "60"
+                },
+                {
+                  "text": "13"
+                }
+              ],
+              [
+                {
+                  "text": "8-SLR1011-16"
+                },
+                {
+                  "text": "8"
+                },
+                {
+                  "text": "7"
+                },
+                {
+                  "text": "0.53"
+                },
+                {
+                  "text": "3.5"
+                },
+                {
+                  "text": "110"
+                },
+                {
+                  "text": "60"
+                },
+                {
+                  "text": "16"
+                }
+              ],
+              [
+                {
+                  "text": "8-SLR1011-18"
+                },
+                {
+                  "text": "10"
+                },
+                {
+                  "text": "8"
+                },
+                {
+                  "text": "0.86"
+                },
+                {
+                  "text": "5"
+                },
+                {
+                  "text": "135"
+                },
+                {
+                  "text": "75"
+                },
+                {
+                  "text": "18"
+                }
+              ],
+              [
+                {
+                  "text": "8-SLR1011-23"
+                },
+                {
+                  "text": "13"
+                },
+                {
+                  "text": "10"
+                },
+                {
+                  "text": "1.6"
+                },
+                {
+                  "text": "7.6"
+                },
+                {
+                  "text": "160"
+                },
+                {
+                  "text": "90"
+                },
+                {
+                  "text": "23"
+                }
+              ],
+              [
+                {
+                  "text": "8-SLR1011-27"
+                },
+                {
+                  "text": "16"
+                },
+                {
+                  "text": "13"
+                },
+                {
+                  "text": "2.46"
+                },
+                {
+                  "text": "10"
+                },
+                {
+                  "text": "180"
+                },
+                {
+                  "text": "100"
+                },
+                {
+                  "text": "27"
+                }
+              ],
+              [
+                {
+                  "text": "8-SLR1011-33"
+                },
+                {
+                  "text": "19"
+                },
+                {
+                  "text": "16"
+                },
+                {
+                  "text": "4.14"
+                },
+                {
+                  "text": "14"
+                },
+                {
+                  "text": "200"
+                },
+                {
+                  "text": "110"
+                },
+                {
+                  "text": "33"
+                }
+              ],
+              [
+                {
+                  "text": "8-SLR1011-36"
+                },
+                {
+                  "text": "22"
+                },
+                {
+                  "text": "19"
+                },
+                {
+                  "text": "6.22"
+                },
+                {
+                  "text": "25.1"
+                },
+                {
+                  "text": "260"
+                },
+                {
+                  "text": "140"
+                },
+                {
+                  "text": "36"
+                }
+              ],
+              [
+                {
+                  "text": "8-SLR1011-45"
+                },
+                {
+                  "text": "26"
+                },
+                {
+                  "text": "22"
+                },
+                {
+                  "text": "12.85"
+                },
+                {
+                  "text": "30.8"
+                },
+                {
+                  "text": "340"
+                },
+                {
+                  "text": "180"
+                },
+                {
+                  "text": "45"
+                }
+              ],
+              [
+                {
+                  "text": "8-SLR1011-50"
+                },
+                {
+                  "text": "32"
+                },
+                {
+                  "text": "26"
+                },
+                {
+                  "text": "16.22"
+                },
+                {
+                  "text": "40"
+                },
+                {
+                  "text": "350"
+                },
+                {
+                  "text": "190"
+                },
+                {
+                  "text": "50"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "title": "SLR1013 MASTER LINK",
+        "drawing": "/images/products/technical/1-13-alloy-steel-master-link_04.jpg",
+        "tables": [
+          {
+            "rows": [
+              [
+                {
+                  "text": "Item Code",
+                  "rowspan": 2
+                },
+                {
+                  "text": "G100 Chain Diametermm",
+                  "colspan": 2
+                },
+                {
+                  "text": "Weight (kg)",
+                  "rowspan": 2
+                },
+                {
+                  "text": "Working load limit(t)",
+                  "rowspan": 2
+                },
+                {
+                  "text": "Dimension (mm)",
+                  "colspan": 3
+                }
+              ],
+              [
+                {
+                  "text": "1 Leg Sling"
+                },
+                {
+                  "text": "2 Leg Sling"
+                },
+                {
+                  "text": "A"
+                },
+                {
+                  "text": "B"
+                },
+                {
+                  "text": "D"
+                }
+              ],
+              [
+                {
+                  "text": "8-SLR1013-86"
+                },
+                {
+                  "text": "6/8"
+                },
+                {
+                  "text": "6"
+                },
+                {
+                  "text": "0.4"
+                },
+                {
+                  "text": "2.5"
+                },
+                {
+                  "text": "120"
+                },
+                {
+                  "text": "70"
+                },
+                {
+                  "text": "14"
+                }
+              ],
+              [
+                {
+                  "text": "8-SLR1013-108"
+                },
+                {
+                  "text": "10"
+                },
+                {
+                  "text": "8"
+                },
+                {
+                  "text": "0.8"
+                },
+                {
+                  "text": "4"
+                },
+                {
+                  "text": "140"
+                },
+                {
+                  "text": "80"
+                },
+                {
+                  "text": "17"
+                }
+              ],
+              [
+                {
+                  "text": "8-SLR1013-1310"
+                },
+                {
+                  "text": "13"
+                },
+                {
+                  "text": "10"
+                },
+                {
+                  "text": "1.5"
+                },
+                {
+                  "text": "7.5"
+                },
+                {
+                  "text": "160"
+                },
+                {
+                  "text": "95"
+                },
+                {
+                  "text": "22"
+                }
+              ],
+              [
+                {
+                  "text": "8-SLR1013-1613"
+                },
+                {
+                  "text": "16"
+                },
+                {
+                  "text": "13"
+                },
+                {
+                  "text": "2.5"
+                },
+                {
+                  "text": "10"
+                },
+                {
+                  "text": "190"
+                },
+                {
+                  "text": "110"
+                },
+                {
+                  "text": "28"
+                }
+              ],
+              [
+                {
+                  "text": "8-SLR1013-2016"
+                },
+                {
+                  "text": "19/20"
+                },
+                {
+                  "text": "16"
+                },
+                {
+                  "text": "5.2"
+                },
+                {
+                  "text": "17"
+                },
+                {
+                  "text": "240"
+                },
+                {
+                  "text": "140"
+                },
+                {
+                  "text": "34"
+                }
+              ],
+              [
+                {
+                  "text": "8-SLR1013-2220"
+                },
+                {
+                  "text": "22/26"
+                },
+                {
+                  "text": "20/22"
+                },
+                {
+                  "text": "7.7"
+                },
+                {
+                  "text": "28"
+                },
+                {
+                  "text": "250"
+                },
+                {
+                  "text": "150"
+                },
+                {
+                  "text": "42"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "title": "SLR1014 G100 ULTRA-LARGE FORGED MASTER LINK",
+        "drawing": "/images/products/technical/1-13-alloy-steel-master-link_06.jpg",
+        "tables": [
+          {
+            "rows": [
+              [
+                {
+                  "text": "Item Code",
+                  "rowspan": 2
+                },
+                {
+                  "text": "G100 Chain Diametermm",
+                  "colspan": 2
+                },
+                {
+                  "text": "Weight (kg)",
+                  "rowspan": 2
+                },
+                {
+                  "text": "Working load limit(t)",
+                  "rowspan": 2
+                },
+                {
+                  "text": "Dimension (mm)",
+                  "colspan": 3
+                }
+              ],
+              [
+                {
+                  "text": "1 Leg Sling"
+                },
+                {
+                  "text": "2 Leg Sling"
+                },
+                {
+                  "text": "A"
+                },
+                {
+                  "text": "B"
+                },
+                {
+                  "text": "D"
+                }
+              ],
+              [
+                {
+                  "text": "8-SLR1014-108"
+                },
+                {
+                  "text": "8/10"
+                },
+                {
+                  "text": "8"
+                },
+                {
+                  "text": "3.7"
+                },
+                {
+                  "text": "4"
+                },
+                {
+                  "text": "340"
+                },
+                {
+                  "text": "180"
+                },
+                {
+                  "text": "25"
+                }
+              ],
+              [
+                {
+                  "text": "8-SLR1014-1310"
+                },
+                {
+                  "text": "13"
+                },
+                {
+                  "text": "10"
+                },
+                {
+                  "text": "4.7"
+                },
+                {
+                  "text": "6.7"
+                },
+                {
+                  "text": "340"
+                },
+                {
+                  "text": "180"
+                },
+                {
+                  "text": "28"
+                }
+              ],
+              [
+                {
+                  "text": "8-SLR1014-1613"
+                },
+                {
+                  "text": "16"
+                },
+                {
+                  "text": "13"
+                },
+                {
+                  "text": "7.1"
+                },
+                {
+                  "text": "10"
+                },
+                {
+                  "text": "340"
+                },
+                {
+                  "text": "180"
+                },
+                {
+                  "text": "34"
+                }
+              ],
+              [
+                {
+                  "text": "8-SLR1014-2016"
+                },
+                {
+                  "text": "20"
+                },
+                {
+                  "text": "16"
+                },
+                {
+                  "text": "8.9"
+                },
+                {
+                  "text": "16"
+                },
+                {
+                  "text": "340"
+                },
+                {
+                  "text": "180"
+                },
+                {
+                  "text": "42"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "title": "SLR1012-G100 MASTER LINK ASSEMBLY",
+        "drawing": "/images/products/technical/1-13-alloy-steel-master-link_08.jpg",
+        "tables": [
+          {
+            "rows": [
+              [
+                {
+                  "text": "Item Code",
+                  "rowspan": 2
+                },
+                {
+                  "text": "G100 Chain Diameter mm"
+                },
+                {
+                  "text": "Weight (kg)",
+                  "rowspan": 2
+                },
+                {
+                  "text": "Working load limit (t)",
+                  "rowspan": 2
+                },
+                {
+                  "text": "Dimension (mm)",
+                  "colspan": 6
+                }
+              ],
+              [
+                {
+                  "text": "For 3/4 Leg Sling"
+                },
+                {
+                  "text": "A"
+                },
+                {
+                  "text": "B"
+                },
+                {
+                  "text": "D"
+                },
+                {
+                  "text": "a"
+                },
+                {
+                  "text": "b"
+                },
+                {
+                  "text": "d"
+                }
+              ],
+              [
+                {
+                  "text": "8-SLR1012-6"
+                },
+                {
+                  "text": "6MM"
+                },
+                {
+                  "text": "1.3"
+                },
+                {
+                  "text": "3"
+                },
+                {
+                  "text": "135"
+                },
+                {
+                  "text": "75"
+                },
+                {
+                  "text": "19"
+                },
+                {
+                  "text": "84"
+                },
+                {
+                  "text": "25"
+                },
+                {
+                  "text": "13"
+                }
+              ],
+              [
+                {
+                  "text": "8-SLR1012-8"
+                },
+                {
+                  "text": "8MM"
+                },
+                {
+                  "text": "2.33"
+                },
+                {
+                  "text": "5.3"
+                },
+                {
+                  "text": "160"
+                },
+                {
+                  "text": "90"
+                },
+                {
+                  "text": "23"
+                },
+                {
+                  "text": "70"
+                },
+                {
+                  "text": "35"
+                },
+                {
+                  "text": "16.5"
+                }
+              ],
+              [
+                {
+                  "text": "8-SLR1012-10"
+                },
+                {
+                  "text": "10MM"
+                },
+                {
+                  "text": "3.7"
+                },
+                {
+                  "text": "8"
+                },
+                {
+                  "text": "180"
+                },
+                {
+                  "text": "100"
+                },
+                {
+                  "text": "27"
+                },
+                {
+                  "text": "85"
+                },
+                {
+                  "text": "40"
+                },
+                {
+                  "text": "19"
+                }
+              ],
+              [
+                {
+                  "text": "8-SLR1012-13"
+                },
+                {
+                  "text": "13MM"
+                },
+                {
+                  "text": "6.5"
+                },
+                {
+                  "text": "14"
+                },
+                {
+                  "text": "200"
+                },
+                {
+                  "text": "110"
+                },
+                {
+                  "text": "33"
+                },
+                {
+                  "text": "115"
+                },
+                {
+                  "text": "50"
+                },
+                {
+                  "text": "23"
+                }
+              ],
+              [
+                {
+                  "text": "8-SLR1012-16"
+                },
+                {
+                  "text": "16MM"
+                },
+                {
+                  "text": "10.1"
+                },
+                {
+                  "text": "21.2"
+                },
+                {
+                  "text": "260"
+                },
+                {
+                  "text": "140"
+                },
+                {
+                  "text": "36"
+                },
+                {
+                  "text": "140"
+                },
+                {
+                  "text": "65"
+                },
+                {
+                  "text": "27"
+                }
+              ],
+              [
+                {
+                  "text": "8-SLR1012-20"
+                },
+                {
+                  "text": "19/20MM"
+                },
+                {
+                  "text": "22.8"
+                },
+                {
+                  "text": "33.6"
+                },
+                {
+                  "text": "350"
+                },
+                {
+                  "text": "190"
+                },
+                {
+                  "text": "50"
+                },
+                {
+                  "text": "150"
+                },
+                {
+                  "text": "70"
+                },
+                {
+                  "text": "33"
+                }
+              ],
+              [
+                {
+                  "text": "8-SLR1012-22"
+                },
+                {
+                  "text": "22MM"
+                },
+                {
+                  "text": "26"
+                },
+                {
+                  "text": "33.9"
+                },
+                {
+                  "text": "350"
+                },
+                {
+                  "text": "190"
+                },
+                {
+                  "text": "50"
+                },
+                {
+                  "text": "180"
+                },
+                {
+                  "text": "100"
+                },
+                {
+                  "text": "36"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "title": "",
+        "drawing": "/images/products/technical/1-13-alloy-steel-master-link_10.jpg",
+        "tables": [
+          {
+            "rows": [
+              [
+                {
+                  "text": "Item Code",
+                  "rowspan": 2
+                },
+                {
+                  "text": "Weight (kg)",
+                  "rowspan": 2
+                },
+                {
+                  "text": "Working load limit (t)",
+                  "rowspan": 2
+                },
+                {
+                  "text": "Breaking load (t)",
+                  "rowspan": 2
+                },
+                {
+                  "text": "Dimension (mm)",
+                  "colspan": 6
+                }
+              ],
+              [
+                {
+                  "text": "A"
+                },
+                {
+                  "text": "B"
+                },
+                {
+                  "text": "D"
+                },
+                {
+                  "text": "a"
+                },
+                {
+                  "text": "b"
+                },
+                {
+                  "text": "d"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1015-06"
+                },
+                {
+                  "text": "1.8"
+                },
+                {
+                  "text": "3.5"
+                },
+                {
+                  "text": "14"
+                },
+                {
+                  "text": "150"
+                },
+                {
+                  "text": "90"
+                },
+                {
+                  "text": "19"
+                },
+                {
+                  "text": "120"
+                },
+                {
+                  "text": "70"
+                },
+                {
+                  "text": "14"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1015-08"
+                },
+                {
+                  "text": "3.0"
+                },
+                {
+                  "text": "5"
+                },
+                {
+                  "text": "20"
+                },
+                {
+                  "text": "160"
+                },
+                {
+                  "text": "95"
+                },
+                {
+                  "text": "22"
+                },
+                {
+                  "text": "140"
+                },
+                {
+                  "text": "80"
+                },
+                {
+                  "text": "17"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1015-10"
+                },
+                {
+                  "text": "6.5"
+                },
+                {
+                  "text": "11.5"
+                },
+                {
+                  "text": "46"
+                },
+                {
+                  "text": "200"
+                },
+                {
+                  "text": "120"
+                },
+                {
+                  "text": "30"
+                },
+                {
+                  "text": "160"
+                },
+                {
+                  "text": "95"
+                },
+                {
+                  "text": "22"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1015-13"
+                },
+                {
+                  "text": "15"
+                },
+                {
+                  "text": "17"
+                },
+                {
+                  "text": "68"
+                },
+                {
+                  "text": "250"
+                },
+                {
+                  "text": "150"
+                },
+                {
+                  "text": "40"
+                },
+                {
+                  "text": "200"
+                },
+                {
+                  "text": "120"
+                },
+                {
+                  "text": "30"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1015-16"
+                },
+                {
+                  "text": "23"
+                },
+                {
+                  "text": "28"
+                },
+                {
+                  "text": "112"
+                },
+                {
+                  "text": "300"
+                },
+                {
+                  "text": "200"
+                },
+                {
+                  "text": "50"
+                },
+                {
+                  "text": "200"
+                },
+                {
+                  "text": "120"
+                },
+                {
+                  "text": "32"
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "alloy-clevis-self-locking-hook-g100": {
+    "source": "https://www.shenli-rigging.com/1-14-alloy-steel-clevis-self-locking-hook.html",
+    "features": [
+      "Heat-treated alloy steel forging.",
+      "Compatible with Grade 100 chain.",
+      "Rated performance 25% above the Grade 80 equivalent.",
+      "Individual proof testing at 2.5 × working load limit.",
+      "Sample fatigue testing over 20,000 cycles.",
+      "Batch samples undergo destructive testing.",
+      "Magnetic particle inspection of every component.",
+      "Pins individually checked for consistent hardness.",
+      "Powder-coated surface.",
+      "Reference finish: RAL 5015 blue.",
+      "Self-locking mechanism closes as the load is lifted."
+    ],
+    "notes": [
+      "Minimum ultimate load: 4 × working load limit."
+    ],
+    "sections": [
+      {
+        "title": "",
+        "drawing": "/images/products/technical/1-14-alloy-steel-clevis-self-locking-hook_02.jpg",
+        "tables": [
+          {
+            "rows": [
+              [
+                {
+                  "text": "Item code"
+                },
+                {
+                  "text": "Weight (kg)"
+                },
+                {
+                  "text": "Working load limit (t)"
+                },
+                {
+                  "text": "Breaking load (t)"
+                },
+                {
+                  "text": "A±0.5"
+                },
+                {
+                  "text": "B±1"
+                },
+                {
+                  "text": "E±1"
+                },
+                {
+                  "text": "H±1"
+                },
+                {
+                  "text": "R±2"
+                },
+                {
+                  "text": "M±2"
+                },
+                {
+                  "text": "L±3"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1006-06"
+                },
+                {
+                  "text": "0.5"
+                },
+                {
+                  "text": "1.4"
+                },
+                {
+                  "text": "5.6"
+                },
+                {
+                  "text": "7.5"
+                },
+                {
+                  "text": "32"
+                },
+                {
+                  "text": "28"
+                },
+                {
+                  "text": "20"
+                },
+                {
+                  "text": "96"
+                },
+                {
+                  "text": "70"
+                },
+                {
+                  "text": "131"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1006-08"
+                },
+                {
+                  "text": "0.9"
+                },
+                {
+                  "text": "2.5"
+                },
+                {
+                  "text": "10"
+                },
+                {
+                  "text": "9.5"
+                },
+                {
+                  "text": "36"
+                },
+                {
+                  "text": "35.5"
+                },
+                {
+                  "text": "26"
+                },
+                {
+                  "text": "123"
+                },
+                {
+                  "text": "90"
+                },
+                {
+                  "text": "166"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1006-10"
+                },
+                {
+                  "text": "1.6"
+                },
+                {
+                  "text": "4"
+                },
+                {
+                  "text": "16"
+                },
+                {
+                  "text": "12"
+                },
+                {
+                  "text": "46"
+                },
+                {
+                  "text": "45"
+                },
+                {
+                  "text": "30"
+                },
+                {
+                  "text": "144"
+                },
+                {
+                  "text": "109"
+                },
+                {
+                  "text": "196.5"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1006-13"
+                },
+                {
+                  "text": "2.9"
+                },
+                {
+                  "text": "6.7"
+                },
+                {
+                  "text": "26.8"
+                },
+                {
+                  "text": "15"
+                },
+                {
+                  "text": "59"
+                },
+                {
+                  "text": "53.5"
+                },
+                {
+                  "text": "40.5"
+                },
+                {
+                  "text": "182"
+                },
+                {
+                  "text": "138.5"
+                },
+                {
+                  "text": "251"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1006-16"
+                },
+                {
+                  "text": "5.8"
+                },
+                {
+                  "text": "10"
+                },
+                {
+                  "text": "40"
+                },
+                {
+                  "text": "17.5"
+                },
+                {
+                  "text": "70"
+                },
+                {
+                  "text": "62"
+                },
+                {
+                  "text": "50.5"
+                },
+                {
+                  "text": "217"
+                },
+                {
+                  "text": "170.5"
+                },
+                {
+                  "text": "303"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1006-20"
+                },
+                {
+                  "text": "8.6"
+                },
+                {
+                  "text": "16"
+                },
+                {
+                  "text": "64"
+                },
+                {
+                  "text": "25"
+                },
+                {
+                  "text": "85"
+                },
+                {
+                  "text": "76.5"
+                },
+                {
+                  "text": "62"
+                },
+                {
+                  "text": "235"
+                },
+                {
+                  "text": "192.5"
+                },
+                {
+                  "text": "337.5"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1006-22"
+                },
+                {
+                  "text": "12.1"
+                },
+                {
+                  "text": "19"
+                },
+                {
+                  "text": "76"
+                },
+                {
+                  "text": "25.5"
+                },
+                {
+                  "text": "98"
+                },
+                {
+                  "text": "80"
+                },
+                {
+                  "text": "66"
+                },
+                {
+                  "text": "276.5"
+                },
+                {
+                  "text": "205"
+                },
+                {
+                  "text": "391"
+                }
+              ]
+            ]
+          },
+          {
+            "rows": [
+              [
+                {
+                  "text": "",
+                  "image": "/images/products/technical/1-14-alloy-steel-clevis-self-locking-hook_03.jpg",
+                  "rowspan": 5
+                },
+                {
+                  "text": "Item Code"
+                },
+                {
+                  "text": "Size"
+                },
+                {
+                  "text": "Item code"
+                },
+                {
+                  "text": "Size"
+                }
+              ],
+              [
+                {
+                  "text": "SP-SLR1006-6"
+                },
+                {
+                  "text": "6-10"
+                },
+                {
+                  "text": "SP-SLR1006-16"
+                },
+                {
+                  "text": "16-10"
+                }
+              ],
+              [
+                {
+                  "text": "SP-SLR1006-8"
+                },
+                {
+                  "text": "8-10"
+                },
+                {
+                  "text": "SP-SLR1006-20"
+                },
+                {
+                  "text": "20-10"
+                }
+              ],
+              [
+                {
+                  "text": "SP-SLR1006-10"
+                },
+                {
+                  "text": "10-10"
+                },
+                {
+                  "text": "SP-SLR1006-22"
+                },
+                {
+                  "text": "22-10"
+                }
+              ],
+              [
+                {
+                  "text": "SP-SLR1006-13"
+                },
+                {
+                  "text": "13-10"
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": ""
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "clevis-self-locking-hook-interlocking-g100": {
+    "source": "https://www.shenli-rigging.com/1-16-g100-clevis-self-locking-hook.html",
+    "features": [
+      "Powder-coated surface.",
+      "Reference finish: RAL 5015 blue."
+    ],
+    "notes": [],
+    "sections": [
+      {
+        "title": "",
+        "drawing": "/images/products/technical/1-16-g100-clevis-self-locking-hook_02.jpg",
+        "tables": [
+          {
+            "rows": [
+              [
+                {
+                  "text": "ITEM NO,"
+                },
+                {
+                  "text": "Weight/kg"
+                },
+                {
+                  "text": "Working Load Limit (t)"
+                },
+                {
+                  "text": "Breaking Load (t)"
+                },
+                {
+                  "text": "A±0.5"
+                },
+                {
+                  "text": "B±1,5"
+                },
+                {
+                  "text": "E±2"
+                },
+                {
+                  "text": "φ±1,5"
+                },
+                {
+                  "text": "H±l"
+                },
+                {
+                  "text": "K±3"
+                },
+                {
+                  "text": "L±3"
+                }
+              ],
+              [
+                {
+                  "text": "8-10"
+                },
+                {
+                  "text": "0.75"
+                },
+                {
+                  "text": "2.5"
+                },
+                {
+                  "text": "10"
+                },
+                {
+                  "text": "9.5"
+                },
+                {
+                  "text": "37.5"
+                },
+                {
+                  "text": "35"
+                },
+                {
+                  "text": "45"
+                },
+                {
+                  "text": "21"
+                },
+                {
+                  "text": "118"
+                },
+                {
+                  "text": "165"
+                }
+              ],
+              [
+                {
+                  "text": "10-10"
+                },
+                {
+                  "text": "1.42"
+                },
+                {
+                  "text": "4"
+                },
+                {
+                  "text": "16"
+                },
+                {
+                  "text": "12.5"
+                },
+                {
+                  "text": "47.5"
+                },
+                {
+                  "text": "46"
+                },
+                {
+                  "text": "56"
+                },
+                {
+                  "text": "30.5"
+                },
+                {
+                  "text": "150"
+                },
+                {
+                  "text": "204"
+                }
+              ],
+              [
+                {
+                  "text": "13-10"
+                },
+                {
+                  "text": "2.56"
+                },
+                {
+                  "text": "6.7"
+                },
+                {
+                  "text": "26.8"
+                },
+                {
+                  "text": "15"
+                },
+                {
+                  "text": "52"
+                },
+                {
+                  "text": "56"
+                },
+                {
+                  "text": "64"
+                },
+                {
+                  "text": "39"
+                },
+                {
+                  "text": "176"
+                },
+                {
+                  "text": "244"
+                }
+              ],
+              [
+                {
+                  "text": "16-10"
+                },
+                {
+                  "text": "4.21"
+                },
+                {
+                  "text": "10"
+                },
+                {
+                  "text": "40"
+                },
+                {
+                  "text": "18.5"
+                },
+                {
+                  "text": "68"
+                },
+                {
+                  "text": "86"
+                },
+                {
+                  "text": "80"
+                },
+                {
+                  "text": "45"
+                },
+                {
+                  "text": "250"
+                },
+                {
+                  "text": "288"
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "swivel-self-locking-hook-interlocking-g100": {
+    "source": "https://www.shenli-rigging.com/1-17-g100-swivel-self-locking-hook.html",
+    "features": [
+      "Powder-coated surface.",
+      "Reference finish: RAL 5015 blue."
+    ],
+    "notes": [],
+    "sections": [
+      {
+        "title": "",
+        "drawing": "/images/products/technical/1-17-g100-swivel-self-locking-hook_02.jpg",
+        "tables": [
+          {
+            "rows": [
+              [
+                {
+                  "text": "Item No"
+                },
+                {
+                  "text": "Weight Kg"
+                },
+                {
+                  "text": "Working Load Limit (t)"
+                },
+                {
+                  "text": "Breaking Load (t)"
+                },
+                {
+                  "text": "A±2"
+                },
+                {
+                  "text": "B±2"
+                },
+                {
+                  "text": "C±1"
+                },
+                {
+                  "text": "D±0.5"
+                },
+                {
+                  "text": "E±0.5"
+                },
+                {
+                  "text": "F±1"
+                },
+                {
+                  "text": "G±l.5"
+                },
+                {
+                  "text": "H+0.5"
+                },
+                {
+                  "text": "K±2"
+                }
+              ],
+              [
+                {
+                  "text": "8-10"
+                },
+                {
+                  "text": "1.03"
+                },
+                {
+                  "text": "2.5"
+                },
+                {
+                  "text": "10"
+                },
+                {
+                  "text": "220"
+                },
+                {
+                  "text": "29"
+                },
+                {
+                  "text": "36"
+                },
+                {
+                  "text": "13"
+                },
+                {
+                  "text": "45"
+                },
+                {
+                  "text": "37.5"
+                },
+                {
+                  "text": "32"
+                },
+                {
+                  "text": "22"
+                },
+                {
+                  "text": "185"
+                }
+              ],
+              [
+                {
+                  "text": "10-10"
+                },
+                {
+                  "text": "1.86"
+                },
+                {
+                  "text": "4"
+                },
+                {
+                  "text": "16"
+                },
+                {
+                  "text": "264"
+                },
+                {
+                  "text": "39"
+                },
+                {
+                  "text": "42"
+                },
+                {
+                  "text": "15.5"
+                },
+                {
+                  "text": "55.5"
+                },
+                {
+                  "text": "47.5"
+                },
+                {
+                  "text": "46"
+                },
+                {
+                  "text": "30"
+                },
+                {
+                  "text": "219"
+                }
+              ],
+              [
+                {
+                  "text": "13-10"
+                },
+                {
+                  "text": "3.34"
+                },
+                {
+                  "text": "6.7"
+                },
+                {
+                  "text": "26.8"
+                },
+                {
+                  "text": "334"
+                },
+                {
+                  "text": "46"
+                },
+                {
+                  "text": "49"
+                },
+                {
+                  "text": "19"
+                },
+                {
+                  "text": "64"
+                },
+                {
+                  "text": "52"
+                },
+                {
+                  "text": "56"
+                },
+                {
+                  "text": "39"
+                },
+                {
+                  "text": "275.5"
+                }
+              ],
+              [
+                {
+                  "text": "16-10"
+                },
+                {
+                  "text": "5.9"
+                },
+                {
+                  "text": "10"
+                },
+                {
+                  "text": "40"
+                },
+                {
+                  "text": "400"
+                },
+                {
+                  "text": "69"
+                },
+                {
+                  "text": "62"
+                },
+                {
+                  "text": "23"
+                },
+                {
+                  "text": "80"
+                },
+                {
+                  "text": "68"
+                },
+                {
+                  "text": "91"
+                },
+                {
+                  "text": "46"
+                },
+                {
+                  "text": "329"
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "eye-self-locking-hook-interlocking-g100": {
+    "source": "https://www.shenli-rigging.com/1-18-g100-eye-self-locking-hook.html",
+    "features": [
+      "Powder-coated surface.",
+      "Reference finish: RAL 5015 blue."
+    ],
+    "notes": [],
+    "sections": [
+      {
+        "title": "",
+        "drawing": "/images/products/technical/1-18-g100-eye-self-locking-hook_02.jpg",
+        "tables": [
+          {
+            "rows": [
+              [
+                {
+                  "text": "Item No"
+                },
+                {
+                  "text": "Weight Kg"
+                },
+                {
+                  "text": "Working Load Limit (t)"
+                },
+                {
+                  "text": "Breaking Load (t)"
+                },
+                {
+                  "text": "B±0,5"
+                },
+                {
+                  "text": "E±1"
+                },
+                {
+                  "text": "φ± 1"
+                },
+                {
+                  "text": "φ'±1"
+                },
+                {
+                  "text": "H±1"
+                },
+                {
+                  "text": "K±2"
+                },
+                {
+                  "text": "L±1"
+                }
+              ],
+              [
+                {
+                  "text": "8-10"
+                },
+                {
+                  "text": "0.81"
+                },
+                {
+                  "text": "2.5"
+                },
+                {
+                  "text": "10"
+                },
+                {
+                  "text": "37.5"
+                },
+                {
+                  "text": "35"
+                },
+                {
+                  "text": "45"
+                },
+                {
+                  "text": "27"
+                },
+                {
+                  "text": "21"
+                },
+                {
+                  "text": "138"
+                },
+                {
+                  "text": "12"
+                }
+              ],
+              [
+                {
+                  "text": "10-10"
+                },
+                {
+                  "text": "1.41"
+                },
+                {
+                  "text": "4"
+                },
+                {
+                  "text": "16"
+                },
+                {
+                  "text": "47.5"
+                },
+                {
+                  "text": "46"
+                },
+                {
+                  "text": "56"
+                },
+                {
+                  "text": "34.5"
+                },
+                {
+                  "text": "30.5"
+                },
+                {
+                  "text": "169"
+                },
+                {
+                  "text": "15"
+                }
+              ],
+              [
+                {
+                  "text": "13-10"
+                },
+                {
+                  "text": "2.61"
+                },
+                {
+                  "text": "6.7"
+                },
+                {
+                  "text": "26.8"
+                },
+                {
+                  "text": "52"
+                },
+                {
+                  "text": "56"
+                },
+                {
+                  "text": "64"
+                },
+                {
+                  "text": "40"
+                },
+                {
+                  "text": "39"
+                },
+                {
+                  "text": "205"
+                },
+                {
+                  "text": "20"
+                }
+              ],
+              [
+                {
+                  "text": "16-10"
+                },
+                {
+                  "text": "4.45"
+                },
+                {
+                  "text": "10"
+                },
+                {
+                  "text": "40"
+                },
+                {
+                  "text": "69"
+                },
+                {
+                  "text": "86"
+                },
+                {
+                  "text": "80"
+                },
+                {
+                  "text": "50"
+                },
+                {
+                  "text": "46.3"
+                },
+                {
+                  "text": "252"
+                },
+                {
+                  "text": "27"
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "clevis-sling-hook-orange-latch-g100": {
+    "source": "https://www.shenli-rigging.com/1-19-g100-clevis-sling-hook.html",
+    "features": [
+      "Powder-coated surface.",
+      "Reference finish: RAL 5015 blue."
+    ],
+    "notes": [],
+    "sections": [
+      {
+        "title": "",
+        "drawing": "/images/products/technical/1-19-g100-clevis-sling-hook_02.jpg",
+        "tables": [
+          {
+            "rows": [
+              [
+                {
+                  "text": "ITEM NO."
+                },
+                {
+                  "text": "WEIGHT/kg"
+                },
+                {
+                  "text": "Working Load Limit (t)"
+                },
+                {
+                  "text": "Breaking Load (t)"
+                },
+                {
+                  "text": "A ± 0.5"
+                },
+                {
+                  "text": "B ±1.5"
+                },
+                {
+                  "text": "E±2"
+                },
+                {
+                  "text": "M±2"
+                },
+                {
+                  "text": "H±l"
+                },
+                {
+                  "text": "K±2"
+                },
+                {
+                  "text": "L±2"
+                },
+                {
+                  "text": "φ±2"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1025-08"
+                },
+                {
+                  "text": "0.6"
+                },
+                {
+                  "text": "2.5"
+                },
+                {
+                  "text": "10"
+                },
+                {
+                  "text": "9.5"
+                },
+                {
+                  "text": "36"
+                },
+                {
+                  "text": "28.5"
+                },
+                {
+                  "text": "82"
+                },
+                {
+                  "text": "22"
+                },
+                {
+                  "text": "101"
+                },
+                {
+                  "text": "140"
+                },
+                {
+                  "text": "28"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1025-10"
+                },
+                {
+                  "text": "0.96"
+                },
+                {
+                  "text": "4"
+                },
+                {
+                  "text": "16"
+                },
+                {
+                  "text": "12"
+                },
+                {
+                  "text": "42"
+                },
+                {
+                  "text": "31"
+                },
+                {
+                  "text": "97.5"
+                },
+                {
+                  "text": "26.7"
+                },
+                {
+                  "text": "122"
+                },
+                {
+                  "text": "171.5"
+                },
+                {
+                  "text": "35"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1025-13"
+                },
+                {
+                  "text": "1.81"
+                },
+                {
+                  "text": "6.7"
+                },
+                {
+                  "text": "26.8"
+                },
+                {
+                  "text": "15"
+                },
+                {
+                  "text": "54"
+                },
+                {
+                  "text": "40"
+                },
+                {
+                  "text": "135"
+                },
+                {
+                  "text": "36"
+                },
+                {
+                  "text": "137"
+                },
+                {
+                  "text": "202"
+                },
+                {
+                  "text": "36"
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "eye-sling-hook-orange-latch-g100": {
+    "source": "https://www.shenli-rigging.com/1-20-g100-eye-sling-hook-with-latch.html",
+    "features": [
+      "Powder-coated surface.",
+      "Reference finish: RAL 5015 blue."
+    ],
+    "notes": [],
+    "sections": [
+      {
+        "title": "",
+        "drawing": "/images/products/technical/1-20-g100-eye-sling-hook-with-latch_02.jpg",
+        "tables": [
+          {
+            "rows": [
+              [
+                {
+                  "text": "ITEM NO."
+                },
+                {
+                  "text": "WEIGHT/kg"
+                },
+                {
+                  "text": "Working Load Limit (t)"
+                },
+                {
+                  "text": "Breaking Load (t)"
+                },
+                {
+                  "text": "A±1"
+                },
+                {
+                  "text": "B ±l"
+                },
+                {
+                  "text": "E±2"
+                },
+                {
+                  "text": "H±l"
+                },
+                {
+                  "text": "φ±1,5"
+                },
+                {
+                  "text": "C±0,5"
+                },
+                {
+                  "text": "L ±2,5"
+                },
+                {
+                  "text": "M ±2"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1026-08"
+                },
+                {
+                  "text": "0.4"
+                },
+                {
+                  "text": "2.5"
+                },
+                {
+                  "text": "10"
+                },
+                {
+                  "text": "28"
+                },
+                {
+                  "text": "28"
+                },
+                {
+                  "text": "28.5"
+                },
+                {
+                  "text": "22"
+                },
+                {
+                  "text": "28"
+                },
+                {
+                  "text": "u"
+                },
+                {
+                  "text": "145"
+                },
+                {
+                  "text": "82"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1026-10"
+                },
+                {
+                  "text": "0.86"
+                },
+                {
+                  "text": "4"
+                },
+                {
+                  "text": "16"
+                },
+                {
+                  "text": "34"
+                },
+                {
+                  "text": "34"
+                },
+                {
+                  "text": "31"
+                },
+                {
+                  "text": "26.2"
+                },
+                {
+                  "text": "35"
+                },
+                {
+                  "text": "14"
+                },
+                {
+                  "text": "170"
+                },
+                {
+                  "text": "97.5"
+                }
+              ],
+              [
+                {
+                  "text": "10-SLR1026-13"
+                },
+                {
+                  "text": "1.75"
+                },
+                {
+                  "text": "6.7"
+                },
+                {
+                  "text": "26.8"
+                },
+                {
+                  "text": "42"
+                },
+                {
+                  "text": "44"
+                },
+                {
+                  "text": "40"
+                },
+                {
+                  "text": "36"
+                },
+                {
+                  "text": "36"
+                },
+                {
+                  "text": "18.5"
+                },
+                {
+                  "text": "206"
+                },
+                {
+                  "text": "135"
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

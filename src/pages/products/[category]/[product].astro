@@ -1,173 +1,132 @@
 ---
+import ProductRail from '../../../components/ProductRail.astro';
 import Base from '../../../layouts/Base.astro';
 import Breadcrumb from '../../../components/Breadcrumb.astro';
-import ProductCard from '../../../components/ProductCard.astro';
 import ProductGallery from '../../../components/ProductGallery.astro';
-import SpecTable from '../../../components/SpecTable.astro';
+import TechnicalParameters from '../../../components/TechnicalParameters.astro';
+import referenceData from '../../../data/product-technical-reference.json';
 import EnquiryForm from '../../../components/EnquiryForm.astro';
-import Icon from '../../../components/Icon.astro';
 import { categoryBySlug } from '../../../data/categories';
-import { products, relatedProducts, wllRange } from '../../../data/products';
+import { products, relatedProducts, productUrl } from '../../../data/products';
 import { breadcrumbLd, productLd } from '../../../lib/seo';
-import { fmt } from '../../../lib/units';
 
 export function getStaticPaths() {
   return products.map((p) => ({ params: { category: p.category, product: p.slug }, props: { product: p } }));
 }
 const { product: p } = Astro.props;
 const cat = categoryBySlug(p.category)!;
-const related = relatedProducts(p, 4);
-const range = wllRange(p);
 const crumbs = [
   { name: 'Home', href: '/' },
   { name: 'Products', href: '/products' },
-  { name: cat.name, href: `/products/${cat.slug}` },
+  { name: 'Grade 100 Rigging', href: '/products' },
   { name: p.name, href: `/products/${cat.slug}/${p.slug}` },
 ];
-const sizes = p.specRows.length;
+const reference = referenceData[p.slug as keyof typeof referenceData];
+const preferredRelated = relatedProducts(p, 4);
+const related = [...preferredRelated, ...products.filter((item) => item.slug !== p.slug && !preferredRelated.some((match) => match.slug === item.slug))].slice(0, 4);
+const firstDrawing = reference.sections[0]?.drawing;
 ---
 <Base
   title={`${p.name} ${p.code}`}
-  description={p.specificationNote || p.technicalNote ? `${p.summary} Explore model variants and request specifications.` : `${p.summary} ${sizes} sizes${range ? `, WLL ${fmt(range.min, 2)} to ${fmt(range.max, 2)} t` : ''}. Standards: ${p.standards.join(', ')}. Datasheet and certificate downloads.`}
+  description={p.summary}
   path={`/products/${cat.slug}/${p.slug}`}
   ogType="product"
   jsonLd={[breadcrumbLd(crumbs), productLd(p)]}
 >
-  <section class="section-tight">
-    <div class="wrap">
+  <div class="wrap product-layout">
+    <ProductRail current={p.slug} />
+    <article class="product-content">
       <Breadcrumb items={crumbs} />
-      <div class="top">
+      <header class="product-heading">
+        <p class="code">{p.code}{p.grade && <span>{p.grade}</span>}</p>
+        <h1>{p.name}</h1>
+      </header>
+      {p.usageNotice && <p class="usage-notice">{p.usageNotice}</p>}
+      <div class="visuals">
         <ProductGallery product={p} />
-
-        <div class="summary">
-          <p class="code">{p.code}{p.grade && <span class="tag tag-orange">{p.grade}</span>}</p>
-          <h1>{p.name}</h1>
-          <p class="lede">{p.summary}</p>
-          {p.usageNotice && <p class="usage-notice"><Icon name="shield" /> {p.usageNotice}</p>}
-
-          <dl class="facts">
-            {range && <div><dt>Working load limit</dt><dd>{fmt(range.min, 2)}{range.min !== range.max && ` to ${fmt(range.max, 2)}`} t</dd></div>}
-            <div><dt>{p.specificationNote ? 'Model variants' : 'Sizes'}</dt><dd>{sizes}</dd></div>
-            {p.specificationNote ? <div><dt>Specifications</dt><dd>Available on enquiry</dd></div> : <>
-              <div><dt>Design factor</dt><dd>{p.designFactor}</dd></div>
-              {p.standards.length > 0 && <div><dt>Standards</dt><dd>{p.standards.join(', ')}</dd></div>}
-              <div><dt>Material</dt><dd>{p.material}</dd></div>
-              <div><dt>Finish</dt><dd>{p.finish}</dd></div>
-              <div><dt>Temperature</dt><dd>{p.tempRange}</dd></div>
-            </>}
-          </dl>
-
-          <div class="actions">
-            <a class="btn" href="#enquire">Request a quote</a>
-            <a class="btn btn-outline" href="#specifications">Specifications</a>
-            {p.downloads[0] && <a class="dl-link" href={p.downloads[0].href}><Icon name="download" /> Datasheet (PDF)</a>}
+        {firstDrawing && <figure class="drawing"><img src={firstDrawing} alt={`${p.name} dimension drawing`} width="600" height="450" /><figcaption>Dimension drawing</figcaption></figure>}
+      </div>
+      <div class="overview">
+        <p>{p.summary}</p>
+        <div class="actions">
+          <a class="btn btn-sm" href="#enquire">Request a quote</a>
+          <a class="spec-link" href="#specifications">View specifications ↓</a>
+        </div>
+      </div>
+      <section class="features" aria-labelledby="features-title">
+        <h2 id="features-title">Features</h2>
+        <ul>{reference.features.map((feature) => <li>{feature}</li>)}</ul>
+        {reference.notes.map((note) => <p class="technical-note">{note}</p>)}
+      </section>
+      <section id="specifications" class="specifications" aria-label="Product specifications">
+        {reference.sections.map((section, index) => (
+          <div class="model">
+            {section.title && <h2>{section.title}</h2>}
+            {index > 0 && section.drawing && <figure class="model-drawing"><img src={section.drawing} alt={`${section.title || p.name} dimension drawing`} loading="lazy" /></figure>}
+            <TechnicalParameters tables={section.tables} title={section.title || p.name} />
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section-tight bg-paper">
-    <div class="wrap detail">
-      <div class="prose">
-        <span class="dim" aria-hidden="true"></span>
-        <h2>About this product</h2>
-        {p.description.map((para) => <p>{para}</p>)}
-      </div>
-      <div class="features">
-        <h3>Features</h3>
-        <ul>
-          {p.features.map((f) => <li><Icon name="check" /> {f}</li>)}
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="section-tight">
-    <div class="wrap">
-      <SpecTable product={p} />
-    </div>
-  </section>
-
-  <section class="section-tight bg-paper">
-    <div class="wrap docs">
-      <div>
-        <span class="dim" aria-hidden="true"></span>
-        <h2>Downloads</h2>
-        <ul class="dl-list">
-          {p.downloads.map((d) => (
-            <li>
-              <a href={d.href}>
-                <Icon name="file" />
-                <span class="dl-body"><strong>{d.label}</strong><span>{d.type} · PDF · {d.size}</span></span>
-                <Icon name="download" class="dl-icon" />
-              </a>
-            </li>
-          ))}
-        </ul>
-        {p.downloads.length === 0 && <p class="muted">Request the model datasheet, dimensions and available certification with your enquiry.</p>}
-      </div>
-      <div id="enquire">
+        ))}
+      </section>
+      {p.downloads.length > 0 && <section class="downloads"><h2>Downloads</h2><ul>{p.downloads.map((d) => <li><a href={d.href}>{d.label} · PDF</a></li>)}</ul></section>}
+      <section id="enquire" class="enquiry-section" aria-label="Product enquiry">
         <EnquiryForm product={`${p.name} (${p.code})`} compact heading="Ask about this product" />
-      </div>
-    </div>
-  </section>
-
-  {related.length > 0 && (
-    <section class="section-tight">
-      <div class="wrap">
-        <div class="rel-head">
-          <span class="dim" aria-hidden="true"></span>
-          <h2>Related products</h2>
-          <a class="textlink" href={`/products/${cat.slug}`}>All {cat.short.toLowerCase()}</a>
+      </section>
+      <section class="related-section" aria-labelledby="related-title">
+        <div class="related-heading"><h2 id="related-title">Related products</h2><a href="/products">View all products →</a></div>
+        <div class="related-grid">
+          {related.map((item) => (
+            <a class="related-card" href={productUrl(item)}>
+              <img src={item.image ?? `/images/products/branded/${item.slug}.webp`} alt={item.name} width="768" height="768" loading="lazy" decoding="async" />
+              <span>{item.code}</span>
+              <h3>{item.name}</h3>
+            </a>
+          ))}
         </div>
-        <div class="grid cols-4">
-          {related.map((r) => <ProductCard product={r} />)}
-        </div>
-      </div>
-    </section>
-  )}
+      </section>
+    </article>
+  </div>
 </Base>
-
 <style>
-  .top { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; margin-top: 28px; align-items: start; }
-
-
-  .code { display: flex; align-items: center; gap: 12px; font-weight: 600; color: var(--navy); font-size: var(--t-sm); margin-bottom: 10px; }
-  .summary h1 { font-size: clamp(2rem, 3.6vw, 2.75rem); margin-bottom: 14px; }
-  .usage-notice { display: flex; align-items: center; gap: 10px; margin-top: 18px; padding: 14px 16px; background: var(--orange-soft); border-left: 3px solid var(--orange); font-weight: 600; }
-  .usage-notice :global(svg) { width: 22px; height: 22px; flex: none; }
-  .facts { display: grid; grid-template-columns: 1fr 1fr; gap: 0 24px; margin-top: 28px; border-top: 1px solid var(--zinc); }
-  .facts div { display: grid; gap: 2px; padding: 12px 0; border-bottom: 1px solid var(--zinc); }
-  .facts div:nth-child(1), .facts div:nth-child(4), .facts div:nth-child(5) { grid-column: 1 / -1; }
-  .facts dt { font-size: var(--t-xs); color: var(--steel); }
-  .facts dd { margin: 0; font-weight: 500; }
-  .facts div:nth-child(1) dd { font-family: var(--font-display); font-weight: 700; font-size: 1.75rem; color: var(--orange-dark); }
-  .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-top: 28px; }
-  .dl-link { display: inline-flex; align-items: center; gap: 8px; font-weight: 500; color: var(--navy); }
-  .dl-link :global(svg) { width: 18px; height: 18px; color: var(--orange); }
-
-  .detail { display: grid; grid-template-columns: 1.3fr 1fr; gap: 56px; }
-  .detail h2 { margin: 10px 0 18px; }
-  .features { background: var(--white); border: 1px solid var(--zinc); border-radius: var(--radius); padding: 26px 28px; align-self: start; }
-  .features h3 { margin-bottom: 14px; }
-  .features li { display: flex; gap: 10px; align-items: flex-start; padding: 8px 0; border-top: 1px solid var(--zinc); }
-  .features :global(svg) { width: 18px; height: 18px; color: var(--orange); flex: none; margin-top: 4px; }
-
-  .docs { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
-  .docs h2 { margin: 10px 0 18px; }
-  .dl-list { display: grid; gap: 10px; }
-  .dl-list a { display: flex; align-items: center; gap: 14px; padding: 14px 16px; background: var(--white); border: 1px solid var(--zinc); border-radius: var(--radius); transition: border-color .15s; }
-  .dl-list a:hover { border-color: var(--navy); }
-  .dl-list :global(svg) { width: 22px; height: 22px; color: var(--navy); flex: none; }
-  .dl-list :global(.dl-icon) { color: var(--orange); margin-left: auto; }
-  .dl-body { display: grid; gap: 2px; }
-  .dl-body span { font-size: var(--t-xs); color: var(--steel); }
-
-  .rel-head { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin-bottom: 24px; }
-  .rel-head h2 { margin-right: auto; }
-  #enquire { scroll-margin-top: 140px; }
-
-  @media (max-width: 960px) { .top, .detail, .docs { grid-template-columns: 1fr; gap: 32px; } }
-  @media (max-width: 480px) { .facts { grid-template-columns: 1fr; } .facts div { grid-column: auto !important; } }
+  .product-layout { max-width: 1600px; display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 36px; align-items: start; padding-block: 28px 40px; }
+  .product-content { min-width: 0; }
+  .product-heading { margin: 18px 0; }
+  .code { display: flex; align-items: center; gap: 10px; font-size: 11px; color: var(--steel); margin-bottom: 5px; }
+  .code span { color: var(--navy); background: #eef2f8; border-radius: 3px; padding: 2px 6px; }
+  h1 { font-size: clamp(1.6rem, 2.3vw, 2rem); line-height: 1.2; }
+  h2 { font-size: 21px; margin-bottom: 12px; }
+  .visuals { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; align-items: start; }
+  .drawing { margin: 0; height: auto; aspect-ratio: 1; border: 1px solid var(--zinc); border-radius: 6px; background: white; display: flex; flex-direction: column; padding: 12px; }
+  .drawing img { width: 100%; height: 0; flex: 1; min-height: 0; object-fit: contain; }
+  figcaption { font-size: 10px; color: var(--steel); text-align: center; padding-top: 6px; }
+  .overview { padding: 18px 0; border-bottom: 1px solid var(--zinc); font-size: 13px; color: var(--ink-2); }
+  .actions { display: flex; align-items: center; flex-wrap: wrap; gap: 18px; margin-top: 12px; }
+  .actions .btn { font-size: 14px; padding: 9px 16px; }
+  .spec-link { font-size: 12px; font-weight: 500; color: var(--navy); }
+  .features { padding-block: 20px; }
+  .features ul { padding-left: 18px; list-style: disc; font-size: 13px; line-height: 1.65; color: var(--ink-2); }
+  .features li { padding-block: 2px; }
+  .technical-note { font-size: 12px; color: var(--steel); margin-top: 8px; }
+  .usage-notice { font-size: 13px; padding: 10px 12px; background: var(--orange-soft); border-left: 3px solid var(--orange); margin-bottom: 14px; }
+  #specifications, #enquire { scroll-margin-top: 140px; }
+  .model + .model { margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--zinc); }
+  .model h2 { font-size: 18px; }
+  .model-drawing { margin: 0 0 16px; padding: 12px; border: 1px solid var(--zinc); border-radius: 5px; }
+  .model-drawing img { width: 100%; max-height: 240px; object-fit: contain; }
+  .downloads { padding-top: 24px; font-size: 13px; color: var(--navy); }
+  .enquiry-section { margin-top: 28px; }
+  .related-section { margin-top: 28px; padding-top: 22px; border-top: 1px solid var(--zinc); }
+  .related-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 14px; }
+  .related-heading h2 { margin: 0; }
+  .related-heading > a { font-size: 11px; color: var(--navy); font-weight: 500; }
+  .related-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+  .related-card { display: block; min-width: 0; }
+  .related-card img { width: 100%; height: auto; aspect-ratio: 1; object-fit: contain; border: 1px solid var(--zinc); border-radius: 6px; }
+  .related-card > span { display: block; font-size: 10px; color: var(--steel); margin-top: 8px; }
+  .related-card h3 { font-size: 14px; line-height: 1.3; margin-top: 3px; }
+  .related-card:hover h3 { color: var(--orange); }
+  .related-card:hover img { border-color: var(--orange); }
+  @media (max-width: 600px) { .related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 1100px) { .product-layout { grid-template-columns: 210px minmax(0, 1fr); gap: 24px; } }
+  @media (max-width: 760px) { .product-layout { grid-template-columns: 1fr; } }
+  @media (max-width: 480px) { .visuals { grid-template-columns: 1fr; } }
 </style>

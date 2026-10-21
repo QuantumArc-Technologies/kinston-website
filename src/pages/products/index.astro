@@ -2,15 +2,16 @@
 import Base from '../../layouts/Base.astro';
 import Breadcrumb from '../../components/Breadcrumb.astro';
 import CtaBand from '../../components/CtaBand.astro';
-import { allCategoriesWithCounts, productsByCategory } from '../../data/products';
+import ProductCard from '../../components/ProductCard.astro';
+import ProductRail from '../../components/ProductRail.astro';
+import { products } from '../../data/products';
 import { breadcrumbLd } from '../../lib/seo';
 
-const cats = allCategoriesWithCounts();
 const crumbs = [{ name: 'Home', href: '/' }, { name: 'Products', href: '/products' }];
 ---
 <Base
-  title="Products: lifting chain, hooks, shackles, master links, hoists"
-  description="Browse Kinston's lifting chain, slings, hooks, shackles, connectors, lifting points, hoists, load restraint and mining fittings. Explore variants and request specifications."
+  title="Grade 100 Rigging | Products"
+  description="Explore Kinston Grade 100 rigging products. Browse hooks, master links, connectors and lifting points, review specifications and request a quote."
   path="/products"
   jsonLd={[breadcrumbLd(crumbs)]}
 >
@@ -18,53 +19,37 @@ const crumbs = [{ name: 'Home', href: '/' }, { name: 'Products', href: '/product
     <div class="wrap">
       <Breadcrumb items={crumbs} light />
       <h1>Products</h1>
-      <p class="lede">Explore {cats.length} ranges covering lifting, rigging and load restraint, including loose lifting chain and specialist mining fittings. Browse product variants, review available specifications and request a quote.</p>
+      <p class="lede">Explore our Grade 100 rigging products. Browse the full range, review specifications and working load limits, and request a quote.</p>
     </div>
   </section>
 
-  <section class="section">
-    <div class="wrap">
-      <ul class="cat-list">
-        {cats.map((c) => {
-          const items = productsByCategory(c.slug);
-          return (
-            <li class="cat">
-              <a class="cat-art" href={`/products/${c.slug}`}><img src={c.image ?? `/images/categories/branded/${c.slug}.webp`} alt={c.name} loading="lazy" decoding="async" width="600" height="600" /></a>
-              <div class="cat-body">
-                <h2><a href={`/products/${c.slug}`}>{c.name}</a></h2>
-                <p class="muted">{c.description}</p>
-                <ul class="cat-groups">
-                  {c.groups.map((g) => {
-                    const n = items.filter((p) => p.group === g).length;
-                    return <li><a href={`/products/${c.slug}#${g.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}>{g}<span>{n}</span></a></li>;
-                  })}
-                </ul>
-                <a class="textlink" href={`/products/${c.slug}`}>View {c.count} products</a>
-              </div>
-            </li>
-          );
-        })}
-      </ul>
+  <section class="section-tight">
+    <div class="wrap catalogue-layout">
+      <ProductRail />
+      <div class="catalogue-content" id="grade-100">
+      <div class="range-heading">
+        <h2>Grade 100 Rigging</h2>
+        <p class="muted">{products.length} products</p>
+      </div>
+      <p class="range-description">Our Grade 100 rigging range includes alloy steel hooks, connecting links and master links for compatible Grade 100 chain assemblies. Forged or welded components support demanding applications in oilfields, mining and ports. Explore each product for dimensions, working load limits and available configurations.</p>
+      <div class="grid product-grid">
+        {products.map((product) => <ProductCard product={product} compact showColourSwitch={false} showFooter={false} />)}
+      </div>
+      </div>
     </div>
   </section>
   <CtaBand title="Can't see what you need?" body="We build bespoke assemblies, non-standard lengths and special finishes. Send a drawing or a description and we will quote it." />
 </Base>
 
 <style>
-  .cat-list { display: grid; gap: 0; }
-  .cat { display: grid; grid-template-columns: 260px 1fr; gap: 28px; padding-block: 28px; border-top: 1px solid var(--zinc); }
-  .cat:last-child { border-bottom: 1px solid var(--zinc); }
-  .cat-art { position: relative; background: #eef0f2; border: 1px solid var(--zinc); border-radius: 12px; aspect-ratio: 1; transition: border-color .18s; overflow: hidden; }
-  .cat-art img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .5s var(--ease); }
-  .cat-art:hover { border-color: var(--orange); }
-  .cat-art:hover img { transform: scale(1.055); }
-  .cat-body { display: grid; gap: 10px; align-content: start; }
-  .cat-body h2 a:hover { color: var(--orange); }
-  .cat-body .muted { max-width: 68ch; }
-  .cat-groups { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
-  .cat-groups a { display: inline-flex; gap: 8px; align-items: baseline; padding: 6px 12px; border: 1px solid var(--zinc); border-radius: var(--radius); font-size: var(--t-sm); font-weight: 500; transition: border-color .15s, color .15s; }
-  .cat-groups a span { font-size: var(--t-xs); color: var(--steel); }
-  .cat-groups a:hover { border-color: var(--navy); color: var(--navy); }
-  .cat-body .textlink { justify-self: start; margin-top: 6px; }
-  @media (max-width: 800px) { .cat { grid-template-columns: 1fr; gap: 20px; } .cat-art { max-width: 320px; } }
+  .catalogue-layout { max-width: 1600px; display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 36px; align-items: start; }
+  .catalogue-content { min-width: 0; scroll-margin-top: 150px; }
+  .range-heading { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 20px; }
+  .range-heading h2 { font-size: 1.75rem; }
+  .range-heading p { font-size: 13px; }
+  .range-description { margin: -6px 0 22px; max-width: 90ch; font-size: 13px; line-height: 1.7; color: var(--steel); }
+  .product-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+  @media (max-width: 1100px) { .catalogue-layout { grid-template-columns: 210px minmax(0, 1fr); gap: 24px; } .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 760px) { .catalogue-layout { grid-template-columns: 1fr; } .product-names { max-height: 180px; overflow-y: auto; } .help { display: none; } }
+  @media (max-width: 480px) { .product-grid { grid-template-columns: 1fr; } }
 </style>

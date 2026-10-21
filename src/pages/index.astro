@@ -65,6 +65,19 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
 
   <section class="section">
     <div class="wrap">
+      <div class="feat-head">
+        <SectionHeading title="Proven products. Ready to work." />
+        <a class="textlink" href="/products">All products</a>
+      </div>
+      <div class="grid cols-4" data-reveal>
+        {featured.map((p) => <ProductCard product={p} />)}
+      </div>
+    </div>
+  </section>
+
+  {/* Category section hidden for now.
+  <section class="section">
+    <div class="wrap">
       <SectionHeading title="The right equipment. For every lift." lead="Choose a range to see every product with dimensions, working load limits and downloads." />
       <ul class="ranges" data-reveal>
         {cats.map((c, i) => (
@@ -85,6 +98,7 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
       </ul>
     </div>
   </section>
+  */}
 
   <section class="section bg-paper">
     <div class="wrap why">
@@ -115,18 +129,6 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
           <p>Send the load, the lift points and the environment. You get a sling design, product codes and a quotation within one working day.</p>
         </li>
       </ol>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="wrap">
-      <div class="feat-head">
-        <SectionHeading title="Proven products. Ready to work." />
-        <a class="textlink" href="/products">All products</a>
-      </div>
-      <div class="grid cols-4" data-reveal>
-        {featured.map((p) => <ProductCard product={p} />)}
-      </div>
     </div>
   </section>
 

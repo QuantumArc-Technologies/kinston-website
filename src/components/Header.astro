@@ -1,13 +1,11 @@
 ---
 import { site, nav } from '../data/site';
-import { allCategoriesWithCounts } from '../data/products';
 import Icon from './Icon.astro';
 
 interface Props { dark?: boolean }
 const { dark = false } = Astro.props;
 const path = Astro.url.pathname;
 const isActive = (href: string) => (href === '/' ? path === '/' : path.startsWith(href));
-const cats = allCategoriesWithCounts();
 ---
 <header class:list={['site-header', { dark }]}>
   <div class="topbar">
@@ -38,20 +36,8 @@ const cats = allCategoriesWithCounts();
               {item.mega && (
                 <div class="mega" aria-label="Product categories">
                   <div class="wrap mega-inner">
-                    <div class="mega-intro">
-                      <h3>Products</h3>
-                      <p class="muted">Explore lifting equipment, rigging components and specialist fittings.</p>
-                      <a class="textlink" href="/products">View all ranges</a>
-                    </div>
                     <ul class="mega-grid">
-                      {cats.map((c) => (
-                        <li>
-                          <a href={`/products/${c.slug}`}>
-                            <span class="mega-name">{c.name}</span>
-                            <span class="mega-meta">{c.count} products</span>
-                          </a>
-                        </li>
-                      ))}
+                      <li><a href="/products"><span class="mega-name">Grade 100 Rigging</span></a></li>
                     </ul>
                   </div>
                 </div>
@@ -79,7 +65,7 @@ const cats = allCategoriesWithCounts();
             <a href={item.href} aria-current={isActive(item.href) ? 'page' : undefined}>{item.label}</a>
             {item.mega && (
               <ul class="mobile-sub">
-                {cats.map((c) => <li><a href={`/products/${c.slug}`}>{c.short}</a></li>)}
+                <li><a href="/products">Grade 100 Rigging</a></li>
               </ul>
             )}
           </li>
@@ -135,18 +121,16 @@ const cats = allCategoriesWithCounts();
 
   .has-mega:hover .mega, .has-mega:focus-within .mega { opacity: 1; visibility: visible; transform: translateY(0); }
   .mega {
-    position: fixed; left: 0; right: 0; top: calc(36px + var(--header-h));
-    background: var(--white); border-top: 1px solid var(--zinc); box-shadow: 0 24px 48px -24px rgba(17,27,51,.35);
+    position: absolute; left: 0; top: 100%; width: 260px;
+    background: var(--white); border: 1px solid var(--zinc); border-radius: 8px; box-shadow: 0 12px 30px -12px rgba(17,27,51,.25);
     opacity: 0; visibility: hidden; transform: translateY(-6px); transition: opacity .18s var(--ease), transform .18s var(--ease), visibility 0s linear .18s;
   }
   .has-mega:hover .mega, .has-mega:focus-within .mega { transition-delay: 0s; }
-  .mega-inner { display: grid; grid-template-columns: 300px 1fr; gap: 48px; padding-block: 36px; }
-  .mega-intro h3 { margin-bottom: 8px; }
-  .mega-intro p { margin-bottom: 18px; max-width: 28ch; }
-  .mega-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 4px 32px; }
-  .mega-grid a { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--zinc); }
+  .mega-inner { width: 100%; max-width: none; margin: 0; padding: 8px; }
+  .mega-grid { display: grid; grid-template-columns: 1fr; }
+  .mega-grid a { display: flex; align-items: center; padding: 14px 16px; border-radius: 4px; transition: background .15s; }
   .mega-name { font-family: var(--font-display); font-weight: 600; font-size: 1.125rem; }
-  .mega-meta { font-size: var(--t-xs); color: var(--steel); white-space: nowrap; }
+  .mega-grid a:hover, .mega-grid a:focus-visible { background: var(--paper, #f5f4f1); }
   .mega-grid a:hover .mega-name { color: var(--orange); }
 
   .quote { flex: none; }
