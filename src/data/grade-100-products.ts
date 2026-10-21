@@ -47,12 +47,12 @@ const entries: Product[] = [
       {"key": "dim_E2", "label": "E2", "kind": "mm"}
     ],
     "specRows": [
-      {"code": "10-SLR1023-8", "weight": 0.5, "wll": 2.5, "breaking": 10, "dim_A": 35, "dim_B": 25, "dim_d": 12, "dim_D": 16.5, "dim_E": 10.5, "dim_L": 110, "variant": "Eye with safety pin"},
-      {"code": "10-SLR1023-10", "weight": 1.0, "wll": 4, "breaking": 16, "dim_A": 64, "dim_B": 32, "dim_d": 15, "dim_D": 21, "dim_E": 14, "dim_L": 136.5, "variant": "Eye with safety pin"},
-      {"code": "10-SLR1023-13", "weight": 2.2, "wll": 6.7, "breaking": 26.8, "dim_A": 57, "dim_B": 40, "dim_d": 20.5, "dim_D": 27.5, "dim_E": 15.5, "dim_L": 180, "variant": "Eye with safety pin"},
-      {"code": "10-SLR1024-8", "weight": 0.5, "wll": 2.5, "breaking": 10, "dim_A": 35, "dim_B": 25, "dim_R": 12, "dim_E2": 16.5, "dim_E": 10.5, "dim_L": 110, "variant": "Clevis with safety pin"},
-      {"code": "10-SLR1024-10", "weight": 1.0, "wll": 4, "breaking": 16, "dim_A": 64, "dim_B": 32, "dim_R": 15, "dim_E2": 21, "dim_E": 14, "dim_L": 136.5, "variant": "Clevis with safety pin"},
-      {"code": "10-SLR1024-13", "weight": 2.2, "wll": 6.7, "breaking": 26.8, "dim_A": 57, "dim_B": 40, "dim_R": 20.5, "dim_E2": 27.5, "dim_E": 15.5, "dim_L": 180, "variant": "Clevis with safety pin"}
+      {"code": "10-KT1023-8", "weight": 0.5, "wll": 2.5, "breaking": 10, "dim_A": 35, "dim_B": 25, "dim_d": 12, "dim_D": 16.5, "dim_E": 10.5, "dim_L": 110, "variant": "Eye with safety pin"},
+      {"code": "10-KT1023-10", "weight": 1.0, "wll": 4, "breaking": 16, "dim_A": 64, "dim_B": 32, "dim_d": 15, "dim_D": 21, "dim_E": 14, "dim_L": 136.5, "variant": "Eye with safety pin"},
+      {"code": "10-KT1023-13", "weight": 2.2, "wll": 6.7, "breaking": 26.8, "dim_A": 57, "dim_B": 40, "dim_d": 20.5, "dim_D": 27.5, "dim_E": 15.5, "dim_L": 180, "variant": "Eye with safety pin"},
+      {"code": "10-KT1024-8", "weight": 0.5, "wll": 2.5, "breaking": 10, "dim_A": 35, "dim_B": 25, "dim_R": 12, "dim_E2": 16.5, "dim_E": 10.5, "dim_L": 110, "variant": "Clevis with safety pin"},
+      {"code": "10-KT1024-10", "weight": 1.0, "wll": 4, "breaking": 16, "dim_A": 64, "dim_B": 32, "dim_R": 15, "dim_E2": 21, "dim_E": 14, "dim_L": 136.5, "variant": "Clevis with safety pin"},
+      {"code": "10-KT1024-13", "weight": 2.2, "wll": 6.7, "breaking": 26.8, "dim_A": 57, "dim_B": 40, "dim_R": 20.5, "dim_E2": 27.5, "dim_E": 15.5, "dim_L": 180, "variant": "Clevis with safety pin"}
     ]
   },
   {
@@ -94,12 +94,12 @@ const entries: Product[] = [
       {"key": "dim_L", "label": "L", "kind": "mm"}
     ],
     "specRows": [
-      {"code": "SLR1051-6-10", "weight": 0.3, "wll": 1.4, "breaking": 5.6, "dim_ф": 18, "dim_A": 8, "dim_B": 32, "dim_C": 20, "dim_L1": 88, "dim_L": 112},
-      {"code": "SLR1051-8-10", "weight": 0.69, "wll": 2.5, "breaking": 10, "dim_ф": 24, "dim_A": 10, "dim_B": 36, "dim_C": 10, "dim_L1": 116, "dim_L": 145},
-      {"code": "SLR1051-10-10", "weight": 1.33, "wll": 4, "breaking": 16, "dim_ф": 30, "dim_A": 12.5, "dim_B": 48, "dim_C": 12.5, "dim_L1": 145, "dim_L": 184},
-      {"code": "SLR1051-13-10", "weight": 2.36, "wll": 6.7, "breaking": 26.8, "dim_ф": 37, "dim_A": 15.5, "dim_B": 59.5, "dim_C": 15.5, "dim_L1": 178, "dim_L": 223},
-      {"code": "SLR1051-16-10", "weight": 4.5, "wll": 10, "breaking": 40, "dim_ф": 45, "dim_A": 19, "dim_B": 70, "dim_C": 19, "dim_L1": 216, "dim_L": 273},
-      {"code": "SLR1051-20-10", "weight": 9.0, "wll": 16, "breaking": 64, "dim_ф": 58, "dim_A": 24.5, "dim_B": 85, "dim_C": 24.5, "dim_L1": 278, "dim_L": 351}
+      {"code": "KT1051-6-10", "weight": 0.3, "wll": 1.4, "breaking": 5.6, "dim_ф": 18, "dim_A": 8, "dim_B": 32, "dim_C": 20, "dim_L1": 88, "dim_L": 112},
+      {"code": "KT1051-8-10", "weight": 0.69, "wll": 2.5, "breaking": 10, "dim_ф": 24, "dim_A": 10, "dim_B": 36, "dim_C": 10, "dim_L1": 116, "dim_L": 145},
+      {"code": "KT1051-10-10", "weight": 1.33, "wll": 4, "breaking": 16, "dim_ф": 30, "dim_A": 12.5, "dim_B": 48, "dim_C": 12.5, "dim_L1": 145, "dim_L": 184},
+      {"code": "KT1051-13-10", "weight": 2.36, "wll": 6.7, "breaking": 26.8, "dim_ф": 37, "dim_A": 15.5, "dim_B": 59.5, "dim_C": 15.5, "dim_L1": 178, "dim_L": 223},
+      {"code": "KT1051-16-10", "weight": 4.5, "wll": 10, "breaking": 40, "dim_ф": 45, "dim_A": 19, "dim_B": 70, "dim_C": 19, "dim_L1": 216, "dim_L": 273},
+      {"code": "KT1051-20-10", "weight": 9.0, "wll": 16, "breaking": 64, "dim_ф": 58, "dim_A": 24.5, "dim_B": 85, "dim_C": 24.5, "dim_L1": 278, "dim_L": 351}
     ]
   },
   {
@@ -146,7 +146,7 @@ const entries: Product[] = [
       {"key": "dim_E", "label": "E", "kind": "mm"}
     ],
     "specRows": [
-      {"code": "SLR-1033-13", "weight": 1.36, "wll": 6.7, "breaking": 26.8, "dim_A": 59, "dim_B": 38, "dim_C": 15, "dim_D": 50, "dim_M": 93, "dim_N": 90, "dim_H": 21, "dim_K": 21.5, "dim_L": 174, "dim_G": 16, "dim_E": 35}
+      {"code": "KT-1033-13", "weight": 1.36, "wll": 6.7, "breaking": 26.8, "dim_A": 59, "dim_B": 38, "dim_C": 15, "dim_D": 50, "dim_M": 93, "dim_N": 90, "dim_H": 21, "dim_K": 21.5, "dim_L": 174, "dim_G": 16, "dim_E": 35}
     ]
   },
   {
@@ -188,11 +188,11 @@ const entries: Product[] = [
       {"key": "dim_L", "label": "L", "kind": "mm"}
     ],
     "specRows": [
-      {"code": "10-SLR1027-06", "weight": 0.12, "wll": 1.4, "breaking": 5.6, "dim_A": 8.5, "dim_B": 32.5, "dim_E": 20, "dim_M": 44, "dim_L": 55},
-      {"code": "10-SLR1027-08", "weight": 0.27, "wll": 2.5, "breaking": 10, "dim_A": 10.5, "dim_B": 42, "dim_E": 24, "dim_M": 60, "dim_L": 73.5},
-      {"code": "10-SLR1027-10", "weight": 0.44, "wll": 4, "breaking": 16, "dim_A": 12.5, "dim_B": 48.5, "dim_E": 31, "dim_M": 70, "dim_L": 90},
-      {"code": "10-SLR1027-13", "weight": 0.89, "wll": 6.7, "breaking": 26.8, "dim_A": 16, "dim_B": 60, "dim_E": 38.5, "dim_M": 90, "dim_L": 109},
-      {"code": "10-SLR1027-16", "weight": 1.69, "wll": 10, "breaking": 40, "dim_A": 19, "dim_B": 75.5, "dim_E": 51, "dim_M": 112, "dim_L": 141.5}
+      {"code": "10-KT1027-6", "weight": 0.12, "wll": 1.4, "breaking": 5.6, "dim_A": 8.5, "dim_B": 32.5, "dim_E": 20, "dim_M": 44, "dim_L": 55},
+      {"code": "10-KT1027-8", "weight": 0.27, "wll": 2.5, "breaking": 10, "dim_A": 10.5, "dim_B": 42, "dim_E": 24, "dim_M": 60, "dim_L": 73.5},
+      {"code": "10-KT1027-10", "weight": 0.44, "wll": 4, "breaking": 16, "dim_A": 12.5, "dim_B": 48.5, "dim_E": 31, "dim_M": 70, "dim_L": 90},
+      {"code": "10-KT1027-13", "weight": 0.89, "wll": 6.7, "breaking": 26.8, "dim_A": 16, "dim_B": 60, "dim_E": 38.5, "dim_M": 90, "dim_L": 109},
+      {"code": "10-KT1027-16", "weight": 1.69, "wll": 10, "breaking": 40, "dim_A": 19, "dim_B": 75.5, "dim_E": 51, "dim_M": 112, "dim_L": 141.5}
     ]
   },
   {
@@ -232,15 +232,15 @@ const entries: Product[] = [
       {"key": "dim_L", "label": "L", "kind": "mm"}
     ],
     "specRows": [
-      {"code": "10-SLR1001-06", "weight": 0.08, "wll": 1.4, "breaking": 5.6, "dim_H": 7.6, "dim_A": 14, "dim_K": 44.5, "dim_L": 60},
-      {"code": "10-SLR1001-08", "weight": 0.18, "wll": 2.5, "breaking": 10, "dim_H": 10, "dim_A": 18.5, "dim_K": 61.5, "dim_L": 84.5},
-      {"code": "10-SLR1001-10", "weight": 0.34, "wll": 4, "breaking": 16, "dim_H": 12.6, "dim_A": 23, "dim_K": 72, "dim_L": 97.2},
-      {"code": "10-SLR1001-13", "weight": 0.68, "wll": 6.7, "breaking": 26.8, "dim_H": 16.8, "dim_A": 27.5, "dim_K": 89, "dim_L": 127},
-      {"code": "10-SLR1001-16", "weight": 1.22, "wll": 10, "breaking": 40, "dim_H": 21, "dim_A": 33.5, "dim_K": 103, "dim_L": 145},
-      {"code": "10-SLR1001-20", "weight": 2.13, "wll": 16, "breaking": 64, "dim_H": 24.5, "dim_A": 42, "dim_K": 116, "dim_L": 175},
-      {"code": "10-SLR1001-22", "weight": 3, "wll": 19, "breaking": 76, "dim_H": 27, "dim_A": 48, "dim_K": 135, "dim_L": 193},
-      {"code": "10-SLR1001-26", "weight": 5.15, "wll": 26.5, "breaking": 106, "dim_H": 32, "dim_A": 61, "dim_K": 164, "dim_L": 228},
-      {"code": "10-SLR1001-32", "weight": 9.5, "wll": 39.3, "breaking": 157.2, "dim_H": 40, "dim_A": 80, "dim_K": 194, "dim_L": 274}
+      {"code": "10-KT1001-6", "weight": 0.08, "wll": 1.4, "breaking": 5.6, "dim_H": 7.6, "dim_A": 14, "dim_K": 44.5, "dim_L": 60},
+      {"code": "10-KT1001-8", "weight": 0.18, "wll": 2.5, "breaking": 10, "dim_H": 10, "dim_A": 18.5, "dim_K": 61.5, "dim_L": 84.5},
+      {"code": "10-KT1001-10", "weight": 0.34, "wll": 4, "breaking": 16, "dim_H": 12.6, "dim_A": 23, "dim_K": 72, "dim_L": 97.2},
+      {"code": "10-KT1001-13", "weight": 0.68, "wll": 6.7, "breaking": 26.8, "dim_H": 16.8, "dim_A": 27.5, "dim_K": 89, "dim_L": 127},
+      {"code": "10-KT1001-16", "weight": 1.22, "wll": 10, "breaking": 40, "dim_H": 21, "dim_A": 33.5, "dim_K": 103, "dim_L": 145},
+      {"code": "10-KT1001-20", "weight": 2.13, "wll": 16, "breaking": 64, "dim_H": 24.5, "dim_A": 42, "dim_K": 116, "dim_L": 175},
+      {"code": "10-KT1001-22", "weight": 3, "wll": 19, "breaking": 76, "dim_H": 27, "dim_A": 48, "dim_K": 135, "dim_L": 193},
+      {"code": "10-KT1001-26", "weight": 5.15, "wll": 26.5, "breaking": 106, "dim_H": 32, "dim_A": 61, "dim_K": 164, "dim_L": 228},
+      {"code": "10-KT1001-32", "weight": 9.5, "wll": 39.3, "breaking": 157.2, "dim_H": 40, "dim_A": 80, "dim_K": 194, "dim_L": 274}
     ]
   },
   {
@@ -284,15 +284,15 @@ const entries: Product[] = [
       {"key": "dim_L", "label": "L", "kind": "mm"}
     ],
     "specRows": [
-      {"code": "10-SLR1007-06", "weight": 0.6, "wll": 1.4, "breaking": 5.6, "dim_B": 32.5, "dim_C": 23, "dim_D": 11.5, "dim_E": 28, "dim_H": 20, "dim_M": 70, "dim_L": 184},
-      {"code": "10-SLR1007-08", "weight": 1.1, "wll": 2.5, "breaking": 10, "dim_B": 36, "dim_C": 28, "dim_D": 13, "dim_E": 35.5, "dim_H": 26, "dim_M": 90, "dim_L": 229},
-      {"code": "10-SLR1007-10", "weight": 2, "wll": 4, "breaking": 16, "dim_B": 42, "dim_C": 35, "dim_D": 15.5, "dim_E": 45, "dim_H": 30, "dim_M": 108, "dim_L": 269},
-      {"code": "10-SLR1007-13", "weight": 4, "wll": 6.7, "breaking": 26.8, "dim_B": 50, "dim_C": 40, "dim_D": 17, "dim_E": 53.5, "dim_H": 40.5, "dim_M": 138.5, "dim_L": 330},
-      {"code": "10-SLR1007-16", "weight": 6.8, "wll": 10, "breaking": 40, "dim_B": 61, "dim_C": 56, "dim_D": 21.5, "dim_E": 62, "dim_H": 50.5, "dim_M": 170.5, "dim_L": 413},
-      {"code": "10-SLR1007-20", "weight": 12.5, "wll": 16, "breaking": 64, "dim_B": 72, "dim_C": 62, "dim_D": 26, "dim_E": 76.5, "dim_H": 62, "dim_M": 192.5, "dim_L": 463},
-      {"code": "10-SLR1007-22", "weight": 17.1, "wll": 19, "breaking": 76, "dim_B": 97, "dim_C": 94, "dim_D": 33, "dim_E": 80, "dim_H": 66, "dim_M": 205, "dim_L": 572},
-      {"code": "10-SLR1007-26", "weight": "Confirm on enquiry", "wll": "Confirm on enquiry", "breaking": "Confirm on enquiry", "dim_B": "Confirm on enquiry", "dim_C": "Confirm on enquiry", "dim_D": "Confirm on enquiry", "dim_E": "Confirm on enquiry", "dim_H": "Confirm on enquiry", "dim_M": "Confirm on enquiry", "dim_L": "Confirm on enquiry"},
-      {"code": "10-SLR1007-32", "weight": "Confirm on enquiry", "wll": "Confirm on enquiry", "breaking": "Confirm on enquiry", "dim_B": "Confirm on enquiry", "dim_C": "Confirm on enquiry", "dim_D": "Confirm on enquiry", "dim_E": "Confirm on enquiry", "dim_H": "Confirm on enquiry", "dim_M": "Confirm on enquiry", "dim_L": "Confirm on enquiry"}
+      {"code": "10-KT1007-6", "weight": 0.6, "wll": 1.4, "breaking": 5.6, "dim_B": 32.5, "dim_C": 23, "dim_D": 11.5, "dim_E": 28, "dim_H": 20, "dim_M": 70, "dim_L": 184},
+      {"code": "10-KT1007-8", "weight": 1.1, "wll": 2.5, "breaking": 10, "dim_B": 36, "dim_C": 28, "dim_D": 13, "dim_E": 35.5, "dim_H": 26, "dim_M": 90, "dim_L": 229},
+      {"code": "10-KT1007-10", "weight": 2, "wll": 4, "breaking": 16, "dim_B": 42, "dim_C": 35, "dim_D": 15.5, "dim_E": 45, "dim_H": 30, "dim_M": 108, "dim_L": 269},
+      {"code": "10-KT1007-13", "weight": 4, "wll": 6.7, "breaking": 26.8, "dim_B": 50, "dim_C": 40, "dim_D": 17, "dim_E": 53.5, "dim_H": 40.5, "dim_M": 138.5, "dim_L": 330},
+      {"code": "10-KT1007-16", "weight": 6.8, "wll": 10, "breaking": 40, "dim_B": 61, "dim_C": 56, "dim_D": 21.5, "dim_E": 62, "dim_H": 50.5, "dim_M": 170.5, "dim_L": 413},
+      {"code": "10-KT1007-20", "weight": 12.5, "wll": 16, "breaking": 64, "dim_B": 72, "dim_C": 62, "dim_D": 26, "dim_E": 76.5, "dim_H": 62, "dim_M": 192.5, "dim_L": 463},
+      {"code": "10-KT1007-22", "weight": 17.1, "wll": 19, "breaking": 76, "dim_B": 97, "dim_C": 94, "dim_D": 33, "dim_E": 80, "dim_H": 66, "dim_M": 205, "dim_L": 572},
+      {"code": "10-KT1007-26", "weight": "Confirm on enquiry", "wll": "Confirm on enquiry", "breaking": "Confirm on enquiry", "dim_B": "Confirm on enquiry", "dim_C": "Confirm on enquiry", "dim_D": "Confirm on enquiry", "dim_E": "Confirm on enquiry", "dim_H": "Confirm on enquiry", "dim_M": "Confirm on enquiry", "dim_L": "Confirm on enquiry"},
+      {"code": "10-KT1007-32", "weight": "Confirm on enquiry", "wll": "Confirm on enquiry", "breaking": "Confirm on enquiry", "dim_B": "Confirm on enquiry", "dim_C": "Confirm on enquiry", "dim_D": "Confirm on enquiry", "dim_E": "Confirm on enquiry", "dim_H": "Confirm on enquiry", "dim_M": "Confirm on enquiry", "dim_L": "Confirm on enquiry"}
     ]
   },
   {
@@ -333,13 +333,13 @@ const entries: Product[] = [
       {"key": "dim_L", "label": "L", "kind": "mm"}
     ],
     "specRows": [
-      {"code": "10-SLR1008-06", "weight": 0.2, "wll": 1.4, "breaking": 5.6, "dim_E": 8, "dim_B": 14.5, "dim_D": 30.5, "dim_M": 43.5, "dim_L": 71},
-      {"code": "10-SLR1008-08", "weight": 0.28, "wll": 2.5, "breaking": 10, "dim_E": 10.8, "dim_B": 18, "dim_D": 37, "dim_M": 53, "dim_L": 91.5},
-      {"code": "10-SLR1008-10", "weight": 0.72, "wll": 4, "breaking": 16, "dim_E": 13.5, "dim_B": 22.5, "dim_D": 48.5, "dim_M": 72, "dim_L": 127.5},
-      {"code": "10-SLR1008-13", "weight": 1.6, "wll": 6.7, "breaking": 26.8, "dim_E": 16.5, "dim_B": 28, "dim_D": 59, "dim_M": 96, "dim_L": 163},
-      {"code": "10-SLR1008-16", "weight": 2.45, "wll": 10, "breaking": 40, "dim_E": 19.2, "dim_B": 36, "dim_D": 74, "dim_M": 112.5, "dim_L": 183},
-      {"code": "10-SLR1008-20", "weight": 4.72, "wll": 16, "breaking": 64, "dim_E": 24, "dim_B": 43.5, "dim_D": 89.5, "dim_M": 143, "dim_L": 227},
-      {"code": "10-SLR1008-22", "weight": 8.2, "wll": 19, "breaking": 76, "dim_E": 27, "dim_B": 48.5, "dim_D": 100.5, "dim_M": 160.5, "dim_L": 260.5}
+      {"code": "10-KT1008-6", "weight": 0.2, "wll": 1.4, "breaking": 5.6, "dim_E": 8, "dim_B": 14.5, "dim_D": 30.5, "dim_M": 43.5, "dim_L": 71},
+      {"code": "10-KT1008-8", "weight": 0.28, "wll": 2.5, "breaking": 10, "dim_E": 10.8, "dim_B": 18, "dim_D": 37, "dim_M": 53, "dim_L": 91.5},
+      {"code": "10-KT1008-10", "weight": 0.72, "wll": 4, "breaking": 16, "dim_E": 13.5, "dim_B": 22.5, "dim_D": 48.5, "dim_M": 72, "dim_L": 127.5},
+      {"code": "10-KT1008-13", "weight": 1.6, "wll": 6.7, "breaking": 26.8, "dim_E": 16.5, "dim_B": 28, "dim_D": 59, "dim_M": 96, "dim_L": 163},
+      {"code": "10-KT1008-16", "weight": 2.45, "wll": 10, "breaking": 40, "dim_E": 19.2, "dim_B": 36, "dim_D": 74, "dim_M": 112.5, "dim_L": 183},
+      {"code": "10-KT1008-20", "weight": 4.72, "wll": 16, "breaking": 64, "dim_E": 24, "dim_B": 43.5, "dim_D": 89.5, "dim_M": 143, "dim_L": 227},
+      {"code": "10-KT1008-22", "weight": 8.2, "wll": 19, "breaking": 76, "dim_E": 27, "dim_B": 48.5, "dim_D": 100.5, "dim_M": 160.5, "dim_L": 260.5}
     ]
   },
   {
@@ -381,15 +381,15 @@ const entries: Product[] = [
       {"key": "dim_L", "label": "L", "kind": "mm"}
     ],
     "specRows": [
-      {"code": "10-SLR1003-06", "weight": 0.32, "wll": 1.4, "breaking": 5.6, "dim_D": 10, "dim_E": 18.5, "dim_H": 21, "dim_M": 20.5, "dim_L": 111},
-      {"code": "10-SLR1003-08", "weight": 0.6, "wll": 2.5, "breaking": 10, "dim_D": 11, "dim_E": 25, "dim_H": 27.5, "dim_M": 25, "dim_L": 137.5},
-      {"code": "10-SLR1003-10", "weight": 1.2, "wll": 4, "breaking": 16, "dim_D": 16, "dim_E": 28, "dim_H": 33, "dim_M": 34, "dim_L": 171.5},
-      {"code": "10-SLR1003-13", "weight": 2.2, "wll": 6.7, "breaking": 26.8, "dim_D": 19, "dim_E": 38, "dim_H": 43.5, "dim_M": 43, "dim_L": 219},
-      {"code": "10-SLR1003-16", "weight": 3.5, "wll": 10, "breaking": 40, "dim_D": 24.5, "dim_E": 44, "dim_H": 50, "dim_M": 50, "dim_L": 260},
-      {"code": "10-SLR1003-20", "weight": 7.15, "wll": 16, "breaking": 64, "dim_D": 27, "dim_E": 52, "dim_H": 56, "dim_M": 55, "dim_L": 298},
-      {"code": "10-SLR1003-22", "weight": 11.5, "wll": 19, "breaking": 76, "dim_D": 29, "dim_E": 66, "dim_H": 62, "dim_M": 60, "dim_L": 330},
-      {"code": "10-SLR1003-26", "weight": 12.2, "wll": 26.5, "breaking": 106, "dim_D": 35, "dim_E": 73, "dim_H": 75, "dim_M": 70, "dim_L": 376},
-      {"code": "10-SLR1003-32", "weight": 17.5, "wll": 39.3, "breaking": 157.2, "dim_D": 39, "dim_E": 87, "dim_H": 89, "dim_M": 81.5, "dim_L": 458}
+      {"code": "10-KT1003-6", "weight": 0.32, "wll": 1.4, "breaking": 5.6, "dim_D": 10, "dim_E": 18.5, "dim_H": 21, "dim_M": 20.5, "dim_L": 111},
+      {"code": "10-KT1003-8", "weight": 0.6, "wll": 2.5, "breaking": 10, "dim_D": 11, "dim_E": 25, "dim_H": 27.5, "dim_M": 25, "dim_L": 137.5},
+      {"code": "10-KT1003-10", "weight": 1.2, "wll": 4, "breaking": 16, "dim_D": 16, "dim_E": 28, "dim_H": 33, "dim_M": 34, "dim_L": 171.5},
+      {"code": "10-KT1003-13", "weight": 2.2, "wll": 6.7, "breaking": 26.8, "dim_D": 19, "dim_E": 38, "dim_H": 43.5, "dim_M": 43, "dim_L": 219},
+      {"code": "10-KT1003-16", "weight": 3.5, "wll": 10, "breaking": 40, "dim_D": 24.5, "dim_E": 44, "dim_H": 50, "dim_M": 50, "dim_L": 260},
+      {"code": "10-KT1003-20", "weight": 7.15, "wll": 16, "breaking": 64, "dim_D": 27, "dim_E": 52, "dim_H": 56, "dim_M": 55, "dim_L": 298},
+      {"code": "10-KT1003-22", "weight": 11.5, "wll": 19, "breaking": 76, "dim_D": 29, "dim_E": 66, "dim_H": 62, "dim_M": 60, "dim_L": 330},
+      {"code": "10-KT1003-26", "weight": 12.2, "wll": 26.5, "breaking": 106, "dim_D": 35, "dim_E": 73, "dim_H": 75, "dim_M": 70, "dim_L": 376},
+      {"code": "10-KT1003-32", "weight": 17.5, "wll": 39.3, "breaking": 157.2, "dim_D": 39, "dim_E": 87, "dim_H": 89, "dim_M": 81.5, "dim_L": 458}
     ]
   },
   {
@@ -432,13 +432,13 @@ const entries: Product[] = [
       {"key": "dim_L", "label": "L", "kind": "mm"}
     ],
     "specRows": [
-      {"code": "10-SLR1005-06", "weight": 0.5, "wll": 1.4, "breaking": 5.6, "dim_A": 21, "dim_D": 43, "dim_E": 28, "dim_H": 20, "dim_R": 110, "dim_M": 70, "dim_L": 141},
-      {"code": "10-SLR1005-08", "weight": 0.9, "wll": 2.5, "breaking": 10, "dim_A": 27, "dim_D": 51, "dim_E": 35.5, "dim_H": 26, "dim_R": 137, "dim_M": 90, "dim_L": 175},
-      {"code": "10-SLR1005-10", "weight": 1.5, "wll": 4, "breaking": 16, "dim_A": 34.5, "dim_D": 64.3, "dim_E": 45, "dim_H": 30, "dim_R": 169, "dim_M": 108, "dim_L": 212.5},
-      {"code": "10-SLR1005-13", "weight": 2.7, "wll": 6.7, "breaking": 26.8, "dim_A": 40, "dim_D": 80, "dim_E": 53.5, "dim_H": 40.5, "dim_R": 209, "dim_M": 138.5, "dim_L": 270},
-      {"code": "10-SLR1005-16", "weight": 5.7, "wll": 10, "breaking": 40, "dim_A": 50, "dim_D": 104, "dim_E": 62, "dim_H": 50.5, "dim_R": 254, "dim_M": 170.5, "dim_L": 331},
-      {"code": "10-SLR1005-20", "weight": 7.9, "wll": 16, "breaking": 64, "dim_A": 60, "dim_D": 120, "dim_E": 76.5, "dim_H": 62, "dim_R": 277, "dim_M": 192.5, "dim_L": 369},
-      {"code": "10-SLR1005-22", "weight": 11.2, "wll": 19, "breaking": 76, "dim_A": 70, "dim_D": 134, "dim_E": 80, "dim_H": 66, "dim_R": 319.5, "dim_M": 205, "dim_L": 417}
+      {"code": "10-KT1005-6", "weight": 0.5, "wll": 1.4, "breaking": 5.6, "dim_A": 21, "dim_D": 43, "dim_E": 28, "dim_H": 20, "dim_R": 110, "dim_M": 70, "dim_L": 141},
+      {"code": "10-KT1005-8", "weight": 0.9, "wll": 2.5, "breaking": 10, "dim_A": 27, "dim_D": 51, "dim_E": 35.5, "dim_H": 26, "dim_R": 137, "dim_M": 90, "dim_L": 175},
+      {"code": "10-KT1005-10", "weight": 1.5, "wll": 4, "breaking": 16, "dim_A": 34.5, "dim_D": 64.3, "dim_E": 45, "dim_H": 30, "dim_R": 169, "dim_M": 108, "dim_L": 212.5},
+      {"code": "10-KT1005-13", "weight": 2.7, "wll": 6.7, "breaking": 26.8, "dim_A": 40, "dim_D": 80, "dim_E": 53.5, "dim_H": 40.5, "dim_R": 209, "dim_M": 138.5, "dim_L": 270},
+      {"code": "10-KT1005-16", "weight": 5.7, "wll": 10, "breaking": 40, "dim_A": 50, "dim_D": 104, "dim_E": 62, "dim_H": 50.5, "dim_R": 254, "dim_M": 170.5, "dim_L": 331},
+      {"code": "10-KT1005-20", "weight": 7.9, "wll": 16, "breaking": 64, "dim_A": 60, "dim_D": 120, "dim_E": 76.5, "dim_H": 62, "dim_R": 277, "dim_M": 192.5, "dim_L": 369},
+      {"code": "10-KT1005-22", "weight": 11.2, "wll": 19, "breaking": 76, "dim_A": 70, "dim_D": 134, "dim_E": 80, "dim_H": 66, "dim_R": 319.5, "dim_M": 205, "dim_L": 417}
     ]
   },
   {
@@ -479,13 +479,13 @@ const entries: Product[] = [
       {"key": "dim_L", "label": "L", "kind": "mm"}
     ],
     "specRows": [
-      {"code": "10-SLR1009-06", "weight": 0.22, "wll": 1.4, "breaking": 5.6, "dim_A": 7.5, "dim_B": 32, "dim_E": 8, "dim_M": 43.5, "dim_L": 75},
-      {"code": "10-SLR1009-08", "weight": 0.34, "wll": 2.5, "breaking": 10, "dim_A": 9.5, "dim_B": 36, "dim_E": 10.8, "dim_M": 53, "dim_L": 91.5},
-      {"code": "10-SLR1009-10", "weight": 0.82, "wll": 4, "breaking": 16, "dim_A": 12, "dim_B": 46, "dim_E": 13.5, "dim_M": 72, "dim_L": 126},
-      {"code": "10-SLR1009-13", "weight": 1.75, "wll": 6.7, "breaking": 26.8, "dim_A": 15, "dim_B": 59, "dim_E": 16.5, "dim_M": 96, "dim_L": 163.5},
-      {"code": "10-SLR1009-16", "weight": 2.88, "wll": 10, "breaking": 40, "dim_A": 17.5, "dim_B": 70, "dim_E": 19.2, "dim_M": 112.5, "dim_L": 183.5},
-      {"code": "10-SLR1009-20", "weight": 4.84, "wll": 16, "breaking": 64, "dim_A": 24, "dim_B": 85, "dim_E": 24, "dim_M": 143, "dim_L": 224},
-      {"code": "10-SLR1009-22", "weight": 8.3, "wll": 19, "breaking": 76, "dim_A": 27, "dim_B": 100, "dim_E": 27, "dim_M": 160.5, "dim_L": 262}
+      {"code": "10-KT1009-6", "weight": 0.22, "wll": 1.4, "breaking": 5.6, "dim_A": 7.5, "dim_B": 32, "dim_E": 8, "dim_M": 43.5, "dim_L": 75},
+      {"code": "10-KT1009-8", "weight": 0.34, "wll": 2.5, "breaking": 10, "dim_A": 9.5, "dim_B": 36, "dim_E": 10.8, "dim_M": 53, "dim_L": 91.5},
+      {"code": "10-KT1009-10", "weight": 0.82, "wll": 4, "breaking": 16, "dim_A": 12, "dim_B": 46, "dim_E": 13.5, "dim_M": 72, "dim_L": 126},
+      {"code": "10-KT1009-13", "weight": 1.75, "wll": 6.7, "breaking": 26.8, "dim_A": 15, "dim_B": 59, "dim_E": 16.5, "dim_M": 96, "dim_L": 163.5},
+      {"code": "10-KT1009-16", "weight": 2.88, "wll": 10, "breaking": 40, "dim_A": 17.5, "dim_B": 70, "dim_E": 19.2, "dim_M": 112.5, "dim_L": 183.5},
+      {"code": "10-KT1009-20", "weight": 4.84, "wll": 16, "breaking": 64, "dim_A": 24, "dim_B": 85, "dim_E": 24, "dim_M": 143, "dim_L": 224},
+      {"code": "10-KT1009-22", "weight": 8.3, "wll": 19, "breaking": 76, "dim_A": 27, "dim_B": 100, "dim_E": 27, "dim_M": 160.5, "dim_L": 262}
     ]
   },
   {
@@ -527,15 +527,15 @@ const entries: Product[] = [
       {"key": "dim_L", "label": "L", "kind": "mm"}
     ],
     "specRows": [
-      {"code": "10-SLR1004-06", "weight": 0.33, "wll": 1.4, "breaking": 5.6, "dim_A": 7.5, "dim_B": 32, "dim_E": 18.5, "dim_H": 21, "dim_M": 68.5, "dim_L": 109},
-      {"code": "10-SLR1004-08", "weight": 0.7, "wll": 2.5, "breaking": 10, "dim_A": 9.5, "dim_B": 37, "dim_E": 25, "dim_H": 27.5, "dim_M": 88, "dim_L": 134},
-      {"code": "10-SLR1004-10", "weight": 1.3, "wll": 4, "breaking": 16, "dim_A": 12, "dim_B": 48, "dim_E": 28, "dim_H": 33.5, "dim_M": 105.5, "dim_L": 161.5},
-      {"code": "10-SLR1004-13", "weight": 2.3, "wll": 6.7, "breaking": 26.8, "dim_A": 15, "dim_B": 59, "dim_E": 38, "dim_H": 42, "dim_M": 134, "dim_L": 203},
-      {"code": "10-SLR1004-16", "weight": 3.6, "wll": 10, "breaking": 40, "dim_A": 17.5, "dim_B": 70, "dim_E": 44, "dim_H": 50, "dim_M": 160.5, "dim_L": 248},
-      {"code": "10-SLR1004-20", "weight": 7.3, "wll": 16, "breaking": 64, "dim_A": 25, "dim_B": 85, "dim_E": 52, "dim_H": 56, "dim_M": 190.5, "dim_L": 297},
-      {"code": "10-SLR1004-22", "weight": 12.1, "wll": 19, "breaking": 76, "dim_A": 27, "dim_B": 100, "dim_E": 66, "dim_H": 62, "dim_M": 214.5, "dim_L": 326},
-      {"code": "10-SLR1004-26", "weight": "Confirm on enquiry", "wll": "Confirm on enquiry", "breaking": "Confirm on enquiry", "dim_A": "Confirm on enquiry", "dim_B": "Confirm on enquiry", "dim_E": "Confirm on enquiry", "dim_H": "Confirm on enquiry", "dim_M": "Confirm on enquiry", "dim_L": "Confirm on enquiry"},
-      {"code": "10-SLR1004-32", "weight": "Confirm on enquiry", "wll": "Confirm on enquiry", "breaking": "Confirm on enquiry", "dim_A": "Confirm on enquiry", "dim_B": "Confirm on enquiry", "dim_E": "Confirm on enquiry", "dim_H": "Confirm on enquiry", "dim_M": "Confirm on enquiry", "dim_L": "Confirm on enquiry"}
+      {"code": "10-KT1004-6", "weight": 0.33, "wll": 1.4, "breaking": 5.6, "dim_A": 7.5, "dim_B": 32, "dim_E": 18.5, "dim_H": 21, "dim_M": 68.5, "dim_L": 109},
+      {"code": "10-KT1004-8", "weight": 0.7, "wll": 2.5, "breaking": 10, "dim_A": 9.5, "dim_B": 37, "dim_E": 25, "dim_H": 27.5, "dim_M": 88, "dim_L": 134},
+      {"code": "10-KT1004-10", "weight": 1.3, "wll": 4, "breaking": 16, "dim_A": 12, "dim_B": 48, "dim_E": 28, "dim_H": 33.5, "dim_M": 105.5, "dim_L": 161.5},
+      {"code": "10-KT1004-13", "weight": 2.3, "wll": 6.7, "breaking": 26.8, "dim_A": 15, "dim_B": 59, "dim_E": 38, "dim_H": 42, "dim_M": 134, "dim_L": 203},
+      {"code": "10-KT1004-16", "weight": 3.6, "wll": 10, "breaking": 40, "dim_A": 17.5, "dim_B": 70, "dim_E": 44, "dim_H": 50, "dim_M": 160.5, "dim_L": 248},
+      {"code": "10-KT1004-20", "weight": 7.3, "wll": 16, "breaking": 64, "dim_A": 25, "dim_B": 85, "dim_E": 52, "dim_H": 56, "dim_M": 190.5, "dim_L": 297},
+      {"code": "10-KT1004-22", "weight": 12.1, "wll": 19, "breaking": 76, "dim_A": 27, "dim_B": 100, "dim_E": 66, "dim_H": 62, "dim_M": 214.5, "dim_L": 326},
+      {"code": "10-KT1004-26", "weight": "Confirm on enquiry", "wll": "Confirm on enquiry", "breaking": "Confirm on enquiry", "dim_A": "Confirm on enquiry", "dim_B": "Confirm on enquiry", "dim_E": "Confirm on enquiry", "dim_H": "Confirm on enquiry", "dim_M": "Confirm on enquiry", "dim_L": "Confirm on enquiry"},
+      {"code": "10-KT1004-32", "weight": "Confirm on enquiry", "wll": "Confirm on enquiry", "breaking": "Confirm on enquiry", "dim_A": "Confirm on enquiry", "dim_B": "Confirm on enquiry", "dim_E": "Confirm on enquiry", "dim_H": "Confirm on enquiry", "dim_M": "Confirm on enquiry", "dim_L": "Confirm on enquiry"}
     ]
   },
   {
@@ -578,8 +578,8 @@ const entries: Product[] = [
       {"key": "dim_L", "label": "L", "kind": "mm"}
     ],
     "specRows": [
-      {"code": "10-SLR1021-8", "weight": 0.39, "breaking": 10, "dim_A": 9.5, "dim_M": 35, "dim_N": 24, "dim_E": 9.8, "dim_L": 95.5, "restraintLoad": 2.5},
-      {"code": "10-SLR1021-13", "weight": 1.62, "breaking": 26.8, "dim_A": 16, "dim_M": 59, "dim_N": 49.5, "dim_E": 16, "dim_L": 162, "restraintLoad": 6.7}
+      {"code": "10-KT1021-8", "weight": 0.39, "breaking": 10, "dim_A": 9.5, "dim_M": 35, "dim_N": 24, "dim_E": 9.8, "dim_L": 95.5, "restraintLoad": 2.5},
+      {"code": "10-KT1021-13", "weight": 1.62, "breaking": 26.8, "dim_A": 16, "dim_M": 59, "dim_N": 49.5, "dim_E": 16, "dim_L": 162, "restraintLoad": 6.7}
     ]
   },
   {
@@ -626,37 +626,37 @@ const entries: Product[] = [
       {"key": "breaking", "label": "Breaking load", "kind": "t"}
     ],
     "specRows": [
-      {"code": "8-SLR1011-13", "chain_1_leg_chain": "6+7", "chain_2_leg_chain": "6", "weight": 0.34, "wll": 2.3, "dim_A": 110, "dim_B": 60, "dim_D": 13, "variant": "Standard master link"},
-      {"code": "8-SLR1011-16", "chain_1_leg_chain": "8", "chain_2_leg_chain": "7", "weight": 0.53, "wll": 3.5, "dim_A": 110, "dim_B": 60, "dim_D": 16, "variant": "Standard master link"},
-      {"code": "8-SLR1011-18", "chain_1_leg_chain": "10", "chain_2_leg_chain": "8", "weight": 0.86, "wll": 5, "dim_A": 135, "dim_B": 75, "dim_D": 18, "variant": "Standard master link"},
-      {"code": "8-SLR1011-23", "chain_1_leg_chain": "13", "chain_2_leg_chain": "10", "weight": 1.6, "wll": 7.6, "dim_A": 160, "dim_B": 90, "dim_D": 23, "variant": "Standard master link"},
-      {"code": "8-SLR1011-27", "chain_1_leg_chain": "16", "chain_2_leg_chain": "13", "weight": 2.46, "wll": 10, "dim_A": 180, "dim_B": 100, "dim_D": 27, "variant": "Standard master link"},
-      {"code": "8-SLR1011-33", "chain_1_leg_chain": "19", "chain_2_leg_chain": "16", "weight": 4.14, "wll": 14, "dim_A": 200, "dim_B": 110, "dim_D": 33, "variant": "Standard master link"},
-      {"code": "8-SLR1011-36", "chain_1_leg_chain": "22", "chain_2_leg_chain": "19", "weight": 6.22, "wll": 25.1, "dim_A": 260, "dim_B": 140, "dim_D": 36, "variant": "Standard master link"},
-      {"code": "8-SLR1011-45", "chain_1_leg_chain": "26", "chain_2_leg_chain": "22", "weight": 12.85, "wll": 30.8, "dim_A": 340, "dim_B": 180, "dim_D": 45, "variant": "Standard master link"},
-      {"code": "8-SLR1011-50", "chain_1_leg_chain": "32", "chain_2_leg_chain": "26", "weight": 16.22, "wll": 40, "dim_A": 350, "dim_B": 190, "dim_D": 50, "variant": "Standard master link"},
-      {"code": "8-SLR1013-86", "chain_1_leg_chain": "6/8", "chain_2_leg_chain": "6", "weight": 0.4, "wll": 2.5, "dim_A": 120, "dim_B": 70, "dim_D": 14, "variant": "Long master link"},
-      {"code": "8-SLR1013-108", "chain_1_leg_chain": "10", "chain_2_leg_chain": "8", "weight": 0.8, "wll": 4, "dim_A": 140, "dim_B": 80, "dim_D": 17, "variant": "Long master link"},
-      {"code": "8-SLR1013-1310", "chain_1_leg_chain": "13", "chain_2_leg_chain": "10", "weight": 1.5, "wll": 7.5, "dim_A": 160, "dim_B": 95, "dim_D": 22, "variant": "Long master link"},
-      {"code": "8-SLR1013-1613", "chain_1_leg_chain": "16", "chain_2_leg_chain": "13", "weight": 2.5, "wll": 10, "dim_A": 190, "dim_B": 110, "dim_D": 28, "variant": "Long master link"},
-      {"code": "8-SLR1013-2016", "chain_1_leg_chain": "19/20", "chain_2_leg_chain": "16", "weight": 5.2, "wll": 17, "dim_A": 240, "dim_B": 140, "dim_D": 34, "variant": "Long master link"},
-      {"code": "8-SLR1013-2220", "chain_1_leg_chain": "22/26", "chain_2_leg_chain": "20/22", "weight": 7.7, "wll": 28, "dim_A": 250, "dim_B": 150, "dim_D": 42, "variant": "Long master link"},
-      {"code": "8-SLR1014-108", "chain_1_leg_chain": "8/10", "chain_2_leg_chain": "8", "weight": 3.7, "wll": 4, "dim_A": 340, "dim_B": 180, "dim_D": 25, "variant": "Oversized master link"},
-      {"code": "8-SLR1014-1310", "chain_1_leg_chain": "13", "chain_2_leg_chain": "10", "weight": 4.7, "wll": 6.7, "dim_A": 340, "dim_B": 180, "dim_D": 28, "variant": "Oversized master link"},
-      {"code": "8-SLR1014-1613", "chain_1_leg_chain": "16", "chain_2_leg_chain": "13", "weight": 7.1, "wll": 10, "dim_A": 340, "dim_B": 180, "dim_D": 34, "variant": "Oversized master link"},
-      {"code": "8-SLR1014-2016", "chain_1_leg_chain": "20", "chain_2_leg_chain": "16", "weight": 8.9, "wll": 16, "dim_A": 340, "dim_B": 180, "dim_D": 42, "variant": "Oversized master link"},
-      {"code": "8-SLR1012-6", "chain_3_4_leg_chain": "6MM", "weight": 1.3, "wll": 3, "dim_A": 135, "dim_B": 75, "dim_D": 19, "dim_a": 84, "dim_b": 25, "dim_d": 13, "variant": "3/4-leg assembly"},
-      {"code": "8-SLR1012-8", "chain_3_4_leg_chain": "8MM", "weight": 2.33, "wll": 5.3, "dim_A": 160, "dim_B": 90, "dim_D": 23, "dim_a": 70, "dim_b": 35, "dim_d": 16.5, "variant": "3/4-leg assembly"},
-      {"code": "8-SLR1012-10", "chain_3_4_leg_chain": "10MM", "weight": 3.7, "wll": 8, "dim_A": 180, "dim_B": 100, "dim_D": 27, "dim_a": 85, "dim_b": 40, "dim_d": 19, "variant": "3/4-leg assembly"},
-      {"code": "8-SLR1012-13", "chain_3_4_leg_chain": "13MM", "weight": 6.5, "wll": 14, "dim_A": 200, "dim_B": 110, "dim_D": 33, "dim_a": 115, "dim_b": 50, "dim_d": 23, "variant": "3/4-leg assembly"},
-      {"code": "8-SLR1012-16", "chain_3_4_leg_chain": "16MM", "weight": 10.1, "wll": 21.2, "dim_A": 260, "dim_B": 140, "dim_D": 36, "dim_a": 140, "dim_b": 65, "dim_d": 27, "variant": "3/4-leg assembly"},
-      {"code": "8-SLR1012-20", "chain_3_4_leg_chain": "19/20MM", "weight": 22.8, "wll": 33.6, "dim_A": 350, "dim_B": 190, "dim_D": 50, "dim_a": 150, "dim_b": 70, "dim_d": 33, "variant": "3/4-leg assembly"},
-      {"code": "8-SLR1012-22", "chain_3_4_leg_chain": "22MM", "weight": 26, "wll": 33.9, "dim_A": 350, "dim_B": 190, "dim_D": 50, "dim_a": 180, "dim_b": 100, "dim_d": 36, "variant": "3/4-leg assembly"},
-      {"code": "10-SLR1015-06", "weight": 1.8, "wll": 3.5, "breaking": 14, "dim_A": 150, "dim_B": 90, "dim_D": 19, "dim_a": 120, "dim_b": 70, "dim_d": 14, "variant": "Large sub-link assembly"},
-      {"code": "10-SLR1015-08", "weight": 3.0, "wll": 5, "breaking": 20, "dim_A": 160, "dim_B": 95, "dim_D": 22, "dim_a": 140, "dim_b": 80, "dim_d": 17, "variant": "Large sub-link assembly"},
-      {"code": "10-SLR1015-10", "weight": 6.5, "wll": 11.5, "breaking": 46, "dim_A": 200, "dim_B": 120, "dim_D": 30, "dim_a": 160, "dim_b": 95, "dim_d": 22, "variant": "Large sub-link assembly"},
-      {"code": "10-SLR1015-13", "weight": 15, "wll": 17, "breaking": 68, "dim_A": 250, "dim_B": 150, "dim_D": 40, "dim_a": 200, "dim_b": 120, "dim_d": 30, "variant": "Large sub-link assembly"},
-      {"code": "10-SLR1015-16", "weight": 23, "wll": 28, "breaking": 112, "dim_A": 300, "dim_B": 200, "dim_D": 50, "dim_a": 200, "dim_b": 120, "dim_d": 32, "variant": "Large sub-link assembly"}
+      {"code": "8-KT1011-13", "chain_1_leg_chain": "6+7", "chain_2_leg_chain": "6", "weight": 0.34, "wll": 2.3, "dim_A": 110, "dim_B": 60, "dim_D": 13, "variant": "Standard master link"},
+      {"code": "8-KT1011-16", "chain_1_leg_chain": "8", "chain_2_leg_chain": "7", "weight": 0.53, "wll": 3.5, "dim_A": 110, "dim_B": 60, "dim_D": 16, "variant": "Standard master link"},
+      {"code": "8-KT1011-18", "chain_1_leg_chain": "10", "chain_2_leg_chain": "8", "weight": 0.86, "wll": 5, "dim_A": 135, "dim_B": 75, "dim_D": 18, "variant": "Standard master link"},
+      {"code": "8-KT1011-23", "chain_1_leg_chain": "13", "chain_2_leg_chain": "10", "weight": 1.6, "wll": 7.6, "dim_A": 160, "dim_B": 90, "dim_D": 23, "variant": "Standard master link"},
+      {"code": "8-KT1011-27", "chain_1_leg_chain": "16", "chain_2_leg_chain": "13", "weight": 2.46, "wll": 10, "dim_A": 180, "dim_B": 100, "dim_D": 27, "variant": "Standard master link"},
+      {"code": "8-KT1011-33", "chain_1_leg_chain": "19", "chain_2_leg_chain": "16", "weight": 4.14, "wll": 14, "dim_A": 200, "dim_B": 110, "dim_D": 33, "variant": "Standard master link"},
+      {"code": "8-KT1011-36", "chain_1_leg_chain": "22", "chain_2_leg_chain": "19", "weight": 6.22, "wll": 25.1, "dim_A": 260, "dim_B": 140, "dim_D": 36, "variant": "Standard master link"},
+      {"code": "8-KT1011-45", "chain_1_leg_chain": "26", "chain_2_leg_chain": "22", "weight": 12.85, "wll": 30.8, "dim_A": 340, "dim_B": 180, "dim_D": 45, "variant": "Standard master link"},
+      {"code": "8-KT1011-50", "chain_1_leg_chain": "32", "chain_2_leg_chain": "26", "weight": 16.22, "wll": 40, "dim_A": 350, "dim_B": 190, "dim_D": 50, "variant": "Standard master link"},
+      {"code": "8-KT1013-86", "chain_1_leg_chain": "6/8", "chain_2_leg_chain": "6", "weight": 0.4, "wll": 2.5, "dim_A": 120, "dim_B": 70, "dim_D": 14, "variant": "Long master link"},
+      {"code": "8-KT1013-108", "chain_1_leg_chain": "10", "chain_2_leg_chain": "8", "weight": 0.8, "wll": 4, "dim_A": 140, "dim_B": 80, "dim_D": 17, "variant": "Long master link"},
+      {"code": "8-KT1013-1310", "chain_1_leg_chain": "13", "chain_2_leg_chain": "10", "weight": 1.5, "wll": 7.5, "dim_A": 160, "dim_B": 95, "dim_D": 22, "variant": "Long master link"},
+      {"code": "8-KT1013-1613", "chain_1_leg_chain": "16", "chain_2_leg_chain": "13", "weight": 2.5, "wll": 10, "dim_A": 190, "dim_B": 110, "dim_D": 28, "variant": "Long master link"},
+      {"code": "8-KT1013-2016", "chain_1_leg_chain": "19/20", "chain_2_leg_chain": "16", "weight": 5.2, "wll": 17, "dim_A": 240, "dim_B": 140, "dim_D": 34, "variant": "Long master link"},
+      {"code": "8-KT1013-2220", "chain_1_leg_chain": "22/26", "chain_2_leg_chain": "20/22", "weight": 7.7, "wll": 28, "dim_A": 250, "dim_B": 150, "dim_D": 42, "variant": "Long master link"},
+      {"code": "8-KT1014-108", "chain_1_leg_chain": "8/10", "chain_2_leg_chain": "8", "weight": 3.7, "wll": 4, "dim_A": 340, "dim_B": 180, "dim_D": 25, "variant": "Oversized master link"},
+      {"code": "8-KT1014-1310", "chain_1_leg_chain": "13", "chain_2_leg_chain": "10", "weight": 4.7, "wll": 6.7, "dim_A": 340, "dim_B": 180, "dim_D": 28, "variant": "Oversized master link"},
+      {"code": "8-KT1014-1613", "chain_1_leg_chain": "16", "chain_2_leg_chain": "13", "weight": 7.1, "wll": 10, "dim_A": 340, "dim_B": 180, "dim_D": 34, "variant": "Oversized master link"},
+      {"code": "8-KT1014-2016", "chain_1_leg_chain": "20", "chain_2_leg_chain": "16", "weight": 8.9, "wll": 16, "dim_A": 340, "dim_B": 180, "dim_D": 42, "variant": "Oversized master link"},
+      {"code": "8-KT1012-6", "chain_3_4_leg_chain": "6MM", "weight": 1.3, "wll": 3, "dim_A": 135, "dim_B": 75, "dim_D": 19, "dim_a": 84, "dim_b": 25, "dim_d": 13, "variant": "3/4-leg assembly"},
+      {"code": "8-KT1012-8", "chain_3_4_leg_chain": "8MM", "weight": 2.33, "wll": 5.3, "dim_A": 160, "dim_B": 90, "dim_D": 23, "dim_a": 70, "dim_b": 35, "dim_d": 16.5, "variant": "3/4-leg assembly"},
+      {"code": "8-KT1012-10", "chain_3_4_leg_chain": "10MM", "weight": 3.7, "wll": 8, "dim_A": 180, "dim_B": 100, "dim_D": 27, "dim_a": 85, "dim_b": 40, "dim_d": 19, "variant": "3/4-leg assembly"},
+      {"code": "8-KT1012-13", "chain_3_4_leg_chain": "13MM", "weight": 6.5, "wll": 14, "dim_A": 200, "dim_B": 110, "dim_D": 33, "dim_a": 115, "dim_b": 50, "dim_d": 23, "variant": "3/4-leg assembly"},
+      {"code": "8-KT1012-16", "chain_3_4_leg_chain": "16MM", "weight": 10.1, "wll": 21.2, "dim_A": 260, "dim_B": 140, "dim_D": 36, "dim_a": 140, "dim_b": 65, "dim_d": 27, "variant": "3/4-leg assembly"},
+      {"code": "8-KT1012-20", "chain_3_4_leg_chain": "19/20MM", "weight": 22.8, "wll": 33.6, "dim_A": 350, "dim_B": 190, "dim_D": 50, "dim_a": 150, "dim_b": 70, "dim_d": 33, "variant": "3/4-leg assembly"},
+      {"code": "8-KT1012-22", "chain_3_4_leg_chain": "22MM", "weight": 26, "wll": 33.9, "dim_A": 350, "dim_B": 190, "dim_D": 50, "dim_a": 180, "dim_b": 100, "dim_d": 36, "variant": "3/4-leg assembly"},
+      {"code": "10-KT1015-6", "weight": 1.8, "wll": 3.5, "breaking": 14, "dim_A": 150, "dim_B": 90, "dim_D": 19, "dim_a": 120, "dim_b": 70, "dim_d": 14, "variant": "Large sub-link assembly"},
+      {"code": "10-KT1015-8", "weight": 3.0, "wll": 5, "breaking": 20, "dim_A": 160, "dim_B": 95, "dim_D": 22, "dim_a": 140, "dim_b": 80, "dim_d": 17, "variant": "Large sub-link assembly"},
+      {"code": "10-KT1015-10", "weight": 6.5, "wll": 11.5, "breaking": 46, "dim_A": 200, "dim_B": 120, "dim_D": 30, "dim_a": 160, "dim_b": 95, "dim_d": 22, "variant": "Large sub-link assembly"},
+      {"code": "10-KT1015-13", "weight": 15, "wll": 17, "breaking": 68, "dim_A": 250, "dim_B": 150, "dim_D": 40, "dim_a": 200, "dim_b": 120, "dim_d": 30, "variant": "Large sub-link assembly"},
+      {"code": "10-KT1015-16", "weight": 23, "wll": 28, "breaking": 112, "dim_A": 300, "dim_B": 200, "dim_D": 50, "dim_a": 200, "dim_b": 120, "dim_d": 32, "variant": "Large sub-link assembly"}
     ]
   },
   {
@@ -699,13 +699,13 @@ const entries: Product[] = [
       {"key": "dim_L", "label": "L", "kind": "mm"}
     ],
     "specRows": [
-      {"code": "10-SLR1006-06", "weight": 0.5, "wll": 1.4, "breaking": 5.6, "dim_A": 7.5, "dim_B": 32, "dim_E": 28, "dim_H": 20, "dim_R": 96, "dim_M": 70, "dim_L": 131},
-      {"code": "10-SLR1006-08", "weight": 0.9, "wll": 2.5, "breaking": 10, "dim_A": 9.5, "dim_B": 36, "dim_E": 35.5, "dim_H": 26, "dim_R": 123, "dim_M": 90, "dim_L": 166},
-      {"code": "10-SLR1006-10", "weight": 1.6, "wll": 4, "breaking": 16, "dim_A": 12, "dim_B": 46, "dim_E": 45, "dim_H": 30, "dim_R": 144, "dim_M": 109, "dim_L": 196.5},
-      {"code": "10-SLR1006-13", "weight": 2.9, "wll": 6.7, "breaking": 26.8, "dim_A": 15, "dim_B": 59, "dim_E": 53.5, "dim_H": 40.5, "dim_R": 182, "dim_M": 138.5, "dim_L": 251},
-      {"code": "10-SLR1006-16", "weight": 5.8, "wll": 10, "breaking": 40, "dim_A": 17.5, "dim_B": 70, "dim_E": 62, "dim_H": 50.5, "dim_R": 217, "dim_M": 170.5, "dim_L": 303},
-      {"code": "10-SLR1006-20", "weight": 8.6, "wll": 16, "breaking": 64, "dim_A": 25, "dim_B": 85, "dim_E": 76.5, "dim_H": 62, "dim_R": 235, "dim_M": 192.5, "dim_L": 337.5},
-      {"code": "10-SLR1006-22", "weight": 12.1, "wll": 19, "breaking": 76, "dim_A": 25.5, "dim_B": 98, "dim_E": 80, "dim_H": 66, "dim_R": 276.5, "dim_M": 205, "dim_L": 391}
+      {"code": "10-KT1006-6", "weight": 0.5, "wll": 1.4, "breaking": 5.6, "dim_A": 7.5, "dim_B": 32, "dim_E": 28, "dim_H": 20, "dim_R": 96, "dim_M": 70, "dim_L": 131},
+      {"code": "10-KT1006-8", "weight": 0.9, "wll": 2.5, "breaking": 10, "dim_A": 9.5, "dim_B": 36, "dim_E": 35.5, "dim_H": 26, "dim_R": 123, "dim_M": 90, "dim_L": 166},
+      {"code": "10-KT1006-10", "weight": 1.6, "wll": 4, "breaking": 16, "dim_A": 12, "dim_B": 46, "dim_E": 45, "dim_H": 30, "dim_R": 144, "dim_M": 109, "dim_L": 196.5},
+      {"code": "10-KT1006-13", "weight": 2.9, "wll": 6.7, "breaking": 26.8, "dim_A": 15, "dim_B": 59, "dim_E": 53.5, "dim_H": 40.5, "dim_R": 182, "dim_M": 138.5, "dim_L": 251},
+      {"code": "10-KT1006-16", "weight": 5.8, "wll": 10, "breaking": 40, "dim_A": 17.5, "dim_B": 70, "dim_E": 62, "dim_H": 50.5, "dim_R": 217, "dim_M": 170.5, "dim_L": 303},
+      {"code": "10-KT1006-20", "weight": 8.6, "wll": 16, "breaking": 64, "dim_A": 25, "dim_B": 85, "dim_E": 76.5, "dim_H": 62, "dim_R": 235, "dim_M": 192.5, "dim_L": 337.5},
+      {"code": "10-KT1006-22", "weight": 12.1, "wll": 19, "breaking": 76, "dim_A": 25.5, "dim_B": 98, "dim_E": 80, "dim_H": 66, "dim_R": 276.5, "dim_M": 205, "dim_L": 391}
     ]
   },
   {
@@ -889,9 +889,9 @@ const entries: Product[] = [
       {"key": "dim_φ", "label": "φ", "kind": "mm"}
     ],
     "specRows": [
-      {"code": "10-SLR1025-08", "weight": 0.6, "wll": 2.5, "breaking": 10, "dim_A": 9.5, "dim_B": 36, "dim_E": 28.5, "dim_M": 82, "dim_H": 22, "dim_K": 101, "dim_L": 140, "dim_φ": 28},
-      {"code": "10-SLR1025-10", "weight": 0.96, "wll": 4, "breaking": 16, "dim_A": 12, "dim_B": 42, "dim_E": 31, "dim_M": 97.5, "dim_H": 26.7, "dim_K": 122, "dim_L": 171.5, "dim_φ": 35},
-      {"code": "10-SLR1025-13", "weight": 1.81, "wll": 6.7, "breaking": 26.8, "dim_A": 15, "dim_B": 54, "dim_E": 40, "dim_M": 135, "dim_H": 36, "dim_K": 137, "dim_L": 202, "dim_φ": 36}
+      {"code": "10-KT1025-8", "weight": 0.6, "wll": 2.5, "breaking": 10, "dim_A": 9.5, "dim_B": 36, "dim_E": 28.5, "dim_M": 82, "dim_H": 22, "dim_K": 101, "dim_L": 140, "dim_φ": 28},
+      {"code": "10-KT1025-10", "weight": 0.96, "wll": 4, "breaking": 16, "dim_A": 12, "dim_B": 42, "dim_E": 31, "dim_M": 97.5, "dim_H": 26.7, "dim_K": 122, "dim_L": 171.5, "dim_φ": 35},
+      {"code": "10-KT1025-13", "weight": 1.81, "wll": 6.7, "breaking": 26.8, "dim_A": 15, "dim_B": 54, "dim_E": 40, "dim_M": 135, "dim_H": 36, "dim_K": 137, "dim_L": 202, "dim_φ": 36}
     ]
   },
   {
@@ -935,9 +935,9 @@ const entries: Product[] = [
       {"key": "dim_M", "label": "M", "kind": "mm"}
     ],
     "specRows": [
-      {"code": "10-SLR1026-08", "weight": 0.4, "wll": 2.5, "breaking": 10, "dim_A": 28, "dim_B": 28, "dim_E": 28.5, "dim_H": 22, "dim_φ": 28, "dim_C": "Confirm on enquiry", "dim_L": 145, "dim_M": 82},
-      {"code": "10-SLR1026-10", "weight": 0.86, "wll": 4, "breaking": 16, "dim_A": 34, "dim_B": 34, "dim_E": 31, "dim_H": 26.2, "dim_φ": 35, "dim_C": 14, "dim_L": 170, "dim_M": 97.5},
-      {"code": "10-SLR1026-13", "weight": 1.75, "wll": 6.7, "breaking": 26.8, "dim_A": 42, "dim_B": 44, "dim_E": 40, "dim_H": 36, "dim_φ": 36, "dim_C": 18.5, "dim_L": 206, "dim_M": 135}
+      {"code": "10-KT1026-8", "weight": 0.4, "wll": 2.5, "breaking": 10, "dim_A": 28, "dim_B": 28, "dim_E": 28.5, "dim_H": 22, "dim_φ": 28, "dim_C": "Confirm on enquiry", "dim_L": 145, "dim_M": 82},
+      {"code": "10-KT1026-10", "weight": 0.86, "wll": 4, "breaking": 16, "dim_A": 34, "dim_B": 34, "dim_E": 31, "dim_H": 26.2, "dim_φ": 35, "dim_C": 14, "dim_L": 170, "dim_M": 97.5},
+      {"code": "10-KT1026-13", "weight": 1.75, "wll": 6.7, "breaking": 26.8, "dim_A": 42, "dim_B": 44, "dim_E": 40, "dim_H": 36, "dim_φ": 36, "dim_C": 18.5, "dim_L": 206, "dim_M": 135}
     ]
   }
 ];

@@ -2,7 +2,7 @@
   {
     "slug": "lifting-chain-g80",
     "models": [
-      "SLRG80"
+      "KTG80"
     ],
     "sources": [
       "https://www.shenlislr.com/quality-37708110-slrg80-alloy-steel-forged-lifting-crane-chain"
@@ -16,7 +16,7 @@
   {
     "slug": "lifting-chain-g100",
     "models": [
-      "SLRG100"
+      "KTG100"
     ],
     "sources": [
       "https://www.shenlislr.com/sale-37708117-slrg100-alloy-steel-forged-lifting-crane-chain.html"
@@ -30,7 +30,7 @@
   {
     "slug": "clevis-shortening-clutch-g80",
     "models": [
-      "SLR301"
+      "KT301"
     ],
     "sources": [
       "https://www.shenlislr.com/sale-37670578-slr301-g80-clevis-clutch.html"
@@ -44,7 +44,7 @@
   {
     "slug": "swivel-with-bearing-g80",
     "models": [
-      "SLR283"
+      "KT283"
     ],
     "sources": [
       "https://www.shenlislr.com/sale-37614363-slr283-g80-swivel-with-bearing.html"
@@ -58,7 +58,7 @@
   {
     "slug": "triangle-ring-webbing-sling",
     "models": [
-      "SLR140"
+      "KT140"
     ],
     "sources": [
       "https://www.shenlislr.com/sale-37604860-slr140-alloy-tariangle-ring-for-web-sling.html"
@@ -72,7 +72,7 @@
   {
     "slug": "twin-clevis-link",
     "models": [
-      "SLRO48"
+      "KTO48"
     ],
     "sources": [
       "https://www.shenlislr.com/sale-37589290-slro48-alloy-twin-clevis-link.html"
@@ -86,7 +86,7 @@
   {
     "slug": "forged-round-ring",
     "models": [
-      "SLR038"
+      "KT038"
     ],
     "sources": [
       "https://www.shenlislr.com/sale-37604840-slr038-forged-alloy-steel-ring.html"
@@ -100,7 +100,7 @@
   {
     "slug": "twist-webbing-sling-hook-g80",
     "models": [
-      "SLR018"
+      "KT018"
     ],
     "sources": [
       "https://www.shenlislr.com/sale-37571204-slr018-g80-twist-hook-for-web-sling.html"
@@ -114,8 +114,8 @@
   {
     "slug": "cast-steel-choker",
     "models": [
-      "SLR227",
-      "SLR668"
+      "KT227",
+      "KT668"
     ],
     "sources": [
       "https://www.shenlislr.com/sale-37599691-slr227-cast-steel-choker.html",
@@ -131,7 +131,7 @@
   {
     "slug": "eye-webbing-sling-hook-g80",
     "models": [
-      "SLR090"
+      "KT090"
     ],
     "sources": [
       "https://www.shenlislr.com/sale-37628308-slr090-g80-eye-webbing-sling-hook.html"
@@ -145,7 +145,7 @@
   {
     "slug": "clevis-webbing-sling-hook-g80",
     "models": [
-      "SLR016"
+      "KT016"
     ],
     "sources": [
       "https://www.shenlislr.com/sale-37627717-slr016-g80-clevis-webbing-sling-hook.html"
@@ -159,7 +159,7 @@
   {
     "slug": "round-reverse-eye-hook",
     "models": [
-      "SLR280"
+      "KT280"
     ],
     "sources": [
       "https://www.shenlislr.com/sale-37670424-slr280-round-reverse-eye-hook.html"
@@ -173,7 +173,7 @@
   {
     "slug": "eye-slip-hook",
     "models": [
-      "SLR128"
+      "KT128"
     ],
     "sources": [
       "https://www.shenlislr.com/quality-37604718-slr128-eye-slip-hook"
@@ -187,8 +187,8 @@
   {
     "slug": "clevis-grab-hook-g70",
     "models": [
-      "SLR099",
-      "SLR123"
+      "KT099",
+      "KT123"
     ],
     "sources": [
       "https://www.shenlislr.com/sale-37629905-slr099-g70-alloy-clevis-grab-hook.html",
@@ -204,7 +204,7 @@
   {
     "slug": "clevis-grab-hook-g43",
     "models": [
-      "SLR123"
+      "KT123"
     ],
     "sources": [
       "https://www.shenlislr.com/sale-37669143-slr123-g70-and-g43-clevis-grab-hook.html"
@@ -218,7 +218,7 @@
   {
     "slug": "suspension-link-components",
     "models": [
-      "SLR866"
+      "KT866"
     ],
     "sources": [
       "https://www.shenlislr.com/quality-37689229-slr866-suspension-link-components"
@@ -232,7 +232,7 @@
   {
     "slug": "round-pin-dee-shackle",
     "models": [
-      "SLR122"
+      "KT122"
     ],
     "sources": [
       "https://www.shenlislr.com/sale-37595492-slr122-round-pin-dee-shackles.html"
@@ -246,7 +246,7 @@
   {
     "slug": "round-pin-anchor-shackle",
     "models": [
-      "SLR121"
+      "KT121"
     ],
     "sources": [
       "https://www.shenlislr.com/sale-37595505-slr121-round-pin-anchor-shackles.html"
@@ -260,7 +260,7 @@
   {
     "slug": "s6-bolt-chain-shackle",
     "models": [
-      "SLR970"
+      "KT970"
     ],
     "sources": [
       "https://www.shenlislr.com/sale-37595630-slr970-s6-bolt-type-chain-shackle.html"
@@ -274,7 +274,7 @@
   {
     "slug": "s6-bolt-anchor-shackle",
     "models": [
-      "SLR969"
+      "KT969"
     ],
     "sources": [
       "https://www.shenlislr.com/sale-37595597-slr969-s6-bolt-type-anchor-shackle.html"
@@ -288,7 +288,7 @@
   {
     "slug": "s6-screw-chain-shackle",
     "models": [
-      "SLR959"
+      "KT959"
     ],
     "sources": [
       "https://www.shenlislr.com/sale-37595563-slr959-s6-screw-type-chain-shackle.html"
@@ -302,7 +302,7 @@
   {
     "slug": "s6-screw-anchor-shackle",
     "models": [
-      "SLR958"
+      "KT958"
     ],
     "sources": [
       "https://www.shenlislr.com/sale-37595541-slr958-s6-screw-type-anchor-shackle.html"
@@ -316,7 +316,7 @@
   {
     "slug": "shackle-coupling-chain",
     "models": [
-      "SLR879"
+      "KT879"
     ],
     "sources": [
       "https://www.shenlislr.com/sale-37595863-slr879-shackle-coupling-chain.html"
@@ -330,7 +330,7 @@
   {
     "slug": "lever-load-binder",
     "models": [
-      "SLR910"
+      "KT910"
     ],
     "sources": [
       "https://www.shenlislr.com/sale-37689239-slr910-lever-tightener.html"
@@ -344,7 +344,7 @@
   {
     "slug": "clevis-ratchet-binder-g100",
     "models": [
-      "SLR1032"
+      "KT1032"
     ],
     "sources": [
       "https://www.shenlislr.com/quality-37689328-slr1032-g100-clevis-type-rachet-binder"
@@ -358,9 +358,9 @@
   {
     "slug": "ratchet-binder-safety-hooks-g80",
     "models": [
-      "SLR670",
-      "SLR786",
-      "SLR753"
+      "KT670",
+      "KT786",
+      "KT753"
     ],
     "sources": [
       "https://www.shenlislr.com/sale-37599665-slr670-g80-rachet-binder-with-safety-hooks.html",
@@ -392,7 +392,7 @@
   {
     "slug": "ratchet-binder-body-g100",
     "models": [
-      "SLR1031"
+      "KT1031"
     ],
     "sources": [
       "https://www.shenlislr.com/sale-37689317-slr1031-g100-rachet-binder-without-links-and-hooks100.html"
@@ -406,7 +406,7 @@
   {
     "slug": "conveyor-belt-sling-tongs",
     "models": [
-      "SLR939"
+      "KT939"
     ],
     "sources": [
       "https://www.shenlislr.com/sale-37689282-slr939-conveyor-belt-sling-tongs.html"
@@ -420,7 +420,7 @@
   {
     "slug": "u-type-forged-hoist-ring",
     "models": [
-      "SLR882"
+      "KT882"
     ],
     "sources": [
       "https://www.shenlislr.com/sale-37767238-slr882-utype-forged-hoist-ring.html"
@@ -434,7 +434,7 @@
   {
     "slug": "mineral-carver",
     "models": [
-      "SLR827"
+      "KT827"
     ],
     "sources": [
       "https://www.shenlislr.com/sale-37767601-slr827-mineral-carver.html"
@@ -448,7 +448,7 @@
   {
     "slug": "forged-mining-latch",
     "models": [
-      "SLR928"
+      "KT928"
     ],
     "sources": [
       "https://www.shenlislr.com/sale-37689246-slr928-forging-latch.html"
@@ -462,7 +462,7 @@
   {
     "slug": "fixed-mining-clasp",
     "models": [
-      "SLR938"
+      "KT938"
     ],
     "sources": [
       "https://www.shenlislr.com/sale-37604804-slr938-fixed-clasp.html"
@@ -476,7 +476,7 @@
   {
     "slug": "forged-mineral-shackle",
     "models": [
-      "SLR858"
+      "KT858"
     ],
     "sources": [
       "https://www.shenlislr.com/sale-37595850-slr858-forged-mineral-shackle.html"
@@ -490,7 +490,7 @@
   {
     "slug": "clevis-sling-hook-g100",
     "models": [
-      "SLR1004"
+      "KT1004"
     ],
     "sources": [
       "https://www.shenlislr.com/quality-37599790-slr1004-g100-clevis-sling-hook-with-cast-l-atch"
@@ -504,7 +504,7 @@
   {
     "slug": "eye-sling-hook-g100",
     "models": [
-      "SLR1008"
+      "KT1008"
     ],
     "sources": [
       "https://www.shenlislr.com/sale-37600277-slr1008-g100-eye-sling-hook.html"
@@ -518,7 +518,7 @@
   {
     "slug": "clevis-link-g100",
     "models": [
-      "SLR1033"
+      "KT1033"
     ],
     "sources": [
       "https://www.shenlislr.com/sale-37689329-slr1033-g100-clevis-link.html"
@@ -532,7 +532,7 @@
   {
     "slug": "clevis-reeving-link-g100",
     "models": [
-      "SLR1062"
+      "KT1062"
     ],
     "sources": [
       "https://www.shenlislr.com/sale-37689334-slr1062-g100-clevis-reeving-link.html"
@@ -546,7 +546,7 @@
   {
     "slug": "omega-link-g100",
     "models": [
-      "SLR1027"
+      "KT1027"
     ],
     "sources": [
       "https://www.shenlislr.com/sale-37599826-slr1027-g100-omega-link.html"
@@ -560,7 +560,7 @@
   {
     "slug": "oversized-master-link-g100",
     "models": [
-      "SLR1014"
+      "KT1014"
     ],
     "sources": [
       "https://www.shenlislr.com/sale-37599805-slr1014-g100-forged-oversized-master-link.html"
@@ -574,7 +574,7 @@
   {
     "slug": "master-link-grab-hook-assembly-g100",
     "models": [
-      "SLR1068"
+      "KT1068"
     ],
     "sources": [
       "https://www.shenlislr.com/sale-37599748-slr1068-g100-master-link-assembly-with-grab-hook.html"
@@ -588,7 +588,7 @@
   {
     "slug": "clevis-c-hook-g100",
     "models": [
-      "SLR1071"
+      "KT1071"
     ],
     "sources": [
       "https://www.shenlislr.com/sale-37599794-slr1071-g100-clevis-c-type-hook.html"
