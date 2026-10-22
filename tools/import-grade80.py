@@ -197,8 +197,8 @@ def import_catalogue():
         manifest.append(dict(slug=slug, name=name, source=BASE+url, referenceImage=BASE+primary, referencePath='/'+str(Path(source_image).relative_to(ROOT/'public')), localImage=product['image'], group=group, tables=len(tables), sizes=max(0, len(tables[0]['rows'])-1) if tables else 0))
     if len(set(p['slug'] for p in products)) != len(products):
         raise ValueError('Duplicate slugs')
-    (ROOT/'src/data/grade-80-products.json').write_text(json.dumps(products, indent=2, ensure_ascii=False)+'\n')
-    (ROOT/'src/data/grade-80-technical-reference.json').write_text(json.dumps(references, indent=2, ensure_ascii=False)+'\n')
+    (ROOT/'src/data/grade-80-products.json').write_text(json.dumps(products, indent=2, ensure_ascii=False).replace('SLR', 'KT')+'\n')
+    (ROOT/'src/data/grade-80-technical-reference.json').write_text(json.dumps(references, indent=2, ensure_ascii=False).replace('SLR', 'KT')+'\n')
     (ROOT/'docs/grade-80-catalogue.json').write_text(json.dumps(dict(source=BASE+'2-grade-80-rigging-hardware.html', finish='RAL 2004 orange', families=manifest), indent=2, ensure_ascii=False)+'\n')
     assets = list(dict.fromkeys(assets))
     for _, path in assets:

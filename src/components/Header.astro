@@ -36,10 +36,20 @@ const isActive = (href: string) => (href === '/' ? path === '/' : path.startsWit
               {item.mega && (
                 <div class="mega" aria-label="Product categories">
                   <div class="wrap mega-inner">
+                    <div class="mega-intro"><span>PRODUCT RANGE</span><p>Built for the lift.</p></div>
                     <ul class="mega-grid">
-                      <li><a href="/products"><span class="mega-name">Grade 100 Rigging</span></a></li>
-                      <li><a href="/products/grade-80-rigging"><span class="mega-name">Grade 80 Rigging</span></a></li>
+                      <li><a href="/products">
+                        <span class="mega-image"><img src="/images/products/branded/grade-100/blue/alloy-clevis-self-locking-hook-g100.webp" alt="" width="160" height="160" /></span>
+                        <span class="mega-copy"><span class="mega-grade">G100</span><span class="mega-name">Grade 100 Rigging</span><span class="mega-description">Hooks, links &amp; lifting components</span></span>
+                        <span class="mega-arrow"><Icon name="arrow" /></span>
+                      </a></li>
+                      <li><a href="/products/grade-80-rigging">
+                        <span class="mega-image"><img src="/images/products/branded/grade-80/alloy-steel-clevis-sling-hook-2-18-g80.webp" alt="" width="160" height="160" /></span>
+                        <span class="mega-copy"><span class="mega-grade">G80</span><span class="mega-name">Grade 80 Rigging</span><span class="mega-description">A complete range in RAL 2004 orange</span></span>
+                        <span class="mega-arrow"><Icon name="arrow" /></span>
+                      </a></li>
                     </ul>
+                    <a class="mega-catalogue" href="/downloads"><span><Icon name="download" /> Explore our catalogues</span><Icon name="arrow" /></a>
                   </div>
                 </div>
               )}
@@ -123,17 +133,32 @@ const isActive = (href: string) => (href === '/' ? path === '/' : path.startsWit
 
   .has-mega:hover .mega, .has-mega:focus-within .mega { opacity: 1; visibility: visible; transform: translateY(0); }
   .mega {
-    position: absolute; left: 0; top: 100%; width: 260px;
-    background: var(--white); border: 1px solid var(--zinc); border-radius: 8px; box-shadow: 0 12px 30px -12px rgba(17,27,51,.25);
+    position: absolute; left: 0; top: 100%; width: 440px;
+    background: var(--white); border: 1px solid var(--zinc); border-top: 3px solid var(--orange); border-radius: 0 0 14px 14px; box-shadow: 0 24px 55px -18px rgba(17,27,51,.3); overflow: hidden;
     opacity: 0; visibility: hidden; transform: translateY(-6px); transition: opacity .18s var(--ease), transform .18s var(--ease), visibility 0s linear .18s;
   }
   .has-mega:hover .mega, .has-mega:focus-within .mega { transition-delay: 0s; }
-  .mega-inner { width: 100%; max-width: none; margin: 0; padding: 8px; }
-  .mega-grid { display: grid; grid-template-columns: 1fr; }
-  .mega-grid a { display: flex; align-items: center; padding: 14px 16px; border-radius: 4px; transition: background .15s; }
-  .mega-name { font-family: var(--font-display); font-weight: 600; font-size: 1rem; }
-  .mega-grid a:hover, .mega-grid a:focus-visible { background: var(--paper, #f5f4f1); }
-  .mega-grid a:hover .mega-name { color: var(--orange); }
+  .mega-inner { width: 100%; max-width: none; margin: 0; padding: 0; }
+  .mega-intro { padding: 22px 24px 14px; }
+  .mega-intro > span { font-size: 10px; font-weight: 600; letter-spacing: .15em; color: var(--steel); }
+  .mega-intro p { font-family: var(--font-display); font-size: 25px; font-weight: 600; color: var(--navy); margin-top: 4px; }
+  .mega-grid { display: grid; grid-template-columns: 1fr; gap: 6px; padding: 0 12px 14px; }
+  .mega-grid a { display: flex; align-items: center; gap: 16px; padding: 12px; border-radius: 9px; border: 1px solid transparent; transition: background .18s, border-color .18s; }
+  .mega-image { width: 80px; height: 86px; border-radius: 7px; overflow: hidden; flex: none; background: #eceef0; }
+  .mega-image img { width: 100%; height: 100%; object-fit: cover; transition: transform .2s; }
+  .mega-copy { display: grid; gap: 5px; }
+  .mega-grade { font-size: 10px; font-weight: 700; letter-spacing: .08em; color: var(--orange); }
+  .mega-name { font-family: var(--font-display); font-weight: 600; font-size: 20px; line-height: 1.2; color: var(--navy); }
+  .mega-description { font-size: 11px; line-height: 1.5; color: var(--steel); }
+  .mega-arrow { margin-left: auto; color: var(--steel); transition: transform .18s, color .18s; }
+  .mega-grid a:hover, .mega-grid a:focus-visible { background: #f6f7f9; border-color: var(--zinc); }
+  .mega-grid a:hover .mega-arrow { color: var(--orange); transform: translateX(3px); }
+  .mega-grid a:hover .mega-image img { transform: scale(1.04); }
+  .mega-grid a:focus-visible, .mega-catalogue:focus-visible { outline: 2px solid var(--orange); outline-offset: -2px; }
+  .mega-catalogue { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 24px; background: var(--navy); color: white; font-size: 12px; font-weight: 500; }
+  .mega-catalogue > span { display: inline-flex; gap: 10px; align-items: center; }
+  .mega-catalogue:hover { background: var(--ink); }
+  @media (prefers-reduced-motion: reduce) { .mega, .mega-grid a, .mega-image img, .mega-arrow { transition: none; } }
 
   .quote { flex: none; }
   .menu-btn { display: none; width: 44px; height: 44px; align-items: center; justify-content: center; margin-left: auto; }
