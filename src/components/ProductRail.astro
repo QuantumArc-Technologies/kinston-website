@@ -1,6 +1,6 @@
 ---
 import { products, productUrl } from '../data/products';
-import { site, offices } from '../data/site';
+import { site } from '../data/site';
 import Icon from './Icon.astro';
 interface Props { current?: string }
 const { current } = Astro.props;
@@ -16,11 +16,13 @@ const { current } = Astro.props;
         <section class="rail-contact" aria-labelledby="rail-contact-title">
           <h2 id="rail-contact-title"><a href="/contact">Contact us</a></h2>
           <p class="contact-company">{site.legalName}</p>
+          {/* Dummy contact details hidden until verified.
           <address>
             <p class="contact-address">{offices[0].address.map((line) => <span>{line}</span>)}</p>
             <a class="contact-link" href={site.phoneHref}><Icon name="phone" /><span>{site.phone}</span></a>
             <a class="contact-link" href={`mailto:${site.email}`}><Icon name="mail" /><span>{site.email}</span></a>
           </address>
+          */}
           <a class="contact-more" href="/contact">View contact details <Icon name="arrow" /></a>
         </section>
       </aside>

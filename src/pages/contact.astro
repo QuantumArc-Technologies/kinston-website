@@ -4,23 +4,23 @@ import Breadcrumb from '../components/Breadcrumb.astro';
 import PageHero from '../components/PageHero.astro';
 import EnquiryForm from '../components/EnquiryForm.astro';
 import Icon from '../components/Icon.astro';
-import { site, offices } from '../data/site';
+import { offices } from '../data/site';
 import { breadcrumbLd } from '../lib/seo';
 
 const crumbs = [{ name: 'Home', href: '/' }, { name: 'Contact', href: '/contact' }];
 ---
-<Base title="Contact Kinston Lifting" description={`Request a quote or talk to an engineer. Call ${site.phone}, email ${site.email}, or visit our offices in Sharjah, Navi Mumbai and Rotterdam.`} path="/contact" jsonLd={[breadcrumbLd(crumbs)]}>
+<Base title="Contact Kinston Lifting" description="Request a quote or talk to an engineer using our enquiry form." path="/contact" jsonLd={[breadcrumbLd(crumbs)]}>
   <PageHero eyebrow="LET’S TALK LIFTING" image="/images/page-heroes/contact-branded.webp">
 <Breadcrumb items={crumbs} light />
       <h1>Contact</h1>
-      <p class="lede">Quotes, sling designs, certificates and technical questions. Call, email or send the form and an engineer will reply within one working day.</p>
+      <p class="lede">Quotes, sling designs, certificates and technical questions. Send the form and an engineer will reply within one working day.</p>
   </PageHero>
   <section class="section">
     <div class="wrap two">
       <div class="info">
         <ul class="direct">
-          <li><Icon name="phone" /><div><span>Sales</span><a href={site.phoneHref}>{site.phone}</a></div></li>
-          <li><Icon name="mail" /><div><span>Email</span><a href={`mailto:${site.email}`}>{site.email}</a></div></li>
+          {/* <li><Icon name="phone" /><div><span>Sales</span><a href={site.phoneHref}>{site.phone}</a></div></li> */}
+          {/* <li><Icon name="mail" /><div><span>Email</span><a href={`mailto:${site.email}`}>{site.email}</a></div></li> */}
           <li><Icon name="clock" /><div><span>Hours</span><strong>Mon–Sat 08:00–18:00 GST</strong></div></li>
         </ul>
         <h2>Offices</h2>
@@ -29,8 +29,8 @@ const crumbs = [{ name: 'Home', href: '/' }, { name: 'Contact', href: '/contact'
             <li>
               <h3>{o.city}, {o.country}</h3>
               <p class="role">{o.role}</p>
-              <address>{o.address.map((l) => <span>{l}</span>)}</address>
-              <p><a href={`tel:${o.phone.replace(/\s/g, '')}`}>{o.phone}</a><br /><a href={`mailto:${o.email}`}>{o.email}</a></p>
+              {/* <address>{o.address.map((l) => <span>{l}</span>)}</address> */}
+              {/* <p><a href={`tel:${o.phone.replace(/\s/g, '')}`}>{o.phone}</a><br /><a href={`mailto:${o.email}`}>{o.email}</a></p> */}
               <p class="muted small">{o.hours}</p>
             </li>
           ))}

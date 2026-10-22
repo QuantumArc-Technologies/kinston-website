@@ -5,9 +5,9 @@ export const site = {
   url: 'https://www.kinstonlifting.com',
   description:
     'Kinston Lifting manufactures and supplies certified lifting chain, hooks, shackles, master links, wire rope fittings and hoists for construction, oil and gas, marine and industrial customers worldwide.',
-  phone: '+971 6 534 2200',
-  phoneHref: 'tel:+97165342200',
-  email: 'sales@kinstonlifting.com',
+  // phone: '+971 6 534 2200',
+  // phoneHref: 'tel:+97165342200',
+  // email: 'sales@kinstonlifting.com',
   founded: 1998,
   social: {
     linkedin: 'https://www.linkedin.com/company/kinston-lifting',
@@ -30,9 +30,9 @@ export interface Office {
   city: string;
   country: string;
   role: string;
-  address: string[];
-  phone: string;
-  email: string;
+  // address: string[];
+  // phone: string;
+  // email: string;
   hours: string;
 }
 
@@ -41,27 +41,27 @@ export const offices: Office[] = [
     city: 'Sharjah',
     country: 'United Arab Emirates',
     role: 'Head office and main warehouse',
-    address: ['Plot 14, Industrial Area 12', 'Sharjah, UAE', 'P.O. Box 48211'],
-    phone: '+971 6 534 2200',
-    email: 'sales@kinstonlifting.com',
+  // address: ['Plot 14, Industrial Area 12', 'Sharjah, UAE', 'P.O. Box 48211'],
+  // phone: '+971 6 534 2200',
+  // email: 'sales@kinstonlifting.com',
     hours: 'Mon–Sat 08:00–18:00 GST',
   },
   {
     city: 'Mumbai',
     country: 'India',
     role: 'Manufacturing and testing',
-    address: ['Unit 7, MIDC Taloja Phase II', 'Navi Mumbai 410208', 'Maharashtra, India'],
-    phone: '+91 22 6140 8800',
-    email: 'india@kinstonlifting.com',
+  // address: ['Unit 7, MIDC Taloja Phase II', 'Navi Mumbai 410208', 'Maharashtra, India'],
+  // phone: '+91 22 6140 8800',
+  // email: 'india@kinstonlifting.com',
     hours: 'Mon–Sat 09:00–18:00 IST',
   },
   {
     city: 'Rotterdam',
     country: 'Netherlands',
     role: 'European distribution',
-    address: ['Waalhaven Z.z. 19', '3089 JH Rotterdam', 'Netherlands'],
-    phone: '+31 10 290 4420',
-    email: 'europe@kinstonlifting.com',
+  // address: ['Waalhaven Z.z. 19', '3089 JH Rotterdam', 'Netherlands'],
+  // phone: '+31 10 290 4420',
+  // email: 'europe@kinstonlifting.com',
     hours: 'Mon–Fri 08:30–17:30 CET',
   },
 ];

@@ -11,7 +11,7 @@ export function organizationLd() {
     url: site.url,
     logo: abs('/brand/kinston-logo.png'),
     foundingDate: String(site.founded),
-    contactPoint: [{ '@type': 'ContactPoint', telephone: site.phone, contactType: 'sales', email: site.email, availableLanguage: ['en'] }],
+    // contactPoint: [{ '@type': 'ContactPoint', telephone: site.phone, contactType: 'sales', email: site.email, availableLanguage: ['en'] }],
     sameAs: Object.values(site.social),
   };
 }
