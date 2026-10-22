@@ -1,0 +1,26 @@
+{
+  "tool": "Built-in image_gen",
+  "finish": "RAL 2004 orange",
+  "images": [
+    {
+      "slug": "master-links-g80",
+      "image": "/images/products/branded/grade-80/master-links-g80.webp",
+      "source": "https://liftflowglobal.com/products-listing/master-links-40",
+      "referenceImage": "/images/products/reference/grade-80/liftflow-master-links-0.png",
+      "initialPrompt": "Use case: precise-object-edit. Create one KINSTON industrial catalogue photograph matching ONLY the orange physical master link shown on the RIGHT of the reference. Ignore the technical drawing on the left entirely; do not render annotations, section circles, dimensions or a second object. Preserve the exact single oval closed ring silhouette, smooth rounded forged bar, proportions, large central opening, flattened oval forging pad on the LEFT side. RAL 2004 orange powder-coated heat-treated steel, realistic forged texture, subtle softbox highlights. Add exact raised forged KINSTON lettering on the left flat forging pad, following its perspective. No other brand, load rating or numbers. Full single component centered in square frame, 12% margin, pale neutral gray studio background and natural contact shadow matching the existing Kinston product catalogue. Photorealistic, not plastic or CGI.",
+      "initialGeneration": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-86cbac8a-0359-4eee-b35a-3556a2a266df.png",
+      "finalPrompt": "Correct ONLY the manufacturer lettering on the left flattened oval pad of this orange master link. Replace the incorrect existing letters with the exact uppercase word KINSTON, precisely seven letters: K I N S T O N. The word must read KINSTON when the pad is viewed upright; rotate the entire single word along the long axis of the pad, not individual letters. Raised forged lettering belonging to the orange metal, crisp and readable. No extra letters or logos. Preserve the complete product geometry, orange RAL 2004 finish, forging pad shape, all lighting, framing, gray background and shadow unchanged.",
+      "finalGeneration": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-ca69d77a-5fa1-4a91-811e-65a7b9b011c0.png"
+    },
+    {
+      "slug": "master-links-assemblies-g80",
+      "image": "/images/products/branded/grade-80/master-links-assemblies-g80.webp",
+      "source": "https://liftflowglobal.com/products-listing/master-links-assemblies-29",
+      "referenceImage": "/images/products/reference/grade-80/liftflow-assemblies-1.png",
+      "initialPrompt": "Use case: precise-object-edit. Turn this exact master link assembly into a KINSTON industrial catalogue photograph. Preserve ONE upper large oval master link and exactly TWO lower closed oval coupling links, attached at its bottom and viewed almost edge-on as in the reference. These two narrow diagonal lower parts are closed oval loops seen edge-on, not solid rods or extra hooks. Keep the exact number of components, connection locations, orientations, proportions and complete silhouette. RAL 2004 orange powder-coated forged steel throughout; realistic forged surface texture, softbox lighting, honest steel material. Add exact legible raised forged KINSTON lettering on the upper master link's flattened left-side forging pad. No other brands, numbers, load ratings or markings. Single whole assembly centered with 12% margin in square frame, pale neutral gray studio background, soft natural contact shadow, premium photorealistic catalogue image matching existing Kinston products. No drawing annotations, arrows, watermark, extra objects or floating text.",
+      "initialGeneration": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-21138191-6567-4b28-ba73-061aef59a8e3.png",
+      "finalPrompt": "Correct ONLY the manufacturer lettering on the left flattened straight pad of this orange master link assembly. Replace the incorrect existing letters with the exact uppercase word KINSTON, precisely seven letters: K I N S T O N. The word must read KINSTON when the pad is viewed upright; rotate the entire single word along the long axis of the pad, not individual letters. Raised forged lettering belonging to the orange metal, crisp and readable. No extra letters or logos. Preserve the entire product geometry, ONE upper oval ring and exactly TWO lower edge-on closed oval links, positions, connections, orange RAL 2004 finish, lighting, framing, gray background and shadow unchanged.",
+      "finalGeneration": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-34a35aac-2cbf-4a9e-a3ed-a5029ad618a2.png"
+    }
+  ]
+}

@@ -3,21 +3,43 @@
 The second active range is available at `/products/grade-80-rigging`.
 It uses the existing product cards, gallery, technical tables and enquiry form.
 Desktop and mobile navigation include both Grade 100 and Grade 80.
-The product sidebar uses mutually exclusive collapsible ranges and defaults to
-Grade 100 on every visit. Each range lists its product names directly. Grade 80
+The product sidebar uses mutually exclusive collapsible ranges. The main Products
+page defaults to Grade 100; Grade 80 listings and product pages open Grade 80.
+Each range lists its product names directly. Grade 80
 uses the same flat product grid as Grade 100, with one orange finish and no group
-headings or group menu. Product names match the source index exactly.
+headings or group menu. Product names match their supplied source pages.
 
 Source: https://www.shenli-rigging.com/2-grade-80-rigging-hardware.html
 
-- 133 product entries; the source's nine group tags are retained internally only.
-- 155 published tables, preserving values, units, merged cells and spare-part diagrams.
+- The original supplier archive has 133 product entries and 155 tables. Group tags
+  are retained internally only.
+- The active catalogue has 132 products after replacing three master-link listings
+  with the two Liftflow products listed below.
 - Model references remain as published; Kinston catalogue codes use `K80-0001` onwards.
 - Product visuals use RAL 2004 orange powder coat and KINSTON branding.
 - Source geometry photographs are saved under `public/images/products/reference/grade-80/`.
 - Published technical drawings are saved under `public/images/products/technical/grade-80/`.
 - Final product visuals are saved under `public/images/products/branded/grade-80/`.
 - Source mappings are in `grade-80-catalogue.json`; generation prompts are in `grade-80-image-prompts.json`.
+
+## Master-link replacements
+
+`src/data/grade-80-master-links.json` contains the two active replacements and the
+three retired slugs. The original supplier JSON remains an archive; the active
+export excludes those three entries, so they have no catalogue cards, menu links,
+detail routes or sitemap entries. Refreshing the original import preserves this override.
+
+- [Master Links](https://liftflowglobal.com/products-listing/master-links-40):
+  17 published rows, including repeated model codes and unpublished blank S/H values.
+- [Master Links Assemblies](https://liftflowglobal.com/products-listing/master-links-assemblies-29):
+  12 published rows. Values are transcribed as printed, including D = 50 for KT60QA.
+
+Both source pages describe heat-treated alloy steel forgings and reference
+EN1677-4 as the production/testing standard, replacing DIN5688-3. Original drawings
+and table images are saved under `public/images/products/reference/grade-80/liftflow-*`.
+The two new catalogue visuals use the existing RAL 2004 orange KINSTON style.
+Their generation references and prompts are in `grade-80-master-links-images.json`.
+The active Grade 80 catalogue contains 148 specification tables after this replacement.
 
 The source restricts four products to logging, lashing or pulling. Those pages
 include the restriction above the gallery and in their product summary. Reference

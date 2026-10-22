@@ -1,0 +1,1375 @@
+{
+  "retiredSlugs": [
+    "alloy-steel-master-link-2-50-g80",
+    "european-type-g80-master-link-2-6-4-g80",
+    "european-type-g80-master-link-assembly-2-6-5-g80"
+  ],
+  "products": [
+    {
+      "slug": "master-links-g80",
+      "category": "grade-80-rigging",
+      "group": "G80 Master Link",
+      "name": "Master Links",
+      "code": "K80-0054",
+      "grade": "Grade 80",
+      "art": "master-link",
+      "image": "/images/products/branded/grade-80/master-links-g80.webp",
+      "imageCaption": "KINSTON product visualisation \u00b7 RAL 2004 orange \u00b7 Confirm supplied configuration with your quotation",
+      "summary": "Grade 80 alloy steel master link with a flattened side section. Forged and heat treated, with published model sizes and RAL 2004 orange finish.",
+      "description": [
+        "Grade 80 alloy steel master link with a flattened side section. Forged and heat treated, with published model sizes and RAL 2004 orange finish."
+      ],
+      "features": [
+        "Production and testing reference: EN1677-4 (replacement of DIN5688-3).",
+        "Forged from special alloy steel and heat treated for strength and toughness.",
+        "RAL 2004 orange powder-coated finish."
+      ],
+      "material": "Forged, heat-treated alloy steel",
+      "finish": "RAL 2004 orange powder coat",
+      "standards": [
+        "EN1677-4"
+      ],
+      "designFactor": "Confirm for selected model",
+      "tempRange": "Confirm for selected model",
+      "specColumns": [
+        {
+          "key": "code",
+          "label": "Code",
+          "kind": "text"
+        },
+        {
+          "key": "weight",
+          "label": "Weight (Kg)",
+          "kind": "kg"
+        },
+        {
+          "key": "wll",
+          "label": "WLL (t)",
+          "kind": "t"
+        },
+        {
+          "key": "A",
+          "label": "A",
+          "kind": "mm"
+        },
+        {
+          "key": "B",
+          "label": "B",
+          "kind": "mm"
+        },
+        {
+          "key": "D",
+          "label": "D",
+          "kind": "mm"
+        },
+        {
+          "key": "S",
+          "label": "S",
+          "kind": "mm"
+        },
+        {
+          "key": "H",
+          "label": "H",
+          "kind": "mm"
+        }
+      ],
+      "specRows": [
+        {
+          "code": "KT16ML",
+          "weight": 0.6,
+          "wll": 4.1,
+          "A": 120,
+          "B": 70,
+          "D": 16,
+          "S": 9,
+          "H": 70
+        },
+        {
+          "code": "KT20ML",
+          "weight": 1.1,
+          "wll": 6.7,
+          "A": 150,
+          "B": 80,
+          "D": 20,
+          "S": 11,
+          "H": 50
+        },
+        {
+          "code": "KT20MLL",
+          "weight": 1.25,
+          "wll": 6.5,
+          "A": 170,
+          "B": 90,
+          "D": 20,
+          "S": 11,
+          "H": 70
+        },
+        {
+          "code": "KT22ML",
+          "weight": 1.53,
+          "wll": 8.2,
+          "A": 170,
+          "B": 90,
+          "D": 22,
+          "S": 11,
+          "H": 70
+        },
+        {
+          "code": "KT22MLL",
+          "weight": 1.83,
+          "wll": 5.8,
+          "A": 270,
+          "B": 140,
+          "D": 22,
+          "S": 12,
+          "H": 70
+        },
+        {
+          "code": "KT25ML",
+          "weight": 2.21,
+          "wll": 10.7,
+          "A": 190,
+          "B": 100,
+          "D": 25,
+          "S": 12,
+          "H": 80
+        },
+        {
+          "code": "KT28ML",
+          "weight": 3.06,
+          "wll": 12.9,
+          "A": 210,
+          "B": 110,
+          "D": 28,
+          "S": 13,
+          "H": 80
+        },
+        {
+          "code": "KT28ML",
+          "weight": 3.81,
+          "wll": 11.8,
+          "A": 270,
+          "B": 140,
+          "D": 28,
+          "S": 15,
+          "H": 70
+        },
+        {
+          "code": "KT32ML",
+          "weight": 5.05,
+          "wll": 17.1,
+          "A": 270,
+          "B": 140,
+          "D": 32,
+          "S": 15,
+          "H": 70
+        },
+        {
+          "code": "KT38ML",
+          "weight": 7.3,
+          "wll": 28.1,
+          "A": 270,
+          "B": 140,
+          "D": 38,
+          "S": 17,
+          "H": 55
+        },
+        {
+          "code": "KT38ML",
+          "weight": 10.78,
+          "wll": 19.1,
+          "A": 420,
+          "B": 220,
+          "D": 38,
+          "S": 20,
+          "H": 55
+        },
+        {
+          "code": "KT45ML",
+          "weight": 12.2,
+          "wll": 38.3,
+          "A": 320,
+          "B": 170,
+          "D": 45,
+          "S": 20,
+          "H": 60
+        },
+        {
+          "code": "KT45ML",
+          "weight": 18,
+          "wll": 27.6,
+          "A": 470,
+          "B": 250,
+          "D": 45,
+          "S": 25,
+          "H": 60
+        },
+        {
+          "code": "KT50ML",
+          "weight": 17.65,
+          "wll": 45,
+          "A": 380,
+          "B": 200,
+          "D": 50,
+          "S": 24,
+          "H": ""
+        },
+        {
+          "code": "KT60ML",
+          "weight": 28.85,
+          "wll": 65.3,
+          "A": 430,
+          "B": 220,
+          "D": 60,
+          "S": "",
+          "H": ""
+        },
+        {
+          "code": "KT64ML",
+          "weight": 30.7,
+          "wll": 72.6,
+          "A": 406,
+          "B": 203,
+          "D": 63.5,
+          "S": "",
+          "H": ""
+        },
+        {
+          "code": "KT76ML",
+          "weight": 52,
+          "wll": 103,
+          "A": 457,
+          "B": 229,
+          "D": 76.2,
+          "S": "",
+          "H": ""
+        }
+      ],
+      "downloads": []
+    },
+    {
+      "slug": "master-links-assemblies-g80",
+      "category": "grade-80-rigging",
+      "group": "G80 Master Link",
+      "name": "Master Links Assemblies",
+      "code": "K80-0055",
+      "grade": "Grade 80",
+      "art": "master-link",
+      "image": "/images/products/branded/grade-80/master-links-assemblies-g80.webp",
+      "imageCaption": "KINSTON product visualisation \u00b7 RAL 2004 orange \u00b7 Confirm supplied configuration with your quotation",
+      "summary": "Grade 80 alloy steel master link assembly with two lower coupling links. Forged and heat treated, with published model sizes and RAL 2004 orange finish.",
+      "description": [
+        "Grade 80 alloy steel master link assembly with two lower coupling links. Forged and heat treated, with published model sizes and RAL 2004 orange finish."
+      ],
+      "features": [
+        "Production and testing reference: EN1677-4 (replacement of DIN5688-3).",
+        "Forged from special alloy steel and heat treated for strength and toughness.",
+        "RAL 2004 orange powder-coated finish."
+      ],
+      "material": "Forged, heat-treated alloy steel",
+      "finish": "RAL 2004 orange powder coat",
+      "standards": [
+        "EN1677-4"
+      ],
+      "designFactor": "Confirm for selected model",
+      "tempRange": "Confirm for selected model",
+      "specColumns": [
+        {
+          "key": "code",
+          "label": "Code",
+          "kind": "text"
+        },
+        {
+          "key": "weight",
+          "label": "Weight (Kg)",
+          "kind": "kg"
+        },
+        {
+          "key": "wll",
+          "label": "WLL (t)",
+          "kind": "t"
+        },
+        {
+          "key": "A",
+          "label": "A",
+          "kind": "mm"
+        },
+        {
+          "key": "B",
+          "label": "B",
+          "kind": "mm"
+        },
+        {
+          "key": "D",
+          "label": "D",
+          "kind": "mm"
+        },
+        {
+          "key": "a",
+          "label": "a",
+          "kind": "mm"
+        },
+        {
+          "key": "b",
+          "label": "b",
+          "kind": "mm"
+        },
+        {
+          "key": "d",
+          "label": "d",
+          "kind": "mm"
+        }
+      ],
+      "specRows": [
+        {
+          "code": "KT20QA",
+          "weight": 2.41,
+          "wll": 6.5,
+          "A": 170,
+          "B": 90,
+          "D": 20,
+          "a": 120,
+          "b": 70,
+          "d": 16
+        },
+        {
+          "code": "KT22QA",
+          "weight": 3.77,
+          "wll": 8.2,
+          "A": 170,
+          "B": 90,
+          "D": 22,
+          "a": 150,
+          "b": 80,
+          "d": 20
+        },
+        {
+          "code": "KT22QAL",
+          "weight": 3.3,
+          "wll": 5.8,
+          "A": 270,
+          "B": 140,
+          "D": 22,
+          "a": 150,
+          "b": 75,
+          "d": 16
+        },
+        {
+          "code": "KT25QA",
+          "weight": 4.45,
+          "wll": 10.7,
+          "A": 190,
+          "B": 100,
+          "D": 25,
+          "a": 150,
+          "b": 80,
+          "d": 20
+        },
+        {
+          "code": "KT28QA",
+          "weight": 6.12,
+          "wll": 12.9,
+          "A": 210,
+          "B": 110,
+          "D": 28,
+          "a": 170,
+          "b": 90,
+          "d": 22
+        },
+        {
+          "code": "KT28QAL",
+          "weight": 7.2,
+          "wll": 11.8,
+          "A": 270,
+          "B": 140,
+          "D": 28,
+          "a": 150,
+          "b": 70,
+          "d": 20
+        },
+        {
+          "code": "KT32QA",
+          "weight": 9.47,
+          "wll": 17.1,
+          "A": 270,
+          "B": 140,
+          "D": 32,
+          "a": 190,
+          "b": 100,
+          "d": 25
+        },
+        {
+          "code": "KT38QA",
+          "weight": 17.4,
+          "wll": 28.1,
+          "A": 270,
+          "B": 140,
+          "D": 38,
+          "a": 270,
+          "b": 140,
+          "d": 32
+        },
+        {
+          "code": "KT38QAL",
+          "weight": 15,
+          "wll": 17,
+          "A": 420,
+          "B": 220,
+          "D": 38,
+          "a": 180,
+          "b": 100,
+          "d": 25
+        },
+        {
+          "code": "KT45QA",
+          "weight": 26.76,
+          "wll": 38.3,
+          "A": 320,
+          "B": 170,
+          "D": 45,
+          "a": 270,
+          "b": 140,
+          "d": 38
+        },
+        {
+          "code": "KT50QA",
+          "weight": 33.2,
+          "wll": 45,
+          "A": 380,
+          "B": 200,
+          "D": 50,
+          "a": 270,
+          "b": 140,
+          "d": 38
+        },
+        {
+          "code": "KT60QA",
+          "weight": 65.2,
+          "wll": 65.3,
+          "A": 430,
+          "B": 220,
+          "D": 50,
+          "a": 380,
+          "b": 200,
+          "d": 50
+        }
+      ],
+      "downloads": []
+    }
+  ],
+  "technicalReferences": {
+    "master-links-g80": {
+      "source": "https://liftflowglobal.com/products-listing/master-links-40",
+      "features": [
+        "Production and testing reference: EN1677-4 (replacement of DIN5688-3).",
+        "Forged from special alloy steel and heat treated for strength and toughness.",
+        "RAL 2004 orange powder-coated finish."
+      ],
+      "notes": [
+        "Reference values transcribed from the supplied product page. Dimensions in mm; working load limits in tonnes and weights in kg. Confirm the selected model and supplied documentation with your quotation.",
+        "Blank cells are not published by the source. Repeated model codes are retained as published; use the dimensions to identify the required option."
+      ],
+      "sections": [
+        {
+          "title": "G80 ALLOY STEEL MASTER LINK",
+          "drawing": "/images/products/reference/grade-80/liftflow-master-links-0.png",
+          "tables": [
+            {
+              "label": "Parameters",
+              "rows": [
+                [
+                  {
+                    "text": "Code"
+                  },
+                  {
+                    "text": "Weight (Kg)"
+                  },
+                  {
+                    "text": "WLL (t)"
+                  },
+                  {
+                    "text": "A"
+                  },
+                  {
+                    "text": "B"
+                  },
+                  {
+                    "text": "D"
+                  },
+                  {
+                    "text": "S"
+                  },
+                  {
+                    "text": "H"
+                  }
+                ],
+                [
+                  {
+                    "text": "KT16ML"
+                  },
+                  {
+                    "text": "0.6"
+                  },
+                  {
+                    "text": "4.1"
+                  },
+                  {
+                    "text": "120"
+                  },
+                  {
+                    "text": "70"
+                  },
+                  {
+                    "text": "16"
+                  },
+                  {
+                    "text": "9"
+                  },
+                  {
+                    "text": "70"
+                  }
+                ],
+                [
+                  {
+                    "text": "KT20ML"
+                  },
+                  {
+                    "text": "1.1"
+                  },
+                  {
+                    "text": "6.7"
+                  },
+                  {
+                    "text": "150"
+                  },
+                  {
+                    "text": "80"
+                  },
+                  {
+                    "text": "20"
+                  },
+                  {
+                    "text": "11"
+                  },
+                  {
+                    "text": "50"
+                  }
+                ],
+                [
+                  {
+                    "text": "KT20MLL"
+                  },
+                  {
+                    "text": "1.25"
+                  },
+                  {
+                    "text": "6.5"
+                  },
+                  {
+                    "text": "170"
+                  },
+                  {
+                    "text": "90"
+                  },
+                  {
+                    "text": "20"
+                  },
+                  {
+                    "text": "11"
+                  },
+                  {
+                    "text": "70"
+                  }
+                ],
+                [
+                  {
+                    "text": "KT22ML"
+                  },
+                  {
+                    "text": "1.53"
+                  },
+                  {
+                    "text": "8.2"
+                  },
+                  {
+                    "text": "170"
+                  },
+                  {
+                    "text": "90"
+                  },
+                  {
+                    "text": "22"
+                  },
+                  {
+                    "text": "11"
+                  },
+                  {
+                    "text": "70"
+                  }
+                ],
+                [
+                  {
+                    "text": "KT22MLL"
+                  },
+                  {
+                    "text": "1.83"
+                  },
+                  {
+                    "text": "5.8"
+                  },
+                  {
+                    "text": "270"
+                  },
+                  {
+                    "text": "140"
+                  },
+                  {
+                    "text": "22"
+                  },
+                  {
+                    "text": "12"
+                  },
+                  {
+                    "text": "70"
+                  }
+                ],
+                [
+                  {
+                    "text": "KT25ML"
+                  },
+                  {
+                    "text": "2.21"
+                  },
+                  {
+                    "text": "10.7"
+                  },
+                  {
+                    "text": "190"
+                  },
+                  {
+                    "text": "100"
+                  },
+                  {
+                    "text": "25"
+                  },
+                  {
+                    "text": "12"
+                  },
+                  {
+                    "text": "80"
+                  }
+                ],
+                [
+                  {
+                    "text": "KT28ML"
+                  },
+                  {
+                    "text": "3.06"
+                  },
+                  {
+                    "text": "12.9"
+                  },
+                  {
+                    "text": "210"
+                  },
+                  {
+                    "text": "110"
+                  },
+                  {
+                    "text": "28"
+                  },
+                  {
+                    "text": "13"
+                  },
+                  {
+                    "text": "80"
+                  }
+                ],
+                [
+                  {
+                    "text": "KT28ML"
+                  },
+                  {
+                    "text": "3.81"
+                  },
+                  {
+                    "text": "11.8"
+                  },
+                  {
+                    "text": "270"
+                  },
+                  {
+                    "text": "140"
+                  },
+                  {
+                    "text": "28"
+                  },
+                  {
+                    "text": "15"
+                  },
+                  {
+                    "text": "70"
+                  }
+                ],
+                [
+                  {
+                    "text": "KT32ML"
+                  },
+                  {
+                    "text": "5.05"
+                  },
+                  {
+                    "text": "17.1"
+                  },
+                  {
+                    "text": "270"
+                  },
+                  {
+                    "text": "140"
+                  },
+                  {
+                    "text": "32"
+                  },
+                  {
+                    "text": "15"
+                  },
+                  {
+                    "text": "70"
+                  }
+                ],
+                [
+                  {
+                    "text": "KT38ML"
+                  },
+                  {
+                    "text": "7.3"
+                  },
+                  {
+                    "text": "28.1"
+                  },
+                  {
+                    "text": "270"
+                  },
+                  {
+                    "text": "140"
+                  },
+                  {
+                    "text": "38"
+                  },
+                  {
+                    "text": "17"
+                  },
+                  {
+                    "text": "55"
+                  }
+                ],
+                [
+                  {
+                    "text": "KT38ML"
+                  },
+                  {
+                    "text": "10.78"
+                  },
+                  {
+                    "text": "19.1"
+                  },
+                  {
+                    "text": "420"
+                  },
+                  {
+                    "text": "220"
+                  },
+                  {
+                    "text": "38"
+                  },
+                  {
+                    "text": "20"
+                  },
+                  {
+                    "text": "55"
+                  }
+                ],
+                [
+                  {
+                    "text": "KT45ML"
+                  },
+                  {
+                    "text": "12.2"
+                  },
+                  {
+                    "text": "38.3"
+                  },
+                  {
+                    "text": "320"
+                  },
+                  {
+                    "text": "170"
+                  },
+                  {
+                    "text": "45"
+                  },
+                  {
+                    "text": "20"
+                  },
+                  {
+                    "text": "60"
+                  }
+                ],
+                [
+                  {
+                    "text": "KT45ML"
+                  },
+                  {
+                    "text": "18"
+                  },
+                  {
+                    "text": "27.6"
+                  },
+                  {
+                    "text": "470"
+                  },
+                  {
+                    "text": "250"
+                  },
+                  {
+                    "text": "45"
+                  },
+                  {
+                    "text": "25"
+                  },
+                  {
+                    "text": "60"
+                  }
+                ],
+                [
+                  {
+                    "text": "KT50ML"
+                  },
+                  {
+                    "text": "17.65"
+                  },
+                  {
+                    "text": "45"
+                  },
+                  {
+                    "text": "380"
+                  },
+                  {
+                    "text": "200"
+                  },
+                  {
+                    "text": "50"
+                  },
+                  {
+                    "text": "24"
+                  },
+                  {
+                    "text": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "KT60ML"
+                  },
+                  {
+                    "text": "28.85"
+                  },
+                  {
+                    "text": "65.3"
+                  },
+                  {
+                    "text": "430"
+                  },
+                  {
+                    "text": "220"
+                  },
+                  {
+                    "text": "60"
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "KT64ML"
+                  },
+                  {
+                    "text": "30.7"
+                  },
+                  {
+                    "text": "72.6"
+                  },
+                  {
+                    "text": "406"
+                  },
+                  {
+                    "text": "203"
+                  },
+                  {
+                    "text": "63.5"
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "KT76ML"
+                  },
+                  {
+                    "text": "52"
+                  },
+                  {
+                    "text": "103"
+                  },
+                  {
+                    "text": "457"
+                  },
+                  {
+                    "text": "229"
+                  },
+                  {
+                    "text": "76.2"
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": ""
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "master-links-assemblies-g80": {
+      "source": "https://liftflowglobal.com/products-listing/master-links-assemblies-29",
+      "features": [
+        "Production and testing reference: EN1677-4 (replacement of DIN5688-3).",
+        "Forged from special alloy steel and heat treated for strength and toughness.",
+        "RAL 2004 orange powder-coated finish."
+      ],
+      "notes": [
+        "Reference values transcribed from the supplied product page. Dimensions in mm; working load limits in tonnes and weights in kg. Confirm the selected model and supplied documentation with your quotation.",
+        "Blank cells are not published by the source. Repeated model codes are retained as published; use the dimensions to identify the required option."
+      ],
+      "sections": [
+        {
+          "title": "G80 ALLOY STEEL MASTER LINK ASSEMBLY",
+          "drawing": "/images/products/reference/grade-80/liftflow-assemblies-0.png",
+          "tables": [
+            {
+              "label": "Parameters",
+              "rows": [
+                [
+                  {
+                    "text": "Code"
+                  },
+                  {
+                    "text": "Weight (Kg)"
+                  },
+                  {
+                    "text": "WLL (t)"
+                  },
+                  {
+                    "text": "A"
+                  },
+                  {
+                    "text": "B"
+                  },
+                  {
+                    "text": "D"
+                  },
+                  {
+                    "text": "a"
+                  },
+                  {
+                    "text": "b"
+                  },
+                  {
+                    "text": "d"
+                  }
+                ],
+                [
+                  {
+                    "text": "KT20QA"
+                  },
+                  {
+                    "text": "2.41"
+                  },
+                  {
+                    "text": "6.5"
+                  },
+                  {
+                    "text": "170"
+                  },
+                  {
+                    "text": "90"
+                  },
+                  {
+                    "text": "20"
+                  },
+                  {
+                    "text": "120"
+                  },
+                  {
+                    "text": "70"
+                  },
+                  {
+                    "text": "16"
+                  }
+                ],
+                [
+                  {
+                    "text": "KT22QA"
+                  },
+                  {
+                    "text": "3.77"
+                  },
+                  {
+                    "text": "8.2"
+                  },
+                  {
+                    "text": "170"
+                  },
+                  {
+                    "text": "90"
+                  },
+                  {
+                    "text": "22"
+                  },
+                  {
+                    "text": "150"
+                  },
+                  {
+                    "text": "80"
+                  },
+                  {
+                    "text": "20"
+                  }
+                ],
+                [
+                  {
+                    "text": "KT22QAL"
+                  },
+                  {
+                    "text": "3.3"
+                  },
+                  {
+                    "text": "5.8"
+                  },
+                  {
+                    "text": "270"
+                  },
+                  {
+                    "text": "140"
+                  },
+                  {
+                    "text": "22"
+                  },
+                  {
+                    "text": "150"
+                  },
+                  {
+                    "text": "75"
+                  },
+                  {
+                    "text": "16"
+                  }
+                ],
+                [
+                  {
+                    "text": "KT25QA"
+                  },
+                  {
+                    "text": "4.45"
+                  },
+                  {
+                    "text": "10.7"
+                  },
+                  {
+                    "text": "190"
+                  },
+                  {
+                    "text": "100"
+                  },
+                  {
+                    "text": "25"
+                  },
+                  {
+                    "text": "150"
+                  },
+                  {
+                    "text": "80"
+                  },
+                  {
+                    "text": "20"
+                  }
+                ],
+                [
+                  {
+                    "text": "KT28QA"
+                  },
+                  {
+                    "text": "6.12"
+                  },
+                  {
+                    "text": "12.9"
+                  },
+                  {
+                    "text": "210"
+                  },
+                  {
+                    "text": "110"
+                  },
+                  {
+                    "text": "28"
+                  },
+                  {
+                    "text": "170"
+                  },
+                  {
+                    "text": "90"
+                  },
+                  {
+                    "text": "22"
+                  }
+                ],
+                [
+                  {
+                    "text": "KT28QAL"
+                  },
+                  {
+                    "text": "7.2"
+                  },
+                  {
+                    "text": "11.8"
+                  },
+                  {
+                    "text": "270"
+                  },
+                  {
+                    "text": "140"
+                  },
+                  {
+                    "text": "28"
+                  },
+                  {
+                    "text": "150"
+                  },
+                  {
+                    "text": "70"
+                  },
+                  {
+                    "text": "20"
+                  }
+                ],
+                [
+                  {
+                    "text": "KT32QA"
+                  },
+                  {
+                    "text": "9.47"
+                  },
+                  {
+                    "text": "17.1"
+                  },
+                  {
+                    "text": "270"
+                  },
+                  {
+                    "text": "140"
+                  },
+                  {
+                    "text": "32"
+                  },
+                  {
+                    "text": "190"
+                  },
+                  {
+                    "text": "100"
+                  },
+                  {
+                    "text": "25"
+                  }
+                ],
+                [
+                  {
+                    "text": "KT38QA"
+                  },
+                  {
+                    "text": "17.4"
+                  },
+                  {
+                    "text": "28.1"
+                  },
+                  {
+                    "text": "270"
+                  },
+                  {
+                    "text": "140"
+                  },
+                  {
+                    "text": "38"
+                  },
+                  {
+                    "text": "270"
+                  },
+                  {
+                    "text": "140"
+                  },
+                  {
+                    "text": "32"
+                  }
+                ],
+                [
+                  {
+                    "text": "KT38QAL"
+                  },
+                  {
+                    "text": "15"
+                  },
+                  {
+                    "text": "17"
+                  },
+                  {
+                    "text": "420"
+                  },
+                  {
+                    "text": "220"
+                  },
+                  {
+                    "text": "38"
+                  },
+                  {
+                    "text": "180"
+                  },
+                  {
+                    "text": "100"
+                  },
+                  {
+                    "text": "25"
+                  }
+                ],
+                [
+                  {
+                    "text": "KT45QA"
+                  },
+                  {
+                    "text": "26.76"
+                  },
+                  {
+                    "text": "38.3"
+                  },
+                  {
+                    "text": "320"
+                  },
+                  {
+                    "text": "170"
+                  },
+                  {
+                    "text": "45"
+                  },
+                  {
+                    "text": "270"
+                  },
+                  {
+                    "text": "140"
+                  },
+                  {
+                    "text": "38"
+                  }
+                ],
+                [
+                  {
+                    "text": "KT50QA"
+                  },
+                  {
+                    "text": "33.2"
+                  },
+                  {
+                    "text": "45"
+                  },
+                  {
+                    "text": "380"
+                  },
+                  {
+                    "text": "200"
+                  },
+                  {
+                    "text": "50"
+                  },
+                  {
+                    "text": "270"
+                  },
+                  {
+                    "text": "140"
+                  },
+                  {
+                    "text": "38"
+                  }
+                ],
+                [
+                  {
+                    "text": "KT60QA"
+                  },
+                  {
+                    "text": "65.2"
+                  },
+                  {
+                    "text": "65.3"
+                  },
+                  {
+                    "text": "430"
+                  },
+                  {
+                    "text": "220"
+                  },
+                  {
+                    "text": "50"
+                  },
+                  {
+                    "text": "380"
+                  },
+                  {
+                    "text": "200"
+                  },
+                  {
+                    "text": "50"
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "slug": "master-links-g80",
+      "name": "Master Links",
+      "source": "https://liftflowglobal.com/products-listing/master-links-40",
+      "referenceImage": "/images/products/reference/grade-80/liftflow-master-links-0.png",
+      "publishedTableImage": "/images/products/reference/grade-80/liftflow-master-links-1.png",
+      "rows": 17
+    },
+    {
+      "slug": "master-links-assemblies-g80",
+      "name": "Master Links Assemblies",
+      "source": "https://liftflowglobal.com/products-listing/master-links-assemblies-29",
+      "referenceImage": "/images/products/reference/grade-80/liftflow-assemblies-1.png",
+      "publishedTableImage": "/images/products/reference/grade-80/liftflow-assemblies-2.png",
+      "rows": 12
+    }
+  ]
+}

@@ -4,6 +4,8 @@ import { site } from '../data/site';
 import Icon from './Icon.astro';
 interface Props { current?: string }
 const { current } = Astro.props;
+const activeGrade = products.find((product) => product.slug === current)?.grade
+  ?? (Astro.url.pathname.startsWith('/products/grade-80-rigging') ? 'Grade 80' : 'Grade 100');
 const ranges = [
   { grade: 'Grade 100', name: 'Grade 100 Rigging', href: '/products' },
   { grade: 'Grade 80', name: 'Grade 80 Rigging', href: '/products/grade-80-rigging' },
@@ -11,9 +13,9 @@ const ranges = [
 ---
       <aside class="product-rail" aria-label="Product ranges">
         <p class="rail-label">All products</p>
-        <div data-range-accordion>
+        <div data-range-accordion data-active-grade={activeGrade}>
           {ranges.map((range) => (
-            <details class="range" name="product-ranges" open={range.grade === 'Grade 100'}>
+            <details class="range" name="product-ranges" data-grade={range.grade} open={range.grade === activeGrade}>
               <summary class="rail-title">
                 <span class="range-name">{range.name}</span>
                 <span class="range-count">{products.filter((p) => p.grade === range.grade).length}</span>
@@ -44,17 +46,51 @@ const ranges = [
 <script>
   document.querySelectorAll<HTMLElement>('[data-range-accordion]').forEach((accordion) => {
     const ranges = [...accordion.querySelectorAll<HTMLDetailsElement>('details')];
-    // Reset restored browser state so every visit starts with Grade 100 open.
-    const reset = () => ranges.forEach((range, index) => { range.open = index === 0; });
+    const scrollKey = 'kinston-product-rail-scroll';
+    accordion.addEventListener('click', (event) => {
+      const link = (event.target as Element).closest<HTMLAnchorElement>('a[href]');
+      const list = link?.closest<HTMLElement>('.product-names');
+      if (!link || !list) return;
+      try {
+        sessionStorage.setItem(scrollKey, JSON.stringify({
+          grade: link.closest<HTMLElement>('[data-grade]')?.dataset.grade,
+          top: list.scrollTop,
+          path: new URL(link.href).pathname,
+        }));
+      } catch { /* Navigation still works when browser storage is unavailable. */ }
+    });
+    const showProducts = (grade: string | undefined) => {
+      accordion.closest('[data-product-catalogue]')?.querySelectorAll<HTMLElement>('[data-catalogue-range]').forEach((panel) => {
+        panel.hidden = panel.dataset.catalogueRange !== grade;
+      });
+    };
+    // Restore the range belonging to this page, including back/forward visits.
+    const reset = () => {
+      ranges.forEach((range) => { range.open = false; });
+      const activeRange = ranges.find((range) => range.dataset.grade === accordion.dataset.activeGrade);
+      if (activeRange) activeRange.open = true;
+      showProducts(accordion.dataset.activeGrade);
+      try {
+        const saved = JSON.parse(sessionStorage.getItem(scrollKey) ?? 'null');
+        sessionStorage.removeItem(scrollKey);
+        const list = activeRange?.querySelector<HTMLElement>('.product-names');
+        if (list && saved?.grade === accordion.dataset.activeGrade && saved.path === window.location.pathname) {
+          requestAnimationFrame(() => { list.scrollTop = saved.top; });
+        }
+      } catch { /* Keep the normal menu position if there is no saved position. */ }
+    };
     reset();
     window.addEventListener('pageshow', reset);
     ranges.forEach((range) => range.addEventListener('toggle', () => {
-      if (range.open) ranges.forEach((other) => { if (other !== range) other.open = false; });
+      if (range.open) {
+        ranges.forEach((other) => { if (other !== range) other.open = false; });
+        showProducts(range.dataset.grade);
+      }
     }));
   });
 </script>
 <style>
-  .product-rail { position: sticky; top: calc(36px + var(--header-h) + 20px); max-height: calc(100dvh - 36px - var(--header-h) - 40px); overflow-y: auto; padding-right: 8px; }
+  .product-rail { position: sticky; top: calc(36px + var(--header-h) + 20px); max-height: none; padding-right: 8px; }
   .rail-label { font-size: 13px; color: var(--steel); margin-bottom: 12px; }
   .rail-title { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 0 12px 12px; border-top: 1px solid var(--zinc); border-left: 3px solid transparent; font-family: var(--font-display); font-size: 19px; font-weight: 600; color: var(--navy); }
   .rail-title { cursor: pointer; list-style: none; }
@@ -66,7 +102,7 @@ const ranges = [
   .range[open] > .rail-title :global(svg) { transform: rotate(180deg); }
   .product-names .view-range { color: var(--navy); font-weight: 600; }
   .rail-title:focus-visible { outline: 2px solid var(--orange); outline-offset: 2px; }
-  .product-names { display: grid; gap: 2px; padding: 8px 0 16px 15px; border-bottom: 1px solid var(--zinc); }
+  .product-names { max-height: max(140px, calc(100dvh - var(--header-h) - 330px)); overflow-y: auto; overscroll-behavior-y: contain; scrollbar-gutter: stable; display: grid; gap: 2px; padding: 8px 0 16px 15px; border-bottom: 1px solid var(--zinc); }
   .product-names a { display: block; padding: 6px 0; color: var(--steel); font-size: 12px; line-height: 1.4; }
   .product-names a:hover { color: var(--orange); }
   .product-names a[aria-current="page"] { color: var(--navy); font-weight: 600; background: var(--paper); border-left: 2px solid var(--orange); padding-left: 8px; }

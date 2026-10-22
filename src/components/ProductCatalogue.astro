@@ -1,0 +1,51 @@
+---
+import ProductCard from './ProductCard.astro';
+import ProductRail from './ProductRail.astro';
+import { grade100Products } from '../data/grade-100-products';
+import { grade80Products } from '../data/grade-80-products';
+interface Props { activeGrade: 'Grade 100' | 'Grade 80' }
+const { activeGrade } = Astro.props;
+const ranges = [
+  { grade: 'Grade 100', id: 'grade-100', products: grade100Products, description: 'Our Grade 100 rigging range includes alloy steel hooks, connecting links and master links for compatible Grade 100 chain assemblies. Forged or welded components support demanding applications in oilfields, mining and ports. Explore each product for dimensions, working load limits and available configurations.' },
+  { grade: 'Grade 80', id: 'grade-80', products: grade80Products, description: 'Our Grade 80 rigging range includes alloy steel hooks, connecting links, D rings, swivels, master links and accessories in RAL 2004 orange. Explore each product for reference models, dimensions, working load limits and spare parts.' },
+];
+---
+<section class="section-tight">
+  <div class="wrap catalogue-layout" data-product-catalogue>
+    <div class="catalogue-sidebar"><ProductRail /></div>
+    <div class="catalogue-content">
+      {ranges.map((range) => (
+        <section id={range.id} data-catalogue-range={range.grade} hidden={range.grade !== activeGrade} aria-labelledby={`${range.id}-heading`}>
+          <div class="range-heading">
+            <h2 id={`${range.id}-heading`}>{range.grade} Rigging</h2>
+            <p class="muted">{range.products.length} products</p>
+          </div>
+          <p class="range-description">{range.description}</p>
+          <div class="grid product-grid">
+            {range.products.map((product) => <ProductCard product={product} compact showColourSwitch={false} showFooter={false} />)}
+          </div>
+        </section>
+      ))}
+    </div>
+  </div>
+</section>
+<style>
+  .catalogue-layout { max-width: 1600px; display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 36px; align-items: start; }
+  [data-catalogue-range][hidden] { display: none; }
+  .catalogue-content { min-width: 0; scroll-margin-top: 150px; }
+  .catalogue-sidebar { display: contents; }
+  .range-heading { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 20px; }
+  .range-heading h2 { font-size: 1.75rem; }
+  .range-heading p { font-size: 13px; }
+  .range-description { margin: -6px 0 22px; max-width: 90ch; font-size: 13px; line-height: 1.7; color: var(--steel); }
+  .product-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+  @media (max-width: 1100px) { .catalogue-layout { grid-template-columns: 210px minmax(0, 1fr); gap: 24px; } .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 760px) { .catalogue-layout { grid-template-columns: 1fr; } .catalogue-sidebar { display: none; } }
+  @media (max-width: 480px) {
+    .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    .product-grid :global(.compact .body) { padding: 9px; }
+    .product-grid :global(.compact h3) { font-size: 14px; }
+    .product-grid :global(.compact .code) { font-size: 10px; }
+    .product-grid :global(.compact .collection) { top: 7px; left: 7px; font-size: 7px; padding: 3px 4px; }
+  }
+</style>
