@@ -6,9 +6,6 @@ import CtaBand from '../../components/CtaBand.astro';
 import ProductCard from '../../components/ProductCard.astro';
 import ProductRail from '../../components/ProductRail.astro';
 import { grade80Products as products } from '../../data/grade-80-products';
-import { categoryBySlug } from '../../data/categories';
-const groups = categoryBySlug('grade-80-rigging')!.groups;
-const anchor = (group: string) => group.toLowerCase().replace(/[^a-z0-9]+/g, '-');
 import { breadcrumbLd } from '../../lib/seo';
 
 const crumbs = [{ name: 'Home', href: '/' }, { name: 'Products', href: '/products' }, { name: 'Grade 80 Rigging', href: '/products/grade-80-rigging' }];
@@ -27,24 +24,16 @@ const crumbs = [{ name: 'Home', href: '/' }, { name: 'Products', href: '/product
 
   <section class="section-tight">
     <div class="wrap catalogue-layout">
-      <div class="catalogue-sidebar"><ProductRail grade="Grade 80" /></div>
+      <div class="catalogue-sidebar"><ProductRail /></div>
       <div class="catalogue-content" id="grade-80">
       <div class="range-heading">
         <h2>Grade 80 Rigging</h2>
         <p class="muted">{products.length} products</p>
       </div>
-      <p class="range-description">Our Grade 80 rigging range includes alloy steel hooks, connecting links, D rings, swivels, master links and accessories in RAL 2004 orange. Explore nine product groups for reference models, dimensions, working load limits and spare parts.</p>
-      <nav class="group-menu" aria-label="Grade 80 product groups">
-        {groups.map((group) => <a href={`#${anchor(group)}`}>{group}</a>)}
-      </nav>
-      {groups.map((group) => (
-        <section class="product-group" id={anchor(group)} aria-label={group}>
-          <h3>{group} <span>{products.filter((product) => product.group === group).length} products</span></h3>
-          <div class="grid product-grid">
-            {products.filter((product) => product.group === group).map((product) => <ProductCard product={product} compact showColourSwitch={false} showFooter={false} />)}
-          </div>
-        </section>
-      ))}
+      <p class="range-description">Our Grade 80 rigging range includes alloy steel hooks, connecting links, D rings, swivels, master links and accessories in RAL 2004 orange. Explore each product for reference models, dimensions, working load limits and spare parts.</p>
+      <div class="grid product-grid">
+        {products.map((product) => <ProductCard product={product} compact showColourSwitch={false} showFooter={false} />)}
+      </div>
       </div>
     </div>
   </section>
@@ -52,13 +41,6 @@ const crumbs = [{ name: 'Home', href: '/' }, { name: 'Products', href: '/product
 </Base>
 
 <style>
-  .group-menu { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
-  .group-menu a { padding: 7px 10px; border: 1px solid var(--zinc); border-radius: 4px; font-size: 12px; color: var(--navy); }
-  .group-menu a:hover { border-color: var(--orange); color: var(--orange); }
-  .product-group { margin-bottom: 36px; scroll-margin-top: 150px; }
-  .product-group h3 { display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px; font-size: 23px; margin-bottom: 16px; }
-  .product-group h3 span { font: 12px var(--font-body); color: var(--steel); }
-
   .catalogue-layout { max-width: 1600px; display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 36px; align-items: start; }
   .catalogue-content { min-width: 0; scroll-margin-top: 150px; }
   .catalogue-sidebar { display: contents; }

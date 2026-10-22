@@ -2,44 +2,32 @@
 import { products, productUrl } from '../data/products';
 import { site } from '../data/site';
 import Icon from './Icon.astro';
-interface Props { current?: string; grade?: string }
-const { current, grade: requestedGrade } = Astro.props;
-const currentProduct = products.find((p) => p.slug === current);
-const grade = requestedGrade ?? currentProduct?.grade ?? 'Grade 100';
+interface Props { current?: string }
+const { current } = Astro.props;
 const ranges = [
   { grade: 'Grade 100', name: 'Grade 100 Rigging', href: '/products' },
   { grade: 'Grade 80', name: 'Grade 80 Rigging', href: '/products/grade-80-rigging' },
 ];
-const rangeProducts = products.filter((p) => p.grade === grade);
-const groups = [...new Set(rangeProducts.map((p) => p.group))];
 ---
       <aside class="product-rail" aria-label="Product ranges">
         <p class="rail-label">All products</p>
-        {ranges.map((range) => (
-          <Fragment>
-            <a class:list={['rail-title', { selected: range.grade === grade }]} href={range.href}>
-              {range.name} <span>{products.filter((p) => p.grade === range.grade).length}</span>
-            </a>
-            {range.grade === grade && (
+        <div data-range-accordion>
+          {ranges.map((range) => (
+            <details class="range" name="product-ranges" open={range.grade === 'Grade 100'}>
+              <summary class="rail-title">
+                <span class="range-name">{range.name}</span>
+                <span class="range-count">{products.filter((p) => p.grade === range.grade).length}</span>
+                <Icon name="chevron" />
+              </summary>
               <ul class="product-names">
-                {grade === 'Grade 80' ? groups.map((group) => (
-                  <li>
-                    <a class="group-link" href={`/products/grade-80-rigging#${group.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}>{group}</a>
-                    {currentProduct?.group === group && (
-                      <ul>
-                        {rangeProducts.filter((p) => p.group === group).map((product) => (
-                          <li><a href={productUrl(product)} aria-current={current === product.slug ? 'page' : undefined}>{product.name}</a></li>
-                        ))}
-                      </ul>
-                    )}
-                  </li>
-                )) : rangeProducts.map((product) => (
+                <li><a class="view-range" href={range.href}>View all {range.name} products</a></li>
+                {products.filter((p) => p.grade === range.grade).map((product) => (
                   <li><a href={productUrl(product)} aria-current={current === product.slug ? 'page' : undefined}>{product.name}</a></li>
                 ))}
               </ul>
-            )}
-          </Fragment>
-        ))}
+            </details>
+          ))}
+        </div>
         <section class="rail-contact" aria-labelledby="rail-contact-title">
           <h2 id="rail-contact-title"><a href="/contact">Contact us</a></h2>
           <p class="contact-company">{site.legalName}</p>
@@ -53,14 +41,31 @@ const groups = [...new Set(rangeProducts.map((p) => p.group))];
           <a class="contact-more" href="/contact">View contact details <Icon name="arrow" /></a>
         </section>
       </aside>
+<script>
+  document.querySelectorAll<HTMLElement>('[data-range-accordion]').forEach((accordion) => {
+    const ranges = [...accordion.querySelectorAll<HTMLDetailsElement>('details')];
+    // Reset restored browser state so every visit starts with Grade 100 open.
+    const reset = () => ranges.forEach((range, index) => { range.open = index === 0; });
+    reset();
+    window.addEventListener('pageshow', reset);
+    ranges.forEach((range) => range.addEventListener('toggle', () => {
+      if (range.open) ranges.forEach((other) => { if (other !== range) other.open = false; });
+    }));
+  });
+</script>
 <style>
   .product-rail { position: sticky; top: calc(36px + var(--header-h) + 20px); max-height: calc(100dvh - 36px - var(--header-h) - 40px); overflow-y: auto; padding-right: 8px; }
   .rail-label { font-size: 13px; color: var(--steel); margin-bottom: 12px; }
   .rail-title { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 0 12px 12px; border-top: 1px solid var(--zinc); border-left: 3px solid transparent; font-family: var(--font-display); font-size: 19px; font-weight: 600; color: var(--navy); }
-  .rail-title.selected { border-left-color: var(--orange); }
-  .group-link { font-weight: 600; }
-  .product-names ul { padding-left: 12px; }
-  .rail-title span { font-family: var(--font-body); font-size: 12px; color: var(--steel); }
+  .rail-title { cursor: pointer; list-style: none; }
+  .rail-title::-webkit-details-marker { display: none; }
+  .range[open] > .rail-title { border-left-color: var(--orange); }
+  .range-name { flex: 1; }
+  .range-count { font-family: var(--font-body); font-size: 12px; color: var(--steel); }
+  .rail-title :global(svg) { width: 14px; height: 14px; transition: transform .15s; }
+  .range[open] > .rail-title :global(svg) { transform: rotate(180deg); }
+  .product-names .view-range { color: var(--navy); font-weight: 600; }
+  .rail-title:focus-visible { outline: 2px solid var(--orange); outline-offset: 2px; }
   .product-names { display: grid; gap: 2px; padding: 8px 0 16px 15px; border-bottom: 1px solid var(--zinc); }
   .product-names a { display: block; padding: 6px 0; color: var(--steel); font-size: 12px; line-height: 1.4; }
   .product-names a:hover { color: var(--orange); }

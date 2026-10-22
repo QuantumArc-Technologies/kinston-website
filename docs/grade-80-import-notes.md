@@ -3,10 +3,14 @@
 The second active range is available at `/products/grade-80-rigging`.
 It uses the existing product cards, gallery, technical tables and enquiry form.
 Desktop and mobile navigation include both Grade 100 and Grade 80.
+The product sidebar uses mutually exclusive collapsible ranges and defaults to
+Grade 100 on every visit. Each range lists its product names directly. Grade 80
+uses the same flat product grid as Grade 100, with one orange finish and no group
+headings or group menu. Product names match the source index exactly.
 
 Source: https://www.shenli-rigging.com/2-grade-80-rigging-hardware.html
 
-- 133 product entries in the source's nine groups.
+- 133 product entries; the source's nine group tags are retained internally only.
 - 155 published tables, preserving values, units, merged cells and spare-part diagrams.
 - Model references remain as published; Kinston catalogue codes use `K80-0001` onwards.
 - Product visuals use RAL 2004 orange powder coat and KINSTON branding.
