@@ -4,7 +4,7 @@ import Breadcrumb from '../components/Breadcrumb.astro';
 import PageHero from '../components/PageHero.astro';
 import EnquiryForm from '../components/EnquiryForm.astro';
 import Icon from '../components/Icon.astro';
-import { offices } from '../data/site';
+// import { offices } from '../data/site';
 import { breadcrumbLd } from '../lib/seo';
 
 const crumbs = [{ name: 'Home', href: '/' }, { name: 'Contact', href: '/contact' }];
@@ -23,18 +23,20 @@ const crumbs = [{ name: 'Home', href: '/' }, { name: 'Contact', href: '/contact'
           {/* <li><Icon name="mail" /><div><span>Email</span><a href={`mailto:${site.email}`}>{site.email}</a></div></li> */}
           <li><Icon name="clock" /><div><span>Hours</span><strong>Mon–Sat 08:00–18:00 GST</strong></div></li>
         </ul>
+{/* Office locations hidden until verified.
         <h2>Offices</h2>
         <ul class="offices">
           {offices.map((o) => (
             <li>
               <h3>{o.city}, {o.country}</h3>
               <p class="role">{o.role}</p>
-              {/* <address>{o.address.map((l) => <span>{l}</span>)}</address> */}
-              {/* <p><a href={`tel:${o.phone.replace(/\s/g, '')}`}>{o.phone}</a><br /><a href={`mailto:${o.email}`}>{o.email}</a></p> */}
+              <address>{o.address.map((l) => <span>{l}</span>)}</address>
+              <p><a href={`tel:${o.phone.replace(/\s/g, '')}`}>{o.phone}</a><br /><a href={`mailto:${o.email}`}>{o.email}</a></p>
               <p class="muted small">{o.hours}</p>
             </li>
           ))}
         </ul>
+*/}
       </div>
       <EnquiryForm heading="Request a quote" />
     </div>

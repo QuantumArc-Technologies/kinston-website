@@ -1,5 +1,5 @@
 ---
-import { site, offices } from '../data/site';
+import { site } from '../data/site';
 import { allCategoriesWithCounts } from '../data/products';
 import Icon from './Icon.astro';
 const year = new Date().getFullYear();
@@ -39,6 +39,7 @@ const categories = allCategoriesWithCounts();
         </ul>
       </div>
 
+{/* Office locations hidden until verified.
       <div class="col offices">
         <h4>Offices</h4>
         <ul>
@@ -46,11 +47,12 @@ const categories = allCategoriesWithCounts();
             <li>
               <strong>{o.city}, {o.country}</strong>
               <span>{o.role}</span>
-              {/* <a href={`tel:${o.phone.replace(/\s/g, '')}`}>{o.phone}</a> */}
+              <a href={`tel:${o.phone.replace(/\s/g, '')}`}>{o.phone}</a>
             </li>
           ))}
         </ul>
       </div>
+*/}
     </div>
 
     <div class="accred" aria-label="Accreditations">
@@ -75,7 +77,7 @@ const categories = allCategoriesWithCounts();
 
 <style>
   .site-footer { background: var(--ink); color: #b7c0d2; padding-block: 64px 28px; font-size: var(--t-sm); }
-  .footer-top { display: grid; grid-template-columns: 1.4fr 1fr 0.8fr 1.2fr; gap: 48px; padding-bottom: 48px; border-bottom: 1px solid rgba(255,255,255,.12); }
+  .footer-top { display: grid; grid-template-columns: 1.4fr 1fr 0.8fr; gap: 48px; padding-bottom: 48px; border-bottom: 1px solid rgba(255,255,255,.12); }
   .logo-plate { display: inline-block; background: var(--white); padding: 12px 16px; border-radius: var(--radius); }
   .logo-plate img { height: 36px; width: auto; }
   .brand-text { margin-top: 20px; max-width: 40ch; line-height: 1.6; }

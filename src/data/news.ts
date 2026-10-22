@@ -22,6 +22,7 @@ export const articles: Article[] = [
     ],
     readingMinutes: 3,
   },
+  /* Office location article hidden until verified.
   {
     slug: 'new-500-tonne-test-bed-mumbai',
     title: 'New 500 tonne horizontal test bed commissioned at Navi Mumbai',
@@ -35,6 +36,7 @@ export const articles: Article[] = [
     ],
     readingMinutes: 3,
   },
+  */
   {
     slug: 'grade-100-vs-grade-80-when-to-upgrade',
     title: 'Grade 100 or Grade 80: when the upgrade pays for itself',
@@ -77,6 +79,7 @@ export const articles: Article[] = [
     ],
     readingMinutes: 5,
   },
+  /* Office location article hidden until verified.
   {
     slug: 'rotterdam-distribution-centre-opens',
     title: 'Rotterdam distribution centre opens to serve European customers',
@@ -89,6 +92,7 @@ export const articles: Article[] = [
     ],
     readingMinutes: 2,
   },
+  */
 ];
 
 export const articleBySlug = (slug: string) => articles.find((a) => a.slug === slug);

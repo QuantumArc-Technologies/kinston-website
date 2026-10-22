@@ -26,6 +26,7 @@ export const nav = [
   { label: 'Contact', href: '/contact' },
 ];
 
+/* Office locations hidden until verified.
 export interface Office {
   city: string;
   country: string;
@@ -65,6 +66,7 @@ export const offices: Office[] = [
     hours: 'Mon–Fri 08:30–17:30 CET',
   },
 ];
+*/
 
 export const certifications = [
   { code: 'ISO 9001:2015', title: 'Quality management', body: 'Certified by DNV. Covers design, manufacture, testing and supply of lifting components and assemblies.' },
