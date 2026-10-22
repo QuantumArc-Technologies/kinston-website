@@ -1,5 +1,6 @@
 import { categories } from './categories';
 import { grade100Products } from './grade-100-products';
+import { grade80Products } from './grade-80-products';
 // import { additionalProducts } from './additional-products';
 
 export type ColKind = 'text' | 'mm' | 't' | 'kg' | 'num' | 'kn' | 'daN';
@@ -142,6 +143,7 @@ const shackleCols = [
 
 export const products: Product[] = [
   ...grade100Products,
+  ...grade80Products,
   // Previous product listings remain disabled; uncomment individual entries to restore.
 //   // ===== Chain slings =====
 //   {

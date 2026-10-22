@@ -1,22 +1,22 @@
 ---
-interface Cell { text: string; image?: string; rowspan?: number; colspan?: number }
-interface ParameterTable { rows: Cell[][] }
+interface Cell { text: string; image?: string; rowspan?: number; colspan?: number; background?: string }
+interface ParameterTable { rows: Cell[][]; label?: string }
 interface Props { tables: ParameterTable[]; title: string }
 const { tables, title } = Astro.props;
 ---
 {tables.map((table, index) => (
   <div class="parameter-block">
-    <h3>{index === 0 ? 'Parameters' : 'Spare parts'} <span>Dimensions in mm</span></h3>
-    <div class="table-scroll" tabindex="0" role="region" aria-label={`${title} ${index === 0 ? 'parameters' : 'spare parts'}`}>
+    <h3>{table.label ?? (index === 0 ? 'Parameters' : 'Spare parts')} <span>Dimensions in mm</span></h3>
+    <div class="table-scroll" tabindex="0" role="region" aria-label={`${title} ${table.label ?? (index === 0 ? 'parameters' : 'spare parts')}`}>
       <table>
-        <caption class="visually-hidden">{title} — {index === 0 ? 'Parameters' : 'Spare parts'}</caption>
+        <caption class="visually-hidden">{title} — {table.label ?? (index === 0 ? 'Parameters' : 'Spare parts')}</caption>
         <tbody>
           {table.rows.map((row, rowIndex) => (
             <tr>
               {row.map((cell) => rowIndex === 0 && !cell.image ? (
-                <th scope="col" rowspan={cell.rowspan} colspan={cell.colspan}>{cell.text}</th>
+                <th scope="col" rowspan={cell.rowspan} colspan={cell.colspan} style={{ background: cell.background ? `${cell.background}33` : undefined }}>{cell.text}</th>
               ) : (
-                <td class:list={[{ 'image-cell': Boolean(cell.image) }]} rowspan={cell.rowspan} colspan={cell.colspan}>
+                <td class:list={[{ 'image-cell': Boolean(cell.image) }]} rowspan={cell.rowspan} colspan={cell.colspan} style={{ background: cell.background ? `${cell.background}33` : undefined }}>
                   {cell.image && <div class="part-image"><img src={cell.image} alt={`${title} spare part diagram`} width="240" height="180" loading="lazy" decoding="async" /></div>}
                   {cell.text}
                 </td>

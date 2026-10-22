@@ -1,0 +1,79 @@
+---
+import Base from '../../layouts/Base.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import PageHero from '../../components/PageHero.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import ProductCard from '../../components/ProductCard.astro';
+import ProductRail from '../../components/ProductRail.astro';
+import { grade80Products as products } from '../../data/grade-80-products';
+import { categoryBySlug } from '../../data/categories';
+const groups = categoryBySlug('grade-80-rigging')!.groups;
+const anchor = (group: string) => group.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+import { breadcrumbLd } from '../../lib/seo';
+
+const crumbs = [{ name: 'Home', href: '/' }, { name: 'Products', href: '/products' }, { name: 'Grade 80 Rigging', href: '/products/grade-80-rigging' }];
+---
+<Base
+  title="Grade 80 Rigging | Products"
+  description="Explore Kinston Grade 80 rigging products. Browse hooks, master links, connectors and lifting points, review specifications and request a quote."
+  path="/products/grade-80-rigging"
+  jsonLd={[breadcrumbLd(crumbs)]}
+>
+  <PageHero eyebrow="THE GRADE 80 RANGE" image="/images/page-heroes/products-branded.webp">
+<Breadcrumb items={crumbs} light />
+      <h1>Grade 80 Rigging</h1>
+      <p class="lede">Explore our Grade 80 rigging products. Browse the full range, review specifications and working load limits, and request a quote.</p>
+  </PageHero>
+
+  <section class="section-tight">
+    <div class="wrap catalogue-layout">
+      <div class="catalogue-sidebar"><ProductRail grade="Grade 80" /></div>
+      <div class="catalogue-content" id="grade-80">
+      <div class="range-heading">
+        <h2>Grade 80 Rigging</h2>
+        <p class="muted">{products.length} products</p>
+      </div>
+      <p class="range-description">Our Grade 80 rigging range includes alloy steel hooks, connecting links, D rings, swivels, master links and accessories in RAL 2004 orange. Explore nine product groups for reference models, dimensions, working load limits and spare parts.</p>
+      <nav class="group-menu" aria-label="Grade 80 product groups">
+        {groups.map((group) => <a href={`#${anchor(group)}`}>{group}</a>)}
+      </nav>
+      {groups.map((group) => (
+        <section class="product-group" id={anchor(group)} aria-label={group}>
+          <h3>{group} <span>{products.filter((product) => product.group === group).length} products</span></h3>
+          <div class="grid product-grid">
+            {products.filter((product) => product.group === group).map((product) => <ProductCard product={product} compact showColourSwitch={false} showFooter={false} />)}
+          </div>
+        </section>
+      ))}
+      </div>
+    </div>
+  </section>
+  <CtaBand title="Can't see what you need?" body="We build bespoke assemblies, non-standard lengths and special finishes. Send a drawing or a description and we will quote it." />
+</Base>
+
+<style>
+  .group-menu { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
+  .group-menu a { padding: 7px 10px; border: 1px solid var(--zinc); border-radius: 4px; font-size: 12px; color: var(--navy); }
+  .group-menu a:hover { border-color: var(--orange); color: var(--orange); }
+  .product-group { margin-bottom: 36px; scroll-margin-top: 150px; }
+  .product-group h3 { display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px; font-size: 23px; margin-bottom: 16px; }
+  .product-group h3 span { font: 12px var(--font-body); color: var(--steel); }
+
+  .catalogue-layout { max-width: 1600px; display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 36px; align-items: start; }
+  .catalogue-content { min-width: 0; scroll-margin-top: 150px; }
+  .catalogue-sidebar { display: contents; }
+  .range-heading { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 20px; }
+  .range-heading h2 { font-size: 1.75rem; }
+  .range-heading p { font-size: 13px; }
+  .range-description { margin: -6px 0 22px; max-width: 90ch; font-size: 13px; line-height: 1.7; color: var(--steel); }
+  .product-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+  @media (max-width: 1100px) { .catalogue-layout { grid-template-columns: 210px minmax(0, 1fr); gap: 24px; } .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 760px) { .catalogue-layout { grid-template-columns: 1fr; } .catalogue-sidebar { display: none; } }
+  @media (max-width: 480px) {
+    .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    .product-grid :global(.compact .body) { padding: 9px; }
+    .product-grid :global(.compact h3) { font-size: 14px; }
+    .product-grid :global(.compact .code) { font-size: 10px; }
+    .product-grid :global(.compact .collection) { top: 7px; left: 7px; font-size: 7px; padding: 3px 4px; }
+  }
+</style>

@@ -5,6 +5,7 @@ import Breadcrumb from '../../../components/Breadcrumb.astro';
 import ProductGallery from '../../../components/ProductGallery.astro';
 import TechnicalParameters from '../../../components/TechnicalParameters.astro';
 import referenceData from '../../../data/product-technical-reference.json';
+import grade80ReferenceData from '../../../data/grade-80-technical-reference.json';
 import EnquiryForm from '../../../components/EnquiryForm.astro';
 import { categoryBySlug } from '../../../data/categories';
 import { products, relatedProducts, productUrl } from '../../../data/products';
@@ -18,12 +19,13 @@ const cat = categoryBySlug(p.category)!;
 const crumbs = [
   { name: 'Home', href: '/' },
   { name: 'Products', href: '/products' },
-  { name: 'Grade 100 Rigging', href: '/products' },
+  { name: p.grade === 'Grade 80' ? 'Grade 80 Rigging' : 'Grade 100 Rigging', href: p.grade === 'Grade 80' ? '/products/grade-80-rigging' : '/products' },
   { name: p.name, href: `/products/${cat.slug}/${p.slug}` },
 ];
-const reference = referenceData[p.slug as keyof typeof referenceData];
+const allReferences = { ...referenceData, ...grade80ReferenceData };
+const reference = allReferences[p.slug as keyof typeof allReferences];
 const preferredRelated = relatedProducts(p, 4);
-const related = [...preferredRelated, ...products.filter((item) => item.slug !== p.slug && !preferredRelated.some((match) => match.slug === item.slug))].slice(0, 4);
+const related = [...preferredRelated, ...products.filter((item) => item.grade === p.grade && item.slug !== p.slug && !preferredRelated.some((match) => match.slug === item.slug))].slice(0, 4);
 const firstDrawing = reference.sections[0]?.drawing;
 ---
 <Base

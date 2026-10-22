@@ -1,0 +1,1347 @@
+{
+  "tool": "Built-in image_gen",
+  "finish": "RAL 2004 orange",
+  "promptApplication": "Append \" Subject: \" followed by subject to orangePhoto, orangePhotoOrDrawing and clevisSwivelCorrection. Use all other named prompts verbatim.",
+  "prompts": {
+    "firstClevis": "Use case: precise-object-edit. Edit this exact Grade 80 clevis sling hook into a KINSTON industrial catalogue photograph. Preserve exact hook geometry, clevis, black top load pin, silver sprung latch, all openings and proportions. Change only red painted body to RAL 2004 pure orange powder coated forged steel. Replace manufacturer markings with exact legible raised forged KINSTON lettering on the broad orange side. Remove other brand names; retain mechanically plausible details. Full single product centered with 12% margins on pale neutral grey studio background and natural contact shadow. Square high quality realistic photograph matching a premium lifting hardware catalogue, not plastic or CGI. No floating text or watermark.",
+    "orangePhoto": "Use case: precise-object-edit. KINSTON industrial product catalogue photograph of this exact Grade 80 component. Preserve input mechanical geometry, silhouette, all openings, pins, latches, connectors, orientation and proportions. Change painted body ONLY to RAL 2004 pure orange powder-coated forged steel. Keep black pins and silver metal hardware their original materials. Replace existing manufacturer markings with exact readable raised forged KINSTON lettering on a broad visible orange face; no other brand names, invented load ratings or floating text. Full single complete product centered with 12% margins in square framing on pale neutral gray studio background and soft natural contact shadow. Realistic forged texture, natural softbox light, premium photography; avoid plastic or CGI. No watermark.",
+    "orangePhotoOrDrawing": "Use case: precise-object-edit. KINSTON industrial product catalogue photograph of this exact Grade 80 component. Preserve input mechanical geometry, silhouette, all openings, pins, latches, connectors, orientation and proportions. Change painted body ONLY to RAL 2004 pure orange powder-coated forged steel. Keep black pins and silver metal hardware their original materials. Replace existing manufacturer markings with exact readable raised forged KINSTON lettering on a broad visible orange face; no other brand names, invented load ratings or floating text. Full single complete product centered with 12% margins in square framing on pale neutral gray studio background and soft natural contact shadow. Realistic forged texture, natural softbox light, premium photography; avoid plastic or CGI. No watermark. If reference is a dimension drawing, render exact geometry as a real photographed orange steel component; omit dimension lines, labels and diagram annotations.",
+    "clevisSwivelCorrection": "Use case: precise-object-edit. KINSTON industrial product catalogue photograph of this exact Grade 80 component. Preserve input mechanical geometry, silhouette, all openings, pins, latches, connectors, orientation and proportions. Change painted body ONLY to RAL 2004 pure orange powder-coated forged steel. Keep black pins and silver metal hardware their original materials. Replace existing manufacturer markings with exact readable raised forged KINSTON lettering on a broad visible orange face; no other brand names, invented load ratings or floating text. Full single complete product centered with 12% margins in square framing on pale neutral gray studio background and soft natural contact shadow. Realistic forged texture, natural softbox light, premium photography; avoid plastic or CGI. No watermark. If reference is a dimension drawing, render exact geometry as a real photographed orange steel component; omit dimension lines, labels and diagram annotations. Source drawing shows alternate rotation and open-hook outlines. Render one physically coherent closed hook with one upright clevis fork, one transverse load pin, one swivel bearing joint, and one closed self-locking gate. Omit alternate-position outlines and dimensions.",
+    "clevisSwivelFinal": "Precise corrective edit of this catalogue image. There must be EXACTLY ONE upright clevis fork at the top, with its one black horizontal load pin. REMOVE the entire second diagonal clevis fork on the upper RIGHT, including that duplicate black pin, its orange frame and second silver inner block. Replace its entire area with matching clean gray background. Keep the one upright top clevis, its silver inner block, and its lower bearing joint connecting vertically to the hook. On the lower hook, REMOVE the extra upper pointed open-position gate sticking to the LEFT, leaving ONE continuous diagonal self-locking gate closed neatly against the hook tip. The final image must be a mechanically coherent single clevis swivel self-locking hook, not overlapping rotation positions. Keep the orange main hook body, its KINSTON forged branding, lower curved shape, real metal textures, RAL 2004 orange coating, gray studio background, lighting, square centered framing and shadow. One product, one clevis, one load pin, one swivel joint, one closed gate. No dimension lines, floating text or new markings.",
+    "webRingCorrection": "Precise product-photo correction. Remove BOTH invented silver circular discs and their diagonal silver stems: one at the top apex of the orange triangular frame and one in the middle of the black horizontal crossbar. These were diagram cross-section symbols and are NOT physical parts. At the apex, replace the silver disc and its stem with an uninterrupted continuous rounded RAL 2004 orange forged steel surface matching the adjacent orange frame exactly. In the middle of the black crossbar, replace the silver disc and diagonal stem with a continuous plain dark steel cylindrical bar, matching its texture and lighting. Preserve the entire outer triangular frame shape, lower opening, horizontal crossbar and its end joints, orange finish, forged KINSTON lettering, background, lighting, shadows, framing and all other geometry unchanged. No new fasteners, symbols, annotation, holes or markings. Photorealistic catalogue photograph."
+  },
+  "images": [
+    {
+      "slug": "alloy-steel-clevis-sling-hook-2-17-g80",
+      "name": "SLR012 Alloy Steel Clevis Sling Hook",
+      "image": "/images/products/branded/grade-80/alloy-steel-clevis-sling-hook-2-17-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-17-alloy-steel-clevis-sling-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/alloy-steel-clevis-sling-hook-2-17-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-aab8d935-cbec-4822-9c75-f8196caa6fed.png",
+      "promptKey": "firstClevis",
+      "subject": "SLR012 Alloy Steel Clevis Sling Hook"
+    },
+    {
+      "slug": "alloy-steel-clevis-sling-hook-2-18-g80",
+      "name": "SLR014 Alloy Steel Clevis Sling Hook",
+      "image": "/images/products/branded/grade-80/alloy-steel-clevis-sling-hook-2-18-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-18-alloy-steel-clevis-sling-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/alloy-steel-clevis-sling-hook-2-18-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-4f943f1f-cd61-44f8-b201-0cc2d52e92ea.png",
+      "promptKey": "orangePhoto",
+      "subject": "SLR014 Alloy Steel Clevis Sling Hook"
+    },
+    {
+      "slug": "deep-throat-clevis-grab-hook-2-32-g80",
+      "name": "Deep Throat Alloy Steel Clevis Grab Hook",
+      "image": "/images/products/branded/grade-80/deep-throat-clevis-grab-hook-2-32-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-32-deep-throat-clevis-grab-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/deep-throat-clevis-grab-hook-2-32-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-20a824fc-2fe6-4d91-94a7-1fcdc1e923e5.png",
+      "promptKey": "orangePhoto",
+      "subject": "Deep Throat Alloy Steel Clevis Grab Hook"
+    },
+    {
+      "slug": "shortening-clutch-sling-hook-2-33-g80",
+      "name": "Alloy Steel Shortening Clutch Sling Hook",
+      "image": "/images/products/branded/grade-80/shortening-clutch-sling-hook-2-33-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-33-shortening-clutch-sling-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/shortening-clutch-sling-hook-2-33-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-854a4eb8-5b72-42e4-bc9f-5edc02e37eef.png",
+      "promptKey": "orangePhoto",
+      "subject": "Alloy Steel Shortening Clutch Sling Hook"
+    },
+    {
+      "slug": "alloy-steel-clevis-c-hook-2-43-g80",
+      "name": "Alloy Steel Clevis C Hook",
+      "image": "/images/products/branded/grade-80/alloy-steel-clevis-c-hook-2-43-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-43-alloy-steel-clevis-c-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/alloy-steel-clevis-c-hook-2-43-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-50a64182-b8be-488f-8b1d-98345b97dae4.png",
+      "promptKey": "orangePhoto",
+      "subject": "Alloy Steel Clevis C Hook"
+    },
+    {
+      "slug": "alloy-steel-clevis-hook-2-47-g80",
+      "name": "Alloy Steel Clevis Hook",
+      "image": "/images/products/branded/grade-80/alloy-steel-clevis-hook-2-47-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-47-alloy-steel-clevis-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/alloy-steel-clevis-hook-2-47-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-b8f09c65-7fd1-4253-a82f-b9216b54307f.png",
+      "promptKey": "orangePhoto",
+      "subject": "Alloy Steel Clevis Hook"
+    },
+    {
+      "slug": "g80-clevis-webbing-sling-hook-2-1-7-g80",
+      "name": "G80 Clevis Webbing Sling Hook",
+      "image": "/images/products/branded/grade-80/g80-clevis-webbing-sling-hook-2-1-7-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-1-7-g80-clevis-webbing-sling-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-clevis-webbing-sling-hook-2-1-7-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-6d15f1b7-4d1d-4678-ad8d-8dfad5ee03ca.png",
+      "promptKey": "orangePhoto",
+      "subject": "G80 Clevis Webbing Sling Hook"
+    },
+    {
+      "slug": "g80-clevis-grab-hook-2-1-8-g80",
+      "name": "G80 U.S. Type Clevis Grab Hook",
+      "image": "/images/products/branded/grade-80/g80-clevis-grab-hook-2-1-8-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-1-8-g80-clevis-grab-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-clevis-grab-hook-2-1-8-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-168f05bd-a2f3-4624-8b36-7cd733b73443.png",
+      "promptKey": "orangePhoto",
+      "subject": "G80 U.S. Type Clevis Grab Hook"
+    },
+    {
+      "slug": "g80-alloy-steel-clevis-grab-hook-2-1-9-g80",
+      "name": "G80 Alloy Steel Clevis Grab Hook",
+      "image": "/images/products/branded/grade-80/g80-alloy-steel-clevis-grab-hook-2-1-9-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-1-9-g80-clevis-grab-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-alloy-steel-clevis-grab-hook-2-1-9-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-a21a055d-f059-46ce-868a-7077f314660e.png",
+      "promptKey": "orangePhoto",
+      "subject": "G80 Alloy Steel Clevis Grab Hook"
+    },
+    {
+      "slug": "g80-clevis-foundry-hook-2-1-10-g80",
+      "name": "G80 Clevis Foundry Hook",
+      "image": "/images/products/branded/grade-80/g80-clevis-foundry-hook-2-1-10-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-1-10-g80-clevis-foundry-hook_01b.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-clevis-foundry-hook-2-1-10-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-63fd3afd-65b9-4279-8ba7-33aae4c667d3.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "G80 Clevis Foundry Hook"
+    },
+    {
+      "slug": "g80-clevis-grab-hook-2-1-11-g80",
+      "name": "G80 Clevis Grab Hook",
+      "image": "/images/products/branded/grade-80/g80-clevis-grab-hook-2-1-11-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-1-11-g80-clevis-grab-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-clevis-grab-hook-2-1-11-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-5b5be947-15e5-4873-88a3-cf685789146e.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "G80 Clevis Grab Hook"
+    },
+    {
+      "slug": "clevis-sling-hook-2-1-12-g80",
+      "name": "Clevis Sling Hook",
+      "image": "/images/products/branded/grade-80/clevis-sling-hook-2-1-12-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-1-12-clevis-sling-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/clevis-sling-hook-2-1-12-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-8e2b764c-e2a4-47ea-ab61-86e7d6e2f9c0.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Clevis Sling Hook"
+    },
+    {
+      "slug": "alloy-steel-connecting-link-2-6-g80",
+      "name": "Alloy Steel Connecting Link",
+      "image": "/images/products/branded/grade-80/alloy-steel-connecting-link-2-6-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-6-alloy-steel-connecting-link_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/alloy-steel-connecting-link-2-6-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-349cab0a-3134-4d70-9f8d-081040ee8902.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Alloy Steel Connecting Link"
+    },
+    {
+      "slug": "alloy-steel-sling-connector-2-10-g80",
+      "name": "Alloy Steel Sling Connector",
+      "image": "/images/products/branded/grade-80/alloy-steel-sling-connector-2-10-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-10-alloy-steel-sling-connector_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/alloy-steel-sling-connector-2-10-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-32699dcb-282a-474b-aaf0-ba088296c593.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Alloy Steel Sling Connector"
+    },
+    {
+      "slug": "alloy-steel-connecting-link-2-29-g80",
+      "name": "Alloy Steel Connecting Link",
+      "image": "/images/products/branded/grade-80/alloy-steel-connecting-link-2-29-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-29-alloy-steel-connecting-link_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/alloy-steel-connecting-link-2-29-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-a155e3d8-6c46-42a6-9b42-efbe8b06e17f.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Alloy Steel Connecting Link"
+    },
+    {
+      "slug": "g80-type-connecting-link-2-2-5-g80",
+      "name": "G80 U.S. Type Connecting Link",
+      "image": "/images/products/branded/grade-80/g80-type-connecting-link-2-2-5-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-2-5-g80-type-connecting-link_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-type-connecting-link-2-2-5-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-31670681-6929-4c1c-ad55-75b386ba1097.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "G80 U.S. Type Connecting Link"
+    },
+    {
+      "slug": "g80-special-webbing-connector-2-2-6-g80",
+      "name": "G80 Special Webbing Connector",
+      "image": "/images/products/branded/grade-80/g80-special-webbing-connector-2-2-6-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-2-6-g80-special-webbing-connector_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-special-webbing-connector-2-2-6-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-830316f0-ae1f-40b3-aa57-8ee448f1ed09.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "G80 Special Webbing Connector"
+    },
+    {
+      "slug": "alloy-steel-heavy-duty-d-ring-2-3-g80",
+      "name": "Alloy Steel Heavy Duty D Ring",
+      "image": "/images/products/branded/grade-80/alloy-steel-heavy-duty-d-ring-2-3-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-3-alloy-steel-heavy-duty-d-ring_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/alloy-steel-heavy-duty-d-ring-2-3-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-2420ca77-2ab3-4210-8d36-e5c96ec5d138.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Alloy Steel Heavy Duty D Ring"
+    },
+    {
+      "slug": "alloy-steel-weld-on-d-ring-2-19-g80",
+      "name": "Alloy Steel Weld On D Ring",
+      "image": "/images/products/branded/grade-80/alloy-steel-weld-on-d-ring-2-19-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-19-alloy-steel-weld-on-d-ring_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/alloy-steel-weld-on-d-ring-2-19-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-c5d3fc75-7e65-4a7e-a3a8-b4171ba1e6c6.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Alloy Steel Weld On D Ring"
+    },
+    {
+      "slug": "alloy-steel-weld-on-hook-2-20-g80",
+      "name": "Alloy Steel Weld On Hook",
+      "image": "/images/products/branded/grade-80/alloy-steel-weld-on-hook-2-20-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-20-alloy-steel-weld-on-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/alloy-steel-weld-on-hook-2-20-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-4e9e1fcb-eb26-4b90-8bd1-3ee20aeebfaa.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Alloy Steel Weld On Hook"
+    },
+    {
+      "slug": "g80-forged-d-ring-2-3-4-g80",
+      "name": "G80 Forged D Ring",
+      "image": "/images/products/branded/grade-80/g80-forged-d-ring-2-3-4-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-3-4-g80-forged-d-ring_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-forged-d-ring-2-3-4-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-525459a8-0a50-4edb-9e26-cb4d7bb3da93.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "G80 Forged D Ring"
+    },
+    {
+      "slug": "alloy-d-ring-for-web-sling-2-3-5-g80",
+      "name": "Alloy D Ring for Web Sling",
+      "image": "/images/products/branded/grade-80/alloy-d-ring-for-web-sling-2-3-5-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-3-5-alloy-d-ring-for-web-sling_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/alloy-d-ring-for-web-sling-2-3-5-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-5f17dc29-caaf-406c-86f6-fb2f7cddf05e.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Alloy D Ring for Web Sling"
+    },
+    {
+      "slug": "forged-d-ring-with-wrap-2-3-6-g80",
+      "name": "Forged D Ring with Wrap",
+      "image": "/images/products/branded/grade-80/forged-d-ring-with-wrap-2-3-6-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-3-6-forged-d-ring-with-wrap_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/forged-d-ring-with-wrap-2-3-6-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-e32c6750-3fa4-4dc0-9316-4658594f6093.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Forged D Ring with Wrap"
+    },
+    {
+      "slug": "alloy-steel-eye-sling-hook-2-16-g80",
+      "name": "Alloy Steel Eye Sling Hook",
+      "image": "/images/products/branded/grade-80/alloy-steel-eye-sling-hook-2-16-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-16-alloy-steel-eye-sling-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/alloy-steel-eye-sling-hook-2-16-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-d0a7c155-b362-49bf-a8c1-add5a01030f3.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Alloy Steel Eye Sling Hook"
+    },
+    {
+      "slug": "deep-throat-eye-grab-hook-2-31-g80",
+      "name": "Deep Throat Alloy Steel Eye Grab Hook",
+      "image": "/images/products/branded/grade-80/deep-throat-eye-grab-hook-2-31-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-31-deep-throat-eye-grab-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/deep-throat-eye-grab-hook-2-31-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-e9890995-3557-486d-a70f-345fc3cc8833.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Deep Throat Alloy Steel Eye Grab Hook"
+    },
+    {
+      "slug": "eye-shortening-grab-hook-2-38-g80",
+      "name": "Alloy Steel Eye Shortening Grab Hook",
+      "image": "/images/products/branded/grade-80/eye-shortening-grab-hook-2-38-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-38-eye-shortening-grab-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/eye-shortening-grab-hook-2-38-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-61a456d8-8ebb-41ef-9f64-706dc8ea6ce6.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Alloy Steel Eye Shortening Grab Hook"
+    },
+    {
+      "slug": "alloy-steel-eye-foundry-hook-2-39-g80",
+      "name": "Alloy Steel Eye Foundry Hook",
+      "image": "/images/products/branded/grade-80/alloy-steel-eye-foundry-hook-2-39-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-39-alloy-steel-eye-foundry-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/alloy-steel-eye-foundry-hook-2-39-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-89513851-0b22-4282-9d6f-b5f33cf16b70.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Alloy Steel Eye Foundry Hook"
+    },
+    {
+      "slug": "twist-eye-choke-hook-2-42-g80",
+      "name": "Twist Eye Choke Hook",
+      "image": "/images/products/branded/grade-80/twist-eye-choke-hook-2-42-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-42-twist-eye-choke-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/twist-eye-choke-hook-2-42-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-d8336040-a018-4ec0-b5ff-1b7836efd0f2.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Twist Eye Choke Hook"
+    },
+    {
+      "slug": "alloy-steel-twist-eye-hook-5-16-g80",
+      "name": "Alloy Steel Twist Eye Hook",
+      "image": "/images/products/branded/grade-80/alloy-steel-twist-eye-hook-5-16-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/5-16-alloy-steel-twist-eye-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/alloy-steel-twist-eye-hook-5-16-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-4dfbb0af-6b5f-4832-90e7-5731b86b58fc.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Alloy Steel Twist Eye Hook"
+    },
+    {
+      "slug": "g80-eye-sling-hook-with-cast-latch-2-4-8-g80",
+      "name": "G80 Eye Sling Hook with Cast Latch",
+      "image": "/images/products/branded/grade-80/g80-eye-sling-hook-with-cast-latch-2-4-8-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-4-8-g80-eye-sling-hook-with-cast-latch_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-eye-sling-hook-with-cast-latch-2-4-8-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-058f116d-98fa-4661-ab01-289e2b53965e.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "G80 Eye Sling Hook with Cast Latch"
+    },
+    {
+      "slug": "g80-eye-sling-hook-with-latch-2-4-9-g80",
+      "name": "G80 Eye Sling Hook with Latch",
+      "image": "/images/products/branded/grade-80/g80-eye-sling-hook-with-latch-2-4-9-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-4-9-g80-eye-sling-hook-with-latch_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-eye-sling-hook-with-latch-2-4-9-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-4350861e-4c7d-48b4-a97c-75780ce1f630.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "G80 Eye Sling Hook with Latch"
+    },
+    {
+      "slug": "g80-eye-sling-hook-with-cast-latch-2-4-10-g80",
+      "name": "G80 Eye Sling Hook with Cast Latch",
+      "image": "/images/products/branded/grade-80/g80-eye-sling-hook-with-cast-latch-2-4-10-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-4-10-g80-eye-sling-hook-with-cast-latch_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-eye-sling-hook-with-cast-latch-2-4-10-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-09fec879-6800-47ed-a574-8fc9a13de6d5.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "G80 Eye Sling Hook with Cast Latch"
+    },
+    {
+      "slug": "g80-french-type-eye-sling-hook-with-forged-latch-2-4-11-g80",
+      "name": "G80 French Type Eye Sling Hook with Forged Latch",
+      "image": "/images/products/branded/grade-80/g80-french-type-eye-sling-hook-with-forged-latch-2-4-11-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-4-11-g80-french-type-eye-sling-hook-with-forged-latch_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-french-type-eye-sling-hook-with-forged-latch-2-4-11-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-3e1543f7-0bb9-4522-a86d-65eed845fad4.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "G80 French Type Eye Sling Hook with Forged Latch"
+    },
+    {
+      "slug": "g80-eye-sling-hook-new-type-a-327-2-4-12-g80",
+      "name": "G80 Eye Sling Hook New Type A-327",
+      "image": "/images/products/branded/grade-80/g80-eye-sling-hook-new-type-a-327-2-4-12-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-4-12-g80-eye-sling-hook-new-type-a-327_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-eye-sling-hook-new-type-a-327-2-4-12-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-2b5d9833-3ad5-4d47-9179-0b9dca8f4f3f.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "G80 Eye Sling Hook New Type A-327"
+    },
+    {
+      "slug": "eye-twist-hook-2-4-13-g80",
+      "name": "Eye Twist Hook",
+      "image": "/images/products/branded/grade-80/eye-twist-hook-2-4-13-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-4-13-eye-twist-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/eye-twist-hook-2-4-13-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-d825c70f-c62f-426e-aa89-b9ef62cf3f12.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Eye Twist Hook"
+    },
+    {
+      "slug": "heavy-winch-hook-2-4-14-g80",
+      "name": "Heavy Winch Hook",
+      "image": "/images/products/branded/grade-80/heavy-winch-hook-2-4-14-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-4-14-heavy-winch-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/heavy-winch-hook-2-4-14-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-2a9ab109-c724-4875-b794-b6fd03ba8c39.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Heavy Winch Hook"
+    },
+    {
+      "slug": "alloy-eye-hook-2-4-15-g80",
+      "name": "Alloy Eye Hook",
+      "image": "/images/products/branded/grade-80/alloy-eye-hook-2-4-15-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-4-15-alloy-eye-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/alloy-eye-hook-2-4-15-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-8e839dba-08af-4d5c-a308-52155ae48a2a.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Alloy Eye Hook"
+    },
+    {
+      "slug": "g80-eye-webbing-sling-hook-2-4-16-g80",
+      "name": "G80 Eye Webbing Sling Hook",
+      "image": "/images/products/branded/grade-80/g80-eye-webbing-sling-hook-2-4-16-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-4-16-g80-eye-webbing-sling-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-eye-webbing-sling-hook-2-4-16-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-d647eb41-d958-4f06-854b-120b799d84b5.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "G80 Eye Webbing Sling Hook"
+    },
+    {
+      "slug": "eye-bend-hook-2-4-17-g80",
+      "name": "Eye Bend Hook",
+      "image": "/images/products/branded/grade-80/eye-bend-hook-2-4-17-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-4-17-eye-bend-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/eye-bend-hook-2-4-17-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-5c4d5658-d489-49b1-a73a-c0ca335db7b8.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Eye Bend Hook"
+    },
+    {
+      "slug": "g80-eye-sling-hook-2-4-18-g80",
+      "name": "G80 Eye Sling Hook",
+      "image": "/images/products/branded/grade-80/g80-eye-sling-hook-2-4-18-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-4-18-g80-eye-sling-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-eye-sling-hook-2-4-18-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-0639d5a2-5198-441d-9c03-82cc24c001fa.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "G80 Eye Sling Hook"
+    },
+    {
+      "slug": "g80-type-eye-grab-hook-2-4-19-g80",
+      "name": "G80 U.S. Type Eye Grab Hook",
+      "image": "/images/products/branded/grade-80/g80-type-eye-grab-hook-2-4-19-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-4-19-g80-type-eye-grab-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-type-eye-grab-hook-2-4-19-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-6b74e3af-1f2f-40cc-8372-68ef441bfbb8.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "G80 U.S. Type Eye Grab Hook"
+    },
+    {
+      "slug": "g80-hook-for-special-use-2-4-20-g80",
+      "name": "G80 Hook for Special Use",
+      "image": "/images/products/branded/grade-80/g80-hook-for-special-use-2-4-20-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-4-20-g80-hook-for-special-use_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-hook-for-special-use-2-4-20-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-27d08b47-626f-4ce6-8f44-0787529ecf53.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "G80 Hook for Special Use"
+    },
+    {
+      "slug": "g80-eye-webbing-sling-hook-2-4-21-g80",
+      "name": "G80 Eye Webbing Sling Hook",
+      "image": "/images/products/branded/grade-80/g80-eye-webbing-sling-hook-2-4-21-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-4-21-g80-eye-webbing-sling-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-eye-webbing-sling-hook-2-4-21-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-ceb800fa-0895-4bc3-ac04-1081e839932b.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "G80 Eye Webbing Sling Hook"
+    },
+    {
+      "slug": "g80-eye-foundry-hook-2-4-22-g80",
+      "name": "G80 Eye Foundry Hook",
+      "image": "/images/products/branded/grade-80/g80-eye-foundry-hook-2-4-22-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-4-22-g80-eye-foundry-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-eye-foundry-hook-2-4-22-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-d28dafe2-449c-403c-82e5-3e8c58b09a88.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "G80 Eye Foundry Hook"
+    },
+    {
+      "slug": "g80-eye-sling-hook-with-cast-latch-2-4-23-g80",
+      "name": "G80 EYE Sling Hook with Cast Latch",
+      "image": "/images/products/branded/grade-80/g80-eye-sling-hook-with-cast-latch-2-4-23-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-4-23-g80-eye-sling-hook-with-cast-latch_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-eye-sling-hook-with-cast-latch-2-4-23-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-bcf1fb88-1000-4945-8459-a3b2e239444d.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "G80 EYE Sling Hook with Cast Latch"
+    },
+    {
+      "slug": "alloy-steel-swivel-ring-2-8-g80",
+      "name": "Alloy Steel Swivel Ring",
+      "image": "/images/products/branded/grade-80/alloy-steel-swivel-ring-2-8-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-8-alloy-steel-swivel-ring_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/alloy-steel-swivel-ring-2-8-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-ec2c352e-0287-4135-85b6-47b3a84f5241.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Alloy Steel Swivel Ring"
+    },
+    {
+      "slug": "alloy-steel-forged-swivels-2-14-g80",
+      "name": "Alloy Steel Forged Swivels",
+      "image": "/images/products/branded/grade-80/alloy-steel-forged-swivels-2-14-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-14-alloy-steel-forged-swivels_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/alloy-steel-forged-swivels-2-14-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-02a6ec6d-974e-42aa-bc15-e36c68b1fcb1.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Alloy Steel Forged Swivels"
+    },
+    {
+      "slug": "alloy-steel-welded-swivel-2-21-g80",
+      "name": "Alloy Steel Welded Swivel",
+      "image": "/images/products/branded/grade-80/alloy-steel-welded-swivel-2-21-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-21-alloy-steel-welded-swivel_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/alloy-steel-welded-swivel-2-21-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-d1e44080-18d3-4e22-aab8-cde065227bed.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Alloy Steel Welded Swivel"
+    },
+    {
+      "slug": "alloy-steel-eye-swivel-2-37-g80",
+      "name": "Alloy Steel Eye Swivel",
+      "image": "/images/products/branded/grade-80/alloy-steel-eye-swivel-2-37-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-37-alloy-steel-eye-swivel_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/alloy-steel-eye-swivel-2-37-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-173352b1-c32d-4c8f-8fd4-830cb15294fc.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Alloy Steel Eye Swivel"
+    },
+    {
+      "slug": "g80-regular-swivel-2-5-5-g80",
+      "name": "G80 Regular Swivel",
+      "image": "/images/products/branded/grade-80/g80-regular-swivel-2-5-5-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-5-5-g80-regular-swivel_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-regular-swivel-2-5-5-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-7055bd1f-e56c-4077-b204-d9eb42c886b5.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "G80 Regular Swivel"
+    },
+    {
+      "slug": "g80-eye-swivel-2-5-6-g80",
+      "name": "G80 Eye Swivel",
+      "image": "/images/products/branded/grade-80/g80-eye-swivel-2-5-6-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-5-6-g80-eye-swivel_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-eye-swivel-2-5-6-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-cc3c2019-913a-4eb5-bdcc-1e954aec305a.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "G80 Eye Swivel"
+    },
+    {
+      "slug": "forged-alloy-steel-lifting-link-5-10-g80",
+      "name": "Forged Alloy Steel Lifting Link",
+      "image": "/images/products/branded/grade-80/forged-alloy-steel-lifting-link-5-10-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/5-10-forged-alloy-steel-lifting-link_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/forged-alloy-steel-lifting-link-5-10-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-0e8bd261-61fe-42d1-961d-8eb5e2a15c76.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Forged Alloy Steel Lifting Link"
+    },
+    {
+      "slug": "forged-alloy-steel-lifting-ring-5-11-g80",
+      "name": "Forged Alloy Steel Lifting Ring",
+      "image": "/images/products/branded/grade-80/forged-alloy-steel-lifting-ring-5-11-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/5-11-forged-alloy-steel-lifting-ring_02.jpg",
+      "referencePath": "/images/products/reference/grade-80/forged-alloy-steel-lifting-ring-5-11-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-70028b54-1767-4f28-a330-57901895b5a1.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Forged Alloy Steel Lifting Ring"
+    },
+    {
+      "slug": "alloy-steel-master-link-2-50-g80",
+      "name": "Alloy Steel Master Link, Master Link Assembly",
+      "image": "/images/products/branded/grade-80/alloy-steel-master-link-2-50-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-50-alloy-steel-master-link_05.jpg",
+      "referencePath": "/images/products/reference/grade-80/alloy-steel-master-link-2-50-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-dc88dc19-1f82-402d-acfd-8d2d1c8b336a.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Alloy Steel Master Link, Master Link Assembly"
+    },
+    {
+      "slug": "european-type-g80-master-link-2-6-4-g80",
+      "name": "European Type G80 Master Link",
+      "image": "/images/products/branded/grade-80/european-type-g80-master-link-2-6-4-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-6-4-european-type-g80-master-link_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/european-type-g80-master-link-2-6-4-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-a671f278-b097-4c28-9a59-aa2d7e11032a.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "European Type G80 Master Link"
+    },
+    {
+      "slug": "european-type-g80-master-link-assembly-2-6-5-g80",
+      "name": "European Type G80 Master Link Assembly",
+      "image": "/images/products/branded/grade-80/european-type-g80-master-link-assembly-2-6-5-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-6-5-european-type-g80-master-link-assembly_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/european-type-g80-master-link-assembly-2-6-5-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-6c95fbac-c852-4c9e-9ce0-b0a953fe319a.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "European Type G80 Master Link Assembly"
+    },
+    {
+      "slug": "alloy-steel-lift-ring-2-1-g80",
+      "name": "Alloy Steel Lift Ring",
+      "image": "/images/products/branded/grade-80/alloy-steel-lift-ring-2-1-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-1-alloy-steel-lift-ring_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/alloy-steel-lift-ring-2-1-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-6742a18a-a03c-4f7b-9e28-e9c1824356a3.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Alloy Steel Lift Ring"
+    },
+    {
+      "slug": "g80-alloy-steel-g-hook-2-2-g80",
+      "name": "G80 Alloy Steel G Hook",
+      "image": "/images/products/branded/grade-80/g80-alloy-steel-g-hook-2-2-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-2-g80-alloy-steel-g-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-alloy-steel-g-hook-2-2-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-d1780153-cc63-4d6e-a169-bd1d45bbdc0a.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "G80 Alloy Steel G Hook"
+    },
+    {
+      "slug": "alloy-steel-clevis-clutch-2-4-g80",
+      "name": "Alloy Steel Clevis Clutch",
+      "image": "/images/products/branded/grade-80/alloy-steel-clevis-clutch-2-4-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-4-alloy-steel-clevis-clutch_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/alloy-steel-clevis-clutch-2-4-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-0a2f7648-e90c-40cb-9d32-a284e54a170f.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Alloy Steel Clevis Clutch"
+    },
+    {
+      "slug": "alloy-steel-sling-hook-2-9-g80",
+      "name": "Alloy Steel Sling Hook",
+      "image": "/images/products/branded/grade-80/alloy-steel-sling-hook-2-9-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-9-alloy-steel-sling-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/alloy-steel-sling-hook-2-9-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-143e14fe-fafb-453d-8b3a-37115b95c269.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Alloy Steel Sling Hook"
+    },
+    {
+      "slug": "alloy-steel-forged-hook-2-13-g80",
+      "name": "Alloy Steel Forged Hook",
+      "image": "/images/products/branded/grade-80/alloy-steel-forged-hook-2-13-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-13-alloy-steel-forged-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/alloy-steel-forged-hook-2-13-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-2951a052-4e1a-4181-a440-c57b41083666.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Alloy Steel Forged Hook"
+    },
+    {
+      "slug": "lashing-chain-c-hook-2-15-g80",
+      "name": "Spring Pin Lashing Type C Hook",
+      "image": "/images/products/branded/grade-80/lashing-chain-c-hook-2-15-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-15-lashing-chain-c-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/lashing-chain-c-hook-2-15-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-5b4878f1-3b2a-4562-94b6-b7d9f2855f8c.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Spring Pin Lashing Type C Hook"
+    },
+    {
+      "slug": "forged-alloy-steel-sorting-hook-2-23-g80",
+      "name": "Forged Alloy Steel Sorting Hook",
+      "image": "/images/products/branded/grade-80/forged-alloy-steel-sorting-hook-2-23-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-23-forged-alloy-steel-sorting-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/forged-alloy-steel-sorting-hook-2-23-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-c34b53fc-70ee-4c05-951d-852fbe607157.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Forged Alloy Steel Sorting Hook"
+    },
+    {
+      "slug": "container-lifting-clevis-link-2-24-g80",
+      "name": "Container Lifting Clevis Link",
+      "image": "/images/products/branded/grade-80/container-lifting-clevis-link-2-24-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-24-container-lifting-clevis-link_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/container-lifting-clevis-link-2-24-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-b05b736d-38df-4f4b-bdae-147cf0732543.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Container Lifting Clevis Link"
+    },
+    {
+      "slug": "alloy-steel-link-connector-2-25-g80",
+      "name": "Alloy Steel Link Connector",
+      "image": "/images/products/branded/grade-80/alloy-steel-link-connector-2-25-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-25-alloy-steel-link-connector_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/alloy-steel-link-connector-2-25-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-0f8de0b3-1af6-40aa-9eec-bf3a99bf1b11.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Alloy Steel Link Connector"
+    },
+    {
+      "slug": "alloy-steel-clevis-shortening-clutch-2-26-g80",
+      "name": "Alloy Steel Clevis Shortening Clutch",
+      "image": "/images/products/branded/grade-80/alloy-steel-clevis-shortening-clutch-2-26-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-26-alloy-steel-clevis-shortening-clutch_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/alloy-steel-clevis-shortening-clutch-2-26-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-47145552-e26e-4e95-a9dd-148838e27675.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Alloy Steel Clevis Shortening Clutch"
+    },
+    {
+      "slug": "alloy-steel-container-lifting-lug-2-27-g80",
+      "name": "Alloy Steel Container Lifting Lug",
+      "image": "/images/products/branded/grade-80/alloy-steel-container-lifting-lug-2-27-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-27-alloy-steel-container-lifting-lug_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/alloy-steel-container-lifting-lug-2-27-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-6b8243d9-c751-4e7d-bcd5-3d7d155aff73.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Alloy Steel Container Lifting Lug"
+    },
+    {
+      "slug": "g80-alloy-steel-omega-link-2-30-g80",
+      "name": "G80 Alloy Steel Omega Link",
+      "image": "/images/products/branded/grade-80/g80-alloy-steel-omega-link-2-30-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-30-g80-alloy-steel-omega-link_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-alloy-steel-omega-link-2-30-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-766f8391-94bb-4976-8f1d-f049279be30a.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "G80 Alloy Steel Omega Link"
+    },
+    {
+      "slug": "alloy-steel-tow-hook-2-35-g80",
+      "name": "Alloy Steel Tow Hook",
+      "image": "/images/products/branded/grade-80/alloy-steel-tow-hook-2-35-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-35-alloy-steel-tow-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/alloy-steel-tow-hook-2-35-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-17309ae9-108a-49d7-b61b-2d360efe734a.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Alloy Steel Tow Hook"
+    },
+    {
+      "slug": "alloy-steel-lifting-sling-hook-2-40-g80",
+      "name": "Alloy Steel Lifting Sling Hook",
+      "image": "/images/products/branded/grade-80/alloy-steel-lifting-sling-hook-2-40-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-40-alloy-steel-lifting-sling-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/alloy-steel-lifting-sling-hook-2-40-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-e9ae91a8-a47e-49b2-bacc-be898540c943.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Alloy Steel Lifting Sling Hook"
+    },
+    {
+      "slug": "alloy-steel-clevis-ring-2-44-g80",
+      "name": "Alloy Steel Clevis Ring",
+      "image": "/images/products/branded/grade-80/alloy-steel-clevis-ring-2-44-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-44-alloy-steel-clevis-ring_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/alloy-steel-clevis-ring-2-44-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-7a155a70-daac-4d2e-a218-36a9d9e299db.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Alloy Steel Clevis Ring"
+    },
+    {
+      "slug": "alloy-steel-clevis-lug-link-2-46-g80",
+      "name": "Alloy Steel Clevis Lug Link",
+      "image": "/images/products/branded/grade-80/alloy-steel-clevis-lug-link-2-46-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-46-alloy-steel-clevis-lug-link_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/alloy-steel-clevis-lug-link-2-46-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-48a058d9-25c0-4bb2-af2e-52e379709329.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Alloy Steel Clevis Lug Link"
+    },
+    {
+      "slug": "alloy-steel-clevis-choker-hook-5-1-g80",
+      "name": "Alloy Steel Clevis Choker Hook",
+      "image": "/images/products/branded/grade-80/alloy-steel-clevis-choker-hook-5-1-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/5-1-alloy-steel-clevis-choker-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/alloy-steel-clevis-choker-hook-5-1-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-c730a134-9bce-4a15-9ba5-07d0536ced32.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Alloy Steel Clevis Choker Hook"
+    },
+    {
+      "slug": "fn-type-sling-hook-5-2-g80",
+      "name": "FN Type Sling Hook",
+      "image": "/images/products/branded/grade-80/fn-type-sling-hook-5-2-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/5-2-fn-type-sling-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/fn-type-sling-hook-5-2-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-86febf0a-fd43-419b-8ffb-30fe3db5cb9c.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "FN Type Sling Hook"
+    },
+    {
+      "slug": "alloy-steel-lifting-sling-grab-hook-5-6-g80",
+      "name": "Alloy Steel Lifting Sling Grab Hook",
+      "image": "/images/products/branded/grade-80/alloy-steel-lifting-sling-grab-hook-5-6-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/5-6-alloy-steel-lifting-sling-grab-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/alloy-steel-lifting-sling-grab-hook-5-6-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-0374b1f8-aab8-4121-a3cf-0743b7e4d891.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Alloy Steel Lifting Sling Grab Hook"
+    },
+    {
+      "slug": "alloy-steel-forged-lifting-ring-5-7-g80",
+      "name": "Alloy Steel Forged Lifting Ring",
+      "image": "/images/products/branded/grade-80/alloy-steel-forged-lifting-ring-5-7-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/5-7-alloy-steel-forged-lifting-ring_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/alloy-steel-forged-lifting-ring-5-7-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-449a7c6b-b914-4854-b021-3fb0b7be5a93.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Alloy Steel Forged Lifting Ring"
+    },
+    {
+      "slug": "g80-long-omega-link-2-7-21-g80",
+      "name": "G80 Long Omega Link",
+      "image": "/images/products/branded/grade-80/g80-long-omega-link-2-7-21-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-7-21-g80-long-omega-link_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-long-omega-link-2-7-21-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-cde5148b-eaa4-401f-bd43-907ebb139f4b.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "G80 Long Omega Link"
+    },
+    {
+      "slug": "g80-hook-with-half-link-2-7-22-g80",
+      "name": "G80 Hook With Half Link",
+      "image": "/images/products/branded/grade-80/g80-hook-with-half-link-2-7-22-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-7-22-g80-hook-with-half-link_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-hook-with-half-link-2-7-22-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-1ec08ab0-eadc-4967-9223-139cf8d77d8d.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "G80 Hook With Half Link"
+    },
+    {
+      "slug": "g80-clevis-webbing-sling-hook-2-7-23-g80",
+      "name": "G80 Clevis Webbing Sling Hook",
+      "image": "/images/products/branded/grade-80/g80-clevis-webbing-sling-hook-2-7-23-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-7-23-g80-clevis-webbing-sling-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-clevis-webbing-sling-hook-2-7-23-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-c7a12591-f0da-426a-9f1e-cc9e0f935a94.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "G80 Clevis Webbing Sling Hook"
+    },
+    {
+      "slug": "g80-eye-webbing-sling-hook-2-7-24-g80",
+      "name": "G80 Eye Webbing Sling Hook",
+      "image": "/images/products/branded/grade-80/g80-eye-webbing-sling-hook-2-7-24-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-7-24-g80-eye-webbing-sling-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-eye-webbing-sling-hook-2-7-24-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-ce6312d3-04a9-4213-a8c2-fe945ca241f2.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "G80 Eye Webbing Sling Hook"
+    },
+    {
+      "slug": "forged-barrel-hook-2-7-25-g80",
+      "name": "Forged Barrel Hook",
+      "image": "/images/products/branded/grade-80/forged-barrel-hook-2-7-25-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-7-25-forged-barrel-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/forged-barrel-hook-2-7-25-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-84ccb2bf-00d6-45be-8e3e-55d85c26a585.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Forged Barrel Hook"
+    },
+    {
+      "slug": "alloy-forged-g-hook-2-7-26-g80",
+      "name": "Alloy Forged G Hook",
+      "image": "/images/products/branded/grade-80/alloy-forged-g-hook-2-7-26-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-7-26-alloy-forged-g-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/alloy-forged-g-hook-2-7-26-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-a52b897a-3e30-4880-bb36-fdd109a32b45.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Alloy Forged G Hook"
+    },
+    {
+      "slug": "alloy-forged-link-2-7-27-g80",
+      "name": "Alloy Forged Link",
+      "image": "/images/products/branded/grade-80/alloy-forged-link-2-7-27-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-7-27-alloy-forged-link_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/alloy-forged-link-2-7-27-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-2e2a5145-86c2-4119-a128-302f42df5f3e.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Alloy Forged Link"
+    },
+    {
+      "slug": "g80-alloy-connector-2-7-28-g80",
+      "name": "G80 Alloy Connector",
+      "image": "/images/products/branded/grade-80/g80-alloy-connector-2-7-28-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-7-28-g80-alloy-connector_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-alloy-connector-2-7-28-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-d0175cac-1ca1-49f9-a88f-f2550d68dd60.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "G80 Alloy Connector"
+    },
+    {
+      "slug": "g80-clevis-elephant-foot-2-7-29-g80",
+      "name": "G80 Clevis Elephant Foot",
+      "image": "/images/products/branded/grade-80/g80-clevis-elephant-foot-2-7-29-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-7-29-g80-clevis-elephant-foot_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-clevis-elephant-foot-2-7-29-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-84acd472-ca55-4bc4-b9dc-7b2c6202abca.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "G80 Clevis Elephant Foot"
+    },
+    {
+      "slug": "g80-sliding-eye-choke-hook-2-7-30-g80",
+      "name": "G80 Sliding Eye Choke Hook",
+      "image": "/images/products/branded/grade-80/g80-sliding-eye-choke-hook-2-7-30-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-7-30-g80-sliding-eye-choke-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-sliding-eye-choke-hook-2-7-30-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-6b519224-3215-46ca-b156-435b84995a92.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "G80 Sliding Eye Choke Hook"
+    },
+    {
+      "slug": "g80-eye-elephant-foot-2-7-31-g80",
+      "name": "G80 Eye Elephant Foot",
+      "image": "/images/products/branded/grade-80/g80-eye-elephant-foot-2-7-31-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-7-31-g80-eye-elephant-foot_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-eye-elephant-foot-2-7-31-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-8085260a-2e9f-467e-9b43-c4d7eb266b45.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "G80 Eye Elephant Foot"
+    },
+    {
+      "slug": "g80-eye-webbing-sling-hook-2-7-32-g80",
+      "name": "G80 Eye Webbing Sling Hook",
+      "image": "/images/products/branded/grade-80/g80-eye-webbing-sling-hook-2-7-32-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-7-32-g80-eye-webbing-sling-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-eye-webbing-sling-hook-2-7-32-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-742e8fef-c200-460f-8ca5-7f926b8e1967.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "G80 Eye Webbing Sling Hook"
+    },
+    {
+      "slug": "alloy-web-sling-ring-2-7-33-g80",
+      "name": "Alloy Web Sling Ring",
+      "image": "/images/products/branded/grade-80/alloy-web-sling-ring-2-7-33-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-7-33-alloy-web-sling-ring_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/alloy-web-sling-ring-2-7-33-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-c542265a-5185-45b0-9224-ecda983e0c84.png",
+      "promptKey": "webRingCorrection",
+      "subject": "Alloy Web Sling Ring",
+      "editTargetOriginalGeneration": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-ca1acd8f-c878-48d0-bc25-7e362cd755d4.png"
+    },
+    {
+      "slug": "alloy-triangle-ring-for-web-sling-2-7-34-g80",
+      "name": "Alloy Triangle Ring for Web Sling",
+      "image": "/images/products/branded/grade-80/alloy-triangle-ring-for-web-sling-2-7-34-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-7-34-alloy-triangle-ring-for-web-sling_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/alloy-triangle-ring-for-web-sling-2-7-34-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-f84e6ab4-9fa2-41c3-8840-b3bd0b08a5c1.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Alloy Triangle Ring for Web Sling"
+    },
+    {
+      "slug": "alloy-forged-g-hook-2-7-35-g80",
+      "name": "Alloy Forged G Hook",
+      "image": "/images/products/branded/grade-80/alloy-forged-g-hook-2-7-35-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-7-35-alloy-forged-g-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/alloy-forged-g-hook-2-7-35-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-6893cf77-e7bd-410d-a5ca-20d63a5228da.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Alloy Forged G Hook"
+    },
+    {
+      "slug": "g80-chain-connector-2-7-36-g80",
+      "name": "G80 Chain Connector",
+      "image": "/images/products/branded/grade-80/g80-chain-connector-2-7-36-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-7-36-g80-chain-connector_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-chain-connector-2-7-36-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-f2a84e60-d880-4e90-9541-f7ca0a27f2f8.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "G80 Chain Connector"
+    },
+    {
+      "slug": "g80-clevis-link-for-web-sling-2-7-37-g80",
+      "name": "G80 Clevis Link for Web Sling",
+      "image": "/images/products/branded/grade-80/g80-clevis-link-for-web-sling-2-7-37-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-7-37-g80-clevis-link-for-web-sling_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-clevis-link-for-web-sling-2-7-37-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-dc85692f-750b-4be2-92d3-1d1ec0f16490.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "G80 Clevis Link for Web Sling"
+    },
+    {
+      "slug": "alloy-forged-g-hook-2-7-38-g80",
+      "name": "Alloy Forged G Hook",
+      "image": "/images/products/branded/grade-80/alloy-forged-g-hook-2-7-38-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-7-38-alloy-forged-g-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/alloy-forged-g-hook-2-7-38-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-6556126d-f18d-483a-a3db-807801fced43.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Alloy Forged G Hook"
+    },
+    {
+      "slug": "g80-container-hook-2-7-39-g80",
+      "name": "G80 Container Hook",
+      "image": "/images/products/branded/grade-80/g80-container-hook-2-7-39-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-7-39-g80-container-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-container-hook-2-7-39-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-69094ba2-a09d-4de0-bbbc-5d2898bae537.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "G80 Container Hook"
+    },
+    {
+      "slug": "g80-clevis-master-link-2-7-40-g80",
+      "name": "G80 Clevis Master Link",
+      "image": "/images/products/branded/grade-80/g80-clevis-master-link-2-7-40-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-7-40-g80-clevis-master-link_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-clevis-master-link-2-7-40-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-2519d30b-aa0a-44b3-b616-6d4637646275.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "G80 Clevis Master Link"
+    },
+    {
+      "slug": "g80-container-hook-2-7-41-g80",
+      "name": "G80 Container Hook",
+      "image": "/images/products/branded/grade-80/g80-container-hook-2-7-41-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-7-41-g80-container-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-container-hook-2-7-41-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-76475339-a4c6-48bf-ae50-cc9f113d391c.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "G80 Container Hook"
+    },
+    {
+      "slug": "connector-2-7-42-g80",
+      "name": "Connector",
+      "image": "/images/products/branded/grade-80/connector-2-7-42-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-7-42-connector_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/connector-2-7-42-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-153c0c6f-80cb-4a16-95b5-8a6372a11996.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Connector"
+    },
+    {
+      "slug": "alloy-shank-hook-with-eye-screw-rov-2-7-43-g80",
+      "name": "Alloy Shank Hook with Eye Screw ROV",
+      "image": "/images/products/branded/grade-80/alloy-shank-hook-with-eye-screw-rov-2-7-43-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-7-43-alloy-shank-hook-with-eye-screw-rov_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/alloy-shank-hook-with-eye-screw-rov-2-7-43-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-cbae21ae-e2c4-4370-a768-7a70157baa49.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Alloy Shank Hook with Eye Screw ROV"
+    },
+    {
+      "slug": "type-a-master-link-2-7-44-g80",
+      "name": "Type A Master Link",
+      "image": "/images/products/branded/grade-80/type-a-master-link-2-7-44-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-7-44-type-a-master-link_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/type-a-master-link-2-7-44-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-7f759039-ed42-4c3e-9e9f-a5869a121304.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Type A Master Link"
+    },
+    {
+      "slug": "forged-hook-2-7-45-g80",
+      "name": "Forged Hook",
+      "image": "/images/products/branded/grade-80/forged-hook-2-7-45-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-7-45-forged-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/forged-hook-2-7-45-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-c97aceb4-77aa-4e78-9180-74bd83d27aac.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Forged Hook"
+    },
+    {
+      "slug": "g80-hook-for-web-sling-2-7-46-g80",
+      "name": "G80 Hook for Web Sling",
+      "image": "/images/products/branded/grade-80/g80-hook-for-web-sling-2-7-46-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-7-46-g80-hook-for-web-sling_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-hook-for-web-sling-2-7-46-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-e8c495da-0383-4367-9d9a-48d63014e850.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "G80 Hook for Web Sling"
+    },
+    {
+      "slug": "clevis-clutch-2-7-47-g80",
+      "name": "Clevis Clutch",
+      "image": "/images/products/branded/grade-80/clevis-clutch-2-7-47-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-7-47-clevis-clutch_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/clevis-clutch-2-7-47-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-ab775eeb-a327-4486-bf84-2047d819874a.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Clevis Clutch"
+    },
+    {
+      "slug": "g80-container-lifting-clevis-link-2-7-48-g80",
+      "name": "G80 Container Lifting Clevis Link",
+      "image": "/images/products/branded/grade-80/g80-container-lifting-clevis-link-2-7-48-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-7-48-g80-container-lifting-clevis-link_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-container-lifting-clevis-link-2-7-48-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-56c7fe5b-7e63-4350-b71f-45bd511cdb51.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "G80 Container Lifting Clevis Link"
+    },
+    {
+      "slug": "forged-lifting-clamp-2-7-49-g80",
+      "name": "Forged Lifting Clamp",
+      "image": "/images/products/branded/grade-80/forged-lifting-clamp-2-7-49-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-7-49-forged-lifting-clamp_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/forged-lifting-clamp-2-7-49-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-a7705392-ff3f-4067-8b35-0b3abd6d95a6.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Forged Lifting Clamp"
+    },
+    {
+      "slug": "hydraulic-support-hook-2-7-50-g80",
+      "name": "Hydraulic Support Hook",
+      "image": "/images/products/branded/grade-80/hydraulic-support-hook-2-7-50-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-7-50-hydraulic-support-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/hydraulic-support-hook-2-7-50-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-89d3b27b-36c2-4dd1-87e7-039747ead7bf.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Hydraulic Support Hook"
+    },
+    {
+      "slug": "cast-steel-choker-2-7-51-g80",
+      "name": "Cast Steel Choker",
+      "image": "/images/products/branded/grade-80/cast-steel-choker-2-7-51-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-7-51-cast-steel-choker_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/cast-steel-choker-2-7-51-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-5ad337aa-2c1d-40d8-9bff-7cb8457e7fc9.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Cast Steel Choker"
+    },
+    {
+      "slug": "g80-clevis-grab-hook-2-7-52-g80",
+      "name": "G80 Clevis Grab Hook",
+      "image": "/images/products/branded/grade-80/g80-clevis-grab-hook-2-7-52-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-7-52-g80-clevis-grab-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-clevis-grab-hook-2-7-52-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-8bbbf41b-040a-4203-b9a9-d99458c3bdfb.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "G80 Clevis Grab Hook"
+    },
+    {
+      "slug": "g80-forged-lifting-link-2-7-53-g80",
+      "name": "G80 Forged Lifting Link",
+      "image": "/images/products/branded/grade-80/g80-forged-lifting-link-2-7-53-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-7-53-g80-forged-lifting-link_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-forged-lifting-link-2-7-53-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-3d7014fc-bfec-4157-94ec-f2e2822e27d3.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "G80 Forged Lifting Link"
+    },
+    {
+      "slug": "alloy-grab-hook-for-webbing-2-7-54-g80",
+      "name": "Alloy Grab Hook for Webbing",
+      "image": "/images/products/branded/grade-80/alloy-grab-hook-for-webbing-2-7-54-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-7-54-alloy-grab-hook-for-webbing_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/alloy-grab-hook-for-webbing-2-7-54-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-2df5a01c-6473-4592-94d7-b76cab165064.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Alloy Grab Hook for Webbing"
+    },
+    {
+      "slug": "nose-type-anti-slip-hook-2-7-55-g80",
+      "name": "Nose Type Anti-Slip Hook",
+      "image": "/images/products/branded/grade-80/nose-type-anti-slip-hook-2-7-55-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-7-55-nose-type-anti-slip-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/nose-type-anti-slip-hook-2-7-55-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-40f413c7-c3ed-43d4-9157-b74636173d7b.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Nose Type Anti-Slip Hook"
+    },
+    {
+      "slug": "eye-elephant-foot-2-7-56-g80",
+      "name": "Eye Elephant Foot",
+      "image": "/images/products/branded/grade-80/eye-elephant-foot-2-7-56-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-7-56-eye-elephant-foot_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/eye-elephant-foot-2-7-56-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-159e261c-8b77-4f34-a172-b428ab29d9de.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Eye Elephant Foot"
+    },
+    {
+      "slug": "sorting-hook-2-7-57-g80",
+      "name": "Sorting Hook",
+      "image": "/images/products/branded/grade-80/sorting-hook-2-7-57-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-7-57-sorting-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/sorting-hook-2-7-57-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-9f03f86e-ec31-4c3c-bce7-171b2e729517.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Sorting Hook"
+    },
+    {
+      "slug": "clevis-connector-2-7-58-g80",
+      "name": "Clevis Connector",
+      "image": "/images/products/branded/grade-80/clevis-connector-2-7-58-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-7-58-clevis-connector_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/clevis-connector-2-7-58-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-085af582-5709-4e2d-8dd6-99f771c4b037.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Clevis Connector"
+    },
+    {
+      "slug": "alloy-steel-swivel-self-locking-hook-2-7-g80",
+      "name": "Alloy Steel Swivel Self Locking Hook",
+      "image": "/images/products/branded/grade-80/alloy-steel-swivel-self-locking-hook-2-7-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-7-alloy-steel-swivel-self-locking-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/alloy-steel-swivel-self-locking-hook-2-7-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-38f1be7d-e7ae-4dd7-9b9c-d10e3be60244.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Alloy Steel Swivel Self Locking Hook"
+    },
+    {
+      "slug": "alloy-steel-self-locking-sling-hook-2-11-g80",
+      "name": "Alloy Steel Self Locking Sling Hook",
+      "image": "/images/products/branded/grade-80/alloy-steel-self-locking-sling-hook-2-11-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-11-alloy-steel-self-locking-sling-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/alloy-steel-self-locking-sling-hook-2-11-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-43d9b83f-c356-4173-9368-245dde4135d7.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Alloy Steel Self Locking Sling Hook"
+    },
+    {
+      "slug": "short-clevis-self-locking-hook-2-45-g80",
+      "name": "Short Clevis Self Locking Lifting Sling Hook",
+      "image": "/images/products/branded/grade-80/short-clevis-self-locking-hook-2-45-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-45-short-clevis-self-locking-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/short-clevis-self-locking-hook-2-45-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-b747e31c-6968-4e4f-8ac8-f92eaa215f59.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Short Clevis Self Locking Lifting Sling Hook"
+    },
+    {
+      "slug": "long-clevis-self-locking-hook-2-48-g80",
+      "name": "Long Clevis Self Locking Lifting Sling Hook",
+      "image": "/images/products/branded/grade-80/long-clevis-self-locking-hook-2-48-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-48-long-clevis-self-locking-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/long-clevis-self-locking-hook-2-48-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-6d77bb1f-0864-4301-bd96-f5573eac82a4.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Long Clevis Self Locking Lifting Sling Hook"
+    },
+    {
+      "slug": "self-locking-eye-hook-2-49-g80",
+      "name": "Alloy Steel Self Locking Eye Hook",
+      "image": "/images/products/branded/grade-80/self-locking-eye-hook-2-49-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-49-self-locking-eye-hook_08.jpg",
+      "referencePath": "/images/products/reference/grade-80/self-locking-eye-hook-2-49-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-966c8c6c-1ff7-4e32-bca8-ecb7750f1438.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Alloy Steel Self Locking Eye Hook"
+    },
+    {
+      "slug": "g80-clevis-swivel-self-locking-hook-with-bearing-2-8-6-g80",
+      "name": "G80 Clevis Swivel Self Locking Hook with Bearing",
+      "image": "/images/products/branded/grade-80/g80-clevis-swivel-self-locking-hook-with-bearing-2-8-6-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-8-6-g80-clevis-swivel-self-locking-hook-with-bearing_02.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-clevis-swivel-self-locking-hook-with-bearing-2-8-6-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-dc7ce4c2-dfe6-469c-9f44-c57fa4e137cc.png",
+      "promptKey": "clevisSwivelFinal",
+      "subject": "G80 Clevis Swivel Self Locking Hook with Bearing",
+      "editTarget": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-c35bab04-7892-40da-a027-f0cbefa6151d.png"
+    },
+    {
+      "slug": "g80-swivel-self-locking-hook-with-bearing-2-8-7-g80",
+      "name": "G80 Swivel Self Locking Hook with Bearing",
+      "image": "/images/products/branded/grade-80/g80-swivel-self-locking-hook-with-bearing-2-8-7-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-8-7-g80-swivel-self-locking-hook-with-bearing_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-swivel-self-locking-hook-with-bearing-2-8-7-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-c6536dfd-3779-4f62-b934-ed1c700f7468.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "G80 Swivel Self Locking Hook with Bearing"
+    },
+    {
+      "slug": "g80-eye-self-locking-hook-with-grip-2-8-8-g80",
+      "name": "G80 Eye Self-Locking Hook with Grip",
+      "image": "/images/products/branded/grade-80/g80-eye-self-locking-hook-with-grip-2-8-8-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-8-8-g80-eye-self-locking-hook-with-grip_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-eye-self-locking-hook-with-grip-2-8-8-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-4112a8dc-c441-4048-8587-e03b586762e1.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "G80 Eye Self-Locking Hook with Grip"
+    },
+    {
+      "slug": "g80-clevis-self-locking-hook-with-grip-2-8-9-g80",
+      "name": "G80 Clevis Self-Locking Hook with Grip",
+      "image": "/images/products/branded/grade-80/g80-clevis-self-locking-hook-with-grip-2-8-9-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-8-9-g80-clevis-self-locking-hook-with-grip_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-clevis-self-locking-hook-with-grip-2-8-9-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-ccde7559-9b84-4e4d-81ce-6f6111dd8134.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "G80 Clevis Self-Locking Hook with Grip"
+    },
+    {
+      "slug": "g80-long-clevis-selflock-for-web-sling-2-8-10-g80",
+      "name": "G80 Long Clevis Selflock for Web Sling",
+      "image": "/images/products/branded/grade-80/g80-long-clevis-selflock-for-web-sling-2-8-10-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-8-10-g80-long-clevis-selflock-for-web-sling_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-long-clevis-selflock-for-web-sling-2-8-10-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-f968ba34-ad21-4441-94a3-6049ad862d9a.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "G80 Long Clevis Selflock for Web Sling"
+    },
+    {
+      "slug": "g80-italian-type-clevis-self-locking-hook-2-8-11-g80",
+      "name": "G80 Italian Type Clevis Self-Locking Hook",
+      "image": "/images/products/branded/grade-80/g80-italian-type-clevis-self-locking-hook-2-8-11-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-8-11-g80-italian-type-clevis-self-locking-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-italian-type-clevis-self-locking-hook-2-8-11-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-625df9b1-7d22-460a-8412-82931d0f704a.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "G80 Italian Type Clevis Self-Locking Hook"
+    },
+    {
+      "slug": "g80-italian-type-eye-self-locking-hook-2-8-12-g80",
+      "name": "G80 Italian Type Eye Self-Locking Hook",
+      "image": "/images/products/branded/grade-80/g80-italian-type-eye-self-locking-hook-2-8-12-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-8-12-g80-italian-type-eye-self-locking-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-italian-type-eye-self-locking-hook-2-8-12-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-3e7033d7-3fb7-4909-ad3b-f8fdbc09b3f0.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "G80 Italian Type Eye Self-Locking Hook"
+    },
+    {
+      "slug": "g80-special-swivel-self-locking-hook-2-8-13-g80",
+      "name": "G80 Special Swivel Self-Locking Hook",
+      "image": "/images/products/branded/grade-80/g80-special-swivel-self-locking-hook-2-8-13-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-8-13-g80-special-swivel-self-locking-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-special-swivel-self-locking-hook-2-8-13-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-f7f6b29b-e3c8-43c7-aad5-a6ba8854326a.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "G80 Special Swivel Self-Locking Hook"
+    },
+    {
+      "slug": "g80-clevis-self-locking-hook-with-side-trigger-2-8-14-g80",
+      "name": "G80 Clevis Self Locking Hook with Side Trigger",
+      "image": "/images/products/branded/grade-80/g80-clevis-self-locking-hook-with-side-trigger-2-8-14-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-8-14-g80-clevis-self-locking-hook-with-side-trigger_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-clevis-self-locking-hook-with-side-trigger-2-8-14-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-05aaf04e-6b8c-4509-bcbb-9e262896a79c.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "G80 Clevis Self Locking Hook with Side Trigger"
+    },
+    {
+      "slug": "ball-bearing-swivel-latch-hook-5-5-g80",
+      "name": "Ball Bearing Swivel Latch Hook",
+      "image": "/images/products/branded/grade-80/ball-bearing-swivel-latch-hook-5-5-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/5-5-ball-bearing-swivel-latch-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/ball-bearing-swivel-latch-hook-5-5-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-7f602455-edc6-4b9a-9132-42cea859435a.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Ball Bearing Swivel Latch Hook"
+    },
+    {
+      "slug": "alloy-swivel-hook-with-latch-2-9-2-g80",
+      "name": "Alloy Swivel Hook with Latch",
+      "image": "/images/products/branded/grade-80/alloy-swivel-hook-with-latch-2-9-2-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-9-2-alloy-swivel-hook-with-latch_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/alloy-swivel-hook-with-latch-2-9-2-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-8faeb085-296b-400e-9895-622cd18860b0.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Alloy Swivel Hook with Latch"
+    },
+    {
+      "slug": "g80-swivel-hook-with-latch-2-9-3-g80",
+      "name": "G80 Swivel Hook with Latch",
+      "image": "/images/products/branded/grade-80/g80-swivel-hook-with-latch-2-9-3-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-9-3-g80-swivel-hook-with-latch_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/g80-swivel-hook-with-latch-2-9-3-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-1627b56b-230b-45de-ba07-0e05532085e8.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "G80 Swivel Hook with Latch"
+    },
+    {
+      "slug": "swivel-belt-sling-hook-2-9-4-g80",
+      "name": "Swivel Belt Sling Hook",
+      "image": "/images/products/branded/grade-80/swivel-belt-sling-hook-2-9-4-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-9-4-swivel-belt-sling-hook_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/swivel-belt-sling-hook-2-9-4-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-5bfcf1f0-c222-4ac1-8ca3-c3f9b91b625e.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Swivel Belt Sling Hook"
+    },
+    {
+      "slug": "swivel-hook-with-bearing-2-9-5-g80",
+      "name": "Swivel Hook With Bearing",
+      "image": "/images/products/branded/grade-80/swivel-hook-with-bearing-2-9-5-g80.webp",
+      "referenceImage": "https://www.shenli-rigging.com/products/2-9-5-swivel-hook-with-bearing_01.jpg",
+      "referencePath": "/images/products/reference/grade-80/swivel-hook-with-bearing-2-9-5-g80.jpg",
+      "generatedFile": "/Users/macbook/.codex/generated_images/01a16313-e9ae-7ae3-94c8-8f23829fb2fb/exec-81e22aad-d82a-4d26-91e4-a0f08d8cf61b.png",
+      "promptKey": "orangePhotoOrDrawing",
+      "subject": "Swivel Hook With Bearing"
+    }
+  ]
+}

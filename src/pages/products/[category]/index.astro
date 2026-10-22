@@ -9,7 +9,7 @@ import { allCategoriesWithCounts, productsByCategory } from '../../../data/produ
 import { breadcrumbLd } from '../../../lib/seo';
 
 export function getStaticPaths() {
-  return allCategoriesWithCounts().map((c) => ({ params: { category: c.slug }, props: { category: c } }));
+  return allCategoriesWithCounts().filter((c) => c.slug !== 'grade-80-rigging').map((c) => ({ params: { category: c.slug }, props: { category: c } }));
 }
 const { category } = Astro.props;
 const items = productsByCategory(category.slug);

@@ -2,17 +2,44 @@
 import { products, productUrl } from '../data/products';
 import { site } from '../data/site';
 import Icon from './Icon.astro';
-interface Props { current?: string }
-const { current } = Astro.props;
+interface Props { current?: string; grade?: string }
+const { current, grade: requestedGrade } = Astro.props;
+const currentProduct = products.find((p) => p.slug === current);
+const grade = requestedGrade ?? currentProduct?.grade ?? 'Grade 100';
+const ranges = [
+  { grade: 'Grade 100', name: 'Grade 100 Rigging', href: '/products' },
+  { grade: 'Grade 80', name: 'Grade 80 Rigging', href: '/products/grade-80-rigging' },
+];
+const rangeProducts = products.filter((p) => p.grade === grade);
+const groups = [...new Set(rangeProducts.map((p) => p.group))];
 ---
-      <aside class="product-rail" aria-label="Grade 100 products">
+      <aside class="product-rail" aria-label="Product ranges">
         <p class="rail-label">All products</p>
-        <a class="rail-title" href="/products">Grade 100 Rigging <span>{products.length}</span></a>
-        <ul class="product-names">
-          {products.map((product) => (
-            <li><a href={productUrl(product)} aria-current={current === product.slug ? 'page' : undefined}>{product.name}</a></li>
-          ))}
-        </ul>
+        {ranges.map((range) => (
+          <Fragment>
+            <a class:list={['rail-title', { selected: range.grade === grade }]} href={range.href}>
+              {range.name} <span>{products.filter((p) => p.grade === range.grade).length}</span>
+            </a>
+            {range.grade === grade && (
+              <ul class="product-names">
+                {grade === 'Grade 80' ? groups.map((group) => (
+                  <li>
+                    <a class="group-link" href={`/products/grade-80-rigging#${group.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}>{group}</a>
+                    {currentProduct?.group === group && (
+                      <ul>
+                        {rangeProducts.filter((p) => p.group === group).map((product) => (
+                          <li><a href={productUrl(product)} aria-current={current === product.slug ? 'page' : undefined}>{product.name}</a></li>
+                        ))}
+                      </ul>
+                    )}
+                  </li>
+                )) : rangeProducts.map((product) => (
+                  <li><a href={productUrl(product)} aria-current={current === product.slug ? 'page' : undefined}>{product.name}</a></li>
+                ))}
+              </ul>
+            )}
+          </Fragment>
+        ))}
         <section class="rail-contact" aria-labelledby="rail-contact-title">
           <h2 id="rail-contact-title"><a href="/contact">Contact us</a></h2>
           <p class="contact-company">{site.legalName}</p>
@@ -29,7 +56,10 @@ const { current } = Astro.props;
 <style>
   .product-rail { position: sticky; top: calc(36px + var(--header-h) + 20px); max-height: calc(100dvh - 36px - var(--header-h) - 40px); overflow-y: auto; padding-right: 8px; }
   .rail-label { font-size: 13px; color: var(--steel); margin-bottom: 12px; }
-  .rail-title { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 0 12px 12px; border-top: 1px solid var(--zinc); border-left: 3px solid var(--orange); font-family: var(--font-display); font-size: 19px; font-weight: 600; color: var(--navy); }
+  .rail-title { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 0 12px 12px; border-top: 1px solid var(--zinc); border-left: 3px solid transparent; font-family: var(--font-display); font-size: 19px; font-weight: 600; color: var(--navy); }
+  .rail-title.selected { border-left-color: var(--orange); }
+  .group-link { font-weight: 600; }
+  .product-names ul { padding-left: 12px; }
   .rail-title span { font-family: var(--font-body); font-size: 12px; color: var(--steel); }
   .product-names { display: grid; gap: 2px; padding: 8px 0 16px 15px; border-bottom: 1px solid var(--zinc); }
   .product-names a { display: block; padding: 6px 0; color: var(--steel); font-size: 12px; line-height: 1.4; }
