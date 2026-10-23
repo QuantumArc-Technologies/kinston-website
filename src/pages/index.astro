@@ -3,14 +3,11 @@ import Base from '../layouts/Base.astro';
 import SectionHeading from '../components/SectionHeading.astro';
 import CtaBand from '../components/CtaBand.astro';
 import Icon from '../components/Icon.astro';
-import { site, sectors, certifications, stats } from '../data/site';
+import { site, sectors, stats } from '../data/site';
 import { allCategoriesWithCounts } from '../data/products';
-import { latestArticles } from '../data/news';
 
 const cats = allCategoriesWithCounts();
-const news = latestArticles(3);
 const sectorIcons = ['construction', 'offshore', 'marine', 'factory', 'power', 'mining', 'truck', 'wind'];
-const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
 ---
 <Base
   title="Kinston Lifting | Certified lifting chain, hooks, shackles and hoists"
@@ -145,43 +142,6 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
         </ul>
       </div>
       <div class="industry-foot"><span><Icon name="globe" /> Across industries. Around the world.</span><a href="/contact">Find the right equipment for your operation <Icon name="arrow" /></a></div>
-    </div>
-  </section>
-
-  <section class="section bg-paper">
-    <div class="wrap quality">
-      <div>
-        <SectionHeading title="Certified, audited, documented" lead="Our quality system is certified by DNV and our offshore ranges hold DNV type approval. Certificates are on the downloads page." />
-        <a class="btn btn-navy" href="/quality">Quality and certification</a>
-      </div>
-      <ul class="certs" data-reveal>
-        {certifications.map((c) => (
-          <li>
-            <strong>{c.code}</strong>
-            <span>{c.title}</span>
-          </li>
-        ))}
-      </ul>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="wrap">
-      <div class="feat-head">
-        <SectionHeading title="News and technical notes" />
-        <a class="textlink" href="/news">All news</a>
-      </div>
-      <ul class="news" data-reveal>
-        {news.map((a) => (
-          <li>
-            <a href={`/news/${a.slug}`}>
-              <p class="news-meta"><span class="tag tag-navy">{a.category}</span> <time datetime={a.date}>{fmtDate(a.date)}</time></p>
-              <h3>{a.title}</h3>
-              <p class="muted">{a.excerpt}</p>
-            </a>
-          </li>
-        ))}
-      </ul>
     </div>
   </section>
 
@@ -404,21 +364,8 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
   .why-list h3 { margin-bottom: 8px; font-size: 1.375rem; }
   .why-list p { color: var(--steel); max-width: 56ch; }
 
-  .feat-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; }
-  .feat-head .textlink { margin-bottom: clamp(32px, 4vw, 48px); white-space: nowrap; }
 
-  .quality { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
-  .certs { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-  .certs li { display: grid; gap: 4px; padding: 18px 20px; background: var(--white); border: 1px solid var(--zinc); border-radius: var(--radius); }
-  .certs strong { font-family: var(--font-display); font-weight: 700; font-size: 1.35rem; color: var(--navy); }
-  .certs span { font-size: var(--t-sm); color: var(--steel); }
 
-  .news { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
-  .news a { display: grid; gap: 12px; align-content: start; height: 100%; padding-top: 18px; border-top: 3px solid var(--ink); }
-  .news a:hover { border-top-color: var(--orange); }
-  .news h3 { font-size: 1.375rem; }
-  .news a:hover h3 { color: var(--orange); }
-  .news-meta { display: flex; align-items: center; gap: 12px; font-size: var(--t-xs); color: var(--steel); }
 
   @media (prefers-reduced-motion: reduce) {
     .hero::before, .hero-glow, .hero-fig img, .sheen, .hot, .hero-copy > *, .bench, .bench-dot { animation: none !important; }
@@ -430,10 +377,9 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
     .hero-inner { grid-template-columns: 1fr; min-height: 0; }
     .hero-art-wrap { justify-self: center; max-width: 440px; }
     .bench { position: static; width: 100%; margin-top: 12px; }
-    .why, .quality { grid-template-columns: 1fr; gap: 40px; }
-    .news { grid-template-columns: 1fr; }
+    .why { grid-template-columns: 1fr; gap: 40px; }
   }
-  @media (max-width: 600px) { .ranges, .certs, .stats { grid-template-columns: 1fr; } }
+  @media (max-width: 600px) { .ranges, .stats { grid-template-columns: 1fr; } }
 
   /* Homepage art direction: oversized typography, technical product stage, warm editorial sections. */
   .hero { background-color: #0a1427; background-size: 80px 80px; }
@@ -518,7 +464,6 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
   .why-list { counter-reset: reasons; }
   .why-list li { counter-increment: reasons; position: relative; padding-left: 54px; }
   .why-list li::before { content: '0' counter(reasons); position: absolute; left: 0; top: 27px; color: var(--orange); font: 600 1.15rem var(--font-display); }
-  .news a { padding: 25px; background: #f6f7f9; border-top-width: 2px; }
   .lift-help { background: #0a1427; color: white; border-top: 4px solid var(--orange); }
   .help-inner { display: grid; grid-template-columns: 1.5fr 1fr; gap: 60px; align-items: center; }
   .help-inner h2 { color: white; font-size: clamp(2.25rem, 4vw, 3.5rem); margin: 23px 0; letter-spacing: -.025em; }
@@ -552,8 +497,6 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
     .intro-promises { margin-top: 32px; }
     .help-actions { justify-self: start; }
     .help-actions .btn { white-space: normal; padding: 12px 20px; }
-    .feat-head { align-items: start; gap: 15px; }
-    .feat-head .textlink { font-size: .95rem; }
   }
 
   /* Product collection tiles */
