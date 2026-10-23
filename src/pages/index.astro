@@ -1,15 +1,13 @@
 ---
 import Base from '../layouts/Base.astro';
-import ProductCard from '../components/ProductCard.astro';
 import SectionHeading from '../components/SectionHeading.astro';
 import CtaBand from '../components/CtaBand.astro';
 import Icon from '../components/Icon.astro';
 import { site, sectors, certifications, stats } from '../data/site';
-import { allCategoriesWithCounts, featuredProducts } from '../data/products';
+import { allCategoriesWithCounts } from '../data/products';
 import { latestArticles } from '../data/news';
 
 const cats = allCategoriesWithCounts();
-const featured = featuredProducts().slice(0, 4);
 const news = latestArticles(3);
 const sectorIcons = ['construction', 'offshore', 'marine', 'factory', 'power', 'mining', 'truck', 'wind'];
 const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
@@ -62,18 +60,6 @@ const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-GB', { day: 'n
       <div><Icon name="globe" /><span><strong>Local support. Global reach.</strong><small>Sharjah · Mumbai · Rotterdam</small></span></div>
 */}
       <div><Icon name="wrench" /><span><strong>Expertise for your next lift</strong><small>Product selection and sling design</small></span></div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="wrap">
-      <div class="feat-head">
-        <SectionHeading title="Proven products. Ready to work." />
-        <a class="textlink" href="/products">All products</a>
-      </div>
-      <div class="grid cols-4" data-reveal>
-        {featured.map((p) => <ProductCard product={p} />)}
-      </div>
     </div>
   </section>
 
