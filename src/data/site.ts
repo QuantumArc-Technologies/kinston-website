@@ -19,9 +19,10 @@ export const site = {
 export const nav = [
   { label: 'Products', href: '/products', mega: true },
   { label: 'Industries', href: '/industries' },
-  { label: 'Quality', href: '/quality' },
-  { label: 'Downloads', href: '/downloads' },
-  { label: 'News', href: '/news' },
+  // Temporarily disabled; page sources are preserved in src/disabled-pages.
+  // { label: 'Quality', href: '/quality' },
+  // { label: 'Downloads', href: '/downloads' },
+  // { label: 'News', href: '/news' },
   { label: 'About', href: '/about' },
   { label: 'Contact', href: '/contact' },
 ];
