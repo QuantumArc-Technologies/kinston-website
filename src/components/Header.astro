@@ -8,16 +8,18 @@ const path = Astro.url.pathname;
 const isActive = (href: string) => (href === '/' ? path === '/' : path.startsWith(href));
 ---
 <header class:list={['site-header', { dark }]}>
+  {/* Top banner temporarily disabled.
   <div class="topbar">
     <div class="wrap topbar-inner">
       <p class="tag-line">Certified lifting components, proof tested before despatch</p>
       <ul class="topbar-links">
-        {/* <li><a href={site.phoneHref}><Icon name="phone" /> {site.phone}</a></li> */}
-        {/* <li><a href={`mailto:${site.email}`}><Icon name="mail" /> {site.email}</a></li> */}
+        <li><a href={site.phoneHref}><Icon name="phone" /> {site.phone}</a></li>
+        <li><a href={`mailto:${site.email}`}><Icon name="mail" /> {site.email}</a></li>
         <li><a href="/downloads"><Icon name="download" /> Catalogue</a></li>
       </ul>
     </div>
   </div>
+  */}
 
   <div class="mainbar">
     <div class="wrap mainbar-inner">
