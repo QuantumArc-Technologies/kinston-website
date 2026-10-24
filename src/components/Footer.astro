@@ -1,7 +1,6 @@
 ---
 import { site } from '../data/site';
 import { allCategoriesWithCounts } from '../data/products';
-import Icon from './Icon.astro';
 const year = new Date().getFullYear();
 const categories = allCategoriesWithCounts();
 ---
@@ -12,12 +11,6 @@ const categories = allCategoriesWithCounts();
         <a href="/" class="logo-plate" aria-label={`${site.name} home`}>
           <img src="/brand/kinston-logo.png" alt="Kinston — Lifting · Trust · Performance" width="1380" height="334" loading="lazy" />
         </a>
-        <p class="brand-text">Certified lifting chain, hooks, shackles, master links, wire rope fittings and hoists. Every item proof tested and traceable to its heat number.</p>
-        <ul class="social">
-          <li><a href={site.social.linkedin} aria-label="Kinston on LinkedIn" rel="noopener" target="_blank"><Icon name="linkedin" /></a></li>
-          <li><a href={site.social.youtube} aria-label="Kinston on YouTube" rel="noopener" target="_blank"><Icon name="youtube" /></a></li>
-          <li><a href={site.social.facebook} aria-label="Kinston on Facebook" rel="noopener" target="_blank"><Icon name="facebook" /></a></li>
-        </ul>
       </div>
 
       <div class="col">
@@ -71,11 +64,6 @@ const categories = allCategoriesWithCounts();
   .footer-top { display: grid; grid-template-columns: 1.4fr 1fr 0.8fr; gap: 48px; padding-bottom: 48px; border-bottom: 1px solid rgba(255,255,255,.12); }
   .logo-plate { display: inline-block; background: var(--white); padding: 12px 16px; border-radius: var(--radius); }
   .logo-plate img { height: 36px; width: auto; }
-  .brand-text { margin-top: 20px; max-width: 40ch; line-height: 1.6; }
-  .social { display: flex; gap: 10px; margin-top: 22px; }
-  .social a { display: inline-flex; width: 38px; height: 38px; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,.2); border-radius: var(--radius); color: var(--white); transition: border-color .15s, background .15s; }
-  .social a:hover { border-color: var(--orange); background: var(--orange); }
-  .social :global(svg) { width: 18px; height: 18px; }
   .col h4 { color: var(--white); margin-bottom: 16px; font-size: var(--t-md); }
   .col li + li { margin-top: 9px; }
   .col a { color: #b7c0d2; transition: color .15s; }
