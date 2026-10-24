@@ -22,7 +22,7 @@ const ranges = [
           </div>
           <p class="range-description">{range.description}</p>
           <div class="grid product-grid">
-            {range.products.map((product) => <ProductCard product={product} compact showColourSwitch={false} showFooter={false} />)}
+            {range.products.map((product) => <ProductCard product={product} compact showFooter={false} />)}
           </div>
         </section>
       ))}

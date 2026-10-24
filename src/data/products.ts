@@ -46,7 +46,6 @@ export interface Product {
   technicalNote?: string;
   usageNotice?: string;
   imageCaption?: string;
-  imageVariants?: { name: string; label: string; colour: string; image: string }[];
 }
 
 // ---------- generators ----------

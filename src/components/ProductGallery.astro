@@ -4,63 +4,18 @@ import type { Product } from '../data/products';
 interface Props { product: Product }
 const { product } = Astro.props;
 const image = product.image ?? `/images/products/branded/${product.slug}.webp`;
-const variants = product.imageVariants ?? [];
-const initial = variants[0];
 ---
 <div class="gallery" data-product-gallery>
   <figure class="main-art">
-    <img data-gallery-image src={image} alt={`${product.name}${initial ? ` — ${initial.name}` : ''}`} width="1024" height="1024" fetchpriority="high" />
+    <img data-gallery-image src={image} alt={product.name} width="1024" height="1024" fetchpriority="high" />
     <figcaption>{product.imageCaption ?? 'Representative product image · Refer to the datasheet for dimensions'}</figcaption>
   </figure>
-  {variants.length > 1 && (
-    <>
-      <p class="selected-colour" data-gallery-colour aria-live="polite">Finish shown: {initial.label}</p>
-      <ul class="finishes" aria-label="Product colour options">
-        {variants.map((variant, index) => (
-          <li>
-            <button
-              type="button"
-              aria-label={`Show ${variant.name.toLowerCase()} finish`}
-              aria-pressed={index === 0 ? 'true' : 'false'}
-              data-gallery-option
-              data-image={variant.image}
-              data-alt={`${product.name} — ${variant.name}`}
-              data-label={variant.label}
-            >
-              <span><i style={{ background: variant.colour }} aria-hidden="true"></i>{variant.name}</span>
-            </button>
-          </li>
-        ))}
-      </ul>
-    </>
-  )}
 </div>
 
-<script>
-  document.querySelectorAll<HTMLElement>('[data-product-gallery]').forEach((gallery) => {
-    const image = gallery.querySelector<HTMLImageElement>('[data-gallery-image]');
-    const label = gallery.querySelector<HTMLElement>('[data-gallery-colour]');
-    const buttons = gallery.querySelectorAll<HTMLButtonElement>('[data-gallery-option]');
-    buttons.forEach((button) => button.addEventListener('click', () => {
-      if (!image || !button.dataset.image) return;
-      image.src = button.dataset.image;
-      image.alt = button.dataset.alt ?? '';
-      if (label) label.textContent = `Finish shown: ${button.dataset.label}`;
-      buttons.forEach((option) => option.setAttribute('aria-pressed', String(option === button)));
-    }));
-  });
-</script>
 
 <style>
   .gallery { display: grid; gap: 8px; }
   .main-art { margin: 0; overflow: hidden; background: #eef0f2; border: 1px solid var(--zinc); border-radius: 6px; aspect-ratio: 1; position: relative; }
   .main-art > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
   figcaption { position: absolute; left: 16px; bottom: 12px; font-size: 8px; color: var(--steel); background: #ffffffe6; padding: 5px 8px; border-radius: 4px; max-width: calc(100% - 32px); }
-  .selected-colour { font-size: 11px; color: var(--steel); }
-  .finishes { display: flex; gap: 10px; }
-  button { display: inline-flex; align-items: center; min-height: 32px; padding: 6px 12px; border: 1px solid var(--zinc); border-radius: 4px; background: var(--white); color: var(--steel); }
-  button[aria-pressed="true"] { border-color: var(--navy); color: var(--navy); box-shadow: 0 0 0 1px var(--navy); }
-  button:focus-visible { outline: 2px solid var(--navy); outline-offset: 3px; }
-  button span { display: flex; align-items: center; justify-content: center; gap: 6px; font-size: 12px; font-weight: 500; }
-  button i { width: 10px; height: 10px; border-radius: 50%; border: 1px solid #0002; }
 </style>

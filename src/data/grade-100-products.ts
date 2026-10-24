@@ -1,5 +1,5 @@
 import type { Product } from './products';
-import { grade100Colours, productFinishes } from './product-finishes';
+import { productFinishes } from './product-finishes';
 
 // Active families from the supplier Grade 100 index. Source mapping: docs/grade-100-catalogue.json.
 // Older product ranges remain commented out in products.ts and additional-products.ts.
@@ -942,12 +942,7 @@ const entries: Product[] = [
   }
 ];
 
-export const grade100Products: Product[] = entries.map((product) => {
-  const imageVariants = grade100Colours.map((colour) => ({
-    name: colour.name,
-    label: colour.label,
-    colour: colour.value,
-    image: `/images/products/branded/grade-100/${colour.folder}/${product.slug}.webp`,
-  }));
-  return { ...product, image: imageVariants[0].image, imageVariants };
-});
+export const grade100Products: Product[] = entries.map((product) => ({
+  ...product,
+  image: `/images/products/branded/grade-100/turquoise/${product.slug}.webp`,
+}));
