@@ -1,6 +1,7 @@
 ---
 import Icon from './Icon.astro';
 import { categories } from '../data/categories';
+import { callingCodes } from '../data/callingCodes';
 interface Props { product?: string; compact?: boolean; heading?: string }
 const { product, compact = false, heading = 'Send an enquiry' } = Astro.props;
 ---
@@ -25,7 +26,28 @@ const { product, compact = false, heading = 'Send an enquiry' } = Astro.props;
   </div>
   <div class="row">
     <label>Email *<input type="email" name="email" placeholder={product ? 'you@company.com' : undefined} required autocomplete="email" /></label>
-    <label>Phone<input type="tel" name="phone" placeholder={product ? '+971 …' : undefined} autocomplete="tel" /></label>
+    <div class="phone-field">
+      <span class="phone-label">Phone</span>
+      <div class="phone-inputs">
+        <div class="country-picker" data-country-picker>
+          <input type="hidden" name="country_code" value="" />
+          <button type="button" class="country-toggle" aria-label="Country calling code" aria-expanded="false" data-country-toggle><span data-country-label></span><svg class="country-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg></button>
+          <div class="country-menu" data-country-menu hidden>
+            <div class="country-search-wrap">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" /><path d="m16 16 4 4" /></svg>
+              <input type="search" aria-label="Search countries or calling codes" placeholder="Search country or code" data-country-search />
+            </div>
+            <p class="country-menu-heading">Country <span>Dial code</span></p>
+            <div class="country-options">
+              <button type="button" data-country-option data-code="" data-name="" class="country-clear">Clear selection</button>
+              {callingCodes.map((country) => <button type="button" data-country-option data-code={country.code} data-name={country.name} aria-pressed="false"><span class="country-iso" aria-hidden="true">{country.country}</span><span class="country-name">{country.name}</span><span class="country-dial">{country.code}</span><span class="country-check" aria-hidden="true">✓</span></button>)}
+              <p data-country-empty hidden>No countries found</p>
+            </div>
+          </div>
+        </div>
+        <input type="tel" name="phone" aria-label="Phone number" autocomplete="tel-national" />
+      </div>
+    </div>
   </div>
   {!product && (
     <label>Product range
@@ -49,6 +71,51 @@ const { product, compact = false, heading = 'Send an enquiry' } = Astro.props;
 <script>
   document.querySelectorAll<HTMLFormElement>('[data-enquiry]').forEach((form) => {
     const status = form.querySelector<HTMLElement>('[data-status]')!;
+    form.querySelectorAll<HTMLElement>('[data-country-picker]').forEach((picker) => {
+      const toggle = picker.querySelector<HTMLButtonElement>('[data-country-toggle]')!;
+      const menu = picker.querySelector<HTMLElement>('[data-country-menu]')!;
+      const search = picker.querySelector<HTMLInputElement>('[data-country-search]')!;
+      const value = picker.querySelector<HTMLInputElement>('[name="country_code"]')!;
+      const label = picker.querySelector<HTMLElement>('[data-country-label]')!;
+      const options = Array.from(picker.querySelectorAll<HTMLButtonElement>('[data-country-option]'));
+      const close = () => { menu.hidden = true; toggle.setAttribute('aria-expanded', 'false'); };
+      const filter = () => {
+        const query = search.value.trim().toLowerCase();
+        options.forEach((option) => { option.hidden = !`${option.dataset.name} ${option.dataset.code}`.toLowerCase().includes(query); });
+        picker.querySelector<HTMLElement>('[data-country-empty]')!.hidden = options.some((option) => !option.hidden);
+      };
+      toggle.addEventListener('click', () => {
+        if (!menu.hidden) { close(); return; }
+        menu.hidden = false;
+        toggle.setAttribute('aria-expanded', 'true');
+        search.value = '';
+        filter();
+        search.focus();
+      });
+      search.addEventListener('input', filter);
+      picker.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') { close(); toggle.focus(); }
+        if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
+          const visible = options.filter((option) => !option.hidden);
+          if (!visible.length || menu.hidden) return;
+          event.preventDefault();
+          const current = visible.indexOf(document.activeElement as HTMLButtonElement);
+          const next = event.key === 'ArrowDown' ? (current + 1) % visible.length : (current <= 0 ? visible.length - 1 : current - 1);
+          visible[next].focus();
+        }
+      });
+      options.forEach((option) => option.addEventListener('click', () => {
+        value.value = option.dataset.code ?? '';
+        label.textContent = value.value;
+        options.forEach((item) => item.setAttribute('aria-pressed', String(item === option)));
+        toggle.setAttribute('aria-label', value.value ? `${option.dataset.name} (${value.value}), change country calling code` : 'Country calling code');
+        close();
+        toggle.focus();
+      }));
+      document.addEventListener('click', (event) => { if (!picker.contains(event.target as Node)) close(); });
+      picker.addEventListener('focusout', (event) => { if (!picker.contains(event.relatedTarget as Node)) close(); });
+      form.addEventListener('reset', () => { value.value = ''; label.textContent = ''; options.forEach((item) => item.setAttribute('aria-pressed', 'false')); toggle.setAttribute('aria-label', 'Country calling code'); close(); });
+    });
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       if (!form.checkValidity()) {
@@ -71,6 +138,36 @@ const { product, compact = false, heading = 'Send an enquiry' } = Astro.props;
   .form-footer { display: grid; gap: 16px; }
   .form-description { font-size: 13px; color: var(--steel); margin-top: 12px; }
   .row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .phone-field { display: grid; gap: 6px; min-width: 0; }
+  .phone-label { font-size: var(--t-sm); font-weight: 500; color: var(--ink-2); }
+  .phone-inputs { display: grid; grid-template-columns: 90px minmax(0, 1fr); gap: 8px; }
+  .phone-inputs > * { min-width: 0; }
+  .country-picker { position: relative; }
+  .country-toggle { width: 100%; height: 100%; min-height: 40px; display: flex; align-items: center; justify-content: space-between; gap: 6px; padding: 10px; background: #f8fafc; border: 1px solid #dce2eb; border-radius: 6px; color: var(--ink-2); font: inherit; font-size: 13px; cursor: pointer; }
+  .country-toggle:focus-visible { outline: 2px solid var(--navy); outline-offset: 2px; }
+  .country-chevron { flex: none; color: #7b8798; transition: transform .18s; }
+  .country-toggle[aria-expanded='true'] { border-color: var(--navy); background: white; }
+  .country-toggle[aria-expanded='true'] .country-chevron { transform: rotate(180deg); }
+  .country-menu { position: absolute; top: calc(100% + 8px); left: 0; width: min(310px, calc(100vw - 64px)); padding: 10px; background: white; border: 1px solid #e2e7ef; border-radius: 12px; box-shadow: 0 12px 36px -8px #111b3333, 0 2px 6px #111b3308; z-index: 10; }
+  .country-menu[hidden], .country-options [hidden] { display: none; }
+  .country-search-wrap { position: relative; color: #8894a6; }
+  .country-search-wrap > svg { position: absolute; left: 11px; top: 50%; transform: translateY(-50%); pointer-events: none; }
+  .country-menu input[type='search'] { width: 100%; min-width: 0; height: 38px; padding: 8px 10px 8px 34px; border: 1px solid #e2e7ef; border-radius: 7px; font-family: inherit; font-size: 13px; background: #f7f9fc; color: var(--ink); }
+  .country-menu input[type='search']:focus { outline: none; border-color: #b1bed1; box-shadow: 0 0 0 2px #0a2e780a; background: white; }
+  .country-menu-heading { display: flex; justify-content: space-between; margin: 12px 9px 6px; padding-right: 19px; color: #8993a3; font-size: 10px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; }
+  .country-options { max-height: 210px; overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; scrollbar-color: #ccd4e0 transparent; }
+  .country-options button { display: flex; align-items: center; gap: 9px; width: 100%; min-height: 36px; padding: 7px 8px; border: 0; border-radius: 6px; background: white; color: var(--ink-2); text-align: left; font: inherit; font-size: 12px; line-height: 1.4; cursor: pointer; }
+  .country-options button:hover, .country-options button:focus-visible { background: #f1f4f9; outline: none; }
+  .country-options button[aria-pressed='true'] { background: #edf2fb; color: var(--navy); }
+  .country-iso { display: inline-flex; align-items: center; justify-content: center; flex: 0 0 27px; height: 22px; border: 1px solid #e1e6ee; border-radius: 4px; background: #f8fafc; color: #718096; font-size: 9px; font-weight: 600; letter-spacing: .04em; }
+  .country-name { flex: 1; min-width: 0; }
+  .country-dial { color: #748096; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .country-check { width: 11px; flex: none; visibility: hidden; color: var(--navy); }
+  [aria-pressed='true'] .country-check { visibility: visible; }
+  .country-options .country-clear { min-height: 30px; margin-bottom: 4px; color: #8893a4; font-size: 11px; }
+  .country-options p { padding: 16px 8px; font-size: 12px; color: var(--steel); text-align: center; }
+  @media (pointer: coarse) { .country-options button { min-height: 44px; } .country-menu input[type='search'] { font-size: 16px; } }
+  .product-enquiry .phone-label, .compact .phone-label { font-size: 12px; }
   label { display: grid; gap: 6px; font-size: var(--t-sm); font-weight: 500; color: var(--ink-2); }
   input[type='text']:not(.visually-hidden), input[type='email'], input[type='tel'], select, textarea {
     width: 100%; padding: 12px 14px; border: 1px solid #c7cedb; border-radius: var(--radius); background: var(--white); font-size: var(--t-base); font-weight: 400;
@@ -109,7 +206,7 @@ const { product, compact = false, heading = 'Send an enquiry' } = Astro.props;
   .fields-note { display: flex; align-items: center; justify-content: space-between; gap: 8px; font-size: 13px; font-weight: 600; color: var(--ink); }
   .fields-note span { font-size: 10px; color: var(--steel); font-weight: 400; }
   .product-enquiry label { font-size: 12px; gap: 6px; }
-  .product-enquiry input[type='text']:not(.visually-hidden), .product-enquiry input[type='email'], .product-enquiry input[type='tel'], .product-enquiry textarea { background: #f8fafc; border-color: #dce2eb; border-radius: 6px; padding: 10px 12px; font-size: 13px; }
+  .product-enquiry input[type='text']:not(.visually-hidden), .product-enquiry input[type='email'], .product-enquiry input[type='tel'], .product-enquiry select, .product-enquiry textarea { background: #f8fafc; border-color: #dce2eb; border-radius: 6px; padding: 10px 12px; font-size: 13px; }
   .product-enquiry input::placeholder, .product-enquiry textarea::placeholder { color: #919bab; }
   .product-enquiry input:focus, .product-enquiry textarea:focus { background: white; border-color: var(--navy); }
   .product-enquiry textarea { min-height: 100px; }
@@ -118,6 +215,6 @@ const { product, compact = false, heading = 'Send an enquiry' } = Astro.props;
   .product-enquiry .btn { min-height: 40px; padding: 9px 16px; border-radius: 6px; font-size: 14px; gap: 24px; }
   .product-enquiry .btn :global(svg) { width: 16px; height: 16px; }
   @media (max-width: 1050px) { .enq.product-enquiry { grid-template-columns: 1fr; } .product-enquiry .form-intro { padding: 20px; } .product-reference { margin-block: 14px; padding-block: 12px; } .product-enquiry .form-fields { padding: 20px; } }
-  @media (max-width: 560px) { .product-enquiry .row { grid-template-columns: 1fr; } .product-enquiry input[type='text']:not(.visually-hidden), .product-enquiry input[type='email'], .product-enquiry input[type='tel'], .product-enquiry textarea { font-size: 16px; } }
+  @media (max-width: 560px) { .product-enquiry .row { grid-template-columns: 1fr; } .product-enquiry input[type='text']:not(.visually-hidden), .product-enquiry input[type='email'], .product-enquiry input[type='tel'], .product-enquiry select, .product-enquiry textarea { font-size: 16px; } }
   @media (max-width: 560px) { .row { grid-template-columns: 1fr; } .enq { padding: 20px; } }
 </style>
