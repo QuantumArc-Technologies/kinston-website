@@ -9,6 +9,10 @@ const replacementProducts: Product[] = replacements.products.map((product) => ({
   specColumns: product.specColumns.map((column) => ({ ...column, kind: column.kind as ColKind })),
 }));
 const activeEntries = entries.flatMap<Product>((product) => {
+  // Temporarily hidden from the website; keep the original product data for later.
+  // K80-0011: G80 Clevis Grab Hook
+  // K80-0008: G80 U.S. Type Clevis Grab Hook
+  if (product.code === 'K80-0011' || product.code === 'K80-0008') return [];
   if (product.slug === replacements.retiredSlugs[0]) return replacementProducts;
   return replacements.retiredSlugs.includes(product.slug) ? [] : [product];
 });
