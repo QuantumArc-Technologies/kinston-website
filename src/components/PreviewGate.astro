@@ -1,0 +1,62 @@
+<section id="preview-gate" aria-labelledby="preview-title">
+  <form id="preview-login">
+    <p class="eyebrow">KINSTON LIFTING</p>
+    <h1 id="preview-title">Client preview</h1>
+    <p>Enter your password to view the website.</p>
+    <label for="preview-password">Password</label>
+    <input id="preview-password" type="password" autocomplete="current-password" required aria-describedby="preview-error" />
+    <p id="preview-error" role="alert"></p>
+    <button type="submit">View website <span aria-hidden="true">→</span></button>
+    <noscript>Please enable JavaScript to open this preview.</noscript>
+  </form>
+</section>
+
+<script is:inline>
+  (() => {
+    // Temporary preview only: this password is visible in the browser source.
+    const password = 'KinstonPreview2026!';
+    const storageKey = 'kinston-preview-access';
+    const gate = document.getElementById('preview-gate');
+    const content = document.getElementById('website-content');
+    const input = document.getElementById('preview-password');
+    const unlock = () => {
+      gate.hidden = true;
+      content.hidden = false;
+    };
+    try {
+      if (sessionStorage.getItem(storageKey) === password) {
+        unlock();
+        return;
+      }
+    } catch { /* The form still works when browser storage is unavailable. */ }
+    document.getElementById('preview-login').addEventListener('submit', (event) => {
+      event.preventDefault();
+      if (input.value !== password) {
+        document.getElementById('preview-error').textContent = 'Incorrect password. Please try again.';
+        input.setAttribute('aria-invalid', 'true');
+        input.focus();
+        input.select();
+        return;
+      }
+      try { sessionStorage.setItem(storageKey, password); } catch {}
+      unlock();
+      document.getElementById('main').focus();
+    });
+    input.focus();
+  })();
+</script>
+
+<style>
+  #preview-gate { min-height: 100svh; display: grid; place-items: center; padding: 24px; background: #111b33; }
+  #preview-gate[hidden] { display: none; }
+  form { width: 100%; max-width: 420px; padding: clamp(24px, 6vw, 40px); border-radius: 16px; background: white; box-shadow: 0 24px 80px #0003; }
+  .eyebrow { color: #c83f00; font-size: 12px; font-weight: 700; letter-spacing: .14em; }
+  h1 { margin: 12px 0; font-size: 36px; color: #111b33; }
+  p { color: #526077; }
+  label { display: block; margin: 24px 0 8px; font-weight: 600; }
+  input { width: 100%; padding: 12px; border: 1px solid #aeb7c5; border-radius: 6px; font: inherit; font-size: 16px; }
+  input:focus-visible, button:focus-visible { outline: 3px solid #f85000; outline-offset: 3px; }
+  #preview-error { min-height: 24px; margin: 8px 0; color: #b42318; font-size: 14px; }
+  button { display: flex; justify-content: space-between; width: 100%; padding: 14px 18px; border: 0; border-radius: 6px; background: #111b33; color: white; font: inherit; font-weight: 600; cursor: pointer; }
+  noscript { display: block; margin-top: 16px; }
+</style>

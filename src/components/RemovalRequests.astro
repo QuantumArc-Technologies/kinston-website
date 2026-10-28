@@ -1,0 +1,159 @@
+<button id="removal-launcher" type="button" aria-haspopup="dialog">Removal list <span id="removal-count">0</span></button>
+<dialog id="removal-dialog" aria-labelledby="removal-heading">
+  <div class="removal-header">
+    <h2 id="removal-heading">Products to remove</h2>
+    <button id="removal-close" type="button" aria-label="Close removal list">×</button>
+  </div>
+  <p>Review your selections and undo any you want to keep. Products stay on the website until Vaishakh removes them.</p>
+  <ul id="removal-items"></ul>
+  <p id="removal-empty">No products selected. Use the × button on a product to add it here.</p>
+  <button id="removal-send" class="removal-primary" type="button">Tell Vaishakh to remove this product from website</button>
+  <button id="removal-copy" type="button">Copy removal request</button>
+  <p class="removal-help">Send your selected product names directly to Vaishakh. Your list stays available here for review.</p>
+  <p id="removal-status" role="status" aria-live="polite"></p>
+</dialog>
+<p id="removal-announcement" class="visually-hidden" role="status" aria-live="polite"></p>
+
+<script>
+  type Selection = { name: string; url: string };
+  const key = 'kinston-product-removal-v1';
+  const dialog = document.querySelector<HTMLDialogElement>('#removal-dialog')!;
+  const list = document.querySelector<HTMLUListElement>('#removal-items')!;
+  const send = document.querySelector<HTMLButtonElement>('#removal-send')!;
+  const copy = document.querySelector<HTMLButtonElement>('#removal-copy')!;
+  const status = document.querySelector<HTMLElement>('#removal-status')!;
+  const emailConfig = {
+    service_id: import.meta.env.PUBLIC_EMAILJS_SERVICE_ID,
+    template_id: import.meta.env.PUBLIC_EMAILJS_TEMPLATE_ID,
+    user_id: import.meta.env.PUBLIC_EMAILJS_PUBLIC_KEY,
+  };
+  let sending = false;
+  let sentSelection = '';
+  const selectionSignature = () => JSON.stringify(selections);
+  let selections: Selection[] = [];
+  try {
+    const saved: unknown = JSON.parse(localStorage.getItem(key) || '[]');
+    if (Array.isArray(saved)) selections = saved.filter((item): item is Selection =>
+      item && typeof item.name === 'string' && typeof item.url === 'string' && item.url.startsWith('/products/') && !item.url.startsWith('//'));
+    selections = [...new Map(selections.map(item => [item.url, item])).values()];
+  } catch { /* Keep the list usable if storage is unavailable. */ }
+
+  function render() {
+    document.querySelector('#removal-count')!.textContent = String(selections.length);
+    document.querySelector<HTMLElement>('#removal-empty')!.hidden = selections.length > 0;
+    copy.disabled = selections.length === 0;
+    send.disabled = selections.length === 0 || sending || sentSelection === selectionSignature();
+    send.textContent = sending ? 'Sending…' : 'Tell Vaishakh to remove this product from website';
+    send.setAttribute('aria-busy', String(sending));
+    list.replaceChildren();
+    selections.forEach(item => {
+      const row = document.createElement('li');
+      const link = document.createElement('a');
+      link.href = item.url;
+      link.textContent = item.name;
+      const undo = document.createElement('button');
+      undo.type = 'button';
+      undo.textContent = 'Undo';
+      undo.setAttribute('aria-label', `Undo removal of ${item.name}`);
+      undo.addEventListener('click', () => {
+        selections = selections.filter(selected => selected.url !== item.url);
+        save(`${item.name} removed from the removal list.`);
+        (list.querySelector('button') || document.querySelector<HTMLButtonElement>('#removal-close'))?.focus();
+      });
+      row.append(link, undo);
+      list.append(row);
+    });
+    document.querySelectorAll<HTMLButtonElement>('[data-removal-product]').forEach(button => {
+      const selected = selections.some(item => item.url === button.dataset.productUrl);
+      button.setAttribute('aria-pressed', String(selected));
+      button.title = selected ? 'Undo removal request' : 'Add to removal list';
+      button.setAttribute('aria-label', `${selected ? 'Undo removal of' : 'Request removal of'} ${button.dataset.productName}`);
+    });
+  }
+  function save(message: string) {
+    status.textContent = '';
+    try { localStorage.setItem(key, JSON.stringify(selections)); }
+    catch { status.textContent = 'Browser storage is unavailable. Keep this page open to retain your selections.'; }
+    render();
+    document.querySelector('#removal-announcement')!.textContent = message;
+  }
+  document.querySelectorAll<HTMLButtonElement>('[data-removal-product]').forEach(button => {
+    button.addEventListener('click', () => {
+      const name = button.dataset.productName!;
+      const url = button.dataset.productUrl!;
+      if (selections.some(item => item.url === url)) {
+        selections = selections.filter(item => item.url !== url);
+        save(`${name} removed from the removal list.`);
+      } else {
+        selections.push({ name, url });
+        save(`${name} added to the removal list.`);
+      }
+    });
+  });
+  document.querySelector('#removal-launcher')!.addEventListener('click', () => dialog.showModal());
+  document.querySelector('#removal-close')!.addEventListener('click', () => dialog.close());
+  const emailBody = () => `Hi Vaishakh,\n\nPlease remove the following products from the website:\n\n${selections.map((item, index) => `${index + 1}. ${item.name}\n${new URL(item.url, location.origin).href}`).join('\n\n')}\n\nThank you.`;
+  send.addEventListener('click', async () => {
+    if (!selections.length || sending || sentSelection === selectionSignature()) return;
+    if (!emailConfig.service_id || !emailConfig.template_id || !emailConfig.user_id) {
+      status.textContent = 'Sending is not connected yet. Please ask Vaishakh to finish the email setup. Your selections are saved.';
+      return;
+    }
+    const submitted = selectionSignature();
+    const message = emailBody();
+    sending = true;
+    render();
+    status.textContent = 'Sending your removal request…';
+    try {
+      const response = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          ...emailConfig,
+          template_params: {
+            subject: 'Kinston website — product removal request',
+            message,
+            product_count: selections.length,
+          },
+        }),
+        signal: AbortSignal.timeout(30000),
+      });
+      if (!response.ok) throw new Error('Email request rejected');
+      sentSelection = submitted;
+      status.textContent = 'Your removal request has been sent to Vaishakh. Your list is kept here for review.';
+    } catch {
+      status.textContent = 'We could not confirm your request was sent. Your selections are saved. Please try again; if the connection timed out, the first request may still arrive.';
+    } finally {
+      sending = false;
+      render();
+    }
+  });
+  copy.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(emailBody());
+      status.textContent = 'Request copied. Paste it into an email to vaishakh3627@gmail.com.';
+    } catch { status.textContent = 'Could not copy automatically. Select the product names above and copy them into your email.'; }
+  });
+  render();
+</script>
+
+<style>
+  #removal-launcher { position: fixed; right: 20px; bottom: 20px; z-index: 100; display: flex; align-items: center; gap: 12px; padding: 15px 20px; border: 0; border-radius: 40px; background: #111b33; color: white; box-shadow: 0 6px 24px #0003; font: inherit; font-weight: 600; cursor: pointer; }
+  #removal-count { display: grid; place-items: center; min-width: 26px; height: 26px; padding: 0 6px; border-radius: 20px; background: #f85000; }
+  dialog { margin: auto; width: min(560px, calc(100% - 32px)); max-height: 85svh; overflow-y: auto; padding: 28px; border: 0; border-radius: 16px; color: #111b33; background: white; box-shadow: 0 20px 80px #0004; }
+  dialog::backdrop { background: #111b33b8; }
+  .removal-header { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+  h2 { font-size: 28px; }
+  p { margin: 14px 0; font-size: 14px; line-height: 1.6; }
+  button { padding: 10px 14px; border: 1px solid #cbd2dd; border-radius: 6px; background: white; color: #111b33; font: inherit; cursor: pointer; }
+  button:focus-visible, a:focus-visible { outline: 3px solid #f85000; outline-offset: 3px; }
+  #removal-close { font-size: 24px; line-height: 1; }
+  ul { list-style: none; padding: 0; margin: 20px 0; }
+  ul :global(li) { display: flex; justify-content: space-between; align-items: center; gap: 16px; border-bottom: 1px solid #e2e5e9; padding: 14px 0; }
+  ul :global(a) { overflow-wrap: anywhere; font-weight: 600; }
+  ul :global(button) { flex-shrink: 0; padding: 8px 12px; border: 1px solid #cbd2dd; border-radius: 6px; background: white; cursor: pointer; }
+  .removal-primary { width: 100%; margin-bottom: 12px; background: #111b33; color: white; font-weight: 600; }
+  button:disabled { opacity: .45; cursor: default; }
+  .removal-help { color: #526077; font-size: 13px; }
+  #removal-status { font-weight: 600; }
+</style>

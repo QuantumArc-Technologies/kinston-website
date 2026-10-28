@@ -11,6 +11,7 @@ const inGrade100Range = grade100Products.some(({ slug }) => slug === product.slu
 const updatedCard = inGrade100Range || product.grade === 'Grade 80';
 ---
 <article class:list={["card", { compact, 'updated-product-card': updatedCard }]} data-product-card data-group={product.group} data-grade={product.grade ?? ''}>
+  <button class="removal-toggle" type="button" data-removal-product data-product-name={product.name} data-product-url={productUrl(product)} aria-label={`Request removal of ${product.name}`} aria-pressed="false" title="Add to removal list">×</button>
   <div class="art"><img data-card-image src={img} alt={product.name} loading="lazy" decoding="async" width="768" height="768" /><span class="browse">View product <Icon name="arrow" /></span></div>
   <div class="body">
     <h3><a class="product-link" href={productUrl(product)}>{product.name}</a></h3>
@@ -18,6 +19,9 @@ const updatedCard = inGrade100Range || product.grade === 'Grade 80';
 </article>
 
 <style>
+  .removal-toggle { position: absolute; top: 10px; right: 10px; z-index: 2; width: 36px; height: 36px; border: 1px solid #d7dde5; border-radius: 50%; background: white; color: #111b33; font: 26px/1 sans-serif; cursor: pointer; box-shadow: 0 2px 8px #111b3320; }
+  .removal-toggle[aria-pressed='true'] { background: #b42318; color: white; border-color: #b42318; }
+  .removal-toggle:focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; }
   .card { position: relative; display: grid; grid-template-rows: auto 1fr; background: var(--white); border: 1px solid #e2e5e9; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px #111b3304; transition: border-color .35s, transform .35s var(--ease), box-shadow .35s var(--ease); }
   .card[hidden] { display: none; }
   .card:hover, .card:focus-within { border-color: #f8500060; transform: translateY(-7px); box-shadow: 0 18px 36px -16px #111b3338; }

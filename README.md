@@ -4,13 +4,36 @@ Static, SEO-first corporate site for Kinston Lifting built with [Astro](https://
 
 ## Run it
 
-```bash
-npm install
-npm run dev       # http://localhost:4321
-npm run build     # static output in dist/
-npm run preview   # serve dist/ locally
-npm run check     # type-check .astro and .ts files
-```
+The whole website currently has a temporary JavaScript client preview screen.
+The password is `KinstonPreview2026!`; change it in `src/components/PreviewGate.astro`.
+Access is remembered in session storage for the current browser tab. This is a
+visual preview gate only: the password and page content are accessible in the
+browser source. Remove `PreviewGate` and the hidden `website-content` wrapper
+from `src/layouts/Base.astro` when the public website is ready.
+
+Product cards include a removal request toggle. The floating removal list is
+available across the site and saves selections in this browser's local storage.
+Clients can undo selections, then send exact product names and links directly
+through EmailJS. Selections are retained after sending; repeat sends of the same
+selection are disabled on the current page after a successful response.
+Implementation: `src/components/RemovalRequests.astro` and `src/components/ProductCard.astro`.
+
+### EmailJS setup
+
+1. Connect an email service in your EmailJS account.
+2. Create a template with **To Email fixed to `vaishakh3627@gmail.com`**.
+   Set the subject to `{{subject}}` and use `{{message}}` in the body
+   (plain text, or `<pre>{{message}}</pre>` in HTML). Optional count: `{{product_count}}`.
+   Use the connected service's default sender address.
+3. Copy `.env.example` to `.env` and fill in the service ID, template ID,
+   and account public key. Only the public key belongs in this browser integration.
+4. Restart the dev server or rebuild/redeploy after changing these values.
+5. Select products and send a request to verify delivery in the recipient inbox.
+
+Until these settings are provided, the modal explains that sending is not connected
+and keeps the selections. EmailJS API errors retain the list and allow retrying.
+The integration uses https://www.emailjs.com/docs/rest-api/send/.
+
 
 ## Where things live
 

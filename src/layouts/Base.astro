@@ -2,6 +2,8 @@
 import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import PreviewGate from '../components/PreviewGate.astro';
+import RemovalRequests from '../components/RemovalRequests.astro';
 import { site } from '../data/site';
 import { abs, organizationLd, websiteLd } from '../lib/seo';
 
@@ -59,11 +61,15 @@ const ld = [organizationLd(), websiteLd(), ...jsonLd];
     {ld.map((obj) => <script type="application/ld+json" set:html={JSON.stringify(obj)} />)}
   </head>
   <body>
+    <div id="website-content" hidden>
     <a class="skip" href="#main">Skip to content</a>
     <Header dark={headerDark} />
-    <main id="main">
+    <main id="main" tabindex="-1">
       <slot />
     </main>
     <Footer />
+    <RemovalRequests />
+    </div>
+    <PreviewGate />
   </body>
 </html>
