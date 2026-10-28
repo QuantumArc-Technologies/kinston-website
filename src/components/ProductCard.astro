@@ -8,8 +8,9 @@ interface Props { product: Product; showCategory?: string; compact?: boolean; sh
 const { product, compact = false } = Astro.props;
 const img = product.image ?? `/images/products/branded/${product.slug}.webp`;
 const inGrade100Range = grade100Products.some(({ slug }) => slug === product.slug);
+const updatedCard = inGrade100Range || product.grade === 'Grade 80';
 ---
-<article class:list={["card", { compact, 'grade-100-card': inGrade100Range }]} data-product-card data-group={product.group} data-grade={product.grade ?? ''}>
+<article class:list={["card", { compact, 'updated-product-card': updatedCard }]} data-product-card data-group={product.group} data-grade={product.grade ?? ''}>
   <div class="art"><img data-card-image src={img} alt={product.name} loading="lazy" decoding="async" width="768" height="768" /><span class="browse">View product <Icon name="arrow" /></span></div>
   <div class="body">
     <h3><a class="product-link" href={productUrl(product)}>{product.name}</a></h3>
@@ -33,8 +34,8 @@ const inGrade100Range = grade100Products.some(({ slug }) => slug === product.slu
   .card:hover h3 { color: var(--orange); }
   .compact .body { padding: 12px; gap: 6px; }
   .compact h3 { font-size: 1.05rem; line-height: 1.25; }
-  .grade-100-card .body { justify-content: center; text-align: center; }
-  .grade-100-card h3 { font-size: .9375rem; line-height: 1.3; }
+  .updated-product-card .body { justify-content: center; text-align: center; }
+  .updated-product-card h3 { font-size: .9375rem; line-height: 1.3; }
   @media (hover: none) { .browse { display: none; } }
   @media (prefers-reduced-motion: reduce) { .card, .art img, .browse { transition: none; } .card:hover, .card:hover .art img { transform: none; } }
 </style>
