@@ -16,7 +16,11 @@ const activeEntries = entries.flatMap<Product>((product) => {
   // K80-0015: Alloy Steel Connecting Link
   // K80-0016: G80 U.S. Type Connecting Link
   // K80-0017: G80 Special Webbing Connector
-  if (['K80-0011', 'K80-0008', 'K80-0012', 'K80-0015', 'K80-0016', 'K80-0017'].includes(product.code)) return [];
+  // K80-0030, K80-0032, K80-0045: Eye Sling Hook with Cast Latch
+  // K80-0034: G80 Eye Sling Hook New Type A-327
+  // K80-0029: Alloy Steel Twist Eye Hook
+  // K80-0035: Eye Twist Hook
+  if (['K80-0011', 'K80-0008', 'K80-0012', 'K80-0015', 'K80-0016', 'K80-0017', 'K80-0030', 'K80-0032', 'K80-0045', 'K80-0034', 'K80-0029', 'K80-0035'].includes(product.code)) return [];
   if (product.slug === replacements.retiredSlugs[0]) return replacementProducts;
   return replacements.retiredSlugs.includes(product.slug) ? [] : [product];
 });
