@@ -11,7 +11,7 @@ const inGrade100Range = grade100Products.some(({ slug }) => slug === product.slu
 const updatedCard = inGrade100Range || product.grade === 'Grade 80';
 ---
 <article class:list={["card", { compact, 'updated-product-card': updatedCard }]} data-product-card data-group={product.group} data-grade={product.grade ?? ''}>
-  <button class="removal-toggle" type="button" data-removal-product data-product-name={product.name} data-product-url={productUrl(product)} aria-label={`Request removal of ${product.name}`} aria-pressed="false" title="Add to removal list">×</button>
+  <button class="removal-toggle" type="button" data-removal-product data-product-name={product.name} data-product-url={productUrl(product)} aria-label={`Request removal of ${product.name}`} aria-pressed="false" title="Add to removal list"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" /></svg></button>
   <div class="art"><img data-card-image src={img} alt={product.name} loading="lazy" decoding="async" width="768" height="768" /><span class="browse">View product <Icon name="arrow" /></span></div>
   <div class="body">
     <h3><a class="product-link" href={productUrl(product)}>{product.name}</a></h3>
@@ -19,7 +19,9 @@ const updatedCard = inGrade100Range || product.grade === 'Grade 80';
 </article>
 
 <style>
-  .removal-toggle { position: absolute; top: 10px; right: 10px; z-index: 2; width: 36px; height: 36px; border: 1px solid #d7dde5; border-radius: 50%; background: white; color: #111b33; font: 26px/1 sans-serif; cursor: pointer; box-shadow: 0 2px 8px #111b3320; }
+  .removal-toggle { position: absolute; top: 10px; right: 10px; z-index: 2; display: grid; place-items: center; width: 32px; height: 32px; padding: 0; border: 1px solid #111b3314; border-radius: 8px; background: #ffffffed; color: #526077; cursor: pointer; transition: background .2s, color .2s; }
+  .card[data-removal-hidden] { display: none; }
+  .removal-toggle:hover { background: #fff0ec; color: #b42318; }
   .removal-toggle[aria-pressed='true'] { background: #b42318; color: white; border-color: #b42318; }
   .removal-toggle:focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; }
   .card { position: relative; display: grid; grid-template-rows: auto 1fr; background: var(--white); border: 1px solid #e2e5e9; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px #111b3304; transition: border-color .35s, transform .35s var(--ease), box-shadow .35s var(--ease); }

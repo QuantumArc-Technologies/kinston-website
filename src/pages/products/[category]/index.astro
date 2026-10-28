@@ -68,6 +68,9 @@ const anchor = (g: string) => g.toLowerCase().replace(/[^a-z0-9]+/g, '-');
     const groups = root.querySelectorAll<HTMLElement>('.group[data-group]');
     const count = root.querySelector<HTMLElement>('[data-count]');
     const empty = root.querySelector<HTMLElement>('[data-empty]');
+    document.addEventListener('removal-list-updated', () => {
+      root.querySelector<HTMLButtonElement>('button[data-grade].on')?.click();
+    });
     btns.forEach((b) =>
       b.addEventListener('click', () => {
         const g = b.dataset.grade ?? '';
@@ -76,9 +79,9 @@ const anchor = (g: string) => g.toLowerCase().replace(/[^a-z0-9]+/g, '-');
         root.querySelectorAll<HTMLElement>('[data-product-card]').forEach((c) => {
           const ok = !g || c.dataset.grade === g;
           c.hidden = !ok;
-          if (ok) shown++;
+          if (ok && !c.hasAttribute('data-removal-hidden')) shown++;
         });
-        groups.forEach((grp) => { grp.hidden = !grp.querySelector('[data-product-card]:not([hidden])'); });
+        groups.forEach((grp) => { grp.hidden = !grp.querySelector('[data-product-card]:not([hidden]):not([data-removal-hidden])'); });
         if (count) count.textContent = String(shown);
         if (empty) empty.hidden = shown > 0;
       }),

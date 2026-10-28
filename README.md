@@ -5,7 +5,7 @@ Static, SEO-first corporate site for Kinston Lifting built with [Astro](https://
 ## Run it
 
 The whole website currently has a temporary JavaScript client preview screen.
-The password is `KinstonPreview2026!`; change it in `src/components/PreviewGate.astro`.
+The password is `Kinston@2026`; change it in `src/components/PreviewGate.astro`.
 Access is remembered in session storage for the current browser tab. This is a
 visual preview gate only: the password and page content are accessible in the
 browser source. Remove `PreviewGate` and the hidden `website-content` wrapper

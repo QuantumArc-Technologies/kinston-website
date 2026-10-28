@@ -4,13 +4,17 @@
     <h2 id="removal-heading">Products to remove</h2>
     <button id="removal-close" type="button" aria-label="Close removal list">×</button>
   </div>
-  <p>Review your selections and undo any you want to keep. Products stay on the website until Vaishakh removes them.</p>
+  <div class="removal-scroll">
+  <p>Selected products are hidden from your preview. Undo restores them instantly. Send the list so Vaishakh can remove them from the website.</p>
   <ul id="removal-items"></ul>
   <p id="removal-empty">No products selected. Use the × button on a product to add it here.</p>
+  </div>
+  <div class="removal-actions">
   <button id="removal-send" class="removal-primary" type="button">Tell Vaishakh to remove this product from website</button>
   <button id="removal-copy" type="button">Copy removal request</button>
   <p class="removal-help">Send your selected product names directly to Vaishakh. Your list stays available here for review.</p>
   <p id="removal-status" role="status" aria-live="polite"></p>
+  </div>
 </dialog>
 <p id="removal-announcement" class="visually-hidden" role="status" aria-live="polite"></p>
 
@@ -65,10 +69,16 @@
     });
     document.querySelectorAll<HTMLButtonElement>('[data-removal-product]').forEach(button => {
       const selected = selections.some(item => item.url === button.dataset.productUrl);
+      button.closest<HTMLElement>('[data-product-card]')?.toggleAttribute('data-removal-hidden', selected);
       button.setAttribute('aria-pressed', String(selected));
       button.title = selected ? 'Undo removal request' : 'Add to removal list';
       button.setAttribute('aria-label', `${selected ? 'Undo removal of' : 'Request removal of'} ${button.dataset.productName}`);
     });
+    document.querySelectorAll<HTMLElement>('[data-catalogue-range]').forEach(range => {
+      const count = range.querySelector('[data-range-product-count]');
+      if (count) count.textContent = String(range.querySelectorAll('[data-product-card]:not([data-removal-hidden])').length);
+    });
+    document.dispatchEvent(new Event('removal-list-updated'));
   }
   function save(message: string) {
     status.textContent = '';
@@ -79,6 +89,7 @@
   }
   document.querySelectorAll<HTMLButtonElement>('[data-removal-product]').forEach(button => {
     button.addEventListener('click', () => {
+      const nextButton = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-removal-product]')).find(candidate => candidate !== button && !candidate.closest('[hidden], [data-removal-hidden]'));
       const name = button.dataset.productName!;
       const url = button.dataset.productUrl!;
       if (selections.some(item => item.url === url)) {
@@ -87,10 +98,20 @@
       } else {
         selections.push({ name, url });
         save(`${name} added to the removal list.`);
+        (nextButton || document.querySelector<HTMLButtonElement>('#removal-launcher'))?.focus({ preventScroll: true });
       }
     });
   });
-  document.querySelector('#removal-launcher')!.addEventListener('click', () => dialog.showModal());
+  document.querySelector('#removal-launcher')!.addEventListener('click', () => {
+    dialog.showModal();
+    document.documentElement.classList.add('removal-modal-open');
+  });
+  dialog.addEventListener('close', () => document.documentElement.classList.remove('removal-modal-open'));
+  dialog.addEventListener('click', event => {
+    if (event.target !== dialog) return;
+    const bounds = dialog.getBoundingClientRect();
+    if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) dialog.close();
+  });
   document.querySelector('#removal-close')!.addEventListener('click', () => dialog.close());
   const emailBody = () => `Hi Vaishakh,\n\nPlease remove the following products from the website:\n\n${selections.map((item, index) => `${index + 1}. ${item.name}\n${new URL(item.url, location.origin).href}`).join('\n\n')}\n\nThank you.`;
   send.addEventListener('click', async () => {
@@ -140,20 +161,41 @@
 <style>
   #removal-launcher { position: fixed; right: 20px; bottom: 20px; z-index: 100; display: flex; align-items: center; gap: 12px; padding: 15px 20px; border: 0; border-radius: 40px; background: #111b33; color: white; box-shadow: 0 6px 24px #0003; font: inherit; font-weight: 600; cursor: pointer; }
   #removal-count { display: grid; place-items: center; min-width: 26px; height: 26px; padding: 0 6px; border-radius: 20px; background: #f85000; }
-  dialog { margin: auto; width: min(560px, calc(100% - 32px)); max-height: 85svh; overflow-y: auto; padding: 28px; border: 0; border-radius: 16px; color: #111b33; background: white; box-shadow: 0 20px 80px #0004; }
+  dialog { margin: auto; width: min(560px, calc(100% - 32px)); max-height: 85svh; max-height: 85dvh; overflow: hidden; padding: 0; border: 0; border-radius: 16px; color: #111b33; background: white; box-shadow: 0 20px 80px #0004; }
+  dialog[open] { display: flex; flex-direction: column; }
+  :global(html.removal-modal-open) { overflow: hidden; }
+  .removal-header { padding: 24px 24px 12px; flex-shrink: 0; }
+  .removal-scroll { padding: 0 24px; overflow-y: auto; overscroll-behavior: contain; min-height: 0; }
+  .removal-actions { padding: 16px 24px 20px; border-top: 1px solid #e2e5e9; background: white; flex-shrink: 0; }
+  #removal-status:empty { display: none; }
   dialog::backdrop { background: #111b33b8; }
   .removal-header { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
   h2 { font-size: 28px; }
   p { margin: 14px 0; font-size: 14px; line-height: 1.6; }
   button { padding: 10px 14px; border: 1px solid #cbd2dd; border-radius: 6px; background: white; color: #111b33; font: inherit; cursor: pointer; }
   button:focus-visible, a:focus-visible { outline: 3px solid #f85000; outline-offset: 3px; }
-  #removal-close { font-size: 24px; line-height: 1; }
+  #removal-close { display: grid; place-items: center; width: 44px; height: 44px; padding: 0; flex-shrink: 0; font-size: 24px; line-height: 1; }
   ul { list-style: none; padding: 0; margin: 20px 0; }
   ul :global(li) { display: flex; justify-content: space-between; align-items: center; gap: 16px; border-bottom: 1px solid #e2e5e9; padding: 14px 0; }
   ul :global(a) { overflow-wrap: anywhere; font-weight: 600; }
-  ul :global(button) { flex-shrink: 0; padding: 8px 12px; border: 1px solid #cbd2dd; border-radius: 6px; background: white; cursor: pointer; }
+  ul :global(button) { flex-shrink: 0; min-height: 44px; padding: 8px 12px; border: 1px solid #cbd2dd; border-radius: 6px; background: white; cursor: pointer; }
   .removal-primary { width: 100%; margin-bottom: 12px; background: #111b33; color: white; font-weight: 600; }
   button:disabled { opacity: .45; cursor: default; }
   .removal-help { color: #526077; font-size: 13px; }
   #removal-status { font-weight: 600; }
+  @media (max-width: 600px) {
+    #removal-launcher { right: 12px; bottom: calc(12px + env(safe-area-inset-bottom, 0px)); padding: 12px 16px; gap: 8px; font-size: 14px; }
+    dialog { position: fixed; inset: auto 0 0; margin: 0; width: 100%; max-width: 100%; max-height: 90svh; max-height: 90dvh; border-radius: 20px 20px 0 0; }
+    .removal-header { padding: 16px 16px 8px; gap: 12px; }
+    h2 { font-size: 25px; }
+    .removal-scroll { padding: 0 16px; }
+    .removal-actions { padding: 12px 16px calc(12px + env(safe-area-inset-bottom, 0px)); }
+    .removal-primary { min-height: 48px; padding: 12px; font-size: 14px; line-height: 1.45; }
+    #removal-copy { width: 100%; min-height: 44px; font-size: 14px; }
+    .removal-help { margin: 8px 0 0; font-size: 12px; }
+    #removal-status { margin: 8px 0 0; font-size: 13px; }
+    ul { margin: 12px 0; }
+    ul :global(li) { gap: 12px; }
+    ul :global(a) { min-width: 0; font-size: 14px; line-height: 1.4; }
+  }
 </style>

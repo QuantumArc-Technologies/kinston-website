@@ -18,7 +18,7 @@ const ranges = [
         <section id={range.id} data-catalogue-range={range.grade} hidden={range.grade !== activeGrade} aria-labelledby={`${range.id}-heading`}>
           <div class="range-heading">
             <h2 id={`${range.id}-heading`}>{range.grade} Rigging</h2>
-            <p class="muted">{range.products.length} products</p>
+            <p class="muted"><span data-range-product-count>{range.products.length}</span> products</p>
           </div>
           <p class="range-description">{range.description}</p>
           <div class="grid product-grid">
