@@ -12,7 +12,11 @@ const activeEntries = entries.flatMap<Product>((product) => {
   // Temporarily hidden from the website; keep the original product data for later.
   // K80-0011: G80 Clevis Grab Hook
   // K80-0008: G80 U.S. Type Clevis Grab Hook
-  if (product.code === 'K80-0011' || product.code === 'K80-0008') return [];
+  // K80-0012: Clevis Sling Hook
+  // K80-0015: Alloy Steel Connecting Link
+  // K80-0016: G80 U.S. Type Connecting Link
+  // K80-0017: G80 Special Webbing Connector
+  if (['K80-0011', 'K80-0008', 'K80-0012', 'K80-0015', 'K80-0016', 'K80-0017'].includes(product.code)) return [];
   if (product.slug === replacements.retiredSlugs[0]) return replacementProducts;
   return replacements.retiredSlugs.includes(product.slug) ? [] : [product];
 });
