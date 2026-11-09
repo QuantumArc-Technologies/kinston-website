@@ -11,7 +11,9 @@ const inGrade100Range = grade100Products.some(({ slug }) => slug === product.slu
 const updatedCard = inGrade100Range || product.grade === 'Grade 80';
 ---
 <article class:list={["card", { compact, 'updated-product-card': updatedCard }]} data-product-card data-group={product.group} data-grade={product.grade ?? ''}>
+  {/* Removal toggle disabled for now
   <button class="removal-toggle" type="button" data-removal-product data-product-name={product.name} data-product-url={productUrl(product)} aria-label={`Request removal of ${product.name}`} aria-pressed="false" title="Add to removal list"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" /></svg></button>
+  */}
   <div class="art"><img data-card-image src={img} alt={product.name} loading="lazy" decoding="async" width="768" height="768" /><span class="browse">View product <Icon name="arrow" /></span></div>
   <div class="body">
     <h3><a class="product-link" href={productUrl(product)}>{product.name}</a></h3>
