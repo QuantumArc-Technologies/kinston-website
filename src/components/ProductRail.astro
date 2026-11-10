@@ -5,10 +5,12 @@ import Icon from './Icon.astro';
 interface Props { current?: string }
 const { current } = Astro.props;
 const activeGrade = products.find((product) => product.slug === current)?.grade
-  ?? (Astro.url.pathname.startsWith('/products/grade-80-rigging') ? 'Grade 80' : 'Grade 100');
+  ?? (Astro.url.pathname.startsWith('/products/grade-80-rigging') ? 'Grade 80'
+    : Astro.url.pathname.startsWith('/products/grade-6-shackles') ? 'Grade 6' : 'Grade 100');
 const ranges = [
   { grade: 'Grade 100', name: 'Grade 100 Rigging', href: '/products' },
   { grade: 'Grade 80', name: 'Grade 80 Rigging', href: '/products/grade-80-rigging' },
+  { grade: 'Grade 6', name: 'Grade 6 Shackles', href: '/products/grade-6-shackles' },
 ];
 ---
       <aside class="product-rail" aria-label="Product ranges">

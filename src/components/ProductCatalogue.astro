@@ -3,11 +3,13 @@ import ProductCard from './ProductCard.astro';
 import ProductRail from './ProductRail.astro';
 import { grade100Products } from '../data/grade-100-products';
 import { grade80Products } from '../data/grade-80-products';
-interface Props { activeGrade: 'Grade 100' | 'Grade 80' }
+import { grade6Products } from '../data/products';
+interface Props { activeGrade: 'Grade 100' | 'Grade 80' | 'Grade 6' }
 const { activeGrade } = Astro.props;
 const ranges = [
   { grade: 'Grade 100', id: 'grade-100', products: grade100Products, description: 'Our Grade 100 rigging range includes alloy steel hooks, connecting links and master links for compatible Grade 100 chain assemblies. Forged or welded components support demanding applications in oilfields, mining and ports. Explore each product for dimensions, working load limits and available configurations.' },
   { grade: 'Grade 80', id: 'grade-80', products: grade80Products, description: 'Our Grade 80 rigging range includes alloy steel hooks, connecting links, D rings, swivels, master links and accessories in RAL 2004 orange. Explore each product for reference models, dimensions, working load limits and spare parts.' },
+  { grade: 'Grade 6', id: 'grade-6', title: 'Grade 6 Shackles', products: grade6Products, description: 'Our Grade 6 shackle range includes high strength bow and dee shackles with a screw pin or a bolt, nut and cotter pin, hot dip galvanised. Explore each product for item numbers, dimensions and working load limits.' },
 ];
 ---
 <section class="section-tight">
@@ -17,7 +19,7 @@ const ranges = [
       {ranges.map((range) => (
         <section id={range.id} data-catalogue-range={range.grade} hidden={range.grade !== activeGrade} aria-labelledby={`${range.id}-heading`}>
           <div class="range-heading">
-            <h2 id={`${range.id}-heading`}>{range.grade} Rigging</h2>
+            <h2 id={`${range.id}-heading`}>{range.title ?? `${range.grade} Rigging`}</h2>
             <p class="muted"><span data-range-product-count>{range.products.length}</span> products</p>
           </div>
           <p class="range-description">{range.description}</p>

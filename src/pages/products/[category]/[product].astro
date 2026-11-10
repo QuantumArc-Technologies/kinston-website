@@ -22,6 +22,7 @@ const crumbs = [
   { name: 'Products', href: '/products' },
   p.grade === 'Grade 80' ? { name: 'Grade 80 Rigging', href: '/products/grade-80-rigging' }
     : p.grade === 'Grade 100' ? { name: 'Grade 100 Rigging', href: '/products' }
+    : p.grade === 'Grade 6' ? { name: 'Grade 6 Shackles', href: '/products/grade-6-shackles' }
     : { name: cat.name, href: `/products/${cat.slug}` },
   { name: p.name, href: `/products/${cat.slug}/${p.slug}` },
 ];

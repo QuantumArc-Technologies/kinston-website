@@ -1,0 +1,30 @@
+{
+  "tool": "Built-in image_gen (same workflow as output/review/grade80/image-manifest.json)",
+  "howTo": "Edit each source image with its prompt, then save the result over the same path as lossless or quality-90+ WebP, square, about 1024x1024. No code changes are needed; the product pages already point to these paths. Check the result against the drawing listed for each product.",
+  "images": [
+    {
+      "slug": "bow-shackle-screw-pin",
+      "image": "public/images/products/branded/bow-shackle-screw-pin.webp",
+      "matchDrawing": "public/images/products/technical/shackles/screw-pin-bow-shackle.jpg",
+      "prompt": "Use case: precise-object-edit. Edit target is this exact Grade 6 screw pin bow shackle product photograph. Remove all KINSTON lettering from the bow, embossed or printed, reconstructing a continuous hot dip galvanised steel surface. Mirror the screw pin orientation so the pin eye (collar with the round hole) is on the LEFT side of the shackle and the threaded pin end is on the RIGHT, matching the reference dimension drawing. Improve HD photographic clarity, sharp focus, crisp edges, finely resolved galvanised zinc texture and machined pin detail, realistic red painted pin, controlled softbox highlights, natural contact shadow. Preserve EXACT bow geometry, proportions, component count, colours, framing and pale grey studio background. No redesign, text, logo or watermark. Photorealistic professional catalogue photo, square high resolution, image only."
+    },
+    {
+      "slug": "bow-shackle-safety-pin",
+      "image": "public/images/products/branded/bow-shackle-safety-pin.webp",
+      "matchDrawing": "public/images/products/technical/shackles/nut-bolt-bow-shackle.jpg",
+      "prompt": "Use case: precise-object-edit. Edit target is this exact Grade 6 nut and bolt bow shackle product photograph. Remove all KINSTON lettering from the bow, embossed or printed, reconstructing a continuous hot dip galvanised steel surface. Keep the bolt head on the LEFT and the hex nut with split cotter pin on the RIGHT, matching the reference dimension drawing. Improve HD photographic clarity, sharp focus, crisp edges, finely resolved galvanised zinc texture, crisp hex nut and cotter pin detail, realistic red painted bolt, controlled softbox highlights, natural contact shadow. Preserve EXACT geometry, proportions, component count, colours, framing and pale grey studio background. No redesign, text, logo or watermark. Photorealistic professional catalogue photo, square high resolution, image only."
+    },
+    {
+      "slug": "dee-shackle-screw-pin",
+      "image": "public/images/products/branded/dee-shackle-screw-pin.webp",
+      "matchDrawing": "public/images/products/technical/shackles/screw-pin-dee-shackle.jpg",
+      "prompt": "Use case: precise-object-edit. Edit target is this exact Grade 6 screw pin dee shackle product photograph. Remove all KINSTON lettering from the dee body, embossed or printed, reconstructing a continuous hot dip galvanised steel surface. Mirror the screw pin orientation so the pin eye (collar with the round hole) is on the LEFT side of the shackle and the threaded pin end is on the RIGHT, matching the reference dimension drawing. Improve HD photographic clarity, sharp focus, crisp edges, finely resolved galvanised zinc texture and machined pin detail, realistic red painted pin, controlled softbox highlights, natural contact shadow. Preserve EXACT dee geometry, proportions, component count, colours, framing and pale grey studio background. No redesign, text, logo or watermark. Photorealistic professional catalogue photo, square high resolution, image only."
+    },
+    {
+      "slug": "dee-shackle-safety-pin",
+      "image": "public/images/products/branded/dee-shackle-safety-pin.webp",
+      "matchDrawing": "public/images/products/technical/shackles/nut-bolt-dee-shackle.jpg",
+      "prompt": "Use case: precise-object-edit. Edit target is this exact Grade 6 nut and bolt dee shackle product photograph. Remove all KINSTON lettering from the dee body, embossed or printed, reconstructing a continuous hot dip galvanised steel surface. Keep the bolt head on the LEFT and the hex nut with split cotter pin on the RIGHT, matching the reference dimension drawing. Improve HD photographic clarity, sharp focus, crisp edges, finely resolved galvanised zinc texture, crisp hex nut and cotter pin detail, realistic red painted bolt, controlled softbox highlights, natural contact shadow. Preserve EXACT geometry, proportions, component count, colours, framing and pale grey studio background. No redesign, text, logo or watermark. Photorealistic professional catalogue photo, square high resolution, image only."
+    }
+  ]
+}

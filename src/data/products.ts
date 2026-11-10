@@ -522,7 +522,7 @@ export const products: Product[] = [
 //   // ===== Shackles =====
   {
     slug: 'bow-shackle-screw-pin',
-    category: 'shackles',
+    category: 'grade-6-shackles',
     group: 'Bow shackles',
     name: 'Screw pin bow shackle',
     code: 'KT-SH-BS',
@@ -572,11 +572,11 @@ export const products: Product[] = [
       { wll: '35', size: '2"', d1: '51.0', d2: '57.0', d3: '122', b1: '82.5', b2: '146', h2: '197', weight: '23.7', code: 'KT-SH-BS-350' },
       { wll: '55', size: '2 1/2"', d1: '66.5', d2: '70.0', d3: '145', b1: '105', b2: '184', h2: '267', weight: '44.6', code: 'KT-SH-BS-550' },
     ],
-    downloads: dl('bow-shackle-screw-pin', 'KT-SH-BS'),
+    downloads: [],
   },
   {
     slug: 'bow-shackle-safety-pin',
-    category: 'shackles',
+    category: 'grade-6-shackles',
     group: 'Bow shackles',
     name: 'Nut & bolt bow shackle',
     code: 'KT-SH-BB',
@@ -626,11 +626,11 @@ export const products: Product[] = [
       { wll: '120', size: '3 1/2"', d1: '92.0', d2: '95.5', d3: '203', b1: '133', b2: '229', h2: '372', weight: '120', code: 'KT-SH-BB-1200' },
       { wll: '150', size: '4"', d1: '104', d2: '108', d3: '229', b1: '140', b2: '254', h2: '368', weight: '153', code: 'KT-SH-BB-1500' },
     ],
-    downloads: dl('bow-shackle-safety-pin', 'KT-SH-BB'),
+    downloads: [],
   },
   {
     slug: 'dee-shackle-screw-pin',
-    category: 'shackles',
+    category: 'grade-6-shackles',
     group: 'Dee shackles',
     name: 'Screw pin dee shackle',
     code: 'KT-SH-DS',
@@ -675,11 +675,11 @@ export const products: Product[] = [
       { wll: '35', size: '2"', d1: '51.0', d2: '57.0', d3: '122', b: '82.5', h: '172', weight: '21.2', code: 'KT-SH-DS-350' },
       { wll: '55', size: '2-1/2"', d1: '66.5', d2: '70.0', d3: '145', b: '105', h: '203', weight: '38.6', code: 'KT-SH-DS-550' },
     ],
-    downloads: dl('dee-shackle-screw-pin', 'KT-SH-DS'),
+    downloads: [],
   },
   {
     slug: 'dee-shackle-safety-pin',
-    category: 'shackles',
+    category: 'grade-6-shackles',
     group: 'Dee shackles',
     name: 'Nut & bolt dee shackle',
     code: 'KT-SH-DB',
@@ -726,7 +726,7 @@ export const products: Product[] = [
       { wll: '85', size: '3"', d1: '76.0', d2: '82.5', d3: '165', b: '127', h: '216', weight: '56', code: 'KT-SH-DB-850' },
       { wll: '120', size: '3-1/2"', d1: '95', d2: '95.5', d3: '200', b: '135', h: '280', weight: '90', code: 'KT-SH-DB-1200' },
     ],
-    downloads: dl('dee-shackle-safety-pin', 'KT-SH-DB'),
+    downloads: [],
   },
 //   {
 //     slug: 'wide-body-shackle',
@@ -1461,6 +1461,7 @@ export const relatedProducts = (p: Product, n = 4) => {
   const sameCat = products.filter((x) => x.slug !== p.slug && x.category === p.category && x.group !== p.group);
   return [...sameGroup, ...sameCat].slice(0, n);
 };
+export const grade6Products = products.filter((p) => p.grade === 'Grade 6');
 export const productUrl = (p: Product) => `/products/${p.category}/${p.slug}`;
 export const wllRange = (p: Product) => {
   const w = p.specRows.map((r) => Number(r.wll)).filter((n) => !Number.isNaN(n) && n > 0);

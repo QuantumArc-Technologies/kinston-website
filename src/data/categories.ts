@@ -18,6 +18,14 @@ export const categories: Category[] = [
     groups: ['G80 Clevis Hook', 'G80 Connecting Link', 'G80 D Ring & Weld On Hook', 'G80 Eye Hook', 'G80 Forged Swivel', 'G80 Master Link', 'G80 Other Rigging Accessories', 'G80 Safety Hook', 'G80 Swivel Hook'],
   },
   {
+    slug: 'grade-6-shackles',
+    name: 'Grade 6 Shackles',
+    short: 'Grade 6 Shackles',
+    description: 'Grade 6 high strength bow and dee shackles with screw pin or bolt, nut and cotter pin, hot dip galvanised. Browse models, dimensions and working load limits.',
+    art: 'shackle-bow',
+    groups: ['Bow shackles', 'Dee shackles'],
+  },
+  {
     slug: 'chain-slings',
     name: 'Chain slings and assemblies',
     short: 'Chain slings',

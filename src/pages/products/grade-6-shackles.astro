@@ -1,0 +1,25 @@
+---
+import Base from '../../layouts/Base.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import PageHero from '../../components/PageHero.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import ProductCatalogue from '../../components/ProductCatalogue.astro';
+import { breadcrumbLd } from '../../lib/seo';
+
+const crumbs = [{ name: 'Home', href: '/' }, { name: 'Products', href: '/products' }, { name: 'Grade 6 Shackles', href: '/products/grade-6-shackles' }];
+---
+<Base
+  title="Grade 6 Shackles | Products"
+  description="Explore Kinston Grade 6 shackles. Browse bow and dee shackles with screw pin or bolt, nut and cotter pin, review specifications and request a quote."
+  path="/products/grade-6-shackles"
+  jsonLd={[breadcrumbLd(crumbs)]}
+>
+  <PageHero eyebrow="THE GRADE 6 RANGE" image="/images/page-heroes/products-branded.webp">
+<Breadcrumb items={crumbs} light />
+      <h1>Grade 6 Shackles</h1>
+      <p class="lede">Explore our Grade 6 shackles. Browse the full range, review specifications and working load limits, and request a quote.</p>
+  </PageHero>
+
+  <ProductCatalogue activeGrade="Grade 6" />
+  <CtaBand title="Can't see what you need?" body="We build bespoke assemblies, non-standard lengths and special finishes. Send a drawing or a description and we will quote it." />
+</Base>

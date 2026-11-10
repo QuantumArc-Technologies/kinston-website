@@ -8,7 +8,7 @@ interface Props { product: Product; showCategory?: string; compact?: boolean; sh
 const { product, compact = false } = Astro.props;
 const img = product.image ?? `/images/products/branded/${product.slug}.webp`;
 const inGrade100Range = grade100Products.some(({ slug }) => slug === product.slug);
-const updatedCard = inGrade100Range || product.grade === 'Grade 80';
+const updatedCard = inGrade100Range || product.grade === 'Grade 80' || product.grade === 'Grade 6';
 ---
 <article class:list={["card", { compact, 'updated-product-card': updatedCard }]} data-product-card data-group={product.group} data-grade={product.grade ?? ''}>
   {/* Removal toggle disabled for now
