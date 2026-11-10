@@ -20,11 +20,29 @@ const cat = categoryBySlug(p.category)!;
 const crumbs = [
   { name: 'Home', href: '/' },
   { name: 'Products', href: '/products' },
-  { name: p.grade === 'Grade 80' ? 'Grade 80 Rigging' : 'Grade 100 Rigging', href: p.grade === 'Grade 80' ? '/products/grade-80-rigging' : '/products' },
+  p.grade === 'Grade 80' ? { name: 'Grade 80 Rigging', href: '/products/grade-80-rigging' }
+    : p.grade === 'Grade 100' ? { name: 'Grade 100 Rigging', href: '/products' }
+    : { name: cat.name, href: `/products/${cat.slug}` },
   { name: p.name, href: `/products/${cat.slug}/${p.slug}` },
 ];
 const allReferences = { ...referenceData, ...grade80ReferenceData, ...masterLinkReplacements.technicalReferences };
-const reference = allReferences[p.slug as keyof typeof allReferences];
+// Products without a technical reference entry fall back to their own features and spec table.
+const fallbackReference = {
+  features: p.features,
+  notes: [] as string[],
+  sections: [{
+    title: '',
+    drawing: undefined as string | undefined,
+    tables: [{
+      label: 'Parameters',
+      rows: [
+        p.specColumns.map((c) => ({ text: c.kind === 'text' || c.kind === 'num' ? c.label : `${c.label} (${c.kind})` })),
+        ...p.specRows.map((row) => p.specColumns.map((c) => ({ text: String(row[c.key] ?? '–') }))),
+      ],
+    }],
+  }],
+};
+const reference = allReferences[p.slug as keyof typeof allReferences] ?? fallbackReference;
 const preferredRelated = relatedProducts(p, 4);
 const related = [...preferredRelated, ...products.filter((item) => item.grade === p.grade && item.slug !== p.slug && !preferredRelated.some((match) => match.slug === item.slug))].slice(0, 4);
 const firstDrawing = reference.sections[0]?.drawing;
