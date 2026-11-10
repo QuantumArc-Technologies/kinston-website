@@ -45,6 +45,8 @@ export interface Product {
   specificationNote?: string;
   technicalNote?: string;
   usageNotice?: string;
+  /** Dimension drawing shown on the product page when there is no technical reference entry. */
+  drawing?: string;
   imageCaption?: string;
 }
 
@@ -526,6 +528,7 @@ export const products: Product[] = [
     code: 'KT-SH-BS',
     grade: 'Grade 6',
     art: 'shackle-bow',
+    drawing: '/images/products/technical/shackles/screw-pin-bow-shackle.jpg',
     featured: true,
     summary: 'Grade 6 bow shackle with screw collar pin, 0.3 to 55 t, galvanised.',
     description: [
@@ -579,6 +582,7 @@ export const products: Product[] = [
     code: 'KT-SH-BB',
     grade: 'Grade 6',
     art: 'shackle-bow-bolt',
+    drawing: '/images/products/technical/shackles/nut-bolt-bow-shackle.jpg',
     summary: 'Bow shackle with bolt, nut and split cotter pin for permanent or long-term rigging.',
     description: ['Where a shackle stays in place or where the pin could work loose under rotation, the bolt type pin with nut and cotter gives a positive lock.'],
     features: ['Bolt, nut and split cotter pin', 'Hot dip galvanised', 'Sizes to 150 t on request'],
@@ -632,6 +636,7 @@ export const products: Product[] = [
     code: 'KT-SH-DS',
     grade: 'Grade 6',
     art: 'shackle-dee',
+    drawing: '/images/products/technical/shackles/screw-pin-dee-shackle.jpg',
     summary: 'Narrow dee body for single-leg straight pulls.',
     description: ['A dee shackle is sized for one sling or chain in the straight pull. The narrow body keeps the load in line with the pin.'],
     features: ['Screw collar pin', 'Hot dip galvanised', 'Batch traceable marking'],
@@ -680,6 +685,7 @@ export const products: Product[] = [
     code: 'KT-SH-DB',
     grade: 'Grade 6',
     art: 'shackle-dee-bolt',
+    drawing: '/images/products/technical/shackles/nut-bolt-dee-shackle.jpg',
     summary: 'Dee shackle with bolt, nut and split cotter pin.',
     description: ['Positive-locking dee shackle for long-term installations.'],
     features: ['Bolt, nut and split cotter pin', 'Hot dip galvanised', 'Batch traceable marking'],
