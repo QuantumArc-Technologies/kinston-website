@@ -1,0 +1,16 @@
+[
+  {
+    "slug": "bow-shackle-screw-pin",
+    "image": "public/images/products/branded/bow-shackle-screw-pin.webp",
+    "source": "/Users/macbook/.codex/generated_images/01a1c6c2-528c-7771-b77d-e803beac3739/exec-5b651741-6cef-4b37-9308-8d6f84c31f1e.png",
+    "prompt": "Use case: precise-object-edit. Edit this exact shackle catalogue photograph. Reverse ONLY the red screw pin assembly horizontally: put the large flattened red screw-pin eye with its round hole and collar on the LEFT side, and the small threaded pin tip on the RIGHT side. The red shaft remains horizontal between the two silver legs. This left-side pin eye orientation must match the engineering sketch. Preserve the exact silver shackle body geometry, bow or dee shape, proportions, galvanized texture, no lettering, red paint, studio background, framing, lighting and image quality. No extra parts, no bolt nut or cotter pin, no text. Image only.",
+    "mode": "built-in imagegen"
+  },
+  {
+    "slug": "dee-shackle-screw-pin",
+    "image": "public/images/products/branded/dee-shackle-screw-pin.webp",
+    "source": "/Users/macbook/.codex/generated_images/01a1c6c2-528c-7771-b77d-e803beac3739/exec-031d45fa-1de6-4e77-bc83-98702081779c.png",
+    "prompt": "Use case: precise-object-edit. Edit this exact shackle catalogue photograph. Reverse ONLY the red screw pin assembly horizontally: put the large flattened red screw-pin eye with its round hole and collar on the LEFT side, and the small threaded pin tip on the RIGHT side. The red shaft remains horizontal between the two silver legs. This left-side pin eye orientation must match the engineering sketch. Preserve the exact silver shackle body geometry, bow or dee shape, proportions, galvanized texture, no lettering, red paint, studio background, framing, lighting and image quality. No extra parts, no bolt nut or cotter pin, no text. Image only.",
+    "mode": "built-in imagegen"
+  }
+]

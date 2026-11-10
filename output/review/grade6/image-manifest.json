@@ -1,0 +1,30 @@
+[
+  {
+    "slug": "bow-shackle-screw-pin",
+    "image": "public/images/products/branded/bow-shackle-screw-pin.webp",
+    "source": "/Users/macbook/.codex/generated_images/01a1c6c2-528c-7771-b77d-e803beac3739/exec-a1f02fd3-26da-49a7-b010-d621e75db0f9.png",
+    "prompt": "Use case: precise-object-edit. Edit target: supplied exact Grade 6 shackle photograph. Remove ALL KINSTON lettering and reconstruct continuous galvanized metal surface. Improve ultra HD photographic clarity, finely resolved zinc texture, crisp edges and machined fittings, realistic studio lighting. Preserve EXACT product geometry, proportions, all openings, pin orientation, component count, red painted pin, bare metal colors, framing and pale grey studio background. Preserve nut and split cotter pin where present. No redesign, missing fittings, text, logo or watermark. Professional photorealistic catalogue photograph. Output high resolution 2048x2048 square or highest available native resolution.",
+    "mode": "built-in imagegen"
+  },
+  {
+    "slug": "bow-shackle-safety-pin",
+    "image": "public/images/products/branded/bow-shackle-safety-pin.webp",
+    "source": "/Users/macbook/.codex/generated_images/01a1c6c2-528c-7771-b77d-e803beac3739/exec-bd0fac27-6dbd-4042-bfe8-fdaa3c693818.png",
+    "prompt": "Use case: precise-object-edit. Edit target: supplied exact Grade 6 shackle photograph. Remove ALL KINSTON lettering and reconstruct continuous galvanized metal surface. Improve ultra HD photographic clarity, finely resolved zinc texture, crisp edges and machined fittings, realistic studio lighting. Preserve EXACT product geometry, proportions, all openings, pin orientation, component count, red painted pin, bare metal colors, framing and pale grey studio background. Preserve nut and split cotter pin where present. No redesign, missing fittings, text, logo or watermark. Professional photorealistic catalogue photograph. Output high resolution 2048x2048 square or highest available native resolution.",
+    "mode": "built-in imagegen"
+  },
+  {
+    "slug": "dee-shackle-screw-pin",
+    "image": "public/images/products/branded/dee-shackle-screw-pin.webp",
+    "source": "/Users/macbook/.codex/generated_images/01a1c6c2-528c-7771-b77d-e803beac3739/exec-162d2697-ab58-42ce-b0e9-48b4970c10c8.png",
+    "prompt": "Use case: precise-object-edit. Edit target: supplied exact Grade 6 shackle photograph. Remove ALL KINSTON lettering and reconstruct continuous galvanized metal surface. Improve ultra HD photographic clarity, finely resolved zinc texture, crisp edges and machined fittings, realistic studio lighting. Preserve EXACT product geometry, proportions, all openings, pin orientation, component count, red painted pin, bare metal colors, framing and pale grey studio background. Preserve nut and split cotter pin where present. No redesign, missing fittings, text, logo or watermark. Professional photorealistic catalogue photograph. Output high resolution 2048x2048 square or highest available native resolution.",
+    "mode": "built-in imagegen"
+  },
+  {
+    "slug": "dee-shackle-safety-pin",
+    "image": "public/images/products/branded/dee-shackle-safety-pin.webp",
+    "source": "/Users/macbook/.codex/generated_images/01a1c6c2-528c-7771-b77d-e803beac3739/exec-dacb218f-69fb-46db-8f3a-8524618d0eff.png",
+    "prompt": "Use case: precise-object-edit. Edit target: supplied exact Grade 6 shackle photograph. Remove ALL KINSTON lettering and reconstruct continuous galvanized metal surface. Improve ultra HD photographic clarity, finely resolved zinc texture, crisp edges and machined fittings, realistic studio lighting. Preserve EXACT product geometry, proportions, all openings, pin orientation, component count, red painted pin, bare metal colors, framing and pale grey studio background. Preserve nut and split cotter pin where present. No redesign, missing fittings, text, logo or watermark. Professional photorealistic catalogue photograph. Output high resolution 2048x2048 square or highest available native resolution.",
+    "mode": "built-in imagegen"
+  }
+]
